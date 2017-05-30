@@ -3023,3 +3023,48 @@
 2017-05-30T18:01:30+0000 [CowrieTelnetTransport,50,72.28.25.243] Command found: cat /dev/shm/.s
 2017-05-30T18:01:30+0000 [CowrieTelnetTransport,50,72.28.25.243] CMD: /bin/busybox TSXPH
 2017-05-30T18:01:30+0000 [CowrieTelnetTransport,50,72.28.25.243] Command found: /bin/busybox TSXPH
+2017-05-30T18:03:10+0000 [CowrieTelnetTransport,50,72.28.25.243] Closing TTY Log: log/tty/20170530-180129-None-50i.log after 101 seconds
+2017-05-30T18:03:10+0000 [CowrieTelnetTransport,50,72.28.25.243] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-05-30T18:03:10+0000 [CowrieTelnetTransport,50,72.28.25.243] Connection lost after 105 seconds
+2017-05-30T18:03:14+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 95.151.12.81:52455 (10.8.41.81:2222) [session: 15f59626]
+2017-05-30T18:03:14+0000 [HoneyPotSSHTransport,4,95.151.12.81] Remote SSH version: SSH-2.0-sshlib-0.1
+2017-05-30T18:03:14+0000 [HoneyPotSSHTransport,4,95.151.12.81] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-dss'
+2017-05-30T18:03:14+0000 [HoneyPotSSHTransport,4,95.151.12.81] outgoing: 'aes128-cbc' 'hmac-md5' 'none'
+2017-05-30T18:03:14+0000 [HoneyPotSSHTransport,4,95.151.12.81] incoming: 'aes128-cbc' 'hmac-md5' 'none'
+2017-05-30T18:03:14+0000 [HoneyPotSSHTransport,4,95.151.12.81] NEW KEYS
+2017-05-30T18:03:15+0000 [HoneyPotSSHTransport,4,95.151.12.81] starting service 'ssh-userauth'
+2017-05-30T18:03:15+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,4,95.151.12.81] 'admin' trying auth 'password'
+2017-05-30T18:03:15+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,4,95.151.12.81] first time for 95.151.12.81, need: 1
+2017-05-30T18:03:15+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,4,95.151.12.81] login attempt: 1
+2017-05-30T18:03:17+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,4,95.151.12.81] login attempt [admin/admin1] succeeded
+2017-05-30T18:03:18+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,4,95.151.12.81] 'admin' authenticated with 'password'
+2017-05-30T18:03:18+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,4,95.151.12.81] starting service 'ssh-connection'
+2017-05-30T18:03:18+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 95.151.12.81:52482 (10.8.41.81:2222) [session: 52438e57]
+2017-05-30T18:03:19+0000 [HoneyPotSSHTransport,5,95.151.12.81] Remote SSH version: SSH-2.0-sshlib-0.1
+2017-05-30T18:03:19+0000 [HoneyPotSSHTransport,5,95.151.12.81] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-dss'
+2017-05-30T18:03:19+0000 [HoneyPotSSHTransport,5,95.151.12.81] outgoing: 'aes128-cbc' 'hmac-md5' 'none'
+2017-05-30T18:03:19+0000 [HoneyPotSSHTransport,5,95.151.12.81] incoming: 'aes128-cbc' 'hmac-md5' 'none'
+2017-05-30T18:03:19+0000 [HoneyPotSSHTransport,4,95.151.12.81] avatar admin logging out
+2017-05-30T18:03:19+0000 [HoneyPotSSHTransport,4,95.151.12.81] connection lost
+2017-05-30T18:03:19+0000 [HoneyPotSSHTransport,4,95.151.12.81] Connection lost after 5 seconds
+2017-05-30T18:03:19+0000 [HoneyPotSSHTransport,5,95.151.12.81] NEW KEYS
+2017-05-30T18:03:19+0000 [HoneyPotSSHTransport,5,95.151.12.81] starting service 'ssh-userauth'
+2017-05-30T18:03:19+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5,95.151.12.81] 'root' trying auth 'password'
+2017-05-30T18:03:19+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5,95.151.12.81] login attempt: 2
+2017-05-30T18:03:19+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5,95.151.12.81] login return, expect: [admin/admin1]
+2017-05-30T18:03:21+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5,95.151.12.81] login attempt [root/111111] failed
+2017-05-30T18:03:22+0000 [-] 'root' failed auth 'password'
+2017-05-30T18:03:22+0000 [-] unauthorized login: 
+2017-05-30T18:03:22+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5,95.151.12.81] 'root' trying auth 'password'
+2017-05-30T18:03:22+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5,95.151.12.81] login attempt: 3
+2017-05-30T18:03:22+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5,95.151.12.81] login return, expect: [admin/admin1]
+2017-05-30T18:03:24+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5,95.151.12.81] login attempt [root/0000] failed
+2017-05-30T18:03:25+0000 [-] 'root' failed auth 'password'
+2017-05-30T18:03:25+0000 [-] unauthorized login: 
+2017-05-30T18:03:25+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5,95.151.12.81] 'root' trying auth 'password'
+2017-05-30T18:03:26+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5,95.151.12.81] login attempt: 4
+2017-05-30T18:03:26+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5,95.151.12.81] login return, expect: [admin/admin1]
+2017-05-30T18:03:27+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5,95.151.12.81] login attempt [root/000000] failed
+2017-05-30T18:03:28+0000 [-] 'root' failed auth 'password'
+2017-05-30T18:03:28+0000 [-] unauthorized login: 
