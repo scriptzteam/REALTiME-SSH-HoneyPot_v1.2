@@ -1127,3 +1127,28 @@
 2017-05-31T18:38:49+0000 [CowrieTelnetTransport,3062,176.49.0.184] Command found: /bin/busybox dd if=/bin/busybox bs=22 count=1
 2017-05-31T18:38:49+0000 [CowrieTelnetTransport,3062,176.49.0.184] Command found: /bin/busybox cat /bin/busybox
 2017-05-31T18:38:49+0000 [CowrieTelnetTransport,3062,176.49.0.184] Command found: cat /bin/busybox
+2017-05-31T18:39:38+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 163.172.73.127:65525 (10.8.41.81:2222) [session: efcf48a7]
+2017-05-31T18:39:38+0000 [HoneyPotSSHTransport,587,163.172.73.127] Remote SSH version: SSH-2.0-1.91 sshlib: Bitvise SSH Client (Tunnelier) 4.60
+2017-05-31T18:39:38+0000 [HoneyPotSSHTransport,587,163.172.73.127] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-05-31T18:39:38+0000 [HoneyPotSSHTransport,587,163.172.73.127] outgoing: 'aes256-ctr' 'hmac-sha1' 'none'
+2017-05-31T18:39:38+0000 [HoneyPotSSHTransport,587,163.172.73.127] incoming: 'aes256-ctr' 'hmac-sha1' 'none'
+2017-05-31T18:39:38+0000 [HoneyPotSSHTransport,587,163.172.73.127] NEW KEYS
+2017-05-31T18:39:38+0000 [HoneyPotSSHTransport,587,163.172.73.127] starting service 'ssh-userauth'
+2017-05-31T18:39:38+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,587,163.172.73.127] 'guest' trying auth 'password'
+2017-05-31T18:39:38+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,587,163.172.73.127] login attempt: 7
+2017-05-31T18:39:38+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,587,163.172.73.127] login return, expect: [guest/guest]
+2017-05-31T18:39:40+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,587,163.172.73.127] login attempt [guest/guest] succeeded
+2017-05-31T18:39:41+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,587,163.172.73.127] 'guest' authenticated with 'password'
+2017-05-31T18:39:41+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,587,163.172.73.127] starting service 'ssh-connection'
+2017-05-31T18:39:45+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,587,163.172.73.127] got channel 'direct-tcpip' request
+2017-05-31T18:39:45+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,587,163.172.73.127] direct-tcp connection request to 104.27.159.48:80 from 127.0.0.1:65531
+2017-05-31T18:39:45+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,587,163.172.73.127] direct-tcp forward to 104.27.159.48:80 with data 'GET /naruto HTTP/1.1\r\nHost: vy.adsvy.com\r\nUser-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 9_2 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13C75 [FBAN/FBIOS;FBAV/46.0.0.54.156;FBBV/18972819;FBDV/iPhone8,2;FBMD/iPhone;FBSN/iPhone OS;FBSV/9.2;FBSS/3; FBCR/Swisscom;FBID/phone;FBLC/de_DE;FBOP/5]\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate\r\nReferer: http://www.fastcompany.com/\r\nConnection: keep-alive\r\n\r\n'
+2017-05-31T18:39:45+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,587,163.172.73.127] failed to connect: Connection refused
+2017-05-31T18:39:45+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,587,163.172.73.127] sending close 0
+2017-05-31T18:39:45+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,587,163.172.73.127] remote close
+2017-05-31T18:39:46+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,587,163.172.73.127] got channel 'direct-tcpip' request
+2017-05-31T18:39:46+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,587,163.172.73.127] direct-tcp connection request to 104.27.159.48:80 from 127.0.0.1:65534
+2017-05-31T18:39:46+0000 [SSHChannel None (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,587,163.172.73.127] direct-tcp forward to 104.27.159.48:80 with data 'GET /naruto HTTP/1.1\r\nHost: vy.adsvy.com\r\nUser-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 9_2 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13C75 [FBAN/FBIOS;FBAV/46.0.0.54.156;FBBV/18972819;FBDV/iPhone8,2;FBMD/iPhone;FBSN/iPhone OS;FBSV/9.2;FBSS/3; FBCR/Swisscom;FBID/phone;FBLC/de_DE;FBOP/5]\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate\r\nReferer: http://www.fastcompany.com/\r\nConnection: keep-alive\r\n\r\n'
+2017-05-31T18:39:46+0000 [SSHChannel None (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,587,163.172.73.127] failed to connect: Connection refused
+2017-05-31T18:39:46+0000 [SSHChannel None (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,587,163.172.73.127] sending close 1
+2017-05-31T18:39:46+0000 [SSHChannel None (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,587,163.172.73.127] remote close
