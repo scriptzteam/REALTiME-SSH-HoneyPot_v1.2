@@ -3550,3 +3550,26 @@
 2017-05-31T10:53:57+0000 [SSHChannel None (25) on SSHService 'ssh-connection' on HoneyPotSSHTransport,314,91.195.103.218] direct-tcp forward to 185.19.218.137:80 with data 'GET /get-ip.php HTTP/1.1\r\nHost: 185.19.218.137\r\nUser-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:26.0) Gecko/20100101 Firefox/26.0\r\nAccept: */*\r\nAccept-Encoding: deflate, gzip\r\n\r\n'
 2017-05-31T10:53:57+0000 [SSHChannel None (25) on SSHService 'ssh-connection' on HoneyPotSSHTransport,314,91.195.103.218] failed to connect: Connection refused
 2017-05-31T10:53:57+0000 [SSHChannel None (25) on SSHService 'ssh-connection' on HoneyPotSSHTransport,314,91.195.103.218] sending close 25
+2017-05-31T10:54:18+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 149.56.223.98:52239 (10.8.41.81:2222) [session: 310ca42b]
+2017-05-31T10:54:22+0000 [HoneyPotSSHTransport,436,149.56.223.98] Remote SSH version: SSH-2.0-libssh-0.6.0
+2017-05-31T10:54:22+0000 [HoneyPotSSHTransport,436,149.56.223.98] kex alg, key alg: 'ecdh-sha2-nistp256' 'ssh-rsa'
+2017-05-31T10:54:22+0000 [HoneyPotSSHTransport,436,149.56.223.98] outgoing: 'aes256-ctr' 'hmac-sha1' 'none'
+2017-05-31T10:54:22+0000 [HoneyPotSSHTransport,436,149.56.223.98] incoming: 'aes256-ctr' 'hmac-sha1' 'none'
+2017-05-31T10:54:23+0000 [HoneyPotSSHTransport,436,149.56.223.98] NEW KEYS
+2017-05-31T10:54:23+0000 [HoneyPotSSHTransport,436,149.56.223.98] starting service 'ssh-userauth'
+2017-05-31T10:54:23+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,436,149.56.223.98] 'admin' trying auth 'password'
+2017-05-31T10:54:23+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,436,149.56.223.98] login attempt: 12
+2017-05-31T10:54:23+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,436,149.56.223.98] login return, expect: [admin/admin]
+2017-05-31T10:54:25+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,436,149.56.223.98] login attempt [admin/admin] succeeded
+2017-05-31T10:54:27+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,436,149.56.223.98] 'admin' authenticated with 'password'
+2017-05-31T10:54:27+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,436,149.56.223.98] starting service 'ssh-connection'
+2017-05-31T10:54:27+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,436,149.56.223.98] got channel 'direct-tcpip' request
+2017-05-31T10:54:27+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,436,149.56.223.98] direct-tcp connection request to 87.250.250.242:80 from localhost:5556
+2017-05-31T10:54:27+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,436,149.56.223.98] direct-tcp forward to 87.250.250.242:80 with data 'GET / HTTP/1.1\r\nConnection: close\r\nHost: ya.ru\r\n\r\n'
+2017-05-31T10:54:27+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,436,149.56.223.98] failed to connect: Connection refused
+2017-05-31T10:54:27+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,436,149.56.223.98] sending close 0
+2017-05-31T10:54:28+0000 [HoneyPotSSHTransport,436,149.56.223.98] Got remote error, code 11
+	reason: Bye Bye
+2017-05-31T10:54:28+0000 [HoneyPotSSHTransport,436,149.56.223.98] avatar admin logging out
+2017-05-31T10:54:28+0000 [HoneyPotSSHTransport,436,149.56.223.98] connection lost
+2017-05-31T10:54:28+0000 [HoneyPotSSHTransport,436,149.56.223.98] Connection lost after 9 seconds
