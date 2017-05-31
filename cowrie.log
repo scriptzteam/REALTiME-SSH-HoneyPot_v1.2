@@ -1258,3 +1258,61 @@
 2017-05-31T18:45:24+0000 [CowrieTelnetTransport,3066,113.131.182.66] Connection lost after 88 seconds
 2017-05-31T18:45:24+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 113.131.182.66:42557 (10.8.41.81:2223) [session: TT3068]
 2017-05-31T18:45:59+0000 [CowrieTelnetTransport,3068,113.131.182.66] Connection lost after 34 seconds
+2017-05-31T18:46:37+0000 [CowrieTelnetTransport,3067,114.37.166.62] Closing TTY Log: log/tty/20170531-184434-None-3067i.log after 123 seconds
+2017-05-31T18:46:37+0000 [CowrieTelnetTransport,3067,114.37.166.62] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-05-31T18:46:37+0000 [CowrieTelnetTransport,3067,114.37.166.62] Connection lost after 128 seconds
+2017-05-31T18:46:48+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 185.145.252.26:37322 (10.8.41.81:2222) [session: f1292cd5]
+2017-05-31T18:46:48+0000 [HoneyPotSSHTransport,589,185.145.252.26] Remote SSH version: SSH-2.0-paramiko_2.0.2
+2017-05-31T18:46:48+0000 [HoneyPotSSHTransport,589,185.145.252.26] kex alg, key alg: 'diffie-hellman-group-exchange-sha256' 'ssh-rsa'
+2017-05-31T18:46:48+0000 [HoneyPotSSHTransport,589,185.145.252.26] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-05-31T18:46:48+0000 [HoneyPotSSHTransport,589,185.145.252.26] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-05-31T18:46:49+0000 [HoneyPotSSHTransport,589,185.145.252.26] NEW KEYS
+2017-05-31T18:46:49+0000 [HoneyPotSSHTransport,589,185.145.252.26] starting service 'ssh-userauth'
+2017-05-31T18:46:49+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,589,185.145.252.26] 'user' trying auth 'none'
+2017-05-31T18:46:50+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,589,185.145.252.26] 'user' authenticated with 'none'
+2017-05-31T18:46:50+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,589,185.145.252.26] starting service 'ssh-connection'
+2017-05-31T18:46:50+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,589,185.145.252.26] got channel 'direct-tcpip' request
+2017-05-31T18:46:50+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,589,185.145.252.26] direct-tcp connection request to 172.217.17.46:80 from localhost:8080
+2017-05-31T18:46:50+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,589,185.145.252.26] direct-tcp forward to 172.217.17.46:80 with data 'GET / HTTP/1.0\r\nHost: google.com\r\n\r\n'
+2017-05-31T18:46:50+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,589,185.145.252.26] failed to connect: Connection refused
+2017-05-31T18:46:50+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,589,185.145.252.26] sending close 0
+2017-05-31T18:46:50+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,589,185.145.252.26] remote eof
+2017-05-31T18:46:51+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,589,185.145.252.26] remote close
+2017-05-31T18:46:51+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,589,185.145.252.26] got channel 'direct-tcpip' request
+2017-05-31T18:46:51+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,589,185.145.252.26] direct-tcp connection request to 2a00:1450:400e:804::200e:80 from localhost:8080
+2017-05-31T18:46:51+0000 [SSHChannel None (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,589,185.145.252.26] direct-tcp forward to 2a00:1450:400e:804::200e:80 with data 'GET / HTTP/1.0\r\nHost: google.com\r\n\r\n'
+2017-05-31T18:46:51+0000 [SSHChannel None (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,589,185.145.252.26] failed to connect: Connection refused
+2017-05-31T18:46:51+0000 [SSHChannel None (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,589,185.145.252.26] sending close 1
+2017-05-31T18:46:51+0000 [SSHChannel None (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,589,185.145.252.26] remote eof
+2017-05-31T18:46:51+0000 [SSHChannel None (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,589,185.145.252.26] remote close
+2017-05-31T18:46:51+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,589,185.145.252.26] got channel 'direct-tcpip' request
+2017-05-31T18:46:51+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,589,185.145.252.26] direct-tcp connection request to 98.138.253.109:80 from localhost:8080
+2017-05-31T18:46:51+0000 [SSHChannel None (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,589,185.145.252.26] direct-tcp forward to 98.138.253.109:80 with data 'GET / HTTP/1.0\r\nHost: yahoo.com\r\n\r\n'
+2017-05-31T18:46:51+0000 [SSHChannel None (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,589,185.145.252.26] failed to connect: Connection refused
+2017-05-31T18:46:51+0000 [SSHChannel None (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,589,185.145.252.26] sending close 2
+2017-05-31T18:46:51+0000 [SSHChannel None (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,589,185.145.252.26] remote eof
+2017-05-31T18:46:51+0000 [SSHChannel None (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,589,185.145.252.26] remote close
+2017-05-31T18:46:51+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,589,185.145.252.26] got channel 'direct-tcpip' request
+2017-05-31T18:46:51+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,589,185.145.252.26] direct-tcp connection request to 2001:4998:44:2408::7018:80 from localhost:8080
+2017-05-31T18:46:51+0000 [SSHChannel None (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,589,185.145.252.26] direct-tcp forward to 2001:4998:44:2408::7018:80 with data 'GET / HTTP/1.0\r\nHost: yahoo.com\r\n\r\n'
+2017-05-31T18:46:51+0000 [SSHChannel None (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,589,185.145.252.26] failed to connect: Connection refused
+2017-05-31T18:46:51+0000 [SSHChannel None (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,589,185.145.252.26] sending close 3
+2017-05-31T18:46:51+0000 [SSHChannel None (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,589,185.145.252.26] remote eof
+2017-05-31T18:46:51+0000 [SSHChannel None (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,589,185.145.252.26] remote close
+2017-05-31T18:46:51+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,589,185.145.252.26] got channel 'direct-tcpip' request
+2017-05-31T18:46:51+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,589,185.145.252.26] direct-tcp connection request to 5.255.255.77:80 from localhost:8080
+2017-05-31T18:46:51+0000 [SSHChannel None (4) on SSHService 'ssh-connection' on HoneyPotSSHTransport,589,185.145.252.26] direct-tcp forward to 5.255.255.77:80 with data 'GET / HTTP/1.0\r\nHost: yandex.ru\r\n\r\n'
+2017-05-31T18:46:51+0000 [SSHChannel None (4) on SSHService 'ssh-connection' on HoneyPotSSHTransport,589,185.145.252.26] failed to connect: Connection refused
+2017-05-31T18:46:51+0000 [SSHChannel None (4) on SSHService 'ssh-connection' on HoneyPotSSHTransport,589,185.145.252.26] sending close 4
+2017-05-31T18:46:51+0000 [SSHChannel None (4) on SSHService 'ssh-connection' on HoneyPotSSHTransport,589,185.145.252.26] remote eof
+2017-05-31T18:46:51+0000 [SSHChannel None (4) on SSHService 'ssh-connection' on HoneyPotSSHTransport,589,185.145.252.26] remote close
+2017-05-31T18:46:51+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,589,185.145.252.26] got channel 'direct-tcpip' request
+2017-05-31T18:46:51+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,589,185.145.252.26] direct-tcp connection request to 2a02:6b8:a::a:80 from localhost:8080
+2017-05-31T18:46:51+0000 [SSHChannel None (5) on SSHService 'ssh-connection' on HoneyPotSSHTransport,589,185.145.252.26] direct-tcp forward to 2a02:6b8:a::a:80 with data 'GET / HTTP/1.0\r\nHost: yandex.ru\r\n\r\n'
+2017-05-31T18:46:51+0000 [SSHChannel None (5) on SSHService 'ssh-connection' on HoneyPotSSHTransport,589,185.145.252.26] failed to connect: Connection refused
+2017-05-31T18:46:51+0000 [SSHChannel None (5) on SSHService 'ssh-connection' on HoneyPotSSHTransport,589,185.145.252.26] sending close 5
+2017-05-31T18:46:51+0000 [SSHChannel None (5) on SSHService 'ssh-connection' on HoneyPotSSHTransport,589,185.145.252.26] remote eof
+2017-05-31T18:46:52+0000 [HoneyPotSSHTransport,589,185.145.252.26] avatar user logging out
+2017-05-31T18:46:52+0000 [HoneyPotSSHTransport,589,185.145.252.26] connection lost
+2017-05-31T18:46:52+0000 [HoneyPotSSHTransport,589,185.145.252.26] Connection lost after 3 seconds
