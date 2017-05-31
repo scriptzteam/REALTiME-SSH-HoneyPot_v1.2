@@ -6550,3 +6550,52 @@
 2017-05-31T03:34:59+0000 [CowrieTelnetTransport,1134,45.63.42.158] Warning: state changed and new state returned
 2017-05-31T03:34:59+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 45.63.42.158:32876 (10.8.41.81:2223) [session: TT1135]
 2017-05-31T03:34:59+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 45.63.42.158:56488 (10.8.41.81:2223) [session: TT1136]
+2017-05-31T03:35:03+0000 [CowrieTelnetTransport,1136,45.63.42.158] login attempt: 8
+2017-05-31T03:35:03+0000 [CowrieTelnetTransport,1136,45.63.42.158] login return, expect: [root/54321]
+2017-05-31T03:35:04+0000 [CowrieTelnetTransport,1136,45.63.42.158] login attempt [user/123456] failed
+2017-05-31T03:35:04+0000 [CowrieTelnetTransport,1136,45.63.42.158] Warning: state changed and new state returned
+2017-05-31T03:35:05+0000 [CowrieTelnetTransport,1135,45.63.42.158] login attempt: 9
+2017-05-31T03:35:05+0000 [CowrieTelnetTransport,1135,45.63.42.158] login return, expect: [root/54321]
+2017-05-31T03:35:06+0000 [CowrieTelnetTransport,1135,45.63.42.158] login attempt [root/xc3511] failed
+2017-05-31T03:35:06+0000 [CowrieTelnetTransport,1135,45.63.42.158] Warning: state changed and new state returned
+2017-05-31T03:35:06+0000 [CowrieTelnetTransport,1135,45.63.42.158] Connection lost after 7 seconds
+2017-05-31T03:35:06+0000 [CowrieTelnetTransport,1134,45.63.42.158] Connection lost after 20 seconds
+2017-05-31T03:35:06+0000 [CowrieTelnetTransport,1133,45.63.42.158] Connection lost after 28 seconds
+2017-05-31T03:35:06+0000 [CowrieTelnetTransport,1132,45.63.42.158] Closing TTY Log: log/tty/20170531-033444-None-1132i.log after 22 seconds
+2017-05-31T03:35:06+0000 [CowrieTelnetTransport,1132,45.63.42.158] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-05-31T03:35:06+0000 [CowrieTelnetTransport,1132,45.63.42.158] Connection lost after 28 seconds
+2017-05-31T03:35:06+0000 [CowrieTelnetTransport,1136,45.63.42.158] Connection lost after 7 seconds
+2017-05-31T03:35:09+0000 [SSHChannel None (132) on SSHService 'ssh-connection' on HoneyPotSSHTransport,191,91.195.103.184] direct-tcp forward to 74.125.70.27:25 with data 'QUIT\r\n'
+2017-05-31T03:35:09+0000 [SSHChannel None (132) on SSHService 'ssh-connection' on HoneyPotSSHTransport,191,91.195.103.184] failed to connect: Connection refused
+2017-05-31T03:35:09+0000 [SSHChannel None (132) on SSHService 'ssh-connection' on HoneyPotSSHTransport,191,91.195.103.184] sending close 132
+2017-05-31T03:35:09+0000 [SSHChannel None (132) on SSHService 'ssh-connection' on HoneyPotSSHTransport,191,91.195.103.184] remote eof
+2017-05-31T03:35:09+0000 [SSHChannel None (132) on SSHService 'ssh-connection' on HoneyPotSSHTransport,191,91.195.103.184] remote close
+2017-05-31T03:35:15+0000 [SSHChannel None (133) on SSHService 'ssh-connection' on HoneyPotSSHTransport,191,91.195.103.184] remote eof
+2017-05-31T03:35:15+0000 [SSHChannel None (133) on SSHService 'ssh-connection' on HoneyPotSSHTransport,191,91.195.103.184] remote close
+2017-05-31T03:35:15+0000 [SSHChannel None (133) on SSHService 'ssh-connection' on HoneyPotSSHTransport,191,91.195.103.184] sending close 133
+2017-05-31T03:35:22+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,188,91.230.47.69] got channel 'direct-tcpip' request
+2017-05-31T03:35:22+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,188,91.230.47.69] direct-tcp connection request to 2.18.154.189:443 from localhost:5556
+2017-05-31T03:35:22+0000 [SSHChannel None (90) on SSHService 'ssh-connection' on HoneyPotSSHTransport,188,91.230.47.69] direct-tcp forward to 2.18.154.189:443 with data '\x80z\x01\x03\x01\x00Q\x00\x00\x00 \x00\x009\x00\x008\x00\x005\x00\x00\x16\x00\x00\x13\x00\x00\n\x07\x00\xc0\x00\x003\x00\x002\x00\x00/\x00\x00\x07\x05\x00\x80\x03\x00\x80\x00\x00\x05\x00\x00\x04\x01\x00\x80\x00\x00\x15\x00\x00\x12\x00\x00\t\x06\x00@\x00\x00\x14\x00\x00\x11\x00\x00\x08\x00\x00\x06\x04\x00\x80\x00\x00\x03\x02\x00\x80\xed+\x04"\x11\x7f\x99\xcb\x1e\n|\xc3\x10\xc0\xfaT\x86\xa4|f{W\xc6\xd2\x98\xe1\xe0\xa7\xc7\xf7\xcb\x8b'
+2017-05-31T03:35:22+0000 [SSHChannel None (90) on SSHService 'ssh-connection' on HoneyPotSSHTransport,188,91.230.47.69] failed to connect: Connection refused
+2017-05-31T03:35:22+0000 [SSHChannel None (90) on SSHService 'ssh-connection' on HoneyPotSSHTransport,188,91.230.47.69] sending close 90
+2017-05-31T03:35:45+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,185,91.195.103.217] got channel 'direct-tcpip' request
+2017-05-31T03:35:45+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,185,91.195.103.217] direct-tcp connection request to 98.136.217.202:25 from localhost:5556
+2017-05-31T03:35:50+0000 [SSHChannel None (73) on SSHService 'ssh-connection' on HoneyPotSSHTransport,185,91.195.103.217] remote eof
+2017-05-31T03:35:50+0000 [SSHChannel None (73) on SSHService 'ssh-connection' on HoneyPotSSHTransport,185,91.195.103.217] remote close
+2017-05-31T03:35:50+0000 [SSHChannel None (73) on SSHService 'ssh-connection' on HoneyPotSSHTransport,185,91.195.103.217] sending close 73
+2017-05-31T03:35:51+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,185,91.195.103.217] got channel 'direct-tcpip' request
+2017-05-31T03:35:51+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,185,91.195.103.217] direct-tcp connection request to 98.136.217.202:25 from localhost:5556
+2017-05-31T03:35:53+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 45.63.42.158:43968 (10.8.41.81:2223) [session: TT1137]
+2017-05-31T03:35:53+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 45.63.42.158:44205 (10.8.41.81:2223) [session: TT1138]
+2017-05-31T03:35:56+0000 [SSHChannel None (74) on SSHService 'ssh-connection' on HoneyPotSSHTransport,185,91.195.103.217] remote eof
+2017-05-31T03:35:56+0000 [SSHChannel None (74) on SSHService 'ssh-connection' on HoneyPotSSHTransport,185,91.195.103.217] remote close
+2017-05-31T03:35:56+0000 [SSHChannel None (74) on SSHService 'ssh-connection' on HoneyPotSSHTransport,185,91.195.103.217] sending close 74
+2017-05-31T03:35:57+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 45.63.42.158:42336 (10.8.41.81:2223) [session: TT1139]
+2017-05-31T03:35:57+0000 [CowrieTelnetTransport,1137,45.63.42.158] login attempt: 10
+2017-05-31T03:35:57+0000 [CowrieTelnetTransport,1137,45.63.42.158] login return, expect: [root/54321]
+2017-05-31T03:35:59+0000 [CowrieTelnetTransport,1137,45.63.42.158] login attempt [root/54321] succeeded
+2017-05-31T03:36:01+0000 [CowrieTelnetTransport,1137,45.63.42.158] Opening TTY Log: log/tty/20170531-033601-None-1137i.log
+2017-05-31T03:36:01+0000 [CowrieTelnetTransport,1137,45.63.42.158] Warning: state changed and new state returned
+2017-05-31T03:36:01+0000 [CowrieTelnetTransport,1138,45.63.42.158] login attempt: 11
+2017-05-31T03:36:01+0000 [CowrieTelnetTransport,1138,45.63.42.158] login return, expect: [root/54321]
