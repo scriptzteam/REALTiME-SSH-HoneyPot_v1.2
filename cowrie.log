@@ -5591,3 +5591,43 @@
 2017-05-31T08:58:37+0000 [CowrieTelnetTransport,1583,117.2.226.106] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
 	]
 2017-05-31T08:58:37+0000 [CowrieTelnetTransport,1583,117.2.226.106] Connection lost after 128 seconds
+2017-05-31T08:59:13+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 62.210.169.48:55437 (10.8.41.81:2222) [session: 71ee40d3]
+2017-05-31T08:59:20+0000 [HoneyPotSSHTransport,313,62.210.169.48] Remote SSH version: SSH-2.0-Granados-1.0
+2017-05-31T08:59:20+0000 [HoneyPotSSHTransport,313,62.210.169.48] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-dss'
+2017-05-31T08:59:20+0000 [HoneyPotSSHTransport,313,62.210.169.48] outgoing: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-05-31T08:59:20+0000 [HoneyPotSSHTransport,313,62.210.169.48] incoming: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-05-31T08:59:36+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 91.195.103.218:52425 (10.8.41.81:2222) [session: 6ee68af7]
+2017-05-31T08:59:37+0000 [HoneyPotSSHTransport,314,91.195.103.218] Remote SSH version: SSH-2.0-libssh-0.6.0
+2017-05-31T08:59:37+0000 [HoneyPotSSHTransport,314,91.195.103.218] kex alg, key alg: 'ecdh-sha2-nistp256' 'ssh-rsa'
+2017-05-31T08:59:37+0000 [HoneyPotSSHTransport,314,91.195.103.218] outgoing: 'aes256-ctr' 'hmac-sha1' 'none'
+2017-05-31T08:59:37+0000 [HoneyPotSSHTransport,314,91.195.103.218] incoming: 'aes256-ctr' 'hmac-sha1' 'none'
+2017-05-31T08:59:38+0000 [HoneyPotSSHTransport,314,91.195.103.218] NEW KEYS
+2017-05-31T08:59:38+0000 [HoneyPotSSHTransport,314,91.195.103.218] starting service 'ssh-userauth'
+2017-05-31T08:59:38+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,314,91.195.103.218] '1111' trying auth 'password'
+2017-05-31T08:59:38+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,314,91.195.103.218] login attempt: 36
+2017-05-31T08:59:38+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,314,91.195.103.218] login return, expect: [1111/1111]
+2017-05-31T08:59:40+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,314,91.195.103.218] login attempt [1111/1111] succeeded
+2017-05-31T08:59:42+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,314,91.195.103.218] '1111' authenticated with 'password'
+2017-05-31T08:59:42+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,314,91.195.103.218] starting service 'ssh-connection'
+2017-05-31T08:59:42+0000 [HoneyPotSSHTransport,313,62.210.169.48] NEW KEYS
+2017-05-31T08:59:42+0000 [HoneyPotSSHTransport,313,62.210.169.48] starting service 'ssh-userauth'
+2017-05-31T08:59:44+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,313,62.210.169.48] 'admin' trying auth 'password'
+2017-05-31T08:59:44+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,313,62.210.169.48] login attempt: 297
+2017-05-31T08:59:44+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,313,62.210.169.48] login return, expect: [admin/admin]
+2017-05-31T08:59:46+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,313,62.210.169.48] login attempt [admin/admin] succeeded
+2017-05-31T08:59:47+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,313,62.210.169.48] 'admin' authenticated with 'password'
+2017-05-31T08:59:47+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,313,62.210.169.48] starting service 'ssh-connection'
+2017-05-31T08:59:49+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,313,62.210.169.48] got channel 'direct-tcpip' request
+2017-05-31T08:59:49+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,313,62.210.169.48] direct-tcp connection request to 104.20.17.242:80 from localhost:3152
+2017-05-31T08:59:51+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,313,62.210.169.48] direct-tcp forward to 104.20.17.242:80 with data 'GET / HTTP/1.0\r\n\r\n'
+2017-05-31T08:59:51+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,313,62.210.169.48] failed to connect: Connection refused
+2017-05-31T08:59:51+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,313,62.210.169.48] sending close 0
+2017-05-31T08:59:52+0000 [HoneyPotSSHTransport,313,62.210.169.48] Got remote error, code 0
+	reason: 
+2017-05-31T08:59:52+0000 [HoneyPotSSHTransport,313,62.210.169.48] avatar admin logging out
+2017-05-31T08:59:52+0000 [HoneyPotSSHTransport,313,62.210.169.48] connection lost
+2017-05-31T08:59:52+0000 [HoneyPotSSHTransport,313,62.210.169.48] Connection lost after 39 seconds
+2017-05-31T08:59:56+0000 [CowrieTelnetTransport,1584,81.102.192.100] Closing TTY Log: log/tty/20170531-085816-None-1584i.log after 100 seconds
+2017-05-31T08:59:56+0000 [CowrieTelnetTransport,1584,81.102.192.100] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-05-31T08:59:56+0000 [CowrieTelnetTransport,1584,81.102.192.100] Connection lost after 104 seconds
