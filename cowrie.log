@@ -3122,3 +3122,90 @@
 2017-06-01T02:15:26+0000 [CowrieTelnetTransport,3622,45.76.11.230] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
 	]
 2017-06-01T02:15:26+0000 [CowrieTelnetTransport,3622,45.76.11.230] Connection lost after 135 seconds
+2017-06-01T02:16:02+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 212.237.18.133:57980 (10.8.41.81:2222) [session: aeb987e8]
+2017-06-01T02:16:03+0000 [HoneyPotSSHTransport,750,212.237.18.133] connection lost
+2017-06-01T02:16:03+0000 [HoneyPotSSHTransport,750,212.237.18.133] Connection lost after 0 seconds
+2017-06-01T02:16:03+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 212.237.18.133:57982 (10.8.41.81:2222) [session: 14ee1740]
+2017-06-01T02:16:03+0000 [HoneyPotSSHTransport,751,212.237.18.133] Remote SSH version: SSH-2.0-paramiko_1.15.1
+2017-06-01T02:16:03+0000 [HoneyPotSSHTransport,751,212.237.18.133] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-06-01T02:16:03+0000 [HoneyPotSSHTransport,751,212.237.18.133] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-01T02:16:03+0000 [HoneyPotSSHTransport,751,212.237.18.133] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-01T02:16:03+0000 [HoneyPotSSHTransport,751,212.237.18.133] NEW KEYS
+2017-06-01T02:16:03+0000 [HoneyPotSSHTransport,751,212.237.18.133] starting service 'ssh-userauth'
+2017-06-01T02:16:03+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,751,212.237.18.133] '1111' trying auth 'password'
+2017-06-01T02:16:03+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,751,212.237.18.133] login attempt: 3
+2017-06-01T02:16:03+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,751,212.237.18.133] login return, expect: [1111/1111]
+2017-06-01T02:16:05+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,751,212.237.18.133] login attempt [1111/1111] succeeded
+2017-06-01T02:16:06+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,751,212.237.18.133] '1111' authenticated with 'password'
+2017-06-01T02:16:06+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,751,212.237.18.133] starting service 'ssh-connection'
+2017-06-01T02:16:07+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,751,212.237.18.133] got channel 'session' request
+2017-06-01T02:16:07+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,751,212.237.18.133] channel open
+2017-06-01T02:16:07+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,751,212.237.18.133] executing command "/sbin/ifconfig"
+2017-06-01T02:16:07+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,751,212.237.18.133] Opening TTY Log: log/tty/20170601-021607-14ee1740-0e.log
+2017-06-01T02:16:07+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,751,212.237.18.133] CMD: /sbin/ifconfig
+2017-06-01T02:16:07+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,751,212.237.18.133] Command found: /sbin/ifconfig 
+2017-06-01T02:16:07+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,751,212.237.18.133] exitCode: 0
+2017-06-01T02:16:07+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,751,212.237.18.133] sending request 'exit-status'
+2017-06-01T02:16:07+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,751,212.237.18.133] sending close 0
+2017-06-01T02:16:07+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,751,212.237.18.133] received eof, sending ctrl-d to command
+2017-06-01T02:16:07+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,751,212.237.18.133] Received CTRL-D, exiting..
+2017-06-01T02:16:07+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,751,212.237.18.133] exitCode: 0
+2017-06-01T02:16:07+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,751,212.237.18.133] Closing TTY Log: log/tty/20170601-021607-14ee1740-0e.log after 0 seconds
+2017-06-01T02:16:07+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,751,212.237.18.133] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-06-01T02:16:07+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,751,212.237.18.133] remote close
+2017-06-01T02:16:08+0000 [HoneyPotSSHTransport,751,212.237.18.133] avatar 1111 logging out
+2017-06-01T02:16:08+0000 [HoneyPotSSHTransport,751,212.237.18.133] connection lost
+2017-06-01T02:16:08+0000 [HoneyPotSSHTransport,751,212.237.18.133] Connection lost after 5 seconds
+2017-06-01T02:16:18+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 92.124.133.105:34985 (10.8.41.81:2223) [session: TT3627]
+2017-06-01T02:16:18+0000 [CowrieTelnetTransport,3627,92.124.133.105] first time for 92.124.133.105, need: 1
+2017-06-01T02:16:18+0000 [CowrieTelnetTransport,3627,92.124.133.105] login attempt: 1
+2017-06-01T02:16:20+0000 [CowrieTelnetTransport,3627,92.124.133.105] login attempt [admin/admin] succeeded
+2017-06-01T02:16:21+0000 [CowrieTelnetTransport,3627,92.124.133.105] Opening TTY Log: log/tty/20170601-021621-None-3627i.log
+2017-06-01T02:16:21+0000 [CowrieTelnetTransport,3627,92.124.133.105] Warning: state changed and new state returned
+2017-06-01T02:16:22+0000 [CowrieTelnetTransport,3627,92.124.133.105] CMD: enable
+2017-06-01T02:16:22+0000 [CowrieTelnetTransport,3627,92.124.133.105] Command found: enable 
+2017-06-01T02:16:22+0000 [CowrieTelnetTransport,3627,92.124.133.105] Reading txtcmd from "txtcmds/bin/enable"
+2017-06-01T02:16:22+0000 [CowrieTelnetTransport,3627,92.124.133.105] CMD: system
+2017-06-01T02:16:22+0000 [CowrieTelnetTransport,3627,92.124.133.105] Command not found: system
+2017-06-01T02:16:22+0000 [CowrieTelnetTransport,3627,92.124.133.105] CMD: shell
+2017-06-01T02:16:22+0000 [CowrieTelnetTransport,3627,92.124.133.105] Command not found: shell
+2017-06-01T02:16:22+0000 [CowrieTelnetTransport,3627,92.124.133.105] CMD: sh
+2017-06-01T02:16:22+0000 [CowrieTelnetTransport,3627,92.124.133.105] Command found: sh 
+2017-06-01T02:16:22+0000 [CowrieTelnetTransport,3627,92.124.133.105] CMD:  /bin/busybox wget; /bin/busybox 81c46036wget; /bin/busybox echo -ne '\x0181c46036\x7f'; /bin/busybox printf '\00281c46036\177'; /bin/echo -ne '\x0381c46036\x7f'; /usr/bin/printf '\00481c46036\177'; /bin/busybox tftp; /bin/busybox 81c46036tftp;
+2017-06-01T02:16:22+0000 [CowrieTelnetTransport,3627,92.124.133.105] Command found: /bin/busybox wget
+2017-06-01T02:16:22+0000 [CowrieTelnetTransport,3627,92.124.133.105] Command found: wget
+2017-06-01T02:16:22+0000 [CowrieTelnetTransport,3627,92.124.133.105] Command found: /bin/busybox 81c46036wget
+2017-06-01T02:16:22+0000 [CowrieTelnetTransport,3627,92.124.133.105] Command found: /bin/busybox echo -ne '\x0181c46036\x7f'
+2017-06-01T02:16:22+0000 [CowrieTelnetTransport,3627,92.124.133.105] Command found: echo -ne '\x0181c46036\x7f'
+2017-06-01T02:16:22+0000 [CowrieTelnetTransport,3627,92.124.133.105] Command found: /bin/busybox printf '\00281c46036\177'
+2017-06-01T02:16:22+0000 [CowrieTelnetTransport,3627,92.124.133.105] Command found: /bin/echo -ne '\x0381c46036\x7f'
+2017-06-01T02:16:22+0000 [CowrieTelnetTransport,3627,92.124.133.105] Command not found: /usr/bin/printf '\00481c46036\177'
+2017-06-01T02:16:22+0000 [CowrieTelnetTransport,3627,92.124.133.105] Command found: /bin/busybox tftp
+2017-06-01T02:16:22+0000 [CowrieTelnetTransport,3627,92.124.133.105] Command found: tftp
+2017-06-01T02:16:22+0000 [CowrieTelnetTransport,3627,92.124.133.105] Command found: /bin/busybox 81c46036tftp
+2017-06-01T02:16:22+0000 [CowrieTelnetTransport,3627,92.124.133.105] CMD:  /bin/busybox dd if=/bin/busybox bs=22 count=1 || /bin/busybox cat /bin/busybox
+2017-06-01T02:16:22+0000 [CowrieTelnetTransport,3627,92.124.133.105] Command found: /bin/busybox dd if=/bin/busybox bs=22 count=1
+2017-06-01T02:16:22+0000 [CowrieTelnetTransport,3627,92.124.133.105] Command found: /bin/busybox cat /bin/busybox
+2017-06-01T02:16:22+0000 [CowrieTelnetTransport,3627,92.124.133.105] Command found: cat /bin/busybox
+2017-06-01T02:16:49+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 45.32.130.149:35834 (10.8.41.81:2223) [session: TT3628]
+2017-06-01T02:16:49+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 45.32.130.149:34262 (10.8.41.81:2223) [session: TT3629]
+2017-06-01T02:16:50+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 45.32.130.149:33372 (10.8.41.81:2223) [session: TT3630]
+2017-06-01T02:16:53+0000 [CowrieTelnetTransport,3628,45.32.130.149] login attempt: 538
+2017-06-01T02:16:53+0000 [CowrieTelnetTransport,3628,45.32.130.149] login return, expect: [Administrator/]
+2017-06-01T02:16:55+0000 [CowrieTelnetTransport,3628,45.32.130.149] login attempt [root/xmhdipc] failed
+2017-06-01T02:16:55+0000 [CowrieTelnetTransport,3628,45.32.130.149] Warning: state changed and new state returned
+2017-06-01T02:16:56+0000 [CowrieTelnetTransport,3629,45.32.130.149] login attempt: 539
+2017-06-01T02:16:56+0000 [CowrieTelnetTransport,3629,45.32.130.149] login return, expect: [Administrator/]
+2017-06-01T02:16:57+0000 [CowrieTelnetTransport,3629,45.32.130.149] login attempt [support/support] failed
+2017-06-01T02:16:57+0000 [CowrieTelnetTransport,3629,45.32.130.149] Warning: state changed and new state returned
+2017-06-01T02:16:57+0000 [CowrieTelnetTransport,3630,45.32.130.149] login attempt: 540
+2017-06-01T02:16:57+0000 [CowrieTelnetTransport,3630,45.32.130.149] login return, expect: [Administrator/]
+2017-06-01T02:16:59+0000 [CowrieTelnetTransport,3630,45.32.130.149] login attempt [root/Zte521] failed
+2017-06-01T02:16:59+0000 [CowrieTelnetTransport,3630,45.32.130.149] Warning: state changed and new state returned
+2017-06-01T02:16:59+0000 [CowrieTelnetTransport,3628,45.32.130.149] login attempt: 541
+2017-06-01T02:16:59+0000 [CowrieTelnetTransport,3628,45.32.130.149] login return, expect: [Administrator/]
+2017-06-01T02:17:01+0000 [CowrieTelnetTransport,3628,45.32.130.149] login attempt [enable/shell] failed
+2017-06-01T02:17:01+0000 [CowrieTelnetTransport,3628,45.32.130.149] Warning: state changed and new state returned
+2017-06-01T02:17:01+0000 [CowrieTelnetTransport,3628,45.32.130.149] login attempt: 542
+2017-06-01T02:17:01+0000 [CowrieTelnetTransport,3628,45.32.130.149] login return, expect: [Administrator/]
