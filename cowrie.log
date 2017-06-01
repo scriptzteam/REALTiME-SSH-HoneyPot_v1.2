@@ -3050,3 +3050,33 @@
 2017-06-01T10:07:38+0000 [SSHChannel None (158) on SSHService 'ssh-connection' on HoneyPotSSHTransport,811,91.195.103.188] direct-tcp forward to 23.5.96.14:443 with data '\x80z\x01\x03\x01\x00Q\x00\x00\x00 \x00\x009\x00\x008\x00\x005\x00\x00\x16\x00\x00\x13\x00\x00\n\x07\x00\xc0\x00\x003\x00\x002\x00\x00/\x00\x00\x07\x05\x00\x80\x03\x00\x80\x00\x00\x05\x00\x00\x04\x01\x00\x80\x00\x00\x15\x00\x00\x12\x00\x00\t\x06\x00@\x00\x00\x14\x00\x00\x11\x00\x00\x08\x00\x00\x06\x04\x00\x80\x00\x00\x03\x02\x00\x80\xccA\xc2\xf7\xdez!\x88\xc0@l\xef\x9b\x02\x06\xce/\x00\x81\x18O\xb7&m\x15:;\xd5\x7fY\xa1\x0b'
 2017-06-01T10:07:38+0000 [SSHChannel None (158) on SSHService 'ssh-connection' on HoneyPotSSHTransport,811,91.195.103.188] failed to connect: Connection refused
 2017-06-01T10:07:38+0000 [SSHChannel None (158) on SSHService 'ssh-connection' on HoneyPotSSHTransport,811,91.195.103.188] sending close 158
+2017-06-01T10:08:12+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 91.230.47.67:64398 (10.8.41.81:2222) [session: ed5c28dc]
+2017-06-01T10:08:13+0000 [HoneyPotSSHTransport,1034,91.230.47.67] Remote SSH version: SSH-2.0-libssh-0.6.0
+2017-06-01T10:08:13+0000 [HoneyPotSSHTransport,1034,91.230.47.67] kex alg, key alg: 'ecdh-sha2-nistp256' 'ssh-rsa'
+2017-06-01T10:08:13+0000 [HoneyPotSSHTransport,1034,91.230.47.67] outgoing: 'aes256-ctr' 'hmac-sha1' 'none'
+2017-06-01T10:08:13+0000 [HoneyPotSSHTransport,1034,91.230.47.67] incoming: 'aes256-ctr' 'hmac-sha1' 'none'
+2017-06-01T10:08:14+0000 [HoneyPotSSHTransport,1034,91.230.47.67] NEW KEYS
+2017-06-01T10:08:14+0000 [HoneyPotSSHTransport,1034,91.230.47.67] starting service 'ssh-userauth'
+2017-06-01T10:08:14+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,1034,91.230.47.67] '1111' trying auth 'password'
+2017-06-01T10:08:15+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,1034,91.230.47.67] login attempt: 36
+2017-06-01T10:08:15+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,1034,91.230.47.67] login return, expect: [1111/1111]
+2017-06-01T10:08:16+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,1034,91.230.47.67] login attempt [1111/1111] succeeded
+2017-06-01T10:08:18+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,1034,91.230.47.67] '1111' authenticated with 'password'
+2017-06-01T10:08:18+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,1034,91.230.47.67] starting service 'ssh-connection'
+2017-06-01T10:08:33+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 200.216.31.20:16208 (10.8.41.81:2222) [session: 02b736f2]
+2017-06-01T10:08:34+0000 [HoneyPotSSHTransport,1035,200.216.31.20] Remote SSH version: SSH-2.0-libssh2_1.4.3
+2017-06-01T10:08:34+0000 [HoneyPotSSHTransport,1035,200.216.31.20] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-06-01T10:08:34+0000 [HoneyPotSSHTransport,1035,200.216.31.20] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-01T10:08:34+0000 [HoneyPotSSHTransport,1035,200.216.31.20] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-01T10:08:34+0000 [HoneyPotSSHTransport,1035,200.216.31.20] NEW KEYS
+2017-06-01T10:08:35+0000 [HoneyPotSSHTransport,1035,200.216.31.20] starting service 'ssh-userauth'
+2017-06-01T10:08:35+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,1035,200.216.31.20] 'PlcmSpIp' trying auth 'password'
+2017-06-01T10:08:35+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,1035,200.216.31.20] login attempt: 226
+2017-06-01T10:08:35+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,1035,200.216.31.20] login return, expect: [utorrent utorrent/]
+2017-06-01T10:08:37+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,1035,200.216.31.20] login attempt [PlcmSpIp/PlcmSpIp] failed
+2017-06-01T10:08:38+0000 [-] 'PlcmSpIp' failed auth 'password'
+2017-06-01T10:08:38+0000 [-] unauthorized login: 
+2017-06-01T10:08:38+0000 [HoneyPotSSHTransport,1035,200.216.31.20] Got remote error, code 11
+	reason: Normal Shutdown, Thank you for playing
+2017-06-01T10:08:38+0000 [HoneyPotSSHTransport,1035,200.216.31.20] connection lost
+2017-06-01T10:08:38+0000 [HoneyPotSSHTransport,1035,200.216.31.20] Connection lost after 4 seconds
