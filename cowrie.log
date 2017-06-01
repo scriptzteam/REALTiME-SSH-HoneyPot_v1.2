@@ -7456,3 +7456,27 @@
 2017-06-01T11:52:45+0000 [CowrieTelnetTransport,4317,122.117.85.240] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
 	]
 2017-06-01T11:52:45+0000 [CowrieTelnetTransport,4317,122.117.85.240] Connection lost after 107 seconds
+2017-06-01T11:53:08+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 200.216.31.20:30949 (10.8.41.81:2222) [session: bd11129f]
+2017-06-01T11:53:08+0000 [HoneyPotSSHTransport,1155,200.216.31.20] Remote SSH version: SSH-2.0-libssh2_1.4.3
+2017-06-01T11:53:08+0000 [HoneyPotSSHTransport,1155,200.216.31.20] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-06-01T11:53:08+0000 [HoneyPotSSHTransport,1155,200.216.31.20] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-01T11:53:08+0000 [HoneyPotSSHTransport,1155,200.216.31.20] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-01T11:53:08+0000 [HoneyPotSSHTransport,1155,200.216.31.20] NEW KEYS
+2017-06-01T11:53:09+0000 [HoneyPotSSHTransport,1155,200.216.31.20] starting service 'ssh-userauth'
+2017-06-01T11:53:09+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,1155,200.216.31.20] 'Wrapper2' trying auth 'password'
+2017-06-01T11:53:09+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,1155,200.216.31.20] login attempt: 317
+2017-06-01T11:53:09+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,1155,200.216.31.20] login return, expect: [utorrent utorrent/]
+2017-06-01T11:53:11+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,1155,200.216.31.20] login attempt [Wrapper2/Wrapper2] failed
+2017-06-01T11:53:12+0000 [-] 'Wrapper2' failed auth 'password'
+2017-06-01T11:53:12+0000 [-] unauthorized login: 
+2017-06-01T11:53:12+0000 [HoneyPotSSHTransport,1155,200.216.31.20] Got remote error, code 11
+	reason: Normal Shutdown, Thank you for playing
+2017-06-01T11:53:12+0000 [HoneyPotSSHTransport,1155,200.216.31.20] connection lost
+2017-06-01T11:53:12+0000 [HoneyPotSSHTransport,1155,200.216.31.20] Connection lost after 4 seconds
+2017-06-01T11:53:33+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,1038,91.195.103.184] got channel 'direct-tcpip' request
+2017-06-01T11:53:33+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,1038,91.195.103.184] direct-tcp connection request to 98.138.112.33:25 from localhost:5556
+2017-06-01T11:53:33+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,1080,91.230.47.81] got channel 'direct-tcpip' request
+2017-06-01T11:53:33+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,1080,91.230.47.81] direct-tcp connection request to 107.6.167.194:80 from localhost:5556
+2017-06-01T11:53:33+0000 [SSHChannel None (68) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1080,91.230.47.81] direct-tcp forward to 107.6.167.194:80 with data 'GET /internals/api/ip?1496317965292897512 HTTP/1.1\r\nHost: ip4.adspy.mobi\r\nConnection: keep-alive\r\nUser-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.67 Safari/537.36\r\nAccept-Encoding: gzip, deflate, sdch\r\n\r\n'
+2017-06-01T11:53:33+0000 [SSHChannel None (68) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1080,91.230.47.81] failed to connect: Connection refused
+2017-06-01T11:53:33+0000 [SSHChannel None (68) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1080,91.230.47.81] sending close 68
