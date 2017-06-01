@@ -4318,3 +4318,63 @@
 2017-06-01T07:17:40+0000 [CowrieTelnetTransport,3963,98.195.117.55] Command found: cat /dev/shm/.s
 2017-06-01T07:17:40+0000 [CowrieTelnetTransport,3963,98.195.117.55] CMD: /bin/busybox IOXCG
 2017-06-01T07:17:40+0000 [CowrieTelnetTransport,3963,98.195.117.55] Command found: /bin/busybox IOXCG
+2017-06-01T07:18:03+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,819,91.230.47.81] got channel 'direct-tcpip' request
+2017-06-01T07:18:03+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,819,91.230.47.81] direct-tcp connection request to 136.243.58.37:80 from localhost:5556
+2017-06-01T07:18:03+0000 [SSHChannel None (24) on SSHService 'ssh-connection' on HoneyPotSSHTransport,819,91.230.47.81] direct-tcp forward to 136.243.58.37:80 with data 'GET /internals/api/ip?1496301438290621454 HTTP/1.1\r\nHost: ip2.adspy.mobi\r\nConnection: keep-alive\r\nUser-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.67 Safari/537.36\r\nAccept-Encoding: gzip, deflate, sdch\r\n\r\n'
+2017-06-01T07:18:03+0000 [SSHChannel None (24) on SSHService 'ssh-connection' on HoneyPotSSHTransport,819,91.230.47.81] failed to connect: Connection refused
+2017-06-01T07:18:03+0000 [SSHChannel None (24) on SSHService 'ssh-connection' on HoneyPotSSHTransport,819,91.230.47.81] sending close 24
+2017-06-01T07:18:07+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 103.89.88.117:59415 (10.8.41.81:2222) [session: f8ecb7c9]
+2017-06-01T07:18:08+0000 [HoneyPotSSHTransport,835,103.89.88.117] Remote SSH version: SSH-2.0-Granados-1.0
+2017-06-01T07:18:08+0000 [HoneyPotSSHTransport,835,103.89.88.117] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-dss'
+2017-06-01T07:18:08+0000 [HoneyPotSSHTransport,835,103.89.88.117] outgoing: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-06-01T07:18:08+0000 [HoneyPotSSHTransport,835,103.89.88.117] incoming: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-06-01T07:18:09+0000 [HoneyPotSSHTransport,835,103.89.88.117] NEW KEYS
+2017-06-01T07:18:09+0000 [HoneyPotSSHTransport,835,103.89.88.117] starting service 'ssh-userauth'
+2017-06-01T07:18:09+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,835,103.89.88.117] 'root' trying auth 'password'
+2017-06-01T07:18:09+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,835,103.89.88.117] login attempt: 57
+2017-06-01T07:18:09+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,835,103.89.88.117] login return, expect: [root/admin]
+2017-06-01T07:18:11+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,835,103.89.88.117] login attempt [root/admin] succeeded
+2017-06-01T07:18:13+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,835,103.89.88.117] 'root' authenticated with 'password'
+2017-06-01T07:18:13+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,835,103.89.88.117] starting service 'ssh-connection'
+2017-06-01T07:18:13+0000 [HoneyPotSSHTransport,833,103.243.107.201] connection lost
+2017-06-01T07:18:13+0000 [HoneyPotSSHTransport,833,103.243.107.201] Connection lost after 52 seconds
+2017-06-01T07:18:13+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,835,103.89.88.117] got channel 'direct-tcpip' request
+2017-06-01T07:18:13+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,835,103.89.88.117] direct-tcp connection request to ipinfo.io:80 from localhost:80
+2017-06-01T07:18:14+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,835,103.89.88.117] direct-tcp forward to ipinfo.io:80 with data 'GET /json HTTP/1.1\r\nHost:ipinfo.io\r\n\r\n'
+2017-06-01T07:18:14+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,835,103.89.88.117] failed to connect: Connection refused
+2017-06-01T07:18:14+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,835,103.89.88.117] sending close 0
+2017-06-01T07:18:14+0000 [HoneyPotSSHTransport,835,103.89.88.117] Got remote error, code 0
+	reason: 
+2017-06-01T07:18:14+0000 [HoneyPotSSHTransport,835,103.89.88.117] avatar root logging out
+2017-06-01T07:18:14+0000 [HoneyPotSSHTransport,835,103.89.88.117] connection lost
+2017-06-01T07:18:14+0000 [HoneyPotSSHTransport,835,103.89.88.117] Connection lost after 6 seconds
+2017-06-01T07:18:31+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,809,91.230.47.72] got channel 'direct-tcpip' request
+2017-06-01T07:18:31+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,809,91.230.47.72] direct-tcp connection request to 217.69.139.150:25 from localhost:5556
+2017-06-01T07:18:38+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,811,91.195.103.188] got channel 'direct-tcpip' request
+2017-06-01T07:18:38+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,811,91.195.103.188] direct-tcp connection request to 23.5.96.14:443 from localhost:5556
+2017-06-01T07:18:38+0000 [SSHChannel None (40) on SSHService 'ssh-connection' on HoneyPotSSHTransport,811,91.195.103.188] direct-tcp forward to 23.5.96.14:443 with data '\x80z\x01\x03\x01\x00Q\x00\x00\x00 \x00\x009\x00\x008\x00\x005\x00\x00\x16\x00\x00\x13\x00\x00\n\x07\x00\xc0\x00\x003\x00\x002\x00\x00/\x00\x00\x07\x05\x00\x80\x03\x00\x80\x00\x00\x05\x00\x00\x04\x01\x00\x80\x00\x00\x15\x00\x00\x12\x00\x00\t\x06\x00@\x00\x00\x14\x00\x00\x11\x00\x00\x08\x00\x00\x06\x04\x00\x80\x00\x00\x03\x02\x00\x80\xf2\x0b0\xd2P\xdb\xde^&9D\x94XHL\xa0\xde@\xbc(\x1e\x8c\xa0\xaf#R\xc0\x94Y?\xe2\x81'
+2017-06-01T07:18:38+0000 [SSHChannel None (40) on SSHService 'ssh-connection' on HoneyPotSSHTransport,811,91.195.103.188] failed to connect: Connection refused
+2017-06-01T07:18:38+0000 [SSHChannel None (40) on SSHService 'ssh-connection' on HoneyPotSSHTransport,811,91.195.103.188] sending close 40
+2017-06-01T07:18:43+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,810,91.195.103.183] got channel 'direct-tcpip' request
+2017-06-01T07:18:43+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,810,91.195.103.183] direct-tcp connection request to 64.233.171.27:25 from localhost:5556
+2017-06-01T07:18:49+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 45.32.130.149:41776 (10.8.41.81:2223) [session: TT3964]
+2017-06-01T07:18:49+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 45.32.130.149:59471 (10.8.41.81:2223) [session: TT3965]
+2017-06-01T07:18:50+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 45.32.130.149:40809 (10.8.41.81:2223) [session: TT3966]
+2017-06-01T07:18:53+0000 [CowrieTelnetTransport,3964,45.32.130.149] login attempt: 699
+2017-06-01T07:18:53+0000 [CowrieTelnetTransport,3964,45.32.130.149] login return, expect: [Administrator/]
+2017-06-01T07:18:54+0000 [CowrieTelnetTransport,3964,45.32.130.149] login attempt [root/xmhdipc] failed
+2017-06-01T07:18:54+0000 [CowrieTelnetTransport,3964,45.32.130.149] Warning: state changed and new state returned
+2017-06-01T07:18:55+0000 [CowrieTelnetTransport,3965,45.32.130.149] login attempt: 700
+2017-06-01T07:18:55+0000 [CowrieTelnetTransport,3965,45.32.130.149] login return, expect: [Administrator/]
+2017-06-01T07:18:56+0000 [CowrieTelnetTransport,3965,45.32.130.149] login attempt [support/support] failed
+2017-06-01T07:18:56+0000 [CowrieTelnetTransport,3965,45.32.130.149] Warning: state changed and new state returned
+2017-06-01T07:18:57+0000 [CowrieTelnetTransport,3964,45.32.130.149] login attempt: 701
+2017-06-01T07:18:57+0000 [CowrieTelnetTransport,3964,45.32.130.149] login return, expect: [Administrator/]
+2017-06-01T07:18:59+0000 [CowrieTelnetTransport,3964,45.32.130.149] login attempt [enable/shell] failed
+2017-06-01T07:18:59+0000 [CowrieTelnetTransport,3964,45.32.130.149] Warning: state changed and new state returned
+2017-06-01T07:18:59+0000 [CowrieTelnetTransport,3966,45.32.130.149] login attempt: 702
+2017-06-01T07:18:59+0000 [CowrieTelnetTransport,3966,45.32.130.149] login return, expect: [Administrator/]
+2017-06-01T07:19:00+0000 [CowrieTelnetTransport,3966,45.32.130.149] login attempt [root/Zte521] failed
+2017-06-01T07:19:00+0000 [CowrieTelnetTransport,3966,45.32.130.149] Warning: state changed and new state returned
+2017-06-01T07:19:01+0000 [CowrieTelnetTransport,3964,45.32.130.149] login attempt: 703
+2017-06-01T07:19:01+0000 [CowrieTelnetTransport,3964,45.32.130.149] login return, expect: [Administrator/]
