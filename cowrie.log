@@ -6609,3 +6609,25 @@
 2017-06-01T00:30:52+0000 [HoneyPotSSHTransport,707,221.194.47.233] connection lost
 2017-06-01T00:30:52+0000 [HoneyPotSSHTransport,707,221.194.47.233] Connection lost after 10 seconds
 2017-06-01T00:31:01+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 103.207.36.244:51310 (10.8.41.81:2222) [session: 1f495fea]
+2017-06-01T00:31:01+0000 [HoneyPotSSHTransport,708,103.207.36.244] Remote SSH version: SSH-2.0-Granados-1.0
+2017-06-01T00:31:01+0000 [HoneyPotSSHTransport,708,103.207.36.244] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-dss'
+2017-06-01T00:31:01+0000 [HoneyPotSSHTransport,708,103.207.36.244] outgoing: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-06-01T00:31:01+0000 [HoneyPotSSHTransport,708,103.207.36.244] incoming: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-06-01T00:31:02+0000 [HoneyPotSSHTransport,708,103.207.36.244] NEW KEYS
+2017-06-01T00:31:03+0000 [HoneyPotSSHTransport,708,103.207.36.244] starting service 'ssh-userauth'
+2017-06-01T00:31:03+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,708,103.207.36.244] 'user' trying auth 'password'
+2017-06-01T00:31:03+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,708,103.207.36.244] login attempt: 21
+2017-06-01T00:31:03+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,708,103.207.36.244] login return, expect: [user/1234]
+2017-06-01T00:31:05+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,708,103.207.36.244] login attempt [user/1234] succeeded
+2017-06-01T00:31:06+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,708,103.207.36.244] 'user' authenticated with 'password'
+2017-06-01T00:31:06+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,708,103.207.36.244] starting service 'ssh-connection'
+2017-06-01T00:31:07+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,708,103.207.36.244] got channel 'direct-tcpip' request
+2017-06-01T00:31:07+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,708,103.207.36.244] direct-tcp connection request to 172.217.24.196:80 from localhost:5250
+2017-06-01T00:31:07+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,708,103.207.36.244] direct-tcp forward to 172.217.24.196:80 with data 'GET http://www.google.com/ HTTP/1.1\r\nHost: www.google.com\r\nUser-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:29.0) Gecko/20100101 Firefox/29.0\r\nConnection: Keep-Alive\r\n\r\n'
+2017-06-01T00:31:07+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,708,103.207.36.244] failed to connect: Connection refused
+2017-06-01T00:31:07+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,708,103.207.36.244] sending close 0
+2017-06-01T00:31:08+0000 [HoneyPotSSHTransport,708,103.207.36.244] Got remote error, code 0
+	reason: 
+2017-06-01T00:31:08+0000 [HoneyPotSSHTransport,708,103.207.36.244] avatar user logging out
+2017-06-01T00:31:08+0000 [HoneyPotSSHTransport,708,103.207.36.244] connection lost
+2017-06-01T00:31:08+0000 [HoneyPotSSHTransport,708,103.207.36.244] Connection lost after 6 seconds
