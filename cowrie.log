@@ -2969,3 +2969,51 @@
 2017-06-01T07:00:00+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,824,195.22.127.83] 'root' trying auth 'password'
 2017-06-01T07:00:01+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,824,195.22.127.83] login attempt: 23721
 2017-06-01T07:00:01+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,824,195.22.127.83] login return, expect: [support/support]
+2017-06-01T07:00:02+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,824,195.22.127.83] login attempt [root/seiko2005] failed
+2017-06-01T07:00:02+0000 [CowrieTelnetTransport,3927,45.32.130.149] Closing TTY Log: log/tty/20170601-065756-None-3927i.log after 126 seconds
+2017-06-01T07:00:02+0000 [CowrieTelnetTransport,3927,45.32.130.149] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-06-01T07:00:02+0000 [CowrieTelnetTransport,3927,45.32.130.149] Connection lost after 136 seconds
+2017-06-01T07:00:03+0000 [-] 'root' failed auth 'password'
+2017-06-01T07:00:03+0000 [-] unauthorized login: 
+2017-06-01T07:00:03+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,824,195.22.127.83] 'root' trying auth 'password'
+2017-06-01T07:00:04+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,824,195.22.127.83] login attempt: 23722
+2017-06-01T07:00:04+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,824,195.22.127.83] login return, expect: [support/support]
+2017-06-01T07:00:05+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,824,195.22.127.83] login attempt [root/seiko2005] failed
+2017-06-01T07:00:06+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,811,91.195.103.188] got channel 'direct-tcpip' request
+2017-06-01T07:00:06+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,811,91.195.103.188] direct-tcp connection request to 23.5.96.14:443 from localhost:5556
+2017-06-01T07:00:06+0000 [SSHChannel None (26) on SSHService 'ssh-connection' on HoneyPotSSHTransport,811,91.195.103.188] direct-tcp forward to 23.5.96.14:443 with data '\x80z\x01\x03\x01\x00Q\x00\x00\x00 \x00\x009\x00\x008\x00\x005\x00\x00\x16\x00\x00\x13\x00\x00\n\x07\x00\xc0\x00\x003\x00\x002\x00\x00/\x00\x00\x07\x05\x00\x80\x03\x00\x80\x00\x00\x05\x00\x00\x04\x01\x00\x80\x00\x00\x15\x00\x00\x12\x00\x00\t\x06\x00@\x00\x00\x14\x00\x00\x11\x00\x00\x08\x00\x00\x06\x04\x00\x80\x00\x00\x03\x02\x00\x80\xb9D\x8em.\xdd\xe4\x07\xccEyY\xf5\xd0\xca{\xc0\xed[\xc3\xe0Ck!6\xca\xd3nY\x011\x99'
+2017-06-01T07:00:06+0000 [SSHChannel None (26) on SSHService 'ssh-connection' on HoneyPotSSHTransport,811,91.195.103.188] failed to connect: Connection refused
+2017-06-01T07:00:06+0000 [SSHChannel None (26) on SSHService 'ssh-connection' on HoneyPotSSHTransport,811,91.195.103.188] sending close 26
+2017-06-01T07:00:06+0000 [-] 'root' failed auth 'password'
+2017-06-01T07:00:06+0000 [-] unauthorized login: 
+2017-06-01T07:00:06+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,824,195.22.127.83] 'root' trying auth 'password'
+2017-06-01T07:00:07+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,824,195.22.127.83] login attempt: 23723
+2017-06-01T07:00:07+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,824,195.22.127.83] login return, expect: [support/support]
+2017-06-01T07:00:08+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,824,195.22.127.83] login attempt [root/seiko2005] failed
+2017-06-01T07:00:09+0000 [HoneyPotSSHTransport,824,195.22.127.83] connection lost
+2017-06-01T07:00:09+0000 [HoneyPotSSHTransport,824,195.22.127.83] Connection lost after 60 seconds
+2017-06-01T07:00:09+0000 [-] 'root' failed auth 'password'
+2017-06-01T07:00:09+0000 [-] unauthorized login: 
+2017-06-01T07:00:09+0000 [twisted.internet.defer#critical] Unhandled error in Deferred:
+2017-06-01T07:00:09+0000 [twisted.internet.defer#critical] 
+	Traceback (most recent call last):
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/base.py", line 1252, in mainLoop
+	    self.runUntilCurrent()
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/base.py", line 878, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 459, in callback
+	    self._startRunCallbacks(result)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 567, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/userauth.py", line 251, in _ebBadAuth
+	    NS(b','.join(self.supportedAuthentications)) + b'\x00')
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/transport.py", line 637, in sendPacket
+	    self.transport.write(encPacket)
+	exceptions.AttributeError: 'NoneType' object has no attribute 'write'
+	
+2017-06-01T07:00:44+0000 [CowrieTelnetTransport,3919,45.76.143.151] Connection lost after 300 seconds
+2017-06-01T07:00:47+0000 [CowrieTelnetTransport,3920,45.76.143.151] Connection lost after 300 seconds
