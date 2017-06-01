@@ -1841,3 +1841,42 @@
 2017-06-01T04:15:27+0000 [SSHChannel None (83) on SSHService 'ssh-connection' on HoneyPotSSHTransport,760,91.195.103.213] remote eof
 2017-06-01T04:15:27+0000 [SSHChannel None (83) on SSHService 'ssh-connection' on HoneyPotSSHTransport,760,91.195.103.213] remote close
 2017-06-01T04:15:27+0000 [SSHChannel None (83) on SSHService 'ssh-connection' on HoneyPotSSHTransport,760,91.195.103.213] sending close 83
+2017-06-01T04:16:12+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 92.39.134.118:38693 (10.8.41.81:2223) [session: TT3759]
+2017-06-01T04:16:13+0000 [CowrieTelnetTransport,3759,92.39.134.118] first time for 92.39.134.118, need: 1
+2017-06-01T04:16:13+0000 [CowrieTelnetTransport,3759,92.39.134.118] login attempt: 1
+2017-06-01T04:16:14+0000 [CowrieTelnetTransport,3759,92.39.134.118] login attempt [root/] succeeded
+2017-06-01T04:16:16+0000 [CowrieTelnetTransport,3759,92.39.134.118] Opening TTY Log: log/tty/20170601-041616-None-3759i.log
+2017-06-01T04:16:16+0000 [CowrieTelnetTransport,3759,92.39.134.118] Warning: state changed and new state returned
+2017-06-01T04:16:16+0000 [CowrieTelnetTransport,3759,92.39.134.118] CMD: enable
+2017-06-01T04:16:16+0000 [CowrieTelnetTransport,3759,92.39.134.118] Command found: enable 
+2017-06-01T04:16:16+0000 [CowrieTelnetTransport,3759,92.39.134.118] Reading txtcmd from "txtcmds/bin/enable"
+2017-06-01T04:16:16+0000 [CowrieTelnetTransport,3759,92.39.134.118] CMD: shell
+2017-06-01T04:16:16+0000 [CowrieTelnetTransport,3759,92.39.134.118] Command not found: shell
+2017-06-01T04:16:16+0000 [CowrieTelnetTransport,3759,92.39.134.118] CMD: sh
+2017-06-01T04:16:16+0000 [CowrieTelnetTransport,3759,92.39.134.118] Command found: sh 
+2017-06-01T04:16:16+0000 [CowrieTelnetTransport,3759,92.39.134.118] CMD: cat /proc/mounts; /bin/busybox JRKMA
+2017-06-01T04:16:16+0000 [CowrieTelnetTransport,3759,92.39.134.118] Command found: cat /proc/mounts
+2017-06-01T04:16:16+0000 [CowrieTelnetTransport,3759,92.39.134.118] Command found: /bin/busybox JRKMA
+2017-06-01T04:16:16+0000 [CowrieTelnetTransport,3759,92.39.134.118] CMD: cd /dev/shm; cat .s || cp /bin/echo .s; /bin/busybox JRKMA
+2017-06-01T04:16:16+0000 [CowrieTelnetTransport,3759,92.39.134.118] Command found: cd /dev/shm
+2017-06-01T04:16:16+0000 [CowrieTelnetTransport,3759,92.39.134.118] Command found: cat .s
+2017-06-01T04:16:16+0000 [CowrieTelnetTransport,3759,92.39.134.118] Command found: cp /bin/echo .s
+2017-06-01T04:16:16+0000 [CowrieTelnetTransport,3759,92.39.134.118] Command found: /bin/busybox JRKMA
+2017-06-01T04:16:16+0000 [CowrieTelnetTransport,3759,92.39.134.118] CMD: nc; wget; /bin/busybox JRKMA
+2017-06-01T04:16:16+0000 [CowrieTelnetTransport,3759,92.39.134.118] Command not found: nc
+2017-06-01T04:16:16+0000 [CowrieTelnetTransport,3759,92.39.134.118] Command found: wget 
+2017-06-01T04:16:16+0000 [CowrieTelnetTransport,3759,92.39.134.118] Command found: /bin/busybox JRKMA
+2017-06-01T04:16:16+0000 [CowrieTelnetTransport,3759,92.39.134.118] CMD: dd bs=52 count=1 if=.s || cat .s
+2017-06-01T04:16:17+0000 [CowrieTelnetTransport,3759,92.39.134.118] Command not found: dd bs=52 count=1 if=.s
+2017-06-01T04:16:17+0000 [CowrieTelnetTransport,3759,92.39.134.118] Command found: cat /dev/shm/.s
+2017-06-01T04:16:17+0000 [CowrieTelnetTransport,3759,92.39.134.118] CMD: /bin/busybox JRKMA
+2017-06-01T04:16:17+0000 [CowrieTelnetTransport,3759,92.39.134.118] Command found: /bin/busybox JRKMA
+2017-06-01T04:16:25+0000 [CowrieTelnetTransport,3758,185.188.206.99] Closing TTY Log: log/tty/20170601-041423-None-3758i.log after 121 seconds
+2017-06-01T04:16:25+0000 [CowrieTelnetTransport,3758,185.188.206.99] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-06-01T04:16:25+0000 [CowrieTelnetTransport,3758,185.188.206.99] Connection lost after 128 seconds
+2017-06-01T04:16:49+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,775,91.230.47.82] got channel 'direct-tcpip' request
+2017-06-01T04:16:49+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,775,91.230.47.82] direct-tcp connection request to 185.86.151.225:80 from localhost:5556
+2017-06-01T04:16:49+0000 [SSHChannel None (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,775,91.230.47.82] direct-tcp forward to 185.86.151.225:80 with data 'GET /getip.php HTTP/1.1\r\nUser-Agent: Mozilla/5.0\r\nHost: s1.ipinfo.pw\r\nAccept: */*\r\n\r\n'
+2017-06-01T04:16:49+0000 [SSHChannel None (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,775,91.230.47.82] failed to connect: Connection refused
+2017-06-01T04:16:49+0000 [SSHChannel None (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,775,91.230.47.82] sending close 3
