@@ -5252,3 +5252,74 @@
 2017-06-01T14:56:00+0000 [CowrieTelnetTransport,4520,188.17.9.26] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
 	]
 2017-06-01T14:56:00+0000 [CowrieTelnetTransport,4520,188.17.9.26] Connection lost after 126 seconds
+2017-06-01T14:56:04+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 179.43.134.100:50143 (10.8.41.81:2222) [session: 7582aa0e]
+2017-06-01T14:56:04+0000 [HoneyPotSSHTransport,1247,179.43.134.100] Remote SSH version: SSH-2.0-Erlang/4.2.2
+2017-06-01T14:56:04+0000 [HoneyPotSSHTransport,1247,179.43.134.100] kex alg, key alg: 'ecdh-sha2-nistp256' 'ssh-rsa'
+2017-06-01T14:56:04+0000 [HoneyPotSSHTransport,1247,179.43.134.100] outgoing: 'aes256-ctr' 'hmac-sha1' 'none'
+2017-06-01T14:56:04+0000 [HoneyPotSSHTransport,1247,179.43.134.100] incoming: 'aes256-ctr' 'hmac-sha1' 'none'
+2017-06-01T14:56:05+0000 [HoneyPotSSHTransport,1247,179.43.134.100] NEW KEYS
+2017-06-01T14:56:05+0000 [HoneyPotSSHTransport,1247,179.43.134.100] starting service 'ssh-userauth'
+2017-06-01T14:56:05+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,1247,179.43.134.100] 'admin' trying auth 'none'
+2017-06-01T14:56:06+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,1247,179.43.134.100] 'admin' authenticated with 'none'
+2017-06-01T14:56:06+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,1247,179.43.134.100] starting service 'ssh-connection'
+2017-06-01T14:56:06+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,1247,179.43.134.100] got channel 'direct-tcpip' request
+2017-06-01T14:56:06+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,1247,179.43.134.100] direct-tcp connection request to 213.165.64.8:80 from 127.0.0.1:0
+2017-06-01T14:56:06+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1247,179.43.134.100] direct-tcp forward to 213.165.64.8:80 with data 'GET / HTTP/1.1\r\nHost: mail.com\r\nKeep-Alive: 115\r\nAccept-Charset: utf-8\r\nUser-Agent: Mozilla/5.0 (Windows NT 6.2; rv:37.0) Gecko/20100101 Firefox/37.0\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\r\nConnection: keep-alive\r\nAccept-Encoding: gzip\r\nAccept-Language: en\r\n\r\n'
+2017-06-01T14:56:06+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1247,179.43.134.100] failed to connect: Connection refused
+2017-06-01T14:56:06+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1247,179.43.134.100] sending close 0
+2017-06-01T14:56:06+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1247,179.43.134.100] remote close
+2017-06-01T14:56:06+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,1247,179.43.134.100] got channel 'direct-tcpip' request
+2017-06-01T14:56:06+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,1247,179.43.134.100] direct-tcp connection request to 213.165.64.8:80 from 127.0.0.1:0
+2017-06-01T14:56:07+0000 [SSHChannel None (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1247,179.43.134.100] direct-tcp forward to 213.165.64.8:80 with data 'GET / HTTP/1.1\r\nHost: mail.com\r\nKeep-Alive: 115\r\nAccept-Charset: utf-8\r\nUser-Agent: Mozilla/5.0 (Windows NT 6.2; rv:37.0) Gecko/20100101 Firefox/37.0\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\r\nConnection: keep-alive\r\nAccept-Encoding: gzip\r\nAccept-Language: en\r\n\r\n'
+2017-06-01T14:56:07+0000 [SSHChannel None (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1247,179.43.134.100] failed to connect: Connection refused
+2017-06-01T14:56:07+0000 [SSHChannel None (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1247,179.43.134.100] sending close 1
+2017-06-01T14:56:07+0000 [SSHChannel None (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1247,179.43.134.100] remote close
+2017-06-01T14:56:07+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,1247,179.43.134.100] got channel 'direct-tcpip' request
+2017-06-01T14:56:07+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,1247,179.43.134.100] direct-tcp connection request to 213.165.64.8:80 from 127.0.0.1:0
+2017-06-01T14:56:07+0000 [SSHChannel None (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1247,179.43.134.100] direct-tcp forward to 213.165.64.8:80 with data 'GET / HTTP/1.1\r\nHost: mail.com\r\nKeep-Alive: 115\r\nAccept-Charset: utf-8\r\nUser-Agent: Mozilla/5.0 (Windows NT 6.2; rv:37.0) Gecko/20100101 Firefox/37.0\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\r\nConnection: keep-alive\r\nAccept-Encoding: gzip\r\nAccept-Language: en\r\n\r\n'
+2017-06-01T14:56:07+0000 [SSHChannel None (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1247,179.43.134.100] failed to connect: Connection refused
+2017-06-01T14:56:07+0000 [SSHChannel None (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1247,179.43.134.100] sending close 2
+2017-06-01T14:56:07+0000 [SSHChannel None (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1247,179.43.134.100] remote close
+2017-06-01T14:56:07+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,1247,179.43.134.100] got channel 'direct-tcpip' request
+2017-06-01T14:56:07+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,1247,179.43.134.100] direct-tcp connection request to 213.165.64.8:80 from 127.0.0.1:0
+2017-06-01T14:56:07+0000 [SSHChannel None (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1247,179.43.134.100] direct-tcp forward to 213.165.64.8:80 with data 'GET / HTTP/1.1\r\nHost: mail.com\r\nKeep-Alive: 115\r\nAccept-Charset: utf-8\r\nUser-Agent: Mozilla/5.0 (Windows NT 6.2; rv:37.0) Gecko/20100101 Firefox/37.0\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\r\nConnection: keep-alive\r\nAccept-Encoding: gzip\r\nAccept-Language: en\r\n\r\n'
+2017-06-01T14:56:07+0000 [SSHChannel None (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1247,179.43.134.100] failed to connect: Connection refused
+2017-06-01T14:56:07+0000 [SSHChannel None (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1247,179.43.134.100] sending close 3
+2017-06-01T14:56:07+0000 [SSHChannel None (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1247,179.43.134.100] remote close
+2017-06-01T14:56:07+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,1247,179.43.134.100] got channel 'direct-tcpip' request
+2017-06-01T14:56:07+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,1247,179.43.134.100] direct-tcp connection request to 213.165.64.8:80 from 127.0.0.1:0
+2017-06-01T14:56:07+0000 [SSHChannel None (4) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1247,179.43.134.100] direct-tcp forward to 213.165.64.8:80 with data 'GET / HTTP/1.1\r\nHost: mail.com\r\nKeep-Alive: 115\r\nAccept-Charset: utf-8\r\nUser-Agent: Mozilla/5.0 (Windows NT 6.2; rv:37.0) Gecko/20100101 Firefox/37.0\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\r\nConnection: keep-alive\r\nAccept-Encoding: gzip\r\nAccept-Language: en\r\n\r\n'
+2017-06-01T14:56:07+0000 [SSHChannel None (4) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1247,179.43.134.100] failed to connect: Connection refused
+2017-06-01T14:56:07+0000 [SSHChannel None (4) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1247,179.43.134.100] sending close 4
+2017-06-01T14:56:07+0000 [SSHChannel None (4) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1247,179.43.134.100] remote close
+2017-06-01T14:56:26+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,1239,91.230.47.81] got channel 'direct-tcpip' request
+2017-06-01T14:56:26+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,1239,91.230.47.81] direct-tcp connection request to 107.6.167.194:80 from localhost:5556
+2017-06-01T14:56:27+0000 [SSHChannel None (35) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1239,91.230.47.81] remote eof
+2017-06-01T14:56:27+0000 [SSHChannel None (35) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1239,91.230.47.81] remote close
+2017-06-01T14:56:27+0000 [SSHChannel None (35) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1239,91.230.47.81] sending close 35
+2017-06-01T14:56:40+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,1222,91.195.103.178] got channel 'direct-tcpip' request
+2017-06-01T14:56:40+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,1222,91.195.103.178] direct-tcp connection request to 23.5.96.14:443 from localhost:5556
+2017-06-01T14:56:40+0000 [SSHChannel None (86) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1222,91.195.103.178] direct-tcp forward to 23.5.96.14:443 with data '\x80z\x01\x03\x01\x00Q\x00\x00\x00 \x00\x009\x00\x008\x00\x005\x00\x00\x16\x00\x00\x13\x00\x00\n\x07\x00\xc0\x00\x003\x00\x002\x00\x00/\x00\x00\x07\x05\x00\x80\x03\x00\x80\x00\x00\x05\x00\x00\x04\x01\x00\x80\x00\x00\x15\x00\x00\x12\x00\x00\t\x06\x00@\x00\x00\x14\x00\x00\x11\x00\x00\x08\x00\x00\x06\x04\x00\x80\x00\x00\x03\x02\x00\x80{\xacU\xf5\xeed\x1d\xb4\x92ov/\x04CG\xfb\xe6\x96\x12\xb4\xe8\xda8^$,\xc1rG\x01F\x9c'
+2017-06-01T14:56:40+0000 [SSHChannel None (86) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1222,91.195.103.178] failed to connect: Connection refused
+2017-06-01T14:56:40+0000 [SSHChannel None (86) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1222,91.195.103.178] sending close 86
+2017-06-01T14:56:53+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,1222,91.195.103.178] got channel 'direct-tcpip' request
+2017-06-01T14:56:53+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,1222,91.195.103.178] direct-tcp connection request to 66.196.118.240:25 from localhost:5556
+2017-06-01T14:56:53+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 220.128.142.20:1343 (10.8.41.81:2223) [session: TT4521]
+2017-06-01T14:56:54+0000 [CowrieTelnetTransport,4521,220.128.142.20] first time for 220.128.142.20, need: 1
+2017-06-01T14:56:54+0000 [CowrieTelnetTransport,4521,220.128.142.20] login attempt: 1
+2017-06-01T14:56:56+0000 [CowrieTelnetTransport,4521,220.128.142.20] login attempt [admin/] succeeded
+2017-06-01T14:56:57+0000 [CowrieTelnetTransport,4521,220.128.142.20] Opening TTY Log: log/tty/20170601-145657-None-4521i.log
+2017-06-01T14:56:57+0000 [CowrieTelnetTransport,4521,220.128.142.20] Warning: state changed and new state returned
+2017-06-01T14:56:58+0000 [CowrieTelnetTransport,4521,220.128.142.20] Received unhandled keyID: '\x00'
+2017-06-01T14:56:59+0000 [CowrieTelnetTransport,4521,220.128.142.20] CMD: enable
+2017-06-01T14:56:59+0000 [CowrieTelnetTransport,4521,220.128.142.20] Command found: enable 
+2017-06-01T14:56:59+0000 [CowrieTelnetTransport,4521,220.128.142.20] Reading txtcmd from "txtcmds/bin/enable"
+2017-06-01T14:57:00+0000 [CowrieTelnetTransport,4521,220.128.142.20] Received unhandled keyID: '\x00'
+2017-06-01T14:57:00+0000 [CowrieTelnetTransport,4521,220.128.142.20] CMD: system
+2017-06-01T14:57:00+0000 [CowrieTelnetTransport,4521,220.128.142.20] Command not found: system
+2017-06-01T14:57:00+0000 [CowrieTelnetTransport,4521,220.128.142.20] Received unhandled keyID: '\x00'
+2017-06-01T14:57:00+0000 [CowrieTelnetTransport,4521,220.128.142.20] CMD: shell
+2017-06-01T14:57:00+0000 [CowrieTelnetTransport,4521,220.128.142.20] Command not found: shell
+2017-06-01T14:57:00+0000 [CowrieTelnetTransport,4521,220.128.142.20] Received unhandled keyID: '\x00'
+2017-06-01T14:57:01+0000 [CowrieTelnetTransport,4521,220.128.142.20] CMD: sh
+2017-06-01T14:57:01+0000 [CowrieTelnetTransport,4521,220.128.142.20] Command found: sh 
