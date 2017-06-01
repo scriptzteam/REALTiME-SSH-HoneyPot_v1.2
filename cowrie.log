@@ -5470,3 +5470,38 @@
 2017-06-01T08:54:55+0000 [SSHChannel None (112) on SSHService 'ssh-connection' on HoneyPotSSHTransport,819,91.230.47.81] direct-tcp forward to 93.115.29.122:80 with data 'GET /internals/api/ip?1496307249292245450 HTTP/1.1\r\nHost: ip3.adspy.mobi\r\nConnection: keep-alive\r\nUser-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.67 Safari/537.36\r\nAccept-Encoding: gzip, deflate, sdch\r\n\r\n'
 2017-06-01T08:54:55+0000 [SSHChannel None (112) on SSHService 'ssh-connection' on HoneyPotSSHTransport,819,91.230.47.81] failed to connect: Connection refused
 2017-06-01T08:54:55+0000 [SSHChannel None (112) on SSHService 'ssh-connection' on HoneyPotSSHTransport,819,91.230.47.81] sending close 112
+2017-06-01T08:55:27+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 36.37.220.134:35147 (10.8.41.81:2223) [session: TT4067]
+2017-06-01T08:55:29+0000 [CowrieTelnetTransport,4067,36.37.220.134] login attempt: 2
+2017-06-01T08:55:29+0000 [CowrieTelnetTransport,4067,36.37.220.134] login return, expect: [root/default]
+2017-06-01T08:55:30+0000 [CowrieTelnetTransport,4067,36.37.220.134] login attempt [root/root] failed
+2017-06-01T08:55:30+0000 [CowrieTelnetTransport,4067,36.37.220.134] Warning: state changed and new state returned
+2017-06-01T08:55:33+0000 [CowrieTelnetTransport,4067,36.37.220.134] login attempt: 3
+2017-06-01T08:55:33+0000 [CowrieTelnetTransport,4067,36.37.220.134] login return, expect: [root/default]
+2017-06-01T08:55:34+0000 [CowrieTelnetTransport,4067,36.37.220.134] login attempt [enable\x00/system\x00] failed
+2017-06-01T08:55:34+0000 [CowrieTelnetTransport,4067,36.37.220.134] Warning: state changed and new state returned
+2017-06-01T08:55:34+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,912,91.195.103.183] got channel 'direct-tcpip' request
+2017-06-01T08:55:34+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,912,91.195.103.183] direct-tcp connection request to 66.196.118.37:25 from localhost:5556
+2017-06-01T08:55:35+0000 [SSHChannel None (76) on SSHService 'ssh-connection' on HoneyPotSSHTransport,912,91.195.103.183] remote eof
+2017-06-01T08:55:35+0000 [SSHChannel None (76) on SSHService 'ssh-connection' on HoneyPotSSHTransport,912,91.195.103.183] remote close
+2017-06-01T08:55:35+0000 [SSHChannel None (76) on SSHService 'ssh-connection' on HoneyPotSSHTransport,912,91.195.103.183] sending close 76
+2017-06-01T08:55:36+0000 [CowrieTelnetTransport,4067,36.37.220.134] login attempt: 4
+2017-06-01T08:55:36+0000 [CowrieTelnetTransport,4067,36.37.220.134] login return, expect: [root/default]
+2017-06-01T08:55:38+0000 [CowrieTelnetTransport,4067,36.37.220.134] login attempt [shell\x00/sh\x00] failed
+2017-06-01T08:55:38+0000 [CowrieTelnetTransport,4067,36.37.220.134] Warning: state changed and new state returned
+2017-06-01T08:55:53+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 200.216.31.20:27514 (10.8.41.81:2222) [session: 2f5f78d3]
+2017-06-01T08:55:54+0000 [HoneyPotSSHTransport,951,200.216.31.20] Remote SSH version: SSH-2.0-libssh2_1.4.3
+2017-06-01T08:55:54+0000 [HoneyPotSSHTransport,951,200.216.31.20] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-06-01T08:55:54+0000 [HoneyPotSSHTransport,951,200.216.31.20] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-01T08:55:54+0000 [HoneyPotSSHTransport,951,200.216.31.20] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-01T08:55:54+0000 [HoneyPotSSHTransport,951,200.216.31.20] NEW KEYS
+2017-06-01T08:55:54+0000 [HoneyPotSSHTransport,951,200.216.31.20] starting service 'ssh-userauth'
+2017-06-01T08:55:55+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,951,200.216.31.20] 'git' trying auth 'password'
+2017-06-01T08:55:55+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,951,200.216.31.20] login attempt: 162
+2017-06-01T08:55:55+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,951,200.216.31.20] login return, expect: [utorrent utorrent/]
+2017-06-01T08:55:56+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,951,200.216.31.20] login attempt [git/git] failed
+2017-06-01T08:55:57+0000 [-] 'git' failed auth 'password'
+2017-06-01T08:55:57+0000 [-] unauthorized login: 
+2017-06-01T08:55:58+0000 [HoneyPotSSHTransport,951,200.216.31.20] Got remote error, code 11
+	reason: Normal Shutdown, Thank you for playing
+2017-06-01T08:55:58+0000 [HoneyPotSSHTransport,951,200.216.31.20] connection lost
+2017-06-01T08:55:58+0000 [HoneyPotSSHTransport,951,200.216.31.20] Connection lost after 4 seconds
