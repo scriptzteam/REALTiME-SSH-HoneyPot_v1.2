@@ -5165,3 +5165,34 @@
 2017-06-02T06:45:49+0000 [CowrieTelnetTransport,6583,121.224.218.169] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
 	]
 2017-06-02T06:45:49+0000 [CowrieTelnetTransport,6583,121.224.218.169] Connection lost after 12 seconds
+2017-06-02T06:46:08+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,1548,91.230.47.82] got channel 'direct-tcpip' request
+2017-06-02T06:46:08+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,1548,91.230.47.82] direct-tcp connection request to 185.86.151.225:80 from localhost:5556
+2017-06-02T06:46:08+0000 [SSHChannel None (11) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1548,91.230.47.82] direct-tcp forward to 185.86.151.225:80 with data 'GET /getip.php HTTP/1.1\r\nUser-Agent: Mozilla/5.0\r\nHost: s1.ipinfo.pw\r\nAccept: */*\r\n\r\n'
+2017-06-02T06:46:08+0000 [SSHChannel None (11) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1548,91.230.47.82] failed to connect: Connection refused
+2017-06-02T06:46:08+0000 [SSHChannel None (11) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1548,91.230.47.82] sending close 11
+2017-06-02T06:46:52+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 118.173.232.14:42310 (10.8.41.81:2223) [session: TT6584]
+2017-06-02T06:46:55+0000 [CowrieTelnetTransport,6584,118.173.232.14] first time for 118.173.232.14, need: 1
+2017-06-02T06:46:55+0000 [CowrieTelnetTransport,6584,118.173.232.14] login attempt: 1
+2017-06-02T06:46:57+0000 [CowrieTelnetTransport,6584,118.173.232.14] login attempt [root/system] succeeded
+2017-06-02T06:46:58+0000 [CowrieTelnetTransport,6584,118.173.232.14] Opening TTY Log: log/tty/20170602-064658-None-6584i.log
+2017-06-02T06:46:58+0000 [CowrieTelnetTransport,6584,118.173.232.14] Warning: state changed and new state returned
+2017-06-02T06:46:58+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,1549,91.230.47.81] got channel 'direct-tcpip' request
+2017-06-02T06:46:58+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,1549,91.230.47.81] direct-tcp connection request to 107.6.167.194:80 from localhost:5556
+2017-06-02T06:46:59+0000 [SSHChannel None (136) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1549,91.230.47.81] direct-tcp forward to 107.6.167.194:80 with data 'GET /internals/api/ip?1496385970499421764 HTTP/1.1\r\nHost: ip4.adspy.mobi\r\nConnection: keep-alive\r\nUser-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.67 Safari/537.36\r\nAccept-Encoding: gzip, deflate, sdch\r\n\r\n'
+2017-06-02T06:46:59+0000 [SSHChannel None (136) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1549,91.230.47.81] failed to connect: Connection refused
+2017-06-02T06:46:59+0000 [SSHChannel None (136) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1549,91.230.47.81] sending close 136
+2017-06-02T06:46:59+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 109.236.91.85:9300 (10.8.41.81:2222) [session: 2ce12a9a]
+2017-06-02T06:46:59+0000 [HoneyPotSSHTransport,1580,109.236.91.85] Remote SSH version: SSH-2.0-paramiko_1.16.1
+2017-06-02T06:46:59+0000 [HoneyPotSSHTransport,1580,109.236.91.85] kex alg, key alg: 'diffie-hellman-group-exchange-sha256' 'ssh-rsa'
+2017-06-02T06:46:59+0000 [HoneyPotSSHTransport,1580,109.236.91.85] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-02T06:46:59+0000 [HoneyPotSSHTransport,1580,109.236.91.85] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-02T06:46:59+0000 [CowrieTelnetTransport,6584,118.173.232.14] CMD: enable
+2017-06-02T06:46:59+0000 [CowrieTelnetTransport,6584,118.173.232.14] Command found: enable 
+2017-06-02T06:46:59+0000 [CowrieTelnetTransport,6584,118.173.232.14] Reading txtcmd from "txtcmds/bin/enable"
+2017-06-02T06:46:59+0000 [HoneyPotSSHTransport,1580,109.236.91.85] NEW KEYS
+2017-06-02T06:46:59+0000 [HoneyPotSSHTransport,1580,109.236.91.85] starting service 'ssh-userauth'
+2017-06-02T06:46:59+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,1580,109.236.91.85] 'administrator' trying auth 'none'
+2017-06-02T06:47:01+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,1580,109.236.91.85] 'administrator' authenticated with 'none'
+2017-06-02T06:47:01+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,1580,109.236.91.85] starting service 'ssh-connection'
+2017-06-02T06:47:01+0000 [CowrieTelnetTransport,6584,118.173.232.14] CMD: system
+2017-06-02T06:47:01+0000 [CowrieTelnetTransport,6584,118.173.232.14] Command not found: system
