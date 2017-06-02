@@ -2742,3 +2742,70 @@
 2017-06-02T18:40:59+0000 [CowrieTelnetTransport,7961,192.227.180.173] Warning: state changed and new state returned
 2017-06-02T18:41:00+0000 [CowrieTelnetTransport,7961,192.227.180.173] login attempt: 360
 2017-06-02T18:41:00+0000 [CowrieTelnetTransport,7961,192.227.180.173] login return, expect: [support/support]
+2017-06-02T18:41:01+0000 [CowrieTelnetTransport,7961,192.227.180.173] login attempt [enable/shell] failed
+2017-06-02T18:41:01+0000 [CowrieTelnetTransport,7961,192.227.180.173] Warning: state changed and new state returned
+2017-06-02T18:41:02+0000 [CowrieTelnetTransport,7961,192.227.180.173] login attempt: 361
+2017-06-02T18:41:02+0000 [CowrieTelnetTransport,7961,192.227.180.173] login return, expect: [support/support]
+2017-06-02T18:41:03+0000 [CowrieTelnetTransport,7961,192.227.180.173] login attempt [sh//bin/busybox ECCHI] failed
+2017-06-02T18:41:03+0000 [CowrieTelnetTransport,7961,192.227.180.173] Warning: state changed and new state returned
+2017-06-02T18:41:06+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 146.148.106.75:56644 (10.8.41.81:2222) [session: 906299c3]
+2017-06-02T18:41:06+0000 [HoneyPotSSHTransport,2091,146.148.106.75] Remote SSH version: SSH-2.0-libssh2_1.4.3
+2017-06-02T18:41:06+0000 [HoneyPotSSHTransport,2091,146.148.106.75] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-06-02T18:41:06+0000 [HoneyPotSSHTransport,2091,146.148.106.75] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-02T18:41:06+0000 [HoneyPotSSHTransport,2091,146.148.106.75] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-02T18:41:07+0000 [HoneyPotSSHTransport,2091,146.148.106.75] NEW KEYS
+2017-06-02T18:41:07+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 176.51.68.64:35591 (10.8.41.81:2223) [session: TT7962]
+2017-06-02T18:41:07+0000 [HoneyPotSSHTransport,2091,146.148.106.75] starting service 'ssh-userauth'
+2017-06-02T18:41:07+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,2091,146.148.106.75] 'centos' trying auth 'password'
+2017-06-02T18:41:08+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,2091,146.148.106.75] login attempt: 10
+2017-06-02T18:41:08+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,2091,146.148.106.75] login return, expect: [git/git]
+2017-06-02T18:41:10+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,2091,146.148.106.75] login attempt [centos/centos] failed
+2017-06-02T18:41:10+0000 [CowrieTelnetTransport,7962,176.51.68.64] first time for 176.51.68.64, need: 1
+2017-06-02T18:41:10+0000 [CowrieTelnetTransport,7962,176.51.68.64] login attempt: 1
+2017-06-02T18:41:12+0000 [CowrieTelnetTransport,7962,176.51.68.64] login attempt [root/zlxx.] succeeded
+2017-06-02T18:41:13+0000 [CowrieTelnetTransport,7962,176.51.68.64] Opening TTY Log: log/tty/20170602-184113-None-7962i.log
+2017-06-02T18:41:13+0000 [CowrieTelnetTransport,7962,176.51.68.64] Warning: state changed and new state returned
+2017-06-02T18:41:13+0000 [-] 'centos' failed auth 'password'
+2017-06-02T18:41:13+0000 [-] unauthorized login: 
+2017-06-02T18:41:13+0000 [HoneyPotSSHTransport,2091,146.148.106.75] Got remote error, code 11
+	reason: Normal Shutdown, Thank you for playing
+2017-06-02T18:41:13+0000 [HoneyPotSSHTransport,2091,146.148.106.75] connection lost
+2017-06-02T18:41:13+0000 [HoneyPotSSHTransport,2091,146.148.106.75] Connection lost after 7 seconds
+2017-06-02T18:41:13+0000 [CowrieTelnetTransport,7962,176.51.68.64] CMD: enable
+2017-06-02T18:41:13+0000 [CowrieTelnetTransport,7962,176.51.68.64] Command found: enable 
+2017-06-02T18:41:13+0000 [CowrieTelnetTransport,7962,176.51.68.64] Reading txtcmd from "txtcmds/bin/enable"
+2017-06-02T18:41:14+0000 [CowrieTelnetTransport,7962,176.51.68.64] CMD: system
+2017-06-02T18:41:14+0000 [CowrieTelnetTransport,7962,176.51.68.64] Command not found: system
+2017-06-02T18:41:14+0000 [CowrieTelnetTransport,7962,176.51.68.64] CMD: shell
+2017-06-02T18:41:14+0000 [CowrieTelnetTransport,7962,176.51.68.64] Command not found: shell
+2017-06-02T18:41:14+0000 [CowrieTelnetTransport,7962,176.51.68.64] CMD: sh
+2017-06-02T18:41:14+0000 [CowrieTelnetTransport,7962,176.51.68.64] Command found: sh 
+2017-06-02T18:41:14+0000 [CowrieTelnetTransport,7962,176.51.68.64] CMD:  /bin/busybox wget; /bin/busybox 81c46036wget; /bin/busybox echo -ne '\x0181c46036\x7f'; /bin/busybox printf '\00281c46036\177'; /bin/echo -ne '\x0381c46036\x7f'; /usr/bin/printf '\00481c46036\177'; /bin/busybox tftp; /bin/busybox 81c46036tftp;
+2017-06-02T18:41:14+0000 [CowrieTelnetTransport,7962,176.51.68.64] Command found: /bin/busybox wget
+2017-06-02T18:41:14+0000 [CowrieTelnetTransport,7962,176.51.68.64] Command found: wget
+2017-06-02T18:41:14+0000 [CowrieTelnetTransport,7962,176.51.68.64] Command found: /bin/busybox 81c46036wget
+2017-06-02T18:41:14+0000 [CowrieTelnetTransport,7962,176.51.68.64] Command found: /bin/busybox echo -ne '\x0181c46036\x7f'
+2017-06-02T18:41:14+0000 [CowrieTelnetTransport,7962,176.51.68.64] Command found: echo -ne '\x0181c46036\x7f'
+2017-06-02T18:41:14+0000 [CowrieTelnetTransport,7962,176.51.68.64] Command found: /bin/busybox printf '\00281c46036\177'
+2017-06-02T18:41:14+0000 [CowrieTelnetTransport,7962,176.51.68.64] Command found: /bin/echo -ne '\x0381c46036\x7f'
+2017-06-02T18:41:14+0000 [CowrieTelnetTransport,7962,176.51.68.64] Command not found: /usr/bin/printf '\00481c46036\177'
+2017-06-02T18:41:14+0000 [CowrieTelnetTransport,7962,176.51.68.64] Command found: /bin/busybox tftp
+2017-06-02T18:41:14+0000 [CowrieTelnetTransport,7962,176.51.68.64] Command found: tftp
+2017-06-02T18:41:14+0000 [CowrieTelnetTransport,7962,176.51.68.64] Command found: /bin/busybox 81c46036tftp
+2017-06-02T18:41:14+0000 [CowrieTelnetTransport,7962,176.51.68.64] CMD:  /bin/busybox dd if=/bin/busybox bs=22 count=1 || /bin/busybox cat /bin/busybox
+2017-06-02T18:41:14+0000 [CowrieTelnetTransport,7962,176.51.68.64] Command found: /bin/busybox dd if=/bin/busybox bs=22 count=1
+2017-06-02T18:41:14+0000 [CowrieTelnetTransport,7962,176.51.68.64] Command found: /bin/busybox cat /bin/busybox
+2017-06-02T18:41:14+0000 [CowrieTelnetTransport,7962,176.51.68.64] Command found: cat /bin/busybox
+2017-06-02T18:41:27+0000 [SSHChannel None (5) on SSHService 'ssh-connection' on HoneyPotSSHTransport,2070,91.195.103.202] remote eof
+2017-06-02T18:41:27+0000 [SSHChannel None (5) on SSHService 'ssh-connection' on HoneyPotSSHTransport,2070,91.195.103.202] remote close
+2017-06-02T18:41:27+0000 [SSHChannel None (5) on SSHService 'ssh-connection' on HoneyPotSSHTransport,2070,91.195.103.202] sending close 5
+2017-06-02T18:41:34+0000 [CowrieTelnetTransport,7961,192.227.180.173] Connection lost after 43 seconds
+2017-06-02T18:41:40+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,1984,91.230.47.81] got channel 'direct-tcpip' request
+2017-06-02T18:41:40+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,1984,91.230.47.81] direct-tcp connection request to 93.115.29.122:80 from localhost:5556
+2017-06-02T18:41:40+0000 [SSHChannel None (166) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1984,91.230.47.81] direct-tcp forward to 93.115.29.122:80 with data 'GET /internals/api/ip?1496428854499872448 HTTP/1.1\r\nHost: ip3.adspy.mobi\r\nConnection: keep-alive\r\nUser-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.67 Safari/537.36\r\nAccept-Encoding: gzip, deflate, sdch\r\n\r\n'
+2017-06-02T18:41:40+0000 [SSHChannel None (166) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1984,91.230.47.81] failed to connect: Connection refused
+2017-06-02T18:41:40+0000 [SSHChannel None (166) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1984,91.230.47.81] sending close 166
+2017-06-02T18:41:50+0000 [CowrieTelnetTransport,7949,192.227.180.173] Closing TTY Log: log/tty/20170602-183948-None-7949i.log after 122 seconds
+2017-06-02T18:41:51+0000 [CowrieTelnetTransport,7949,192.227.180.173] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-06-02T18:41:51+0000 [CowrieTelnetTransport,7949,192.227.180.173] Connection lost after 130 seconds
