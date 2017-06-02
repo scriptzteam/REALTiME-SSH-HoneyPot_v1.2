@@ -3301,3 +3301,44 @@
 2017-06-02T01:46:43+0000 [CowrieTelnetTransport,6110,185.165.29.46] Warning: state changed and new state returned
 2017-06-02T01:46:45+0000 [CowrieTelnetTransport,6108,185.165.29.46] Connection lost after 47 seconds
 2017-06-02T01:46:52+0000 [CowrieTelnetTransport,6109,185.165.29.46] Connection lost after 52 seconds
+2017-06-02T01:47:14+0000 [CowrieTelnetTransport,6110,185.165.29.46] Connection lost after 39 seconds
+2017-06-02T01:47:41+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,1493,91.230.47.81] got channel 'direct-tcpip' request
+2017-06-02T01:47:41+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,1493,91.230.47.81] direct-tcp connection request to 136.243.58.37:80 from localhost:5556
+2017-06-02T01:47:42+0000 [SSHChannel None (29) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1493,91.230.47.81] direct-tcp forward to 136.243.58.37:80 with data 'GET /internals/api/ip?1496368015498983012 HTTP/1.1\r\nHost: ip2.adspy.mobi\r\nConnection: keep-alive\r\nUser-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.67 Safari/537.36\r\nAccept-Encoding: gzip, deflate, sdch\r\n\r\n'
+2017-06-02T01:47:42+0000 [SSHChannel None (29) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1493,91.230.47.81] failed to connect: Connection refused
+2017-06-02T01:47:42+0000 [SSHChannel None (29) on SSHService 'ssh-connection' on HoneyPotSSHTransport,1493,91.230.47.81] sending close 29
+2017-06-02T01:47:53+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 176.210.176.249:44524 (10.8.41.81:2223) [session: TT6111]
+2017-06-02T01:47:54+0000 [CowrieTelnetTransport,6111,176.210.176.249] first time for 176.210.176.249, need: 1
+2017-06-02T01:47:54+0000 [CowrieTelnetTransport,6111,176.210.176.249] login attempt: 1
+2017-06-02T01:47:55+0000 [CowrieTelnetTransport,6111,176.210.176.249] login attempt [guest/pass] succeeded
+2017-06-02T01:47:57+0000 [CowrieTelnetTransport,6111,176.210.176.249] Opening TTY Log: log/tty/20170602-014757-None-6111i.log
+2017-06-02T01:47:57+0000 [CowrieTelnetTransport,6111,176.210.176.249] Warning: state changed and new state returned
+2017-06-02T01:47:58+0000 [CowrieTelnetTransport,6111,176.210.176.249] CMD: enable
+2017-06-02T01:47:58+0000 [CowrieTelnetTransport,6111,176.210.176.249] Command found: enable 
+2017-06-02T01:47:58+0000 [CowrieTelnetTransport,6111,176.210.176.249] Reading txtcmd from "txtcmds/bin/enable"
+2017-06-02T01:47:58+0000 [CowrieTelnetTransport,6111,176.210.176.249] CMD: system
+2017-06-02T01:47:58+0000 [CowrieTelnetTransport,6111,176.210.176.249] Command not found: system
+2017-06-02T01:47:58+0000 [CowrieTelnetTransport,6111,176.210.176.249] CMD: shell
+2017-06-02T01:47:58+0000 [CowrieTelnetTransport,6111,176.210.176.249] Command not found: shell
+2017-06-02T01:47:58+0000 [CowrieTelnetTransport,6111,176.210.176.249] CMD: sh
+2017-06-02T01:47:58+0000 [CowrieTelnetTransport,6111,176.210.176.249] Command found: sh 
+2017-06-02T01:47:58+0000 [CowrieTelnetTransport,6111,176.210.176.249] CMD:  /bin/busybox wget; /bin/busybox 81c46036wget; /bin/busybox echo -ne '\x0181c46036\x7f'; /bin/busybox printf '\00281c46036\177'; /bin/echo -ne '\x0381c46036\x7f'; /usr/bin/printf '\00481c46036\177'; /bin/busybox tftp; /bin/busybox 81c46036tftp;
+2017-06-02T01:47:58+0000 [CowrieTelnetTransport,6111,176.210.176.249] Command found: /bin/busybox wget
+2017-06-02T01:47:58+0000 [CowrieTelnetTransport,6111,176.210.176.249] Command found: wget
+2017-06-02T01:47:58+0000 [CowrieTelnetTransport,6111,176.210.176.249] Command found: /bin/busybox 81c46036wget
+2017-06-02T01:47:58+0000 [CowrieTelnetTransport,6111,176.210.176.249] Command found: /bin/busybox echo -ne '\x0181c46036\x7f'
+2017-06-02T01:47:58+0000 [CowrieTelnetTransport,6111,176.210.176.249] Command found: echo -ne '\x0181c46036\x7f'
+2017-06-02T01:47:58+0000 [CowrieTelnetTransport,6111,176.210.176.249] Command found: /bin/busybox printf '\00281c46036\177'
+2017-06-02T01:47:58+0000 [CowrieTelnetTransport,6111,176.210.176.249] Command found: /bin/echo -ne '\x0381c46036\x7f'
+2017-06-02T01:47:58+0000 [CowrieTelnetTransport,6111,176.210.176.249] Command not found: /usr/bin/printf '\00481c46036\177'
+2017-06-02T01:47:58+0000 [CowrieTelnetTransport,6111,176.210.176.249] Command found: /bin/busybox tftp
+2017-06-02T01:47:58+0000 [CowrieTelnetTransport,6111,176.210.176.249] Command found: tftp
+2017-06-02T01:47:58+0000 [CowrieTelnetTransport,6111,176.210.176.249] Command found: /bin/busybox 81c46036tftp
+2017-06-02T01:47:59+0000 [CowrieTelnetTransport,6111,176.210.176.249] CMD:  /bin/busybox dd if=/bin/busybox bs=22 count=1 || /bin/busybox cat /bin/busybox
+2017-06-02T01:47:59+0000 [CowrieTelnetTransport,6111,176.210.176.249] Command found: /bin/busybox dd if=/bin/busybox bs=22 count=1
+2017-06-02T01:47:59+0000 [CowrieTelnetTransport,6111,176.210.176.249] Command found: /bin/busybox cat /bin/busybox
+2017-06-02T01:47:59+0000 [CowrieTelnetTransport,6111,176.210.176.249] Command found: cat /bin/busybox
+2017-06-02T01:48:01+0000 [CowrieTelnetTransport,6105,185.165.29.46] Closing TTY Log: log/tty/20170602-014547-None-6105i.log after 133 seconds
+2017-06-02T01:48:01+0000 [CowrieTelnetTransport,6105,185.165.29.46] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-06-02T01:48:01+0000 [CowrieTelnetTransport,6105,185.165.29.46] Connection lost after 144 seconds
