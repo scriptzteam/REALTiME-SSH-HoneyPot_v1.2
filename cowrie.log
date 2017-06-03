@@ -6950,3 +6950,46 @@
 2017-06-03T08:20:00+0000 [HoneyPotSSHTransport,2676,62.210.169.48] connection lost
 2017-06-03T08:20:00+0000 [HoneyPotSSHTransport,2676,62.210.169.48] Connection lost after 10 seconds
 2017-06-03T08:20:00+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 62.210.169.48:59995 (10.8.41.81:2222) [session: 40b5b171]
+2017-06-03T08:20:03+0000 [HoneyPotSSHTransport,2677,62.210.169.48] Remote SSH version: SSH-2.0-Granados-1.0
+2017-06-03T08:20:03+0000 [HoneyPotSSHTransport,2677,62.210.169.48] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-dss'
+2017-06-03T08:20:03+0000 [HoneyPotSSHTransport,2677,62.210.169.48] outgoing: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-06-03T08:20:03+0000 [HoneyPotSSHTransport,2677,62.210.169.48] incoming: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-06-03T08:20:09+0000 [HoneyPotSSHTransport,2677,62.210.169.48] NEW KEYS
+2017-06-03T08:20:09+0000 [HoneyPotSSHTransport,2677,62.210.169.48] starting service 'ssh-userauth'
+2017-06-03T08:20:09+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,2677,62.210.169.48] 'user' trying auth 'password'
+2017-06-03T08:20:11+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,2677,62.210.169.48] login attempt: 344
+2017-06-03T08:20:11+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,2677,62.210.169.48] login return, expect: [admin/admin]
+2017-06-03T08:20:12+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,2677,62.210.169.48] login attempt [user/user] failed
+2017-06-03T08:20:12+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 91.230.47.70:60906 (10.8.41.81:2222) [session: 50b4c28f]
+2017-06-03T08:20:13+0000 [-] 'user' failed auth 'password'
+2017-06-03T08:20:13+0000 [-] unauthorized login: 
+2017-06-03T08:20:13+0000 [HoneyPotSSHTransport,2678,91.230.47.70] Remote SSH version: SSH-2.0-libssh-0.6.0
+2017-06-03T08:20:13+0000 [HoneyPotSSHTransport,2678,91.230.47.70] kex alg, key alg: 'ecdh-sha2-nistp256' 'ssh-rsa'
+2017-06-03T08:20:13+0000 [HoneyPotSSHTransport,2678,91.230.47.70] outgoing: 'aes256-ctr' 'hmac-sha1' 'none'
+2017-06-03T08:20:13+0000 [HoneyPotSSHTransport,2678,91.230.47.70] incoming: 'aes256-ctr' 'hmac-sha1' 'none'
+2017-06-03T08:20:14+0000 [HoneyPotSSHTransport,2678,91.230.47.70] NEW KEYS
+2017-06-03T08:20:14+0000 [HoneyPotSSHTransport,2678,91.230.47.70] starting service 'ssh-userauth'
+2017-06-03T08:20:14+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,2678,91.230.47.70] '1111' trying auth 'password'
+2017-06-03T08:20:14+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,2678,91.230.47.70] login attempt: 26
+2017-06-03T08:20:14+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,2678,91.230.47.70] login return, expect: [1111/1111]
+2017-06-03T08:20:16+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,2678,91.230.47.70] login attempt [1111/1111] succeeded
+2017-06-03T08:20:17+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,2678,91.230.47.70] '1111' authenticated with 'password'
+2017-06-03T08:20:17+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,2678,91.230.47.70] starting service 'ssh-connection'
+2017-06-03T08:20:17+0000 [HoneyPotSSHTransport,2677,62.210.169.48] connection lost
+2017-06-03T08:20:17+0000 [HoneyPotSSHTransport,2677,62.210.169.48] Connection lost after 16 seconds
+2017-06-03T08:20:17+0000 [CowrieTelnetTransport,10353,176.210.231.109] Closing TTY Log: log/tty/20170603-081804-None-10353i.log after 133 seconds
+2017-06-03T08:20:17+0000 [CowrieTelnetTransport,10353,176.210.231.109] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-06-03T08:20:17+0000 [CowrieTelnetTransport,10353,176.210.231.109] Connection lost after 146 seconds
+2017-06-03T08:20:18+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,2577,91.195.103.188] got channel 'direct-tcpip' request
+2017-06-03T08:20:18+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,2577,91.195.103.188] direct-tcp connection request to 87.240.165.81:443 from localhost:5556
+2017-06-03T08:20:18+0000 [SSHChannel None (134) on SSHService 'ssh-connection' on HoneyPotSSHTransport,2577,91.195.103.188] direct-tcp forward to 87.240.165.81:443 with data "\x16\x03\x01\x01.\x01\x00\x01*\x03\x03@F\x99\x89\xeb\x142\xc0\x08\x83\x01\x9d;\x004g\xee\x98\xa7\xc7\x04\x89\xef\xd8\x81\x91P\xf6\xf2\xdf\xda\xaf\x00\x00\xac\xc00\xc0,\xc0(\xc0$\xc0\x14\xc0\n\x00\xa5\x00\xa3\x00\xa1\x00\x9f\x00k\x00j\x00i\x00h\x009\x008\x007\x006\x00\x88\x00\x87\x00\x86\x00\x85\xc02\xc0.\xc0*\xc0&\xc0\x0f\xc0\x05\x00\x9d\x00=\x005\x00\x84\xc0/\xc0+\xc0'\xc0#\xc0\x13\xc0\t\x00\xa4\x00\xa2\x00\xa0\x00\x9e\x00g\x00@\x00?\x00>\x003\x002\x001\x000\x00\x9a\x00\x99\x00\x98\x00\x97\x00E\x00D\x00C\x00B\xc01\xc0-\xc0)\xc0%\xc0\x0e\xc0\x04\x00\x9c\x00<\x00/\x00\x96\x00A\x00\x07\xc0\x11\xc0\x07\xc0\x0c\xc0\x02\x00\x05\x00\x04\xc0\x12\xc0\x08\x00\x16\x00\x13\x00\x10\x00\r\xc0\r\xc0\x03\x00\n\x00\xff\x01\x00\x00U\x00\x0b\x00\x04\x03\x00\x01\x02\x00\n\x00\x1c\x00\x1a\x00\x17\x00\x19\x00\x1c\x00\x1b\x00\x18\x00\x1a\x00\x16\x00\x0e\x00\r\x00\x0b\x00\x0c\x00\t\x00\n\x00#\x00\x00\x00\r\x00 \x00\x1e\x06\x01\x06\x02\x06\x03\x05\x01\x05\x02\x05\x03\x04\x01\x04\x02\x04\x03\x03\x01\x03\x02\x03\x03\x02\x01\x02\x02\x02\x03\x00\x0f\x00\x01\x01"
+2017-06-03T08:20:18+0000 [SSHChannel None (134) on SSHService 'ssh-connection' on HoneyPotSSHTransport,2577,91.195.103.188] failed to connect: Connection refused
+2017-06-03T08:20:18+0000 [SSHChannel None (134) on SSHService 'ssh-connection' on HoneyPotSSHTransport,2577,91.195.103.188] sending close 134
+2017-06-03T08:20:32+0000 [CowrieTelnetTransport,10358,109.236.83.229] Connection lost after 137 seconds
+2017-06-03T08:20:38+0000 [CowrieTelnetTransport,10359,109.236.83.181] Connection lost after 139 seconds
+2017-06-03T08:20:51+0000 [CowrieTelnetTransport,10361,109.236.83.229] Connection lost after 143 seconds
+2017-06-03T08:20:51+0000 [CowrieTelnetTransport,10360,109.236.83.181] Connection lost after 143 seconds
+2017-06-03T08:20:57+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,2671,91.195.103.212] got channel 'direct-tcpip' request
+2017-06-03T08:20:57+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,2671,91.195.103.212] direct-tcp connection request to 98.138.112.38:25 from localhost:5556
+2017-06-03T08:20:57+0000 [CowrieTelnetTransport,10362,109.236.83.181] Connection lost after 143 seconds
