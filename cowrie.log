@@ -4135,3 +4135,41 @@
 2017-06-03T00:17:57+0000 [SSHChannel None (91) on SSHService 'ssh-connection' on HoneyPotSSHTransport,2378,91.230.47.81] direct-tcp forward to 107.6.186.178:80 with data 'GET /internals/api/ip?1496449029500151183 HTTP/1.1\r\nHost: ip5.adspy.mobi\r\nConnection: keep-alive\r\nUser-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.67 Safari/537.36\r\nAccept-Encoding: gzip, deflate, sdch\r\n\r\n'
 2017-06-03T00:17:57+0000 [SSHChannel None (91) on SSHService 'ssh-connection' on HoneyPotSSHTransport,2378,91.230.47.81] failed to connect: Connection refused
 2017-06-03T00:17:57+0000 [SSHChannel None (91) on SSHService 'ssh-connection' on HoneyPotSSHTransport,2378,91.230.47.81] sending close 91
+2017-06-03T00:18:14+0000 [CowrieTelnetTransport,9049,109.236.83.229] Connection lost after 131 seconds
+2017-06-03T00:18:24+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 201.249.138.89:56834 (10.8.41.81:2223) [session: TT9054]
+2017-06-03T00:18:25+0000 [CowrieTelnetTransport,9054,201.249.138.89] first time for 201.249.138.89, need: 1
+2017-06-03T00:18:25+0000 [CowrieTelnetTransport,9054,201.249.138.89] login attempt: 1
+2017-06-03T00:18:26+0000 [CowrieTelnetTransport,9054,201.249.138.89] login attempt [root/] succeeded
+2017-06-03T00:18:28+0000 [CowrieTelnetTransport,9054,201.249.138.89] Opening TTY Log: log/tty/20170603-001828-None-9054i.log
+2017-06-03T00:18:28+0000 [CowrieTelnetTransport,9054,201.249.138.89] Warning: state changed and new state returned
+2017-06-03T00:18:28+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 58.238.238.238:34375 (10.8.41.81:2222) [session: 0c48e7ff]
+2017-06-03T00:18:30+0000 [HoneyPotSSHTransport,2471,58.238.238.238] Remote SSH version: SSH-2.0-libssh2_1.5.0
+2017-06-03T00:18:30+0000 [HoneyPotSSHTransport,2471,58.238.238.238] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-06-03T00:18:30+0000 [HoneyPotSSHTransport,2471,58.238.238.238] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-03T00:18:30+0000 [HoneyPotSSHTransport,2471,58.238.238.238] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-03T00:18:31+0000 [HoneyPotSSHTransport,2471,58.238.238.238] NEW KEYS
+2017-06-03T00:18:31+0000 [HoneyPotSSHTransport,2471,58.238.238.238] starting service 'ssh-userauth'
+2017-06-03T00:18:31+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,2471,58.238.238.238] 'root' trying auth 'none'
+2017-06-03T00:18:33+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,2471,58.238.238.238] 'root' authenticated with 'none'
+2017-06-03T00:18:33+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,2471,58.238.238.238] starting service 'ssh-connection'
+2017-06-03T00:18:33+0000 [CowrieTelnetTransport,9054,201.249.138.89] Closing TTY Log: log/tty/20170603-001828-None-9054i.log after 4 seconds
+2017-06-03T00:18:33+0000 [CowrieTelnetTransport,9054,201.249.138.89] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-06-03T00:18:33+0000 [CowrieTelnetTransport,9054,201.249.138.89] Connection lost after 8 seconds
+2017-06-03T00:18:33+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,2471,58.238.238.238] got channel 'direct-tcpip' request
+2017-06-03T00:18:33+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,2471,58.238.238.238] direct-tcp connection request to pop.yandex.ru:110 from 192.168.0.1:0
+2017-06-03T00:18:41+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,2471,58.238.238.238] remote eof
+2017-06-03T00:18:41+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,2471,58.238.238.238] remote close
+2017-06-03T00:18:41+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,2471,58.238.238.238] sending close 0
+2017-06-03T00:18:41+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,2471,58.238.238.238] got channel 'direct-tcpip' request
+2017-06-03T00:18:41+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,2471,58.238.238.238] direct-tcp connection request to plus.smtp.mail.yahoo.com:587 from 192.168.0.1:0
+2017-06-03T00:18:48+0000 [SSHChannel None (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,2471,58.238.238.238] remote eof
+2017-06-03T00:18:48+0000 [SSHChannel None (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,2471,58.238.238.238] remote close
+2017-06-03T00:18:48+0000 [SSHChannel None (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,2471,58.238.238.238] sending close 1
+2017-06-03T00:18:48+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,2471,58.238.238.238] got channel 'direct-tcpip' request
+2017-06-03T00:18:48+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,2471,58.238.238.238] direct-tcp connection request to 173.194.64.109:587 from 192.168.0.1:0
+2017-06-03T00:18:55+0000 [SSHChannel None (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,2471,58.238.238.238] remote eof
+2017-06-03T00:18:55+0000 [SSHChannel None (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,2471,58.238.238.238] remote close
+2017-06-03T00:18:55+0000 [SSHChannel None (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,2471,58.238.238.238] sending close 2
+2017-06-03T00:18:55+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,2471,58.238.238.238] got channel 'direct-tcpip' request
+2017-06-03T00:18:55+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,2471,58.238.238.238] direct-tcp connection request to 193.252.22.134:587 from 192.168.0.1:0
