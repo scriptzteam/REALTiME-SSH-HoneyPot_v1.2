@@ -7698,3 +7698,54 @@
 2017-06-04T20:24:56+0000 [CowrieTelnetTransport,14987,123.169.100.198] login return, expect: [root/1234]
 2017-06-04T20:24:58+0000 [CowrieTelnetTransport,14987,123.169.100.198] login attempt [shell\x00/sh\x00] failed
 2017-06-04T20:24:58+0000 [CowrieTelnetTransport,14987,123.169.100.198] Warning: state changed and new state returned
+2017-06-04T20:25:17+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,5360,91.230.47.81] got channel 'direct-tcpip' request
+2017-06-04T20:25:17+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,5360,91.230.47.81] direct-tcp connection request to 136.243.58.37:80 from localhost:5556
+2017-06-04T20:25:19+0000 [SSHChannel None (194) on SSHService 'ssh-connection' on HoneyPotSSHTransport,5360,91.230.47.81] direct-tcp forward to 136.243.58.37:80 with data 'GET /internals/api/ip?1496607870500785053 HTTP/1.1\r\nHost: ip2.adspy.mobi\r\nConnection: keep-alive\r\nUser-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.67 Safari/537.36\r\nAccept-Encoding: gzip, deflate, sdch\r\n\r\n'
+2017-06-04T20:25:19+0000 [SSHChannel None (194) on SSHService 'ssh-connection' on HoneyPotSSHTransport,5360,91.230.47.81] failed to connect: Connection refused
+2017-06-04T20:25:19+0000 [SSHChannel None (194) on SSHService 'ssh-connection' on HoneyPotSSHTransport,5360,91.230.47.81] sending close 194
+2017-06-04T20:25:24+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 120.26.74.241:53762 (10.8.41.81:2222) [session: 730f8742]
+2017-06-04T20:25:25+0000 [HoneyPotSSHTransport,5474,120.26.74.241] Remote SSH version: SSH-2.0-libssh2_1.6.0
+2017-06-04T20:25:25+0000 [HoneyPotSSHTransport,5474,120.26.74.241] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-06-04T20:25:25+0000 [HoneyPotSSHTransport,5474,120.26.74.241] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-04T20:25:25+0000 [HoneyPotSSHTransport,5474,120.26.74.241] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-04T20:25:29+0000 [HoneyPotSSHTransport,5474,120.26.74.241] NEW KEYS
+2017-06-04T20:25:29+0000 [HoneyPotSSHTransport,5474,120.26.74.241] starting service 'ssh-userauth'
+2017-06-04T20:25:29+0000 [HoneyPotSSHTransport,5474,120.26.74.241] connection lost
+2017-06-04T20:25:29+0000 [HoneyPotSSHTransport,5474,120.26.74.241] Connection lost after 5 seconds
+2017-06-04T20:25:31+0000 [CowrieTelnetTransport,14987,123.169.100.198] Connection lost after 50 seconds
+2017-06-04T20:25:40+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 109.236.83.229:59259 (10.8.41.81:2223) [session: TT14988]
+2017-06-04T20:25:41+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 109.236.83.229:59705 (10.8.41.81:2223) [session: TT14989]
+2017-06-04T20:25:45+0000 [CowrieTelnetTransport,14988,109.236.83.229] login attempt: 1994
+2017-06-04T20:25:45+0000 [CowrieTelnetTransport,14988,109.236.83.229] login return, expect: [root/12345]
+2017-06-04T20:25:46+0000 [CowrieTelnetTransport,14988,109.236.83.229] login attempt [root/default] failed
+2017-06-04T20:25:47+0000 [CowrieTelnetTransport,14988,109.236.83.229] Warning: state changed and new state returned
+2017-06-04T20:25:47+0000 [CowrieTelnetTransport,14989,109.236.83.229] login attempt: 1995
+2017-06-04T20:25:47+0000 [CowrieTelnetTransport,14989,109.236.83.229] login return, expect: [root/12345]
+2017-06-04T20:25:49+0000 [CowrieTelnetTransport,14989,109.236.83.229] login attempt [admin/smcadmin] failed
+2017-06-04T20:25:49+0000 [CowrieTelnetTransport,14989,109.236.83.229] Warning: state changed and new state returned
+2017-06-04T20:25:49+0000 [CowrieTelnetTransport,14988,109.236.83.229] login attempt: 1996
+2017-06-04T20:25:49+0000 [CowrieTelnetTransport,14988,109.236.83.229] login return, expect: [root/12345]
+2017-06-04T20:25:50+0000 [CowrieTelnetTransport,14988,109.236.83.229] login attempt [enable/system] failed
+2017-06-04T20:25:51+0000 [CowrieTelnetTransport,14988,109.236.83.229] Warning: state changed and new state returned
+2017-06-04T20:25:51+0000 [CowrieTelnetTransport,14988,109.236.83.229] login attempt: 1997
+2017-06-04T20:25:51+0000 [CowrieTelnetTransport,14988,109.236.83.229] login return, expect: [root/12345]
+2017-06-04T20:25:52+0000 [CowrieTelnetTransport,14988,109.236.83.229] login attempt [shell/sh] failed
+2017-06-04T20:25:52+0000 [CowrieTelnetTransport,14988,109.236.83.229] Warning: state changed and new state returned
+2017-06-04T20:25:52+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 109.236.83.181:54547 (10.8.41.81:2223) [session: TT14990]
+2017-06-04T20:25:53+0000 [CowrieTelnetTransport,14989,109.236.83.229] login attempt: 1998
+2017-06-04T20:25:53+0000 [CowrieTelnetTransport,14989,109.236.83.229] login return, expect: [root/12345]
+2017-06-04T20:25:54+0000 [CowrieTelnetTransport,14989,109.236.83.229] login attempt [enable/system] failed
+2017-06-04T20:25:54+0000 [CowrieTelnetTransport,14989,109.236.83.229] Warning: state changed and new state returned
+2017-06-04T20:25:55+0000 [CowrieTelnetTransport,14989,109.236.83.229] login attempt: 1999
+2017-06-04T20:25:55+0000 [CowrieTelnetTransport,14989,109.236.83.229] login return, expect: [root/12345]
+2017-06-04T20:25:56+0000 [CowrieTelnetTransport,14989,109.236.83.229] login attempt [shell/sh] failed
+2017-06-04T20:25:56+0000 [CowrieTelnetTransport,14989,109.236.83.229] Warning: state changed and new state returned
+2017-06-04T20:25:56+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 109.236.83.229:44446 (10.8.41.81:2223) [session: TT14991]
+2017-06-04T20:25:56+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 109.236.83.229:42766 (10.8.41.81:2223) [session: TT14992]
+2017-06-04T20:25:56+0000 [CowrieTelnetTransport,14991,109.236.83.229] Connection lost after 0 seconds
+2017-06-04T20:25:59+0000 [CowrieTelnetTransport,14990,109.236.83.181] login attempt: 3466
+2017-06-04T20:25:59+0000 [CowrieTelnetTransport,14990,109.236.83.181] login return, expect: [default/]
+2017-06-04T20:26:01+0000 [CowrieTelnetTransport,14990,109.236.83.181] login attempt [support/support] failed
+2017-06-04T20:26:01+0000 [CowrieTelnetTransport,14990,109.236.83.181] Warning: state changed and new state returned
+2017-06-04T20:26:01+0000 [CowrieTelnetTransport,14990,109.236.83.181] login attempt: 3467
+2017-06-04T20:26:01+0000 [CowrieTelnetTransport,14990,109.236.83.181] login return, expect: [default/]
