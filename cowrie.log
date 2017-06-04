@@ -3249,3 +3249,55 @@
 2017-06-04T21:15:35+0000 [HoneyPotSSHTransport,5504,120.26.74.241] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
 2017-06-04T21:15:35+0000 [HoneyPotSSHTransport,5504,120.26.74.241] connection lost
 2017-06-04T21:15:35+0000 [HoneyPotSSHTransport,5504,120.26.74.241] Connection lost after 6 seconds
+2017-06-04T21:16:01+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,5485,91.230.47.82] got channel 'direct-tcpip' request
+2017-06-04T21:16:01+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,5485,91.230.47.82] direct-tcp connection request to 185.86.151.225:80 from localhost:5556
+2017-06-04T21:16:02+0000 [SSHChannel None (4) on SSHService 'ssh-connection' on HoneyPotSSHTransport,5485,91.230.47.82] direct-tcp forward to 185.86.151.225:80 with data 'GET /getip.php HTTP/1.1\r\nUser-Agent: Mozilla/5.0\r\nHost: s1.ipinfo.pw\r\nAccept: */*\r\n\r\n'
+2017-06-04T21:16:02+0000 [SSHChannel None (4) on SSHService 'ssh-connection' on HoneyPotSSHTransport,5485,91.230.47.82] failed to connect: Connection refused
+2017-06-04T21:16:02+0000 [SSHChannel None (4) on SSHService 'ssh-connection' on HoneyPotSSHTransport,5485,91.230.47.82] sending close 4
+2017-06-04T21:16:41+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 200.163.141.243:4926 (10.8.41.81:2223) [session: TT15081]
+2017-06-04T21:16:42+0000 [CowrieTelnetTransport,15081,200.163.141.243] first time for 200.163.141.243, need: 1
+2017-06-04T21:16:42+0000 [CowrieTelnetTransport,15081,200.163.141.243] login attempt: 1
+2017-06-04T21:16:44+0000 [CowrieTelnetTransport,15081,200.163.141.243] login attempt [guest/guest] succeeded
+2017-06-04T21:16:46+0000 [CowrieTelnetTransport,15081,200.163.141.243] Opening TTY Log: log/tty/20170604-211646-None-15081i.log
+2017-06-04T21:16:46+0000 [CowrieTelnetTransport,15081,200.163.141.243] Warning: state changed and new state returned
+2017-06-04T21:16:46+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,5463,134.19.187.75] got channel 'direct-tcpip' request
+2017-06-04T21:16:46+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,5463,134.19.187.75] direct-tcp connection request to 66.196.118.37:25 from localhost:5556
+2017-06-04T21:16:46+0000 [CowrieTelnetTransport,15081,200.163.141.243] CMD: enable
+2017-06-04T21:16:46+0000 [CowrieTelnetTransport,15081,200.163.141.243] Command found: enable 
+2017-06-04T21:16:46+0000 [CowrieTelnetTransport,15081,200.163.141.243] Reading txtcmd from "txtcmds/bin/enable"
+2017-06-04T21:16:47+0000 [CowrieTelnetTransport,15081,200.163.141.243] CMD: system
+2017-06-04T21:16:47+0000 [CowrieTelnetTransport,15081,200.163.141.243] Command not found: system
+2017-06-04T21:16:47+0000 [CowrieTelnetTransport,15081,200.163.141.243] CMD: shell
+2017-06-04T21:16:47+0000 [CowrieTelnetTransport,15081,200.163.141.243] Command not found: shell
+2017-06-04T21:16:47+0000 [CowrieTelnetTransport,15081,200.163.141.243] CMD: sh
+2017-06-04T21:16:47+0000 [CowrieTelnetTransport,15081,200.163.141.243] Command found: sh 
+2017-06-04T21:16:48+0000 [CowrieTelnetTransport,15081,200.163.141.243] CMD:  /bin/busybox wget; /bin/busybox 81c46036wget; /bin/busybox echo -ne '\x0181c46036\x7f'; /bin/busybox printf '\00281c46036\177'; /bin/echo -ne '\x0381c46036\x7f'; /usr/bin/printf '\00481c46036\177'; /bin/busybox tftp; /bin/busybox 81c46036tftp;
+2017-06-04T21:16:48+0000 [CowrieTelnetTransport,15081,200.163.141.243] Command found: /bin/busybox wget
+2017-06-04T21:16:48+0000 [CowrieTelnetTransport,15081,200.163.141.243] Command found: wget
+2017-06-04T21:16:48+0000 [CowrieTelnetTransport,15081,200.163.141.243] Command found: /bin/busybox 81c46036wget
+2017-06-04T21:16:48+0000 [CowrieTelnetTransport,15081,200.163.141.243] Command found: /bin/busybox echo -ne '\x0181c46036\x7f'
+2017-06-04T21:16:48+0000 [CowrieTelnetTransport,15081,200.163.141.243] Command found: echo -ne '\x0181c46036\x7f'
+2017-06-04T21:16:48+0000 [CowrieTelnetTransport,15081,200.163.141.243] Command found: /bin/busybox printf '\00281c46036\177'
+2017-06-04T21:16:48+0000 [CowrieTelnetTransport,15081,200.163.141.243] Command found: /bin/echo -ne '\x0381c46036\x7f'
+2017-06-04T21:16:48+0000 [CowrieTelnetTransport,15081,200.163.141.243] Command not found: /usr/bin/printf '\00481c46036\177'
+2017-06-04T21:16:48+0000 [CowrieTelnetTransport,15081,200.163.141.243] Command found: /bin/busybox tftp
+2017-06-04T21:16:48+0000 [CowrieTelnetTransport,15081,200.163.141.243] Command found: tftp
+2017-06-04T21:16:48+0000 [CowrieTelnetTransport,15081,200.163.141.243] Command found: /bin/busybox 81c46036tftp
+2017-06-04T21:16:48+0000 [CowrieTelnetTransport,15081,200.163.141.243] CMD:  /bin/busybox dd if=/bin/busybox bs=22 count=1 || /bin/busybox cat /bin/busybox
+2017-06-04T21:16:48+0000 [CowrieTelnetTransport,15081,200.163.141.243] Command found: /bin/busybox dd if=/bin/busybox bs=22 count=1
+2017-06-04T21:16:48+0000 [CowrieTelnetTransport,15081,200.163.141.243] Command found: /bin/busybox cat /bin/busybox
+2017-06-04T21:16:48+0000 [CowrieTelnetTransport,15081,200.163.141.243] Command found: cat /bin/busybox
+2017-06-04T21:16:51+0000 [SSHChannel None (44) on SSHService 'ssh-connection' on HoneyPotSSHTransport,5463,134.19.187.75] remote eof
+2017-06-04T21:16:51+0000 [SSHChannel None (44) on SSHService 'ssh-connection' on HoneyPotSSHTransport,5463,134.19.187.75] remote close
+2017-06-04T21:16:51+0000 [SSHChannel None (44) on SSHService 'ssh-connection' on HoneyPotSSHTransport,5463,134.19.187.75] sending close 44
+2017-06-04T21:16:51+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,5463,134.19.187.75] got channel 'direct-tcpip' request
+2017-06-04T21:16:51+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,5463,134.19.187.75] direct-tcp connection request to 66.196.118.37:25 from localhost:5556
+2017-06-04T21:16:53+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 112.205.91.140:36353 (10.8.41.81:2223) [session: TT15082]
+2017-06-04T21:16:56+0000 [CowrieTelnetTransport,15082,112.205.91.140] login attempt: 2
+2017-06-04T21:16:56+0000 [CowrieTelnetTransport,15082,112.205.91.140] login return, expect: [root/000]
+2017-06-04T21:16:58+0000 [CowrieTelnetTransport,15082,112.205.91.140] login attempt [admin/admin] failed
+2017-06-04T21:16:58+0000 [CowrieTelnetTransport,15082,112.205.91.140] Warning: state changed and new state returned
+2017-06-04T21:16:58+0000 [SSHChannel None (45) on SSHService 'ssh-connection' on HoneyPotSSHTransport,5463,134.19.187.75] remote eof
+2017-06-04T21:16:58+0000 [SSHChannel None (45) on SSHService 'ssh-connection' on HoneyPotSSHTransport,5463,134.19.187.75] remote close
+2017-06-04T21:16:58+0000 [SSHChannel None (45) on SSHService 'ssh-connection' on HoneyPotSSHTransport,5463,134.19.187.75] sending close 45
+2017-06-04T21:16:58+0000 [CowrieTelnetTransport,15082,112.205.91.140] Connection lost after 4 seconds
