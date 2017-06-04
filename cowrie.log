@@ -1305,3 +1305,54 @@
 2017-06-04T05:18:00+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,4008,181.39.89.146] 'tomcat' trying auth 'password'
 2017-06-04T05:18:00+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,4008,181.39.89.146] login attempt: 27
 2017-06-04T05:18:00+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,4008,181.39.89.146] login return, expect: [hadoop/hadoop]
+2017-06-04T05:18:02+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,4008,181.39.89.146] login attempt [tomcat/tomcat] failed
+2017-06-04T05:18:03+0000 [-] 'tomcat' failed auth 'password'
+2017-06-04T05:18:03+0000 [-] unauthorized login: 
+2017-06-04T05:18:03+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,4008,181.39.89.146] 'tomcat' trying auth 'password'
+2017-06-04T05:18:04+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,4008,181.39.89.146] login attempt: 28
+2017-06-04T05:18:04+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,4008,181.39.89.146] login return, expect: [hadoop/hadoop]
+2017-06-04T05:18:05+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,4008,181.39.89.146] login attempt [tomcat/123456] failed
+2017-06-04T05:18:05+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,3851,91.230.47.82] got channel 'direct-tcpip' request
+2017-06-04T05:18:05+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,3851,91.230.47.82] direct-tcp connection request to 185.86.151.225:80 from localhost:5556
+2017-06-04T05:18:06+0000 [HoneyPotSSHTransport,4008,181.39.89.146] connection lost
+2017-06-04T05:18:06+0000 [HoneyPotSSHTransport,4008,181.39.89.146] Connection lost after 7 seconds
+2017-06-04T05:18:06+0000 [-] 'tomcat' failed auth 'password'
+2017-06-04T05:18:06+0000 [-] unauthorized login: 
+2017-06-04T05:18:07+0000 [twisted.internet.defer#critical] Unhandled error in Deferred:
+2017-06-04T05:18:07+0000 [twisted.internet.defer#critical] 
+	Traceback (most recent call last):
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/base.py", line 1252, in mainLoop
+	    self.runUntilCurrent()
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/base.py", line 878, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 459, in callback
+	    self._startRunCallbacks(result)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 567, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/userauth.py", line 251, in _ebBadAuth
+	    NS(b','.join(self.supportedAuthentications)) + b'\x00')
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/transport.py", line 637, in sendPacket
+	    self.transport.write(encPacket)
+	exceptions.AttributeError: 'NoneType' object has no attribute 'write'
+	
+2017-06-04T05:18:07+0000 [SSHChannel None (24) on SSHService 'ssh-connection' on HoneyPotSSHTransport,3851,91.230.47.82] direct-tcp forward to 185.86.151.225:80 with data 'GET /getip.php HTTP/1.1\r\nUser-Agent: Mozilla/5.0\r\nHost: s1.ipinfo.pw\r\nAccept: */*\r\n\r\n'
+2017-06-04T05:18:07+0000 [SSHChannel None (24) on SSHService 'ssh-connection' on HoneyPotSSHTransport,3851,91.230.47.82] failed to connect: Connection refused
+2017-06-04T05:18:07+0000 [SSHChannel None (24) on SSHService 'ssh-connection' on HoneyPotSSHTransport,3851,91.230.47.82] sending close 24
+2017-06-04T05:18:12+0000 [HoneyPotSSHTransport,4006,113.195.145.52] connection lost
+2017-06-04T05:18:12+0000 [HoneyPotSSHTransport,4006,113.195.145.52] Connection lost after 80 seconds
+2017-06-04T05:18:14+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,3813,91.195.103.214] got channel 'direct-tcpip' request
+2017-06-04T05:18:14+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,3813,91.195.103.214] direct-tcp connection request to 66.196.118.35:25 from localhost:5556
+2017-06-04T05:18:19+0000 [SSHChannel None (80) on SSHService 'ssh-connection' on HoneyPotSSHTransport,3813,91.195.103.214] remote eof
+2017-06-04T05:18:19+0000 [SSHChannel None (80) on SSHService 'ssh-connection' on HoneyPotSSHTransport,3813,91.195.103.214] remote close
+2017-06-04T05:18:19+0000 [SSHChannel None (80) on SSHService 'ssh-connection' on HoneyPotSSHTransport,3813,91.195.103.214] sending close 80
+2017-06-04T05:18:19+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,3813,91.195.103.214] got channel 'direct-tcpip' request
+2017-06-04T05:18:19+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,3813,91.195.103.214] direct-tcp connection request to 66.196.118.35:25 from localhost:5556
+2017-06-04T05:18:24+0000 [SSHChannel None (81) on SSHService 'ssh-connection' on HoneyPotSSHTransport,3813,91.195.103.214] remote eof
+2017-06-04T05:18:24+0000 [SSHChannel None (81) on SSHService 'ssh-connection' on HoneyPotSSHTransport,3813,91.195.103.214] remote close
+2017-06-04T05:18:24+0000 [SSHChannel None (81) on SSHService 'ssh-connection' on HoneyPotSSHTransport,3813,91.195.103.214] sending close 81
+2017-06-04T05:18:35+0000 [SSHChannel None (88) on SSHService 'ssh-connection' on HoneyPotSSHTransport,3820,91.230.47.73] remote eof
+2017-06-04T05:18:35+0000 [SSHChannel None (88) on SSHService 'ssh-connection' on HoneyPotSSHTransport,3820,91.230.47.73] remote close
+2017-06-04T05:18:35+0000 [SSHChannel None (88) on SSHService 'ssh-connection' on HoneyPotSSHTransport,3820,91.230.47.73] sending close 88
