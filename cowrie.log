@@ -4517,3 +4517,595 @@
 2017-06-04T11:00:42+0000 [HoneyPotSSHTransport,4849,116.31.116.17] avatar root logging out
 2017-06-04T11:00:42+0000 [HoneyPotSSHTransport,4849,116.31.116.17] connection lost
 2017-06-04T11:00:42+0000 [HoneyPotSSHTransport,4849,116.31.116.17] Connection lost after 5 seconds
+2017-06-04T11:01:06+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 45.116.233.39:47293 (10.8.41.81:2222) [session: 4a15ff7a]
+2017-06-04T11:01:06+0000 [HoneyPotSSHTransport,4850,45.116.233.39] Remote SSH version: SSH-2.0-1.91 sshlib: Bitvise SSH Client (Tunnelier) 4.62
+2017-06-04T11:01:06+0000 [HoneyPotSSHTransport,4850,45.116.233.39] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-06-04T11:01:06+0000 [HoneyPotSSHTransport,4850,45.116.233.39] outgoing: 'aes256-ctr' 'hmac-sha1' 'none'
+2017-06-04T11:01:06+0000 [HoneyPotSSHTransport,4850,45.116.233.39] incoming: 'aes256-ctr' 'hmac-sha1' 'none'
+2017-06-04T11:01:08+0000 [HoneyPotSSHTransport,4850,45.116.233.39] NEW KEYS
+2017-06-04T11:01:08+0000 [HoneyPotSSHTransport,4850,45.116.233.39] starting service 'ssh-userauth'
+2017-06-04T11:01:08+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,4850,45.116.233.39] 'root' trying auth 'password'
+2017-06-04T11:01:08+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,4850,45.116.233.39] first time for 45.116.233.39, need: 1
+2017-06-04T11:01:08+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,4850,45.116.233.39] login attempt: 1
+2017-06-04T11:01:10+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,4850,45.116.233.39] login attempt [root/admin] succeeded
+2017-06-04T11:01:11+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,4850,45.116.233.39] 'root' authenticated with 'password'
+2017-06-04T11:01:11+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,4850,45.116.233.39] starting service 'ssh-connection'
+2017-06-04T11:01:12+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] got channel 'session' request
+2017-06-04T11:01:12+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] channel open
+2017-06-04T11:01:12+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] got channel 'session' request
+2017-06-04T11:01:12+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] channel open
+2017-06-04T11:01:12+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] asking for subsystem "sftp"
+2017-06-04T11:01:12+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] {'sftp': <class twisted.conch.ssh.filetransfer.FileTransferServer at 0x7f0fe2dc4ef0>}
+2017-06-04T11:01:12+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] pty request: 'xterm' (25, 80, 0, 0)
+2017-06-04T11:01:12+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] Terminal Size: 25 80
+2017-06-04T11:01:12+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] getting shell
+2017-06-04T11:01:12+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] Opening TTY Log: log/tty/20170604-110112-4a15ff7a-1i.log
+2017-06-04T11:01:13+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] SFTP OpenDirectory: /root
+2017-06-04T11:01:15+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] remote close
+2017-06-04T11:01:15+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] sending close 0
+2017-06-04T11:01:16+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] remote close
+2017-06-04T11:01:16+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] Closing TTY Log: log/tty/20170604-110112-4a15ff7a-1i.log after 3 seconds
+2017-06-04T11:01:16+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-06-04T11:01:16+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] sending close 1
+2017-06-04T11:01:17+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 116.31.116.17:61403 (10.8.41.81:2222) [session: d3660993]
+2017-06-04T11:01:17+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 116.31.116.17:64221 (10.8.41.81:2222) [session: 2f3661c9]
+2017-06-04T11:01:17+0000 [HoneyPotSSHTransport,4851,116.31.116.17] Remote SSH version: SSH-2.0-PUTTY
+2017-06-04T11:01:17+0000 [HoneyPotSSHTransport,4851,116.31.116.17] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-06-04T11:01:17+0000 [HoneyPotSSHTransport,4851,116.31.116.17] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-04T11:01:17+0000 [HoneyPotSSHTransport,4851,116.31.116.17] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-04T11:01:18+0000 [HoneyPotSSHTransport,4852,116.31.116.17] Remote SSH version: SSH-2.0-PUTTY
+2017-06-04T11:01:18+0000 [HoneyPotSSHTransport,4852,116.31.116.17] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-06-04T11:01:18+0000 [HoneyPotSSHTransport,4852,116.31.116.17] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-04T11:01:18+0000 [HoneyPotSSHTransport,4852,116.31.116.17] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-04T11:01:18+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] got channel 'direct-tcpip' request
+2017-06-04T11:01:18+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp connection request to 104.25.39.26:80 from 127.0.0.1:50883
+2017-06-04T11:01:18+0000 [SSHChannel None (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp forward to 104.25.39.26:80 with data 'GET / HTTP/1.1\r\nHost: whoer.net\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; rv:53.0) Gecko/20100101 Firefox/53.0\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate\r\nConnection: keep-alive\r\nUpgrade-Insecure-Requests: 1\r\n\r\n'
+2017-06-04T11:01:18+0000 [SSHChannel None (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] failed to connect: Connection refused
+2017-06-04T11:01:18+0000 [SSHChannel None (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] sending close 2
+2017-06-04T11:01:18+0000 [HoneyPotSSHTransport,4851,116.31.116.17] NEW KEYS
+2017-06-04T11:01:19+0000 [SSHChannel None (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] remote close
+2017-06-04T11:01:19+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] got channel 'direct-tcpip' request
+2017-06-04T11:01:19+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp connection request to 104.25.39.26:80 from 127.0.0.1:50886
+2017-06-04T11:01:19+0000 [SSHChannel None (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp forward to 104.25.39.26:80 with data 'GET / HTTP/1.1\r\nHost: whoer.net\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; rv:53.0) Gecko/20100101 Firefox/53.0\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate\r\nConnection: keep-alive\r\nUpgrade-Insecure-Requests: 1\r\n\r\n'
+2017-06-04T11:01:19+0000 [SSHChannel None (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] failed to connect: Connection refused
+2017-06-04T11:01:19+0000 [SSHChannel None (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] sending close 3
+2017-06-04T11:01:19+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] got channel 'direct-tcpip' request
+2017-06-04T11:01:19+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp connection request to 54.186.39.123:443 from 127.0.0.1:50889
+2017-06-04T11:01:19+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] got channel 'direct-tcpip' request
+2017-06-04T11:01:19+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp connection request to 54.186.39.123:443 from 127.0.0.1:50892
+2017-06-04T11:01:19+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] got channel 'direct-tcpip' request
+2017-06-04T11:01:19+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp connection request to 54.186.39.123:443 from 127.0.0.1:50895
+2017-06-04T11:01:19+0000 [HoneyPotSSHTransport,4852,116.31.116.17] NEW KEYS
+2017-06-04T11:01:19+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] got channel 'direct-tcpip' request
+2017-06-04T11:01:19+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp connection request to 54.186.39.123:443 from 127.0.0.1:50898
+2017-06-04T11:01:19+0000 [SSHChannel None (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] remote close
+2017-06-04T11:01:19+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] got channel 'direct-tcpip' request
+2017-06-04T11:01:19+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp connection request to 104.25.39.26:80 from 127.0.0.1:50901
+2017-06-04T11:01:19+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] got channel 'direct-tcpip' request
+2017-06-04T11:01:19+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp connection request to 54.186.39.123:443 from 127.0.0.1:50904
+2017-06-04T11:01:19+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] got channel 'direct-tcpip' request
+2017-06-04T11:01:19+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp connection request to 54.186.39.123:443 from 127.0.0.1:50907
+2017-06-04T11:01:19+0000 [HoneyPotSSHTransport,4852,116.31.116.17] starting service 'ssh-userauth'
+2017-06-04T11:01:19+0000 [SSHChannel None (4) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp forward to 54.186.39.123:443 with data "\x16\x03\x01\x00\xca\x01\x00\x00\xc6\x03\x03\x90T\xbfIc\xbbU\xd4n\xde\xaa\xb72:y \xbd\xa2\x14\xe3v\xbb5*\x9d\x83\xde'F\xe4\xeeX\x00\x00\x1e\xc0+\xc0/\xcc\xa9\xcc\xa8\xc0,\xc00\xc0\n\xc0\t\xc0\x13\xc0\x14\x003\x009\x00/\x005\x00\n\x01\x00\x00\x7f\x00\x00\x00#\x00!\x00\x00\x1eincoming.telemetry.mozilla.org\x00\x17\x00\x00\xff\x01\x00\x01\x00\x00\n\x00\n\x00\x08\x00\x1d\x00\x17\x00\x18\x00\x19\x00\x0b\x00\x02\x01\x00\x00#\x00\x00\x00\x10\x00\x0e\x00\x0c\x02h2\x08http/1.1\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00\r\x00\x18\x00\x16\x04\x03\x05\x03\x06\x03\x08\x04\x08\x05\x08\x06\x04\x01\x05\x01\x06\x01\x02\x03\x02\x01"
+2017-06-04T11:01:19+0000 [SSHChannel None (4) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] failed to connect: Connection refused
+2017-06-04T11:01:19+0000 [SSHChannel None (4) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] sending close 4
+2017-06-04T11:01:19+0000 [SSHChannel None (5) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp forward to 54.186.39.123:443 with data '\x16\x03\x01\x00\xca\x01\x00\x00\xc6\x03\x03c\x97\xf0\x9d1\xb6\xdf\xa8\xe8>\xb6V\xcf\xc0y\xb490\x084\x8e\x12\xc5\xc2\x14E\x87\xfe\x87\xc1\xea\x82\x00\x00\x1e\xc0+\xc0/\xcc\xa9\xcc\xa8\xc0,\xc00\xc0\n\xc0\t\xc0\x13\xc0\x14\x003\x009\x00/\x005\x00\n\x01\x00\x00\x7f\x00\x00\x00#\x00!\x00\x00\x1eincoming.telemetry.mozilla.org\x00\x17\x00\x00\xff\x01\x00\x01\x00\x00\n\x00\n\x00\x08\x00\x1d\x00\x17\x00\x18\x00\x19\x00\x0b\x00\x02\x01\x00\x00#\x00\x00\x00\x10\x00\x0e\x00\x0c\x02h2\x08http/1.1\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00\r\x00\x18\x00\x16\x04\x03\x05\x03\x06\x03\x08\x04\x08\x05\x08\x06\x04\x01\x05\x01\x06\x01\x02\x03\x02\x01'
+2017-06-04T11:01:19+0000 [SSHChannel None (5) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] failed to connect: Connection refused
+2017-06-04T11:01:19+0000 [SSHChannel None (5) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] sending close 5
+2017-06-04T11:01:19+0000 [SSHChannel None (6) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp forward to 54.186.39.123:443 with data '\x16\x03\x01\x00\xca\x01\x00\x00\xc6\x03\x03\x00M\xb7\xb1$\xe6\xb6\xc9\xde\xaf\x1fwy\xde\x9c\xe8\xbd\x95\x0e?`\x8f\x96\x98\x80\x8e4L\x9egC.\x00\x00\x1e\xc0+\xc0/\xcc\xa9\xcc\xa8\xc0,\xc00\xc0\n\xc0\t\xc0\x13\xc0\x14\x003\x009\x00/\x005\x00\n\x01\x00\x00\x7f\x00\x00\x00#\x00!\x00\x00\x1eincoming.telemetry.mozilla.org\x00\x17\x00\x00\xff\x01\x00\x01\x00\x00\n\x00\n\x00\x08\x00\x1d\x00\x17\x00\x18\x00\x19\x00\x0b\x00\x02\x01\x00\x00#\x00\x00\x00\x10\x00\x0e\x00\x0c\x02h2\x08http/1.1\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00\r\x00\x18\x00\x16\x04\x03\x05\x03\x06\x03\x08\x04\x08\x05\x08\x06\x04\x01\x05\x01\x06\x01\x02\x03\x02\x01'
+2017-06-04T11:01:19+0000 [SSHChannel None (6) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] failed to connect: Connection refused
+2017-06-04T11:01:19+0000 [SSHChannel None (6) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] sending close 6
+2017-06-04T11:01:19+0000 [SSHChannel None (7) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp forward to 54.186.39.123:443 with data '\x16\x03\x01\x00\xca\x01\x00\x00\xc6\x03\x03)\xd3\xe1\xaal\\\x96\xf5\xe1\x12S\xd7\xce%jR\xd1\xa9\xa4`\xb4\xa5#\xa8\x8c#\xfa\x88><\xddJ\x00\x00\x1e\xc0+\xc0/\xcc\xa9\xcc\xa8\xc0,\xc00\xc0\n\xc0\t\xc0\x13\xc0\x14\x003\x009\x00/\x005\x00\n\x01\x00\x00\x7f\x00\x00\x00#\x00!\x00\x00\x1eincoming.telemetry.mozilla.org\x00\x17\x00\x00\xff\x01\x00\x01\x00\x00\n\x00\n\x00\x08\x00\x1d\x00\x17\x00\x18\x00\x19\x00\x0b\x00\x02\x01\x00\x00#\x00\x00\x00\x10\x00\x0e\x00\x0c\x02h2\x08http/1.1\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00\r\x00\x18\x00\x16\x04\x03\x05\x03\x06\x03\x08\x04\x08\x05\x08\x06\x04\x01\x05\x01\x06\x01\x02\x03\x02\x01'
+2017-06-04T11:01:19+0000 [SSHChannel None (7) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] failed to connect: Connection refused
+2017-06-04T11:01:19+0000 [SSHChannel None (7) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] sending close 7
+2017-06-04T11:01:19+0000 [SSHChannel None (8) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp forward to 104.25.39.26:80 with data 'GET / HTTP/1.1\r\nHost: whoer.net\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; rv:53.0) Gecko/20100101 Firefox/53.0\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate\r\nConnection: keep-alive\r\nUpgrade-Insecure-Requests: 1\r\n\r\n'
+2017-06-04T11:01:19+0000 [SSHChannel None (8) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] failed to connect: Connection refused
+2017-06-04T11:01:19+0000 [SSHChannel None (8) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] sending close 8
+2017-06-04T11:01:19+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] got channel 'direct-tcpip' request
+2017-06-04T11:01:19+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp connection request to 104.25.39.26:80 from 127.0.0.1:50910
+2017-06-04T11:01:20+0000 [SSHChannel None (9) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp forward to 54.186.39.123:443 with data '\x16\x03\x01\x00\xca\x01\x00\x00\xc6\x03\x03iCjr\xdf^8\x80\xb2\xce9\x9cp\x85\xb3\x9c"/H\xe0\x8ea\xf8\x17GN\xbcV\xb2J\r\x05\x00\x00\x1e\xc0+\xc0/\xcc\xa9\xcc\xa8\xc0,\xc00\xc0\n\xc0\t\xc0\x13\xc0\x14\x003\x009\x00/\x005\x00\n\x01\x00\x00\x7f\x00\x00\x00#\x00!\x00\x00\x1eincoming.telemetry.mozilla.org\x00\x17\x00\x00\xff\x01\x00\x01\x00\x00\n\x00\n\x00\x08\x00\x1d\x00\x17\x00\x18\x00\x19\x00\x0b\x00\x02\x01\x00\x00#\x00\x00\x00\x10\x00\x0e\x00\x0c\x02h2\x08http/1.1\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00\r\x00\x18\x00\x16\x04\x03\x05\x03\x06\x03\x08\x04\x08\x05\x08\x06\x04\x01\x05\x01\x06\x01\x02\x03\x02\x01'
+2017-06-04T11:01:20+0000 [SSHChannel None (9) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] failed to connect: Connection refused
+2017-06-04T11:01:20+0000 [SSHChannel None (9) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] sending close 9
+2017-06-04T11:01:20+0000 [SSHChannel None (10) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp forward to 54.186.39.123:443 with data '\x16\x03\x01\x00\xca\x01\x00\x00\xc6\x03\x037\xfd\x93\x8d\x80\x81\x01\xd7\xaa\xc2\xed\x018\x10\xa03~\xcb\xf9\xca\x9d\xa4\x1a\xcaN\xd6\xe4d\xe8\x15(\x83\x00\x00\x1e\xc0+\xc0/\xcc\xa9\xcc\xa8\xc0,\xc00\xc0\n\xc0\t\xc0\x13\xc0\x14\x003\x009\x00/\x005\x00\n\x01\x00\x00\x7f\x00\x00\x00#\x00!\x00\x00\x1eincoming.telemetry.mozilla.org\x00\x17\x00\x00\xff\x01\x00\x01\x00\x00\n\x00\n\x00\x08\x00\x1d\x00\x17\x00\x18\x00\x19\x00\x0b\x00\x02\x01\x00\x00#\x00\x00\x00\x10\x00\x0e\x00\x0c\x02h2\x08http/1.1\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00\r\x00\x18\x00\x16\x04\x03\x05\x03\x06\x03\x08\x04\x08\x05\x08\x06\x04\x01\x05\x01\x06\x01\x02\x03\x02\x01'
+2017-06-04T11:01:20+0000 [SSHChannel None (10) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] failed to connect: Connection refused
+2017-06-04T11:01:20+0000 [SSHChannel None (10) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] sending close 10
+2017-06-04T11:01:20+0000 [SSHChannel None (4) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] remote close
+2017-06-04T11:01:20+0000 [SSHChannel None (5) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] remote close
+2017-06-04T11:01:20+0000 [SSHChannel None (6) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] remote close
+2017-06-04T11:01:20+0000 [SSHChannel None (7) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] remote close
+2017-06-04T11:01:20+0000 [SSHChannel None (8) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] remote close
+2017-06-04T11:01:20+0000 [HoneyPotSSHTransport,4851,116.31.116.17] starting service 'ssh-userauth'
+2017-06-04T11:01:20+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] got channel 'direct-tcpip' request
+2017-06-04T11:01:20+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp connection request to 104.25.39.26:80 from 127.0.0.1:50913
+2017-06-04T11:01:20+0000 [SSHChannel None (11) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp forward to 104.25.39.26:80 with data 'GET / HTTP/1.1\r\nHost: whoer.net\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; rv:53.0) Gecko/20100101 Firefox/53.0\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate\r\nConnection: keep-alive\r\nUpgrade-Insecure-Requests: 1\r\n\r\n'
+2017-06-04T11:01:20+0000 [SSHChannel None (11) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] failed to connect: Connection refused
+2017-06-04T11:01:20+0000 [SSHChannel None (11) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] sending close 11
+2017-06-04T11:01:20+0000 [SSHChannel None (9) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] remote close
+2017-06-04T11:01:20+0000 [SSHChannel None (10) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] remote close
+2017-06-04T11:01:20+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] got channel 'direct-tcpip' request
+2017-06-04T11:01:20+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp connection request to 104.25.39.26:80 from 127.0.0.1:50916
+2017-06-04T11:01:20+0000 [SSHChannel None (11) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] remote close
+2017-06-04T11:01:20+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] got channel 'direct-tcpip' request
+2017-06-04T11:01:20+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp connection request to 104.25.39.26:80 from 127.0.0.1:50919
+2017-06-04T11:01:20+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] got channel 'direct-tcpip' request
+2017-06-04T11:01:20+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp connection request to 110.93.233.9:80 from 127.0.0.1:50922
+2017-06-04T11:01:20+0000 [SSHChannel None (12) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp forward to 104.25.39.26:80 with data 'GET / HTTP/1.1\r\nHost: whoer.net\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; rv:53.0) Gecko/20100101 Firefox/53.0\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate\r\nConnection: keep-alive\r\nUpgrade-Insecure-Requests: 1\r\n\r\n'
+2017-06-04T11:01:20+0000 [SSHChannel None (12) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] failed to connect: Connection refused
+2017-06-04T11:01:20+0000 [SSHChannel None (12) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] sending close 12
+2017-06-04T11:01:20+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] got channel 'direct-tcpip' request
+2017-06-04T11:01:20+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp connection request to 110.93.233.9:80 from 127.0.0.1:50925
+2017-06-04T11:01:20+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,4851,116.31.116.17] 'root' trying auth 'none'
+2017-06-04T11:01:23+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,4851,116.31.116.17] 'root' authenticated with 'none'
+2017-06-04T11:01:23+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,4851,116.31.116.17] starting service 'ssh-connection'
+2017-06-04T11:01:23+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] got channel 'direct-tcpip' request
+2017-06-04T11:01:23+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp connection request to 104.25.39.26:80 from 127.0.0.1:50928
+2017-06-04T11:01:23+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] got channel 'direct-tcpip' request
+2017-06-04T11:01:23+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp connection request to 52.24.139.120:443 from 127.0.0.1:50931
+2017-06-04T11:01:23+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] got channel 'direct-tcpip' request
+2017-06-04T11:01:23+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp connection request to 52.24.139.120:443 from 127.0.0.1:50934
+2017-06-04T11:01:23+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] got channel 'direct-tcpip' request
+2017-06-04T11:01:23+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp connection request to 110.93.233.9:80 from 127.0.0.1:50937
+2017-06-04T11:01:23+0000 [SSHChannel None (12) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] remote close
+2017-06-04T11:01:23+0000 [SSHChannel None (15) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp forward to 110.93.233.9:80 with data 'GET /success.txt HTTP/1.1\r\nHost: detectportal.firefox.com\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; rv:53.0) Gecko/20100101 Firefox/53.0\r\nAccept: */*\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate\r\nCache-Control: no-cache\r\nPragma: no-cache\r\nConnection: keep-alive\r\n\r\n'
+2017-06-04T11:01:23+0000 [SSHChannel None (15) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] failed to connect: Connection refused
+2017-06-04T11:01:23+0000 [SSHChannel None (15) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] sending close 15
+2017-06-04T11:01:23+0000 [SSHChannel None (13) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp forward to 104.25.39.26:80 with data 'GET / HTTP/1.1\r\nHost: whoer.net\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; rv:53.0) Gecko/20100101 Firefox/53.0\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate\r\nConnection: keep-alive\r\nUpgrade-Insecure-Requests: 1\r\n\r\n'
+2017-06-04T11:01:23+0000 [SSHChannel None (13) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] failed to connect: Connection refused
+2017-06-04T11:01:23+0000 [SSHChannel None (13) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] sending close 13
+2017-06-04T11:01:23+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] got channel 'direct-tcpip' request
+2017-06-04T11:01:23+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp connection request to 52.24.139.120:443 from 127.0.0.1:50940
+2017-06-04T11:01:23+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,4852,116.31.116.17] 'root' trying auth 'none'
+2017-06-04T11:01:24+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,4852,116.31.116.17] 'root' authenticated with 'none'
+2017-06-04T11:01:24+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,4852,116.31.116.17] starting service 'ssh-connection'
+2017-06-04T11:01:24+0000 [HoneyPotSSHTransport,4851,116.31.116.17] Got remote error, code 11
+	reason: 
+2017-06-04T11:01:24+0000 [HoneyPotSSHTransport,4851,116.31.116.17] avatar root logging out
+2017-06-04T11:01:24+0000 [HoneyPotSSHTransport,4851,116.31.116.17] connection lost
+2017-06-04T11:01:24+0000 [HoneyPotSSHTransport,4851,116.31.116.17] Connection lost after 7 seconds
+2017-06-04T11:01:25+0000 [SSHChannel None (13) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] remote close
+2017-06-04T11:01:25+0000 [SSHChannel None (15) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] remote close
+2017-06-04T11:01:25+0000 [SSHChannel None (16) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp forward to 110.93.233.9:80 with data 'GET /success.txt HTTP/1.1\r\nHost: detectportal.firefox.com\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; rv:53.0) Gecko/20100101 Firefox/53.0\r\nAccept: */*\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate\r\nCache-Control: no-cache\r\nPragma: no-cache\r\nConnection: keep-alive\r\n\r\n'
+2017-06-04T11:01:25+0000 [SSHChannel None (16) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] failed to connect: Connection refused
+2017-06-04T11:01:25+0000 [SSHChannel None (16) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] sending close 16
+2017-06-04T11:01:25+0000 [SSHChannel None (14) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp forward to 104.25.39.26:80 with data 'GET / HTTP/1.1\r\nHost: whoer.net\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; rv:53.0) Gecko/20100101 Firefox/53.0\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate\r\nConnection: keep-alive\r\nUpgrade-Insecure-Requests: 1\r\n\r\n'
+2017-06-04T11:01:25+0000 [SSHChannel None (14) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] failed to connect: Connection refused
+2017-06-04T11:01:25+0000 [SSHChannel None (14) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] sending close 14
+2017-06-04T11:01:25+0000 [SSHChannel None (18) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp forward to 52.24.139.120:443 with data '\x16\x03\x01\x00\xbc\x01\x00\x00\xb8\x03\x03\x807\x05\xea\xb8xmO\xeawa\xf7\xda\x05\x9e\x89~}\xc6+\x1e\x8a\xe9Q+\r\x8f\xe7\xac\x8b\xeb\x98\x00\x00\x1e\xc0+\xc0/\xcc\xa9\xcc\xa8\xc0,\xc00\xc0\n\xc0\t\xc0\x13\xc0\x14\x003\x009\x00/\x005\x00\n\x01\x00\x00q\x00\x00\x00\x15\x00\x13\x00\x00\x10aus5.mozilla.org\x00\x17\x00\x00\xff\x01\x00\x01\x00\x00\n\x00\n\x00\x08\x00\x1d\x00\x17\x00\x18\x00\x19\x00\x0b\x00\x02\x01\x00\x00#\x00\x00\x00\x10\x00\x0e\x00\x0c\x02h2\x08http/1.1\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00\r\x00\x18\x00\x16\x04\x03\x05\x03\x06\x03\x08\x04\x08\x05\x08\x06\x04\x01\x05\x01\x06\x01\x02\x03\x02\x01'
+2017-06-04T11:01:25+0000 [SSHChannel None (18) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] failed to connect: Connection refused
+2017-06-04T11:01:25+0000 [SSHChannel None (18) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] sending close 18
+2017-06-04T11:01:25+0000 [SSHChannel None (19) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp forward to 52.24.139.120:443 with data '\x16\x03\x01\x00\xbc\x01\x00\x00\xb8\x03\x03G\xc0\xb1k\xea\xa3\x06\x07\xc4@$\xe0\x92_}\xc3y\x19\x87\xef\x07q\xd5\xe6\x85\xde\xf5\xa1v\x94&\xb5\x00\x00\x1e\xc0+\xc0/\xcc\xa9\xcc\xa8\xc0,\xc00\xc0\n\xc0\t\xc0\x13\xc0\x14\x003\x009\x00/\x005\x00\n\x01\x00\x00q\x00\x00\x00\x15\x00\x13\x00\x00\x10aus5.mozilla.org\x00\x17\x00\x00\xff\x01\x00\x01\x00\x00\n\x00\n\x00\x08\x00\x1d\x00\x17\x00\x18\x00\x19\x00\x0b\x00\x02\x01\x00\x00#\x00\x00\x00\x10\x00\x0e\x00\x0c\x02h2\x08http/1.1\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00\r\x00\x18\x00\x16\x04\x03\x05\x03\x06\x03\x08\x04\x08\x05\x08\x06\x04\x01\x05\x01\x06\x01\x02\x03\x02\x01'
+2017-06-04T11:01:25+0000 [SSHChannel None (19) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] failed to connect: Connection refused
+2017-06-04T11:01:25+0000 [SSHChannel None (19) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] sending close 19
+2017-06-04T11:01:25+0000 [SSHChannel None (21) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp forward to 52.24.139.120:443 with data '\x16\x03\x01\x00\xbc\x01\x00\x00\xb8\x03\x03\x0f?m\x99\xa47z\xb5)\x8c\xa4y\xae\xe2o\x8d\xa5\xa4\xfcV\xe4\xf2\xce\xabc\x1c\xa3s\xb9JOe\x00\x00\x1e\xc0+\xc0/\xcc\xa9\xcc\xa8\xc0,\xc00\xc0\n\xc0\t\xc0\x13\xc0\x14\x003\x009\x00/\x005\x00\n\x01\x00\x00q\x00\x00\x00\x15\x00\x13\x00\x00\x10aus5.mozilla.org\x00\x17\x00\x00\xff\x01\x00\x01\x00\x00\n\x00\n\x00\x08\x00\x1d\x00\x17\x00\x18\x00\x19\x00\x0b\x00\x02\x01\x00\x00#\x00\x00\x00\x10\x00\x0e\x00\x0c\x02h2\x08http/1.1\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00\r\x00\x18\x00\x16\x04\x03\x05\x03\x06\x03\x08\x04\x08\x05\x08\x06\x04\x01\x05\x01\x06\x01\x02\x03\x02\x01'
+2017-06-04T11:01:25+0000 [SSHChannel None (21) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] failed to connect: Connection refused
+2017-06-04T11:01:25+0000 [SSHChannel None (21) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] sending close 21
+2017-06-04T11:01:25+0000 [SSHChannel None (14) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] remote close
+2017-06-04T11:01:25+0000 [SSHChannel None (16) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] remote close
+2017-06-04T11:01:25+0000 [SSHChannel None (20) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp forward to 110.93.233.9:80 with data 'GET /success.txt HTTP/1.1\r\nHost: detectportal.firefox.com\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; rv:53.0) Gecko/20100101 Firefox/53.0\r\nAccept: */*\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate\r\nCache-Control: no-cache\r\nPragma: no-cache\r\nConnection: keep-alive\r\n\r\n'
+2017-06-04T11:01:25+0000 [SSHChannel None (20) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] failed to connect: Connection refused
+2017-06-04T11:01:25+0000 [SSHChannel None (20) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] sending close 20
+2017-06-04T11:01:25+0000 [SSHChannel None (17) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp forward to 104.25.39.26:80 with data 'GET / HTTP/1.1\r\nHost: whoer.net\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; rv:53.0) Gecko/20100101 Firefox/53.0\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate\r\nConnection: keep-alive\r\nUpgrade-Insecure-Requests: 1\r\n\r\n'
+2017-06-04T11:01:25+0000 [SSHChannel None (17) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] failed to connect: Connection refused
+2017-06-04T11:01:25+0000 [SSHChannel None (17) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] sending close 17
+2017-06-04T11:01:25+0000 [HoneyPotSSHTransport,4852,116.31.116.17] Got remote error, code 11
+	reason: 
+2017-06-04T11:01:25+0000 [HoneyPotSSHTransport,4852,116.31.116.17] avatar root logging out
+2017-06-04T11:01:25+0000 [HoneyPotSSHTransport,4852,116.31.116.17] connection lost
+2017-06-04T11:01:25+0000 [HoneyPotSSHTransport,4852,116.31.116.17] Connection lost after 7 seconds
+2017-06-04T11:01:25+0000 [SSHChannel None (18) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] remote close
+2017-06-04T11:01:25+0000 [SSHChannel None (19) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] remote close
+2017-06-04T11:01:25+0000 [SSHChannel None (21) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] remote close
+2017-06-04T11:01:25+0000 [SSHChannel None (17) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] remote close
+2017-06-04T11:01:25+0000 [SSHChannel None (20) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] remote close
+2017-06-04T11:01:25+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] got channel 'direct-tcpip' request
+2017-06-04T11:01:25+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp connection request to 110.93.233.9:80 from 127.0.0.1:50943
+2017-06-04T11:01:25+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] got channel 'direct-tcpip' request
+2017-06-04T11:01:25+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp connection request to 104.25.39.26:80 from 127.0.0.1:50946
+2017-06-04T11:01:25+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] got channel 'direct-tcpip' request
+2017-06-04T11:01:25+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp connection request to 110.93.233.9:80 from 127.0.0.1:50949
+2017-06-04T11:01:25+0000 [SSHChannel None (22) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp forward to 110.93.233.9:80 with data 'GET /success.txt HTTP/1.1\r\nHost: detectportal.firefox.com\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; rv:53.0) Gecko/20100101 Firefox/53.0\r\nAccept: */*\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate\r\nCache-Control: no-cache\r\nPragma: no-cache\r\nConnection: keep-alive\r\n\r\n'
+2017-06-04T11:01:25+0000 [SSHChannel None (22) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] failed to connect: Connection refused
+2017-06-04T11:01:25+0000 [SSHChannel None (22) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] sending close 22
+2017-06-04T11:01:25+0000 [SSHChannel None (23) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp forward to 104.25.39.26:80 with data 'GET / HTTP/1.1\r\nHost: whoer.net\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; rv:53.0) Gecko/20100101 Firefox/53.0\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate\r\nConnection: keep-alive\r\nUpgrade-Insecure-Requests: 1\r\n\r\n'
+2017-06-04T11:01:25+0000 [SSHChannel None (23) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] failed to connect: Connection refused
+2017-06-04T11:01:25+0000 [SSHChannel None (23) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] sending close 23
+2017-06-04T11:01:25+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] got channel 'direct-tcpip' request
+2017-06-04T11:01:25+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp connection request to 110.93.233.9:80 from 127.0.0.1:50952
+2017-06-04T11:01:26+0000 [SSHChannel None (22) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] remote close
+2017-06-04T11:01:26+0000 [SSHChannel None (23) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] remote close
+2017-06-04T11:01:26+0000 [SSHChannel None (24) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp forward to 110.93.233.9:80 with data 'GET /success.txt HTTP/1.1\r\nHost: detectportal.firefox.com\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; rv:53.0) Gecko/20100101 Firefox/53.0\r\nAccept: */*\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate\r\nCache-Control: no-cache\r\nPragma: no-cache\r\nConnection: keep-alive\r\n\r\n'
+2017-06-04T11:01:26+0000 [SSHChannel None (24) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] failed to connect: Connection refused
+2017-06-04T11:01:26+0000 [SSHChannel None (24) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] sending close 24
+2017-06-04T11:01:26+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] got channel 'direct-tcpip' request
+2017-06-04T11:01:26+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp connection request to 104.25.39.26:80 from 127.0.0.1:50955
+2017-06-04T11:01:26+0000 [SSHChannel None (24) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] remote close
+2017-06-04T11:01:26+0000 [SSHChannel None (25) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp forward to 110.93.233.9:80 with data 'GET /success.txt HTTP/1.1\r\nHost: detectportal.firefox.com\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; rv:53.0) Gecko/20100101 Firefox/53.0\r\nAccept: */*\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate\r\nCache-Control: no-cache\r\nPragma: no-cache\r\nConnection: keep-alive\r\n\r\n'
+2017-06-04T11:01:26+0000 [SSHChannel None (25) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] failed to connect: Connection refused
+2017-06-04T11:01:26+0000 [SSHChannel None (25) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] sending close 25
+2017-06-04T11:01:26+0000 [SSHChannel None (26) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp forward to 104.25.39.26:80 with data 'GET / HTTP/1.1\r\nHost: whoer.net\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; rv:53.0) Gecko/20100101 Firefox/53.0\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate\r\nConnection: keep-alive\r\nUpgrade-Insecure-Requests: 1\r\n\r\n'
+2017-06-04T11:01:26+0000 [SSHChannel None (26) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] failed to connect: Connection refused
+2017-06-04T11:01:26+0000 [SSHChannel None (26) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] sending close 26
+2017-06-04T11:01:26+0000 [SSHChannel None (25) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] remote close
+2017-06-04T11:01:26+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] got channel 'direct-tcpip' request
+2017-06-04T11:01:26+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp connection request to 110.93.233.9:80 from 127.0.0.1:50958
+2017-06-04T11:01:26+0000 [SSHChannel None (26) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] remote close
+2017-06-04T11:01:26+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] got channel 'direct-tcpip' request
+2017-06-04T11:01:26+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp connection request to 110.93.233.9:80 from 127.0.0.1:50961
+2017-06-04T11:01:26+0000 [SSHChannel None (27) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp forward to 110.93.233.9:80 with data 'GET /success.txt HTTP/1.1\r\nHost: detectportal.firefox.com\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; rv:53.0) Gecko/20100101 Firefox/53.0\r\nAccept: */*\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate\r\nCache-Control: no-cache\r\nPragma: no-cache\r\nConnection: keep-alive\r\n\r\n'
+2017-06-04T11:01:26+0000 [SSHChannel None (27) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] failed to connect: Connection refused
+2017-06-04T11:01:26+0000 [SSHChannel None (27) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] sending close 27
+2017-06-04T11:01:26+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] got channel 'direct-tcpip' request
+2017-06-04T11:01:26+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp connection request to 104.25.38.26:80 from 127.0.0.1:50965
+2017-06-04T11:01:27+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] got channel 'direct-tcpip' request
+2017-06-04T11:01:27+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp connection request to 104.25.38.26:80 from 127.0.0.1:50968
+2017-06-04T11:01:27+0000 [SSHChannel None (27) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] remote close
+2017-06-04T11:01:27+0000 [SSHChannel None (28) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp forward to 110.93.233.9:80 with data 'GET /success.txt HTTP/1.1\r\nHost: detectportal.firefox.com\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; rv:53.0) Gecko/20100101 Firefox/53.0\r\nAccept: */*\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate\r\nCache-Control: no-cache\r\nPragma: no-cache\r\nConnection: keep-alive\r\n\r\n'
+2017-06-04T11:01:27+0000 [SSHChannel None (28) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] failed to connect: Connection refused
+2017-06-04T11:01:27+0000 [SSHChannel None (28) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] sending close 28
+2017-06-04T11:01:27+0000 [SSHChannel None (29) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp forward to 104.25.38.26:80 with data 'GET / HTTP/1.1\r\nHost: www.whoer.net\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; rv:53.0) Gecko/20100101 Firefox/53.0\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate\r\nConnection: keep-alive\r\nUpgrade-Insecure-Requests: 1\r\n\r\n'
+2017-06-04T11:01:27+0000 [SSHChannel None (29) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] failed to connect: Connection refused
+2017-06-04T11:01:27+0000 [SSHChannel None (29) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] sending close 29
+2017-06-04T11:01:27+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] got channel 'direct-tcpip' request
+2017-06-04T11:01:27+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp connection request to 104.25.38.26:80 from 127.0.0.1:50972
+2017-06-04T11:01:27+0000 [SSHChannel None (28) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] remote close
+2017-06-04T11:01:27+0000 [SSHChannel None (29) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] remote close
+2017-06-04T11:01:27+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] got channel 'direct-tcpip' request
+2017-06-04T11:01:27+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp connection request to 110.93.233.9:80 from 127.0.0.1:50975
+2017-06-04T11:01:27+0000 [SSHChannel None (30) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp forward to 104.25.38.26:80 with data 'GET / HTTP/1.1\r\nHost: www.whoer.net\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; rv:53.0) Gecko/20100101 Firefox/53.0\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate\r\nConnection: keep-alive\r\nUpgrade-Insecure-Requests: 1\r\n\r\n'
+2017-06-04T11:01:27+0000 [SSHChannel None (30) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] failed to connect: Connection refused
+2017-06-04T11:01:27+0000 [SSHChannel None (30) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] sending close 30
+2017-06-04T11:01:27+0000 [SSHChannel None (32) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp forward to 110.93.233.9:80 with data 'GET /success.txt HTTP/1.1\r\nHost: detectportal.firefox.com\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; rv:53.0) Gecko/20100101 Firefox/53.0\r\nAccept: */*\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate\r\nCache-Control: no-cache\r\nPragma: no-cache\r\nConnection: keep-alive\r\n\r\n'
+2017-06-04T11:01:27+0000 [SSHChannel None (32) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] failed to connect: Connection refused
+2017-06-04T11:01:27+0000 [SSHChannel None (32) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] sending close 32
+2017-06-04T11:01:27+0000 [SSHChannel None (30) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] remote close
+2017-06-04T11:01:28+0000 [SSHChannel None (31) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp forward to 104.25.38.26:80 with data 'GET / HTTP/1.1\r\nHost: www.whoer.net\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; rv:53.0) Gecko/20100101 Firefox/53.0\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate\r\nConnection: keep-alive\r\nUpgrade-Insecure-Requests: 1\r\n\r\n'
+2017-06-04T11:01:28+0000 [SSHChannel None (31) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] failed to connect: Connection refused
+2017-06-04T11:01:28+0000 [SSHChannel None (31) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] sending close 31
+2017-06-04T11:01:28+0000 [SSHChannel None (32) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] remote close
+2017-06-04T11:01:28+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] got channel 'direct-tcpip' request
+2017-06-04T11:01:28+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp connection request to 110.93.233.9:80 from 127.0.0.1:50978
+2017-06-04T11:01:28+0000 [SSHChannel None (31) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] remote close
+2017-06-04T11:01:28+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] got channel 'direct-tcpip' request
+2017-06-04T11:01:28+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp connection request to 104.25.38.26:80 from 127.0.0.1:50981
+2017-06-04T11:01:28+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] got channel 'direct-tcpip' request
+2017-06-04T11:01:28+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp connection request to 110.93.233.9:80 from 127.0.0.1:50984
+2017-06-04T11:01:28+0000 [SSHChannel None (33) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp forward to 110.93.233.9:80 with data 'GET /success.txt HTTP/1.1\r\nHost: detectportal.firefox.com\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; rv:53.0) Gecko/20100101 Firefox/53.0\r\nAccept: */*\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate\r\nCache-Control: no-cache\r\nPragma: no-cache\r\nConnection: keep-alive\r\n\r\n'
+2017-06-04T11:01:28+0000 [SSHChannel None (33) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] failed to connect: Connection refused
+2017-06-04T11:01:28+0000 [SSHChannel None (33) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] sending close 33
+2017-06-04T11:01:28+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] got channel 'direct-tcpip' request
+2017-06-04T11:01:28+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp connection request to 104.25.38.26:80 from 127.0.0.1:50987
+2017-06-04T11:01:29+0000 [SSHChannel None (33) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] remote close
+2017-06-04T11:01:29+0000 [SSHChannel None (34) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp forward to 104.25.38.26:80 with data 'GET / HTTP/1.1\r\nHost: www.whoer.net\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; rv:53.0) Gecko/20100101 Firefox/53.0\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate\r\nConnection: keep-alive\r\nUpgrade-Insecure-Requests: 1\r\n\r\n'
+2017-06-04T11:01:29+0000 [SSHChannel None (34) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] failed to connect: Connection refused
+2017-06-04T11:01:29+0000 [SSHChannel None (34) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] sending close 34
+2017-06-04T11:01:29+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] got channel 'direct-tcpip' request
+2017-06-04T11:01:29+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp connection request to 110.93.233.9:80 from 127.0.0.1:50990
+2017-06-04T11:01:29+0000 [SSHChannel None (35) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp forward to 110.93.233.9:80 with data 'GET /success.txt HTTP/1.1\r\nHost: detectportal.firefox.com\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; rv:53.0) Gecko/20100101 Firefox/53.0\r\nAccept: */*\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate\r\nCache-Control: no-cache\r\nPragma: no-cache\r\nConnection: keep-alive\r\n\r\n'
+2017-06-04T11:01:29+0000 [SSHChannel None (35) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] failed to connect: Connection refused
+2017-06-04T11:01:29+0000 [SSHChannel None (35) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] sending close 35
+2017-06-04T11:01:29+0000 [SSHChannel None (34) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] remote close
+2017-06-04T11:01:29+0000 [SSHChannel None (36) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp forward to 104.25.38.26:80 with data 'GET / HTTP/1.1\r\nHost: www.whoer.net\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; rv:53.0) Gecko/20100101 Firefox/53.0\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate\r\nConnection: keep-alive\r\nUpgrade-Insecure-Requests: 1\r\n\r\n'
+2017-06-04T11:01:29+0000 [SSHChannel None (36) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] failed to connect: Connection refused
+2017-06-04T11:01:29+0000 [SSHChannel None (36) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] sending close 36
+2017-06-04T11:01:29+0000 [SSHChannel None (35) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] remote close
+2017-06-04T11:01:29+0000 [SSHChannel None (37) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp forward to 110.93.233.9:80 with data 'GET /success.txt HTTP/1.1\r\nHost: detectportal.firefox.com\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; rv:53.0) Gecko/20100101 Firefox/53.0\r\nAccept: */*\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate\r\nCache-Control: no-cache\r\nPragma: no-cache\r\nConnection: keep-alive\r\n\r\n'
+2017-06-04T11:01:29+0000 [SSHChannel None (37) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] failed to connect: Connection refused
+2017-06-04T11:01:29+0000 [SSHChannel None (37) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] sending close 37
+2017-06-04T11:01:29+0000 [SSHChannel None (36) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] remote close
+2017-06-04T11:01:29+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] got channel 'direct-tcpip' request
+2017-06-04T11:01:29+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp connection request to 104.25.38.26:80 from 127.0.0.1:50993
+2017-06-04T11:01:29+0000 [SSHChannel None (37) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] remote close
+2017-06-04T11:01:30+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] got channel 'direct-tcpip' request
+2017-06-04T11:01:30+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp connection request to 110.93.233.9:80 from 127.0.0.1:50996
+2017-06-04T11:01:30+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] got channel 'direct-tcpip' request
+2017-06-04T11:01:30+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp connection request to 104.25.38.26:80 from 127.0.0.1:50999
+2017-06-04T11:01:30+0000 [SSHChannel None (38) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp forward to 104.25.38.26:80 with data 'GET / HTTP/1.1\r\nHost: www.whoer.net\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; rv:53.0) Gecko/20100101 Firefox/53.0\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate\r\nConnection: keep-alive\r\nUpgrade-Insecure-Requests: 1\r\n\r\n'
+2017-06-04T11:01:30+0000 [SSHChannel None (38) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] failed to connect: Connection refused
+2017-06-04T11:01:30+0000 [SSHChannel None (38) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] sending close 38
+2017-06-04T11:01:30+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] got channel 'direct-tcpip' request
+2017-06-04T11:01:30+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp connection request to 110.93.233.9:80 from 127.0.0.1:51002
+2017-06-04T11:01:30+0000 [SSHChannel None (39) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp forward to 110.93.233.9:80 with data 'GET /success.txt HTTP/1.1\r\nHost: detectportal.firefox.com\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; rv:53.0) Gecko/20100101 Firefox/53.0\r\nAccept: */*\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate\r\nCache-Control: no-cache\r\nPragma: no-cache\r\nConnection: keep-alive\r\n\r\n'
+2017-06-04T11:01:30+0000 [SSHChannel None (39) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] failed to connect: Connection refused
+2017-06-04T11:01:30+0000 [SSHChannel None (39) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] sending close 39
+2017-06-04T11:01:30+0000 [SSHChannel None (38) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] remote close
+2017-06-04T11:01:30+0000 [SSHChannel None (40) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp forward to 104.25.38.26:80 with data 'GET / HTTP/1.1\r\nHost: www.whoer.net\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; rv:53.0) Gecko/20100101 Firefox/53.0\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate\r\nConnection: keep-alive\r\nUpgrade-Insecure-Requests: 1\r\n\r\n'
+2017-06-04T11:01:30+0000 [SSHChannel None (40) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] failed to connect: Connection refused
+2017-06-04T11:01:30+0000 [SSHChannel None (40) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] sending close 40
+2017-06-04T11:01:30+0000 [SSHChannel None (41) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp forward to 110.93.233.9:80 with data 'GET /success.txt HTTP/1.1\r\nHost: detectportal.firefox.com\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; rv:53.0) Gecko/20100101 Firefox/53.0\r\nAccept: */*\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate\r\nCache-Control: no-cache\r\nPragma: no-cache\r\nConnection: keep-alive\r\n\r\n'
+2017-06-04T11:01:30+0000 [SSHChannel None (41) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] failed to connect: Connection refused
+2017-06-04T11:01:30+0000 [SSHChannel None (41) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] sending close 41
+2017-06-04T11:01:30+0000 [SSHChannel None (39) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] remote eof
+2017-06-04T11:01:30+0000 [SSHChannel None (39) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] remote close
+2017-06-04T11:01:30+0000 [SSHChannel None (40) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] remote close
+2017-06-04T11:01:30+0000 [SSHChannel None (41) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] remote close
+2017-06-04T11:01:30+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] got channel 'direct-tcpip' request
+2017-06-04T11:01:30+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp connection request to 104.25.38.26:80 from 127.0.0.1:51005
+2017-06-04T11:01:30+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] got channel 'direct-tcpip' request
+2017-06-04T11:01:30+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp connection request to 110.93.233.9:80 from 127.0.0.1:51008
+2017-06-04T11:01:31+0000 [SSHChannel None (42) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp forward to 104.25.38.26:80 with data 'GET / HTTP/1.1\r\nHost: www.whoer.net\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; rv:53.0) Gecko/20100101 Firefox/53.0\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate\r\nConnection: keep-alive\r\nUpgrade-Insecure-Requests: 1\r\n\r\n'
+2017-06-04T11:01:31+0000 [SSHChannel None (42) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] failed to connect: Connection refused
+2017-06-04T11:01:31+0000 [SSHChannel None (42) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] sending close 42
+2017-06-04T11:01:31+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] got channel 'direct-tcpip' request
+2017-06-04T11:01:31+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp connection request to 110.93.233.9:80 from 127.0.0.1:51011
+2017-06-04T11:01:31+0000 [SSHChannel None (43) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp forward to 110.93.233.9:80 with data 'GET /success.txt HTTP/1.1\r\nHost: detectportal.firefox.com\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; rv:53.0) Gecko/20100101 Firefox/53.0\r\nAccept: */*\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate\r\nCache-Control: no-cache\r\nPragma: no-cache\r\nConnection: keep-alive\r\n\r\n'
+2017-06-04T11:01:31+0000 [SSHChannel None (43) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] failed to connect: Connection refused
+2017-06-04T11:01:31+0000 [SSHChannel None (43) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] sending close 43
+2017-06-04T11:01:31+0000 [SSHChannel None (42) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] remote close
+2017-06-04T11:01:31+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] got channel 'direct-tcpip' request
+2017-06-04T11:01:31+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp connection request to 104.25.38.26:80 from 127.0.0.1:51014
+2017-06-04T11:01:31+0000 [SSHChannel None (43) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] remote close
+2017-06-04T11:01:31+0000 [SSHChannel None (44) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp forward to 110.93.233.9:80 with data 'GET /success.txt HTTP/1.1\r\nHost: detectportal.firefox.com\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; rv:53.0) Gecko/20100101 Firefox/53.0\r\nAccept: */*\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate\r\nCache-Control: no-cache\r\nPragma: no-cache\r\nConnection: keep-alive\r\n\r\n'
+2017-06-04T11:01:31+0000 [SSHChannel None (44) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] failed to connect: Connection refused
+2017-06-04T11:01:31+0000 [SSHChannel None (44) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] sending close 44
+2017-06-04T11:01:31+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] got channel 'direct-tcpip' request
+2017-06-04T11:01:31+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp connection request to 104.25.38.26:80 from 127.0.0.1:51017
+2017-06-04T11:01:31+0000 [SSHChannel None (45) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp forward to 104.25.38.26:80 with data 'GET / HTTP/1.1\r\nHost: www.whoer.net\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; rv:53.0) Gecko/20100101 Firefox/53.0\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate\r\nConnection: keep-alive\r\nUpgrade-Insecure-Requests: 1\r\n\r\n'
+2017-06-04T11:01:31+0000 [SSHChannel None (45) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] failed to connect: Connection refused
+2017-06-04T11:01:31+0000 [SSHChannel None (45) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] sending close 45
+2017-06-04T11:01:31+0000 [SSHChannel None (44) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] remote close
+2017-06-04T11:01:31+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] got channel 'direct-tcpip' request
+2017-06-04T11:01:31+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp connection request to 110.93.233.9:80 from 127.0.0.1:51020
+2017-06-04T11:01:32+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] got channel 'direct-tcpip' request
+2017-06-04T11:01:32+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp connection request to 110.93.233.9:80 from 127.0.0.1:51023
+2017-06-04T11:01:32+0000 [SSHChannel None (45) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] remote close
+2017-06-04T11:01:32+0000 [SSHChannel None (46) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp forward to 104.25.38.26:80 with data 'GET / HTTP/1.1\r\nHost: www.whoer.net\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; rv:53.0) Gecko/20100101 Firefox/53.0\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate\r\nConnection: keep-alive\r\nUpgrade-Insecure-Requests: 1\r\n\r\n'
+2017-06-04T11:01:32+0000 [SSHChannel None (46) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] failed to connect: Connection refused
+2017-06-04T11:01:32+0000 [SSHChannel None (46) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] sending close 46
+2017-06-04T11:01:32+0000 [SSHChannel None (47) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp forward to 110.93.233.9:80 with data 'GET /success.txt HTTP/1.1\r\nHost: detectportal.firefox.com\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; rv:53.0) Gecko/20100101 Firefox/53.0\r\nAccept: */*\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate\r\nCache-Control: no-cache\r\nPragma: no-cache\r\nConnection: keep-alive\r\n\r\n'
+2017-06-04T11:01:32+0000 [SSHChannel None (47) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] failed to connect: Connection refused
+2017-06-04T11:01:32+0000 [SSHChannel None (47) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] sending close 47
+2017-06-04T11:01:32+0000 [SSHChannel None (46) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] remote close
+2017-06-04T11:01:33+0000 [SSHChannel None (47) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] remote close
+2017-06-04T11:01:33+0000 [SSHChannel None (48) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp forward to 110.93.233.9:80 with data 'GET /success.txt HTTP/1.1\r\nHost: detectportal.firefox.com\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; rv:53.0) Gecko/20100101 Firefox/53.0\r\nAccept: */*\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate\r\nCache-Control: no-cache\r\nPragma: no-cache\r\nConnection: keep-alive\r\n\r\n'
+2017-06-04T11:01:33+0000 [SSHChannel None (48) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] failed to connect: Connection refused
+2017-06-04T11:01:33+0000 [SSHChannel None (48) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] sending close 48
+2017-06-04T11:01:33+0000 [SSHChannel None (48) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] remote close
+2017-06-04T11:01:33+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] got channel 'direct-tcpip' request
+2017-06-04T11:01:33+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp connection request to 110.93.233.9:80 from 127.0.0.1:51026
+2017-06-04T11:01:33+0000 [SSHChannel None (49) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp forward to 110.93.233.9:80 with data 'GET /success.txt HTTP/1.1\r\nHost: detectportal.firefox.com\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; rv:53.0) Gecko/20100101 Firefox/53.0\r\nAccept: */*\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate\r\nCache-Control: no-cache\r\nPragma: no-cache\r\nConnection: keep-alive\r\n\r\n'
+2017-06-04T11:01:33+0000 [SSHChannel None (49) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] failed to connect: Connection refused
+2017-06-04T11:01:33+0000 [SSHChannel None (49) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] sending close 49
+2017-06-04T11:01:33+0000 [SSHChannel None (49) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] remote close
+2017-06-04T11:01:33+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] got channel 'direct-tcpip' request
+2017-06-04T11:01:33+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp connection request to 110.93.233.9:80 from 127.0.0.1:51029
+2017-06-04T11:01:33+0000 [SSHChannel None (50) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp forward to 110.93.233.9:80 with data 'GET /success.txt HTTP/1.1\r\nHost: detectportal.firefox.com\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; rv:53.0) Gecko/20100101 Firefox/53.0\r\nAccept: */*\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate\r\nCache-Control: no-cache\r\nPragma: no-cache\r\nConnection: keep-alive\r\n\r\n'
+2017-06-04T11:01:33+0000 [SSHChannel None (50) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] failed to connect: Connection refused
+2017-06-04T11:01:33+0000 [SSHChannel None (50) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] sending close 50
+2017-06-04T11:01:34+0000 [SSHChannel None (50) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] remote close
+2017-06-04T11:01:34+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] got channel 'direct-tcpip' request
+2017-06-04T11:01:34+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp connection request to 110.93.233.9:80 from 127.0.0.1:51032
+2017-06-04T11:01:34+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] got channel 'direct-tcpip' request
+2017-06-04T11:01:34+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp connection request to 110.93.233.9:80 from 127.0.0.1:51035
+2017-06-04T11:01:34+0000 [SSHChannel None (51) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp forward to 110.93.233.9:80 with data 'GET /success.txt HTTP/1.1\r\nHost: detectportal.firefox.com\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; rv:53.0) Gecko/20100101 Firefox/53.0\r\nAccept: */*\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate\r\nCache-Control: no-cache\r\nPragma: no-cache\r\nConnection: keep-alive\r\n\r\n'
+2017-06-04T11:01:34+0000 [SSHChannel None (51) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] failed to connect: Connection refused
+2017-06-04T11:01:34+0000 [SSHChannel None (51) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] sending close 51
+2017-06-04T11:01:34+0000 [SSHChannel None (51) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] remote close
+2017-06-04T11:01:34+0000 [SSHChannel None (52) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp forward to 110.93.233.9:80 with data 'GET /success.txt HTTP/1.1\r\nHost: detectportal.firefox.com\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; rv:53.0) Gecko/20100101 Firefox/53.0\r\nAccept: */*\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate\r\nCache-Control: no-cache\r\nPragma: no-cache\r\nConnection: keep-alive\r\n\r\n'
+2017-06-04T11:01:34+0000 [SSHChannel None (52) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] failed to connect: Connection refused
+2017-06-04T11:01:34+0000 [SSHChannel None (52) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] sending close 52
+2017-06-04T11:01:35+0000 [SSHChannel None (52) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] remote close
+2017-06-04T11:01:35+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] got channel 'direct-tcpip' request
+2017-06-04T11:01:35+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp connection request to 110.93.233.9:80 from 127.0.0.1:51038
+2017-06-04T11:01:35+0000 [SSHChannel None (53) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp forward to 110.93.233.9:80 with data 'GET /success.txt HTTP/1.1\r\nHost: detectportal.firefox.com\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; rv:53.0) Gecko/20100101 Firefox/53.0\r\nAccept: */*\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate\r\nCache-Control: no-cache\r\nPragma: no-cache\r\nConnection: keep-alive\r\n\r\n'
+2017-06-04T11:01:35+0000 [SSHChannel None (53) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] failed to connect: Connection refused
+2017-06-04T11:01:35+0000 [SSHChannel None (53) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] sending close 53
+2017-06-04T11:01:35+0000 [SSHChannel None (53) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] remote close
+2017-06-04T11:01:35+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] got channel 'direct-tcpip' request
+2017-06-04T11:01:35+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp connection request to 110.93.233.9:80 from 127.0.0.1:51041
+2017-06-04T11:01:35+0000 [SSHChannel None (54) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp forward to 110.93.233.9:80 with data 'GET /success.txt HTTP/1.1\r\nHost: detectportal.firefox.com\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; rv:53.0) Gecko/20100101 Firefox/53.0\r\nAccept: */*\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate\r\nCache-Control: no-cache\r\nPragma: no-cache\r\nConnection: keep-alive\r\n\r\n'
+2017-06-04T11:01:35+0000 [SSHChannel None (54) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] failed to connect: Connection refused
+2017-06-04T11:01:35+0000 [SSHChannel None (54) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] sending close 54
+2017-06-04T11:01:35+0000 [SSHChannel None (54) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] remote close
+2017-06-04T11:01:35+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] got channel 'direct-tcpip' request
+2017-06-04T11:01:35+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp connection request to 110.93.233.9:80 from 127.0.0.1:51044
+2017-06-04T11:01:36+0000 [SSHChannel None (55) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp forward to 110.93.233.9:80 with data 'GET /success.txt HTTP/1.1\r\nHost: detectportal.firefox.com\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; rv:53.0) Gecko/20100101 Firefox/53.0\r\nAccept: */*\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate\r\nCache-Control: no-cache\r\nPragma: no-cache\r\nConnection: keep-alive\r\n\r\n'
+2017-06-04T11:01:36+0000 [SSHChannel None (55) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] failed to connect: Connection refused
+2017-06-04T11:01:36+0000 [SSHChannel None (55) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] sending close 55
+2017-06-04T11:01:36+0000 [SSHChannel None (55) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] remote close
+2017-06-04T11:01:36+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] got channel 'direct-tcpip' request
+2017-06-04T11:01:36+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp connection request to 110.93.233.9:80 from 127.0.0.1:51047
+2017-06-04T11:01:36+0000 [SSHChannel None (56) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp forward to 110.93.233.9:80 with data 'GET /success.txt HTTP/1.1\r\nHost: detectportal.firefox.com\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; rv:53.0) Gecko/20100101 Firefox/53.0\r\nAccept: */*\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate\r\nCache-Control: no-cache\r\nPragma: no-cache\r\nConnection: keep-alive\r\n\r\n'
+2017-06-04T11:01:36+0000 [SSHChannel None (56) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] failed to connect: Connection refused
+2017-06-04T11:01:36+0000 [SSHChannel None (56) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] sending close 56
+2017-06-04T11:01:36+0000 [SSHChannel None (56) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] remote close
+2017-06-04T11:01:36+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] got channel 'direct-tcpip' request
+2017-06-04T11:01:36+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp connection request to 110.93.233.9:80 from 127.0.0.1:51050
+2017-06-04T11:01:36+0000 [SSHChannel None (57) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp forward to 110.93.233.9:80 with data 'GET /success.txt HTTP/1.1\r\nHost: detectportal.firefox.com\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; rv:53.0) Gecko/20100101 Firefox/53.0\r\nAccept: */*\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate\r\nCache-Control: no-cache\r\nPragma: no-cache\r\nConnection: keep-alive\r\n\r\n'
+2017-06-04T11:01:36+0000 [SSHChannel None (57) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] failed to connect: Connection refused
+2017-06-04T11:01:36+0000 [SSHChannel None (57) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] sending close 57
+2017-06-04T11:01:37+0000 [SSHChannel None (57) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] remote close
+2017-06-04T11:01:37+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] got channel 'direct-tcpip' request
+2017-06-04T11:01:37+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp connection request to 110.93.233.9:80 from 127.0.0.1:51053
+2017-06-04T11:01:37+0000 [SSHChannel None (58) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp forward to 110.93.233.9:80 with data 'GET /success.txt HTTP/1.1\r\nHost: detectportal.firefox.com\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; rv:53.0) Gecko/20100101 Firefox/53.0\r\nAccept: */*\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate\r\nCache-Control: no-cache\r\nPragma: no-cache\r\nConnection: keep-alive\r\n\r\n'
+2017-06-04T11:01:37+0000 [SSHChannel None (58) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] failed to connect: Connection refused
+2017-06-04T11:01:37+0000 [SSHChannel None (58) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] sending close 58
+2017-06-04T11:01:37+0000 [SSHChannel None (58) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] remote close
+2017-06-04T11:01:37+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] got channel 'direct-tcpip' request
+2017-06-04T11:01:37+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp connection request to 110.93.233.9:80 from 127.0.0.1:51056
+2017-06-04T11:01:37+0000 [SSHChannel None (59) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp forward to 110.93.233.9:80 with data 'GET /success.txt HTTP/1.1\r\nHost: detectportal.firefox.com\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; rv:53.0) Gecko/20100101 Firefox/53.0\r\nAccept: */*\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate\r\nCache-Control: no-cache\r\nPragma: no-cache\r\nConnection: keep-alive\r\n\r\n'
+2017-06-04T11:01:37+0000 [SSHChannel None (59) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] failed to connect: Connection refused
+2017-06-04T11:01:37+0000 [SSHChannel None (59) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] sending close 59
+2017-06-04T11:01:37+0000 [SSHChannel None (59) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] remote close
+2017-06-04T11:01:37+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] got channel 'direct-tcpip' request
+2017-06-04T11:01:37+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp connection request to 110.93.233.9:80 from 127.0.0.1:51059
+2017-06-04T11:01:37+0000 [SSHChannel None (60) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp forward to 110.93.233.9:80 with data 'GET /success.txt HTTP/1.1\r\nHost: detectportal.firefox.com\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; rv:53.0) Gecko/20100101 Firefox/53.0\r\nAccept: */*\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate\r\nCache-Control: no-cache\r\nPragma: no-cache\r\nConnection: keep-alive\r\n\r\n'
+2017-06-04T11:01:37+0000 [SSHChannel None (60) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] failed to connect: Connection refused
+2017-06-04T11:01:37+0000 [SSHChannel None (60) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] sending close 60
+2017-06-04T11:01:38+0000 [SSHChannel None (60) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] remote close
+2017-06-04T11:01:38+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] got channel 'direct-tcpip' request
+2017-06-04T11:01:38+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp connection request to 110.93.233.9:80 from 127.0.0.1:51062
+2017-06-04T11:01:38+0000 [SSHChannel None (61) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp forward to 110.93.233.9:80 with data 'GET /success.txt HTTP/1.1\r\nHost: detectportal.firefox.com\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; rv:53.0) Gecko/20100101 Firefox/53.0\r\nAccept: */*\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate\r\nCache-Control: no-cache\r\nPragma: no-cache\r\nConnection: keep-alive\r\n\r\n'
+2017-06-04T11:01:38+0000 [SSHChannel None (61) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] failed to connect: Connection refused
+2017-06-04T11:01:38+0000 [SSHChannel None (61) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] sending close 61
+2017-06-04T11:01:38+0000 [SSHChannel None (61) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] remote close
+2017-06-04T11:01:38+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] got channel 'direct-tcpip' request
+2017-06-04T11:01:38+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp connection request to 110.93.233.9:80 from 127.0.0.1:51065
+2017-06-04T11:01:38+0000 [SSHChannel None (62) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp forward to 110.93.233.9:80 with data 'GET /success.txt HTTP/1.1\r\nHost: detectportal.firefox.com\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; rv:53.0) Gecko/20100101 Firefox/53.0\r\nAccept: */*\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate\r\nCache-Control: no-cache\r\nPragma: no-cache\r\nConnection: keep-alive\r\n\r\n'
+2017-06-04T11:01:38+0000 [SSHChannel None (62) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] failed to connect: Connection refused
+2017-06-04T11:01:38+0000 [SSHChannel None (62) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] sending close 62
+2017-06-04T11:01:38+0000 [SSHChannel None (62) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] remote close
+2017-06-04T11:01:38+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] got channel 'direct-tcpip' request
+2017-06-04T11:01:38+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp connection request to 110.93.233.9:80 from 127.0.0.1:51068
+2017-06-04T11:01:39+0000 [SSHChannel None (63) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp forward to 110.93.233.9:80 with data 'GET /success.txt HTTP/1.1\r\nHost: detectportal.firefox.com\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; rv:53.0) Gecko/20100101 Firefox/53.0\r\nAccept: */*\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate\r\nCache-Control: no-cache\r\nPragma: no-cache\r\nConnection: keep-alive\r\n\r\n'
+2017-06-04T11:01:39+0000 [SSHChannel None (63) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] failed to connect: Connection refused
+2017-06-04T11:01:39+0000 [SSHChannel None (63) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] sending close 63
+2017-06-04T11:01:39+0000 [SSHChannel None (63) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] remote close
+2017-06-04T11:01:39+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] got channel 'direct-tcpip' request
+2017-06-04T11:01:39+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp connection request to 110.93.233.9:80 from 127.0.0.1:51071
+2017-06-04T11:01:39+0000 [SSHChannel None (64) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp forward to 110.93.233.9:80 with data 'GET /success.txt HTTP/1.1\r\nHost: detectportal.firefox.com\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; rv:53.0) Gecko/20100101 Firefox/53.0\r\nAccept: */*\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate\r\nCache-Control: no-cache\r\nPragma: no-cache\r\nConnection: keep-alive\r\n\r\n'
+2017-06-04T11:01:39+0000 [SSHChannel None (64) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] failed to connect: Connection refused
+2017-06-04T11:01:39+0000 [SSHChannel None (64) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] sending close 64
+2017-06-04T11:01:39+0000 [SSHChannel None (64) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] remote close
+2017-06-04T11:01:39+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] got channel 'direct-tcpip' request
+2017-06-04T11:01:39+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp connection request to 110.93.233.9:80 from 127.0.0.1:51074
+2017-06-04T11:01:39+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] got channel 'direct-tcpip' request
+2017-06-04T11:01:39+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp connection request to 110.93.233.9:80 from 127.0.0.1:51077
+2017-06-04T11:01:40+0000 [SSHChannel None (65) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp forward to 110.93.233.9:80 with data 'GET /success.txt HTTP/1.1\r\nHost: detectportal.firefox.com\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; rv:53.0) Gecko/20100101 Firefox/53.0\r\nAccept: */*\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate\r\nCache-Control: no-cache\r\nPragma: no-cache\r\nConnection: keep-alive\r\n\r\n'
+2017-06-04T11:01:40+0000 [SSHChannel None (65) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] failed to connect: Connection refused
+2017-06-04T11:01:40+0000 [SSHChannel None (65) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] sending close 65
+2017-06-04T11:01:40+0000 [SSHChannel None (65) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] remote close
+2017-06-04T11:01:40+0000 [SSHChannel None (66) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp forward to 110.93.233.9:80 with data 'GET /success.txt HTTP/1.1\r\nHost: detectportal.firefox.com\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; rv:53.0) Gecko/20100101 Firefox/53.0\r\nAccept: */*\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate\r\nCache-Control: no-cache\r\nPragma: no-cache\r\nConnection: keep-alive\r\n\r\n'
+2017-06-04T11:01:40+0000 [SSHChannel None (66) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] failed to connect: Connection refused
+2017-06-04T11:01:40+0000 [SSHChannel None (66) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] sending close 66
+2017-06-04T11:01:40+0000 [SSHChannel None (66) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] remote close
+2017-06-04T11:01:40+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] got channel 'direct-tcpip' request
+2017-06-04T11:01:40+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp connection request to 110.93.233.9:80 from 127.0.0.1:51080
+2017-06-04T11:01:40+0000 [SSHChannel None (67) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp forward to 110.93.233.9:80 with data 'GET /success.txt HTTP/1.1\r\nHost: detectportal.firefox.com\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; rv:53.0) Gecko/20100101 Firefox/53.0\r\nAccept: */*\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate\r\nCache-Control: no-cache\r\nPragma: no-cache\r\nConnection: keep-alive\r\n\r\n'
+2017-06-04T11:01:40+0000 [SSHChannel None (67) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] failed to connect: Connection refused
+2017-06-04T11:01:40+0000 [SSHChannel None (67) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] sending close 67
+2017-06-04T11:01:41+0000 [SSHChannel None (67) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] remote close
+2017-06-04T11:01:41+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] got channel 'direct-tcpip' request
+2017-06-04T11:01:41+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp connection request to 110.93.233.9:80 from 127.0.0.1:51083
+2017-06-04T11:01:41+0000 [SSHChannel None (68) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp forward to 110.93.233.9:80 with data 'GET /success.txt HTTP/1.1\r\nHost: detectportal.firefox.com\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; rv:53.0) Gecko/20100101 Firefox/53.0\r\nAccept: */*\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate\r\nCache-Control: no-cache\r\nPragma: no-cache\r\nConnection: keep-alive\r\n\r\n'
+2017-06-04T11:01:41+0000 [SSHChannel None (68) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] failed to connect: Connection refused
+2017-06-04T11:01:41+0000 [SSHChannel None (68) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] sending close 68
+2017-06-04T11:01:41+0000 [SSHChannel None (68) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] remote close
+2017-06-04T11:01:41+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] got channel 'direct-tcpip' request
+2017-06-04T11:01:41+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp connection request to 110.93.233.9:80 from 127.0.0.1:51086
+2017-06-04T11:01:41+0000 [SSHChannel None (69) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp forward to 110.93.233.9:80 with data 'GET /success.txt HTTP/1.1\r\nHost: detectportal.firefox.com\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; rv:53.0) Gecko/20100101 Firefox/53.0\r\nAccept: */*\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate\r\nCache-Control: no-cache\r\nPragma: no-cache\r\nConnection: keep-alive\r\n\r\n'
+2017-06-04T11:01:41+0000 [SSHChannel None (69) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] failed to connect: Connection refused
+2017-06-04T11:01:41+0000 [SSHChannel None (69) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] sending close 69
+2017-06-04T11:01:41+0000 [SSHChannel None (69) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] remote close
+2017-06-04T11:01:41+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] got channel 'direct-tcpip' request
+2017-06-04T11:01:41+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp connection request to 110.93.233.9:80 from 127.0.0.1:51089
+2017-06-04T11:01:42+0000 [SSHChannel None (70) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp forward to 110.93.233.9:80 with data 'GET /success.txt HTTP/1.1\r\nHost: detectportal.firefox.com\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; rv:53.0) Gecko/20100101 Firefox/53.0\r\nAccept: */*\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate\r\nCache-Control: no-cache\r\nPragma: no-cache\r\nConnection: keep-alive\r\n\r\n'
+2017-06-04T11:01:42+0000 [SSHChannel None (70) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] failed to connect: Connection refused
+2017-06-04T11:01:42+0000 [SSHChannel None (70) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] sending close 70
+2017-06-04T11:01:42+0000 [SSHChannel None (70) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] remote close
+2017-06-04T11:01:42+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] got channel 'direct-tcpip' request
+2017-06-04T11:01:42+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp connection request to 110.93.233.9:80 from 127.0.0.1:51092
+2017-06-04T11:01:42+0000 [SSHChannel None (71) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp forward to 110.93.233.9:80 with data 'GET /success.txt HTTP/1.1\r\nHost: detectportal.firefox.com\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; rv:53.0) Gecko/20100101 Firefox/53.0\r\nAccept: */*\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate\r\nCache-Control: no-cache\r\nPragma: no-cache\r\nConnection: keep-alive\r\n\r\n'
+2017-06-04T11:01:42+0000 [SSHChannel None (71) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] failed to connect: Connection refused
+2017-06-04T11:01:42+0000 [SSHChannel None (71) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] sending close 71
+2017-06-04T11:01:42+0000 [SSHChannel None (71) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] remote close
+2017-06-04T11:01:42+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] got channel 'direct-tcpip' request
+2017-06-04T11:01:42+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp connection request to 110.93.233.9:80 from 127.0.0.1:51095
+2017-06-04T11:01:42+0000 [SSHChannel None (72) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp forward to 110.93.233.9:80 with data 'GET /success.txt HTTP/1.1\r\nHost: detectportal.firefox.com\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; rv:53.0) Gecko/20100101 Firefox/53.0\r\nAccept: */*\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate\r\nCache-Control: no-cache\r\nPragma: no-cache\r\nConnection: keep-alive\r\n\r\n'
+2017-06-04T11:01:42+0000 [SSHChannel None (72) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] failed to connect: Connection refused
+2017-06-04T11:01:42+0000 [SSHChannel None (72) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] sending close 72
+2017-06-04T11:01:42+0000 [SSHChannel None (72) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] remote close
+2017-06-04T11:01:42+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] got channel 'direct-tcpip' request
+2017-06-04T11:01:42+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp connection request to 110.93.233.9:80 from 127.0.0.1:51098
+2017-06-04T11:01:43+0000 [SSHChannel None (73) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp forward to 110.93.233.9:80 with data 'GET /success.txt HTTP/1.1\r\nHost: detectportal.firefox.com\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; rv:53.0) Gecko/20100101 Firefox/53.0\r\nAccept: */*\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate\r\nCache-Control: no-cache\r\nPragma: no-cache\r\nConnection: keep-alive\r\n\r\n'
+2017-06-04T11:01:43+0000 [SSHChannel None (73) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] failed to connect: Connection refused
+2017-06-04T11:01:43+0000 [SSHChannel None (73) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] sending close 73
+2017-06-04T11:01:43+0000 [SSHChannel None (73) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] remote close
+2017-06-04T11:01:43+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] got channel 'direct-tcpip' request
+2017-06-04T11:01:43+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp connection request to 110.93.233.9:80 from 127.0.0.1:51101
+2017-06-04T11:01:43+0000 [SSHChannel None (74) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp forward to 110.93.233.9:80 with data 'GET /success.txt HTTP/1.1\r\nHost: detectportal.firefox.com\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; rv:53.0) Gecko/20100101 Firefox/53.0\r\nAccept: */*\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate\r\nCache-Control: no-cache\r\nPragma: no-cache\r\nConnection: keep-alive\r\n\r\n'
+2017-06-04T11:01:43+0000 [SSHChannel None (74) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] failed to connect: Connection refused
+2017-06-04T11:01:43+0000 [SSHChannel None (74) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] sending close 74
+2017-06-04T11:01:43+0000 [SSHChannel None (74) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] remote close
+2017-06-04T11:01:43+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] got channel 'direct-tcpip' request
+2017-06-04T11:01:43+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp connection request to 110.93.233.9:80 from 127.0.0.1:51104
+2017-06-04T11:01:43+0000 [SSHChannel None (75) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp forward to 110.93.233.9:80 with data 'GET /success.txt HTTP/1.1\r\nHost: detectportal.firefox.com\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; rv:53.0) Gecko/20100101 Firefox/53.0\r\nAccept: */*\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate\r\nCache-Control: no-cache\r\nPragma: no-cache\r\nConnection: keep-alive\r\n\r\n'
+2017-06-04T11:01:43+0000 [SSHChannel None (75) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] failed to connect: Connection refused
+2017-06-04T11:01:43+0000 [SSHChannel None (75) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] sending close 75
+2017-06-04T11:01:43+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] got channel 'direct-tcpip' request
+2017-06-04T11:01:43+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp connection request to 52.41.66.130:443 from 127.0.0.1:51107
+2017-06-04T11:01:44+0000 [SSHChannel None (75) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] remote close
+2017-06-04T11:01:44+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] got channel 'direct-tcpip' request
+2017-06-04T11:01:44+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp connection request to 110.93.233.9:80 from 127.0.0.1:51110
+2017-06-04T11:01:44+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] got channel 'direct-tcpip' request
+2017-06-04T11:01:44+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp connection request to 52.41.66.130:443 from 127.0.0.1:51113
+2017-06-04T11:01:44+0000 [SSHChannel None (76) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp forward to 52.41.66.130:443 with data '\x16\x03\x01\x00\xc2\x01\x00\x00\xbe\x03\x03\n\xe4>\xc9\xfb\x05l\xf7\xf5\xcdS\xe8\x0c\xe9\xa2y\x88W\x9d\\9\xe4\xa6\xce@l\x8d\xa1\xb7\xea\x85\x7f\x00\x00\x1e\xc0+\xc0/\xcc\xa9\xcc\xa8\xc0,\xc00\xc0\n\xc0\t\xc0\x13\xc0\x14\x003\x009\x00/\x005\x00\n\x01\x00\x00w\x00\x00\x00\x1e\x00\x1c\x00\x00\x19push.services.mozilla.com\x00\x17\x00\x00\xff\x01\x00\x01\x00\x00\n\x00\n\x00\x08\x00\x1d\x00\x17\x00\x18\x00\x19\x00\x0b\x00\x02\x01\x00\x00#\x00\x00\x00\x10\x00\x0b\x00\t\x08http/1.1\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00\r\x00\x18\x00\x16\x04\x03\x05\x03\x06\x03\x08\x04\x08\x05\x08\x06\x04\x01\x05\x01\x06\x01\x02\x03\x02\x01'
+2017-06-04T11:01:44+0000 [SSHChannel None (76) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] failed to connect: Connection refused
+2017-06-04T11:01:44+0000 [SSHChannel None (76) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] sending close 76
+2017-06-04T11:01:44+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] got channel 'direct-tcpip' request
+2017-06-04T11:01:44+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp connection request to 110.93.233.9:80 from 127.0.0.1:51116
+2017-06-04T11:01:44+0000 [SSHChannel None (77) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp forward to 110.93.233.9:80 with data 'GET /success.txt HTTP/1.1\r\nHost: detectportal.firefox.com\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; rv:53.0) Gecko/20100101 Firefox/53.0\r\nAccept: */*\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate\r\nCache-Control: no-cache\r\nPragma: no-cache\r\nConnection: keep-alive\r\n\r\n'
+2017-06-04T11:01:44+0000 [SSHChannel None (77) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] failed to connect: Connection refused
+2017-06-04T11:01:44+0000 [SSHChannel None (77) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] sending close 77
+2017-06-04T11:01:44+0000 [SSHChannel None (78) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp forward to 52.41.66.130:443 with data '\x16\x03\x01\x00\xc2\x01\x00\x00\xbe\x03\x03\xaf\x06\xc8Z>\x1a\x1a\xcd\xeb=\xac\xfb\x1d\xc4<\x15:\x85\xff\x9d\x14\xfa\x92Xg\x0c\x19\xdd\x1etf\xbe\x00\x00\x1e\xc0+\xc0/\xcc\xa9\xcc\xa8\xc0,\xc00\xc0\n\xc0\t\xc0\x13\xc0\x14\x003\x009\x00/\x005\x00\n\x01\x00\x00w\x00\x00\x00\x1e\x00\x1c\x00\x00\x19push.services.mozilla.com\x00\x17\x00\x00\xff\x01\x00\x01\x00\x00\n\x00\n\x00\x08\x00\x1d\x00\x17\x00\x18\x00\x19\x00\x0b\x00\x02\x01\x00\x00#\x00\x00\x00\x10\x00\x0b\x00\t\x08http/1.1\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00\r\x00\x18\x00\x16\x04\x03\x05\x03\x06\x03\x08\x04\x08\x05\x08\x06\x04\x01\x05\x01\x06\x01\x02\x03\x02\x01'
+2017-06-04T11:01:44+0000 [SSHChannel None (78) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] failed to connect: Connection refused
+2017-06-04T11:01:44+0000 [SSHChannel None (78) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] sending close 78
+2017-06-04T11:01:44+0000 [SSHChannel None (76) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] remote close
+2017-06-04T11:01:44+0000 [SSHChannel None (77) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] remote close
+2017-06-04T11:01:44+0000 [SSHChannel None (78) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] remote close
+2017-06-04T11:01:44+0000 [SSHChannel None (79) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp forward to 110.93.233.9:80 with data 'GET /success.txt HTTP/1.1\r\nHost: detectportal.firefox.com\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; rv:53.0) Gecko/20100101 Firefox/53.0\r\nAccept: */*\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate\r\nCache-Control: no-cache\r\nPragma: no-cache\r\nConnection: keep-alive\r\n\r\n'
+2017-06-04T11:01:44+0000 [SSHChannel None (79) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] failed to connect: Connection refused
+2017-06-04T11:01:44+0000 [SSHChannel None (79) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] sending close 79
+2017-06-04T11:01:44+0000 [SSHChannel None (79) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] remote close
+2017-06-04T11:01:45+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] got channel 'direct-tcpip' request
+2017-06-04T11:01:45+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp connection request to 110.93.233.9:80 from 127.0.0.1:51119
+2017-06-04T11:01:45+0000 [SSHChannel None (80) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp forward to 110.93.233.9:80 with data 'GET /success.txt HTTP/1.1\r\nHost: detectportal.firefox.com\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; rv:53.0) Gecko/20100101 Firefox/53.0\r\nAccept: */*\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate\r\nCache-Control: no-cache\r\nPragma: no-cache\r\nConnection: keep-alive\r\n\r\n'
+2017-06-04T11:01:45+0000 [SSHChannel None (80) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] failed to connect: Connection refused
+2017-06-04T11:01:45+0000 [SSHChannel None (80) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] sending close 80
+2017-06-04T11:01:45+0000 [SSHChannel None (80) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] remote close
+2017-06-04T11:01:45+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] got channel 'direct-tcpip' request
+2017-06-04T11:01:45+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp connection request to 110.93.233.9:80 from 127.0.0.1:51122
+2017-06-04T11:01:45+0000 [SSHChannel None (81) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp forward to 110.93.233.9:80 with data 'GET /success.txt HTTP/1.1\r\nHost: detectportal.firefox.com\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; rv:53.0) Gecko/20100101 Firefox/53.0\r\nAccept: */*\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate\r\nCache-Control: no-cache\r\nPragma: no-cache\r\nConnection: keep-alive\r\n\r\n'
+2017-06-04T11:01:45+0000 [SSHChannel None (81) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] failed to connect: Connection refused
+2017-06-04T11:01:45+0000 [SSHChannel None (81) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] sending close 81
+2017-06-04T11:01:45+0000 [SSHChannel None (81) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] remote close
+2017-06-04T11:01:45+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] got channel 'direct-tcpip' request
+2017-06-04T11:01:45+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp connection request to 110.93.233.9:80 from 127.0.0.1:51125
+2017-06-04T11:01:45+0000 [SSHChannel None (82) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp forward to 110.93.233.9:80 with data 'GET /success.txt HTTP/1.1\r\nHost: detectportal.firefox.com\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; rv:53.0) Gecko/20100101 Firefox/53.0\r\nAccept: */*\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate\r\nCache-Control: no-cache\r\nPragma: no-cache\r\nConnection: keep-alive\r\n\r\n'
+2017-06-04T11:01:45+0000 [SSHChannel None (82) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] failed to connect: Connection refused
+2017-06-04T11:01:45+0000 [SSHChannel None (82) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] sending close 82
+2017-06-04T11:01:46+0000 [SSHChannel None (82) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] remote close
+2017-06-04T11:01:46+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] got channel 'direct-tcpip' request
+2017-06-04T11:01:46+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp connection request to 110.93.233.9:80 from 127.0.0.1:51128
+2017-06-04T11:01:46+0000 [SSHChannel None (83) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp forward to 110.93.233.9:80 with data 'GET /success.txt HTTP/1.1\r\nHost: detectportal.firefox.com\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; rv:53.0) Gecko/20100101 Firefox/53.0\r\nAccept: */*\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate\r\nCache-Control: no-cache\r\nPragma: no-cache\r\nConnection: keep-alive\r\n\r\n'
+2017-06-04T11:01:46+0000 [SSHChannel None (83) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] failed to connect: Connection refused
+2017-06-04T11:01:46+0000 [SSHChannel None (83) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] sending close 83
+2017-06-04T11:01:46+0000 [SSHChannel None (83) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] remote close
+2017-06-04T11:01:46+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] got channel 'direct-tcpip' request
+2017-06-04T11:01:46+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp connection request to 110.93.233.9:80 from 127.0.0.1:51131
+2017-06-04T11:01:46+0000 [SSHChannel None (84) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp forward to 110.93.233.9:80 with data 'GET /success.txt HTTP/1.1\r\nHost: detectportal.firefox.com\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; rv:53.0) Gecko/20100101 Firefox/53.0\r\nAccept: */*\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate\r\nCache-Control: no-cache\r\nPragma: no-cache\r\nConnection: keep-alive\r\n\r\n'
+2017-06-04T11:01:46+0000 [SSHChannel None (84) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] failed to connect: Connection refused
+2017-06-04T11:01:46+0000 [SSHChannel None (84) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] sending close 84
+2017-06-04T11:01:46+0000 [SSHChannel None (84) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] remote close
+2017-06-04T11:01:46+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] got channel 'direct-tcpip' request
+2017-06-04T11:01:46+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp connection request to 110.93.233.9:80 from 127.0.0.1:51134
+2017-06-04T11:01:47+0000 [SSHChannel None (85) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] direct-tcp forward to 110.93.233.9:80 with data 'GET /success.txt HTTP/1.1\r\nHost: detectportal.firefox.com\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; rv:53.0) Gecko/20100101 Firefox/53.0\r\nAccept: */*\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate\r\nCache-Control: no-cache\r\nPragma: no-cache\r\nConnection: keep-alive\r\n\r\n'
+2017-06-04T11:01:47+0000 [SSHChannel None (85) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] failed to connect: Connection refused
+2017-06-04T11:01:47+0000 [SSHChannel None (85) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] sending close 85
+2017-06-04T11:01:47+0000 [SSHChannel None (85) on SSHService 'ssh-connection' on HoneyPotSSHTransport,4850,45.116.233.39] remote close
+2017-06-04T11:01:48+0000 [HoneyPotSSHTransport,4850,45.116.233.39] Got remote error, code 11
+	reason: User exit
+2017-06-04T11:01:48+0000 [HoneyPotSSHTransport,4850,45.116.233.39] avatar root logging out
+2017-06-04T11:01:48+0000 [HoneyPotSSHTransport,4850,45.116.233.39] connection lost
+2017-06-04T11:01:48+0000 [HoneyPotSSHTransport,4850,45.116.233.39] Connection lost after 41 seconds
+2017-06-04T11:01:57+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 116.31.116.17:52432 (10.8.41.81:2222) [session: 88dfd43e]
+2017-06-04T11:01:57+0000 [HoneyPotSSHTransport,4853,116.31.116.17] Remote SSH version: SSH-2.0-PUTTY
+2017-06-04T11:01:57+0000 [HoneyPotSSHTransport,4853,116.31.116.17] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-06-04T11:01:57+0000 [HoneyPotSSHTransport,4853,116.31.116.17] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-04T11:01:57+0000 [HoneyPotSSHTransport,4853,116.31.116.17] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-04T11:01:58+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 116.31.116.17:59550 (10.8.41.81:2222) [session: 7b45c3e3]
+2017-06-04T11:01:58+0000 [HoneyPotSSHTransport,4853,116.31.116.17] NEW KEYS
+2017-06-04T11:01:58+0000 [HoneyPotSSHTransport,4854,116.31.116.17] Remote SSH version: SSH-2.0-PUTTY
+2017-06-04T11:01:58+0000 [HoneyPotSSHTransport,4854,116.31.116.17] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-06-04T11:01:58+0000 [HoneyPotSSHTransport,4854,116.31.116.17] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-04T11:01:58+0000 [HoneyPotSSHTransport,4854,116.31.116.17] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-04T11:01:58+0000 [HoneyPotSSHTransport,4853,116.31.116.17] starting service 'ssh-userauth'
+2017-06-04T11:01:58+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,4853,116.31.116.17] 'root' trying auth 'none'
+2017-06-04T11:02:00+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,4853,116.31.116.17] 'root' authenticated with 'none'
+2017-06-04T11:02:00+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,4853,116.31.116.17] starting service 'ssh-connection'
+2017-06-04T11:02:00+0000 [HoneyPotSSHTransport,4853,116.31.116.17] Got remote error, code 11
+	reason: 
+2017-06-04T11:02:00+0000 [HoneyPotSSHTransport,4853,116.31.116.17] avatar root logging out
+2017-06-04T11:02:00+0000 [HoneyPotSSHTransport,4853,116.31.116.17] connection lost
+2017-06-04T11:02:00+0000 [HoneyPotSSHTransport,4853,116.31.116.17] Connection lost after 3 seconds
+2017-06-04T11:02:01+0000 [HoneyPotSSHTransport,4854,116.31.116.17] NEW KEYS
