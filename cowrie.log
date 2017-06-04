@@ -6500,3 +6500,38 @@
 2017-06-04T20:07:59+0000 [CowrieTelnetTransport,14952,222.221.52.84] first time for 222.221.52.84, need: 1
 2017-06-04T20:07:59+0000 [CowrieTelnetTransport,14952,222.221.52.84] login attempt: 1
 2017-06-04T20:08:01+0000 [CowrieTelnetTransport,14952,222.221.52.84] login attempt [root/root] succeeded
+2017-06-04T20:08:02+0000 [CowrieTelnetTransport,14952,222.221.52.84] Opening TTY Log: log/tty/20170604-200802-None-14952i.log
+2017-06-04T20:08:02+0000 [CowrieTelnetTransport,14952,222.221.52.84] Warning: state changed and new state returned
+2017-06-04T20:08:03+0000 [CowrieTelnetTransport,14952,222.221.52.84] Received unhandled keyID: '\x00'
+2017-06-04T20:08:03+0000 [CowrieTelnetTransport,14952,222.221.52.84] CMD: enable
+2017-06-04T20:08:03+0000 [CowrieTelnetTransport,14952,222.221.52.84] Command found: enable 
+2017-06-04T20:08:03+0000 [CowrieTelnetTransport,14952,222.221.52.84] Reading txtcmd from "txtcmds/bin/enable"
+2017-06-04T20:08:04+0000 [CowrieTelnetTransport,14952,222.221.52.84] Received unhandled keyID: '\x00'
+2017-06-04T20:08:05+0000 [CowrieTelnetTransport,14952,222.221.52.84] CMD: system
+2017-06-04T20:08:05+0000 [CowrieTelnetTransport,14952,222.221.52.84] Command not found: system
+2017-06-04T20:08:05+0000 [CowrieTelnetTransport,14952,222.221.52.84] Received unhandled keyID: '\x00'
+2017-06-04T20:08:05+0000 [CowrieTelnetTransport,14952,222.221.52.84] CMD: shell
+2017-06-04T20:08:05+0000 [CowrieTelnetTransport,14952,222.221.52.84] Command not found: shell
+2017-06-04T20:08:05+0000 [CowrieTelnetTransport,14952,222.221.52.84] Received unhandled keyID: '\x00'
+2017-06-04T20:08:06+0000 [CowrieTelnetTransport,14952,222.221.52.84] CMD: sh
+2017-06-04T20:08:06+0000 [CowrieTelnetTransport,14952,222.221.52.84] Command found: sh 
+2017-06-04T20:08:06+0000 [CowrieTelnetTransport,14952,222.221.52.84] Received unhandled keyID: '\x00'
+2017-06-04T20:08:07+0000 [CowrieTelnetTransport,14952,222.221.52.84] CMD: /bin/busybox MIRAI
+2017-06-04T20:08:07+0000 [CowrieTelnetTransport,14952,222.221.52.84] Command found: /bin/busybox MIRAI
+2017-06-04T20:08:07+0000 [CowrieTelnetTransport,14952,222.221.52.84] Closing TTY Log: log/tty/20170604-200802-None-14952i.log after 5 seconds
+2017-06-04T20:08:07+0000 [CowrieTelnetTransport,14952,222.221.52.84] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-06-04T20:08:07+0000 [CowrieTelnetTransport,14952,222.221.52.84] Connection lost after 12 seconds
+2017-06-04T20:08:28+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 91.195.103.203:49757 (10.8.41.81:2222) [session: b5ffb48c]
+2017-06-04T20:08:29+0000 [HoneyPotSSHTransport,5468,91.195.103.203] Remote SSH version: SSH-2.0-libssh-0.6.0
+2017-06-04T20:08:29+0000 [HoneyPotSSHTransport,5468,91.195.103.203] kex alg, key alg: 'ecdh-sha2-nistp256' 'ssh-rsa'
+2017-06-04T20:08:29+0000 [HoneyPotSSHTransport,5468,91.195.103.203] outgoing: 'aes256-ctr' 'hmac-sha1' 'none'
+2017-06-04T20:08:29+0000 [HoneyPotSSHTransport,5468,91.195.103.203] incoming: 'aes256-ctr' 'hmac-sha1' 'none'
+2017-06-04T20:08:30+0000 [HoneyPotSSHTransport,5468,91.195.103.203] NEW KEYS
+2017-06-04T20:08:30+0000 [HoneyPotSSHTransport,5468,91.195.103.203] starting service 'ssh-userauth'
+2017-06-04T20:08:30+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5468,91.195.103.203] '1111' trying auth 'password'
+2017-06-04T20:08:31+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5468,91.195.103.203] login attempt: 30
+2017-06-04T20:08:31+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5468,91.195.103.203] login return, expect: [1111/1111]
+2017-06-04T20:08:33+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5468,91.195.103.203] login attempt [1111/1111] succeeded
+2017-06-04T20:08:35+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5468,91.195.103.203] '1111' authenticated with 'password'
+2017-06-04T20:08:35+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5468,91.195.103.203] starting service 'ssh-connection'
