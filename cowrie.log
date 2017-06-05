@@ -1839,3 +1839,83 @@
 2017-06-05T04:06:41+0000 [SSHChannel None (20) on SSHService 'ssh-connection' on HoneyPotSSHTransport,5835,91.230.47.81] direct-tcp forward to 107.6.186.178:80 with data 'GET /internals/api/ip?1496635554499848714 HTTP/1.1\r\nHost: ip5.adspy.mobi\r\nConnection: keep-alive\r\nUser-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.67 Safari/537.36\r\nAccept-Encoding: gzip, deflate, sdch\r\n\r\n'
 2017-06-05T04:06:41+0000 [SSHChannel None (20) on SSHService 'ssh-connection' on HoneyPotSSHTransport,5835,91.230.47.81] failed to connect: Connection refused
 2017-06-05T04:06:41+0000 [SSHChannel None (20) on SSHService 'ssh-connection' on HoneyPotSSHTransport,5835,91.230.47.81] sending close 20
+2017-06-05T04:07:14+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 220.178.172.47:39084 (10.8.41.81:2223) [session: TT15835]
+2017-06-05T04:07:17+0000 [CowrieTelnetTransport,15835,220.178.172.47] first time for 220.178.172.47, need: 1
+2017-06-05T04:07:17+0000 [CowrieTelnetTransport,15835,220.178.172.47] login attempt: 1
+2017-06-05T04:07:18+0000 [CowrieTelnetTransport,15835,220.178.172.47] login attempt [root/juantech] succeeded
+2017-06-05T04:07:20+0000 [CowrieTelnetTransport,15835,220.178.172.47] Opening TTY Log: log/tty/20170605-040720-None-15835i.log
+2017-06-05T04:07:20+0000 [CowrieTelnetTransport,15835,220.178.172.47] Warning: state changed and new state returned
+2017-06-05T04:07:21+0000 [CowrieTelnetTransport,15835,220.178.172.47] CMD: enable
+2017-06-05T04:07:21+0000 [CowrieTelnetTransport,15835,220.178.172.47] Command found: enable 
+2017-06-05T04:07:21+0000 [CowrieTelnetTransport,15835,220.178.172.47] Reading txtcmd from "txtcmds/bin/enable"
+2017-06-05T04:07:21+0000 [CowrieTelnetTransport,15835,220.178.172.47] CMD: system
+2017-06-05T04:07:21+0000 [CowrieTelnetTransport,15835,220.178.172.47] Command not found: system
+2017-06-05T04:07:22+0000 [CowrieTelnetTransport,15835,220.178.172.47] CMD: shell
+2017-06-05T04:07:22+0000 [CowrieTelnetTransport,15835,220.178.172.47] Command not found: shell
+2017-06-05T04:07:22+0000 [CowrieTelnetTransport,15835,220.178.172.47] CMD: sh
+2017-06-05T04:07:22+0000 [CowrieTelnetTransport,15835,220.178.172.47] Command found: sh 
+2017-06-05T04:07:23+0000 [CowrieTelnetTransport,15835,220.178.172.47] CMD:  /bin/busybox wget; /bin/busybox 81c46036wget; /bin/busybox echo -ne '\x0181c46036\x7f'; /bin/busybox printf '\00281c46036\177'; /bin/echo -ne '\x0381c46036\x7f'; /usr/bin/printf '\00481c46036\177'; /bin/busybox tftp; /bin/busybox 81c46036tftp;
+2017-06-05T04:07:23+0000 [CowrieTelnetTransport,15835,220.178.172.47] Command found: /bin/busybox wget
+2017-06-05T04:07:23+0000 [CowrieTelnetTransport,15835,220.178.172.47] Command found: wget
+2017-06-05T04:07:23+0000 [CowrieTelnetTransport,15835,220.178.172.47] Command found: /bin/busybox 81c46036wget
+2017-06-05T04:07:23+0000 [CowrieTelnetTransport,15835,220.178.172.47] Command found: /bin/busybox echo -ne '\x0181c46036\x7f'
+2017-06-05T04:07:23+0000 [CowrieTelnetTransport,15835,220.178.172.47] Command found: echo -ne '\x0181c46036\x7f'
+2017-06-05T04:07:23+0000 [CowrieTelnetTransport,15835,220.178.172.47] Command found: /bin/busybox printf '\00281c46036\177'
+2017-06-05T04:07:23+0000 [CowrieTelnetTransport,15835,220.178.172.47] Command found: /bin/echo -ne '\x0381c46036\x7f'
+2017-06-05T04:07:23+0000 [CowrieTelnetTransport,15835,220.178.172.47] Command not found: /usr/bin/printf '\00481c46036\177'
+2017-06-05T04:07:23+0000 [CowrieTelnetTransport,15835,220.178.172.47] Command found: /bin/busybox tftp
+2017-06-05T04:07:23+0000 [CowrieTelnetTransport,15835,220.178.172.47] Command found: tftp
+2017-06-05T04:07:23+0000 [CowrieTelnetTransport,15835,220.178.172.47] Command found: /bin/busybox 81c46036tftp
+2017-06-05T04:07:23+0000 [CowrieTelnetTransport,15835,220.178.172.47] CMD:  /bin/busybox dd if=/bin/busybox bs=22 count=1 || /bin/busybox cat /bin/busybox
+2017-06-05T04:07:23+0000 [CowrieTelnetTransport,15835,220.178.172.47] Command found: /bin/busybox dd if=/bin/busybox bs=22 count=1
+2017-06-05T04:07:23+0000 [CowrieTelnetTransport,15835,220.178.172.47] Command found: /bin/busybox cat /bin/busybox
+2017-06-05T04:07:23+0000 [CowrieTelnetTransport,15835,220.178.172.47] Command found: cat /bin/busybox
+2017-06-05T04:07:33+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,5776,91.195.103.210] got channel 'direct-tcpip' request
+2017-06-05T04:07:33+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,5776,91.195.103.210] direct-tcp connection request to 188.125.69.79:25 from localhost:5556
+2017-06-05T04:07:35+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 211.137.225.128:42917 (10.8.41.81:2223) [session: TT15836]
+2017-06-05T04:07:36+0000 [CowrieTelnetTransport,15836,211.137.225.128] first time for 211.137.225.128, need: 1
+2017-06-05T04:07:36+0000 [CowrieTelnetTransport,15836,211.137.225.128] login attempt: 1
+2017-06-05T04:07:38+0000 [CowrieTelnetTransport,15836,211.137.225.128] login attempt [root/anko] succeeded
+2017-06-05T04:07:39+0000 [CowrieTelnetTransport,15836,211.137.225.128] Opening TTY Log: log/tty/20170605-040739-None-15836i.log
+2017-06-05T04:07:39+0000 [CowrieTelnetTransport,15836,211.137.225.128] Warning: state changed and new state returned
+2017-06-05T04:07:39+0000 [SSHChannel None (52) on SSHService 'ssh-connection' on HoneyPotSSHTransport,5776,91.195.103.210] remote eof
+2017-06-05T04:07:39+0000 [SSHChannel None (52) on SSHService 'ssh-connection' on HoneyPotSSHTransport,5776,91.195.103.210] remote close
+2017-06-05T04:07:39+0000 [SSHChannel None (52) on SSHService 'ssh-connection' on HoneyPotSSHTransport,5776,91.195.103.210] sending close 52
+2017-06-05T04:07:39+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,5776,91.195.103.210] got channel 'direct-tcpip' request
+2017-06-05T04:07:39+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,5776,91.195.103.210] direct-tcp connection request to 188.125.69.79:25 from localhost:5556
+2017-06-05T04:07:40+0000 [CowrieTelnetTransport,15836,211.137.225.128] CMD: enable
+2017-06-05T04:07:40+0000 [CowrieTelnetTransport,15836,211.137.225.128] Command found: enable 
+2017-06-05T04:07:40+0000 [CowrieTelnetTransport,15836,211.137.225.128] Reading txtcmd from "txtcmds/bin/enable"
+2017-06-05T04:07:40+0000 [CowrieTelnetTransport,15836,211.137.225.128] CMD: system
+2017-06-05T04:07:40+0000 [CowrieTelnetTransport,15836,211.137.225.128] Command not found: system
+2017-06-05T04:07:41+0000 [CowrieTelnetTransport,15836,211.137.225.128] CMD: shell
+2017-06-05T04:07:41+0000 [CowrieTelnetTransport,15836,211.137.225.128] Command not found: shell
+2017-06-05T04:07:41+0000 [CowrieTelnetTransport,15836,211.137.225.128] CMD: sh
+2017-06-05T04:07:41+0000 [CowrieTelnetTransport,15836,211.137.225.128] Command found: sh 
+2017-06-05T04:07:41+0000 [CowrieTelnetTransport,15836,211.137.225.128] CMD:  /bin/busybox wget; /bin/busybox 81c46036wget; /bin/busybox echo -ne '\x0181c46036\x7f'; /bin/busybox printf '\00281c46036\177'; /bin/echo -ne '\x0381c46036\x7f'; /usr/bin/printf '\00481c46036\177'; /bin/busybox tftp; /bin/busybox 81c46036tftp;
+2017-06-05T04:07:41+0000 [CowrieTelnetTransport,15836,211.137.225.128] Command found: /bin/busybox wget
+2017-06-05T04:07:41+0000 [CowrieTelnetTransport,15836,211.137.225.128] Command found: wget
+2017-06-05T04:07:41+0000 [CowrieTelnetTransport,15836,211.137.225.128] Command found: /bin/busybox 81c46036wget
+2017-06-05T04:07:41+0000 [CowrieTelnetTransport,15836,211.137.225.128] Command found: /bin/busybox echo -ne '\x0181c46036\x7f'
+2017-06-05T04:07:41+0000 [CowrieTelnetTransport,15836,211.137.225.128] Command found: echo -ne '\x0181c46036\x7f'
+2017-06-05T04:07:41+0000 [CowrieTelnetTransport,15836,211.137.225.128] Command found: /bin/busybox printf '\00281c46036\177'
+2017-06-05T04:07:41+0000 [CowrieTelnetTransport,15836,211.137.225.128] Command found: /bin/echo -ne '\x0381c46036\x7f'
+2017-06-05T04:07:41+0000 [CowrieTelnetTransport,15836,211.137.225.128] Command not found: /usr/bin/printf '\00481c46036\177'
+2017-06-05T04:07:41+0000 [CowrieTelnetTransport,15836,211.137.225.128] Command found: /bin/busybox tftp
+2017-06-05T04:07:41+0000 [CowrieTelnetTransport,15836,211.137.225.128] Command found: tftp
+2017-06-05T04:07:41+0000 [CowrieTelnetTransport,15836,211.137.225.128] Command found: /bin/busybox 81c46036tftp
+2017-06-05T04:07:42+0000 [CowrieTelnetTransport,15836,211.137.225.128] Closing TTY Log: log/tty/20170605-040739-None-15836i.log after 2 seconds
+2017-06-05T04:07:42+0000 [CowrieTelnetTransport,15836,211.137.225.128] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion.
+	]
+2017-06-05T04:07:42+0000 [CowrieTelnetTransport,15836,211.137.225.128] Connection lost after 7 seconds
+2017-06-05T04:07:45+0000 [SSHChannel None (53) on SSHService 'ssh-connection' on HoneyPotSSHTransport,5776,91.195.103.210] remote eof
+2017-06-05T04:07:45+0000 [SSHChannel None (53) on SSHService 'ssh-connection' on HoneyPotSSHTransport,5776,91.195.103.210] remote close
+2017-06-05T04:07:45+0000 [SSHChannel None (53) on SSHService 'ssh-connection' on HoneyPotSSHTransport,5776,91.195.103.210] sending close 53
+2017-06-05T04:07:50+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 198.46.130.87:34858 (10.8.41.81:2223) [session: TT15837]
+2017-06-05T04:07:50+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 198.46.130.87:50757 (10.8.41.81:2223) [session: TT15838]
+2017-06-05T04:07:57+0000 [CowrieTelnetTransport,15837,198.46.130.87] login attempt: 917
+2017-06-05T04:07:57+0000 [CowrieTelnetTransport,15837,198.46.130.87] login return, expect: [admin/5up]
+2017-06-05T04:07:59+0000 [CowrieTelnetTransport,15837,198.46.130.87] login attempt [root/54321] failed
+2017-06-05T04:07:59+0000 [CowrieTelnetTransport,15837,198.46.130.87] Warning: state changed and new state returned
+2017-06-05T04:07:59+0000 [CowrieTelnetTransport,15838,198.46.130.87] login attempt: 918
+2017-06-05T04:07:59+0000 [CowrieTelnetTransport,15838,198.46.130.87] login return, expect: [admin/5up]
