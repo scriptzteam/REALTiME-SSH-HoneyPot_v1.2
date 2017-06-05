@@ -3613,3 +3613,62 @@
 2017-06-05T16:01:58+0000 [CowrieTelnetTransport,16763,116.97.222.236] first time for 116.97.222.236, need: 1
 2017-06-05T16:01:58+0000 [CowrieTelnetTransport,16763,116.97.222.236] login attempt: 1
 2017-06-05T16:02:00+0000 [CowrieTelnetTransport,16763,116.97.222.236] login attempt [root/xmhdipc] succeeded
+2017-06-05T16:02:02+0000 [CowrieTelnetTransport,16763,116.97.222.236] Opening TTY Log: log/tty/20170605-160202-None-16763i.log
+2017-06-05T16:02:02+0000 [CowrieTelnetTransport,16763,116.97.222.236] Warning: state changed and new state returned
+2017-06-05T16:02:02+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6317,124.205.18.99] received eof, sending ctrl-d to command
+2017-06-05T16:02:02+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6317,124.205.18.99] Received CTRL-D, exiting..
+2017-06-05T16:02:02+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6317,124.205.18.99] exitCode: 0
+2017-06-05T16:02:02+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6317,124.205.18.99] Closing TTY Log: log/tty/20170605-160157-bd791439-0e.log after 4 seconds
+2017-06-05T16:02:02+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6317,124.205.18.99] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-06-05T16:02:02+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6317,124.205.18.99] remote close
+2017-06-05T16:02:02+0000 [HoneyPotSSHTransport,6317,124.205.18.99] avatar 1111 logging out
+2017-06-05T16:02:02+0000 [HoneyPotSSHTransport,6317,124.205.18.99] connection lost
+2017-06-05T16:02:02+0000 [HoneyPotSSHTransport,6317,124.205.18.99] Connection lost after 13 seconds
+2017-06-05T16:02:02+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,6307,212.129.47.151] got global keepalive@jcraft.com request
+2017-06-05T16:02:03+0000 [CowrieTelnetTransport,16763,116.97.222.236] CMD: enable
+2017-06-05T16:02:03+0000 [CowrieTelnetTransport,16763,116.97.222.236] Command found: enable 
+2017-06-05T16:02:03+0000 [CowrieTelnetTransport,16763,116.97.222.236] Reading txtcmd from "txtcmds/bin/enable"
+2017-06-05T16:02:03+0000 [CowrieTelnetTransport,16763,116.97.222.236] CMD: shell
+2017-06-05T16:02:03+0000 [CowrieTelnetTransport,16763,116.97.222.236] Command not found: shell
+2017-06-05T16:02:03+0000 [CowrieTelnetTransport,16763,116.97.222.236] CMD: sh
+2017-06-05T16:02:03+0000 [CowrieTelnetTransport,16763,116.97.222.236] Command found: sh 
+2017-06-05T16:02:03+0000 [CowrieTelnetTransport,16763,116.97.222.236] CMD: cat /proc/mounts; /bin/busybox TGZVI
+2017-06-05T16:02:03+0000 [CowrieTelnetTransport,16763,116.97.222.236] Command found: cat /proc/mounts
+2017-06-05T16:02:03+0000 [CowrieTelnetTransport,16763,116.97.222.236] Command found: /bin/busybox TGZVI
+2017-06-05T16:02:03+0000 [CowrieTelnetTransport,16763,116.97.222.236] CMD: cd /dev/shm; cat .s || cp /bin/echo .s; /bin/busybox TGZVI
+2017-06-05T16:02:03+0000 [CowrieTelnetTransport,16763,116.97.222.236] Command found: cd /dev/shm
+2017-06-05T16:02:03+0000 [CowrieTelnetTransport,16763,116.97.222.236] Command found: cat .s
+2017-06-05T16:02:03+0000 [CowrieTelnetTransport,16763,116.97.222.236] Command found: cp /bin/echo .s
+2017-06-05T16:02:03+0000 [CowrieTelnetTransport,16763,116.97.222.236] Command found: /bin/busybox TGZVI
+2017-06-05T16:02:04+0000 [CowrieTelnetTransport,16763,116.97.222.236] CMD: nc; wget; /bin/busybox TGZVI
+2017-06-05T16:02:04+0000 [CowrieTelnetTransport,16763,116.97.222.236] Command not found: nc
+2017-06-05T16:02:04+0000 [CowrieTelnetTransport,16763,116.97.222.236] Command found: wget 
+2017-06-05T16:02:04+0000 [CowrieTelnetTransport,16763,116.97.222.236] Command found: /bin/busybox TGZVI
+2017-06-05T16:02:04+0000 [CowrieTelnetTransport,16763,116.97.222.236] CMD: dd bs=52 count=1 if=.s || cat .s
+2017-06-05T16:02:04+0000 [CowrieTelnetTransport,16763,116.97.222.236] Command not found: dd bs=52 count=1 if=.s
+2017-06-05T16:02:04+0000 [CowrieTelnetTransport,16763,116.97.222.236] Command found: cat /dev/shm/.s
+2017-06-05T16:02:05+0000 [CowrieTelnetTransport,16763,116.97.222.236] CMD: /bin/busybox TGZVI
+2017-06-05T16:02:05+0000 [CowrieTelnetTransport,16763,116.97.222.236] Command found: /bin/busybox TGZVI
+2017-06-05T16:02:07+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,6307,212.129.47.151] got global keepalive@jcraft.com request
+2017-06-05T16:02:07+0000 [SSHChannel None (112) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6207,134.19.187.78] remote eof
+2017-06-05T16:02:08+0000 [SSHChannel None (112) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6207,134.19.187.78] remote close
+2017-06-05T16:02:08+0000 [SSHChannel None (112) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6207,134.19.187.78] sending close 112
+2017-06-05T16:02:12+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,6307,212.129.47.151] got global keepalive@jcraft.com request
+2017-06-05T16:02:18+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,6307,212.129.47.151] got global keepalive@jcraft.com request
+2017-06-05T16:02:23+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,6307,212.129.47.151] got global keepalive@jcraft.com request
+2017-06-05T16:02:28+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,6307,212.129.47.151] got global keepalive@jcraft.com request
+2017-06-05T16:02:33+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,6307,212.129.47.151] got global keepalive@jcraft.com request
+2017-06-05T16:02:34+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,6207,134.19.187.78] got channel 'direct-tcpip' request
+2017-06-05T16:02:34+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,6207,134.19.187.78] direct-tcp connection request to 94.100.180.31:25 from localhost:5556
+2017-06-05T16:02:38+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,6307,212.129.47.151] got global keepalive@jcraft.com request
+2017-06-05T16:02:43+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,6307,212.129.47.151] got global keepalive@jcraft.com request
+2017-06-05T16:02:44+0000 [SSHChannel None (113) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6207,134.19.187.78] remote eof
+2017-06-05T16:02:44+0000 [SSHChannel None (113) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6207,134.19.187.78] remote close
+2017-06-05T16:02:44+0000 [SSHChannel None (113) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6207,134.19.187.78] sending close 113
+2017-06-05T16:02:48+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,6307,212.129.47.151] got global keepalive@jcraft.com request
+2017-06-05T16:02:53+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,6307,212.129.47.151] got global keepalive@jcraft.com request
+2017-06-05T16:02:55+0000 [SSHChannel None (255) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6220,91.195.103.183] remote eof
+2017-06-05T16:02:55+0000 [SSHChannel None (255) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6220,91.195.103.183] remote close
+2017-06-05T16:02:55+0000 [SSHChannel None (255) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6220,91.195.103.183] sending close 255
+2017-06-05T16:02:58+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,6307,212.129.47.151] got global keepalive@jcraft.com request
