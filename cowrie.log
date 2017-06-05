@@ -6943,3 +6943,57 @@
 2017-06-05T03:19:58+0000 [SSHChannel None (14) on SSHService 'ssh-connection' on HoneyPotSSHTransport,5776,91.195.103.210] sending close 14
 2017-06-05T03:19:58+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,5776,91.195.103.210] got channel 'direct-tcpip' request
 2017-06-05T03:19:58+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,5776,91.195.103.210] direct-tcp connection request to 188.125.69.79:25 from localhost:5556
+2017-06-05T03:20:03+0000 [SSHChannel None (15) on SSHService 'ssh-connection' on HoneyPotSSHTransport,5776,91.195.103.210] remote eof
+2017-06-05T03:20:03+0000 [SSHChannel None (15) on SSHService 'ssh-connection' on HoneyPotSSHTransport,5776,91.195.103.210] remote close
+2017-06-05T03:20:03+0000 [SSHChannel None (15) on SSHService 'ssh-connection' on HoneyPotSSHTransport,5776,91.195.103.210] sending close 15
+2017-06-05T03:20:29+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 14.201.200.184:52475 (10.8.41.81:2223) [session: TT15772]
+2017-06-05T03:20:30+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 5.189.143.136:57372 (10.8.41.81:2222) [session: c94bef23]
+2017-06-05T03:20:30+0000 [HoneyPotSSHTransport,5801,5.189.143.136] Remote SSH version: SSH-2.0-libssh2_1.4.3
+2017-06-05T03:20:30+0000 [HoneyPotSSHTransport,5801,5.189.143.136] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-06-05T03:20:30+0000 [HoneyPotSSHTransport,5801,5.189.143.136] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-05T03:20:30+0000 [HoneyPotSSHTransport,5801,5.189.143.136] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-05T03:20:30+0000 [HoneyPotSSHTransport,5801,5.189.143.136] NEW KEYS
+2017-06-05T03:20:30+0000 [HoneyPotSSHTransport,5801,5.189.143.136] starting service 'ssh-userauth'
+2017-06-05T03:20:30+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5801,5.189.143.136] 'aurumarma' trying auth 'password'
+2017-06-05T03:20:31+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5801,5.189.143.136] login attempt: 267
+2017-06-05T03:20:31+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5801,5.189.143.136] login return, expect: [musicbot/musicbot]
+2017-06-05T03:20:32+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5801,5.189.143.136] login attempt [aurumarma/123] failed
+2017-06-05T03:20:33+0000 [CowrieTelnetTransport,15772,14.201.200.184] first time for 14.201.200.184, need: 1
+2017-06-05T03:20:33+0000 [CowrieTelnetTransport,15772,14.201.200.184] login attempt: 1
+2017-06-05T03:20:34+0000 [CowrieTelnetTransport,15772,14.201.200.184] login attempt [root/ikwb] succeeded
+2017-06-05T03:20:37+0000 [CowrieTelnetTransport,15772,14.201.200.184] Opening TTY Log: log/tty/20170605-032037-None-15772i.log
+2017-06-05T03:20:37+0000 [CowrieTelnetTransport,15772,14.201.200.184] Warning: state changed and new state returned
+2017-06-05T03:20:37+0000 [-] 'aurumarma' failed auth 'password'
+2017-06-05T03:20:37+0000 [-] unauthorized login: 
+2017-06-05T03:20:37+0000 [HoneyPotSSHTransport,5801,5.189.143.136] Got remote error, code 11
+	reason: Normal Shutdown, Thank you for playing
+2017-06-05T03:20:37+0000 [HoneyPotSSHTransport,5801,5.189.143.136] connection lost
+2017-06-05T03:20:37+0000 [HoneyPotSSHTransport,5801,5.189.143.136] Connection lost after 7 seconds
+2017-06-05T03:20:38+0000 [CowrieTelnetTransport,15772,14.201.200.184] CMD: enable
+2017-06-05T03:20:38+0000 [CowrieTelnetTransport,15772,14.201.200.184] Command found: enable 
+2017-06-05T03:20:38+0000 [CowrieTelnetTransport,15772,14.201.200.184] Reading txtcmd from "txtcmds/bin/enable"
+2017-06-05T03:20:38+0000 [CowrieTelnetTransport,15772,14.201.200.184] CMD: shell
+2017-06-05T03:20:38+0000 [CowrieTelnetTransport,15772,14.201.200.184] Command not found: shell
+2017-06-05T03:20:38+0000 [CowrieTelnetTransport,15772,14.201.200.184] CMD: sh
+2017-06-05T03:20:38+0000 [CowrieTelnetTransport,15772,14.201.200.184] Command found: sh 
+2017-06-05T03:20:38+0000 [CowrieTelnetTransport,15772,14.201.200.184] CMD: cat /proc/mounts; /bin/busybox GKLPV
+2017-06-05T03:20:38+0000 [CowrieTelnetTransport,15772,14.201.200.184] Command found: cat /proc/mounts
+2017-06-05T03:20:38+0000 [CowrieTelnetTransport,15772,14.201.200.184] Command found: /bin/busybox GKLPV
+2017-06-05T03:20:38+0000 [CowrieTelnetTransport,15772,14.201.200.184] CMD: cd /dev/shm; cat .s || cp /bin/echo .s; /bin/busybox GKLPV
+2017-06-05T03:20:38+0000 [CowrieTelnetTransport,15772,14.201.200.184] Command found: cd /dev/shm
+2017-06-05T03:20:38+0000 [CowrieTelnetTransport,15772,14.201.200.184] Command found: cat .s
+2017-06-05T03:20:38+0000 [CowrieTelnetTransport,15772,14.201.200.184] Command found: cp /bin/echo .s
+2017-06-05T03:20:38+0000 [CowrieTelnetTransport,15772,14.201.200.184] Command found: /bin/busybox GKLPV
+2017-06-05T03:20:39+0000 [CowrieTelnetTransport,15772,14.201.200.184] CMD: nc; wget; /bin/busybox GKLPV
+2017-06-05T03:20:39+0000 [CowrieTelnetTransport,15772,14.201.200.184] Command not found: nc
+2017-06-05T03:20:39+0000 [CowrieTelnetTransport,15772,14.201.200.184] Command found: wget 
+2017-06-05T03:20:39+0000 [CowrieTelnetTransport,15772,14.201.200.184] Command found: /bin/busybox GKLPV
+2017-06-05T03:20:39+0000 [CowrieTelnetTransport,15770,88.237.172.111] Closing TTY Log: log/tty/20170605-031858-None-15770i.log after 100 seconds
+2017-06-05T03:20:39+0000 [CowrieTelnetTransport,15770,88.237.172.111] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-06-05T03:20:39+0000 [CowrieTelnetTransport,15770,88.237.172.111] Connection lost after 104 seconds
+2017-06-05T03:20:39+0000 [CowrieTelnetTransport,15772,14.201.200.184] CMD: dd bs=52 count=1 if=.s || cat .s
+2017-06-05T03:20:39+0000 [CowrieTelnetTransport,15772,14.201.200.184] Command not found: dd bs=52 count=1 if=.s
+2017-06-05T03:20:39+0000 [CowrieTelnetTransport,15772,14.201.200.184] Command found: cat /dev/shm/.s
+2017-06-05T03:20:39+0000 [CowrieTelnetTransport,15772,14.201.200.184] CMD: /bin/busybox GKLPV
+2017-06-05T03:20:39+0000 [CowrieTelnetTransport,15772,14.201.200.184] Command found: /bin/busybox GKLPV
