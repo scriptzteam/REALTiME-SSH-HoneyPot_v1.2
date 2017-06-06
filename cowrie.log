@@ -645,3 +645,183 @@
 2017-06-06T06:33:39+0000 [SSHChannel None (28) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6827,91.230.47.82] direct-tcp forward to 185.86.151.225:80 with data 'GET /getip.php HTTP/1.1\r\nUser-Agent: Mozilla/5.0\r\nHost: s1.ipinfo.pw\r\nAccept: */*\r\n\r\n'
 2017-06-06T06:33:39+0000 [SSHChannel None (28) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6827,91.230.47.82] failed to connect: Connection refused
 2017-06-06T06:33:39+0000 [SSHChannel None (28) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6827,91.230.47.82] sending close 28
+2017-06-06T06:34:09+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 35.165.189.216:48832 (10.8.41.81:2222) [session: 9d522a9a]
+2017-06-06T06:34:09+0000 [HoneyPotSSHTransport,6924,35.165.189.216] Remote SSH version: SSH-2.0-libssh-0.2
+2017-06-06T06:34:09+0000 [HoneyPotSSHTransport,6924,35.165.189.216] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-rsa'
+2017-06-06T06:34:09+0000 [HoneyPotSSHTransport,6924,35.165.189.216] outgoing: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-06-06T06:34:09+0000 [HoneyPotSSHTransport,6924,35.165.189.216] incoming: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-06-06T06:34:10+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 93.159.195.37:57449 (10.8.41.81:2223) [session: TT18631]
+2017-06-06T06:34:11+0000 [CowrieTelnetTransport,18631,93.159.195.37] first time for 93.159.195.37, need: 1
+2017-06-06T06:34:11+0000 [CowrieTelnetTransport,18631,93.159.195.37] login attempt: 1
+2017-06-06T06:34:12+0000 [CowrieTelnetTransport,18631,93.159.195.37] login attempt [admin/password] succeeded
+2017-06-06T06:34:15+0000 [CowrieTelnetTransport,18631,93.159.195.37] Opening TTY Log: log/tty/20170606-063415-None-18631i.log
+2017-06-06T06:34:15+0000 [CowrieTelnetTransport,18631,93.159.195.37] Warning: state changed and new state returned
+2017-06-06T06:34:15+0000 [-] Process ended. Telnet Session disconnected
+2017-06-06T06:34:15+0000 [HoneyPotSSHTransport,6924,35.165.189.216] NEW KEYS
+2017-06-06T06:34:15+0000 [CowrieTelnetTransport,18630,116.7.150.1] Closing TTY Log: log/tty/20170606-063111-None-18630i.log after 183 seconds
+2017-06-06T06:34:15+0000 [CowrieTelnetTransport,18630,116.7.150.1] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-06-06T06:34:15+0000 [CowrieTelnetTransport,18630,116.7.150.1] Connection lost after 190 seconds
+2017-06-06T06:34:15+0000 [HoneyPotSSHTransport,6924,35.165.189.216] connection lost
+2017-06-06T06:34:15+0000 [HoneyPotSSHTransport,6924,35.165.189.216] Connection lost after 6 seconds
+2017-06-06T06:34:15+0000 [CowrieTelnetTransport,18631,93.159.195.37] CMD: enable
+2017-06-06T06:34:15+0000 [CowrieTelnetTransport,18631,93.159.195.37] Command found: enable 
+2017-06-06T06:34:15+0000 [CowrieTelnetTransport,18631,93.159.195.37] Reading txtcmd from "txtcmds/bin/enable"
+2017-06-06T06:34:15+0000 [CowrieTelnetTransport,18631,93.159.195.37] CMD: system
+2017-06-06T06:34:15+0000 [CowrieTelnetTransport,18631,93.159.195.37] Command not found: system
+2017-06-06T06:34:15+0000 [CowrieTelnetTransport,18631,93.159.195.37] CMD: shell
+2017-06-06T06:34:15+0000 [CowrieTelnetTransport,18631,93.159.195.37] Command not found: shell
+2017-06-06T06:34:15+0000 [CowrieTelnetTransport,18631,93.159.195.37] CMD: sh
+2017-06-06T06:34:15+0000 [CowrieTelnetTransport,18631,93.159.195.37] Command found: sh 
+2017-06-06T06:34:15+0000 [CowrieTelnetTransport,18631,93.159.195.37] CMD:  /bin/busybox wget; /bin/busybox 81c46036wget; /bin/busybox echo -ne '\x0181c46036\x7f'; /bin/busybox printf '\00281c46036\177'; /bin/echo -ne '\x0381c46036\x7f'; /usr/bin/printf '\00481c46036\177'; /bin/busybox tftp; /bin/busybox 81c46036tftp;
+2017-06-06T06:34:15+0000 [CowrieTelnetTransport,18631,93.159.195.37] Command found: /bin/busybox wget
+2017-06-06T06:34:15+0000 [CowrieTelnetTransport,18631,93.159.195.37] Command found: wget
+2017-06-06T06:34:15+0000 [CowrieTelnetTransport,18631,93.159.195.37] Command found: /bin/busybox 81c46036wget
+2017-06-06T06:34:15+0000 [CowrieTelnetTransport,18631,93.159.195.37] Command found: /bin/busybox echo -ne '\x0181c46036\x7f'
+2017-06-06T06:34:15+0000 [CowrieTelnetTransport,18631,93.159.195.37] Command found: echo -ne '\x0181c46036\x7f'
+2017-06-06T06:34:15+0000 [CowrieTelnetTransport,18631,93.159.195.37] Command found: /bin/busybox printf '\00281c46036\177'
+2017-06-06T06:34:15+0000 [CowrieTelnetTransport,18631,93.159.195.37] Command found: /bin/echo -ne '\x0381c46036\x7f'
+2017-06-06T06:34:15+0000 [CowrieTelnetTransport,18631,93.159.195.37] Command not found: /usr/bin/printf '\00481c46036\177'
+2017-06-06T06:34:15+0000 [CowrieTelnetTransport,18631,93.159.195.37] Command found: /bin/busybox tftp
+2017-06-06T06:34:15+0000 [CowrieTelnetTransport,18631,93.159.195.37] Command found: tftp
+2017-06-06T06:34:15+0000 [CowrieTelnetTransport,18631,93.159.195.37] Command found: /bin/busybox 81c46036tftp
+2017-06-06T06:34:16+0000 [CowrieTelnetTransport,18631,93.159.195.37] CMD:  /bin/busybox dd if=/bin/busybox bs=22 count=1 || /bin/busybox cat /bin/busybox
+2017-06-06T06:34:16+0000 [CowrieTelnetTransport,18631,93.159.195.37] Command found: /bin/busybox dd if=/bin/busybox bs=22 count=1
+2017-06-06T06:34:16+0000 [CowrieTelnetTransport,18631,93.159.195.37] Command found: /bin/busybox cat /bin/busybox
+2017-06-06T06:34:16+0000 [CowrieTelnetTransport,18631,93.159.195.37] Command found: cat /bin/busybox
+2017-06-06T06:34:31+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 185.165.29.41:53516 (10.8.41.81:2222) [session: 376e77f6]
+2017-06-06T06:34:31+0000 [HoneyPotSSHTransport,6925,185.165.29.41] Remote SSH version: SSH-2.0-libssh-0.1
+2017-06-06T06:34:31+0000 [HoneyPotSSHTransport,6925,185.165.29.41] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-rsa'
+2017-06-06T06:34:31+0000 [HoneyPotSSHTransport,6925,185.165.29.41] outgoing: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-06-06T06:34:31+0000 [HoneyPotSSHTransport,6925,185.165.29.41] incoming: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-06-06T06:34:31+0000 [HoneyPotSSHTransport,6925,185.165.29.41] NEW KEYS
+2017-06-06T06:34:31+0000 [HoneyPotSSHTransport,6925,185.165.29.41] starting service 'ssh-userauth'
+2017-06-06T06:34:32+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,6925,185.165.29.41] 'root' trying auth 'password'
+2017-06-06T06:34:32+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,6925,185.165.29.41] login attempt: 558
+2017-06-06T06:34:32+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,6925,185.165.29.41] login return, expect: [root/1q2w3e4r]
+2017-06-06T06:34:34+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,6925,185.165.29.41] login attempt [root/admin] failed
+2017-06-06T06:34:35+0000 [-] 'root' failed auth 'password'
+2017-06-06T06:34:35+0000 [-] unauthorized login: 
+2017-06-06T06:34:35+0000 [HoneyPotSSHTransport,6925,185.165.29.41] Got remote error, code 11
+	reason: Bye Bye
+2017-06-06T06:34:35+0000 [HoneyPotSSHTransport,6925,185.165.29.41] connection lost
+2017-06-06T06:34:35+0000 [HoneyPotSSHTransport,6925,185.165.29.41] Connection lost after 3 seconds
+2017-06-06T06:34:35+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 185.165.29.41:34284 (10.8.41.81:2222) [session: 734c4562]
+2017-06-06T06:34:35+0000 [HoneyPotSSHTransport,6926,185.165.29.41] Remote SSH version: SSH-2.0-libssh-0.1
+2017-06-06T06:34:35+0000 [HoneyPotSSHTransport,6926,185.165.29.41] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-rsa'
+2017-06-06T06:34:35+0000 [HoneyPotSSHTransport,6926,185.165.29.41] outgoing: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-06-06T06:34:35+0000 [HoneyPotSSHTransport,6926,185.165.29.41] incoming: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-06-06T06:34:35+0000 [HoneyPotSSHTransport,6926,185.165.29.41] NEW KEYS
+2017-06-06T06:34:35+0000 [HoneyPotSSHTransport,6926,185.165.29.41] starting service 'ssh-userauth'
+2017-06-06T06:34:36+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,6926,185.165.29.41] 'root' trying auth 'password'
+2017-06-06T06:34:36+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,6926,185.165.29.41] login attempt: 559
+2017-06-06T06:34:36+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,6926,185.165.29.41] login return, expect: [root/1q2w3e4r]
+2017-06-06T06:34:38+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,6926,185.165.29.41] login attempt [root/password] failed
+2017-06-06T06:34:39+0000 [-] 'root' failed auth 'password'
+2017-06-06T06:34:39+0000 [-] unauthorized login: 
+2017-06-06T06:34:39+0000 [HoneyPotSSHTransport,6926,185.165.29.41] Got remote error, code 11
+	reason: Bye Bye
+2017-06-06T06:34:39+0000 [HoneyPotSSHTransport,6926,185.165.29.41] connection lost
+2017-06-06T06:34:39+0000 [HoneyPotSSHTransport,6926,185.165.29.41] Connection lost after 3 seconds
+2017-06-06T06:34:39+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 185.165.29.41:42676 (10.8.41.81:2222) [session: 7b6238e8]
+2017-06-06T06:34:39+0000 [HoneyPotSSHTransport,6927,185.165.29.41] Remote SSH version: SSH-2.0-libssh-0.1
+2017-06-06T06:34:39+0000 [HoneyPotSSHTransport,6927,185.165.29.41] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-rsa'
+2017-06-06T06:34:39+0000 [HoneyPotSSHTransport,6927,185.165.29.41] outgoing: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-06-06T06:34:39+0000 [HoneyPotSSHTransport,6927,185.165.29.41] incoming: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-06-06T06:34:39+0000 [HoneyPotSSHTransport,6927,185.165.29.41] NEW KEYS
+2017-06-06T06:34:39+0000 [HoneyPotSSHTransport,6927,185.165.29.41] starting service 'ssh-userauth'
+2017-06-06T06:34:39+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,6927,185.165.29.41] 'root' trying auth 'password'
+2017-06-06T06:34:40+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,6927,185.165.29.41] login attempt: 560
+2017-06-06T06:34:40+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,6927,185.165.29.41] login return, expect: [root/1q2w3e4r]
+2017-06-06T06:34:41+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,6927,185.165.29.41] login attempt [root/root] failed
+2017-06-06T06:34:42+0000 [-] 'root' failed auth 'password'
+2017-06-06T06:34:42+0000 [-] unauthorized login: 
+2017-06-06T06:34:42+0000 [HoneyPotSSHTransport,6927,185.165.29.41] Got remote error, code 11
+	reason: Bye Bye
+2017-06-06T06:34:42+0000 [HoneyPotSSHTransport,6927,185.165.29.41] connection lost
+2017-06-06T06:34:42+0000 [HoneyPotSSHTransport,6927,185.165.29.41] Connection lost after 3 seconds
+2017-06-06T06:34:42+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 185.165.29.41:50948 (10.8.41.81:2222) [session: f67d6290]
+2017-06-06T06:34:43+0000 [HoneyPotSSHTransport,6928,185.165.29.41] Remote SSH version: SSH-2.0-libssh-0.1
+2017-06-06T06:34:43+0000 [HoneyPotSSHTransport,6928,185.165.29.41] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-rsa'
+2017-06-06T06:34:43+0000 [HoneyPotSSHTransport,6928,185.165.29.41] outgoing: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-06-06T06:34:43+0000 [HoneyPotSSHTransport,6928,185.165.29.41] incoming: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-06-06T06:34:43+0000 [HoneyPotSSHTransport,6928,185.165.29.41] NEW KEYS
+2017-06-06T06:34:43+0000 [HoneyPotSSHTransport,6928,185.165.29.41] starting service 'ssh-userauth'
+2017-06-06T06:34:43+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,6928,185.165.29.41] 'admin' trying auth 'password'
+2017-06-06T06:34:44+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,6928,185.165.29.41] login attempt: 561
+2017-06-06T06:34:44+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,6928,185.165.29.41] login return, expect: [root/1q2w3e4r]
+2017-06-06T06:34:45+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,6928,185.165.29.41] login attempt [admin/admin] failed
+2017-06-06T06:34:45+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 113.115.69.107:3744 (10.8.41.81:2223) [session: TT18632]
+2017-06-06T06:34:46+0000 [-] 'admin' failed auth 'password'
+2017-06-06T06:34:46+0000 [-] unauthorized login: 
+2017-06-06T06:34:47+0000 [HoneyPotSSHTransport,6928,185.165.29.41] Got remote error, code 11
+	reason: Bye Bye
+2017-06-06T06:34:47+0000 [HoneyPotSSHTransport,6928,185.165.29.41] connection lost
+2017-06-06T06:34:47+0000 [HoneyPotSSHTransport,6928,185.165.29.41] Connection lost after 4 seconds
+2017-06-06T06:34:47+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 185.165.29.41:60160 (10.8.41.81:2222) [session: e5ae81ba]
+2017-06-06T06:34:47+0000 [HoneyPotSSHTransport,6929,185.165.29.41] Remote SSH version: SSH-2.0-libssh-0.1
+2017-06-06T06:34:47+0000 [HoneyPotSSHTransport,6929,185.165.29.41] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-rsa'
+2017-06-06T06:34:47+0000 [HoneyPotSSHTransport,6929,185.165.29.41] outgoing: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-06-06T06:34:47+0000 [HoneyPotSSHTransport,6929,185.165.29.41] incoming: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-06-06T06:34:47+0000 [HoneyPotSSHTransport,6929,185.165.29.41] NEW KEYS
+2017-06-06T06:34:47+0000 [HoneyPotSSHTransport,6929,185.165.29.41] starting service 'ssh-userauth'
+2017-06-06T06:34:47+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,6929,185.165.29.41] 'admin' trying auth 'password'
+2017-06-06T06:34:47+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,6929,185.165.29.41] login attempt: 562
+2017-06-06T06:34:47+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,6929,185.165.29.41] login return, expect: [root/1q2w3e4r]
+2017-06-06T06:34:49+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,6929,185.165.29.41] login attempt [admin/admin123] failed
+2017-06-06T06:34:51+0000 [CowrieTelnetTransport,18632,113.115.69.107] first time for 113.115.69.107, need: 1
+2017-06-06T06:34:51+0000 [CowrieTelnetTransport,18632,113.115.69.107] login attempt: 1
+2017-06-06T06:34:52+0000 [CowrieTelnetTransport,18632,113.115.69.107] login attempt [root/xc3511] succeeded
+2017-06-06T06:34:54+0000 [CowrieTelnetTransport,18632,113.115.69.107] Opening TTY Log: log/tty/20170606-063454-None-18632i.log
+2017-06-06T06:34:54+0000 [CowrieTelnetTransport,18632,113.115.69.107] Warning: state changed and new state returned
+2017-06-06T06:34:54+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,6827,91.230.47.82] got channel 'direct-tcpip' request
+2017-06-06T06:34:54+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,6827,91.230.47.82] direct-tcp connection request to 74.125.131.94:443 from localhost:5556
+2017-06-06T06:34:54+0000 [-] 'admin' failed auth 'password'
+2017-06-06T06:34:54+0000 [-] unauthorized login: 
+2017-06-06T06:34:54+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 192.241.167.148:37470 (10.8.41.81:2223) [session: TT18633]
+2017-06-06T06:34:54+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 192.241.167.148:50238 (10.8.41.81:2223) [session: TT18634]
+2017-06-06T06:34:54+0000 [HoneyPotSSHTransport,6929,185.165.29.41] Got remote error, code 11
+	reason: Bye Bye
+2017-06-06T06:34:54+0000 [HoneyPotSSHTransport,6929,185.165.29.41] connection lost
+2017-06-06T06:34:54+0000 [HoneyPotSSHTransport,6929,185.165.29.41] Connection lost after 7 seconds
+2017-06-06T06:34:54+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 185.165.29.41:51794 (10.8.41.81:2222) [session: eb670496]
+2017-06-06T06:34:54+0000 [HoneyPotSSHTransport,6930,185.165.29.41] Remote SSH version: SSH-2.0-libssh-0.1
+2017-06-06T06:34:54+0000 [HoneyPotSSHTransport,6930,185.165.29.41] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-rsa'
+2017-06-06T06:34:54+0000 [HoneyPotSSHTransport,6930,185.165.29.41] outgoing: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-06-06T06:34:54+0000 [HoneyPotSSHTransport,6930,185.165.29.41] incoming: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-06-06T06:34:54+0000 [HoneyPotSSHTransport,6930,185.165.29.41] NEW KEYS
+2017-06-06T06:34:54+0000 [HoneyPotSSHTransport,6930,185.165.29.41] starting service 'ssh-userauth'
+2017-06-06T06:34:55+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,6930,185.165.29.41] 'admin' trying auth 'password'
+2017-06-06T06:34:55+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,6930,185.165.29.41] login attempt: 563
+2017-06-06T06:34:55+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,6930,185.165.29.41] login return, expect: [root/1q2w3e4r]
+2017-06-06T06:34:57+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,6930,185.165.29.41] login attempt [admin/1234] failed
+2017-06-06T06:34:57+0000 [SSHChannel None (29) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6827,91.230.47.82] direct-tcp forward to 74.125.131.94:443 with data '\x16\x03\x01\x01x\x01\x00\x01t\x03\x03Y6L\xdc\x99:\x08\xf8\x03"Eu\tubc\xd8\xa1\x90\x91\x8b\x9a5e\xfb*<\xa8\x9c\x14\xfc\x97\x00\x00\xca\xc00\xc0,\xc0(\xc0$\xc0\x14\xc0\n\xc0"\xc0!\x00\xa3\x00\x9f\x00k\x00j\x009\x008\x00\x88\x00\x87\xc0\x19\xc0 \x00\xa7\x00m\x00:\x00\x89\xc02\xc0.\xc0*\xc0&\xc0\x0f\xc0\x05\x00\x9d\x00=\x005\x00\x84\xc0\x12\xc0\x08\xc0\x1c\xc0\x1b\x00\x16\x00\x13\xc0\x17\xc0\x1a\x00\x1b\xc0\r\xc0\x03\x00\n\xc0/\xc0+\xc0\'\xc0#\xc0\x13\xc0\t\xc0\x1f\xc0\x1e\x00\xa2\x00\x9e\x00g\x00@\x003\x002\x00\x9a\x00\x99\x00E\x00D\xc0\x18\xc0\x1d\x00\xa6\x00l\x004\x00\x9b\x00F\xc01\xc0-\xc0)\xc0%\xc0\x0e\xc0\x04\x00\x9c\x00<\x00/\x00\x96\x00A\x00\x07\xc0\x11\xc0\x07\xc0\x16\x00\x18\xc0\x0c\xc0\x02\x00\x05\x00\x04\x00\x15\x00\x12\x00\x1a\x00\t\x00\x14\x00\x11\x00\x19\x00\x08\x00\x06\x00\x17\x00\x03\x00\xff\x01\x00\x00\x81\x00\x00\x00\x12\x00\x10\x00\x00\rwww.google.ro\x00\x0b\x00\x04\x03\x00\x01\x02\x00\n\x004\x002\x00\x0e\x00\r\x00\x19\x00\x0b\x00\x0c\x00\x18\x00\t\x00\n\x00\x16\x00\x17\x00\x08\x00\x06\x00\x07\x00\x14\x00\x15\x00\x04\x00\x05\x00\x12\x00\x13\x00\x01\x00\x02\x00\x03\x00\x0f\x00\x10\x00\x11\x00\r\x00"\x00 \x06\x01\x06\x02\x06\x03\x05\x01\x05\x02\x05\x03\x04\x01\x04\x02\x04\x03\x03\x01\x03\x02\x03\x03\x02\x01\x02\x02\x02\x03\x01\x01\x00\x0f\x00\x01\x01'
+2017-06-06T06:34:57+0000 [SSHChannel None (29) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6827,91.230.47.82] failed to connect: Connection refused
+2017-06-06T06:34:57+0000 [SSHChannel None (29) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6827,91.230.47.82] sending close 29
+2017-06-06T06:34:57+0000 [CowrieTelnetTransport,18632,113.115.69.107] CMD: enable
+2017-06-06T06:34:57+0000 [CowrieTelnetTransport,18632,113.115.69.107] Command found: enable 
+2017-06-06T06:34:57+0000 [CowrieTelnetTransport,18632,113.115.69.107] Reading txtcmd from "txtcmds/bin/enable"
+2017-06-06T06:34:57+0000 [CowrieTelnetTransport,18632,113.115.69.107] CMD: system
+2017-06-06T06:34:57+0000 [CowrieTelnetTransport,18632,113.115.69.107] Command not found: system
+2017-06-06T06:34:57+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 192.241.167.148:53661 (10.8.41.81:2223) [session: TT18635]
+2017-06-06T06:34:58+0000 [-] 'admin' failed auth 'password'
+2017-06-06T06:34:58+0000 [-] unauthorized login: 
+2017-06-06T06:34:58+0000 [HoneyPotSSHTransport,6930,185.165.29.41] Got remote error, code 11
+	reason: Bye Bye
+2017-06-06T06:34:58+0000 [HoneyPotSSHTransport,6930,185.165.29.41] connection lost
+2017-06-06T06:34:58+0000 [HoneyPotSSHTransport,6930,185.165.29.41] Connection lost after 3 seconds
+2017-06-06T06:34:58+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 185.165.29.41:33044 (10.8.41.81:2222) [session: 3703a00c]
+2017-06-06T06:34:58+0000 [HoneyPotSSHTransport,6931,185.165.29.41] Remote SSH version: SSH-2.0-libssh-0.1
+2017-06-06T06:34:58+0000 [HoneyPotSSHTransport,6931,185.165.29.41] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-rsa'
+2017-06-06T06:34:58+0000 [HoneyPotSSHTransport,6931,185.165.29.41] outgoing: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-06-06T06:34:58+0000 [HoneyPotSSHTransport,6931,185.165.29.41] incoming: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-06-06T06:34:58+0000 [HoneyPotSSHTransport,6931,185.165.29.41] NEW KEYS
+2017-06-06T06:34:58+0000 [HoneyPotSSHTransport,6931,185.165.29.41] starting service 'ssh-userauth'
+2017-06-06T06:34:58+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,6931,185.165.29.41] 'admin' trying auth 'password'
+2017-06-06T06:34:59+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,6931,185.165.29.41] login attempt: 564
+2017-06-06T06:34:59+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,6931,185.165.29.41] login return, expect: [root/1q2w3e4r]
+2017-06-06T06:35:00+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,6931,185.165.29.41] login attempt [admin/12345] failed
+2017-06-06T06:35:00+0000 [CowrieTelnetTransport,18632,113.115.69.107] CMD: shell
+2017-06-06T06:35:00+0000 [CowrieTelnetTransport,18632,113.115.69.107] Command not found: shell
+2017-06-06T06:35:01+0000 [CowrieTelnetTransport,18633,192.241.167.148] login attempt: 408
+2017-06-06T06:35:01+0000 [CowrieTelnetTransport,18633,192.241.167.148] login return, expect: [admin/5up]
