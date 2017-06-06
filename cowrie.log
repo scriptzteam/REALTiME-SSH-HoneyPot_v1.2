@@ -4760,3 +4760,54 @@
 	reason: Bye Bye
 2017-06-06T19:49:59+0000 [HoneyPotSSHTransport,7693,123.30.236.83] connection lost
 2017-06-06T19:49:59+0000 [HoneyPotSSHTransport,7693,123.30.236.83] Connection lost after 6 seconds
+2017-06-06T19:50:25+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 109.236.83.181:36335 (10.8.41.81:2223) [session: TT20580]
+2017-06-06T19:50:29+0000 [CowrieTelnetTransport,20580,109.236.83.181] login attempt: 5660
+2017-06-06T19:50:29+0000 [CowrieTelnetTransport,20580,109.236.83.181] login return, expect: [default/]
+2017-06-06T19:50:31+0000 [CowrieTelnetTransport,20580,109.236.83.181] login attempt [ubnt/ubnt] failed
+2017-06-06T19:50:31+0000 [CowrieTelnetTransport,20580,109.236.83.181] Warning: state changed and new state returned
+2017-06-06T19:50:31+0000 [CowrieTelnetTransport,20580,109.236.83.181] login attempt: 5661
+2017-06-06T19:50:31+0000 [CowrieTelnetTransport,20580,109.236.83.181] login return, expect: [default/]
+2017-06-06T19:50:33+0000 [CowrieTelnetTransport,20580,109.236.83.181] login attempt [enable/system] failed
+2017-06-06T19:50:33+0000 [CowrieTelnetTransport,20580,109.236.83.181] Warning: state changed and new state returned
+2017-06-06T19:50:33+0000 [CowrieTelnetTransport,20580,109.236.83.181] login attempt: 5662
+2017-06-06T19:50:33+0000 [CowrieTelnetTransport,20580,109.236.83.181] login return, expect: [default/]
+2017-06-06T19:50:35+0000 [CowrieTelnetTransport,20580,109.236.83.181] login attempt [shell/sh] failed
+2017-06-06T19:50:35+0000 [CowrieTelnetTransport,20580,109.236.83.181] Warning: state changed and new state returned
+2017-06-06T19:50:42+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 123.30.236.83:65265 (10.8.41.81:2222) [session: 7f2edf0a]
+2017-06-06T19:50:43+0000 [HoneyPotSSHTransport,7694,123.30.236.83] Remote SSH version: SSH-2.0-libssh-0.2
+2017-06-06T19:50:43+0000 [HoneyPotSSHTransport,7694,123.30.236.83] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-rsa'
+2017-06-06T19:50:43+0000 [HoneyPotSSHTransport,7694,123.30.236.83] outgoing: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-06-06T19:50:43+0000 [HoneyPotSSHTransport,7694,123.30.236.83] incoming: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-06-06T19:50:44+0000 [HoneyPotSSHTransport,7694,123.30.236.83] NEW KEYS
+2017-06-06T19:50:44+0000 [HoneyPotSSHTransport,7694,123.30.236.83] starting service 'ssh-userauth'
+2017-06-06T19:50:44+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,7694,123.30.236.83] 'git' trying auth 'password'
+2017-06-06T19:50:45+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,7694,123.30.236.83] login attempt: 26
+2017-06-06T19:50:45+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,7694,123.30.236.83] login return, expect: [ubuntu/1234]
+2017-06-06T19:50:47+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,7694,123.30.236.83] login attempt [git/123456] failed
+2017-06-06T19:50:47+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,7635,91.195.103.188] got channel 'direct-tcpip' request
+2017-06-06T19:50:47+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,7635,91.195.103.188] direct-tcp connection request to 192.81.241.100:443 from localhost:5556
+2017-06-06T19:50:47+0000 [CowrieTelnetTransport,20576,109.236.83.229] Connection lost after 131 seconds
+2017-06-06T19:50:47+0000 [SSHChannel None (24) on SSHService 'ssh-connection' on HoneyPotSSHTransport,7635,91.195.103.188] direct-tcp forward to 192.81.241.100:443 with data "\x16\x03\x03\x00\xdd\x01\x00\x00\xd9\x03\x03Y7\x07i\xa0\xfc\x1a\xa4Y\xb0Cab\x11uc\x13t\x87\x9bNh\x0c[E\x8ci\x10\xef\x92dU \xa4\t\x00\x00\xb5\xf5\x19\x88f5\xd9\x98\x8a\x03=\xb9\xe9d\x86f@\xc8\x89\x93\x86\xf7ZR\xe2\xb7H(\x008\xc0(\xc0'\xc0\x14\xc0\x13\x00\x9f\x00\x9e\x009\x003\x00\x9d\x00\x9c\x00=\x00<\x005\x00/\xc0,\xc0+\xc0$\xc0#\xc0\n\xc0\t\x00j\x00@\x008\x002\x00\n\x00\x13\x00\x05\x00\x04\x01\x00\x00X\x00\x00\x00\x1f\x00\x1d\x00\x00\x1aprod.ros.rockstargames.com\x00\n\x00\x06\x00\x04\x00\x17\x00\x18\x00\x0b\x00\x02\x01\x00\x00\r\x00\x14\x00\x12\x06\x01\x06\x03\x04\x01\x05\x01\x02\x01\x04\x03\x05\x03\x02\x03\x02\x02\x00#\x00\x00\x00\x17\x00\x00\xff\x01\x00\x01\x00"
+2017-06-06T19:50:47+0000 [SSHChannel None (24) on SSHService 'ssh-connection' on HoneyPotSSHTransport,7635,91.195.103.188] failed to connect: Connection refused
+2017-06-06T19:50:47+0000 [SSHChannel None (24) on SSHService 'ssh-connection' on HoneyPotSSHTransport,7635,91.195.103.188] sending close 24
+2017-06-06T19:50:48+0000 [-] 'git' failed auth 'password'
+2017-06-06T19:50:48+0000 [-] unauthorized login: 
+2017-06-06T19:50:48+0000 [HoneyPotSSHTransport,7694,123.30.236.83] Got remote error, code 11
+	reason: Bye Bye
+2017-06-06T19:50:48+0000 [HoneyPotSSHTransport,7694,123.30.236.83] connection lost
+2017-06-06T19:50:48+0000 [HoneyPotSSHTransport,7694,123.30.236.83] Connection lost after 6 seconds
+2017-06-06T19:50:50+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 178.172.231.253:9777 (10.8.41.81:2223) [session: TT20581]
+2017-06-06T19:50:51+0000 [CowrieTelnetTransport,20581,178.172.231.253] login attempt: 4
+2017-06-06T19:50:51+0000 [CowrieTelnetTransport,20581,178.172.231.253] login return, expect: [GET http://xrure.edu-paper.com/proxycxzx/engine.php HTTP/1.0/Accept: */*]
+2017-06-06T19:50:53+0000 [CowrieTelnetTransport,20581,178.172.231.253] login attempt [GET http://xrure.edu-paper.com/proxycxzx/engine.php HTTP/1.0/Accept: */*] succeeded
+2017-06-06T19:50:55+0000 [CowrieTelnetTransport,20581,178.172.231.253] Opening TTY Log: log/tty/20170606-195055-None-20581i.log
+2017-06-06T19:50:55+0000 [CowrieTelnetTransport,20581,178.172.231.253] Warning: state changed and new state returned
+2017-06-06T19:50:55+0000 [CowrieTelnetTransport,20581,178.172.231.253] CMD: Referer: http://xrure.edu-paper.com/proxycxzx/engine.php
+2017-06-06T19:50:55+0000 [CowrieTelnetTransport,20581,178.172.231.253] Command not found: Referer: http://xrure.edu-paper.com/proxycxzx/engine.php
+2017-06-06T19:50:55+0000 [CowrieTelnetTransport,20581,178.172.231.253] CMD: User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:16.0) Gecko/20100101 Firefox/16.0
+2017-06-06T19:50:55+0000 [CowrieTelnetTransport,20581,178.172.231.253] Command not found: User-Agent: Mozilla/5.0 Windows NT 6.1
+2017-06-06T19:50:55+0000 [CowrieTelnetTransport,20581,178.172.231.253] Command not found: WOW64
+2017-06-06T19:50:55+0000 [CowrieTelnetTransport,20581,178.172.231.253] Command not found: rv:16.0 Gecko/20100101 Firefox/16.0
+2017-06-06T19:50:55+0000 [CowrieTelnetTransport,20581,178.172.231.253] CMD: Host: xrure.edu-paper.com
+2017-06-06T19:50:55+0000 [CowrieTelnetTransport,20581,178.172.231.253] Command not found: Host: xrure.edu-paper.com
+2017-06-06T19:50:55+0000 [CowrieTelnetTransport,20581,178.172.231.253] CMD: 
