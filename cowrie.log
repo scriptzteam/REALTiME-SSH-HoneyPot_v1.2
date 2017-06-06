@@ -7703,3 +7703,39 @@
 2017-06-06T06:17:57+0000 [CowrieTelnetTransport,18623,211.72.182.244] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
 	]
 2017-06-06T06:17:57+0000 [CowrieTelnetTransport,18623,211.72.182.244] Connection lost after 13 seconds
+2017-06-06T06:18:15+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,6827,91.230.47.82] got channel 'direct-tcpip' request
+2017-06-06T06:18:15+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,6827,91.230.47.82] direct-tcp connection request to 185.86.151.225:80 from localhost:5556
+2017-06-06T06:18:16+0000 [SSHChannel None (24) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6827,91.230.47.82] direct-tcp forward to 185.86.151.225:80 with data 'GET /getip.php HTTP/1.1\r\nUser-Agent: Mozilla/5.0\r\nHost: s1.ipinfo.pw\r\nAccept: */*\r\n\r\n'
+2017-06-06T06:18:16+0000 [SSHChannel None (24) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6827,91.230.47.82] failed to connect: Connection refused
+2017-06-06T06:18:16+0000 [SSHChannel None (24) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6827,91.230.47.82] sending close 24
+2017-06-06T06:18:27+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 104.236.52.155:49785 (10.8.41.81:2222) [session: f4a2827d]
+2017-06-06T06:18:27+0000 [HoneyPotSSHTransport,6909,104.236.52.155] Remote SSH version: SSH-2.0-libssh2_1.6.0
+2017-06-06T06:18:27+0000 [HoneyPotSSHTransport,6909,104.236.52.155] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-06-06T06:18:27+0000 [HoneyPotSSHTransport,6909,104.236.52.155] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-06T06:18:27+0000 [HoneyPotSSHTransport,6909,104.236.52.155] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-06T06:18:32+0000 [HoneyPotSSHTransport,6909,104.236.52.155] NEW KEYS
+2017-06-06T06:18:32+0000 [HoneyPotSSHTransport,6909,104.236.52.155] starting service 'ssh-userauth'
+2017-06-06T06:18:32+0000 [HoneyPotSSHTransport,6909,104.236.52.155] connection lost
+2017-06-06T06:18:32+0000 [HoneyPotSSHTransport,6909,104.236.52.155] Connection lost after 4 seconds
+2017-06-06T06:18:38+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 178.32.3.5:62058 (10.8.41.81:2222) [session: 405c7014]
+2017-06-06T06:18:38+0000 [HoneyPotSSHTransport,6910,178.32.3.5] Remote SSH version: SSH-2.0-PuTTY_Release_0.69
+2017-06-06T06:18:38+0000 [HoneyPotSSHTransport,6910,178.32.3.5] kex alg, key alg: 'ecdh-sha2-nistp256' 'ssh-rsa'
+2017-06-06T06:18:38+0000 [HoneyPotSSHTransport,6910,178.32.3.5] outgoing: 'aes256-ctr' 'hmac-sha1' 'none'
+2017-06-06T06:18:38+0000 [HoneyPotSSHTransport,6910,178.32.3.5] incoming: 'aes256-ctr' 'hmac-sha1' 'none'
+2017-06-06T06:18:44+0000 [HoneyPotSSHTransport,6910,178.32.3.5] NEW KEYS
+2017-06-06T06:18:44+0000 [HoneyPotSSHTransport,6910,178.32.3.5] starting service 'ssh-userauth'
+2017-06-06T06:18:52+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,6910,178.32.3.5] 'root' trying auth 'none'
+2017-06-06T06:18:53+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,6910,178.32.3.5] 'root' authenticated with 'none'
+2017-06-06T06:18:53+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,6910,178.32.3.5] starting service 'ssh-connection'
+2017-06-06T06:18:53+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,6910,178.32.3.5] got channel 'session' request
+2017-06-06T06:18:53+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6910,178.32.3.5] channel open
+2017-06-06T06:18:53+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6910,178.32.3.5] pty request: 'xterm' (24, 72, 0, 0)
+2017-06-06T06:18:53+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6910,178.32.3.5] Terminal Size: 24 72
+2017-06-06T06:18:53+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6910,178.32.3.5] getting shell
+2017-06-06T06:18:53+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6910,178.32.3.5] Opening TTY Log: log/tty/20170606-061853-405c7014-0i.log
+2017-06-06T06:18:55+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,6805,91.195.103.213] got channel 'direct-tcpip' request
+2017-06-06T06:18:55+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,6805,91.195.103.213] direct-tcp connection request to 98.138.112.32:25 from localhost:5556
+2017-06-06T06:18:57+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6910,178.32.3.5] CMD: top
+2017-06-06T06:18:57+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6910,178.32.3.5] Command found: top 
+2017-06-06T06:18:57+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6910,178.32.3.5] Reading txtcmd from "txtcmds/usr/bin/top"
+2017-06-06T06:19:01+0000 [SSHChannel None (102) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6805,91.195.103.213] remote eof
