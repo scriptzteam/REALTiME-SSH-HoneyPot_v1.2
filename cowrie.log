@@ -2680,3 +2680,67 @@
 2017-06-07T00:17:39+0000 [SSHChannel None (173) on SSHService 'ssh-connection' on HoneyPotSSHTransport,7716,91.230.47.81] failed to connect: Connection refused
 2017-06-07T00:17:39+0000 [SSHChannel None (173) on SSHService 'ssh-connection' on HoneyPotSSHTransport,7716,91.230.47.81] sending close 173
 2017-06-07T00:17:56+0000 [CowrieTelnetTransport,21496,46.166.185.137] Connection lost after 43 seconds
+2017-06-07T00:18:01+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,8125,91.195.103.196] got channel 'direct-tcpip' request
+2017-06-07T00:18:01+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,8125,91.195.103.196] direct-tcp connection request to 172.227.119.212:443 from localhost:5556
+2017-06-07T00:18:01+0000 [SSHChannel None (51) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8125,91.195.103.196] direct-tcp forward to 172.227.119.212:443 with data "\x16\x03\x03\x00\xb4\x01\x00\x00\xb0\x03\x03Y7F\x0c\xfa\xee\x028\x0f\x11\x87:\x12;h[\xad\xacnR\xcc\xb8\xf9\x1b\xac?k\x84L(\xf2\x95\x00\x008\xc0(\xc0'\xc0\x14\xc0\x13\x00\x9f\x00\x9e\x009\x003\x00\x9d\x00\x9c\x00=\x00<\x005\x00/\xc0,\xc0+\xc0$\xc0#\xc0\n\xc0\t\x00j\x00@\x008\x002\x00\n\x00\x13\x00\x05\x00\x04\x01\x00\x00O\x00\x00\x00\x1a\x00\x18\x00\x00\x15mservices.navyfcu.org\x00\n\x00\x06\x00\x04\x00\x17\x00\x18\x00\x0b\x00\x02\x01\x00\x00\r\x00\x14\x00\x12\x06\x01\x06\x03\x04\x01\x05\x01\x02\x01\x04\x03\x05\x03\x02\x03\x02\x02\x00\x17\x00\x00\xff\x01\x00\x01\x00"
+2017-06-07T00:18:01+0000 [SSHChannel None (51) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8125,91.195.103.196] failed to connect: Connection refused
+2017-06-07T00:18:01+0000 [SSHChannel None (51) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8125,91.195.103.196] sending close 51
+2017-06-07T00:18:32+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 123.30.236.83:59312 (10.8.41.81:2222) [session: 05350b72]
+2017-06-07T00:18:33+0000 [HoneyPotSSHTransport,8306,123.30.236.83] Remote SSH version: SSH-2.0-libssh-0.2
+2017-06-07T00:18:33+0000 [HoneyPotSSHTransport,8306,123.30.236.83] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-rsa'
+2017-06-07T00:18:33+0000 [HoneyPotSSHTransport,8306,123.30.236.83] outgoing: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-06-07T00:18:33+0000 [HoneyPotSSHTransport,8306,123.30.236.83] incoming: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-06-07T00:18:34+0000 [HoneyPotSSHTransport,8306,123.30.236.83] NEW KEYS
+2017-06-07T00:18:34+0000 [HoneyPotSSHTransport,8306,123.30.236.83] starting service 'ssh-userauth'
+2017-06-07T00:18:34+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,8306,123.30.236.83] 'root' trying auth 'password'
+2017-06-07T00:18:35+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,8306,123.30.236.83] login attempt: 273
+2017-06-07T00:18:35+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,8306,123.30.236.83] login return, expect: [ubuntu/1234]
+2017-06-07T00:18:37+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,8306,123.30.236.83] login attempt [root/1a2s3d4f5g6h] failed
+2017-06-07T00:18:37+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 79.42.89.183:43520 (10.8.41.81:2223) [session: TT21497]
+2017-06-07T00:18:37+0000 [CowrieTelnetTransport,21497,79.42.89.183] first time for 79.42.89.183, need: 1
+2017-06-07T00:18:37+0000 [CowrieTelnetTransport,21497,79.42.89.183] login attempt: 1
+2017-06-07T00:18:39+0000 [CowrieTelnetTransport,21497,79.42.89.183] login attempt [support/support] succeeded
+2017-06-07T00:18:42+0000 [CowrieTelnetTransport,21497,79.42.89.183] Opening TTY Log: log/tty/20170607-001842-None-21497i.log
+2017-06-07T00:18:42+0000 [CowrieTelnetTransport,21497,79.42.89.183] Warning: state changed and new state returned
+2017-06-07T00:18:42+0000 [-] 'root' failed auth 'password'
+2017-06-07T00:18:42+0000 [-] unauthorized login: 
+2017-06-07T00:18:42+0000 [CowrieTelnetTransport,21495,141.101.6.79] Connection lost after 96 seconds
+2017-06-07T00:18:42+0000 [CowrieTelnetTransport,21497,79.42.89.183] CMD: enable
+2017-06-07T00:18:42+0000 [CowrieTelnetTransport,21497,79.42.89.183] Command found: enable 
+2017-06-07T00:18:42+0000 [CowrieTelnetTransport,21497,79.42.89.183] Reading txtcmd from "txtcmds/bin/enable"
+2017-06-07T00:18:42+0000 [CowrieTelnetTransport,21497,79.42.89.183] CMD: system
+2017-06-07T00:18:42+0000 [CowrieTelnetTransport,21497,79.42.89.183] Command not found: system
+2017-06-07T00:18:42+0000 [HoneyPotSSHTransport,8306,123.30.236.83] Got remote error, code 11
+	reason: Bye Bye
+2017-06-07T00:18:42+0000 [HoneyPotSSHTransport,8306,123.30.236.83] connection lost
+2017-06-07T00:18:42+0000 [HoneyPotSSHTransport,8306,123.30.236.83] Connection lost after 9 seconds
+2017-06-07T00:18:42+0000 [CowrieTelnetTransport,21497,79.42.89.183] CMD: shell
+2017-06-07T00:18:42+0000 [CowrieTelnetTransport,21497,79.42.89.183] Command not found: shell
+2017-06-07T00:18:42+0000 [CowrieTelnetTransport,21497,79.42.89.183] CMD: sh
+2017-06-07T00:18:42+0000 [CowrieTelnetTransport,21497,79.42.89.183] Command found: sh 
+2017-06-07T00:18:42+0000 [CowrieTelnetTransport,21497,79.42.89.183] CMD:  /bin/busybox wget; /bin/busybox 81c46036wget; /bin/busybox echo -ne '\x0181c46036\x7f'; /bin/busybox printf '\00281c46036\177'; /bin/echo -ne '\x0381c46036\x7f'; /usr/bin/printf '\00481c46036\177'; /bin/busybox tftp; /bin/busybox 81c46036tftp;
+2017-06-07T00:18:42+0000 [CowrieTelnetTransport,21497,79.42.89.183] Command found: /bin/busybox wget
+2017-06-07T00:18:42+0000 [CowrieTelnetTransport,21497,79.42.89.183] Command found: wget
+2017-06-07T00:18:42+0000 [CowrieTelnetTransport,21497,79.42.89.183] Command found: /bin/busybox 81c46036wget
+2017-06-07T00:18:42+0000 [CowrieTelnetTransport,21497,79.42.89.183] Command found: /bin/busybox echo -ne '\x0181c46036\x7f'
+2017-06-07T00:18:42+0000 [CowrieTelnetTransport,21497,79.42.89.183] Command found: echo -ne '\x0181c46036\x7f'
+2017-06-07T00:18:42+0000 [CowrieTelnetTransport,21497,79.42.89.183] Command found: /bin/busybox printf '\00281c46036\177'
+2017-06-07T00:18:42+0000 [CowrieTelnetTransport,21497,79.42.89.183] Command found: /bin/echo -ne '\x0381c46036\x7f'
+2017-06-07T00:18:42+0000 [CowrieTelnetTransport,21497,79.42.89.183] Command not found: /usr/bin/printf '\00481c46036\177'
+2017-06-07T00:18:42+0000 [CowrieTelnetTransport,21497,79.42.89.183] Command found: /bin/busybox tftp
+2017-06-07T00:18:42+0000 [CowrieTelnetTransport,21497,79.42.89.183] Command found: tftp
+2017-06-07T00:18:42+0000 [CowrieTelnetTransport,21497,79.42.89.183] Command found: /bin/busybox 81c46036tftp
+2017-06-07T00:18:42+0000 [CowrieTelnetTransport,21497,79.42.89.183] Closing TTY Log: log/tty/20170607-001842-None-21497i.log after 0 seconds
+2017-06-07T00:18:42+0000 [CowrieTelnetTransport,21497,79.42.89.183] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion.
+	]
+2017-06-07T00:18:42+0000 [CowrieTelnetTransport,21497,79.42.89.183] Connection lost after 5 seconds
+2017-06-07T00:18:58+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 123.30.236.83:43606 (10.8.41.81:2222) [session: c6891549]
+2017-06-07T00:18:58+0000 [HoneyPotSSHTransport,8307,123.30.236.83] Remote SSH version: SSH-2.0-libssh-0.2
+2017-06-07T00:18:58+0000 [HoneyPotSSHTransport,8307,123.30.236.83] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-rsa'
+2017-06-07T00:18:58+0000 [HoneyPotSSHTransport,8307,123.30.236.83] outgoing: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-06-07T00:18:58+0000 [HoneyPotSSHTransport,8307,123.30.236.83] incoming: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-06-07T00:18:59+0000 [HoneyPotSSHTransport,8307,123.30.236.83] NEW KEYS
+2017-06-07T00:18:59+0000 [HoneyPotSSHTransport,8307,123.30.236.83] starting service 'ssh-userauth'
+2017-06-07T00:19:00+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,8307,123.30.236.83] 'root' trying auth 'password'
+2017-06-07T00:19:00+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,8307,123.30.236.83] login attempt: 274
+2017-06-07T00:19:00+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,8307,123.30.236.83] login return, expect: [ubuntu/1234]
