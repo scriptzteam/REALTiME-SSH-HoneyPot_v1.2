@@ -1611,3 +1611,72 @@
 2017-06-07T13:02:58+0000 [CowrieTelnetTransport,23907,178.47.242.185] Command found: /bin/busybox dd if=/bin/busybox bs=22 count=1
 2017-06-07T13:02:58+0000 [CowrieTelnetTransport,23907,178.47.242.185] Command found: /bin/busybox cat /bin/busybox
 2017-06-07T13:02:58+0000 [CowrieTelnetTransport,23907,178.47.242.185] Command found: cat /bin/busybox
+2017-06-07T13:03:08+0000 [CowrieTelnetTransport,23906,185.188.206.99] Closing TTY Log: log/tty/20170607-130107-None-23906i.log after 121 seconds
+2017-06-07T13:03:08+0000 [CowrieTelnetTransport,23906,185.188.206.99] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-06-07T13:03:08+0000 [CowrieTelnetTransport,23906,185.188.206.99] Connection lost after 129 seconds
+2017-06-07T13:03:13+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 45.76.87.233:49585 (10.8.41.81:2222) [session: a122fe4c]
+2017-06-07T13:03:13+0000 [HoneyPotSSHTransport,8960,45.76.87.233] Remote SSH version: SSH-2.0-PuTTY_Release_0.68
+2017-06-07T13:03:13+0000 [HoneyPotSSHTransport,8960,45.76.87.233] kex alg, key alg: 'ecdh-sha2-nistp256' 'ssh-rsa'
+2017-06-07T13:03:13+0000 [HoneyPotSSHTransport,8960,45.76.87.233] outgoing: 'aes256-ctr' 'hmac-sha1' 'none'
+2017-06-07T13:03:13+0000 [HoneyPotSSHTransport,8960,45.76.87.233] incoming: 'aes256-ctr' 'hmac-sha1' 'none'
+2017-06-07T13:03:14+0000 [HoneyPotSSHTransport,8960,45.76.87.233] NEW KEYS
+2017-06-07T13:03:14+0000 [HoneyPotSSHTransport,8960,45.76.87.233] starting service 'ssh-userauth'
+2017-06-07T13:03:17+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,8960,45.76.87.233] 'ubuntu' trying auth 'none'
+2017-06-07T13:03:19+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,8960,45.76.87.233] 'ubuntu' authenticated with 'none'
+2017-06-07T13:03:19+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,8960,45.76.87.233] starting service 'ssh-connection'
+2017-06-07T13:03:19+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,8960,45.76.87.233] got channel 'session' request
+2017-06-07T13:03:19+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8960,45.76.87.233] channel open
+2017-06-07T13:03:19+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8960,45.76.87.233] pty request: 'xterm' (24, 80, 0, 0)
+2017-06-07T13:03:19+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8960,45.76.87.233] Terminal Size: 24 80
+2017-06-07T13:03:19+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8960,45.76.87.233] getting shell
+2017-06-07T13:03:19+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8960,45.76.87.233] Opening TTY Log: log/tty/20170607-130319-a122fe4c-0i.log
+2017-06-07T13:03:21+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8960,45.76.87.233] CMD: w
+2017-06-07T13:03:21+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8960,45.76.87.233] Command found: w 
+2017-06-07T13:03:22+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8960,45.76.87.233] CMD: lscpu
+2017-06-07T13:03:22+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8960,45.76.87.233] Command found: lscpu 
+2017-06-07T13:03:22+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8960,45.76.87.233] Reading txtcmd from "txtcmds/usr/bin/lscpu"
+2017-06-07T13:03:24+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8960,45.76.87.233] CMD: free -mt
+2017-06-07T13:03:24+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8960,45.76.87.233] Command found: free -mt
+2017-06-07T13:03:24+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,8863,91.195.103.188] got channel 'direct-tcpip' request
+2017-06-07T13:03:24+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,8863,91.195.103.188] direct-tcp connection request to 95.213.11.139:443 from localhost:5556
+2017-06-07T13:03:25+0000 [SSHChannel None (74) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8863,91.195.103.188] direct-tcp forward to 95.213.11.139:443 with data "\x16\x03\x01\x01.\x01\x00\x01*\x03\x03\x15C\x91\x81I\x86v\x0b\xa2b\xf1X\x06\xfa4\xaf\xdb\x0f\xb7\x05\x88Fg7\x0b\xc8C\xf5\xab\x9cz\xca\x00\x00\xac\xc00\xc0,\xc0(\xc0$\xc0\x14\xc0\n\x00\xa5\x00\xa3\x00\xa1\x00\x9f\x00k\x00j\x00i\x00h\x009\x008\x007\x006\x00\x88\x00\x87\x00\x86\x00\x85\xc02\xc0.\xc0*\xc0&\xc0\x0f\xc0\x05\x00\x9d\x00=\x005\x00\x84\xc0/\xc0+\xc0'\xc0#\xc0\x13\xc0\t\x00\xa4\x00\xa2\x00\xa0\x00\x9e\x00g\x00@\x00?\x00>\x003\x002\x001\x000\x00\x9a\x00\x99\x00\x98\x00\x97\x00E\x00D\x00C\x00B\xc01\xc0-\xc0)\xc0%\xc0\x0e\xc0\x04\x00\x9c\x00<\x00/\x00\x96\x00A\x00\x07\xc0\x11\xc0\x07\xc0\x0c\xc0\x02\x00\x05\x00\x04\xc0\x12\xc0\x08\x00\x16\x00\x13\x00\x10\x00\r\xc0\r\xc0\x03\x00\n\x00\xff\x01\x00\x00U\x00\x0b\x00\x04\x03\x00\x01\x02\x00\n\x00\x1c\x00\x1a\x00\x17\x00\x19\x00\x1c\x00\x1b\x00\x18\x00\x1a\x00\x16\x00\x0e\x00\r\x00\x0b\x00\x0c\x00\t\x00\n\x00#\x00\x00\x00\r\x00 \x00\x1e\x06\x01\x06\x02\x06\x03\x05\x01\x05\x02\x05\x03\x04\x01\x04\x02\x04\x03\x03\x01\x03\x02\x03\x03\x02\x01\x02\x02\x02\x03\x00\x0f\x00\x01\x01"
+2017-06-07T13:03:25+0000 [SSHChannel None (74) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8863,91.195.103.188] failed to connect: Connection refused
+2017-06-07T13:03:25+0000 [SSHChannel None (74) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8863,91.195.103.188] sending close 74
+2017-06-07T13:03:26+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8960,45.76.87.233] CMD: halt
+2017-06-07T13:03:26+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8960,45.76.87.233] Command not found: halt
+2017-06-07T13:03:27+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8960,45.76.87.233] CMD: reboot
+2017-06-07T13:03:27+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8960,45.76.87.233] Command not found: reboot
+2017-06-07T13:03:33+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8960,45.76.87.233] CMD: perl
+2017-06-07T13:03:33+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8960,45.76.87.233] Command found: perl 
+2017-06-07T13:03:34+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8960,45.76.87.233] Received CTRL-C, exiting..
+2017-06-07T13:03:35+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8960,45.76.87.233] CMD: perl s
+2017-06-07T13:03:35+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8960,45.76.87.233] Command found: perl s
+2017-06-07T13:03:40+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8960,45.76.87.233] CMD: sudo su
+2017-06-07T13:03:40+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8960,45.76.87.233] Command found: sudo su
+2017-06-07T13:03:40+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8960,45.76.87.233] Command found: su
+2017-06-07T13:03:44+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8960,45.76.87.233] CMD: exit
+2017-06-07T13:03:44+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8960,45.76.87.233] Command found: exit 
+2017-06-07T13:03:44+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8960,45.76.87.233] exitCode: 0
+2017-06-07T13:03:44+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8960,45.76.87.233] sending request 'exit-status'
+2017-06-07T13:03:44+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8960,45.76.87.233] Closing TTY Log: log/tty/20170607-130319-a122fe4c-0i.log after 25 seconds
+2017-06-07T13:03:44+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8960,45.76.87.233] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-06-07T13:03:44+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8960,45.76.87.233] sending close 0
+2017-06-07T13:03:44+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,8960,45.76.87.233] remote close
+2017-06-07T13:03:44+0000 [HoneyPotSSHTransport,8960,45.76.87.233] avatar ubuntu logging out
+2017-06-07T13:03:44+0000 [HoneyPotSSHTransport,8960,45.76.87.233] connection lost
+2017-06-07T13:03:44+0000 [HoneyPotSSHTransport,8960,45.76.87.233] Connection lost after 31 seconds
+2017-06-07T13:03:47+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 109.236.83.181:38264 (10.8.41.81:2223) [session: TT23908]
+2017-06-07T13:03:47+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 109.236.83.229:49457 (10.8.41.81:2223) [session: TT23909]
+2017-06-07T13:03:48+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 109.236.83.181:46329 (10.8.41.81:2223) [session: TT23910]
+2017-06-07T13:03:52+0000 [CowrieTelnetTransport,23909,109.236.83.229] login attempt: 3524
+2017-06-07T13:03:52+0000 [CowrieTelnetTransport,23909,109.236.83.229] login return, expect: [root/12345]
+2017-06-07T13:03:54+0000 [CowrieTelnetTransport,23909,109.236.83.229] login attempt [root/12345] succeeded
+2017-06-07T13:03:56+0000 [CowrieTelnetTransport,23909,109.236.83.229] Opening TTY Log: log/tty/20170607-130356-None-23909i.log
+2017-06-07T13:03:56+0000 [CowrieTelnetTransport,23909,109.236.83.229] Warning: state changed and new state returned
+2017-06-07T13:03:56+0000 [CowrieTelnetTransport,23908,109.236.83.181] login attempt: 6172
+2017-06-07T13:03:56+0000 [CowrieTelnetTransport,23908,109.236.83.181] login return, expect: [default/]
+2017-06-07T13:03:58+0000 [CowrieTelnetTransport,23908,109.236.83.181] login attempt [default/] succeeded
+2017-06-07T13:04:01+0000 [CowrieTelnetTransport,23908,109.236.83.181] Opening TTY Log: log/tty/20170607-130401-None-23908i.log
+2017-06-07T13:04:01+0000 [CowrieTelnetTransport,23908,109.236.83.181] Warning: state changed and new state returned
