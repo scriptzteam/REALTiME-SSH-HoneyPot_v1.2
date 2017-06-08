@@ -6991,3 +6991,17 @@
 2017-06-08T22:31:57+0000 [CowrieTelnetTransport,29667,94.51.128.23] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
 	]
 2017-06-08T22:31:57+0000 [CowrieTelnetTransport,29667,94.51.128.23] Connection lost after 127 seconds
+2017-06-08T22:32:26+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,12396,91.230.47.82] got channel 'direct-tcpip' request
+2017-06-08T22:32:26+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,12396,91.230.47.82] direct-tcp connection request to 185.86.151.225:80 from localhost:5556
+2017-06-08T22:32:26+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 59.181.164.2:53532 (10.8.41.81:2223) [session: TT29670]
+2017-06-08T22:32:27+0000 [SSHChannel None (61) on SSHService 'ssh-connection' on HoneyPotSSHTransport,12396,91.230.47.82] direct-tcp forward to 185.86.151.225:80 with data 'GET /getip.php HTTP/1.1\r\nUser-Agent: Mozilla/5.0\r\nHost: s1.ipinfo.pw\r\nAccept: */*\r\n\r\n'
+2017-06-08T22:32:27+0000 [SSHChannel None (61) on SSHService 'ssh-connection' on HoneyPotSSHTransport,12396,91.230.47.82] failed to connect: Connection refused
+2017-06-08T22:32:27+0000 [SSHChannel None (61) on SSHService 'ssh-connection' on HoneyPotSSHTransport,12396,91.230.47.82] sending close 61
+2017-06-08T22:32:38+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 113.195.145.52:47880 (10.8.41.81:2222) [session: 016972b8]
+2017-06-08T22:32:41+0000 [HoneyPotSSHTransport,12827,113.195.145.52] Remote SSH version: SSH-2.0-PUTTY
+2017-06-08T22:32:41+0000 [HoneyPotSSHTransport,12827,113.195.145.52] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-06-08T22:32:41+0000 [HoneyPotSSHTransport,12827,113.195.145.52] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-08T22:32:41+0000 [HoneyPotSSHTransport,12827,113.195.145.52] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-08T22:32:41+0000 [HoneyPotSSHTransport,12827,113.195.145.52] NEW KEYS
+2017-06-08T22:32:43+0000 [HoneyPotSSHTransport,12827,113.195.145.52] starting service 'ssh-userauth'
+2017-06-08T22:32:54+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 113.195.145.52:30607 (10.8.41.81:2222) [session: 7079d707]
