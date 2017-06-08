@@ -1227,3 +1227,40 @@
 2017-06-08T15:32:47+0000 [HoneyPotSSHTransport,11659,91.195.103.182] connection lost
 2017-06-08T15:32:47+0000 [HoneyPotSSHTransport,11659,91.195.103.182] Connection lost after 6132 seconds
 2017-06-08T15:32:49+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 113.195.145.52:40997 (10.8.41.81:2222) [session: 13d7f47f]
+2017-06-08T15:33:04+0000 [HoneyPotSSHTransport,11844,113.195.145.52] connection lost
+2017-06-08T15:33:04+0000 [HoneyPotSSHTransport,11844,113.195.145.52] Connection lost after 15 seconds
+2017-06-08T15:33:12+0000 [CowrieTelnetTransport,28337,109.98.139.235] Closing TTY Log: log/tty/20170608-153111-None-28337i.log after 121 seconds
+2017-06-08T15:33:12+0000 [CowrieTelnetTransport,28337,109.98.139.235] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-06-08T15:33:12+0000 [CowrieTelnetTransport,28337,109.98.139.235] Connection lost after 126 seconds
+2017-06-08T15:33:20+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,11523,91.230.47.81] got channel 'direct-tcpip' request
+2017-06-08T15:33:20+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,11523,91.230.47.81] direct-tcp connection request to 45.32.138.106:80 from localhost:5556
+2017-06-08T15:33:21+0000 [SSHChannel None (154) on SSHService 'ssh-connection' on HoneyPotSSHTransport,11523,91.230.47.81] direct-tcp forward to 45.32.138.106:80 with data 'GET /v3/ip-country/?key=b5fea4f19f1ade5f7f99af776af2c1fd3b8eac79aa3462a3a92c61862b40da6b HTTP/1.1\r\nHost: api.ipinfodb.com\r\nAccept: */*\r\nConnection: close\r\n\r\n'
+2017-06-08T15:33:21+0000 [SSHChannel None (154) on SSHService 'ssh-connection' on HoneyPotSSHTransport,11523,91.230.47.81] failed to connect: Connection refused
+2017-06-08T15:33:21+0000 [SSHChannel None (154) on SSHService 'ssh-connection' on HoneyPotSSHTransport,11523,91.230.47.81] sending close 154
+2017-06-08T15:33:23+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 200.153.173.96:56413 (10.8.41.81:2223) [session: TT28344]
+2017-06-08T15:33:26+0000 [CowrieTelnetTransport,28344,200.153.173.96] first time for 200.153.173.96, need: 1
+2017-06-08T15:33:26+0000 [CowrieTelnetTransport,28344,200.153.173.96] login attempt: 1
+2017-06-08T15:33:28+0000 [CowrieTelnetTransport,28344,200.153.173.96] login attempt [root/vizxv] succeeded
+2017-06-08T15:33:29+0000 [CowrieTelnetTransport,28344,200.153.173.96] Opening TTY Log: log/tty/20170608-153329-None-28344i.log
+2017-06-08T15:33:29+0000 [CowrieTelnetTransport,28344,200.153.173.96] Warning: state changed and new state returned
+2017-06-08T15:33:30+0000 [CowrieTelnetTransport,28344,200.153.173.96] Received unhandled keyID: '\x00'
+2017-06-08T15:33:30+0000 [CowrieTelnetTransport,28344,200.153.173.96] CMD: enable
+2017-06-08T15:33:30+0000 [CowrieTelnetTransport,28344,200.153.173.96] Command found: enable 
+2017-06-08T15:33:30+0000 [CowrieTelnetTransport,28344,200.153.173.96] Reading txtcmd from "txtcmds/bin/enable"
+2017-06-08T15:33:31+0000 [CowrieTelnetTransport,28344,200.153.173.96] Received unhandled keyID: '\x00'
+2017-06-08T15:33:31+0000 [CowrieTelnetTransport,28344,200.153.173.96] CMD: system
+2017-06-08T15:33:31+0000 [CowrieTelnetTransport,28344,200.153.173.96] Command not found: system
+2017-06-08T15:33:31+0000 [CowrieTelnetTransport,28344,200.153.173.96] Received unhandled keyID: '\x00'
+2017-06-08T15:33:31+0000 [CowrieTelnetTransport,28344,200.153.173.96] CMD: shell
+2017-06-08T15:33:31+0000 [CowrieTelnetTransport,28344,200.153.173.96] Command not found: shell
+2017-06-08T15:33:32+0000 [CowrieTelnetTransport,28344,200.153.173.96] Received unhandled keyID: '\x00'
+2017-06-08T15:33:32+0000 [CowrieTelnetTransport,28344,200.153.173.96] CMD: sh
+2017-06-08T15:33:32+0000 [CowrieTelnetTransport,28344,200.153.173.96] Command found: sh 
+2017-06-08T15:33:33+0000 [CowrieTelnetTransport,28344,200.153.173.96] Received unhandled keyID: '\x00'
+2017-06-08T15:33:33+0000 [CowrieTelnetTransport,28344,200.153.173.96] CMD: /bin/busybox MIRAI
+2017-06-08T15:33:33+0000 [CowrieTelnetTransport,28344,200.153.173.96] Command found: /bin/busybox MIRAI
+2017-06-08T15:33:35+0000 [CowrieTelnetTransport,28344,200.153.173.96] Closing TTY Log: log/tty/20170608-153329-None-28344i.log after 5 seconds
+2017-06-08T15:33:35+0000 [CowrieTelnetTransport,28344,200.153.173.96] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-06-08T15:33:35+0000 [CowrieTelnetTransport,28344,200.153.173.96] Connection lost after 11 seconds
