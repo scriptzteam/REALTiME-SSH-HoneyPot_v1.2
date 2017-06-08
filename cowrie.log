@@ -6190,3 +6190,59 @@
 2017-06-08T15:03:01+0000 [HoneyPotSSHTransport,11784,91.197.235.11] NEW KEYS
 2017-06-08T15:03:01+0000 [HoneyPotSSHTransport,11784,91.197.235.11] starting service 'ssh-userauth'
 2017-06-08T15:03:01+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,11784,91.197.235.11] '1111' trying auth 'password'
+2017-06-08T15:03:01+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,11784,91.197.235.11] login attempt: 1143
+2017-06-08T15:03:01+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,11784,91.197.235.11] login return, expect: [1111/1111]
+2017-06-08T15:03:03+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,11784,91.197.235.11] login attempt [1111/1111] succeeded
+2017-06-08T15:03:05+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,11784,91.197.235.11] '1111' authenticated with 'password'
+2017-06-08T15:03:05+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,11784,91.197.235.11] starting service 'ssh-connection'
+2017-06-08T15:03:05+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 91.98.124.227:11326 (10.8.41.81:2223) [session: TT28320]
+2017-06-08T15:03:05+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,11784,91.197.235.11] got channel 'direct-tcpip' request
+2017-06-08T15:03:05+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,11784,91.197.235.11] direct-tcp connection request to yahoo.com:443 from localhost:0
+2017-06-08T15:03:05+0000 [HoneyPotSSHTransport,11784,91.197.235.11] avatar 1111 logging out
+2017-06-08T15:03:05+0000 [HoneyPotSSHTransport,11784,91.197.235.11] connection lost
+2017-06-08T15:03:05+0000 [HoneyPotSSHTransport,11784,91.197.235.11] Connection lost after 4 seconds
+2017-06-08T15:03:06+0000 [CowrieTelnetTransport,28320,91.98.124.227] first time for 91.98.124.227, need: 1
+2017-06-08T15:03:06+0000 [CowrieTelnetTransport,28320,91.98.124.227] login attempt: 1
+2017-06-08T15:03:08+0000 [CowrieTelnetTransport,28320,91.98.124.227] login attempt [guest/123] succeeded
+2017-06-08T15:03:10+0000 [CowrieTelnetTransport,28320,91.98.124.227] Opening TTY Log: log/tty/20170608-150310-None-28320i.log
+2017-06-08T15:03:10+0000 [CowrieTelnetTransport,28320,91.98.124.227] Warning: state changed and new state returned
+2017-06-08T15:03:11+0000 [CowrieTelnetTransport,28320,91.98.124.227] CMD: enable
+2017-06-08T15:03:11+0000 [CowrieTelnetTransport,28320,91.98.124.227] Command found: enable 
+2017-06-08T15:03:11+0000 [CowrieTelnetTransport,28320,91.98.124.227] Reading txtcmd from "txtcmds/bin/enable"
+2017-06-08T15:03:11+0000 [CowrieTelnetTransport,28320,91.98.124.227] CMD: system
+2017-06-08T15:03:11+0000 [CowrieTelnetTransport,28320,91.98.124.227] Command not found: system
+2017-06-08T15:03:11+0000 [CowrieTelnetTransport,28320,91.98.124.227] CMD: shell
+2017-06-08T15:03:11+0000 [CowrieTelnetTransport,28320,91.98.124.227] Command not found: shell
+2017-06-08T15:03:11+0000 [CowrieTelnetTransport,28320,91.98.124.227] CMD: sh
+2017-06-08T15:03:11+0000 [CowrieTelnetTransport,28320,91.98.124.227] Command found: sh 
+2017-06-08T15:03:11+0000 [CowrieTelnetTransport,28320,91.98.124.227] CMD:  /bin/busybox wget; /bin/busybox 81c46036wget; /bin/busybox echo -ne '\x0181c46036\x7f'; /bin/busybox printf '\00281c46036\177'; /bin/echo -ne '\x0381c46036\x7f'; /usr/bin/printf '\00481c46036\177'; /bin/busybox tftp; /bin/busybox 81c46036tftp;
+2017-06-08T15:03:11+0000 [CowrieTelnetTransport,28320,91.98.124.227] Command found: /bin/busybox wget
+2017-06-08T15:03:11+0000 [CowrieTelnetTransport,28320,91.98.124.227] Command found: wget
+2017-06-08T15:03:11+0000 [CowrieTelnetTransport,28320,91.98.124.227] Command found: /bin/busybox 81c46036wget
+2017-06-08T15:03:11+0000 [CowrieTelnetTransport,28320,91.98.124.227] Command found: /bin/busybox echo -ne '\x0181c46036\x7f'
+2017-06-08T15:03:11+0000 [CowrieTelnetTransport,28320,91.98.124.227] Command found: echo -ne '\x0181c46036\x7f'
+2017-06-08T15:03:11+0000 [CowrieTelnetTransport,28320,91.98.124.227] Command found: /bin/busybox printf '\00281c46036\177'
+2017-06-08T15:03:11+0000 [CowrieTelnetTransport,28320,91.98.124.227] Command found: /bin/echo -ne '\x0381c46036\x7f'
+2017-06-08T15:03:11+0000 [CowrieTelnetTransport,28320,91.98.124.227] Command not found: /usr/bin/printf '\00481c46036\177'
+2017-06-08T15:03:11+0000 [CowrieTelnetTransport,28320,91.98.124.227] Command found: /bin/busybox tftp
+2017-06-08T15:03:11+0000 [CowrieTelnetTransport,28320,91.98.124.227] Command found: tftp
+2017-06-08T15:03:11+0000 [CowrieTelnetTransport,28320,91.98.124.227] Command found: /bin/busybox 81c46036tftp
+2017-06-08T15:03:12+0000 [CowrieTelnetTransport,28320,91.98.124.227] CMD:  /bin/busybox dd if=/bin/busybox bs=22 count=1 || /bin/busybox cat /bin/busybox
+2017-06-08T15:03:12+0000 [CowrieTelnetTransport,28320,91.98.124.227] Command found: /bin/busybox dd if=/bin/busybox bs=22 count=1
+2017-06-08T15:03:12+0000 [CowrieTelnetTransport,28320,91.98.124.227] Command found: /bin/busybox cat /bin/busybox
+2017-06-08T15:03:12+0000 [CowrieTelnetTransport,28320,91.98.124.227] Command found: cat /bin/busybox
+2017-06-08T15:03:38+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,11523,91.230.47.81] got channel 'direct-tcpip' request
+2017-06-08T15:03:38+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,11523,91.230.47.81] direct-tcp connection request to 45.32.138.106:80 from localhost:5556
+2017-06-08T15:03:38+0000 [SSHChannel None (138) on SSHService 'ssh-connection' on HoneyPotSSHTransport,11523,91.230.47.81] direct-tcp forward to 45.32.138.106:80 with data 'GET /v3/ip-country/?key=b5fea4f19f1ade5f7f99af776af2c1fd3b8eac79aa3462a3a92c61862b40da6b HTTP/1.1\r\nHost: api.ipinfodb.com\r\nAccept: */*\r\nConnection: close\r\n\r\n'
+2017-06-08T15:03:38+0000 [SSHChannel None (138) on SSHService 'ssh-connection' on HoneyPotSSHTransport,11523,91.230.47.81] failed to connect: Connection refused
+2017-06-08T15:03:38+0000 [SSHChannel None (138) on SSHService 'ssh-connection' on HoneyPotSSHTransport,11523,91.230.47.81] sending close 138
+2017-06-08T15:03:44+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,11523,91.230.47.81] got channel 'direct-tcpip' request
+2017-06-08T15:03:44+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,11523,91.230.47.81] direct-tcp connection request to 93.115.29.122:80 from localhost:5556
+2017-06-08T15:03:45+0000 [SSHChannel None (139) on SSHService 'ssh-connection' on HoneyPotSSHTransport,11523,91.230.47.81] direct-tcp forward to 93.115.29.122:80 with data 'GET /internals/api/ip?1496934176679516361 HTTP/1.1\r\nHost: ip3.adspy.mobi\r\nConnection: keep-alive\r\nUser-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.67 Safari/537.36\r\nAccept-Encoding: gzip, deflate, sdch\r\n\r\n'
+2017-06-08T15:03:45+0000 [SSHChannel None (139) on SSHService 'ssh-connection' on HoneyPotSSHTransport,11523,91.230.47.81] failed to connect: Connection refused
+2017-06-08T15:03:45+0000 [SSHChannel None (139) on SSHService 'ssh-connection' on HoneyPotSSHTransport,11523,91.230.47.81] sending close 139
+2017-06-08T15:03:45+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,11410,91.195.103.221] got channel 'direct-tcpip' request
+2017-06-08T15:03:45+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,11410,91.195.103.221] direct-tcp connection request to 54.235.148.27:80 from localhost:5556
+2017-06-08T15:03:45+0000 [SSHChannel None (18) on SSHService 'ssh-connection' on HoneyPotSSHTransport,11410,91.195.103.221] direct-tcp forward to 54.235.148.27:80 with data 'GET / HTTP/1.0\r\nHost: api.ipify.org\r\n\r\n'
+2017-06-08T15:03:45+0000 [SSHChannel None (18) on SSHService 'ssh-connection' on HoneyPotSSHTransport,11410,91.195.103.221] failed to connect: Connection refused
+2017-06-08T15:03:45+0000 [SSHChannel None (18) on SSHService 'ssh-connection' on HoneyPotSSHTransport,11410,91.195.103.221] sending close 18
