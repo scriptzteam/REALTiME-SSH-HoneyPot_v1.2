@@ -4360,3 +4360,101 @@
 2017-06-09T10:50:50+0000 [SSHChannel None (237) on SSHService 'ssh-connection' on HoneyPotSSHTransport,14059,91.195.103.182] remote eof
 2017-06-09T10:50:50+0000 [SSHChannel None (237) on SSHService 'ssh-connection' on HoneyPotSSHTransport,14059,91.195.103.182] remote close
 2017-06-09T10:50:50+0000 [SSHChannel None (237) on SSHService 'ssh-connection' on HoneyPotSSHTransport,14059,91.195.103.182] sending close 237
+2017-06-09T10:51:05+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 213.87.248.91:56397 (10.8.41.81:2223) [session: TT32135]
+2017-06-09T10:51:05+0000 [CowrieTelnetTransport,32135,213.87.248.91] login attempt: 13
+2017-06-09T10:51:05+0000 [CowrieTelnetTransport,32135,213.87.248.91] login return, expect: [GET http://check2.zennolab.com/proxy.php HTTP/1.1/Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8]
+2017-06-09T10:51:07+0000 [CowrieTelnetTransport,32135,213.87.248.91] login attempt [GET http://check2.zennolab.com/proxy.php HTTP/1.1/Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8] succeeded
+2017-06-09T10:51:09+0000 [CowrieTelnetTransport,32135,213.87.248.91] Opening TTY Log: log/tty/20170609-105109-None-32135i.log
+2017-06-09T10:51:09+0000 [CowrieTelnetTransport,32135,213.87.248.91] Warning: state changed and new state returned
+2017-06-09T10:51:09+0000 [CowrieTelnetTransport,32135,213.87.248.91] CMD: Connection: Close
+2017-06-09T10:51:09+0000 [CowrieTelnetTransport,32135,213.87.248.91] Command not found: Connection: Close
+2017-06-09T10:51:09+0000 [CowrieTelnetTransport,32135,213.87.248.91] CMD: User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0
+2017-06-09T10:51:09+0000 [CowrieTelnetTransport,32135,213.87.248.91] Command not found: User-Agent: Mozilla/5.0 Windows NT 10.0
+2017-06-09T10:51:09+0000 [CowrieTelnetTransport,32135,213.87.248.91] Command not found: WOW64
+2017-06-09T10:51:09+0000 [CowrieTelnetTransport,32135,213.87.248.91] Command not found: rv:45.0 Gecko/20100101 Firefox/45.0
+2017-06-09T10:51:09+0000 [CowrieTelnetTransport,32135,213.87.248.91] CMD: Accept-Language: en-US,en;q=0.5
+2017-06-09T10:51:09+0000 [CowrieTelnetTransport,32135,213.87.248.91] Command not found: Accept-Language: en-US , en
+2017-06-09T10:51:09+0000 [CowrieTelnetTransport,32135,213.87.248.91] Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/log.py", line 103, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/log.py", line 86, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 122, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 85, in callWithContext
+	    return func(*args,**kw)
+	--- <exception caught here> ---
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/posixbase.py", line 597, in _doReadOrWrite
+	    why = selectable.doRead()
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 208, in doRead
+	    return self._dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 214, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/telnet.py", line 636, in dataReceived
+	    self.applicationDataReceived(b''.join(appDataBuffer))
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/telnet.py", line 988, in applicationDataReceived
+	    self.protocol.dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/protocols/basic.py", line 571, in dataReceived
+	    why = self.lineReceived(line)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/telnet.py", line 1100, in lineReceived
+	    newState = getattr(self, "telnet_" + oldState)(line)
+	  File "/home/cowrie/cowrie/cowrie/telnet/transport.py", line 142, in telnet_Command
+	    self.transport.protocol.dataReceived(command+'\r')
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/telnet.py", line 1035, in dataReceived
+	    self.protocol.dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie/insults/insults.py", line 112, in dataReceived
+	    insults.ServerProtocol.dataReceived(self, data)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/insults/insults.py", line 537, in dataReceived
+	    self.terminalProtocol.keystrokeReceived(ch, None)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/recvline.py", line 225, in keystrokeReceived
+	    m()
+	  File "/home/cowrie/cowrie/cowrie/core/protocol.py", line 353, in handle_RETURN
+	    return recvline.RecvLine.handle_RETURN(self)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/recvline.py", line 292, in handle_RETURN
+	    self.lineReceived(line)
+	  File "/home/cowrie/cowrie/cowrie/core/protocol.py", line 187, in lineReceived
+	    self.cmdstack[-1].lineReceived(line)
+	  File "/home/cowrie/cowrie/cowrie/core/honeypot.py", line 246, in lineReceived
+	    self.runCommand()
+	  File "/home/cowrie/cowrie/cowrie/core/honeypot.py", line 351, in runCommand
+	    runOrPrompt()
+	  File "/home/cowrie/cowrie/cowrie/core/honeypot.py", line 257, in runOrPrompt
+	    self.runCommand()
+	  File "/home/cowrie/cowrie/cowrie/core/honeypot.py", line 307, in runCommand
+	    if not cmd['command']:
+	exceptions.KeyError: 'command'
+	
+2017-06-09T10:51:09+0000 [CowrieTelnetTransport,32135,213.87.248.91] Closing TTY Log: log/tty/20170609-105109-None-32135i.log after 0 seconds
+2017-06-09T10:51:09+0000 [CowrieTelnetTransport,32135,213.87.248.91] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <type 'exceptions.KeyError'>: 'command'
+	]
+2017-06-09T10:51:09+0000 [CowrieTelnetTransport,32135,213.87.248.91] Connection lost after 4 seconds
+2017-06-09T10:51:09+0000 [SSHChannel None (238) on SSHService 'ssh-connection' on HoneyPotSSHTransport,14059,91.195.103.182] remote eof
+2017-06-09T10:51:09+0000 [SSHChannel None (238) on SSHService 'ssh-connection' on HoneyPotSSHTransport,14059,91.195.103.182] remote close
+2017-06-09T10:51:09+0000 [SSHChannel None (238) on SSHService 'ssh-connection' on HoneyPotSSHTransport,14059,91.195.103.182] sending close 238
+2017-06-09T10:51:10+0000 [SSHChannel None (239) on SSHService 'ssh-connection' on HoneyPotSSHTransport,14059,91.195.103.182] remote eof
+2017-06-09T10:51:10+0000 [SSHChannel None (239) on SSHService 'ssh-connection' on HoneyPotSSHTransport,14059,91.195.103.182] remote close
+2017-06-09T10:51:10+0000 [SSHChannel None (239) on SSHService 'ssh-connection' on HoneyPotSSHTransport,14059,91.195.103.182] sending close 239
+2017-06-09T10:51:13+0000 [SSHChannel None (240) on SSHService 'ssh-connection' on HoneyPotSSHTransport,14059,91.195.103.182] remote eof
+2017-06-09T10:51:14+0000 [SSHChannel None (240) on SSHService 'ssh-connection' on HoneyPotSSHTransport,14059,91.195.103.182] remote close
+2017-06-09T10:51:14+0000 [SSHChannel None (240) on SSHService 'ssh-connection' on HoneyPotSSHTransport,14059,91.195.103.182] sending close 240
+2017-06-09T10:51:16+0000 [SSHChannel None (241) on SSHService 'ssh-connection' on HoneyPotSSHTransport,14059,91.195.103.182] remote eof
+2017-06-09T10:51:16+0000 [SSHChannel None (241) on SSHService 'ssh-connection' on HoneyPotSSHTransport,14059,91.195.103.182] remote close
+2017-06-09T10:51:16+0000 [SSHChannel None (241) on SSHService 'ssh-connection' on HoneyPotSSHTransport,14059,91.195.103.182] sending close 241
+2017-06-09T10:51:24+0000 [SSHChannel None (242) on SSHService 'ssh-connection' on HoneyPotSSHTransport,14059,91.195.103.182] direct-tcp forward to 104.44.194.231:25 with data 'QUIT\r\n'
+2017-06-09T10:51:24+0000 [SSHChannel None (242) on SSHService 'ssh-connection' on HoneyPotSSHTransport,14059,91.195.103.182] failed to connect: Connection refused
+2017-06-09T10:51:24+0000 [SSHChannel None (242) on SSHService 'ssh-connection' on HoneyPotSSHTransport,14059,91.195.103.182] sending close 242
+2017-06-09T10:51:24+0000 [SSHChannel None (242) on SSHService 'ssh-connection' on HoneyPotSSHTransport,14059,91.195.103.182] remote eof
+2017-06-09T10:51:24+0000 [SSHChannel None (242) on SSHService 'ssh-connection' on HoneyPotSSHTransport,14059,91.195.103.182] remote close
+2017-06-09T10:51:26+0000 [SSHChannel None (243) on SSHService 'ssh-connection' on HoneyPotSSHTransport,14059,91.195.103.182] remote eof
+2017-06-09T10:51:26+0000 [SSHChannel None (243) on SSHService 'ssh-connection' on HoneyPotSSHTransport,14059,91.195.103.182] remote close
+2017-06-09T10:51:26+0000 [SSHChannel None (243) on SSHService 'ssh-connection' on HoneyPotSSHTransport,14059,91.195.103.182] sending close 243
+2017-06-09T10:51:29+0000 [SSHChannel None (244) on SSHService 'ssh-connection' on HoneyPotSSHTransport,14059,91.195.103.182] remote eof
+2017-06-09T10:51:29+0000 [SSHChannel None (244) on SSHService 'ssh-connection' on HoneyPotSSHTransport,14059,91.195.103.182] remote close
+2017-06-09T10:51:29+0000 [SSHChannel None (244) on SSHService 'ssh-connection' on HoneyPotSSHTransport,14059,91.195.103.182] sending close 244
+2017-06-09T10:51:38+0000 [SSHChannel None (245) on SSHService 'ssh-connection' on HoneyPotSSHTransport,14059,91.195.103.182] remote eof
+2017-06-09T10:51:38+0000 [SSHChannel None (245) on SSHService 'ssh-connection' on HoneyPotSSHTransport,14059,91.195.103.182] remote close
+2017-06-09T10:51:38+0000 [SSHChannel None (245) on SSHService 'ssh-connection' on HoneyPotSSHTransport,14059,91.195.103.182] sending close 245
+2017-06-09T10:51:39+0000 [SSHChannel None (246) on SSHService 'ssh-connection' on HoneyPotSSHTransport,14059,91.195.103.182] remote eof
+2017-06-09T10:51:39+0000 [SSHChannel None (246) on SSHService 'ssh-connection' on HoneyPotSSHTransport,14059,91.195.103.182] remote close
+2017-06-09T10:51:39+0000 [SSHChannel None (246) on SSHService 'ssh-connection' on HoneyPotSSHTransport,14059,91.195.103.182] sending close 246
