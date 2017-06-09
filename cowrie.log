@@ -2163,3 +2163,33 @@
 2017-06-09T04:50:00+0000 [SSHChannel None (96) on SSHService 'ssh-connection' on HoneyPotSSHTransport,13260,91.195.103.216] sending close 96
 2017-06-09T04:50:00+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,13260,91.195.103.216] got channel 'direct-tcpip' request
 2017-06-09T04:50:00+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,13260,91.195.103.216] direct-tcp connection request to 188.125.69.79:25 from localhost:5556
+2017-06-09T04:50:05+0000 [SSHChannel None (97) on SSHService 'ssh-connection' on HoneyPotSSHTransport,13260,91.195.103.216] remote eof
+2017-06-09T04:50:05+0000 [SSHChannel None (97) on SSHService 'ssh-connection' on HoneyPotSSHTransport,13260,91.195.103.216] remote close
+2017-06-09T04:50:05+0000 [SSHChannel None (97) on SSHService 'ssh-connection' on HoneyPotSSHTransport,13260,91.195.103.216] sending close 97
+2017-06-09T04:50:15+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 117.161.3.214:35543 (10.8.41.81:2222) [session: 2a63a531]
+2017-06-09T04:50:16+0000 [HoneyPotSSHTransport,13535,117.161.3.214] Remote SSH version: SSH-2.0-libssh-0.1
+2017-06-09T04:50:16+0000 [HoneyPotSSHTransport,13535,117.161.3.214] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-rsa'
+2017-06-09T04:50:16+0000 [HoneyPotSSHTransport,13535,117.161.3.214] outgoing: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-06-09T04:50:16+0000 [HoneyPotSSHTransport,13535,117.161.3.214] incoming: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-06-09T04:50:20+0000 [HoneyPotSSHTransport,13535,117.161.3.214] NEW KEYS
+2017-06-09T04:50:20+0000 [HoneyPotSSHTransport,13535,117.161.3.214] starting service 'ssh-userauth'
+2017-06-09T04:50:21+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,13535,117.161.3.214] 'bin' trying auth 'password'
+2017-06-09T04:50:21+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,13535,117.161.3.214] first time for 117.161.3.214, need: 1
+2017-06-09T04:50:21+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,13535,117.161.3.214] login attempt: 1
+2017-06-09T04:50:23+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,13535,117.161.3.214] login attempt [bin/bin] succeeded
+2017-06-09T04:50:26+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,13535,117.161.3.214] 'bin' authenticated with 'password'
+2017-06-09T04:50:26+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,13535,117.161.3.214] starting service 'ssh-connection'
+2017-06-09T04:50:26+0000 [HoneyPotSSHTransport,13535,117.161.3.214] avatar bin logging out
+2017-06-09T04:50:26+0000 [HoneyPotSSHTransport,13535,117.161.3.214] connection lost
+2017-06-09T04:50:26+0000 [HoneyPotSSHTransport,13535,117.161.3.214] Connection lost after 10 seconds
+2017-06-09T04:50:26+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,13323,91.230.47.81] got channel 'direct-tcpip' request
+2017-06-09T04:50:26+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,13323,91.230.47.81] direct-tcp connection request to 136.243.58.37:80 from localhost:5556
+2017-06-09T04:50:27+0000 [SSHChannel None (71) on SSHService 'ssh-connection' on HoneyPotSSHTransport,13323,91.230.47.81] direct-tcp forward to 136.243.58.37:80 with data 'GET /internals/api/ip?1496983774680800259 HTTP/1.1\r\nHost: ip2.adspy.mobi\r\nConnection: keep-alive\r\nUser-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.67 Safari/537.36\r\nAccept-Encoding: gzip, deflate, sdch\r\n\r\n'
+2017-06-09T04:50:27+0000 [SSHChannel None (71) on SSHService 'ssh-connection' on HoneyPotSSHTransport,13323,91.230.47.81] failed to connect: Connection refused
+2017-06-09T04:50:27+0000 [SSHChannel None (71) on SSHService 'ssh-connection' on HoneyPotSSHTransport,13323,91.230.47.81] sending close 71
+2017-06-09T04:50:40+0000 [CowrieTelnetTransport,31128,109.236.83.229] Connection lost after 134 seconds
+2017-06-09T04:50:54+0000 [CowrieTelnetTransport,31129,109.236.83.181] Connection lost after 132 seconds
+2017-06-09T04:51:00+0000 [CowrieTelnetTransport,31130,59.181.152.149] Closing TTY Log: log/tty/20170609-044858-None-31130i.log after 122 seconds
+2017-06-09T04:51:00+0000 [CowrieTelnetTransport,31130,59.181.152.149] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-06-09T04:51:00+0000 [CowrieTelnetTransport,31130,59.181.152.149] Connection lost after 132 seconds
