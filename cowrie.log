@@ -38,3 +38,62 @@
 2017-06-09T08:56:57+0000 [HoneyPotSSHTransport,13993,103.207.36.244] avatar user logging out
 2017-06-09T08:56:57+0000 [HoneyPotSSHTransport,13993,103.207.36.244] connection lost
 2017-06-09T08:56:57+0000 [HoneyPotSSHTransport,13993,103.207.36.244] Connection lost after 7 seconds
+2017-06-09T08:57:02+0000 [CowrieTelnetTransport,31934,166.142.139.138] Closing TTY Log: log/tty/20170609-085500-None-31934i.log after 122 seconds
+2017-06-09T08:57:02+0000 [CowrieTelnetTransport,31934,166.142.139.138] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-06-09T08:57:02+0000 [CowrieTelnetTransport,31934,166.142.139.138] Connection lost after 127 seconds
+2017-06-09T08:57:12+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,13676,91.230.47.81] got channel 'direct-tcpip' request
+2017-06-09T08:57:12+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,13676,91.230.47.81] direct-tcp connection request to 107.6.186.178:80 from localhost:5556
+2017-06-09T08:57:12+0000 [SSHChannel None (131) on SSHService 'ssh-connection' on HoneyPotSSHTransport,13676,91.230.47.81] direct-tcp forward to 107.6.186.178:80 with data 'GET /internals/api/ip?1496998582677024933 HTTP/1.1\r\nHost: ip5.adspy.mobi\r\nConnection: keep-alive\r\nUser-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.67 Safari/537.36\r\nAccept-Encoding: gzip, deflate, sdch\r\n\r\n'
+2017-06-09T08:57:12+0000 [SSHChannel None (131) on SSHService 'ssh-connection' on HoneyPotSSHTransport,13676,91.230.47.81] failed to connect: Connection refused
+2017-06-09T08:57:12+0000 [SSHChannel None (131) on SSHService 'ssh-connection' on HoneyPotSSHTransport,13676,91.230.47.81] sending close 131
+2017-06-09T08:57:37+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 90.179.170.148:58197 (10.8.41.81:2223) [session: TT31937]
+2017-06-09T08:57:38+0000 [CowrieTelnetTransport,31937,90.179.170.148] first time for 90.179.170.148, need: 1
+2017-06-09T08:57:38+0000 [CowrieTelnetTransport,31937,90.179.170.148] login attempt: 1
+2017-06-09T08:57:40+0000 [CowrieTelnetTransport,31937,90.179.170.148] login attempt [admin/1111111] succeeded
+2017-06-09T08:57:42+0000 [CowrieTelnetTransport,31937,90.179.170.148] Opening TTY Log: log/tty/20170609-085742-None-31937i.log
+2017-06-09T08:57:42+0000 [CowrieTelnetTransport,31937,90.179.170.148] Warning: state changed and new state returned
+2017-06-09T08:57:42+0000 [CowrieTelnetTransport,31937,90.179.170.148] CMD: enable
+2017-06-09T08:57:42+0000 [CowrieTelnetTransport,31937,90.179.170.148] Command found: enable 
+2017-06-09T08:57:42+0000 [CowrieTelnetTransport,31937,90.179.170.148] Reading txtcmd from "txtcmds/bin/enable"
+2017-06-09T08:57:42+0000 [CowrieTelnetTransport,31937,90.179.170.148] CMD: shell
+2017-06-09T08:57:42+0000 [CowrieTelnetTransport,31937,90.179.170.148] Command not found: shell
+2017-06-09T08:57:42+0000 [CowrieTelnetTransport,31937,90.179.170.148] CMD: sh
+2017-06-09T08:57:42+0000 [CowrieTelnetTransport,31937,90.179.170.148] Command found: sh 
+2017-06-09T08:57:42+0000 [CowrieTelnetTransport,31937,90.179.170.148] CMD: cat /proc/mounts; /bin/busybox XFCDN
+2017-06-09T08:57:42+0000 [CowrieTelnetTransport,31937,90.179.170.148] Command found: cat /proc/mounts
+2017-06-09T08:57:42+0000 [CowrieTelnetTransport,31937,90.179.170.148] Command found: /bin/busybox XFCDN
+2017-06-09T08:57:42+0000 [CowrieTelnetTransport,31937,90.179.170.148] CMD: cd /dev/shm; cat .s || cp /bin/echo .s; /bin/busybox XFCDN
+2017-06-09T08:57:42+0000 [CowrieTelnetTransport,31937,90.179.170.148] Command found: cd /dev/shm
+2017-06-09T08:57:42+0000 [CowrieTelnetTransport,31937,90.179.170.148] Command found: cat .s
+2017-06-09T08:57:42+0000 [CowrieTelnetTransport,31937,90.179.170.148] Command found: cp /bin/echo .s
+2017-06-09T08:57:42+0000 [CowrieTelnetTransport,31937,90.179.170.148] Command found: /bin/busybox XFCDN
+2017-06-09T08:57:42+0000 [CowrieTelnetTransport,31937,90.179.170.148] CMD: nc; wget; /bin/busybox XFCDN
+2017-06-09T08:57:42+0000 [CowrieTelnetTransport,31937,90.179.170.148] Command not found: nc
+2017-06-09T08:57:42+0000 [CowrieTelnetTransport,31937,90.179.170.148] Command found: wget 
+2017-06-09T08:57:42+0000 [CowrieTelnetTransport,31937,90.179.170.148] Command found: /bin/busybox XFCDN
+2017-06-09T08:57:42+0000 [CowrieTelnetTransport,31937,90.179.170.148] CMD: dd bs=52 count=1 if=.s || cat .s
+2017-06-09T08:57:42+0000 [CowrieTelnetTransport,31937,90.179.170.148] Command not found: dd bs=52 count=1 if=.s
+2017-06-09T08:57:42+0000 [CowrieTelnetTransport,31937,90.179.170.148] Command found: cat /dev/shm/.s
+2017-06-09T08:57:42+0000 [CowrieTelnetTransport,31937,90.179.170.148] CMD: /bin/busybox XFCDN
+2017-06-09T08:57:42+0000 [CowrieTelnetTransport,31937,90.179.170.148] Command found: /bin/busybox XFCDN
+2017-06-09T08:57:52+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 187.111.197.188:4744 (10.8.41.81:2223) [session: TT31938]
+2017-06-09T08:57:55+0000 [CowrieTelnetTransport,31938,187.111.197.188] first time for 187.111.197.188, need: 1
+2017-06-09T08:57:55+0000 [CowrieTelnetTransport,31938,187.111.197.188] login attempt: 1
+2017-06-09T08:57:57+0000 [CowrieTelnetTransport,31938,187.111.197.188] login attempt [root/root] succeeded
+2017-06-09T08:57:59+0000 [CowrieTelnetTransport,31938,187.111.197.188] Opening TTY Log: log/tty/20170609-085759-None-31938i.log
+2017-06-09T08:57:59+0000 [CowrieTelnetTransport,31938,187.111.197.188] Warning: state changed and new state returned
+2017-06-09T08:57:59+0000 [CowrieTelnetTransport,31938,187.111.197.188] Received unhandled keyID: '\x00'
+2017-06-09T08:57:59+0000 [CowrieTelnetTransport,31938,187.111.197.188] CMD: enable
+2017-06-09T08:57:59+0000 [CowrieTelnetTransport,31938,187.111.197.188] Command found: enable 
+2017-06-09T08:57:59+0000 [CowrieTelnetTransport,31938,187.111.197.188] Reading txtcmd from "txtcmds/bin/enable"
+2017-06-09T08:58:00+0000 [CowrieTelnetTransport,31938,187.111.197.188] Received unhandled keyID: '\x00'
+2017-06-09T08:58:00+0000 [CowrieTelnetTransport,31938,187.111.197.188] CMD: system
+2017-06-09T08:58:00+0000 [CowrieTelnetTransport,31938,187.111.197.188] Command not found: system
+2017-06-09T08:58:00+0000 [CowrieTelnetTransport,31938,187.111.197.188] Received unhandled keyID: '\x00'
+2017-06-09T08:58:00+0000 [CowrieTelnetTransport,31938,187.111.197.188] CMD: shell
+2017-06-09T08:58:00+0000 [CowrieTelnetTransport,31938,187.111.197.188] Command not found: shell
+2017-06-09T08:58:00+0000 [CowrieTelnetTransport,31938,187.111.197.188] Received unhandled keyID: '\x00'
+2017-06-09T08:58:00+0000 [CowrieTelnetTransport,31938,187.111.197.188] CMD: sh
+2017-06-09T08:58:00+0000 [CowrieTelnetTransport,31938,187.111.197.188] Command found: sh 
+2017-06-09T08:58:01+0000 [CowrieTelnetTransport,31938,187.111.197.188] Received unhandled keyID: '\x00'
