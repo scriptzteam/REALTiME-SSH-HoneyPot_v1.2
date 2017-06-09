@@ -1560,3 +1560,52 @@
 2017-06-09T21:08:01+0000 [CowrieTelnetTransport,33939,176.100.76.135] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
 	]
 2017-06-09T21:08:01+0000 [CowrieTelnetTransport,33939,176.100.76.135] Connection lost after 141 seconds
+2017-06-09T21:08:15+0000 [CowrieTelnetTransport,33941,109.236.83.181] Connection lost after 137 seconds
+2017-06-09T21:08:20+0000 [CowrieTelnetTransport,33942,109.236.83.229] Connection lost after 142 seconds
+2017-06-09T21:08:25+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 108.34.41.75:33364 (10.8.41.81:2222) [session: 86e625c5]
+2017-06-09T21:08:25+0000 [HoneyPotSSHTransport,16004,108.34.41.75] Remote SSH version: SSH-2.0-libssh2_1.4.3
+2017-06-09T21:08:25+0000 [HoneyPotSSHTransport,16004,108.34.41.75] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-06-09T21:08:25+0000 [HoneyPotSSHTransport,16004,108.34.41.75] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-09T21:08:25+0000 [HoneyPotSSHTransport,16004,108.34.41.75] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-09T21:08:25+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 88.224.170.204:56759 (10.8.41.81:2223) [session: TT33943]
+2017-06-09T21:08:26+0000 [CowrieTelnetTransport,33943,88.224.170.204] first time for 88.224.170.204, need: 1
+2017-06-09T21:08:26+0000 [CowrieTelnetTransport,33943,88.224.170.204] login attempt: 1
+2017-06-09T21:08:28+0000 [CowrieTelnetTransport,33943,88.224.170.204] login attempt [root/123456] succeeded
+2017-06-09T21:08:30+0000 [CowrieTelnetTransport,33943,88.224.170.204] Opening TTY Log: log/tty/20170609-210830-None-33943i.log
+2017-06-09T21:08:30+0000 [CowrieTelnetTransport,33943,88.224.170.204] Warning: state changed and new state returned
+2017-06-09T21:08:30+0000 [HoneyPotSSHTransport,16004,108.34.41.75] NEW KEYS
+2017-06-09T21:08:30+0000 [HoneyPotSSHTransport,16004,108.34.41.75] starting service 'ssh-userauth'
+2017-06-09T21:08:30+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,16004,108.34.41.75] 'csgoserver' trying auth 'password'
+2017-06-09T21:08:30+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,16004,108.34.41.75] login attempt: 135
+2017-06-09T21:08:30+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,16004,108.34.41.75] login return, expect: [musicbot/musicbot]
+2017-06-09T21:08:32+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,16004,108.34.41.75] login attempt [csgoserver/123] failed
+2017-06-09T21:08:32+0000 [CowrieTelnetTransport,33943,88.224.170.204] CMD: enable
+2017-06-09T21:08:32+0000 [CowrieTelnetTransport,33943,88.224.170.204] Command found: enable 
+2017-06-09T21:08:32+0000 [CowrieTelnetTransport,33943,88.224.170.204] Reading txtcmd from "txtcmds/bin/enable"
+2017-06-09T21:08:32+0000 [CowrieTelnetTransport,33943,88.224.170.204] CMD: shell
+2017-06-09T21:08:32+0000 [CowrieTelnetTransport,33943,88.224.170.204] Command not found: shell
+2017-06-09T21:08:32+0000 [CowrieTelnetTransport,33943,88.224.170.204] CMD: sh
+2017-06-09T21:08:32+0000 [CowrieTelnetTransport,33943,88.224.170.204] Command found: sh 
+2017-06-09T21:08:32+0000 [CowrieTelnetTransport,33943,88.224.170.204] CMD: cat /proc/mounts; /bin/busybox QEZFX
+2017-06-09T21:08:32+0000 [CowrieTelnetTransport,33943,88.224.170.204] Command found: cat /proc/mounts
+2017-06-09T21:08:32+0000 [CowrieTelnetTransport,33943,88.224.170.204] Command found: /bin/busybox QEZFX
+2017-06-09T21:08:33+0000 [CowrieTelnetTransport,33943,88.224.170.204] CMD: cd /dev/shm; cat .s || cp /bin/echo .s; /bin/busybox QEZFX
+2017-06-09T21:08:33+0000 [CowrieTelnetTransport,33943,88.224.170.204] Command found: cd /dev/shm
+2017-06-09T21:08:33+0000 [CowrieTelnetTransport,33943,88.224.170.204] Command found: cat .s
+2017-06-09T21:08:33+0000 [CowrieTelnetTransport,33943,88.224.170.204] Command found: cp /bin/echo .s
+2017-06-09T21:08:33+0000 [CowrieTelnetTransport,33943,88.224.170.204] Command found: /bin/busybox QEZFX
+2017-06-09T21:08:33+0000 [CowrieTelnetTransport,33943,88.224.170.204] CMD: nc; wget; /bin/busybox QEZFX
+2017-06-09T21:08:33+0000 [CowrieTelnetTransport,33943,88.224.170.204] Command not found: nc
+2017-06-09T21:08:33+0000 [CowrieTelnetTransport,33943,88.224.170.204] Command found: wget 
+2017-06-09T21:08:33+0000 [CowrieTelnetTransport,33943,88.224.170.204] Command found: /bin/busybox QEZFX
+2017-06-09T21:08:33+0000 [-] 'csgoserver' failed auth 'password'
+2017-06-09T21:08:33+0000 [-] unauthorized login: 
+2017-06-09T21:08:33+0000 [CowrieTelnetTransport,33943,88.224.170.204] CMD: dd bs=52 count=1 if=.s || cat .s
+2017-06-09T21:08:33+0000 [CowrieTelnetTransport,33943,88.224.170.204] Command not found: dd bs=52 count=1 if=.s
+2017-06-09T21:08:33+0000 [CowrieTelnetTransport,33943,88.224.170.204] Command found: cat /dev/shm/.s
+2017-06-09T21:08:33+0000 [HoneyPotSSHTransport,16004,108.34.41.75] Got remote error, code 11
+	reason: Normal Shutdown, Thank you for playing
+2017-06-09T21:08:33+0000 [HoneyPotSSHTransport,16004,108.34.41.75] connection lost
+2017-06-09T21:08:33+0000 [HoneyPotSSHTransport,16004,108.34.41.75] Connection lost after 8 seconds
+2017-06-09T21:08:34+0000 [CowrieTelnetTransport,33943,88.224.170.204] CMD: /bin/busybox QEZFX
+2017-06-09T21:08:34+0000 [CowrieTelnetTransport,33943,88.224.170.204] Command found: /bin/busybox QEZFX
