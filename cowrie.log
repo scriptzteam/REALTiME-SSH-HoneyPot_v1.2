@@ -1062,3 +1062,49 @@
 2017-06-10T09:31:00+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,17575,103.207.36.244] 'user' trying auth 'password'
 2017-06-10T09:31:00+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,17575,103.207.36.244] login attempt: 122
 2017-06-10T09:31:00+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,17575,103.207.36.244] login return, expect: [user/1234]
+2017-06-10T09:31:02+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,17575,103.207.36.244] login attempt [user/1234] succeeded
+2017-06-10T09:31:05+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,17575,103.207.36.244] 'user' authenticated with 'password'
+2017-06-10T09:31:05+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,17575,103.207.36.244] starting service 'ssh-connection'
+2017-06-10T09:31:05+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,17575,103.207.36.244] got channel 'direct-tcpip' request
+2017-06-10T09:31:05+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,17575,103.207.36.244] direct-tcp connection request to 216.58.200.4:80 from localhost:5000
+2017-06-10T09:31:06+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,17575,103.207.36.244] direct-tcp forward to 216.58.200.4:80 with data 'GET http://www.google.com/ HTTP/1.1\r\nHost: www.google.com\r\nUser-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:29.0) Gecko/20100101 Firefox/29.0\r\nConnection: Keep-Alive\r\n\r\n'
+2017-06-10T09:31:06+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,17575,103.207.36.244] failed to connect: Connection refused
+2017-06-10T09:31:06+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,17575,103.207.36.244] sending close 0
+2017-06-10T09:31:07+0000 [HoneyPotSSHTransport,17575,103.207.36.244] Got remote error, code 0
+	reason: 
+2017-06-10T09:31:07+0000 [HoneyPotSSHTransport,17575,103.207.36.244] avatar user logging out
+2017-06-10T09:31:07+0000 [HoneyPotSSHTransport,17575,103.207.36.244] connection lost
+2017-06-10T09:31:07+0000 [HoneyPotSSHTransport,17575,103.207.36.244] Connection lost after 9 seconds
+2017-06-10T09:31:11+0000 [SSHChannel None (487) on SSHService 'ssh-connection' on HoneyPotSSHTransport,17249,91.195.103.185] remote eof
+2017-06-10T09:31:11+0000 [SSHChannel None (487) on SSHService 'ssh-connection' on HoneyPotSSHTransport,17249,91.195.103.185] remote close
+2017-06-10T09:31:11+0000 [SSHChannel None (487) on SSHService 'ssh-connection' on HoneyPotSSHTransport,17249,91.195.103.185] sending close 487
+2017-06-10T09:31:27+0000 [CowrieTelnetTransport,35842,88.224.60.94] Closing TTY Log: log/tty/20170610-092925-None-35842i.log after 122 seconds
+2017-06-10T09:31:27+0000 [CowrieTelnetTransport,35842,88.224.60.94] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-06-10T09:31:27+0000 [CowrieTelnetTransport,35842,88.224.60.94] Connection lost after 127 seconds
+2017-06-10T09:31:28+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,17354,91.230.47.82] got channel 'direct-tcpip' request
+2017-06-10T09:31:28+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,17354,91.230.47.82] direct-tcp connection request to 185.86.151.225:80 from localhost:5556
+2017-06-10T09:31:29+0000 [SSHChannel None (26) on SSHService 'ssh-connection' on HoneyPotSSHTransport,17354,91.230.47.82] direct-tcp forward to 185.86.151.225:80 with data 'GET /getip.php HTTP/1.1\r\nUser-Agent: Mozilla/5.0\r\nHost: s1.ipinfo.pw\r\nAccept: */*\r\n\r\n'
+2017-06-10T09:31:29+0000 [SSHChannel None (26) on SSHService 'ssh-connection' on HoneyPotSSHTransport,17354,91.230.47.82] failed to connect: Connection refused
+2017-06-10T09:31:29+0000 [SSHChannel None (26) on SSHService 'ssh-connection' on HoneyPotSSHTransport,17354,91.230.47.82] sending close 26
+2017-06-10T09:31:32+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,17221,91.195.103.214] got channel 'direct-tcpip' request
+2017-06-10T09:31:32+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,17221,91.195.103.214] direct-tcp connection request to 98.138.112.38:25 from localhost:5556
+2017-06-10T09:31:37+0000 [SSHChannel None (98) on SSHService 'ssh-connection' on HoneyPotSSHTransport,17221,91.195.103.214] remote eof
+2017-06-10T09:31:37+0000 [SSHChannel None (98) on SSHService 'ssh-connection' on HoneyPotSSHTransport,17221,91.195.103.214] remote close
+2017-06-10T09:31:37+0000 [SSHChannel None (98) on SSHService 'ssh-connection' on HoneyPotSSHTransport,17221,91.195.103.214] sending close 98
+2017-06-10T09:31:37+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,17221,91.195.103.214] got channel 'direct-tcpip' request
+2017-06-10T09:31:37+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,17221,91.195.103.214] direct-tcp connection request to 98.138.112.38:25 from localhost:5556
+2017-06-10T09:31:42+0000 [SSHChannel None (99) on SSHService 'ssh-connection' on HoneyPotSSHTransport,17221,91.195.103.214] remote eof
+2017-06-10T09:31:42+0000 [SSHChannel None (99) on SSHService 'ssh-connection' on HoneyPotSSHTransport,17221,91.195.103.214] remote close
+2017-06-10T09:31:42+0000 [SSHChannel None (99) on SSHService 'ssh-connection' on HoneyPotSSHTransport,17221,91.195.103.214] sending close 99
+2017-06-10T09:31:56+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 103.207.36.244:63789 (10.8.41.81:2222) [session: 309d2acb]
+2017-06-10T09:31:56+0000 [HoneyPotSSHTransport,17576,103.207.36.244] Remote SSH version: SSH-2.0-Granados-1.0
+2017-06-10T09:31:56+0000 [HoneyPotSSHTransport,17576,103.207.36.244] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-dss'
+2017-06-10T09:31:56+0000 [HoneyPotSSHTransport,17576,103.207.36.244] outgoing: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-06-10T09:31:56+0000 [HoneyPotSSHTransport,17576,103.207.36.244] incoming: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-06-10T09:31:58+0000 [HoneyPotSSHTransport,17576,103.207.36.244] NEW KEYS
+2017-06-10T09:31:59+0000 [HoneyPotSSHTransport,17576,103.207.36.244] starting service 'ssh-userauth'
+2017-06-10T09:31:59+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,17576,103.207.36.244] 'user' trying auth 'password'
+2017-06-10T09:31:59+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,17576,103.207.36.244] login attempt: 123
+2017-06-10T09:31:59+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,17576,103.207.36.244] login return, expect: [user/1234]
+2017-06-10T09:32:01+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,17576,103.207.36.244] login attempt [user/1234] succeeded
