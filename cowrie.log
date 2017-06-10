@@ -2624,3 +2624,25 @@
 2017-06-10T09:41:00+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,17589,116.104.124.100] 'user' trying auth 'password'
 2017-06-10T09:41:00+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,17589,116.104.124.100] login attempt: 33
 2017-06-10T09:41:00+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,17589,116.104.124.100] login return, expect: [user/1234]
+2017-06-10T09:41:03+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,17589,116.104.124.100] login attempt [user/1234] succeeded
+2017-06-10T09:41:04+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,17589,116.104.124.100] 'user' authenticated with 'password'
+2017-06-10T09:41:04+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,17589,116.104.124.100] starting service 'ssh-connection'
+2017-06-10T09:41:04+0000 [CowrieTelnetTransport,35883,51.15.44.41] Connection lost after 81 seconds
+2017-06-10T09:41:04+0000 [CowrieTelnetTransport,35881,51.15.44.41] Connection lost after 81 seconds
+2017-06-10T09:41:05+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,17589,116.104.124.100] got channel 'direct-tcpip' request
+2017-06-10T09:41:05+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,17589,116.104.124.100] direct-tcp connection request to 216.146.43.71:80 from localhost:10923
+2017-06-10T09:41:06+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,17589,116.104.124.100] direct-tcp forward to 216.146.43.71:80 with data 'GET http://checkip.dyndns.com/ HTTP/1.1\r\nHost: checkip.dyndns.com\r\nUser-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:29.0) Gecko/20100101 Firefox/29.0\r\nConnection: Keep-Alive\r\n\r\n'
+2017-06-10T09:41:06+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,17589,116.104.124.100] failed to connect: Connection refused
+2017-06-10T09:41:06+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,17589,116.104.124.100] sending close 0
+2017-06-10T09:41:06+0000 [HoneyPotSSHTransport,17589,116.104.124.100] Got remote error, code 0
+	reason: 
+2017-06-10T09:41:06+0000 [HoneyPotSSHTransport,17589,116.104.124.100] avatar user logging out
+2017-06-10T09:41:06+0000 [HoneyPotSSHTransport,17589,116.104.124.100] connection lost
+2017-06-10T09:41:06+0000 [HoneyPotSSHTransport,17589,116.104.124.100] Connection lost after 8 seconds
+2017-06-10T09:41:08+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,17249,91.195.103.185] got channel 'direct-tcpip' request
+2017-06-10T09:41:08+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,17249,91.195.103.185] direct-tcp connection request to 208.80.206.24:25 from localhost:5556
+2017-06-10T09:41:10+0000 [CowrieTelnetTransport,35871,51.15.44.41] Closing TTY Log: log/tty/20170610-093844-None-35871i.log after 146 seconds
+2017-06-10T09:41:10+0000 [CowrieTelnetTransport,35871,51.15.44.41] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-06-10T09:41:10+0000 [CowrieTelnetTransport,35871,51.15.44.41] Connection lost after 154 seconds
+2017-06-10T09:41:50+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 171.221.233.77:49829 (10.8.41.81:2223) [session: TT35884]
