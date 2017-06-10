@@ -4145,3 +4145,52 @@
 2017-06-10T09:05:59+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 110.92.52.99:34647 (10.8.41.81:2223) [session: TT35764]
 2017-06-10T09:06:01+0000 [CowrieTelnetTransport,35764,110.92.52.99] first time for 110.92.52.99, need: 1
 2017-06-10T09:06:01+0000 [CowrieTelnetTransport,35764,110.92.52.99] login attempt: 1
+2017-06-10T09:06:03+0000 [CowrieTelnetTransport,35764,110.92.52.99] login attempt [root/123456] succeeded
+2017-06-10T09:06:05+0000 [CowrieTelnetTransport,35764,110.92.52.99] Opening TTY Log: log/tty/20170610-090605-None-35764i.log
+2017-06-10T09:06:05+0000 [CowrieTelnetTransport,35764,110.92.52.99] Warning: state changed and new state returned
+2017-06-10T09:06:05+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,17230,91.230.47.67] got channel 'direct-tcpip' request
+2017-06-10T09:06:05+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,17230,91.230.47.67] direct-tcp connection request to 23.23.106.209:80 from localhost:5556
+2017-06-10T09:06:05+0000 [SSHChannel None (9) on SSHService 'ssh-connection' on HoneyPotSSHTransport,17230,91.230.47.67] direct-tcp forward to 23.23.106.209:80 with data 'GET / HTTP/1.0\r\nHost: api.ipify.org\r\n\r\n'
+2017-06-10T09:06:05+0000 [SSHChannel None (9) on SSHService 'ssh-connection' on HoneyPotSSHTransport,17230,91.230.47.67] failed to connect: Connection refused
+2017-06-10T09:06:05+0000 [SSHChannel None (9) on SSHService 'ssh-connection' on HoneyPotSSHTransport,17230,91.230.47.67] sending close 9
+2017-06-10T09:06:05+0000 [CowrieTelnetTransport,35764,110.92.52.99] CMD: enable
+2017-06-10T09:06:05+0000 [CowrieTelnetTransport,35764,110.92.52.99] Command found: enable 
+2017-06-10T09:06:05+0000 [CowrieTelnetTransport,35764,110.92.52.99] Reading txtcmd from "txtcmds/bin/enable"
+2017-06-10T09:06:05+0000 [CowrieTelnetTransport,35764,110.92.52.99] CMD: shell
+2017-06-10T09:06:05+0000 [CowrieTelnetTransport,35764,110.92.52.99] Command not found: shell
+2017-06-10T09:06:05+0000 [CowrieTelnetTransport,35764,110.92.52.99] CMD: sh
+2017-06-10T09:06:05+0000 [CowrieTelnetTransport,35764,110.92.52.99] Command found: sh 
+2017-06-10T09:06:06+0000 [CowrieTelnetTransport,35764,110.92.52.99] CMD: cat /proc/mounts; /bin/busybox FJPVA
+2017-06-10T09:06:06+0000 [CowrieTelnetTransport,35764,110.92.52.99] Command found: cat /proc/mounts
+2017-06-10T09:06:06+0000 [CowrieTelnetTransport,35764,110.92.52.99] Command found: /bin/busybox FJPVA
+2017-06-10T09:06:06+0000 [CowrieTelnetTransport,35764,110.92.52.99] CMD: cd /dev/shm; cat .s || cp /bin/echo .s; /bin/busybox FJPVA
+2017-06-10T09:06:06+0000 [CowrieTelnetTransport,35764,110.92.52.99] Command found: cd /dev/shm
+2017-06-10T09:06:06+0000 [CowrieTelnetTransport,35764,110.92.52.99] Command found: cat .s
+2017-06-10T09:06:06+0000 [CowrieTelnetTransport,35764,110.92.52.99] Command found: cp /bin/echo .s
+2017-06-10T09:06:06+0000 [CowrieTelnetTransport,35764,110.92.52.99] Command found: /bin/busybox FJPVA
+2017-06-10T09:06:06+0000 [CowrieTelnetTransport,35764,110.92.52.99] CMD: nc; wget; /bin/busybox FJPVA
+2017-06-10T09:06:06+0000 [CowrieTelnetTransport,35764,110.92.52.99] Command not found: nc
+2017-06-10T09:06:06+0000 [CowrieTelnetTransport,35764,110.92.52.99] Command found: wget 
+2017-06-10T09:06:06+0000 [CowrieTelnetTransport,35764,110.92.52.99] Command found: /bin/busybox FJPVA
+2017-06-10T09:06:07+0000 [CowrieTelnetTransport,35764,110.92.52.99] CMD: dd bs=52 count=1 if=.s || cat .s
+2017-06-10T09:06:07+0000 [CowrieTelnetTransport,35764,110.92.52.99] Command not found: dd bs=52 count=1 if=.s
+2017-06-10T09:06:07+0000 [CowrieTelnetTransport,35764,110.92.52.99] Command found: cat /dev/shm/.s
+2017-06-10T09:06:07+0000 [CowrieTelnetTransport,35764,110.92.52.99] CMD: /bin/busybox FJPVA
+2017-06-10T09:06:07+0000 [CowrieTelnetTransport,35764,110.92.52.99] Command found: /bin/busybox FJPVA
+2017-06-10T09:06:11+0000 [CowrieTelnetTransport,35762,49.81.242.247] Closing TTY Log: log/tty/20170610-090406-None-35762i.log after 124 seconds
+2017-06-10T09:06:11+0000 [CowrieTelnetTransport,35762,49.81.242.247] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-06-10T09:06:11+0000 [CowrieTelnetTransport,35762,49.81.242.247] Connection lost after 130 seconds
+2017-06-10T09:06:16+0000 [-] Authentication Timeout reached
+2017-06-10T09:06:16+0000 [HoneyPotSSHTransport,17542,113.195.145.52] connection lost
+2017-06-10T09:06:16+0000 [HoneyPotSSHTransport,17542,113.195.145.52] Connection lost after 120 seconds
+2017-06-10T09:06:33+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,17249,91.195.103.185] got channel 'direct-tcpip' request
+2017-06-10T09:06:33+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,17249,91.195.103.185] direct-tcp connection request to 81.169.145.97:25 from localhost:5556
+2017-06-10T09:06:46+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,17249,91.195.103.185] got channel 'direct-tcpip' request
+2017-06-10T09:06:46+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,17249,91.195.103.185] direct-tcp connection request to 183.79.16.117:25 from localhost:5556
+2017-06-10T09:06:47+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,17209,91.195.103.196] got channel 'direct-tcpip' request
+2017-06-10T09:06:47+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,17209,91.195.103.196] direct-tcp connection request to 23.0.37.229:443 from localhost:5556
+2017-06-10T09:06:47+0000 [SSHChannel None (7) on SSHService 'ssh-connection' on HoneyPotSSHTransport,17209,91.195.103.196] direct-tcp forward to 23.0.37.229:443 with data "\x16\x03\x03\x00\xc3\x01\x00\x00\xbf\x03\x03Y;\xb6u\xc8\n\xa9U\x04$\xa1\xa3\xd6H\x98\xb8\x0c\t\xe9\xc9\xda\x8f*\x03n\xde.\xf3Q\xf1\xd3\x96 \xab!\xe0b\xea\xa0\xce\xb55\xea\xa1\x1e\xfcj\\\xe0V6&\xc2\xf0\xa5\xb8\x0b\x07I\x9c\xeb\xf8+1\xa0\x00*\x00<\x00/\x00=\x005\x00\x05\x00\n\xc0'\xc0\x13\xc0\x14\xc0+\xc0#\xc0,\xc0$\xc0\t\xc0\n\x00@\x002\x00j\x008\x00\x13\x00\x04\x01\x00\x00L\xff\x01\x00\x01\x00\x00\x00\x00\x1f\x00\x1d\x00\x00\x1aauth.np.ac.playstation.net\x00\n\x00\x06\x00\x04\x00\x17\x00\x18\x00\x0b\x00\x02\x01\x00\x00\r\x00\x10\x00\x0e\x04\x01\x05\x01\x02\x01\x04\x03\x05\x03\x02\x03\x02\x02"
+2017-06-10T09:06:47+0000 [SSHChannel None (7) on SSHService 'ssh-connection' on HoneyPotSSHTransport,17209,91.195.103.196] failed to connect: Connection refused
+2017-06-10T09:06:47+0000 [SSHChannel None (7) on SSHService 'ssh-connection' on HoneyPotSSHTransport,17209,91.195.103.196] sending close 7
+2017-06-10T09:07:00+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 187.62.47.95:4187 (10.8.41.81:2223) [session: TT35765]
