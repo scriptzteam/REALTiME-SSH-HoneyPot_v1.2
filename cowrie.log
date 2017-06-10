@@ -4826,3 +4826,155 @@
 2017-06-10T17:13:55+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 109.236.83.181:57202 (10.8.41.81:2223) [session: TT36918]
 2017-06-10T17:14:00+0000 [CowrieTelnetTransport,36918,109.236.83.181] login attempt: 11233
 2017-06-10T17:14:00+0000 [CowrieTelnetTransport,36918,109.236.83.181] login return, expect: [default/]
+2017-06-10T17:14:02+0000 [CowrieTelnetTransport,36918,109.236.83.181] login attempt [root/pass] failed
+2017-06-10T17:14:02+0000 [CowrieTelnetTransport,36918,109.236.83.181] Warning: state changed and new state returned
+2017-06-10T17:14:02+0000 [CowrieTelnetTransport,36918,109.236.83.181] login attempt: 11234
+2017-06-10T17:14:02+0000 [CowrieTelnetTransport,36918,109.236.83.181] login return, expect: [default/]
+2017-06-10T17:14:04+0000 [CowrieTelnetTransport,36918,109.236.83.181] login attempt [enable/system] failed
+2017-06-10T17:14:05+0000 [CowrieTelnetTransport,36918,109.236.83.181] Warning: state changed and new state returned
+2017-06-10T17:14:05+0000 [CowrieTelnetTransport,36918,109.236.83.181] login attempt: 11235
+2017-06-10T17:14:05+0000 [CowrieTelnetTransport,36918,109.236.83.181] login return, expect: [default/]
+2017-06-10T17:14:07+0000 [CowrieTelnetTransport,36918,109.236.83.181] login attempt [shell/sh] failed
+2017-06-10T17:14:07+0000 [CowrieTelnetTransport,36918,109.236.83.181] Warning: state changed and new state returned
+2017-06-10T17:14:12+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 216.252.61.168:50953 (10.8.41.81:2222) [session: b56fb0c2]
+2017-06-10T17:14:12+0000 [HoneyPotSSHTransport,18516,216.252.61.168] Remote SSH version: SSH-2.0-libssh2_1.7.0
+2017-06-10T17:14:12+0000 [HoneyPotSSHTransport,18516,216.252.61.168] kex alg, key alg: 'diffie-hellman-group-exchange-sha256' 'ssh-rsa'
+2017-06-10T17:14:12+0000 [HoneyPotSSHTransport,18516,216.252.61.168] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-10T17:14:12+0000 [HoneyPotSSHTransport,18516,216.252.61.168] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-10T17:14:14+0000 [HoneyPotSSHTransport,18516,216.252.61.168] NEW KEYS
+2017-06-10T17:14:14+0000 [HoneyPotSSHTransport,18516,216.252.61.168] starting service 'ssh-userauth'
+2017-06-10T17:14:14+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,18516,216.252.61.168] 'support' trying auth 'password'
+2017-06-10T17:14:14+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,18516,216.252.61.168] first time for 216.252.61.168, need: 1
+2017-06-10T17:14:14+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,18516,216.252.61.168] login attempt: 1
+2017-06-10T17:14:16+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,18516,216.252.61.168] login attempt [support/123456] succeeded
+2017-06-10T17:14:19+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,18516,216.252.61.168] 'support' authenticated with 'password'
+2017-06-10T17:14:19+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,18516,216.252.61.168] starting service 'ssh-connection'
+2017-06-10T17:14:19+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 109.236.83.181:59636 (10.8.41.81:2223) [session: TT36919]
+2017-06-10T17:14:19+0000 [CowrieTelnetTransport,36903,109.236.83.229] Connection lost after 214 seconds
+2017-06-10T17:14:19+0000 [CowrieTelnetTransport,36908,109.236.83.229] Connection lost after 198 seconds
+2017-06-10T17:14:19+0000 [CowrieTelnetTransport,36910,109.236.83.181] Connection lost after 198 seconds
+2017-06-10T17:14:19+0000 [CowrieTelnetTransport,36906,109.236.83.181] Connection lost after 214 seconds
+2017-06-10T17:14:19+0000 [CowrieTelnetTransport,36911,109.236.83.181] Connection lost after 198 seconds
+2017-06-10T17:14:19+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,18516,216.252.61.168] got channel 'session' request
+2017-06-10T17:14:19+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,18516,216.252.61.168] channel open
+2017-06-10T17:14:20+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,18516,216.252.61.168] executing command "unset HISTORY HISTFILE HISTSAVE HISTZONE HISTORY HISTLOG WATCH ; history -n ; export HISTFILE=/dev/null ; export HISTSIZE=0; export HISTFILESIZE=0 ; rm -rf /var/log/wtmp ; rm -rf /var/log/lastlog ; rm -rf /var/log/secure ; rm -rf /var/log/xferlog ; rm -rf /var/log/messages ; rm -rf /var/run/utmp ; touch /var/run/utmp ; touch /var/log/messages ; touch /var/log/wtmp ; touch /var/log/messages ; touch /var/log/xferlog ; touch /var/log/secure ;  touch /var/log/lastlog ; rm -rf /var/log/maillog ; touch /var/log/maillog ; rm -rf /root/.bash_history ; touch /root/.bash_history ; history -r "
+2017-06-10T17:14:20+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,18516,216.252.61.168] Opening TTY Log: log/tty/20170610-171420-b56fb0c2-0e.log
+2017-06-10T17:14:20+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,18516,216.252.61.168] CMD: unset HISTORY HISTFILE HISTSAVE HISTZONE HISTORY HISTLOG WATCH ; history -n ; export HISTFILE=/dev/null ; export HISTSIZE=0; export HISTFILESIZE=0 ; rm -rf /var/log/wtmp ; rm -rf /var/log/lastlog ; rm -rf /var/log/secure ; rm -rf /var/log/xferlog ; rm -rf /var/log/messages ; rm -rf /var/run/utmp ; touch /var/run/utmp ; touch /var/log/messages ; touch /var/log/wtmp ; touch /var/log/messages ; touch /var/log/xferlog ; touch /var/log/secure ;  touch /var/log/lastlog ; rm -rf /var/log/maillog ; touch /var/log/maillog ; rm -rf /root/.bash_history ; touch /root/.bash_history ; history -r 
+2017-06-10T17:14:20+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,18516,216.252.61.168] Command found: unset HISTORY HISTFILE HISTSAVE HISTZONE HISTORY HISTLOG WATCH
+2017-06-10T17:14:20+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,18516,216.252.61.168] Command found: history -n
+2017-06-10T17:14:20+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,18516,216.252.61.168] Command found: export HISTFILE=/dev/null
+2017-06-10T17:14:20+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,18516,216.252.61.168] Command found: export HISTSIZE=0
+2017-06-10T17:14:20+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,18516,216.252.61.168] Command found: export HISTFILESIZE=0
+2017-06-10T17:14:20+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,18516,216.252.61.168] Command found: rm -rf /var/log/wtmp
+2017-06-10T17:14:20+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,18516,216.252.61.168] Command found: rm -rf /var/log/lastlog
+2017-06-10T17:14:20+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,18516,216.252.61.168] Command found: rm -rf /var/log/secure
+2017-06-10T17:14:20+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,18516,216.252.61.168] Command found: rm -rf /var/log/xferlog
+2017-06-10T17:14:20+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,18516,216.252.61.168] Command found: rm -rf /var/log/messages
+2017-06-10T17:14:20+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,18516,216.252.61.168] Command found: rm -rf /var/run/utmp
+2017-06-10T17:14:20+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,18516,216.252.61.168] Command found: touch /var/run/utmp
+2017-06-10T17:14:20+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,18516,216.252.61.168] Command found: touch /var/log/messages
+2017-06-10T17:14:20+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,18516,216.252.61.168] Command found: touch /var/log/wtmp
+2017-06-10T17:14:20+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,18516,216.252.61.168] Command found: touch /var/log/messages
+2017-06-10T17:14:20+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,18516,216.252.61.168] Command found: touch /var/log/xferlog
+2017-06-10T17:14:20+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,18516,216.252.61.168] Command found: touch /var/log/secure
+2017-06-10T17:14:20+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,18516,216.252.61.168] Command found: touch /var/log/lastlog
+2017-06-10T17:14:20+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,18516,216.252.61.168] Command found: rm -rf /var/log/maillog
+2017-06-10T17:14:20+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,18516,216.252.61.168] Command found: touch /var/log/maillog
+2017-06-10T17:14:20+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,18516,216.252.61.168] Command found: rm -rf /root/.bash_history
+2017-06-10T17:14:20+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,18516,216.252.61.168] Command found: touch /root/.bash_history
+2017-06-10T17:14:20+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,18516,216.252.61.168] Command found: history -r
+2017-06-10T17:14:20+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,18516,216.252.61.168] exitCode: 0
+2017-06-10T17:14:20+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,18516,216.252.61.168] sending request 'exit-status'
+2017-06-10T17:14:20+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,18516,216.252.61.168] sending close 0
+2017-06-10T17:14:20+0000 [CowrieTelnetTransport,36917,109.236.83.229] Closing TTY Log: log/tty/20170610-171346-None-36917i.log after 34 seconds
+2017-06-10T17:14:20+0000 [CowrieTelnetTransport,36917,109.236.83.229] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-06-10T17:14:20+0000 [CowrieTelnetTransport,36917,109.236.83.229] Connection lost after 43 seconds
+2017-06-10T17:14:20+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,18516,216.252.61.168] got channel 'session' request
+2017-06-10T17:14:20+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,18516,216.252.61.168] channel open
+2017-06-10T17:14:20+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,18516,216.252.61.168] executing command "uname"
+2017-06-10T17:14:20+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,18516,216.252.61.168] Opening TTY Log: log/tty/20170610-171420-b56fb0c2-1e.log
+2017-06-10T17:14:20+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,18516,216.252.61.168] CMD: uname
+2017-06-10T17:14:20+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,18516,216.252.61.168] Command found: uname 
+2017-06-10T17:14:20+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,18516,216.252.61.168] exitCode: 0
+2017-06-10T17:14:20+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,18516,216.252.61.168] sending request 'exit-status'
+2017-06-10T17:14:20+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,18516,216.252.61.168] sending close 1
+2017-06-10T17:14:20+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,18516,216.252.61.168] got channel 'session' request
+2017-06-10T17:14:20+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,18516,216.252.61.168] channel open
+2017-06-10T17:14:20+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,18516,216.252.61.168] executing command "free -m"
+2017-06-10T17:14:20+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,18516,216.252.61.168] Opening TTY Log: log/tty/20170610-171420-b56fb0c2-2e.log
+2017-06-10T17:14:20+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,18516,216.252.61.168] CMD: free -m
+2017-06-10T17:14:20+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,18516,216.252.61.168] Command found: free -m
+2017-06-10T17:14:20+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,18516,216.252.61.168] exitCode: 0
+2017-06-10T17:14:20+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,18516,216.252.61.168] sending request 'exit-status'
+2017-06-10T17:14:20+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,18516,216.252.61.168] sending close 2
+2017-06-10T17:14:20+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,18516,216.252.61.168] got channel 'session' request
+2017-06-10T17:14:20+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,18516,216.252.61.168] channel open
+2017-06-10T17:14:21+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,18516,216.252.61.168] executing command "ps -x"
+2017-06-10T17:14:21+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,18516,216.252.61.168] Opening TTY Log: log/tty/20170610-171421-b56fb0c2-3e.log
+2017-06-10T17:14:21+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,18516,216.252.61.168] CMD: ps -x
+2017-06-10T17:14:21+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,18516,216.252.61.168] Command found: ps -x
+2017-06-10T17:14:21+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,18516,216.252.61.168] exitCode: 0
+2017-06-10T17:14:21+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,18516,216.252.61.168] sending request 'exit-status'
+2017-06-10T17:14:21+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,18516,216.252.61.168] sending close 3
+2017-06-10T17:14:21+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,18516,216.252.61.168] got channel 'session' request
+2017-06-10T17:14:21+0000 [SSHChannel session (4) on SSHService 'ssh-connection' on HoneyPotSSHTransport,18516,216.252.61.168] channel open
+2017-06-10T17:14:21+0000 [SSHChannel session (4) on SSHService 'ssh-connection' on HoneyPotSSHTransport,18516,216.252.61.168] executing command "cat /proc/cpuinfo"
+2017-06-10T17:14:21+0000 [SSHChannel session (4) on SSHService 'ssh-connection' on HoneyPotSSHTransport,18516,216.252.61.168] Opening TTY Log: log/tty/20170610-171421-b56fb0c2-4e.log
+2017-06-10T17:14:21+0000 [SSHChannel session (4) on SSHService 'ssh-connection' on HoneyPotSSHTransport,18516,216.252.61.168] CMD: cat /proc/cpuinfo
+2017-06-10T17:14:21+0000 [SSHChannel session (4) on SSHService 'ssh-connection' on HoneyPotSSHTransport,18516,216.252.61.168] Command found: cat /proc/cpuinfo
+2017-06-10T17:14:21+0000 [SSHChannel session (4) on SSHService 'ssh-connection' on HoneyPotSSHTransport,18516,216.252.61.168] exitCode: 0
+2017-06-10T17:14:21+0000 [SSHChannel session (4) on SSHService 'ssh-connection' on HoneyPotSSHTransport,18516,216.252.61.168] sending request 'exit-status'
+2017-06-10T17:14:21+0000 [SSHChannel session (4) on SSHService 'ssh-connection' on HoneyPotSSHTransport,18516,216.252.61.168] sending close 4
+2017-06-10T17:14:24+0000 [CowrieTelnetTransport,36919,109.236.83.181] login attempt: 11236
+2017-06-10T17:14:24+0000 [CowrieTelnetTransport,36919,109.236.83.181] login return, expect: [default/]
+2017-06-10T17:14:26+0000 [CowrieTelnetTransport,36919,109.236.83.181] login attempt [root/12345] failed
+2017-06-10T17:14:26+0000 [CowrieTelnetTransport,36919,109.236.83.181] Warning: state changed and new state returned
+2017-06-10T17:14:27+0000 [CowrieTelnetTransport,36919,109.236.83.181] login attempt: 11237
+2017-06-10T17:14:27+0000 [CowrieTelnetTransport,36919,109.236.83.181] login return, expect: [default/]
+2017-06-10T17:14:29+0000 [CowrieTelnetTransport,36919,109.236.83.181] login attempt [enable/system] failed
+2017-06-10T17:14:29+0000 [CowrieTelnetTransport,36919,109.236.83.181] Warning: state changed and new state returned
+2017-06-10T17:14:29+0000 [CowrieTelnetTransport,36919,109.236.83.181] login attempt: 11238
+2017-06-10T17:14:29+0000 [CowrieTelnetTransport,36919,109.236.83.181] login return, expect: [default/]
+2017-06-10T17:14:31+0000 [CowrieTelnetTransport,36919,109.236.83.181] login attempt [shell/sh] failed
+2017-06-10T17:14:31+0000 [CowrieTelnetTransport,36919,109.236.83.181] Warning: state changed and new state returned
+2017-06-10T17:14:31+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 109.236.83.229:58460 (10.8.41.81:2223) [session: TT36920]
+2017-06-10T17:14:33+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 109.236.83.229:52835 (10.8.41.81:2223) [session: TT36921]
+2017-06-10T17:14:35+0000 [CowrieTelnetTransport,36920,109.236.83.229] login attempt: 6174
+2017-06-10T17:14:35+0000 [CowrieTelnetTransport,36920,109.236.83.229] login return, expect: [root/12345]
+2017-06-10T17:14:37+0000 [CowrieTelnetTransport,36920,109.236.83.229] login attempt [root/admin] failed
+2017-06-10T17:14:37+0000 [CowrieTelnetTransport,36920,109.236.83.229] Warning: state changed and new state returned
+2017-06-10T17:14:38+0000 [CowrieTelnetTransport,36921,109.236.83.229] login attempt: 6175
+2017-06-10T17:14:38+0000 [CowrieTelnetTransport,36921,109.236.83.229] login return, expect: [root/12345]
+2017-06-10T17:14:40+0000 [CowrieTelnetTransport,36921,109.236.83.229] login attempt [admin/admin] failed
+2017-06-10T17:14:40+0000 [CowrieTelnetTransport,36921,109.236.83.229] Warning: state changed and new state returned
+2017-06-10T17:14:40+0000 [CowrieTelnetTransport,36920,109.236.83.229] login attempt: 6176
+2017-06-10T17:14:40+0000 [CowrieTelnetTransport,36920,109.236.83.229] login return, expect: [root/12345]
+2017-06-10T17:14:42+0000 [CowrieTelnetTransport,36920,109.236.83.229] login attempt [enable/system] failed
+2017-06-10T17:14:42+0000 [CowrieTelnetTransport,36920,109.236.83.229] Warning: state changed and new state returned
+2017-06-10T17:14:44+0000 [CowrieTelnetTransport,36920,109.236.83.229] login attempt: 6177
+2017-06-10T17:14:44+0000 [CowrieTelnetTransport,36920,109.236.83.229] login return, expect: [root/12345]
+2017-06-10T17:14:46+0000 [CowrieTelnetTransport,36920,109.236.83.229] login attempt [shell/sh] failed
+2017-06-10T17:14:46+0000 [CowrieTelnetTransport,36920,109.236.83.229] Warning: state changed and new state returned
+2017-06-10T17:14:46+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 109.236.83.229:49938 (10.8.41.81:2223) [session: TT36922]
+2017-06-10T17:14:46+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 109.236.83.181:50879 (10.8.41.81:2223) [session: TT36923]
+2017-06-10T17:14:46+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 109.236.83.181:48481 (10.8.41.81:2223) [session: TT36924]
+2017-06-10T17:14:46+0000 [CowrieTelnetTransport,36921,109.236.83.229] login attempt: 6178
+2017-06-10T17:14:46+0000 [CowrieTelnetTransport,36921,109.236.83.229] login return, expect: [root/12345]
+2017-06-10T17:14:48+0000 [CowrieTelnetTransport,36921,109.236.83.229] login attempt [enable/system] failed
+2017-06-10T17:14:48+0000 [CowrieTelnetTransport,36921,109.236.83.229] Warning: state changed and new state returned
+2017-06-10T17:14:49+0000 [CowrieTelnetTransport,36921,109.236.83.229] login attempt: 6179
+2017-06-10T17:14:49+0000 [CowrieTelnetTransport,36921,109.236.83.229] login return, expect: [root/12345]
+2017-06-10T17:14:51+0000 [CowrieTelnetTransport,36921,109.236.83.229] login attempt [shell/sh] failed
+2017-06-10T17:14:51+0000 [CowrieTelnetTransport,36921,109.236.83.229] Warning: state changed and new state returned
+2017-06-10T17:14:51+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 113.195.145.52:58184 (10.8.41.81:2222) [session: c5b04601]
+2017-06-10T17:14:56+0000 [CowrieTelnetTransport,36924,109.236.83.181] login attempt: 11239
+2017-06-10T17:14:56+0000 [CowrieTelnetTransport,36924,109.236.83.181] login return, expect: [default/]
+2017-06-10T17:14:58+0000 [CowrieTelnetTransport,36924,109.236.83.181] login attempt [admin/password] failed
+2017-06-10T17:14:58+0000 [CowrieTelnetTransport,36924,109.236.83.181] Warning: state changed and new state returned
+2017-06-10T17:14:58+0000 [CowrieTelnetTransport,36922,109.236.83.229] login attempt: 6180
+2017-06-10T17:14:58+0000 [CowrieTelnetTransport,36922,109.236.83.229] login return, expect: [root/12345]
+2017-06-10T17:15:00+0000 [CowrieTelnetTransport,36922,109.236.83.229] login attempt [admin/54321] failed
+2017-06-10T17:15:00+0000 [CowrieTelnetTransport,36922,109.236.83.229] Warning: state changed and new state returned
+2017-06-10T17:15:01+0000 [CowrieTelnetTransport,36923,109.236.83.181] login attempt: 11240
+2017-06-10T17:15:01+0000 [CowrieTelnetTransport,36923,109.236.83.181] login return, expect: [default/]
