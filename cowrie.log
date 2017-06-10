@@ -4969,3 +4969,73 @@
 2017-06-10T11:21:57+0000 [SSHChannel None (19) on SSHService 'ssh-connection' on HoneyPotSSHTransport,17669,91.195.103.211] remote close
 2017-06-10T11:21:57+0000 [SSHChannel None (19) on SSHService 'ssh-connection' on HoneyPotSSHTransport,17669,91.195.103.211] sending close 19
 2017-06-10T11:21:58+0000 [HoneyPotSSHTransport,17777,113.195.145.52] NEW KEYS
+2017-06-10T11:22:02+0000 [HoneyPotSSHTransport,17777,113.195.145.52] starting service 'ssh-userauth'
+2017-06-10T11:22:02+0000 [HoneyPotSSHTransport,17777,113.195.145.52] Got remote error, code 11
+	reason: 
+2017-06-10T11:22:02+0000 [HoneyPotSSHTransport,17777,113.195.145.52] connection lost
+2017-06-10T11:22:02+0000 [HoneyPotSSHTransport,17777,113.195.145.52] Connection lost after 7 seconds
+2017-06-10T11:22:02+0000 [CowrieTelnetTransport,36107,117.213.230.132] Closing TTY Log: log/tty/20170610-112000-None-36107i.log after 122 seconds
+2017-06-10T11:22:02+0000 [CowrieTelnetTransport,36107,117.213.230.132] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-06-10T11:22:02+0000 [CowrieTelnetTransport,36107,117.213.230.132] Connection lost after 128 seconds
+2017-06-10T11:22:03+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 113.195.145.52:22391 (10.8.41.81:2222) [session: e530f368]
+2017-06-10T11:22:07+0000 [HoneyPotSSHTransport,17778,113.195.145.52] Remote SSH version: SSH-2.0-PUTTY
+2017-06-10T11:22:07+0000 [HoneyPotSSHTransport,17778,113.195.145.52] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-06-10T11:22:07+0000 [HoneyPotSSHTransport,17778,113.195.145.52] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-10T11:22:07+0000 [HoneyPotSSHTransport,17778,113.195.145.52] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-10T11:22:10+0000 [HoneyPotSSHTransport,17778,113.195.145.52] NEW KEYS
+2017-06-10T11:22:10+0000 [CowrieTelnetTransport,36111,160.238.69.103] Connection lost after 40 seconds
+2017-06-10T11:22:10+0000 [HoneyPotSSHTransport,17778,113.195.145.52] starting service 'ssh-userauth'
+2017-06-10T11:22:10+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 160.238.69.103:39887 (10.8.41.81:2223) [session: TT36112]
+2017-06-10T11:22:11+0000 [CowrieTelnetTransport,36112,160.238.69.103] login attempt: 8
+2017-06-10T11:22:11+0000 [CowrieTelnetTransport,36112,160.238.69.103] login return, expect: [root/admin]
+2017-06-10T11:22:13+0000 [CowrieTelnetTransport,36112,160.238.69.103] login attempt [root/vizxv] failed
+2017-06-10T11:22:13+0000 [CowrieTelnetTransport,36112,160.238.69.103] Warning: state changed and new state returned
+2017-06-10T11:22:16+0000 [CowrieTelnetTransport,36112,160.238.69.103] login attempt: 9
+2017-06-10T11:22:16+0000 [CowrieTelnetTransport,36112,160.238.69.103] login return, expect: [root/admin]
+2017-06-10T11:22:18+0000 [CowrieTelnetTransport,36112,160.238.69.103] login attempt [enable\x00/system\x00] failed
+2017-06-10T11:22:18+0000 [CowrieTelnetTransport,36112,160.238.69.103] Warning: state changed and new state returned
+2017-06-10T11:22:18+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,17778,113.195.145.52] 'root' trying auth 'none'
+2017-06-10T11:22:19+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,17778,113.195.145.52] 'root' authenticated with 'none'
+2017-06-10T11:22:19+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,17778,113.195.145.52] starting service 'ssh-connection'
+2017-06-10T11:22:19+0000 [HoneyPotSSHTransport,17778,113.195.145.52] Got remote error, code 11
+	reason: 
+2017-06-10T11:22:19+0000 [HoneyPotSSHTransport,17778,113.195.145.52] avatar root logging out
+2017-06-10T11:22:19+0000 [HoneyPotSSHTransport,17778,113.195.145.52] connection lost
+2017-06-10T11:22:19+0000 [HoneyPotSSHTransport,17778,113.195.145.52] Connection lost after 15 seconds
+2017-06-10T11:22:20+0000 [CowrieTelnetTransport,36112,160.238.69.103] login attempt: 10
+2017-06-10T11:22:20+0000 [CowrieTelnetTransport,36112,160.238.69.103] login return, expect: [root/admin]
+2017-06-10T11:22:22+0000 [CowrieTelnetTransport,36112,160.238.69.103] login attempt [shell\x00/sh\x00] failed
+2017-06-10T11:22:22+0000 [CowrieTelnetTransport,36112,160.238.69.103] Warning: state changed and new state returned
+2017-06-10T11:22:24+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 92.127.232.85:58636 (10.8.41.81:2223) [session: TT36113]
+2017-06-10T11:22:25+0000 [CowrieTelnetTransport,36113,92.127.232.85] login attempt: 2
+2017-06-10T11:22:25+0000 [CowrieTelnetTransport,36113,92.127.232.85] login return, expect: [guest/54321]
+2017-06-10T11:22:27+0000 [CowrieTelnetTransport,36113,92.127.232.85] login attempt [root/anko] failed
+2017-06-10T11:22:27+0000 [CowrieTelnetTransport,36113,92.127.232.85] Warning: state changed and new state returned
+2017-06-10T11:22:27+0000 [CowrieTelnetTransport,36113,92.127.232.85] Connection lost after 3 seconds
+2017-06-10T11:22:52+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,17743,91.230.47.81] got channel 'direct-tcpip' request
+2017-06-10T11:22:52+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,17743,91.230.47.81] direct-tcp connection request to 107.6.167.194:80 from localhost:5556
+2017-06-10T11:22:52+0000 [SSHChannel None (25) on SSHService 'ssh-connection' on HoneyPotSSHTransport,17743,91.230.47.81] direct-tcp forward to 107.6.167.194:80 with data 'GET /internals/api/ip?1497093723679021968 HTTP/1.1\r\nHost: ip4.adspy.mobi\r\nConnection: keep-alive\r\nUser-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.67 Safari/537.36\r\nAccept-Encoding: gzip, deflate, sdch\r\n\r\n'
+2017-06-10T11:22:52+0000 [SSHChannel None (25) on SSHService 'ssh-connection' on HoneyPotSSHTransport,17743,91.230.47.81] failed to connect: Connection refused
+2017-06-10T11:22:52+0000 [SSHChannel None (25) on SSHService 'ssh-connection' on HoneyPotSSHTransport,17743,91.230.47.81] sending close 25
+2017-06-10T11:22:53+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 59.45.175.56:44524 (10.8.41.81:2222) [session: 04003570]
+2017-06-10T11:22:53+0000 [HoneyPotSSHTransport,17779,59.45.175.56] Remote SSH version: SSH-2.0-PUTTY
+2017-06-10T11:22:53+0000 [HoneyPotSSHTransport,17779,59.45.175.56] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-06-10T11:22:53+0000 [HoneyPotSSHTransport,17779,59.45.175.56] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-10T11:22:53+0000 [HoneyPotSSHTransport,17779,59.45.175.56] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-10T11:22:53+0000 [CowrieTelnetTransport,36112,160.238.69.103] Connection lost after 42 seconds
+2017-06-10T11:22:53+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 160.238.69.103:41572 (10.8.41.81:2223) [session: TT36114]
+2017-06-10T11:22:54+0000 [HoneyPotSSHTransport,17779,59.45.175.56] NEW KEYS
+2017-06-10T11:22:54+0000 [CowrieTelnetTransport,36114,160.238.69.103] login attempt: 11
+2017-06-10T11:22:54+0000 [CowrieTelnetTransport,36114,160.238.69.103] login return, expect: [root/admin]
+2017-06-10T11:22:56+0000 [CowrieTelnetTransport,36114,160.238.69.103] login attempt [root/GM8182] failed
+2017-06-10T11:22:57+0000 [CowrieTelnetTransport,36114,160.238.69.103] Warning: state changed and new state returned
+2017-06-10T11:22:57+0000 [HoneyPotSSHTransport,17779,59.45.175.56] starting service 'ssh-userauth'
+2017-06-10T11:22:57+0000 [HoneyPotSSHTransport,17779,59.45.175.56] Got remote error, code 11
+	reason: 
+2017-06-10T11:22:57+0000 [HoneyPotSSHTransport,17779,59.45.175.56] connection lost
+2017-06-10T11:22:57+0000 [HoneyPotSSHTransport,17779,59.45.175.56] Connection lost after 4 seconds
+2017-06-10T11:22:59+0000 [CowrieTelnetTransport,36114,160.238.69.103] login attempt: 12
+2017-06-10T11:22:59+0000 [CowrieTelnetTransport,36114,160.238.69.103] login return, expect: [root/admin]
+2017-06-10T11:23:01+0000 [CowrieTelnetTransport,36114,160.238.69.103] login attempt [enable\x00/system\x00] failed
+2017-06-10T11:23:01+0000 [CowrieTelnetTransport,36114,160.238.69.103] Warning: state changed and new state returned
