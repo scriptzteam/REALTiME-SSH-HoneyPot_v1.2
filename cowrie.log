@@ -1068,3 +1068,148 @@
 2017-06-11T22:01:58+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 109.236.83.181:38671 (10.8.41.81:2223) [session: TT42242]
 2017-06-11T22:02:01+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,21557,91.230.47.82] got channel 'direct-tcpip' request
 2017-06-11T22:02:01+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,21557,91.230.47.82] direct-tcp connection request to 185.86.151.225:80 from localhost:5556
+2017-06-11T22:02:03+0000 [CowrieTelnetTransport,42242,109.236.83.181] login attempt: 13719
+2017-06-11T22:02:03+0000 [CowrieTelnetTransport,42242,109.236.83.181] login return, expect: [default/]
+2017-06-11T22:02:05+0000 [CowrieTelnetTransport,42242,109.236.83.181] login attempt [root/xmhdipc] failed
+2017-06-11T22:02:05+0000 [CowrieTelnetTransport,42242,109.236.83.181] Warning: state changed and new state returned
+2017-06-11T22:02:05+0000 [SSHChannel None (25) on SSHService 'ssh-connection' on HoneyPotSSHTransport,21557,91.230.47.82] direct-tcp forward to 185.86.151.225:80 with data 'GET /getip.php HTTP/1.1\r\nUser-Agent: Mozilla/5.0\r\nHost: s1.ipinfo.pw\r\nAccept: */*\r\n\r\n'
+2017-06-11T22:02:05+0000 [SSHChannel None (25) on SSHService 'ssh-connection' on HoneyPotSSHTransport,21557,91.230.47.82] failed to connect: Connection refused
+2017-06-11T22:02:06+0000 [SSHChannel None (25) on SSHService 'ssh-connection' on HoneyPotSSHTransport,21557,91.230.47.82] sending close 25
+2017-06-11T22:02:06+0000 [SSHChannel None (25) on SSHService 'ssh-connection' on HoneyPotSSHTransport,21557,91.230.47.82] remote eof
+2017-06-11T22:02:06+0000 [SSHChannel None (25) on SSHService 'ssh-connection' on HoneyPotSSHTransport,21557,91.230.47.82] remote close
+2017-06-11T22:02:06+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 84.72.61.227:61607 (10.8.41.81:2223) [session: TT42243]
+2017-06-11T22:02:06+0000 [CowrieTelnetTransport,42243,84.72.61.227] first time for 84.72.61.227, need: 1
+2017-06-11T22:02:06+0000 [CowrieTelnetTransport,42243,84.72.61.227] login attempt: 1
+2017-06-11T22:02:08+0000 [CowrieTelnetTransport,42243,84.72.61.227] login attempt [GET http://www.bing.com/ HTTP/1.1/Host: www.bing.com] succeeded
+2017-06-11T22:02:09+0000 [CowrieTelnetTransport,42243,84.72.61.227] Opening TTY Log: log/tty/20170611-220209-None-42243i.log
+2017-06-11T22:02:09+0000 [CowrieTelnetTransport,42243,84.72.61.227] Warning: state changed and new state returned
+2017-06-11T22:02:09+0000 [CowrieTelnetTransport,42243,84.72.61.227] CMD: Proxy-Connection: Keep-Alive
+2017-06-11T22:02:09+0000 [CowrieTelnetTransport,42243,84.72.61.227] Command not found: Proxy-Connection: Keep-Alive
+2017-06-11T22:02:10+0000 [CowrieTelnetTransport,42243,84.72.61.227] CMD: User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; en) Opera 8.50
+2017-06-11T22:02:10+0000 [CowrieTelnetTransport,42243,84.72.61.227] Command not found: User-Agent: Mozilla/4.0 compatible
+2017-06-11T22:02:10+0000 [CowrieTelnetTransport,42243,84.72.61.227] Command not found: MSIE 6.0
+2017-06-11T22:02:10+0000 [CowrieTelnetTransport,42243,84.72.61.227] Command not found: Windows NT 5.1
+2017-06-11T22:02:10+0000 [CowrieTelnetTransport,42243,84.72.61.227] Command not found: en Opera 8.50
+2017-06-11T22:02:10+0000 [CowrieTelnetTransport,42243,84.72.61.227] CMD: Referer: http://www.bing.com/
+2017-06-11T22:02:10+0000 [CowrieTelnetTransport,42243,84.72.61.227] Command not found: Referer: http://www.bing.com/
+2017-06-11T22:02:10+0000 [CowrieTelnetTransport,42243,84.72.61.227] CMD: Accept: text/html, application/xml;q=0.9, application/xhtml+xml, image/png, image/webp, image/jpeg, image/gif, image/x-xbitmap, */*;q=0.1
+2017-06-11T22:02:10+0000 [CowrieTelnetTransport,42243,84.72.61.227] Command not found: Accept: text/html , application/xml
+2017-06-11T22:02:10+0000 [CowrieTelnetTransport,42243,84.72.61.227] Command not found: q=0.9 , application/xhtml+xml , image/png , image/webp , image/jpeg , image/gif , image/x-xbitmap , */*
+2017-06-11T22:02:10+0000 [CowrieTelnetTransport,42243,84.72.61.227] Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/log.py", line 103, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/log.py", line 86, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 122, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 85, in callWithContext
+	    return func(*args,**kw)
+	--- <exception caught here> ---
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/posixbase.py", line 597, in _doReadOrWrite
+	    why = selectable.doRead()
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 208, in doRead
+	    return self._dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 214, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/telnet.py", line 636, in dataReceived
+	    self.applicationDataReceived(b''.join(appDataBuffer))
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/telnet.py", line 988, in applicationDataReceived
+	    self.protocol.dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/protocols/basic.py", line 571, in dataReceived
+	    why = self.lineReceived(line)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/telnet.py", line 1100, in lineReceived
+	    newState = getattr(self, "telnet_" + oldState)(line)
+	  File "/home/cowrie/cowrie/cowrie/telnet/transport.py", line 142, in telnet_Command
+	    self.transport.protocol.dataReceived(command+'\r')
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/telnet.py", line 1035, in dataReceived
+	    self.protocol.dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie/insults/insults.py", line 112, in dataReceived
+	    insults.ServerProtocol.dataReceived(self, data)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/insults/insults.py", line 537, in dataReceived
+	    self.terminalProtocol.keystrokeReceived(ch, None)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/recvline.py", line 225, in keystrokeReceived
+	    m()
+	  File "/home/cowrie/cowrie/cowrie/core/protocol.py", line 353, in handle_RETURN
+	    return recvline.RecvLine.handle_RETURN(self)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/recvline.py", line 292, in handle_RETURN
+	    self.lineReceived(line)
+	  File "/home/cowrie/cowrie/cowrie/core/protocol.py", line 187, in lineReceived
+	    self.cmdstack[-1].lineReceived(line)
+	  File "/home/cowrie/cowrie/cowrie/core/honeypot.py", line 246, in lineReceived
+	    self.runCommand()
+	  File "/home/cowrie/cowrie/cowrie/core/honeypot.py", line 351, in runCommand
+	    runOrPrompt()
+	  File "/home/cowrie/cowrie/cowrie/core/honeypot.py", line 257, in runOrPrompt
+	    self.runCommand()
+	  File "/home/cowrie/cowrie/cowrie/core/honeypot.py", line 351, in runCommand
+	    runOrPrompt()
+	  File "/home/cowrie/cowrie/cowrie/core/honeypot.py", line 257, in runOrPrompt
+	    self.runCommand()
+	  File "/home/cowrie/cowrie/cowrie/core/honeypot.py", line 307, in runCommand
+	    if not cmd['command']:
+	exceptions.KeyError: 'command'
+	
+2017-06-11T22:02:10+0000 [CowrieTelnetTransport,42243,84.72.61.227] Closing TTY Log: log/tty/20170611-220209-None-42243i.log after 0 seconds
+2017-06-11T22:02:10+0000 [CowrieTelnetTransport,42243,84.72.61.227] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <type 'exceptions.KeyError'>: 'command'
+	]
+2017-06-11T22:02:10+0000 [CowrieTelnetTransport,42243,84.72.61.227] Connection lost after 4 seconds
+2017-06-11T22:02:10+0000 [CowrieTelnetTransport,42242,109.236.83.181] login attempt: 13720
+2017-06-11T22:02:10+0000 [CowrieTelnetTransport,42242,109.236.83.181] login return, expect: [default/]
+2017-06-11T22:02:12+0000 [CowrieTelnetTransport,42242,109.236.83.181] login attempt [enable/system] failed
+2017-06-11T22:02:12+0000 [CowrieTelnetTransport,42242,109.236.83.181] Warning: state changed and new state returned
+2017-06-11T22:02:13+0000 [CowrieTelnetTransport,42242,109.236.83.181] login attempt: 13721
+2017-06-11T22:02:13+0000 [CowrieTelnetTransport,42242,109.236.83.181] login return, expect: [default/]
+2017-06-11T22:02:15+0000 [CowrieTelnetTransport,42242,109.236.83.181] login attempt [shell/sh] failed
+2017-06-11T22:02:15+0000 [CowrieTelnetTransport,42242,109.236.83.181] Warning: state changed and new state returned
+2017-06-11T22:02:15+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 84.72.61.227:61638 (10.8.41.81:2223) [session: TT42244]
+2017-06-11T22:02:15+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,21439,91.195.103.212] got channel 'direct-tcpip' request
+2017-06-11T22:02:15+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,21439,91.195.103.212] direct-tcp connection request to 66.196.118.36:25 from localhost:5556
+2017-06-11T22:02:15+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 84.72.61.227:61664 (10.8.41.81:2223) [session: TT42245]
+2017-06-11T22:02:15+0000 [CowrieTelnetTransport,42244,84.72.61.227] Connection lost after 0 seconds
+2017-06-11T22:02:15+0000 [CowrieTelnetTransport,42245,84.72.61.227] Connection lost after 0 seconds
+2017-06-11T22:02:15+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 84.72.61.227:61665 (10.8.41.81:2223) [session: TT42246]
+2017-06-11T22:02:15+0000 [CowrieTelnetTransport,42246,84.72.61.227] login attempt: 2
+2017-06-11T22:02:15+0000 [CowrieTelnetTransport,42246,84.72.61.227] login return, expect: [GET http://www.bing.com/ HTTP/1.1/Host: www.bing.com]
+2017-06-11T22:02:17+0000 [CowrieTelnetTransport,42246,84.72.61.227] login attempt [CONNECT 204.79.197.200:80 HTTP/1.0/] failed
+2017-06-11T22:02:18+0000 [CowrieTelnetTransport,42246,84.72.61.227] Warning: state changed and new state returned
+2017-06-11T22:02:18+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 109.236.83.181:32946 (10.8.41.81:2223) [session: TT42247]
+2017-06-11T22:02:19+0000 [CowrieTelnetTransport,42232,109.236.83.181] Connection lost after 133 seconds
+2017-06-11T22:02:20+0000 [SSHChannel None (94) on SSHService 'ssh-connection' on HoneyPotSSHTransport,21439,91.195.103.212] remote eof
+2017-06-11T22:02:20+0000 [SSHChannel None (94) on SSHService 'ssh-connection' on HoneyPotSSHTransport,21439,91.195.103.212] remote close
+2017-06-11T22:02:20+0000 [SSHChannel None (94) on SSHService 'ssh-connection' on HoneyPotSSHTransport,21439,91.195.103.212] sending close 94
+2017-06-11T22:02:20+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,21439,91.195.103.212] got channel 'direct-tcpip' request
+2017-06-11T22:02:20+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,21439,91.195.103.212] direct-tcp connection request to 66.196.118.36:25 from localhost:5556
+2017-06-11T22:02:23+0000 [CowrieTelnetTransport,42247,109.236.83.181] login attempt: 13722
+2017-06-11T22:02:23+0000 [CowrieTelnetTransport,42247,109.236.83.181] login return, expect: [default/]
+2017-06-11T22:02:25+0000 [CowrieTelnetTransport,42247,109.236.83.181] login attempt [root/default] failed
+2017-06-11T22:02:26+0000 [CowrieTelnetTransport,42247,109.236.83.181] Warning: state changed and new state returned
+2017-06-11T22:02:26+0000 [CowrieTelnetTransport,42246,84.72.61.227] Connection lost after 10 seconds
+2017-06-11T22:02:26+0000 [SSHChannel None (95) on SSHService 'ssh-connection' on HoneyPotSSHTransport,21439,91.195.103.212] remote eof
+2017-06-11T22:02:26+0000 [SSHChannel None (95) on SSHService 'ssh-connection' on HoneyPotSSHTransport,21439,91.195.103.212] remote close
+2017-06-11T22:02:26+0000 [SSHChannel None (95) on SSHService 'ssh-connection' on HoneyPotSSHTransport,21439,91.195.103.212] sending close 95
+2017-06-11T22:02:26+0000 [CowrieTelnetTransport,42247,109.236.83.181] login attempt: 13723
+2017-06-11T22:02:26+0000 [CowrieTelnetTransport,42247,109.236.83.181] login return, expect: [default/]
+2017-06-11T22:02:28+0000 [CowrieTelnetTransport,42247,109.236.83.181] login attempt [enable/system] failed
+2017-06-11T22:02:28+0000 [CowrieTelnetTransport,42247,109.236.83.181] Warning: state changed and new state returned
+2017-06-11T22:02:29+0000 [CowrieTelnetTransport,42247,109.236.83.181] login attempt: 13724
+2017-06-11T22:02:29+0000 [CowrieTelnetTransport,42247,109.236.83.181] login return, expect: [default/]
+2017-06-11T22:02:31+0000 [CowrieTelnetTransport,42247,109.236.83.181] login attempt [shell/sh] failed
+2017-06-11T22:02:31+0000 [CowrieTelnetTransport,42247,109.236.83.181] Warning: state changed and new state returned
+2017-06-11T22:02:31+0000 [CowrieTelnetTransport,42233,109.236.83.181] Connection lost after 142 seconds
+2017-06-11T22:02:42+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 109.236.83.181:56488 (10.8.41.81:2223) [session: TT42248]
+2017-06-11T22:02:47+0000 [CowrieTelnetTransport,42248,109.236.83.181] login attempt: 13725
+2017-06-11T22:02:47+0000 [CowrieTelnetTransport,42248,109.236.83.181] login return, expect: [default/]
+2017-06-11T22:02:49+0000 [CowrieTelnetTransport,42248,109.236.83.181] login attempt [root/xc3511] failed
+2017-06-11T22:02:49+0000 [CowrieTelnetTransport,42248,109.236.83.181] Warning: state changed and new state returned
+2017-06-11T22:02:49+0000 [CowrieTelnetTransport,42248,109.236.83.181] login attempt: 13726
+2017-06-11T22:02:49+0000 [CowrieTelnetTransport,42248,109.236.83.181] login return, expect: [default/]
+2017-06-11T22:02:51+0000 [CowrieTelnetTransport,42248,109.236.83.181] login attempt [enable/system] failed
+2017-06-11T22:02:51+0000 [CowrieTelnetTransport,42248,109.236.83.181] Warning: state changed and new state returned
+2017-06-11T22:02:53+0000 [CowrieTelnetTransport,42248,109.236.83.181] login attempt: 13727
+2017-06-11T22:02:53+0000 [CowrieTelnetTransport,42248,109.236.83.181] login return, expect: [default/]
+2017-06-11T22:02:55+0000 [CowrieTelnetTransport,42248,109.236.83.181] login attempt [shell/sh] failed
+2017-06-11T22:02:55+0000 [CowrieTelnetTransport,42248,109.236.83.181] Warning: state changed and new state returned
+2017-06-11T22:02:55+0000 [CowrieTelnetTransport,42234,109.236.83.181] Connection lost after 137 seconds
+2017-06-11T22:02:59+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,21444,91.230.47.70] got channel 'direct-tcpip' request
+2017-06-11T22:02:59+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,21444,91.230.47.70] direct-tcp connection request to 98.136.217.203:25 from localhost:5556
