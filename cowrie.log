@@ -3721,3 +3721,46 @@
 2017-06-11T16:00:00+0000 [HoneyPotSSHTransport,21133,116.104.124.100] incoming: 'aes128-cbc' 'hmac-sha1' 'none'
 2017-06-11T16:00:00+0000 [HoneyPotSSHTransport,21133,116.104.124.100] NEW KEYS
 2017-06-11T16:00:01+0000 [HoneyPotSSHTransport,21133,116.104.124.100] starting service 'ssh-userauth'
+2017-06-11T16:00:01+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,21133,116.104.124.100] 'user' trying auth 'password'
+2017-06-11T16:00:02+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,21133,116.104.124.100] login attempt: 42
+2017-06-11T16:00:02+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,21133,116.104.124.100] login return, expect: [user/1234]
+2017-06-11T16:00:04+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,21133,116.104.124.100] login attempt [user/1234] succeeded
+2017-06-11T16:00:06+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,21133,116.104.124.100] 'user' authenticated with 'password'
+2017-06-11T16:00:06+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,21133,116.104.124.100] starting service 'ssh-connection'
+2017-06-11T16:00:07+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,21133,116.104.124.100] got channel 'direct-tcpip' request
+2017-06-11T16:00:07+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,21133,116.104.124.100] direct-tcp connection request to 91.198.22.70:80 from localhost:31076
+2017-06-11T16:00:08+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,21133,116.104.124.100] direct-tcp forward to 91.198.22.70:80 with data 'GET http://checkip.dyndns.com/ HTTP/1.1\r\nHost: checkip.dyndns.com\r\nUser-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:29.0) Gecko/20100101 Firefox/29.0\r\nConnection: Keep-Alive\r\n\r\n'
+2017-06-11T16:00:08+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,21133,116.104.124.100] failed to connect: Connection refused
+2017-06-11T16:00:08+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,21133,116.104.124.100] sending close 0
+2017-06-11T16:00:08+0000 [HoneyPotSSHTransport,21133,116.104.124.100] Got remote error, code 0
+	reason: 
+2017-06-11T16:00:08+0000 [HoneyPotSSHTransport,21133,116.104.124.100] avatar user logging out
+2017-06-11T16:00:08+0000 [HoneyPotSSHTransport,21133,116.104.124.100] connection lost
+2017-06-11T16:00:08+0000 [HoneyPotSSHTransport,21133,116.104.124.100] Connection lost after 9 seconds
+2017-06-11T16:00:21+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 116.104.124.100:12179 (10.8.41.81:2222) [session: 9ff9bf97]
+2017-06-11T16:00:22+0000 [HoneyPotSSHTransport,21134,116.104.124.100] Remote SSH version: SSH-2.0-Granados-1.0
+2017-06-11T16:00:22+0000 [HoneyPotSSHTransport,21134,116.104.124.100] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-dss'
+2017-06-11T16:00:22+0000 [HoneyPotSSHTransport,21134,116.104.124.100] outgoing: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-06-11T16:00:22+0000 [HoneyPotSSHTransport,21134,116.104.124.100] incoming: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-06-11T16:00:23+0000 [HoneyPotSSHTransport,21134,116.104.124.100] NEW KEYS
+2017-06-11T16:00:23+0000 [HoneyPotSSHTransport,21134,116.104.124.100] starting service 'ssh-userauth'
+2017-06-11T16:00:24+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,21134,116.104.124.100] 'user' trying auth 'password'
+2017-06-11T16:00:24+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,21134,116.104.124.100] login attempt: 43
+2017-06-11T16:00:24+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,21134,116.104.124.100] login return, expect: [user/1234]
+2017-06-11T16:00:26+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,21134,116.104.124.100] login attempt [user/1234] succeeded
+2017-06-11T16:00:28+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,21134,116.104.124.100] 'user' authenticated with 'password'
+2017-06-11T16:00:28+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,21134,116.104.124.100] starting service 'ssh-connection'
+2017-06-11T16:00:28+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,21134,116.104.124.100] got channel 'direct-tcpip' request
+2017-06-11T16:00:28+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,21134,116.104.124.100] direct-tcp connection request to 91.198.22.70:80 from localhost:10380
+2017-06-11T16:00:29+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,21134,116.104.124.100] direct-tcp forward to 91.198.22.70:80 with data 'GET http://checkip.dyndns.com/ HTTP/1.1\r\nHost: checkip.dyndns.com\r\nUser-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:29.0) Gecko/20100101 Firefox/29.0\r\nConnection: Keep-Alive\r\n\r\n'
+2017-06-11T16:00:29+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,21134,116.104.124.100] failed to connect: Connection refused
+2017-06-11T16:00:29+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,21134,116.104.124.100] sending close 0
+2017-06-11T16:00:30+0000 [HoneyPotSSHTransport,21134,116.104.124.100] Got remote error, code 0
+	reason: 
+2017-06-11T16:00:30+0000 [HoneyPotSSHTransport,21134,116.104.124.100] avatar user logging out
+2017-06-11T16:00:30+0000 [HoneyPotSSHTransport,21134,116.104.124.100] connection lost
+2017-06-11T16:00:30+0000 [HoneyPotSSHTransport,21134,116.104.124.100] Connection lost after 8 seconds
+2017-06-11T16:01:00+0000 [CowrieTelnetTransport,40690,99.120.140.49] Closing TTY Log: log/tty/20170611-155858-None-40690i.log after 121 seconds
+2017-06-11T16:01:00+0000 [CowrieTelnetTransport,40690,99.120.140.49] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-06-11T16:01:00+0000 [CowrieTelnetTransport,40690,99.120.140.49] Connection lost after 127 seconds
