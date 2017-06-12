@@ -6856,3 +6856,40 @@
 2017-06-12T04:37:40+0000 [CowrieTelnetTransport,43411,109.236.83.229] login attempt [shell/sh] failed
 2017-06-12T04:37:40+0000 [CowrieTelnetTransport,43411,109.236.83.229] Warning: state changed and new state returned
 2017-06-12T04:37:59+0000 [CowrieTelnetTransport,43408,109.236.83.181] Connection lost after 141 seconds
+2017-06-12T04:38:25+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 85.186.208.135:59484 (10.8.41.81:2223) [session: TT43412]
+2017-06-12T04:38:26+0000 [CowrieTelnetTransport,43412,85.186.208.135] login attempt: 2
+2017-06-12T04:38:26+0000 [CowrieTelnetTransport,43412,85.186.208.135] login return, expect: [root/anko]
+2017-06-12T04:38:29+0000 [CowrieTelnetTransport,43412,85.186.208.135] login attempt [root/54321] failed
+2017-06-12T04:38:29+0000 [CowrieTelnetTransport,43412,85.186.208.135] Warning: state changed and new state returned
+2017-06-12T04:38:29+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 89.136.43.182:49665 (10.8.41.81:2223) [session: TT43413]
+2017-06-12T04:38:29+0000 [CowrieTelnetTransport,43413,89.136.43.182] first time for 89.136.43.182, need: 1
+2017-06-12T04:38:29+0000 [CowrieTelnetTransport,43413,89.136.43.182] login attempt: 1
+2017-06-12T04:38:32+0000 [CowrieTelnetTransport,43413,89.136.43.182] login attempt [guest/123456] succeeded
+2017-06-12T04:38:34+0000 [CowrieTelnetTransport,43413,89.136.43.182] Opening TTY Log: log/tty/20170612-043834-None-43413i.log
+2017-06-12T04:38:34+0000 [CowrieTelnetTransport,43413,89.136.43.182] Warning: state changed and new state returned
+2017-06-12T04:38:34+0000 [CowrieTelnetTransport,43412,85.186.208.135] Connection lost after 8 seconds
+2017-06-12T04:38:34+0000 [CowrieTelnetTransport,43413,89.136.43.182] CMD: enable
+2017-06-12T04:38:34+0000 [CowrieTelnetTransport,43413,89.136.43.182] Command found: enable 
+2017-06-12T04:38:34+0000 [CowrieTelnetTransport,43413,89.136.43.182] Reading txtcmd from "txtcmds/bin/enable"
+2017-06-12T04:38:34+0000 [CowrieTelnetTransport,43413,89.136.43.182] CMD: system
+2017-06-12T04:38:34+0000 [CowrieTelnetTransport,43413,89.136.43.182] Command not found: system
+2017-06-12T04:38:34+0000 [CowrieTelnetTransport,43413,89.136.43.182] CMD: shell
+2017-06-12T04:38:34+0000 [CowrieTelnetTransport,43413,89.136.43.182] Command not found: shell
+2017-06-12T04:38:34+0000 [CowrieTelnetTransport,43413,89.136.43.182] CMD: sh
+2017-06-12T04:38:34+0000 [CowrieTelnetTransport,43413,89.136.43.182] Command found: sh 
+2017-06-12T04:38:34+0000 [CowrieTelnetTransport,43413,89.136.43.182] CMD:  /bin/busybox wget; /bin/busybox 81c46036wget; /bin/busybox echo -ne '\x0181c46036\x7f'; /bin/busybox printf '\00281c46036\177'; /bin/echo -ne '\x0381c46036\x7f'; /usr/bin/printf '\00481c46036\177'; /bin/busybox tftp; /bin/busybox 81c46036tftp;
+2017-06-12T04:38:34+0000 [CowrieTelnetTransport,43413,89.136.43.182] Command found: /bin/busybox wget
+2017-06-12T04:38:34+0000 [CowrieTelnetTransport,43413,89.136.43.182] Command found: wget
+2017-06-12T04:38:34+0000 [CowrieTelnetTransport,43413,89.136.43.182] Command found: /bin/busybox 81c46036wget
+2017-06-12T04:38:34+0000 [CowrieTelnetTransport,43413,89.136.43.182] Command found: /bin/busybox echo -ne '\x0181c46036\x7f'
+2017-06-12T04:38:34+0000 [CowrieTelnetTransport,43413,89.136.43.182] Command found: echo -ne '\x0181c46036\x7f'
+2017-06-12T04:38:34+0000 [CowrieTelnetTransport,43413,89.136.43.182] Command found: /bin/busybox printf '\00281c46036\177'
+2017-06-12T04:38:34+0000 [CowrieTelnetTransport,43413,89.136.43.182] Command found: /bin/echo -ne '\x0381c46036\x7f'
+2017-06-12T04:38:34+0000 [CowrieTelnetTransport,43413,89.136.43.182] Command not found: /usr/bin/printf '\00481c46036\177'
+2017-06-12T04:38:34+0000 [CowrieTelnetTransport,43413,89.136.43.182] Command found: /bin/busybox tftp
+2017-06-12T04:38:34+0000 [CowrieTelnetTransport,43413,89.136.43.182] Command found: tftp
+2017-06-12T04:38:34+0000 [CowrieTelnetTransport,43413,89.136.43.182] Command found: /bin/busybox 81c46036tftp
+2017-06-12T04:38:35+0000 [CowrieTelnetTransport,43413,89.136.43.182] CMD:  /bin/busybox dd if=/bin/busybox bs=22 count=1 || /bin/busybox cat /bin/busybox
+2017-06-12T04:38:35+0000 [CowrieTelnetTransport,43413,89.136.43.182] Command found: /bin/busybox dd if=/bin/busybox bs=22 count=1
+2017-06-12T04:38:35+0000 [CowrieTelnetTransport,43413,89.136.43.182] Command found: /bin/busybox cat /bin/busybox
+2017-06-12T04:38:35+0000 [CowrieTelnetTransport,43413,89.136.43.182] Command found: cat /bin/busybox
