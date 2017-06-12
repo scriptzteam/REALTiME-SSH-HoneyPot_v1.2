@@ -2318,3 +2318,79 @@
 2017-06-12T16:01:42+0000 [SSHChannel None (10) on SSHService 'ssh-connection' on HoneyPotSSHTransport,23953,91.195.103.221] direct-tcp forward to 23.21.138.252:80 with data 'GET / HTTP/1.0\r\nHost: api.ipify.org\r\n\r\n'
 2017-06-12T16:01:42+0000 [SSHChannel None (10) on SSHService 'ssh-connection' on HoneyPotSSHTransport,23953,91.195.103.221] failed to connect: Connection refused
 2017-06-12T16:01:42+0000 [SSHChannel None (10) on SSHService 'ssh-connection' on HoneyPotSSHTransport,23953,91.195.103.221] sending close 10
+2017-06-12T16:02:06+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 188.49.226.225:36589 (10.8.41.81:2223) [session: TT45323]
+2017-06-12T16:02:13+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 151.228.105.94:54191 (10.8.41.81:2223) [session: TT45324]
+2017-06-12T16:02:14+0000 [CowrieTelnetTransport,45324,151.228.105.94] first time for 151.228.105.94, need: 1
+2017-06-12T16:02:14+0000 [CowrieTelnetTransport,45324,151.228.105.94] login attempt: 1
+2017-06-12T16:02:16+0000 [CowrieTelnetTransport,45324,151.228.105.94] login attempt [root/jvbzd] succeeded
+2017-06-12T16:02:18+0000 [CowrieTelnetTransport,45324,151.228.105.94] Opening TTY Log: log/tty/20170612-160218-None-45324i.log
+2017-06-12T16:02:18+0000 [CowrieTelnetTransport,45324,151.228.105.94] Warning: state changed and new state returned
+2017-06-12T16:02:18+0000 [CowrieTelnetTransport,45324,151.228.105.94] CMD: enable
+2017-06-12T16:02:18+0000 [CowrieTelnetTransport,45324,151.228.105.94] Command found: enable 
+2017-06-12T16:02:18+0000 [CowrieTelnetTransport,45324,151.228.105.94] Reading txtcmd from "txtcmds/bin/enable"
+2017-06-12T16:02:18+0000 [CowrieTelnetTransport,45324,151.228.105.94] CMD: shell
+2017-06-12T16:02:18+0000 [CowrieTelnetTransport,45324,151.228.105.94] Command not found: shell
+2017-06-12T16:02:18+0000 [CowrieTelnetTransport,45324,151.228.105.94] CMD: sh
+2017-06-12T16:02:18+0000 [CowrieTelnetTransport,45324,151.228.105.94] Command found: sh 
+2017-06-12T16:02:18+0000 [CowrieTelnetTransport,45324,151.228.105.94] CMD: cat /proc/mounts; /bin/busybox NHBNX
+2017-06-12T16:02:18+0000 [CowrieTelnetTransport,45324,151.228.105.94] Command found: cat /proc/mounts
+2017-06-12T16:02:18+0000 [CowrieTelnetTransport,45324,151.228.105.94] Command found: /bin/busybox NHBNX
+2017-06-12T16:02:18+0000 [CowrieTelnetTransport,45324,151.228.105.94] CMD: cd /dev/shm; cat .s || cp /bin/echo .s; /bin/busybox NHBNX
+2017-06-12T16:02:18+0000 [CowrieTelnetTransport,45324,151.228.105.94] Command found: cd /dev/shm
+2017-06-12T16:02:18+0000 [CowrieTelnetTransport,45324,151.228.105.94] Command found: cat .s
+2017-06-12T16:02:18+0000 [CowrieTelnetTransport,45324,151.228.105.94] Command found: cp /bin/echo .s
+2017-06-12T16:02:18+0000 [CowrieTelnetTransport,45324,151.228.105.94] Command found: /bin/busybox NHBNX
+2017-06-12T16:02:18+0000 [CowrieTelnetTransport,45324,151.228.105.94] CMD: nc; wget; /bin/busybox NHBNX
+2017-06-12T16:02:18+0000 [CowrieTelnetTransport,45324,151.228.105.94] Command not found: nc
+2017-06-12T16:02:18+0000 [CowrieTelnetTransport,45324,151.228.105.94] Command found: wget 
+2017-06-12T16:02:18+0000 [CowrieTelnetTransport,45324,151.228.105.94] Command found: /bin/busybox NHBNX
+2017-06-12T16:02:18+0000 [CowrieTelnetTransport,45324,151.228.105.94] CMD: dd bs=52 count=1 if=.s || cat .s
+2017-06-12T16:02:18+0000 [CowrieTelnetTransport,45324,151.228.105.94] Command not found: dd bs=52 count=1 if=.s
+2017-06-12T16:02:18+0000 [CowrieTelnetTransport,45324,151.228.105.94] Command found: cat /dev/shm/.s
+2017-06-12T16:02:18+0000 [CowrieTelnetTransport,45324,151.228.105.94] CMD: /bin/busybox NHBNX
+2017-06-12T16:02:18+0000 [CowrieTelnetTransport,45324,151.228.105.94] Command found: /bin/busybox NHBNX
+2017-06-12T16:02:27+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,23912,91.195.103.200] got channel 'direct-tcpip' request
+2017-06-12T16:02:27+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,23912,91.195.103.200] direct-tcp connection request to 188.125.69.79:25 from localhost:5556
+2017-06-12T16:02:32+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,24019,91.230.47.82] got channel 'direct-tcpip' request
+2017-06-12T16:02:32+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,24019,91.230.47.82] direct-tcp connection request to 185.86.151.225:80 from localhost:5556
+2017-06-12T16:02:33+0000 [SSHChannel None (18) on SSHService 'ssh-connection' on HoneyPotSSHTransport,24019,91.230.47.82] direct-tcp forward to 185.86.151.225:80 with data 'GET /getip.php HTTP/1.1\r\nUser-Agent: Mozilla/5.0\r\nHost: s1.ipinfo.pw\r\nAccept: */*\r\n\r\n'
+2017-06-12T16:02:33+0000 [SSHChannel None (18) on SSHService 'ssh-connection' on HoneyPotSSHTransport,24019,91.230.47.82] failed to connect: Connection refused
+2017-06-12T16:02:33+0000 [SSHChannel None (18) on SSHService 'ssh-connection' on HoneyPotSSHTransport,24019,91.230.47.82] sending close 18
+2017-06-12T16:02:33+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 43.249.205.43:33373 (10.8.41.81:2223) [session: TT45325]
+2017-06-12T16:02:36+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,24018,91.230.47.81] got channel 'direct-tcpip' request
+2017-06-12T16:02:36+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,24018,91.230.47.81] direct-tcp connection request to 45.32.138.106:80 from localhost:5556
+2017-06-12T16:02:36+0000 [SSHChannel None (82) on SSHService 'ssh-connection' on HoneyPotSSHTransport,24018,91.230.47.81] direct-tcp forward to 45.32.138.106:80 with data 'GET /v3/ip-country/?key=b5fea4f19f1ade5f7f99af776af2c1fd3b8eac79aa3462a3a92c61862b40da6b HTTP/1.1\r\nHost: api.ipinfodb.com\r\nAccept: */*\r\nConnection: close\r\n\r\n'
+2017-06-12T16:02:36+0000 [SSHChannel None (82) on SSHService 'ssh-connection' on HoneyPotSSHTransport,24018,91.230.47.81] failed to connect: Connection refused
+2017-06-12T16:02:36+0000 [SSHChannel None (82) on SSHService 'ssh-connection' on HoneyPotSSHTransport,24018,91.230.47.81] sending close 82
+2017-06-12T16:02:39+0000 [CowrieTelnetTransport,45325,43.249.205.43] login attempt: 1133
+2017-06-12T16:02:39+0000 [CowrieTelnetTransport,45325,43.249.205.43] login return, expect: [root/dreambox]
+2017-06-12T16:02:41+0000 [CowrieTelnetTransport,45325,43.249.205.43] login attempt [root/password] failed
+2017-06-12T16:02:41+0000 [CowrieTelnetTransport,45325,43.249.205.43] Warning: state changed and new state returned
+2017-06-12T16:02:42+0000 [CowrieTelnetTransport,45325,43.249.205.43] login attempt: 1134
+2017-06-12T16:02:42+0000 [CowrieTelnetTransport,45325,43.249.205.43] login return, expect: [root/dreambox]
+2017-06-12T16:02:45+0000 [CowrieTelnetTransport,45325,43.249.205.43] login attempt [enable/shell] failed
+2017-06-12T16:02:45+0000 [CowrieTelnetTransport,45325,43.249.205.43] Warning: state changed and new state returned
+2017-06-12T16:02:45+0000 [CowrieTelnetTransport,45325,43.249.205.43] login attempt: 1135
+2017-06-12T16:02:45+0000 [CowrieTelnetTransport,45325,43.249.205.43] login return, expect: [root/dreambox]
+2017-06-12T16:02:47+0000 [CowrieTelnetTransport,45325,43.249.205.43] login attempt [sh//bin/busybox ECCHI] failed
+2017-06-12T16:02:47+0000 [CowrieTelnetTransport,45325,43.249.205.43] Warning: state changed and new state returned
+2017-06-12T16:02:49+0000 [CowrieTelnetTransport,45323,188.49.226.225] Connection lost after 42 seconds
+2017-06-12T16:02:51+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 51.15.68.152:41671 (10.8.41.81:2223) [session: TT45326]
+2017-06-12T16:02:51+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 51.15.68.152:47539 (10.8.41.81:2223) [session: TT45327]
+2017-06-12T16:02:51+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 51.15.68.152:35150 (10.8.41.81:2223) [session: TT45328]
+2017-06-12T16:02:51+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 51.15.68.152:41871 (10.8.41.81:2223) [session: TT45329]
+2017-06-12T16:02:51+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 51.15.68.152:38961 (10.8.41.81:2223) [session: TT45330]
+2017-06-12T16:02:51+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 51.15.68.152:36456 (10.8.41.81:2223) [session: TT45331]
+2017-06-12T16:02:51+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 51.15.68.152:51602 (10.8.41.81:2223) [session: TT45332]
+2017-06-12T16:02:51+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 51.15.68.152:52404 (10.8.41.81:2223) [session: TT45333]
+2017-06-12T16:02:51+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 51.15.68.152:41392 (10.8.41.81:2223) [session: TT45334]
+2017-06-12T16:02:51+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 51.15.68.152:47986 (10.8.41.81:2223) [session: TT45335]
+2017-06-12T16:02:55+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 188.49.226.225:37014 (10.8.41.81:2223) [session: TT45336]
+2017-06-12T16:02:56+0000 [CowrieTelnetTransport,45326,51.15.68.152] login attempt: 270
+2017-06-12T16:02:56+0000 [CowrieTelnetTransport,45326,51.15.68.152] login return, expect: [root/54321]
+2017-06-12T16:02:58+0000 [CowrieTelnetTransport,45326,51.15.68.152] login attempt [admin/] failed
+2017-06-12T16:02:58+0000 [CowrieTelnetTransport,45326,51.15.68.152] Warning: state changed and new state returned
+2017-06-12T16:02:59+0000 [CowrieTelnetTransport,45329,51.15.68.152] login attempt: 271
+2017-06-12T16:02:59+0000 [CowrieTelnetTransport,45329,51.15.68.152] login return, expect: [root/54321]
+2017-06-12T16:03:01+0000 [CowrieTelnetTransport,45329,51.15.68.152] login attempt [admin/5up] failed
+2017-06-12T16:03:01+0000 [CowrieTelnetTransport,45329,51.15.68.152] Warning: state changed and new state returned
