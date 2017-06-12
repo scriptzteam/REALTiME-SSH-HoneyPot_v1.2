@@ -6174,3 +6174,152 @@
 2017-06-12T08:18:39+0000 [CowrieTelnetTransport,44162,203.212.108.211] login return, expect: [admin/smcadmin]
 2017-06-12T08:18:42+0000 [CowrieTelnetTransport,44162,203.212.108.211] login attempt [shell\x00/sh\x00] failed
 2017-06-12T08:18:42+0000 [CowrieTelnetTransport,44162,203.212.108.211] Warning: state changed and new state returned
+2017-06-12T08:19:04+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 38.102.227.197:58497 (10.8.41.81:2223) [session: TT44163]
+2017-06-12T08:19:04+0000 [CowrieTelnetTransport,44163,38.102.227.197] login attempt: 7
+2017-06-12T08:19:04+0000 [CowrieTelnetTransport,44163,38.102.227.197] login return, expect: [GET http://www.bing.com/ HTTP/1.1/Host: www.bing.com]
+2017-06-12T08:19:06+0000 [CowrieTelnetTransport,44163,38.102.227.197] login attempt [GET http://www.bing.com/ HTTP/1.1/Host: www.bing.com] succeeded
+2017-06-12T08:19:08+0000 [CowrieTelnetTransport,44163,38.102.227.197] Opening TTY Log: log/tty/20170612-081908-None-44163i.log
+2017-06-12T08:19:08+0000 [CowrieTelnetTransport,44163,38.102.227.197] Warning: state changed and new state returned
+2017-06-12T08:19:08+0000 [CowrieTelnetTransport,44163,38.102.227.197] CMD: Proxy-Connection: Keep-Alive
+2017-06-12T08:19:08+0000 [CowrieTelnetTransport,44163,38.102.227.197] Command not found: Proxy-Connection: Keep-Alive
+2017-06-12T08:19:08+0000 [CowrieTelnetTransport,44163,38.102.227.197] CMD: User-Agent: Opera/9.20 (Windows NT 6.0; U; en)
+2017-06-12T08:19:08+0000 [CowrieTelnetTransport,44163,38.102.227.197] Command not found: User-Agent: Opera/9.20 Windows NT 6.0
+2017-06-12T08:19:08+0000 [CowrieTelnetTransport,44163,38.102.227.197] Command not found: U
+2017-06-12T08:19:08+0000 [CowrieTelnetTransport,44163,38.102.227.197] Command not found: en
+2017-06-12T08:19:08+0000 [CowrieTelnetTransport,44163,38.102.227.197] CMD: Referer: http://www.google.com/search?q=www.bing.com%20microsoft%2Ecom
+2017-06-12T08:19:08+0000 [CowrieTelnetTransport,44163,38.102.227.197] Command not found: Referer: http://www.google.com/search?q=www.bing.com % 20microsoft % 2Ecom
+2017-06-12T08:19:08+0000 [CowrieTelnetTransport,44163,38.102.227.197] CMD: Accept: text/html, application/xml;q=0.9, application/xhtml+xml, image/png, image/webp, image/jpeg, image/gif, image/x-xbitmap, */*;q=0.1
+2017-06-12T08:19:08+0000 [CowrieTelnetTransport,44163,38.102.227.197] Command not found: Accept: text/html , application/xml
+2017-06-12T08:19:08+0000 [CowrieTelnetTransport,44163,38.102.227.197] Command not found: q=0.9 , application/xhtml+xml , image/png , image/webp , image/jpeg , image/gif , image/x-xbitmap , */*
+2017-06-12T08:19:08+0000 [CowrieTelnetTransport,44163,38.102.227.197] Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/log.py", line 103, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/log.py", line 86, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 122, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 85, in callWithContext
+	    return func(*args,**kw)
+	--- <exception caught here> ---
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/posixbase.py", line 597, in _doReadOrWrite
+	    why = selectable.doRead()
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 208, in doRead
+	    return self._dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 214, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/telnet.py", line 636, in dataReceived
+	    self.applicationDataReceived(b''.join(appDataBuffer))
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/telnet.py", line 988, in applicationDataReceived
+	    self.protocol.dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/protocols/basic.py", line 571, in dataReceived
+	    why = self.lineReceived(line)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/telnet.py", line 1100, in lineReceived
+	    newState = getattr(self, "telnet_" + oldState)(line)
+	  File "/home/cowrie/cowrie/cowrie/telnet/transport.py", line 142, in telnet_Command
+	    self.transport.protocol.dataReceived(command+'\r')
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/telnet.py", line 1035, in dataReceived
+	    self.protocol.dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie/insults/insults.py", line 112, in dataReceived
+	    insults.ServerProtocol.dataReceived(self, data)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/insults/insults.py", line 537, in dataReceived
+	    self.terminalProtocol.keystrokeReceived(ch, None)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/recvline.py", line 225, in keystrokeReceived
+	    m()
+	  File "/home/cowrie/cowrie/cowrie/core/protocol.py", line 353, in handle_RETURN
+	    return recvline.RecvLine.handle_RETURN(self)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/recvline.py", line 292, in handle_RETURN
+	    self.lineReceived(line)
+	  File "/home/cowrie/cowrie/cowrie/core/protocol.py", line 187, in lineReceived
+	    self.cmdstack[-1].lineReceived(line)
+	  File "/home/cowrie/cowrie/cowrie/core/honeypot.py", line 246, in lineReceived
+	    self.runCommand()
+	  File "/home/cowrie/cowrie/cowrie/core/honeypot.py", line 351, in runCommand
+	    runOrPrompt()
+	  File "/home/cowrie/cowrie/cowrie/core/honeypot.py", line 257, in runOrPrompt
+	    self.runCommand()
+	  File "/home/cowrie/cowrie/cowrie/core/honeypot.py", line 351, in runCommand
+	    runOrPrompt()
+	  File "/home/cowrie/cowrie/cowrie/core/honeypot.py", line 257, in runOrPrompt
+	    self.runCommand()
+	  File "/home/cowrie/cowrie/cowrie/core/honeypot.py", line 307, in runCommand
+	    if not cmd['command']:
+	exceptions.KeyError: 'command'
+	
+2017-06-12T08:19:08+0000 [CowrieTelnetTransport,44163,38.102.227.197] Closing TTY Log: log/tty/20170612-081908-None-44163i.log after 0 seconds
+2017-06-12T08:19:08+0000 [CowrieTelnetTransport,44163,38.102.227.197] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <type 'exceptions.KeyError'>: 'command'
+	]
+2017-06-12T08:19:08+0000 [CowrieTelnetTransport,44163,38.102.227.197] Connection lost after 4 seconds
+2017-06-12T08:19:08+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 38.102.227.197:58853 (10.8.41.81:2223) [session: TT44164]
+2017-06-12T08:19:08+0000 [CowrieTelnetTransport,44164,38.102.227.197] Connection lost after 0 seconds
+2017-06-12T08:19:08+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 38.102.227.197:58876 (10.8.41.81:2223) [session: TT44165]
+2017-06-12T08:19:09+0000 [CowrieTelnetTransport,44165,38.102.227.197] Connection lost after 0 seconds
+2017-06-12T08:19:09+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 38.102.227.197:58898 (10.8.41.81:2223) [session: TT44166]
+2017-06-12T08:19:09+0000 [CowrieTelnetTransport,44166,38.102.227.197] login attempt: 8
+2017-06-12T08:19:09+0000 [CowrieTelnetTransport,44166,38.102.227.197] login return, expect: [GET http://www.bing.com/ HTTP/1.1/Host: www.bing.com]
+2017-06-12T08:19:11+0000 [CowrieTelnetTransport,44166,38.102.227.197] login attempt [CONNECT 204.79.197.200:80 HTTP/1.0/] failed
+2017-06-12T08:19:11+0000 [CowrieTelnetTransport,44166,38.102.227.197] Warning: state changed and new state returned
+2017-06-12T08:19:13+0000 [CowrieTelnetTransport,44162,203.212.108.211] Connection lost after 43 seconds
+2017-06-12T08:19:13+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 203.212.108.211:37027 (10.8.41.81:2223) [session: TT44167]
+2017-06-12T08:19:13+0000 [SSHChannel None (128) on SSHService 'ssh-connection' on HoneyPotSSHTransport,22637,91.230.47.70] remote eof
+2017-06-12T08:19:13+0000 [SSHChannel None (128) on SSHService 'ssh-connection' on HoneyPotSSHTransport,22637,91.230.47.70] remote close
+2017-06-12T08:19:13+0000 [SSHChannel None (128) on SSHService 'ssh-connection' on HoneyPotSSHTransport,22637,91.230.47.70] sending close 128
+2017-06-12T08:19:15+0000 [CowrieTelnetTransport,44167,203.212.108.211] login attempt: 128
+2017-06-12T08:19:15+0000 [CowrieTelnetTransport,44167,203.212.108.211] login return, expect: [admin/smcadmin]
+2017-06-12T08:19:17+0000 [CowrieTelnetTransport,44167,203.212.108.211] login attempt [operator/operator] failed
+2017-06-12T08:19:17+0000 [CowrieTelnetTransport,44167,203.212.108.211] Warning: state changed and new state returned
+2017-06-12T08:19:17+0000 [-] Process ended. Telnet Session disconnected
+2017-06-12T08:19:17+0000 [CowrieTelnetTransport,44166,38.102.227.197] Connection lost after 8 seconds
+2017-06-12T08:19:17+0000 [CowrieTelnetTransport,44156,171.233.240.59] Closing TTY Log: log/tty/20170612-081610-None-44156i.log after 186 seconds
+2017-06-12T08:19:17+0000 [CowrieTelnetTransport,44156,171.233.240.59] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-06-12T08:19:17+0000 [CowrieTelnetTransport,44156,171.233.240.59] Connection lost after 195 seconds
+2017-06-12T08:19:17+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,22664,91.195.103.220] got channel 'direct-tcpip' request
+2017-06-12T08:19:17+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,22664,91.195.103.220] direct-tcp connection request to 23.0.37.229:443 from localhost:5556
+2017-06-12T08:19:17+0000 [SSHChannel None (56) on SSHService 'ssh-connection' on HoneyPotSSHTransport,22664,91.195.103.220] direct-tcp forward to 23.0.37.229:443 with data '\x80z\x01\x03\x01\x00Q\x00\x00\x00 \x00\x009\x00\x008\x00\x005\x00\x00\x16\x00\x00\x13\x00\x00\n\x07\x00\xc0\x00\x003\x00\x002\x00\x00/\x00\x00\x07\x05\x00\x80\x03\x00\x80\x00\x00\x05\x00\x00\x04\x01\x00\x80\x00\x00\x15\x00\x00\x12\x00\x00\t\x06\x00@\x00\x00\x14\x00\x00\x11\x00\x00\x08\x00\x00\x06\x04\x00\x80\x00\x00\x03\x02\x00\x80\xd6\xf27\xf0\x12\x7f4\xa7\xffE\xe4%K>E\x7f$\x16 \xefpW\x04p\x93en\x1e\xab\xad\x83\xac'
+2017-06-12T08:19:17+0000 [SSHChannel None (56) on SSHService 'ssh-connection' on HoneyPotSSHTransport,22664,91.195.103.220] failed to connect: Connection refused
+2017-06-12T08:19:17+0000 [SSHChannel None (56) on SSHService 'ssh-connection' on HoneyPotSSHTransport,22664,91.195.103.220] sending close 56
+2017-06-12T08:19:20+0000 [CowrieTelnetTransport,44167,203.212.108.211] login attempt: 129
+2017-06-12T08:19:20+0000 [CowrieTelnetTransport,44167,203.212.108.211] login return, expect: [admin/smcadmin]
+2017-06-12T08:19:22+0000 [CowrieTelnetTransport,44167,203.212.108.211] login attempt [enable\x00/system\x00] failed
+2017-06-12T08:19:22+0000 [CowrieTelnetTransport,44167,203.212.108.211] Warning: state changed and new state returned
+2017-06-12T08:19:23+0000 [CowrieTelnetTransport,44167,203.212.108.211] login attempt: 130
+2017-06-12T08:19:23+0000 [CowrieTelnetTransport,44167,203.212.108.211] login return, expect: [admin/smcadmin]
+2017-06-12T08:19:26+0000 [CowrieTelnetTransport,44167,203.212.108.211] login attempt [shell\x00/sh\x00] failed
+2017-06-12T08:19:26+0000 [CowrieTelnetTransport,44167,203.212.108.211] Warning: state changed and new state returned
+2017-06-12T08:19:32+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,22637,91.230.47.70] got channel 'direct-tcpip' request
+2017-06-12T08:19:32+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,22637,91.230.47.70] direct-tcp connection request to 104.44.194.231:25 from localhost:5556
+2017-06-12T08:19:48+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,22732,91.230.47.81] got channel 'direct-tcpip' request
+2017-06-12T08:19:48+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,22732,91.230.47.81] direct-tcp connection request to 134.119.192.227:8888 from localhost:5556
+2017-06-12T08:19:49+0000 [SSHChannel None (82) on SSHService 'ssh-connection' on HoneyPotSSHTransport,22732,91.230.47.81] direct-tcp forward to 134.119.192.227:8888 with data 'GET /v3/callerinfo/?geo=false HTTP/1.1\r\nConnection: close\r\nCache-Control: no-cache\r\nPragma: no-cache\r\nUser-Agent: Java/1.8.0_66\r\nHost: 134.119.192.227:8888\r\nAccept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2\r\n\r\n'
+2017-06-12T08:19:49+0000 [SSHChannel None (82) on SSHService 'ssh-connection' on HoneyPotSSHTransport,22732,91.230.47.81] failed to connect: Connection refused
+2017-06-12T08:19:49+0000 [SSHChannel None (82) on SSHService 'ssh-connection' on HoneyPotSSHTransport,22732,91.230.47.81] sending close 82
+2017-06-12T08:19:50+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,22732,91.230.47.81] got channel 'direct-tcpip' request
+2017-06-12T08:19:50+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,22732,91.230.47.81] direct-tcp connection request to 134.119.192.227:8888 from localhost:5556
+2017-06-12T08:19:50+0000 [SSHChannel None (83) on SSHService 'ssh-connection' on HoneyPotSSHTransport,22732,91.230.47.81] direct-tcp forward to 134.119.192.227:8888 with data 'GET /v3/callerinfo/?geo=false HTTP/1.1\r\nConnection: close\r\nCache-Control: no-cache\r\nPragma: no-cache\r\nUser-Agent: Java/1.8.0_66\r\nHost: 134.119.192.227:8888\r\nAccept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2\r\n\r\n'
+2017-06-12T08:19:50+0000 [SSHChannel None (83) on SSHService 'ssh-connection' on HoneyPotSSHTransport,22732,91.230.47.81] failed to connect: Connection refused
+2017-06-12T08:19:50+0000 [SSHChannel None (83) on SSHService 'ssh-connection' on HoneyPotSSHTransport,22732,91.230.47.81] sending close 83
+2017-06-12T08:19:52+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,22732,91.230.47.81] got channel 'direct-tcpip' request
+2017-06-12T08:19:52+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,22732,91.230.47.81] direct-tcp connection request to 134.119.192.227:8888 from localhost:5556
+2017-06-12T08:19:53+0000 [SSHChannel None (84) on SSHService 'ssh-connection' on HoneyPotSSHTransport,22732,91.230.47.81] direct-tcp forward to 134.119.192.227:8888 with data 'GET /v3/callerinfo/?geo=false HTTP/1.1\r\nConnection: close\r\nCache-Control: no-cache\r\nPragma: no-cache\r\nUser-Agent: Java/1.8.0_66\r\nHost: 134.119.192.227:8888\r\nAccept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2\r\n\r\n'
+2017-06-12T08:19:53+0000 [SSHChannel None (84) on SSHService 'ssh-connection' on HoneyPotSSHTransport,22732,91.230.47.81] failed to connect: Connection refused
+2017-06-12T08:19:53+0000 [SSHChannel None (84) on SSHService 'ssh-connection' on HoneyPotSSHTransport,22732,91.230.47.81] sending close 84
+2017-06-12T08:19:53+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,22732,91.230.47.81] got channel 'direct-tcpip' request
+2017-06-12T08:19:53+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,22732,91.230.47.81] direct-tcp connection request to 134.119.192.227:8888 from localhost:5556
+2017-06-12T08:19:54+0000 [SSHChannel None (85) on SSHService 'ssh-connection' on HoneyPotSSHTransport,22732,91.230.47.81] direct-tcp forward to 134.119.192.227:8888 with data 'GET /v3/callerinfo/?geo=false HTTP/1.1\r\nConnection: close\r\nCache-Control: no-cache\r\nPragma: no-cache\r\nUser-Agent: Java/1.8.0_66\r\nHost: 134.119.192.227:8888\r\nAccept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2\r\n\r\n'
+2017-06-12T08:19:54+0000 [SSHChannel None (85) on SSHService 'ssh-connection' on HoneyPotSSHTransport,22732,91.230.47.81] failed to connect: Connection refused
+2017-06-12T08:19:54+0000 [SSHChannel None (85) on SSHService 'ssh-connection' on HoneyPotSSHTransport,22732,91.230.47.81] sending close 85
+2017-06-12T08:19:55+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,22732,91.230.47.81] got channel 'direct-tcpip' request
+2017-06-12T08:19:55+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,22732,91.230.47.81] direct-tcp connection request to 134.119.192.227:8888 from localhost:5556
+2017-06-12T08:19:56+0000 [SSHChannel None (86) on SSHService 'ssh-connection' on HoneyPotSSHTransport,22732,91.230.47.81] direct-tcp forward to 134.119.192.227:8888 with data 'GET /v3/callerinfo/?geo=false HTTP/1.1\r\nConnection: close\r\nCache-Control: no-cache\r\nPragma: no-cache\r\nUser-Agent: Java/1.8.0_66\r\nHost: 134.119.192.227:8888\r\nAccept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2\r\n\r\n'
+2017-06-12T08:19:56+0000 [SSHChannel None (86) on SSHService 'ssh-connection' on HoneyPotSSHTransport,22732,91.230.47.81] failed to connect: Connection refused
+2017-06-12T08:19:56+0000 [SSHChannel None (86) on SSHService 'ssh-connection' on HoneyPotSSHTransport,22732,91.230.47.81] sending close 86
+2017-06-12T08:19:56+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,22732,91.230.47.81] got channel 'direct-tcpip' request
+2017-06-12T08:19:56+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,22732,91.230.47.81] direct-tcp connection request to 134.119.192.227:8888 from localhost:5556
+2017-06-12T08:19:57+0000 [SSHChannel None (87) on SSHService 'ssh-connection' on HoneyPotSSHTransport,22732,91.230.47.81] direct-tcp forward to 134.119.192.227:8888 with data 'GET /v3/callerinfo/?geo=false HTTP/1.1\r\nConnection: close\r\nCache-Control: no-cache\r\nPragma: no-cache\r\nUser-Agent: Java/1.8.0_66\r\nHost: 134.119.192.227:8888\r\nAccept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2\r\n\r\n'
+2017-06-12T08:19:57+0000 [SSHChannel None (87) on SSHService 'ssh-connection' on HoneyPotSSHTransport,22732,91.230.47.81] failed to connect: Connection refused
+2017-06-12T08:19:57+0000 [SSHChannel None (87) on SSHService 'ssh-connection' on HoneyPotSSHTransport,22732,91.230.47.81] sending close 87
+2017-06-12T08:19:58+0000 [CowrieTelnetTransport,44167,203.212.108.211] Connection lost after 44 seconds
+2017-06-12T08:19:58+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 203.212.108.211:42015 (10.8.41.81:2223) [session: TT44168]
+2017-06-12T08:20:00+0000 [CowrieTelnetTransport,44168,203.212.108.211] login attempt: 131
+2017-06-12T08:20:00+0000 [CowrieTelnetTransport,44168,203.212.108.211] login return, expect: [admin/smcadmin]
