@@ -5446,3 +5446,63 @@
 2017-06-12T08:05:57+0000 [CowrieTelnetTransport,44125,183.131.113.228] first time for 183.131.113.228, need: 1
 2017-06-12T08:05:57+0000 [CowrieTelnetTransport,44125,183.131.113.228] login attempt: 1
 2017-06-12T08:06:00+0000 [CowrieTelnetTransport,44125,183.131.113.228] login attempt [guest/4321] succeeded
+2017-06-12T08:06:02+0000 [CowrieTelnetTransport,44125,183.131.113.228] Opening TTY Log: log/tty/20170612-080602-None-44125i.log
+2017-06-12T08:06:02+0000 [CowrieTelnetTransport,44125,183.131.113.228] Warning: state changed and new state returned
+2017-06-12T08:06:02+0000 [CowrieTelnetTransport,44124,203.212.108.211] Connection lost after 46 seconds
+2017-06-12T08:06:02+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 203.212.108.211:36951 (10.8.41.81:2223) [session: TT44126]
+2017-06-12T08:06:03+0000 [CowrieTelnetTransport,44125,183.131.113.228] CMD: enable
+2017-06-12T08:06:03+0000 [CowrieTelnetTransport,44125,183.131.113.228] Command found: enable 
+2017-06-12T08:06:03+0000 [CowrieTelnetTransport,44125,183.131.113.228] Reading txtcmd from "txtcmds/bin/enable"
+2017-06-12T08:06:04+0000 [CowrieTelnetTransport,44126,203.212.108.211] login attempt: 77
+2017-06-12T08:06:04+0000 [CowrieTelnetTransport,44126,203.212.108.211] login return, expect: [admin/smcadmin]
+2017-06-12T08:06:06+0000 [CowrieTelnetTransport,44126,203.212.108.211] login attempt [admin/admin1] failed
+2017-06-12T08:06:06+0000 [CowrieTelnetTransport,44126,203.212.108.211] Warning: state changed and new state returned
+2017-06-12T08:06:06+0000 [CowrieTelnetTransport,44125,183.131.113.228] CMD: system
+2017-06-12T08:06:06+0000 [CowrieTelnetTransport,44125,183.131.113.228] Command not found: system
+2017-06-12T08:06:07+0000 [CowrieTelnetTransport,44125,183.131.113.228] CMD: shell
+2017-06-12T08:06:07+0000 [CowrieTelnetTransport,44125,183.131.113.228] Command not found: shell
+2017-06-12T08:06:07+0000 [CowrieTelnetTransport,44125,183.131.113.228] CMD: sh
+2017-06-12T08:06:07+0000 [CowrieTelnetTransport,44125,183.131.113.228] Command found: sh 
+2017-06-12T08:06:08+0000 [CowrieTelnetTransport,44126,203.212.108.211] login attempt: 78
+2017-06-12T08:06:08+0000 [CowrieTelnetTransport,44126,203.212.108.211] login return, expect: [admin/smcadmin]
+2017-06-12T08:06:10+0000 [CowrieTelnetTransport,44126,203.212.108.211] login attempt [enable\x00/system\x00] failed
+2017-06-12T08:06:10+0000 [CowrieTelnetTransport,44126,203.212.108.211] Warning: state changed and new state returned
+2017-06-12T08:06:10+0000 [CowrieTelnetTransport,44125,183.131.113.228] CMD:  /bin/busybox wget; /bin/busybox 81c46036wget; /bin/busybox echo -ne '\x0181c46036\x7f'; /bin/busybox printf '\00281c46036\177'; /bin/echo -ne '\x0381c46036\x7f'; /usr/bin/printf '\00481c46036\177'; /bin/busybox tftp; /bin/busybox 81c46036tftp;
+2017-06-12T08:06:10+0000 [CowrieTelnetTransport,44125,183.131.113.228] Command found: /bin/busybox wget
+2017-06-12T08:06:10+0000 [CowrieTelnetTransport,44125,183.131.113.228] Command found: wget
+2017-06-12T08:06:10+0000 [CowrieTelnetTransport,44125,183.131.113.228] Command found: /bin/busybox 81c46036wget
+2017-06-12T08:06:10+0000 [CowrieTelnetTransport,44125,183.131.113.228] Command found: /bin/busybox echo -ne '\x0181c46036\x7f'
+2017-06-12T08:06:10+0000 [CowrieTelnetTransport,44125,183.131.113.228] Command found: echo -ne '\x0181c46036\x7f'
+2017-06-12T08:06:10+0000 [CowrieTelnetTransport,44125,183.131.113.228] Command found: /bin/busybox printf '\00281c46036\177'
+2017-06-12T08:06:10+0000 [CowrieTelnetTransport,44125,183.131.113.228] Command found: /bin/echo -ne '\x0381c46036\x7f'
+2017-06-12T08:06:10+0000 [CowrieTelnetTransport,44125,183.131.113.228] Command not found: /usr/bin/printf '\00481c46036\177'
+2017-06-12T08:06:10+0000 [CowrieTelnetTransport,44125,183.131.113.228] Command found: /bin/busybox tftp
+2017-06-12T08:06:10+0000 [CowrieTelnetTransport,44125,183.131.113.228] Command found: tftp
+2017-06-12T08:06:10+0000 [CowrieTelnetTransport,44125,183.131.113.228] Command found: /bin/busybox 81c46036tftp
+2017-06-12T08:06:11+0000 [CowrieTelnetTransport,44125,183.131.113.228] CMD:  /bin/busybox dd if=/bin/busybox bs=22 count=1 || /bin/busybox cat /bin/busybox
+2017-06-12T08:06:11+0000 [CowrieTelnetTransport,44125,183.131.113.228] Command found: /bin/busybox dd if=/bin/busybox bs=22 count=1
+2017-06-12T08:06:11+0000 [CowrieTelnetTransport,44125,183.131.113.228] Command found: /bin/busybox cat /bin/busybox
+2017-06-12T08:06:11+0000 [CowrieTelnetTransport,44125,183.131.113.228] Command found: cat /bin/busybox
+2017-06-12T08:06:12+0000 [CowrieTelnetTransport,44126,203.212.108.211] login attempt: 79
+2017-06-12T08:06:12+0000 [CowrieTelnetTransport,44126,203.212.108.211] login return, expect: [admin/smcadmin]
+2017-06-12T08:06:14+0000 [CowrieTelnetTransport,44126,203.212.108.211] login attempt [shell\x00/sh\x00] failed
+2017-06-12T08:06:14+0000 [CowrieTelnetTransport,44126,203.212.108.211] Warning: state changed and new state returned
+2017-06-12T08:06:16+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,22637,91.230.47.70] got channel 'direct-tcpip' request
+2017-06-12T08:06:16+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,22637,91.230.47.70] direct-tcp connection request to 212.48.24.20:25 from localhost:5556
+2017-06-12T08:06:46+0000 [CowrieTelnetTransport,44126,203.212.108.211] Connection lost after 43 seconds
+2017-06-12T08:06:46+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 203.212.108.211:38058 (10.8.41.81:2223) [session: TT44127]
+2017-06-12T08:06:47+0000 [CowrieTelnetTransport,44127,203.212.108.211] login attempt: 80
+2017-06-12T08:06:47+0000 [CowrieTelnetTransport,44127,203.212.108.211] login return, expect: [admin/smcadmin]
+2017-06-12T08:06:50+0000 [CowrieTelnetTransport,44127,203.212.108.211] login attempt [root/] failed
+2017-06-12T08:06:50+0000 [CowrieTelnetTransport,44127,203.212.108.211] Warning: state changed and new state returned
+2017-06-12T08:06:51+0000 [CowrieTelnetTransport,44127,203.212.108.211] login attempt: 81
+2017-06-12T08:06:51+0000 [CowrieTelnetTransport,44127,203.212.108.211] login return, expect: [admin/smcadmin]
+2017-06-12T08:06:54+0000 [CowrieTelnetTransport,44127,203.212.108.211] login attempt [enable\x00/system\x00] failed
+2017-06-12T08:06:54+0000 [CowrieTelnetTransport,44127,203.212.108.211] Warning: state changed and new state returned
+2017-06-12T08:06:56+0000 [CowrieTelnetTransport,44127,203.212.108.211] login attempt: 82
+2017-06-12T08:06:56+0000 [CowrieTelnetTransport,44127,203.212.108.211] login return, expect: [admin/smcadmin]
+2017-06-12T08:06:58+0000 [CowrieTelnetTransport,44127,203.212.108.211] login attempt [shell\x00/sh\x00] failed
+2017-06-12T08:06:59+0000 [CowrieTelnetTransport,44127,203.212.108.211] Warning: state changed and new state returned
+2017-06-12T08:06:59+0000 [SSHChannel None (122) on SSHService 'ssh-connection' on HoneyPotSSHTransport,22637,91.230.47.70] remote eof
+2017-06-12T08:06:59+0000 [SSHChannel None (122) on SSHService 'ssh-connection' on HoneyPotSSHTransport,22637,91.230.47.70] remote close
+2017-06-12T08:06:59+0000 [SSHChannel None (122) on SSHService 'ssh-connection' on HoneyPotSSHTransport,22637,91.230.47.70] sending close 122
