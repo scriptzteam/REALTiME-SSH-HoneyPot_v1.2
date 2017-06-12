@@ -6326,3 +6326,44 @@
 2017-06-12T23:23:59+0000 [HoneyPotSSHTransport,24887,113.195.145.52] Connection lost after 5 seconds
 2017-06-12T23:24:00+0000 [CowrieTelnetTransport,47098,190.7.22.119] first time for 190.7.22.119, need: 1
 2017-06-12T23:24:00+0000 [CowrieTelnetTransport,47098,190.7.22.119] login attempt: 1
+2017-06-12T23:24:02+0000 [CowrieTelnetTransport,47098,190.7.22.119] login attempt [guest/12345] succeeded
+2017-06-12T23:24:04+0000 [CowrieTelnetTransport,47098,190.7.22.119] Opening TTY Log: log/tty/20170612-232404-None-47098i.log
+2017-06-12T23:24:04+0000 [CowrieTelnetTransport,47098,190.7.22.119] Warning: state changed and new state returned
+2017-06-12T23:24:04+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 110.243.114.30:60033 (10.8.41.81:2223) [session: TT47099]
+2017-06-12T23:24:05+0000 [CowrieTelnetTransport,47098,190.7.22.119] CMD: enable
+2017-06-12T23:24:05+0000 [CowrieTelnetTransport,47098,190.7.22.119] Command found: enable 
+2017-06-12T23:24:05+0000 [CowrieTelnetTransport,47098,190.7.22.119] Reading txtcmd from "txtcmds/bin/enable"
+2017-06-12T23:24:05+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 113.195.145.52:18548 (10.8.41.81:2222) [session: b287dbeb]
+2017-06-12T23:24:05+0000 [CowrieTelnetTransport,47098,190.7.22.119] CMD: system
+2017-06-12T23:24:05+0000 [CowrieTelnetTransport,47098,190.7.22.119] Command not found: system
+2017-06-12T23:24:06+0000 [CowrieTelnetTransport,47099,110.243.114.30] login attempt: 2
+2017-06-12T23:24:06+0000 [CowrieTelnetTransport,47099,110.243.114.30] login return, expect: [guest/4321]
+2017-06-12T23:24:09+0000 [CowrieTelnetTransport,47099,110.243.114.30] login attempt [root/cat1029] failed
+2017-06-12T23:24:09+0000 [CowrieTelnetTransport,47099,110.243.114.30] Warning: state changed and new state returned
+2017-06-12T23:24:09+0000 [CowrieTelnetTransport,47098,190.7.22.119] CMD: shell
+2017-06-12T23:24:09+0000 [CowrieTelnetTransport,47098,190.7.22.119] Command not found: shell
+2017-06-12T23:24:09+0000 [HoneyPotSSHTransport,24888,113.195.145.52] Remote SSH version: SSH-2.0-PUTTY
+2017-06-12T23:24:09+0000 [HoneyPotSSHTransport,24888,113.195.145.52] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-06-12T23:24:09+0000 [HoneyPotSSHTransport,24888,113.195.145.52] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-12T23:24:09+0000 [HoneyPotSSHTransport,24888,113.195.145.52] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-12T23:24:09+0000 [CowrieTelnetTransport,47099,110.243.114.30] Connection lost after 5 seconds
+2017-06-12T23:24:09+0000 [CowrieTelnetTransport,47098,190.7.22.119] CMD: sh
+2017-06-12T23:24:09+0000 [CowrieTelnetTransport,47098,190.7.22.119] Command found: sh 
+2017-06-12T23:24:10+0000 [CowrieTelnetTransport,47098,190.7.22.119] CMD:  /bin/busybox wget; /bin/busybox 81c46036wget; /bin/busybox echo -ne '\x0181c46036\x7f'; /bin/busybox printf '\00281c46036\177'; /bin/echo -ne '\x0381c46036\x7f'; /usr/bin/printf '\00481c46036\177'; /bin/busybox tftp; /bin/busybox 81c46036tftp;
+2017-06-12T23:24:10+0000 [CowrieTelnetTransport,47098,190.7.22.119] Command found: /bin/busybox wget
+2017-06-12T23:24:10+0000 [CowrieTelnetTransport,47098,190.7.22.119] Command found: wget
+2017-06-12T23:24:10+0000 [CowrieTelnetTransport,47098,190.7.22.119] Command found: /bin/busybox 81c46036wget
+2017-06-12T23:24:10+0000 [CowrieTelnetTransport,47098,190.7.22.119] Command found: /bin/busybox echo -ne '\x0181c46036\x7f'
+2017-06-12T23:24:10+0000 [CowrieTelnetTransport,47098,190.7.22.119] Command found: echo -ne '\x0181c46036\x7f'
+2017-06-12T23:24:10+0000 [CowrieTelnetTransport,47098,190.7.22.119] Command found: /bin/busybox printf '\00281c46036\177'
+2017-06-12T23:24:10+0000 [CowrieTelnetTransport,47098,190.7.22.119] Command found: /bin/echo -ne '\x0381c46036\x7f'
+2017-06-12T23:24:10+0000 [CowrieTelnetTransport,47098,190.7.22.119] Command not found: /usr/bin/printf '\00481c46036\177'
+2017-06-12T23:24:10+0000 [CowrieTelnetTransport,47098,190.7.22.119] Command found: /bin/busybox tftp
+2017-06-12T23:24:10+0000 [CowrieTelnetTransport,47098,190.7.22.119] Command found: tftp
+2017-06-12T23:24:10+0000 [CowrieTelnetTransport,47098,190.7.22.119] Command found: /bin/busybox 81c46036tftp
+2017-06-12T23:24:10+0000 [CowrieTelnetTransport,47098,190.7.22.119] CMD:  /bin/busybox dd if=/bin/busybox bs=22 count=1 || /bin/busybox cat /bin/busybox
+2017-06-12T23:24:10+0000 [CowrieTelnetTransport,47098,190.7.22.119] Command found: /bin/busybox dd if=/bin/busybox bs=22 count=1
+2017-06-12T23:24:10+0000 [CowrieTelnetTransport,47098,190.7.22.119] Command found: /bin/busybox cat /bin/busybox
+2017-06-12T23:24:10+0000 [CowrieTelnetTransport,47098,190.7.22.119] Command found: cat /bin/busybox
+2017-06-12T23:24:13+0000 [HoneyPotSSHTransport,24888,113.195.145.52] connection lost
+2017-06-12T23:24:13+0000 [HoneyPotSSHTransport,24888,113.195.145.52] Connection lost after 7 seconds
