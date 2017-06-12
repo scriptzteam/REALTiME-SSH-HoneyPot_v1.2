@@ -5649,3 +5649,26 @@
 2017-06-12T23:04:59+0000 [CowrieTelnetTransport,47082,38.99.252.150] Warning: state changed and new state returned
 2017-06-12T23:04:59+0000 [CowrieTelnetTransport,47082,38.99.252.150] login attempt: 361
 2017-06-12T23:04:59+0000 [CowrieTelnetTransport,47082,38.99.252.150] login return, expect: [GET http://chekfast.zennolab.com/proxy.php HTTP/1.1/Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8]
+2017-06-12T23:05:01+0000 [CowrieTelnetTransport,47082,38.99.252.150] login attempt [Accept-Encoding: gzip/Host: check2.zennolab.com] failed
+2017-06-12T23:05:02+0000 [CowrieTelnetTransport,47082,38.99.252.150] Warning: state changed and new state returned
+2017-06-12T23:05:02+0000 [CowrieTelnetTransport,47082,38.99.252.150] Connection lost after 14 seconds
+2017-06-12T23:05:02+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 129.146.31.194:53493 (10.8.41.81:2222) [session: 29b5184e]
+2017-06-12T23:05:02+0000 [HoneyPotSSHTransport,24871,129.146.31.194] connection lost
+2017-06-12T23:05:02+0000 [HoneyPotSSHTransport,24871,129.146.31.194] Connection lost after 0 seconds
+2017-06-12T23:05:42+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 38.84.132.236:57864 (10.8.41.81:2222) [session: 5013c96a]
+2017-06-12T23:05:42+0000 [HoneyPotSSHTransport,24872,38.84.132.236] Remote SSH version: SSH-2.0-OpenSSH_6.6p1 Ubuntu-2ubuntu1
+2017-06-12T23:05:42+0000 [HoneyPotSSHTransport,24872,38.84.132.236] kex alg, key alg: 'ecdh-sha2-nistp256' 'ssh-rsa'
+2017-06-12T23:05:42+0000 [HoneyPotSSHTransport,24872,38.84.132.236] outgoing: 'aes128-ctr' 'hmac-md5' 'none'
+2017-06-12T23:05:42+0000 [HoneyPotSSHTransport,24872,38.84.132.236] incoming: 'aes128-ctr' 'hmac-md5' 'none'
+2017-06-12T23:05:42+0000 [HoneyPotSSHTransport,24872,38.84.132.236] NEW KEYS
+2017-06-12T23:05:42+0000 [HoneyPotSSHTransport,24872,38.84.132.236] starting service 'ssh-userauth'
+2017-06-12T23:05:42+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,24872,38.84.132.236] 'nodeclient' trying auth 'none'
+2017-06-12T23:05:44+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,24872,38.84.132.236] 'nodeclient' authenticated with 'none'
+2017-06-12T23:05:44+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,24872,38.84.132.236] starting service 'ssh-connection'
+2017-06-12T23:05:44+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,24872,38.84.132.236] got global no-more-sessions@openssh.com request
+2017-06-12T23:05:52+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,24872,38.84.132.236] got channel 'direct-tcpip' request
+2017-06-12T23:05:52+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,24872,38.84.132.236] direct-tcp connection request to 52.200.138.20:80 from 127.0.0.1:59520
+2017-06-12T23:05:52+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,24872,38.84.132.236] direct-tcp forward to 52.200.138.20:80 with data 'GET / HTTP/1.1\r\nUser-Agent: Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.146 Safari/537.36\r\nHost: www.alexa.com\r\nAccept: */*\r\n\r\n'
+2017-06-12T23:05:52+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,24872,38.84.132.236] failed to connect: Connection refused
+2017-06-12T23:05:52+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,24872,38.84.132.236] sending close 0
+2017-06-12T23:05:52+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,24872,38.84.132.236] remote close
