@@ -2576,3 +2576,34 @@
 2017-06-12T16:05:58+0000 [SSHChannel None (110) on SSHService 'ssh-connection' on HoneyPotSSHTransport,23912,91.195.103.200] failed to connect: Connection refused
 2017-06-12T16:05:58+0000 [SSHChannel None (110) on SSHService 'ssh-connection' on HoneyPotSSHTransport,23912,91.195.103.200] sending close 110
 2017-06-12T16:06:01+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 59.12.114.147:1704 (10.8.41.81:2223) [session: TT45341]
+2017-06-12T16:06:02+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 188.49.226.225:38540 (10.8.41.81:2223) [session: TT45342]
+2017-06-12T16:06:03+0000 [CowrieTelnetTransport,45341,59.12.114.147] login attempt: 3
+2017-06-12T16:06:03+0000 [CowrieTelnetTransport,45341,59.12.114.147] login return, expect: [Administrator/]
+2017-06-12T16:06:05+0000 [CowrieTelnetTransport,45341,59.12.114.147] login attempt [admin/password] failed
+2017-06-12T16:06:05+0000 [CowrieTelnetTransport,45341,59.12.114.147] Warning: state changed and new state returned
+2017-06-12T16:06:05+0000 [CowrieTelnetTransport,45341,59.12.114.147] Connection lost after 4 seconds
+2017-06-12T16:06:36+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 113.195.145.52:31509 (10.8.41.81:2222) [session: 9f7a91f0]
+2017-06-12T16:06:42+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 14.186.237.216:14026 (10.8.41.81:2222) [session: b4568e7f]
+2017-06-12T16:06:42+0000 [HoneyPotSSHTransport,24207,14.186.237.216] Remote SSH version: SSH-2.0-Granados-1.0
+2017-06-12T16:06:42+0000 [HoneyPotSSHTransport,24207,14.186.237.216] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-dss'
+2017-06-12T16:06:42+0000 [HoneyPotSSHTransport,24207,14.186.237.216] outgoing: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-06-12T16:06:42+0000 [HoneyPotSSHTransport,24207,14.186.237.216] incoming: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-06-12T16:06:43+0000 [HoneyPotSSHTransport,24207,14.186.237.216] NEW KEYS
+2017-06-12T16:06:43+0000 [HoneyPotSSHTransport,24207,14.186.237.216] starting service 'ssh-userauth'
+2017-06-12T16:06:44+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,24207,14.186.237.216] 'guest' trying auth 'password'
+2017-06-12T16:06:44+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,24207,14.186.237.216] login attempt: 3
+2017-06-12T16:06:44+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,24207,14.186.237.216] login return, expect: [guest/guest]
+2017-06-12T16:06:46+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,24207,14.186.237.216] login attempt [guest/guest] succeeded
+2017-06-12T16:06:48+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,24207,14.186.237.216] 'guest' authenticated with 'password'
+2017-06-12T16:06:48+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,24207,14.186.237.216] starting service 'ssh-connection'
+2017-06-12T16:06:48+0000 [CowrieTelnetTransport,45342,188.49.226.225] Connection lost after 46 seconds
+2017-06-12T16:06:48+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,24207,14.186.237.216] got channel 'direct-tcpip' request
+2017-06-12T16:06:48+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,24207,14.186.237.216] direct-tcp connection request to 172.217.24.196:80 from localhost:5277
+2017-06-12T16:06:49+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,24207,14.186.237.216] direct-tcp forward to 172.217.24.196:80 with data 'GET / HTTP/1.0\r\n\r\n'
+2017-06-12T16:06:49+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,24207,14.186.237.216] failed to connect: Connection refused
+2017-06-12T16:06:49+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,24207,14.186.237.216] sending close 0
+2017-06-12T16:06:49+0000 [HoneyPotSSHTransport,24207,14.186.237.216] Got remote error, code 0
+	reason: 
+2017-06-12T16:06:49+0000 [HoneyPotSSHTransport,24207,14.186.237.216] avatar guest logging out
+2017-06-12T16:06:49+0000 [HoneyPotSSHTransport,24207,14.186.237.216] connection lost
+2017-06-12T16:06:49+0000 [HoneyPotSSHTransport,24207,14.186.237.216] Connection lost after 7 seconds
