@@ -6071,3 +6071,106 @@
 2017-06-12T12:51:30+0000 [HoneyPotSSHTransport,23741,113.195.145.52] avatar root logging out
 2017-06-12T12:51:30+0000 [HoneyPotSSHTransport,23741,113.195.145.52] connection lost
 2017-06-12T12:51:30+0000 [HoneyPotSSHTransport,23741,113.195.145.52] Connection lost after 83 seconds
+2017-06-12T12:52:01+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 51.15.57.125:58202 (10.8.41.81:2222) [session: e3ef864b]
+2017-06-12T12:52:01+0000 [HoneyPotSSHTransport,23743,51.15.57.125] Remote SSH version: SSH-2.0-libssh2_1.4.3
+2017-06-12T12:52:01+0000 [HoneyPotSSHTransport,23743,51.15.57.125] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-06-12T12:52:01+0000 [HoneyPotSSHTransport,23743,51.15.57.125] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-12T12:52:01+0000 [HoneyPotSSHTransport,23743,51.15.57.125] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-12T12:52:01+0000 [HoneyPotSSHTransport,23743,51.15.57.125] NEW KEYS
+2017-06-12T12:52:01+0000 [HoneyPotSSHTransport,23743,51.15.57.125] starting service 'ssh-userauth'
+2017-06-12T12:52:01+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,23743,51.15.57.125] 'admin' trying auth 'password'
+2017-06-12T12:52:01+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,23743,51.15.57.125] login attempt: 85
+2017-06-12T12:52:01+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,23743,51.15.57.125] login return, expect: [test/test]
+2017-06-12T12:52:04+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,23743,51.15.57.125] login attempt [admin/admin] failed
+2017-06-12T12:52:05+0000 [-] 'admin' failed auth 'password'
+2017-06-12T12:52:05+0000 [-] unauthorized login: 
+2017-06-12T12:52:05+0000 [HoneyPotSSHTransport,23743,51.15.57.125] Got remote error, code 11
+	reason: Normal Shutdown, Thank you for playing
+2017-06-12T12:52:05+0000 [HoneyPotSSHTransport,23743,51.15.57.125] connection lost
+2017-06-12T12:52:05+0000 [HoneyPotSSHTransport,23743,51.15.57.125] Connection lost after 4 seconds
+2017-06-12T12:52:19+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 162.244.10.249:59119 (10.8.41.81:2223) [session: TT44839]
+2017-06-12T12:52:19+0000 [CowrieTelnetTransport,44839,162.244.10.249] login attempt: 236
+2017-06-12T12:52:19+0000 [CowrieTelnetTransport,44839,162.244.10.249] login return, expect: [GET http://chekfast.zennolab.com/proxy.php HTTP/1.1/Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8]
+2017-06-12T12:52:22+0000 [CowrieTelnetTransport,44839,162.244.10.249] login attempt [GET http://chekfast.zennolab.com/proxy.php HTTP/1.1/Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8] succeeded
+2017-06-12T12:52:23+0000 [CowrieTelnetTransport,44839,162.244.10.249] Opening TTY Log: log/tty/20170612-125223-None-44839i.log
+2017-06-12T12:52:23+0000 [CowrieTelnetTransport,44839,162.244.10.249] Warning: state changed and new state returned
+2017-06-12T12:52:23+0000 [CowrieTelnetTransport,44839,162.244.10.249] CMD: Connection: Close
+2017-06-12T12:52:23+0000 [CowrieTelnetTransport,44839,162.244.10.249] Command not found: Connection: Close
+2017-06-12T12:52:23+0000 [CowrieTelnetTransport,44839,162.244.10.249] CMD: User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0
+2017-06-12T12:52:23+0000 [CowrieTelnetTransport,44839,162.244.10.249] Command not found: User-Agent: Mozilla/5.0 Windows NT 10.0
+2017-06-12T12:52:23+0000 [CowrieTelnetTransport,44839,162.244.10.249] Command not found: WOW64
+2017-06-12T12:52:23+0000 [CowrieTelnetTransport,44839,162.244.10.249] Command not found: rv:45.0 Gecko/20100101 Firefox/45.0
+2017-06-12T12:52:23+0000 [CowrieTelnetTransport,44839,162.244.10.249] CMD: Accept-Language: en-US,en;q=0.5
+2017-06-12T12:52:23+0000 [CowrieTelnetTransport,44839,162.244.10.249] Command not found: Accept-Language: en-US , en
+2017-06-12T12:52:23+0000 [CowrieTelnetTransport,44839,162.244.10.249] Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/log.py", line 103, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/log.py", line 86, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 122, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 85, in callWithContext
+	    return func(*args,**kw)
+	--- <exception caught here> ---
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/posixbase.py", line 597, in _doReadOrWrite
+	    why = selectable.doRead()
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 208, in doRead
+	    return self._dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 214, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/telnet.py", line 636, in dataReceived
+	    self.applicationDataReceived(b''.join(appDataBuffer))
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/telnet.py", line 988, in applicationDataReceived
+	    self.protocol.dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/protocols/basic.py", line 571, in dataReceived
+	    why = self.lineReceived(line)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/telnet.py", line 1100, in lineReceived
+	    newState = getattr(self, "telnet_" + oldState)(line)
+	  File "/home/cowrie/cowrie/cowrie/telnet/transport.py", line 142, in telnet_Command
+	    self.transport.protocol.dataReceived(command+'\r')
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/telnet.py", line 1035, in dataReceived
+	    self.protocol.dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie/insults/insults.py", line 112, in dataReceived
+	    insults.ServerProtocol.dataReceived(self, data)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/insults/insults.py", line 537, in dataReceived
+	    self.terminalProtocol.keystrokeReceived(ch, None)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/recvline.py", line 225, in keystrokeReceived
+	    m()
+	  File "/home/cowrie/cowrie/cowrie/core/protocol.py", line 353, in handle_RETURN
+	    return recvline.RecvLine.handle_RETURN(self)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/recvline.py", line 292, in handle_RETURN
+	    self.lineReceived(line)
+	  File "/home/cowrie/cowrie/cowrie/core/protocol.py", line 187, in lineReceived
+	    self.cmdstack[-1].lineReceived(line)
+	  File "/home/cowrie/cowrie/cowrie/core/honeypot.py", line 246, in lineReceived
+	    self.runCommand()
+	  File "/home/cowrie/cowrie/cowrie/core/honeypot.py", line 351, in runCommand
+	    runOrPrompt()
+	  File "/home/cowrie/cowrie/cowrie/core/honeypot.py", line 257, in runOrPrompt
+	    self.runCommand()
+	  File "/home/cowrie/cowrie/cowrie/core/honeypot.py", line 307, in runCommand
+	    if not cmd['command']:
+	exceptions.KeyError: 'command'
+	
+2017-06-12T12:52:23+0000 [CowrieTelnetTransport,44839,162.244.10.249] Closing TTY Log: log/tty/20170612-125223-None-44839i.log after 0 seconds
+2017-06-12T12:52:23+0000 [CowrieTelnetTransport,44839,162.244.10.249] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <type 'exceptions.KeyError'>: 'command'
+	]
+2017-06-12T12:52:23+0000 [CowrieTelnetTransport,44839,162.244.10.249] Connection lost after 4 seconds
+2017-06-12T12:52:49+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 51.15.57.125:58074 (10.8.41.81:2222) [session: a83febd1]
+2017-06-12T12:52:49+0000 [HoneyPotSSHTransport,23744,51.15.57.125] Remote SSH version: SSH-2.0-libssh2_1.4.3
+2017-06-12T12:52:49+0000 [HoneyPotSSHTransport,23744,51.15.57.125] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-06-12T12:52:49+0000 [HoneyPotSSHTransport,23744,51.15.57.125] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-12T12:52:49+0000 [HoneyPotSSHTransport,23744,51.15.57.125] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-12T12:52:49+0000 [HoneyPotSSHTransport,23744,51.15.57.125] NEW KEYS
+2017-06-12T12:52:49+0000 [HoneyPotSSHTransport,23744,51.15.57.125] starting service 'ssh-userauth'
+2017-06-12T12:52:49+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,23744,51.15.57.125] 'root' trying auth 'password'
+2017-06-12T12:52:51+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,23744,51.15.57.125] login attempt: 86
+2017-06-12T12:52:51+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,23744,51.15.57.125] login return, expect: [test/test]
+2017-06-12T12:52:53+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,23744,51.15.57.125] login attempt [root/admin] failed
+2017-06-12T12:52:54+0000 [-] 'root' failed auth 'password'
+2017-06-12T12:52:54+0000 [-] unauthorized login: 
+2017-06-12T12:52:54+0000 [HoneyPotSSHTransport,23744,51.15.57.125] Got remote error, code 11
+	reason: Normal Shutdown, Thank you for playing
+2017-06-12T12:52:54+0000 [HoneyPotSSHTransport,23744,51.15.57.125] connection lost
+2017-06-12T12:52:54+0000 [HoneyPotSSHTransport,23744,51.15.57.125] Connection lost after 5 seconds
