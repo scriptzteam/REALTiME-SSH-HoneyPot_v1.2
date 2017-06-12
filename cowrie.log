@@ -6979,3 +6979,53 @@
 2017-06-12T20:51:59+0000 [HoneyPotSSHTransport,24661,113.195.145.52] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
 2017-06-12T20:51:59+0000 [HoneyPotSSHTransport,24661,113.195.145.52] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
 2017-06-12T20:51:59+0000 [HoneyPotSSHTransport,24661,113.195.145.52] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-12T20:52:03+0000 [HoneyPotSSHTransport,24661,113.195.145.52] NEW KEYS
+2017-06-12T20:52:03+0000 [HoneyPotSSHTransport,24661,113.195.145.52] starting service 'ssh-userauth'
+2017-06-12T20:52:06+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,24661,113.195.145.52] 'root' trying auth 'none'
+2017-06-12T20:52:08+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,24661,113.195.145.52] 'root' authenticated with 'none'
+2017-06-12T20:52:08+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,24661,113.195.145.52] starting service 'ssh-connection'
+2017-06-12T20:52:08+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 113.195.145.52:52068 (10.8.41.81:2222) [session: b70ccbd5]
+2017-06-12T20:52:08+0000 [HoneyPotSSHTransport,24661,113.195.145.52] Got remote error, code 11
+	reason: 
+2017-06-12T20:52:08+0000 [HoneyPotSSHTransport,24661,113.195.145.52] avatar root logging out
+2017-06-12T20:52:08+0000 [HoneyPotSSHTransport,24661,113.195.145.52] connection lost
+2017-06-12T20:52:08+0000 [HoneyPotSSHTransport,24661,113.195.145.52] Connection lost after 10 seconds
+2017-06-12T20:52:08+0000 [HoneyPotSSHTransport,24662,113.195.145.52] Remote SSH version: SSH-2.0-PUTTY
+2017-06-12T20:52:08+0000 [HoneyPotSSHTransport,24662,113.195.145.52] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-06-12T20:52:08+0000 [HoneyPotSSHTransport,24662,113.195.145.52] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-12T20:52:08+0000 [HoneyPotSSHTransport,24662,113.195.145.52] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-12T20:52:13+0000 [HoneyPotSSHTransport,24662,113.195.145.52] connection lost
+2017-06-12T20:52:13+0000 [HoneyPotSSHTransport,24662,113.195.145.52] Connection lost after 5 seconds
+2017-06-12T20:52:22+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 5.141.59.84:54071 (10.8.41.81:2223) [session: TT46485]
+2017-06-12T20:52:24+0000 [CowrieTelnetTransport,46485,5.141.59.84] login attempt: 2
+2017-06-12T20:52:24+0000 [CowrieTelnetTransport,46485,5.141.59.84] login return, expect: [root/xc3511]
+2017-06-12T20:52:27+0000 [CowrieTelnetTransport,46485,5.141.59.84] login attempt [root/000] failed
+2017-06-12T20:52:27+0000 [CowrieTelnetTransport,46485,5.141.59.84] Warning: state changed and new state returned
+2017-06-12T20:52:27+0000 [CowrieTelnetTransport,46485,5.141.59.84] Connection lost after 4 seconds
+2017-06-12T20:52:43+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,24409,91.230.47.81] got channel 'direct-tcpip' request
+2017-06-12T20:52:43+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,24409,91.230.47.81] direct-tcp connection request to 107.6.186.178:80 from localhost:5556
+2017-06-12T20:52:44+0000 [SSHChannel None (111) on SSHService 'ssh-connection' on HoneyPotSSHTransport,24409,91.230.47.81] direct-tcp forward to 107.6.186.178:80 with data 'GET /internals/api/ip?1497300714680269951 HTTP/1.1\r\nHost: ip5.adspy.mobi\r\nConnection: keep-alive\r\nUser-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.67 Safari/537.36\r\nAccept-Encoding: gzip, deflate, sdch\r\n\r\n'
+2017-06-12T20:52:44+0000 [SSHChannel None (111) on SSHService 'ssh-connection' on HoneyPotSSHTransport,24409,91.230.47.81] failed to connect: Connection refused
+2017-06-12T20:52:44+0000 [SSHChannel None (111) on SSHService 'ssh-connection' on HoneyPotSSHTransport,24409,91.230.47.81] sending close 111
+2017-06-12T20:52:44+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 38.99.252.150:64647 (10.8.41.81:2223) [session: TT46486]
+2017-06-12T20:52:45+0000 [CowrieTelnetTransport,46486,38.99.252.150] login attempt: 327
+2017-06-12T20:52:45+0000 [CowrieTelnetTransport,46486,38.99.252.150] login return, expect: [GET http://chekfast.zennolab.com/proxy.php HTTP/1.1/Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8]
+2017-06-12T20:52:47+0000 [CowrieTelnetTransport,46486,38.99.252.150] login attempt [GET http://check2.zennolab.com/proxy.php HTTP/1.1/Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8] failed
+2017-06-12T20:52:47+0000 [CowrieTelnetTransport,46486,38.99.252.150] Warning: state changed and new state returned
+2017-06-12T20:52:47+0000 [CowrieTelnetTransport,46486,38.99.252.150] login attempt: 328
+2017-06-12T20:52:47+0000 [CowrieTelnetTransport,46486,38.99.252.150] login return, expect: [GET http://chekfast.zennolab.com/proxy.php HTTP/1.1/Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8]
+2017-06-12T20:52:50+0000 [CowrieTelnetTransport,46486,38.99.252.150] login attempt [Connection: Close/User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:38.0) Gecko/20100101 Firefox/38.0] failed
+2017-06-12T20:52:50+0000 [CowrieTelnetTransport,46486,38.99.252.150] Warning: state changed and new state returned
+2017-06-12T20:52:50+0000 [CowrieTelnetTransport,46486,38.99.252.150] login attempt: 329
+2017-06-12T20:52:50+0000 [CowrieTelnetTransport,46486,38.99.252.150] login return, expect: [GET http://chekfast.zennolab.com/proxy.php HTTP/1.1/Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8]
+2017-06-12T20:52:52+0000 [CowrieTelnetTransport,46486,38.99.252.150] login attempt [Accept-Language: en-US,en;q=0.5/Cache-Control: max-age=0] failed
+2017-06-12T20:52:52+0000 [CowrieTelnetTransport,46486,38.99.252.150] Warning: state changed and new state returned
+2017-06-12T20:52:53+0000 [CowrieTelnetTransport,46486,38.99.252.150] login attempt: 330
+2017-06-12T20:52:53+0000 [CowrieTelnetTransport,46486,38.99.252.150] login return, expect: [GET http://chekfast.zennolab.com/proxy.php HTTP/1.1/Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8]
+2017-06-12T20:52:55+0000 [CowrieTelnetTransport,46486,38.99.252.150] login attempt [Referer: RefererString/Cookie: param1=CookieString] failed
+2017-06-12T20:52:55+0000 [CowrieTelnetTransport,46486,38.99.252.150] Warning: state changed and new state returned
+2017-06-12T20:52:57+0000 [CowrieTelnetTransport,46486,38.99.252.150] login attempt: 331
+2017-06-12T20:52:57+0000 [CowrieTelnetTransport,46486,38.99.252.150] login return, expect: [GET http://chekfast.zennolab.com/proxy.php HTTP/1.1/Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8]
+2017-06-12T20:52:59+0000 [CowrieTelnetTransport,46486,38.99.252.150] login attempt [Accept-Encoding: gzip/Host: check2.zennolab.com] failed
+2017-06-12T20:52:59+0000 [CowrieTelnetTransport,46486,38.99.252.150] Warning: state changed and new state returned
+2017-06-12T20:52:59+0000 [CowrieTelnetTransport,46486,38.99.252.150] Connection lost after 14 seconds
