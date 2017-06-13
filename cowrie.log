@@ -7239,3 +7239,112 @@
 2017-06-13T23:30:01+0000 [HoneyPotSSHTransport,28114,113.195.145.52] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
 2017-06-13T23:30:01+0000 [HoneyPotSSHTransport,28114,113.195.145.52] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
 2017-06-13T23:30:01+0000 [HoneyPotSSHTransport,28114,113.195.145.52] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-13T23:30:03+0000 [CowrieTelnetTransport,51206,185.188.206.99] Closing TTY Log: log/tty/20170613-232801-None-51206i.log after 122 seconds
+2017-06-13T23:30:03+0000 [CowrieTelnetTransport,51206,185.188.206.99] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-06-13T23:30:03+0000 [CowrieTelnetTransport,51206,185.188.206.99] Connection lost after 131 seconds
+2017-06-13T23:30:04+0000 [HoneyPotSSHTransport,28114,113.195.145.52] NEW KEYS
+2017-06-13T23:30:10+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 176.210.225.114:59147 (10.8.41.81:2223) [session: TT51208]
+2017-06-13T23:30:11+0000 [CowrieTelnetTransport,51208,176.210.225.114] first time for 176.210.225.114, need: 1
+2017-06-13T23:30:11+0000 [CowrieTelnetTransport,51208,176.210.225.114] login attempt: 1
+2017-06-13T23:30:13+0000 [CowrieTelnetTransport,51208,176.210.225.114] login attempt [guest/123456] succeeded
+2017-06-13T23:30:14+0000 [CowrieTelnetTransport,51208,176.210.225.114] Opening TTY Log: log/tty/20170613-233014-None-51208i.log
+2017-06-13T23:30:14+0000 [CowrieTelnetTransport,51208,176.210.225.114] Warning: state changed and new state returned
+2017-06-13T23:30:15+0000 [CowrieTelnetTransport,51208,176.210.225.114] CMD: enable
+2017-06-13T23:30:15+0000 [CowrieTelnetTransport,51208,176.210.225.114] Command found: enable 
+2017-06-13T23:30:15+0000 [CowrieTelnetTransport,51208,176.210.225.114] Reading txtcmd from "txtcmds/bin/enable"
+2017-06-13T23:30:15+0000 [CowrieTelnetTransport,51208,176.210.225.114] CMD: system
+2017-06-13T23:30:15+0000 [CowrieTelnetTransport,51208,176.210.225.114] Command not found: system
+2017-06-13T23:30:15+0000 [CowrieTelnetTransport,51208,176.210.225.114] CMD: shell
+2017-06-13T23:30:15+0000 [CowrieTelnetTransport,51208,176.210.225.114] Command not found: shell
+2017-06-13T23:30:15+0000 [CowrieTelnetTransport,51208,176.210.225.114] CMD: sh
+2017-06-13T23:30:15+0000 [CowrieTelnetTransport,51208,176.210.225.114] Command found: sh 
+2017-06-13T23:30:15+0000 [CowrieTelnetTransport,51208,176.210.225.114] CMD:  /bin/busybox wget; /bin/busybox 81c46036wget; /bin/busybox echo -ne '\x0181c46036\x7f'; /bin/busybox printf '\00281c46036\177'; /bin/echo -ne '\x0381c46036\x7f'; /usr/bin/printf '\00481c46036\177'; /bin/busybox tftp; /bin/busybox 81c46036tftp;
+2017-06-13T23:30:15+0000 [CowrieTelnetTransport,51208,176.210.225.114] Command found: /bin/busybox wget
+2017-06-13T23:30:15+0000 [CowrieTelnetTransport,51208,176.210.225.114] Command found: wget
+2017-06-13T23:30:15+0000 [CowrieTelnetTransport,51208,176.210.225.114] Command found: /bin/busybox 81c46036wget
+2017-06-13T23:30:15+0000 [CowrieTelnetTransport,51208,176.210.225.114] Command found: /bin/busybox echo -ne '\x0181c46036\x7f'
+2017-06-13T23:30:15+0000 [CowrieTelnetTransport,51208,176.210.225.114] Command found: echo -ne '\x0181c46036\x7f'
+2017-06-13T23:30:15+0000 [CowrieTelnetTransport,51208,176.210.225.114] Command found: /bin/busybox printf '\00281c46036\177'
+2017-06-13T23:30:15+0000 [CowrieTelnetTransport,51208,176.210.225.114] Command found: /bin/echo -ne '\x0381c46036\x7f'
+2017-06-13T23:30:15+0000 [CowrieTelnetTransport,51208,176.210.225.114] Command not found: /usr/bin/printf '\00481c46036\177'
+2017-06-13T23:30:15+0000 [CowrieTelnetTransport,51208,176.210.225.114] Command found: /bin/busybox tftp
+2017-06-13T23:30:15+0000 [CowrieTelnetTransport,51208,176.210.225.114] Command found: tftp
+2017-06-13T23:30:15+0000 [CowrieTelnetTransport,51208,176.210.225.114] Command found: /bin/busybox 81c46036tftp
+2017-06-13T23:30:16+0000 [CowrieTelnetTransport,51208,176.210.225.114] CMD:  /bin/busybox dd if=/bin/busybox bs=22 count=1 || /bin/busybox cat /bin/busybox
+2017-06-13T23:30:16+0000 [CowrieTelnetTransport,51208,176.210.225.114] Command found: /bin/busybox dd if=/bin/busybox bs=22 count=1
+2017-06-13T23:30:16+0000 [CowrieTelnetTransport,51208,176.210.225.114] Command found: /bin/busybox cat /bin/busybox
+2017-06-13T23:30:16+0000 [CowrieTelnetTransport,51208,176.210.225.114] Command found: cat /bin/busybox
+2017-06-13T23:30:19+0000 [-] Authentication Timeout reached
+2017-06-13T23:30:19+0000 [HoneyPotSSHTransport,28111,113.195.145.52] connection lost
+2017-06-13T23:30:19+0000 [HoneyPotSSHTransport,28111,113.195.145.52] Connection lost after 120 seconds
+2017-06-13T23:30:20+0000 [HoneyPotSSHTransport,28114,113.195.145.52] starting service 'ssh-userauth'
+2017-06-13T23:30:20+0000 [HoneyPotSSHTransport,28114,113.195.145.52] Got remote error, code 11
+	reason: 
+2017-06-13T23:30:20+0000 [HoneyPotSSHTransport,28114,113.195.145.52] connection lost
+2017-06-13T23:30:20+0000 [HoneyPotSSHTransport,28114,113.195.145.52] Connection lost after 20 seconds
+2017-06-13T23:30:20+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 139.162.73.19:40294 (10.8.41.81:2222) [session: a5c79b54]
+2017-06-13T23:30:21+0000 [HoneyPotSSHTransport,28115,139.162.73.19] connection lost
+2017-06-13T23:30:21+0000 [HoneyPotSSHTransport,28115,139.162.73.19] Connection lost after 0 seconds
+2017-06-13T23:30:34+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 113.195.145.52:63724 (10.8.41.81:2222) [session: acdb7c80]
+2017-06-13T23:30:34+0000 [HoneyPotSSHTransport,28116,113.195.145.52] Remote SSH version: SSH-2.0-PUTTY
+2017-06-13T23:30:34+0000 [HoneyPotSSHTransport,28116,113.195.145.52] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-06-13T23:30:34+0000 [HoneyPotSSHTransport,28116,113.195.145.52] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-13T23:30:34+0000 [HoneyPotSSHTransport,28116,113.195.145.52] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-13T23:30:39+0000 [HoneyPotSSHTransport,28116,113.195.145.52] connection lost
+2017-06-13T23:30:39+0000 [HoneyPotSSHTransport,28116,113.195.145.52] Connection lost after 5 seconds
+2017-06-13T23:30:40+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 92.127.195.47:57854 (10.8.41.81:2223) [session: TT51209]
+2017-06-13T23:30:42+0000 [CowrieTelnetTransport,51209,92.127.195.47] first time for 92.127.195.47, need: 1
+2017-06-13T23:30:42+0000 [CowrieTelnetTransport,51209,92.127.195.47] login attempt: 1
+2017-06-13T23:30:45+0000 [CowrieTelnetTransport,51209,92.127.195.47] login attempt [root/12345] succeeded
+2017-06-13T23:30:46+0000 [CowrieTelnetTransport,51209,92.127.195.47] Opening TTY Log: log/tty/20170613-233046-None-51209i.log
+2017-06-13T23:30:46+0000 [CowrieTelnetTransport,51209,92.127.195.47] Warning: state changed and new state returned
+2017-06-13T23:30:46+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 113.195.145.52:13701 (10.8.41.81:2222) [session: 0897386f]
+2017-06-13T23:30:46+0000 [CowrieTelnetTransport,51209,92.127.195.47] CMD: enable
+2017-06-13T23:30:46+0000 [CowrieTelnetTransport,51209,92.127.195.47] Command found: enable 
+2017-06-13T23:30:46+0000 [CowrieTelnetTransport,51209,92.127.195.47] Reading txtcmd from "txtcmds/bin/enable"
+2017-06-13T23:30:47+0000 [CowrieTelnetTransport,51209,92.127.195.47] CMD: system
+2017-06-13T23:30:47+0000 [CowrieTelnetTransport,51209,92.127.195.47] Command not found: system
+2017-06-13T23:30:47+0000 [HoneyPotSSHTransport,28117,113.195.145.52] Remote SSH version: SSH-2.0-PUTTY
+2017-06-13T23:30:47+0000 [HoneyPotSSHTransport,28117,113.195.145.52] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-06-13T23:30:47+0000 [HoneyPotSSHTransport,28117,113.195.145.52] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-13T23:30:47+0000 [HoneyPotSSHTransport,28117,113.195.145.52] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-13T23:30:47+0000 [CowrieTelnetTransport,51209,92.127.195.47] CMD: shell
+2017-06-13T23:30:47+0000 [CowrieTelnetTransport,51209,92.127.195.47] Command not found: shell
+2017-06-13T23:30:47+0000 [CowrieTelnetTransport,51209,92.127.195.47] CMD: sh
+2017-06-13T23:30:47+0000 [CowrieTelnetTransport,51209,92.127.195.47] Command found: sh 
+2017-06-13T23:30:47+0000 [CowrieTelnetTransport,51209,92.127.195.47] CMD:  /bin/busybox wget; /bin/busybox 81c46036wget; /bin/busybox echo -ne '\x0181c46036\x7f'; /bin/busybox printf '\00281c46036\177'; /bin/echo -ne '\x0381c46036\x7f'; /usr/bin/printf '\00481c46036\177'; /bin/busybox tftp; /bin/busybox 81c46036tftp;
+2017-06-13T23:30:47+0000 [CowrieTelnetTransport,51209,92.127.195.47] Command found: /bin/busybox wget
+2017-06-13T23:30:47+0000 [CowrieTelnetTransport,51209,92.127.195.47] Command found: wget
+2017-06-13T23:30:47+0000 [CowrieTelnetTransport,51209,92.127.195.47] Command found: /bin/busybox 81c46036wget
+2017-06-13T23:30:47+0000 [CowrieTelnetTransport,51209,92.127.195.47] Command found: /bin/busybox echo -ne '\x0181c46036\x7f'
+2017-06-13T23:30:47+0000 [CowrieTelnetTransport,51209,92.127.195.47] Command found: echo -ne '\x0181c46036\x7f'
+2017-06-13T23:30:47+0000 [CowrieTelnetTransport,51209,92.127.195.47] Command found: /bin/busybox printf '\00281c46036\177'
+2017-06-13T23:30:47+0000 [CowrieTelnetTransport,51209,92.127.195.47] Command found: /bin/echo -ne '\x0381c46036\x7f'
+2017-06-13T23:30:47+0000 [CowrieTelnetTransport,51209,92.127.195.47] Command not found: /usr/bin/printf '\00481c46036\177'
+2017-06-13T23:30:47+0000 [CowrieTelnetTransport,51209,92.127.195.47] Command found: /bin/busybox tftp
+2017-06-13T23:30:47+0000 [CowrieTelnetTransport,51209,92.127.195.47] Command found: tftp
+2017-06-13T23:30:47+0000 [CowrieTelnetTransport,51209,92.127.195.47] Command found: /bin/busybox 81c46036tftp
+2017-06-13T23:30:47+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 51.15.68.152:51069 (10.8.41.81:2223) [session: TT51210]
+2017-06-13T23:30:47+0000 [CowrieTelnetTransport,51209,92.127.195.47] CMD:  /bin/busybox dd if=/bin/busybox bs=22 count=1 || /bin/busybox cat /bin/busybox
+2017-06-13T23:30:47+0000 [CowrieTelnetTransport,51209,92.127.195.47] Command found: /bin/busybox dd if=/bin/busybox bs=22 count=1
+2017-06-13T23:30:47+0000 [CowrieTelnetTransport,51209,92.127.195.47] Command found: /bin/busybox cat /bin/busybox
+2017-06-13T23:30:47+0000 [CowrieTelnetTransport,51209,92.127.195.47] Command found: cat /bin/busybox
+2017-06-13T23:30:52+0000 [CowrieTelnetTransport,51210,51.15.68.152] login attempt: 583
+2017-06-13T23:30:52+0000 [CowrieTelnetTransport,51210,51.15.68.152] login return, expect: [root/54321]
+2017-06-13T23:30:54+0000 [CowrieTelnetTransport,51210,51.15.68.152] login attempt [daemon/] failed
+2017-06-13T23:30:54+0000 [CowrieTelnetTransport,51210,51.15.68.152] Warning: state changed and new state returned
+2017-06-13T23:30:54+0000 [HoneyPotSSHTransport,28117,113.195.145.52] NEW KEYS
+2017-06-13T23:30:54+0000 [HoneyPotSSHTransport,28117,113.195.145.52] starting service 'ssh-userauth'
+2017-06-13T23:30:54+0000 [CowrieTelnetTransport,51210,51.15.68.152] login attempt: 584
+2017-06-13T23:30:54+0000 [CowrieTelnetTransport,51210,51.15.68.152] login return, expect: [root/54321]
+2017-06-13T23:30:57+0000 [CowrieTelnetTransport,51210,51.15.68.152] login attempt [enable/shell] failed
+2017-06-13T23:30:57+0000 [CowrieTelnetTransport,51210,51.15.68.152] Warning: state changed and new state returned
+2017-06-13T23:30:57+0000 [HoneyPotSSHTransport,28117,113.195.145.52] Got remote error, code 11
+	reason: 
+2017-06-13T23:30:57+0000 [CowrieTelnetTransport,51210,51.15.68.152] login attempt: 585
+2017-06-13T23:30:57+0000 [CowrieTelnetTransport,51210,51.15.68.152] login return, expect: [root/54321]
+2017-06-13T23:30:59+0000 [CowrieTelnetTransport,51210,51.15.68.152] login attempt [sh//bin/busybox ECCHI] failed
+2017-06-13T23:30:59+0000 [CowrieTelnetTransport,51210,51.15.68.152] Warning: state changed and new state returned
+2017-06-13T23:30:59+0000 [HoneyPotSSHTransport,28117,113.195.145.52] connection lost
+2017-06-13T23:30:59+0000 [HoneyPotSSHTransport,28117,113.195.145.52] Connection lost after 13 seconds
