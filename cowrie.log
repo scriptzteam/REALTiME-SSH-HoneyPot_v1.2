@@ -5435,3 +5435,43 @@
 2017-06-13T02:30:57+0000 [CowrieTelnetTransport,47606,62.21.212.161] Command found: /bin/busybox dd if=/bin/busybox bs=22 count=1
 2017-06-13T02:30:57+0000 [CowrieTelnetTransport,47606,62.21.212.161] Command found: /bin/busybox cat /bin/busybox
 2017-06-13T02:30:57+0000 [CowrieTelnetTransport,47606,62.21.212.161] Command found: cat /bin/busybox
+2017-06-13T02:31:10+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 193.34.144.236:51229 (10.8.41.81:2223) [session: TT47607]
+2017-06-13T02:31:10+0000 [CowrieTelnetTransport,47607,193.34.144.236] login attempt: 20
+2017-06-13T02:31:10+0000 [CowrieTelnetTransport,47607,193.34.144.236] login return, expect: [CONNECT www.google.com:443 HTTP/1.1/Host: www.google.com:443]
+2017-06-13T02:31:12+0000 [CowrieTelnetTransport,47607,193.34.144.236] login attempt [CONNECT www.google.com:443 HTTP/1.1/Host: www.google.com:443] succeeded
+2017-06-13T02:31:14+0000 [CowrieTelnetTransport,47607,193.34.144.236] Opening TTY Log: log/tty/20170613-023114-None-47607i.log
+2017-06-13T02:31:14+0000 [CowrieTelnetTransport,47607,193.34.144.236] Warning: state changed and new state returned
+2017-06-13T02:31:14+0000 [CowrieTelnetTransport,47607,193.34.144.236] CMD: 
+2017-06-13T02:31:14+0000 [CowrieTelnetTransport,47607,193.34.144.236] Closing TTY Log: log/tty/20170613-023114-None-47607i.log after 0 seconds
+2017-06-13T02:31:14+0000 [CowrieTelnetTransport,47607,193.34.144.236] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion.
+	]
+2017-06-13T02:31:14+0000 [CowrieTelnetTransport,47607,193.34.144.236] Connection lost after 4 seconds
+2017-06-13T02:31:14+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 193.34.144.236:51413 (10.8.41.81:2223) [session: TT47608]
+2017-06-13T02:31:14+0000 [CowrieTelnetTransport,47608,193.34.144.236] Connection lost after 0 seconds
+2017-06-13T02:31:14+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 193.34.144.236:51414 (10.8.41.81:2223) [session: TT47609]
+2017-06-13T02:31:14+0000 [CowrieTelnetTransport,47609,193.34.144.236] Connection lost after 0 seconds
+2017-06-13T02:31:16+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 59.45.175.66:54318 (10.8.41.81:2222) [session: 9baebf6a]
+2017-06-13T02:31:17+0000 [HoneyPotSSHTransport,25261,59.45.175.66] Remote SSH version: SSH-2.0-PUTTY
+2017-06-13T02:31:17+0000 [HoneyPotSSHTransport,25261,59.45.175.66] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-06-13T02:31:17+0000 [HoneyPotSSHTransport,25261,59.45.175.66] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-13T02:31:17+0000 [HoneyPotSSHTransport,25261,59.45.175.66] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-13T02:31:17+0000 [HoneyPotSSHTransport,25261,59.45.175.66] NEW KEYS
+2017-06-13T02:31:18+0000 [HoneyPotSSHTransport,25261,59.45.175.66] starting service 'ssh-userauth'
+2017-06-13T02:31:18+0000 [HoneyPotSSHTransport,25261,59.45.175.66] Got remote error, code 11
+	reason: 
+2017-06-13T02:31:18+0000 [HoneyPotSSHTransport,25261,59.45.175.66] connection lost
+2017-06-13T02:31:18+0000 [HoneyPotSSHTransport,25261,59.45.175.66] Connection lost after 2 seconds
+2017-06-13T02:31:24+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 129.146.31.194:49416 (10.8.41.81:2222) [session: 2652714c]
+2017-06-13T02:31:24+0000 [HoneyPotSSHTransport,25262,129.146.31.194] Remote SSH version: SSH-2.0-libssh2_1.6.0
+2017-06-13T02:31:24+0000 [HoneyPotSSHTransport,25262,129.146.31.194] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-06-13T02:31:24+0000 [HoneyPotSSHTransport,25262,129.146.31.194] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-13T02:31:24+0000 [HoneyPotSSHTransport,25262,129.146.31.194] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-13T02:31:24+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,25100,91.230.47.82] got channel 'direct-tcpip' request
+2017-06-13T02:31:24+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,25100,91.230.47.82] direct-tcp connection request to 185.86.151.225:80 from localhost:5556
+2017-06-13T02:31:25+0000 [SSHChannel None (13) on SSHService 'ssh-connection' on HoneyPotSSHTransport,25100,91.230.47.82] direct-tcp forward to 185.86.151.225:80 with data 'GET /getip.php HTTP/1.1\r\nUser-Agent: Mozilla/5.0\r\nHost: s1.ipinfo.pw\r\nAccept: */*\r\n\r\n'
+2017-06-13T02:31:25+0000 [SSHChannel None (13) on SSHService 'ssh-connection' on HoneyPotSSHTransport,25100,91.230.47.82] failed to connect: Connection refused
+2017-06-13T02:31:25+0000 [SSHChannel None (13) on SSHService 'ssh-connection' on HoneyPotSSHTransport,25100,91.230.47.82] sending close 13
+2017-06-13T02:31:28+0000 [HoneyPotSSHTransport,25262,129.146.31.194] NEW KEYS
+2017-06-13T02:31:28+0000 [HoneyPotSSHTransport,25262,129.146.31.194] starting service 'ssh-userauth'
+2017-06-13T02:31:28+0000 [HoneyPotSSHTransport,25262,129.146.31.194] connection lost
+2017-06-13T02:31:28+0000 [HoneyPotSSHTransport,25262,129.146.31.194] Connection lost after 4 seconds
