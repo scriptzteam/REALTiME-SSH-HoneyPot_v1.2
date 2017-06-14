@@ -2428,3 +2428,48 @@
 2017-06-14T12:07:18+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 129.146.31.194:33125 (10.8.41.81:2222) [session: b58a16b9]
 2017-06-14T12:07:18+0000 [HoneyPotSSHTransport,29929,129.146.31.194] connection lost
 2017-06-14T12:07:18+0000 [HoneyPotSSHTransport,29929,129.146.31.194] Connection lost after 0 seconds
+2017-06-14T12:08:09+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 51.15.68.152:42495 (10.8.41.81:2223) [session: TT53364]
+2017-06-14T12:08:13+0000 [CowrieTelnetTransport,53364,51.15.68.152] login attempt: 1068
+2017-06-14T12:08:13+0000 [CowrieTelnetTransport,53364,51.15.68.152] login return, expect: [root/54321]
+2017-06-14T12:08:15+0000 [CowrieTelnetTransport,53364,51.15.68.152] login attempt [Administrator/] failed
+2017-06-14T12:08:16+0000 [CowrieTelnetTransport,53364,51.15.68.152] Warning: state changed and new state returned
+2017-06-14T12:08:17+0000 [CowrieTelnetTransport,53364,51.15.68.152] login attempt: 1069
+2017-06-14T12:08:17+0000 [CowrieTelnetTransport,53364,51.15.68.152] login return, expect: [root/54321]
+2017-06-14T12:08:19+0000 [CowrieTelnetTransport,53364,51.15.68.152] login attempt [enable/shell] failed
+2017-06-14T12:08:19+0000 [CowrieTelnetTransport,53364,51.15.68.152] Warning: state changed and new state returned
+2017-06-14T12:08:20+0000 [CowrieTelnetTransport,53364,51.15.68.152] login attempt: 1070
+2017-06-14T12:08:20+0000 [CowrieTelnetTransport,53364,51.15.68.152] login return, expect: [root/54321]
+2017-06-14T12:08:22+0000 [CowrieTelnetTransport,53364,51.15.68.152] login attempt [sh//bin/busybox ECCHI] failed
+2017-06-14T12:08:22+0000 [CowrieTelnetTransport,53364,51.15.68.152] Warning: state changed and new state returned
+2017-06-14T12:08:45+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 189.231.46.83:40429 (10.8.41.81:2223) [session: TT53365]
+2017-06-14T12:08:46+0000 [CowrieTelnetTransport,53365,189.231.46.83] first time for 189.231.46.83, need: 1
+2017-06-14T12:08:46+0000 [CowrieTelnetTransport,53365,189.231.46.83] login attempt: 1
+2017-06-14T12:08:49+0000 [CowrieTelnetTransport,53365,189.231.46.83] login attempt [root/default] succeeded
+2017-06-14T12:08:50+0000 [CowrieTelnetTransport,53365,189.231.46.83] Opening TTY Log: log/tty/20170614-120850-None-53365i.log
+2017-06-14T12:08:50+0000 [CowrieTelnetTransport,53365,189.231.46.83] Warning: state changed and new state returned
+2017-06-14T12:08:51+0000 [CowrieTelnetTransport,53365,189.231.46.83] CMD: enable
+2017-06-14T12:08:51+0000 [CowrieTelnetTransport,53365,189.231.46.83] Command found: enable 
+2017-06-14T12:08:51+0000 [CowrieTelnetTransport,53365,189.231.46.83] Reading txtcmd from "txtcmds/bin/enable"
+2017-06-14T12:08:51+0000 [CowrieTelnetTransport,53365,189.231.46.83] CMD: system
+2017-06-14T12:08:51+0000 [CowrieTelnetTransport,53365,189.231.46.83] Command not found: system
+2017-06-14T12:08:51+0000 [CowrieTelnetTransport,53365,189.231.46.83] CMD: shell
+2017-06-14T12:08:51+0000 [CowrieTelnetTransport,53365,189.231.46.83] Command not found: shell
+2017-06-14T12:08:51+0000 [CowrieTelnetTransport,53365,189.231.46.83] CMD: sh
+2017-06-14T12:08:51+0000 [CowrieTelnetTransport,53365,189.231.46.83] Command found: sh 
+2017-06-14T12:08:52+0000 [CowrieTelnetTransport,53365,189.231.46.83] CMD:  /bin/busybox wget; /bin/busybox 81c46036wget; /bin/busybox echo -ne '\x0181c46036\x7f'; /bin/busybox printf '\00281c46036\177'; /bin/echo -ne '\x0381c46036\x7f'; /usr/bin/printf '\00481c46036\177'; /bin/busybox tftp; /bin/busybox 81c46036tftp;
+2017-06-14T12:08:52+0000 [CowrieTelnetTransport,53365,189.231.46.83] Command found: /bin/busybox wget
+2017-06-14T12:08:52+0000 [CowrieTelnetTransport,53365,189.231.46.83] Command found: wget
+2017-06-14T12:08:52+0000 [CowrieTelnetTransport,53365,189.231.46.83] Command found: /bin/busybox 81c46036wget
+2017-06-14T12:08:52+0000 [CowrieTelnetTransport,53365,189.231.46.83] Command found: /bin/busybox echo -ne '\x0181c46036\x7f'
+2017-06-14T12:08:52+0000 [CowrieTelnetTransport,53365,189.231.46.83] Command found: echo -ne '\x0181c46036\x7f'
+2017-06-14T12:08:52+0000 [CowrieTelnetTransport,53365,189.231.46.83] Command found: /bin/busybox printf '\00281c46036\177'
+2017-06-14T12:08:52+0000 [CowrieTelnetTransport,53365,189.231.46.83] Command found: /bin/echo -ne '\x0381c46036\x7f'
+2017-06-14T12:08:52+0000 [CowrieTelnetTransport,53365,189.231.46.83] Command not found: /usr/bin/printf '\00481c46036\177'
+2017-06-14T12:08:52+0000 [CowrieTelnetTransport,53365,189.231.46.83] Command found: /bin/busybox tftp
+2017-06-14T12:08:52+0000 [CowrieTelnetTransport,53365,189.231.46.83] Command found: tftp
+2017-06-14T12:08:52+0000 [CowrieTelnetTransport,53365,189.231.46.83] Command found: /bin/busybox 81c46036tftp
+2017-06-14T12:08:52+0000 [CowrieTelnetTransport,53365,189.231.46.83] CMD:  /bin/busybox dd if=/bin/busybox bs=22 count=1 || /bin/busybox cat /bin/busybox
+2017-06-14T12:08:52+0000 [CowrieTelnetTransport,53365,189.231.46.83] Command found: /bin/busybox dd if=/bin/busybox bs=22 count=1
+2017-06-14T12:08:52+0000 [CowrieTelnetTransport,53365,189.231.46.83] Command found: /bin/busybox cat /bin/busybox
+2017-06-14T12:08:52+0000 [CowrieTelnetTransport,53365,189.231.46.83] Command found: cat /bin/busybox
+2017-06-14T12:08:53+0000 [CowrieTelnetTransport,53364,51.15.68.152] Connection lost after 44 seconds
