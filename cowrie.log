@@ -4520,3 +4520,47 @@
 	]
 2017-06-14T03:36:46+0000 [CowrieTelnetTransport,52334,109.236.83.184] Connection lost after 60 seconds
 2017-06-14T03:36:59+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 109.236.83.184:53031 (10.8.41.81:2223) [session: TT52339]
+2017-06-14T03:37:03+0000 [CowrieTelnetTransport,52339,109.236.83.184] login attempt: 2206
+2017-06-14T03:37:03+0000 [CowrieTelnetTransport,52339,109.236.83.184] login return, expect: [default/]
+2017-06-14T03:37:05+0000 [CowrieTelnetTransport,52339,109.236.83.184] login attempt [root/default] failed
+2017-06-14T03:37:05+0000 [CowrieTelnetTransport,52339,109.236.83.184] Warning: state changed and new state returned
+2017-06-14T03:37:05+0000 [CowrieTelnetTransport,52339,109.236.83.184] login attempt: 2207
+2017-06-14T03:37:05+0000 [CowrieTelnetTransport,52339,109.236.83.184] login return, expect: [default/]
+2017-06-14T03:37:08+0000 [CowrieTelnetTransport,52339,109.236.83.184] login attempt [enable/system] failed
+2017-06-14T03:37:08+0000 [CowrieTelnetTransport,52339,109.236.83.184] Warning: state changed and new state returned
+2017-06-14T03:37:08+0000 [CowrieTelnetTransport,52339,109.236.83.184] login attempt: 2208
+2017-06-14T03:37:08+0000 [CowrieTelnetTransport,52339,109.236.83.184] login return, expect: [default/]
+2017-06-14T03:37:11+0000 [CowrieTelnetTransport,52339,109.236.83.184] login attempt [shell/sh] failed
+2017-06-14T03:37:11+0000 [CowrieTelnetTransport,52339,109.236.83.184] Warning: state changed and new state returned
+2017-06-14T03:37:26+0000 [CowrieTelnetTransport,52331,109.236.83.184] Connection lost after 134 seconds
+2017-06-14T03:37:35+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 59.9.68.187:46000 (10.8.41.81:2223) [session: TT52340]
+2017-06-14T03:37:38+0000 [CowrieTelnetTransport,52340,59.9.68.187] first time for 59.9.68.187, need: 1
+2017-06-14T03:37:38+0000 [CowrieTelnetTransport,52340,59.9.68.187] login attempt: 1
+2017-06-14T03:37:40+0000 [CowrieTelnetTransport,52340,59.9.68.187] login attempt [root/888888] succeeded
+2017-06-14T03:37:42+0000 [CowrieTelnetTransport,52340,59.9.68.187] Opening TTY Log: log/tty/20170614-033742-None-52340i.log
+2017-06-14T03:37:42+0000 [CowrieTelnetTransport,52340,59.9.68.187] Warning: state changed and new state returned
+2017-06-14T03:37:42+0000 [CowrieTelnetTransport,52340,59.9.68.187] CMD: enable
+2017-06-14T03:37:42+0000 [CowrieTelnetTransport,52340,59.9.68.187] Command found: enable 
+2017-06-14T03:37:42+0000 [CowrieTelnetTransport,52340,59.9.68.187] Reading txtcmd from "txtcmds/bin/enable"
+2017-06-14T03:37:42+0000 [CowrieTelnetTransport,52340,59.9.68.187] CMD: shell
+2017-06-14T03:37:42+0000 [CowrieTelnetTransport,52340,59.9.68.187] Command not found: shell
+2017-06-14T03:37:42+0000 [CowrieTelnetTransport,52340,59.9.68.187] CMD: sh
+2017-06-14T03:37:42+0000 [CowrieTelnetTransport,52340,59.9.68.187] Command found: sh 
+2017-06-14T03:37:42+0000 [CowrieTelnetTransport,52340,59.9.68.187] CMD: cat /proc/mounts; /bin/busybox ESWSR
+2017-06-14T03:37:42+0000 [CowrieTelnetTransport,52340,59.9.68.187] Command found: cat /proc/mounts
+2017-06-14T03:37:42+0000 [CowrieTelnetTransport,52340,59.9.68.187] Command found: /bin/busybox ESWSR
+2017-06-14T03:37:43+0000 [CowrieTelnetTransport,52340,59.9.68.187] CMD: cd /dev/shm; cat .s || cp /bin/echo .s; /bin/busybox ESWSR
+2017-06-14T03:37:43+0000 [CowrieTelnetTransport,52340,59.9.68.187] Command found: cd /dev/shm
+2017-06-14T03:37:43+0000 [CowrieTelnetTransport,52340,59.9.68.187] Command found: cat .s
+2017-06-14T03:37:43+0000 [CowrieTelnetTransport,52340,59.9.68.187] Command found: cp /bin/echo .s
+2017-06-14T03:37:43+0000 [CowrieTelnetTransport,52340,59.9.68.187] Command found: /bin/busybox ESWSR
+2017-06-14T03:37:43+0000 [CowrieTelnetTransport,52340,59.9.68.187] CMD: nc; wget; /bin/busybox ESWSR
+2017-06-14T03:37:43+0000 [CowrieTelnetTransport,52340,59.9.68.187] Command not found: nc
+2017-06-14T03:37:43+0000 [CowrieTelnetTransport,52340,59.9.68.187] Command found: wget 
+2017-06-14T03:37:43+0000 [CowrieTelnetTransport,52340,59.9.68.187] Command found: /bin/busybox ESWSR
+2017-06-14T03:37:43+0000 [CowrieTelnetTransport,52340,59.9.68.187] CMD: dd bs=52 count=1 if=.s || cat .s
+2017-06-14T03:37:43+0000 [CowrieTelnetTransport,52340,59.9.68.187] Command not found: dd bs=52 count=1 if=.s
+2017-06-14T03:37:43+0000 [CowrieTelnetTransport,52340,59.9.68.187] Command found: cat /dev/shm/.s
+2017-06-14T03:37:44+0000 [CowrieTelnetTransport,52340,59.9.68.187] CMD: /bin/busybox ESWSR
+2017-06-14T03:37:44+0000 [CowrieTelnetTransport,52340,59.9.68.187] Command found: /bin/busybox ESWSR
+2017-06-14T03:37:46+0000 [CowrieTelnetTransport,52332,109.236.83.229] Connection lost after 133 seconds
