@@ -8381,3 +8381,123 @@
 2017-06-14T04:50:58+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,28843,113.175.105.106] login attempt [user/1234] succeeded
 2017-06-14T04:51:00+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,28843,113.175.105.106] 'user' authenticated with 'password'
 2017-06-14T04:51:00+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,28843,113.175.105.106] starting service 'ssh-connection'
+2017-06-14T04:51:04+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 38.99.252.150:61567 (10.8.41.81:2223) [session: TT52454]
+2017-06-14T04:51:05+0000 [CowrieTelnetTransport,52454,38.99.252.150] login attempt: 688
+2017-06-14T04:51:05+0000 [CowrieTelnetTransport,52454,38.99.252.150] login return, expect: [GET http://chekfast.zennolab.com/proxy.php HTTP/1.1/Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8]
+2017-06-14T04:51:07+0000 [CowrieTelnetTransport,52454,38.99.252.150] login attempt [GET http://chekfast.zennolab.com/proxy.php HTTP/1.1/Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8] succeeded
+2017-06-14T04:51:09+0000 [CowrieTelnetTransport,52454,38.99.252.150] Opening TTY Log: log/tty/20170614-045109-None-52454i.log
+2017-06-14T04:51:09+0000 [CowrieTelnetTransport,52454,38.99.252.150] Warning: state changed and new state returned
+2017-06-14T04:51:09+0000 [CowrieTelnetTransport,52454,38.99.252.150] CMD: Connection: Close
+2017-06-14T04:51:09+0000 [CowrieTelnetTransport,52454,38.99.252.150] Command not found: Connection: Close
+2017-06-14T04:51:09+0000 [CowrieTelnetTransport,52454,38.99.252.150] CMD: User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:38.0) Gecko/20100101 Firefox/38.0
+2017-06-14T04:51:09+0000 [CowrieTelnetTransport,52454,38.99.252.150] Command not found: User-Agent: Mozilla/5.0 Windows NT 6.1
+2017-06-14T04:51:09+0000 [CowrieTelnetTransport,52454,38.99.252.150] Command not found: WOW64
+2017-06-14T04:51:09+0000 [CowrieTelnetTransport,52454,38.99.252.150] Command not found: rv:38.0 Gecko/20100101 Firefox/38.0
+2017-06-14T04:51:09+0000 [CowrieTelnetTransport,52454,38.99.252.150] CMD: Accept-Language: en-US,en;q=0.5
+2017-06-14T04:51:09+0000 [CowrieTelnetTransport,52454,38.99.252.150] Command not found: Accept-Language: en-US , en
+2017-06-14T04:51:09+0000 [CowrieTelnetTransport,52454,38.99.252.150] Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/log.py", line 103, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/log.py", line 86, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 122, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 85, in callWithContext
+	    return func(*args,**kw)
+	--- <exception caught here> ---
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/posixbase.py", line 597, in _doReadOrWrite
+	    why = selectable.doRead()
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 208, in doRead
+	    return self._dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 214, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/telnet.py", line 636, in dataReceived
+	    self.applicationDataReceived(b''.join(appDataBuffer))
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/telnet.py", line 988, in applicationDataReceived
+	    self.protocol.dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/protocols/basic.py", line 571, in dataReceived
+	    why = self.lineReceived(line)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/telnet.py", line 1100, in lineReceived
+	    newState = getattr(self, "telnet_" + oldState)(line)
+	  File "/home/cowrie/cowrie/cowrie/telnet/transport.py", line 142, in telnet_Command
+	    self.transport.protocol.dataReceived(command+'\r')
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/telnet.py", line 1035, in dataReceived
+	    self.protocol.dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie/insults/insults.py", line 112, in dataReceived
+	    insults.ServerProtocol.dataReceived(self, data)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/insults/insults.py", line 537, in dataReceived
+	    self.terminalProtocol.keystrokeReceived(ch, None)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/recvline.py", line 225, in keystrokeReceived
+	    m()
+	  File "/home/cowrie/cowrie/cowrie/core/protocol.py", line 353, in handle_RETURN
+	    return recvline.RecvLine.handle_RETURN(self)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/recvline.py", line 292, in handle_RETURN
+	    self.lineReceived(line)
+	  File "/home/cowrie/cowrie/cowrie/core/protocol.py", line 187, in lineReceived
+	    self.cmdstack[-1].lineReceived(line)
+	  File "/home/cowrie/cowrie/cowrie/core/honeypot.py", line 246, in lineReceived
+	    self.runCommand()
+	  File "/home/cowrie/cowrie/cowrie/core/honeypot.py", line 351, in runCommand
+	    runOrPrompt()
+	  File "/home/cowrie/cowrie/cowrie/core/honeypot.py", line 257, in runOrPrompt
+	    self.runCommand()
+	  File "/home/cowrie/cowrie/cowrie/core/honeypot.py", line 307, in runCommand
+	    if not cmd['command']:
+	exceptions.KeyError: 'command'
+	
+2017-06-14T04:51:09+0000 [CowrieTelnetTransport,52454,38.99.252.150] Closing TTY Log: log/tty/20170614-045109-None-52454i.log after 0 seconds
+2017-06-14T04:51:09+0000 [CowrieTelnetTransport,52454,38.99.252.150] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <type 'exceptions.KeyError'>: 'command'
+	]
+2017-06-14T04:51:09+0000 [CowrieTelnetTransport,52454,38.99.252.150] Connection lost after 4 seconds
+2017-06-14T04:51:09+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 121.18.238.125:47678 (10.8.41.81:2222) [session: f8632a2a]
+2017-06-14T04:51:09+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,28843,113.175.105.106] got channel 'direct-tcpip' request
+2017-06-14T04:51:09+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,28843,113.175.105.106] direct-tcp connection request to mesu.apple.com:80 from 192.168.1.104:53825
+2017-06-14T04:51:09+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,28843,113.175.105.106] got channel 'direct-tcpip' request
+2017-06-14T04:51:09+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,28843,113.175.105.106] direct-tcp connection request to 4viewapp.com:80 from 192.168.1.104:53826
+2017-06-14T04:51:09+0000 [SSHChannel None (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,28843,113.175.105.106] direct-tcp forward to 4viewapp.com:80 with data 'GET /earn/MTRfMg== HTTP/1.1\r\nHost: 4viewapp.com\r\nConnection: keep-alive\r\nAccept-Encoding: gzip, deflate\r\nUser-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13G35 Safari/601.1\r\nAccept-Language: en-gb\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\r\n\r\n'
+2017-06-14T04:51:09+0000 [SSHChannel None (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,28843,113.175.105.106] failed to connect: Connection refused
+2017-06-14T04:51:09+0000 [SSHChannel None (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,28843,113.175.105.106] sending close 1
+2017-06-14T04:51:09+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,28843,113.175.105.106] direct-tcp forward to mesu.apple.com:80 with data 'GET /assets/com_apple_MobileAsset_SafariCloudHistoryConfiguration/com_apple_MobileAsset_SafariCloudHistoryConfiguration.xml HTTP/1.1\r\nHost: mesu.apple.com\r\nIf-Modified-Since: Fri, 18 Mar 2016 15:53:03 GMT\r\nAccept-Encoding: gzip, deflate\r\nAccept: */*\r\nAccept-Language: en-gb\r\nConnection: keep-alive\r\nUser-Agent: MobileAsset/1.1\r\n\r\n'
+2017-06-14T04:51:09+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,28843,113.175.105.106] failed to connect: Connection refused
+2017-06-14T04:51:09+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,28843,113.175.105.106] sending close 0
+2017-06-14T04:51:09+0000 [SSHChannel None (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,28843,113.175.105.106] remote close
+2017-06-14T04:51:09+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,28843,113.175.105.106] got channel 'direct-tcpip' request
+2017-06-14T04:51:09+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,28843,113.175.105.106] direct-tcp connection request to 4viewapp.com:80 from 192.168.1.104:53827
+2017-06-14T04:51:10+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,28843,113.175.105.106] remote close
+2017-06-14T04:51:10+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,28843,113.175.105.106] got channel 'direct-tcpip' request
+2017-06-14T04:51:10+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,28843,113.175.105.106] direct-tcp connection request to mesu.apple.com:80 from 192.168.1.104:53828
+2017-06-14T04:51:10+0000 [SSHChannel None (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,28843,113.175.105.106] direct-tcp forward to 4viewapp.com:80 with data 'GET /earn/MTRfMg== HTTP/1.1\r\nHost: 4viewapp.com\r\nConnection: keep-alive\r\nAccept-Encoding: gzip, deflate\r\nUser-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13G35 Safari/601.1\r\nAccept-Language: en-gb\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\r\n\r\n'
+2017-06-14T04:51:10+0000 [SSHChannel None (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,28843,113.175.105.106] failed to connect: Connection refused
+2017-06-14T04:51:10+0000 [SSHChannel None (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,28843,113.175.105.106] sending close 2
+2017-06-14T04:51:10+0000 [SSHChannel None (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,28843,113.175.105.106] direct-tcp forward to mesu.apple.com:80 with data 'GET /assets/com_apple_MobileAsset_SafariCloudHistoryConfiguration/com_apple_MobileAsset_SafariCloudHistoryConfiguration.xml HTTP/1.1\r\nHost: mesu.apple.com\r\nIf-Modified-Since: Fri, 18 Mar 2016 15:53:03 GMT\r\nAccept-Encoding: gzip, deflate\r\nAccept: */*\r\nAccept-Language: en-gb\r\nConnection: keep-alive\r\nUser-Agent: MobileAsset/1.1\r\n\r\n'
+2017-06-14T04:51:10+0000 [SSHChannel None (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,28843,113.175.105.106] failed to connect: Connection refused
+2017-06-14T04:51:10+0000 [SSHChannel None (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,28843,113.175.105.106] sending close 3
+2017-06-14T04:51:11+0000 [SSHChannel None (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,28843,113.175.105.106] remote close
+2017-06-14T04:51:11+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,28843,113.175.105.106] got channel 'direct-tcpip' request
+2017-06-14T04:51:11+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,28843,113.175.105.106] direct-tcp connection request to 4viewapp.com:80 from 192.168.1.104:53829
+2017-06-14T04:51:11+0000 [SSHChannel None (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,28843,113.175.105.106] remote close
+2017-06-14T04:51:11+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,28843,113.175.105.106] got channel 'direct-tcpip' request
+2017-06-14T04:51:11+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,28843,113.175.105.106] direct-tcp connection request to mesu.apple.com:80 from 192.168.1.104:53830
+2017-06-14T04:51:11+0000 [SSHChannel None (4) on SSHService 'ssh-connection' on HoneyPotSSHTransport,28843,113.175.105.106] direct-tcp forward to 4viewapp.com:80 with data 'GET /earn/MTRfMg== HTTP/1.1\r\nHost: 4viewapp.com\r\nConnection: keep-alive\r\nAccept-Encoding: gzip, deflate\r\nUser-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13G35 Safari/601.1\r\nAccept-Language: en-gb\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\r\n\r\n'
+2017-06-14T04:51:11+0000 [SSHChannel None (4) on SSHService 'ssh-connection' on HoneyPotSSHTransport,28843,113.175.105.106] failed to connect: Connection refused
+2017-06-14T04:51:11+0000 [SSHChannel None (4) on SSHService 'ssh-connection' on HoneyPotSSHTransport,28843,113.175.105.106] sending close 4
+2017-06-14T04:51:12+0000 [SSHChannel None (5) on SSHService 'ssh-connection' on HoneyPotSSHTransport,28843,113.175.105.106] direct-tcp forward to mesu.apple.com:80 with data 'GET /assets/com_apple_MobileAsset_SafariCloudHistoryConfiguration/com_apple_MobileAsset_SafariCloudHistoryConfiguration.xml HTTP/1.1\r\nHost: mesu.apple.com\r\nIf-Modified-Since: Fri, 18 Mar 2016 15:53:03 GMT\r\nAccept-Encoding: gzip, deflate\r\nAccept: */*\r\nAccept-Language: en-gb\r\nConnection: keep-alive\r\nUser-Agent: MobileAsset/1.1\r\n\r\n'
+2017-06-14T04:51:12+0000 [SSHChannel None (5) on SSHService 'ssh-connection' on HoneyPotSSHTransport,28843,113.175.105.106] failed to connect: Connection refused
+2017-06-14T04:51:12+0000 [SSHChannel None (5) on SSHService 'ssh-connection' on HoneyPotSSHTransport,28843,113.175.105.106] sending close 5
+2017-06-14T04:51:12+0000 [SSHChannel None (4) on SSHService 'ssh-connection' on HoneyPotSSHTransport,28843,113.175.105.106] remote close
+2017-06-14T04:51:12+0000 [SSHChannel None (5) on SSHService 'ssh-connection' on HoneyPotSSHTransport,28843,113.175.105.106] remote close
+2017-06-14T04:51:12+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,28843,113.175.105.106] got channel 'direct-tcpip' request
+2017-06-14T04:51:12+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,28843,113.175.105.106] direct-tcp connection request to mesu.apple.com:80 from 192.168.1.104:53831
+2017-06-14T04:51:13+0000 [SSHChannel None (6) on SSHService 'ssh-connection' on HoneyPotSSHTransport,28843,113.175.105.106] direct-tcp forward to mesu.apple.com:80 with data 'GET /assets/com_apple_MobileAsset_SafariCloudHistoryConfiguration/com_apple_MobileAsset_SafariCloudHistoryConfiguration.xml HTTP/1.1\r\nHost: mesu.apple.com\r\nIf-Modified-Since: Fri, 18 Mar 2016 15:53:03 GMT\r\nAccept-Encoding: gzip, deflate\r\nAccept: */*\r\nAccept-Language: en-gb\r\nConnection: keep-alive\r\nUser-Agent: MobileAsset/1.1\r\n\r\n'
+2017-06-14T04:51:13+0000 [SSHChannel None (6) on SSHService 'ssh-connection' on HoneyPotSSHTransport,28843,113.175.105.106] failed to connect: Connection refused
+2017-06-14T04:51:13+0000 [SSHChannel None (6) on SSHService 'ssh-connection' on HoneyPotSSHTransport,28843,113.175.105.106] sending close 6
+2017-06-14T04:51:13+0000 [SSHChannel None (6) on SSHService 'ssh-connection' on HoneyPotSSHTransport,28843,113.175.105.106] remote close
+2017-06-14T04:51:21+0000 [HoneyPotSSHTransport,28844,121.18.238.125] Remote SSH version: SSH-2.0-PUTTY
+2017-06-14T04:51:21+0000 [HoneyPotSSHTransport,28844,121.18.238.125] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-06-14T04:51:21+0000 [HoneyPotSSHTransport,28844,121.18.238.125] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-14T04:51:21+0000 [HoneyPotSSHTransport,28844,121.18.238.125] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-14T04:51:21+0000 [HoneyPotSSHTransport,28844,121.18.238.125] connection lost
+2017-06-14T04:51:21+0000 [HoneyPotSSHTransport,28844,121.18.238.125] Connection lost after 12 seconds
+2017-06-14T04:51:33+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,28843,113.175.105.106] got global keep-alive@bitvise.com request
+2017-06-14T04:51:53+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,28843,113.175.105.106] got global keep-alive@bitvise.com request
