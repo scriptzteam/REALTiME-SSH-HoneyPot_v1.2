@@ -1180,3 +1180,32 @@
 2017-06-14T11:43:41+0000 [CowrieTelnetTransport,53296,197.245.81.17] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
 	]
 2017-06-14T11:43:41+0000 [CowrieTelnetTransport,53296,197.245.81.17] Connection lost after 132 seconds
+2017-06-14T11:44:28+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 103.206.135.230:56824 (10.8.41.81:2222) [session: 1aae1135]
+2017-06-14T11:44:29+0000 [HoneyPotSSHTransport,29890,103.206.135.230] Remote SSH version: SSH-2.0-libssh-0.1
+2017-06-14T11:44:29+0000 [HoneyPotSSHTransport,29890,103.206.135.230] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-rsa'
+2017-06-14T11:44:29+0000 [HoneyPotSSHTransport,29890,103.206.135.230] outgoing: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-06-14T11:44:29+0000 [HoneyPotSSHTransport,29890,103.206.135.230] incoming: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-06-14T11:44:29+0000 [HoneyPotSSHTransport,29890,103.206.135.230] NEW KEYS
+2017-06-14T11:44:29+0000 [HoneyPotSSHTransport,29890,103.206.135.230] starting service 'ssh-userauth'
+2017-06-14T11:44:30+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,29890,103.206.135.230] 'root' trying auth 'password'
+2017-06-14T11:44:30+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,29890,103.206.135.230] login attempt: 2
+2017-06-14T11:44:30+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,29890,103.206.135.230] login return, expect: [root/root]
+2017-06-14T11:44:32+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,29890,103.206.135.230] login attempt [root/root] succeeded
+2017-06-14T11:44:34+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,29890,103.206.135.230] 'root' authenticated with 'password'
+2017-06-14T11:44:34+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,29890,103.206.135.230] starting service 'ssh-connection'
+2017-06-14T11:44:34+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,29890,103.206.135.230] got channel 'session' request
+2017-06-14T11:44:34+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,29890,103.206.135.230] channel open
+2017-06-14T11:44:34+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,29890,103.206.135.230] pty request: 'xterm' (24, 80, 0, 0)
+2017-06-14T11:44:34+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,29890,103.206.135.230] Terminal Size: 24 80
+2017-06-14T11:44:34+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,29890,103.206.135.230] getting shell
+2017-06-14T11:44:34+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,29890,103.206.135.230] Opening TTY Log: log/tty/20170614-114434-1aae1135-0i.log
+2017-06-14T11:44:38+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,29890,103.206.135.230] Closing TTY Log: log/tty/20170614-114434-1aae1135-0i.log after 4 seconds
+2017-06-14T11:44:38+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,29890,103.206.135.230] honeypot terminal protocol connection lost disconnected
+2017-06-14T11:44:38+0000 [HoneyPotSSHTransport,29890,103.206.135.230] avatar root logging out
+2017-06-14T11:44:38+0000 [HoneyPotSSHTransport,29890,103.206.135.230] connection lost
+2017-06-14T11:44:38+0000 [HoneyPotSSHTransport,29890,103.206.135.230] Connection lost after 9 seconds
+2017-06-14T11:44:53+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 94.102.54.91:65316 (10.8.41.81:2223) [session: TT53298]
+2017-06-14T11:44:54+0000 [CowrieTelnetTransport,53298,94.102.54.91] login attempt: 2
+2017-06-14T11:44:54+0000 [CowrieTelnetTransport,53298,94.102.54.91] login return, expect: [GET http://ya.ru/ HTTP/1.1/Host: ya.ru]
+2017-06-14T11:44:57+0000 [CowrieTelnetTransport,53298,94.102.54.91] login attempt [CONNECT auth.api.sonyentertainmentnetwork.com:443 HTTP/1.0/] failed
+2017-06-14T11:44:57+0000 [CowrieTelnetTransport,53298,94.102.54.91] Warning: state changed and new state returned
