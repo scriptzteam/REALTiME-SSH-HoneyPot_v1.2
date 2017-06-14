@@ -7937,3 +7937,44 @@
 2017-06-14T06:55:59+0000 [CowrieTelnetTransport,52624,117.218.125.116] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
 	]
 2017-06-14T06:55:59+0000 [CowrieTelnetTransport,52624,117.218.125.116] Connection lost after 128 seconds
+2017-06-14T06:56:26+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 113.195.145.52:29030 (10.8.41.81:2222) [session: ab2e1444]
+2017-06-14T06:56:27+0000 [HoneyPotSSHTransport,29186,113.195.145.52] Remote SSH version: SSH-2.0-PUTTY
+2017-06-14T06:56:27+0000 [HoneyPotSSHTransport,29186,113.195.145.52] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-06-14T06:56:27+0000 [HoneyPotSSHTransport,29186,113.195.145.52] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-14T06:56:27+0000 [HoneyPotSSHTransport,29186,113.195.145.52] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-14T06:56:32+0000 [HoneyPotSSHTransport,29186,113.195.145.52] connection lost
+2017-06-14T06:56:32+0000 [HoneyPotSSHTransport,29186,113.195.145.52] Connection lost after 5 seconds
+2017-06-14T06:56:41+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 190.111.126.68:52178 (10.8.41.81:2223) [session: TT52638]
+2017-06-14T06:56:42+0000 [CowrieTelnetTransport,52638,190.111.126.68] first time for 190.111.126.68, need: 1
+2017-06-14T06:56:42+0000 [CowrieTelnetTransport,52638,190.111.126.68] login attempt: 1
+2017-06-14T06:56:45+0000 [CowrieTelnetTransport,52638,190.111.126.68] login attempt [root/vizxv] succeeded
+2017-06-14T06:56:46+0000 [CowrieTelnetTransport,52638,190.111.126.68] Opening TTY Log: log/tty/20170614-065646-None-52638i.log
+2017-06-14T06:56:46+0000 [CowrieTelnetTransport,52638,190.111.126.68] Warning: state changed and new state returned
+2017-06-14T06:56:47+0000 [CowrieTelnetTransport,52638,190.111.126.68] CMD: enable
+2017-06-14T06:56:47+0000 [CowrieTelnetTransport,52638,190.111.126.68] Command found: enable 
+2017-06-14T06:56:47+0000 [CowrieTelnetTransport,52638,190.111.126.68] Reading txtcmd from "txtcmds/bin/enable"
+2017-06-14T06:56:47+0000 [CowrieTelnetTransport,52638,190.111.126.68] CMD: shell
+2017-06-14T06:56:47+0000 [CowrieTelnetTransport,52638,190.111.126.68] Command not found: shell
+2017-06-14T06:56:47+0000 [CowrieTelnetTransport,52638,190.111.126.68] CMD: sh
+2017-06-14T06:56:47+0000 [CowrieTelnetTransport,52638,190.111.126.68] Command found: sh 
+2017-06-14T06:56:47+0000 [CowrieTelnetTransport,52638,190.111.126.68] CMD: cat /proc/mounts; /bin/busybox SKSZZ
+2017-06-14T06:56:47+0000 [CowrieTelnetTransport,52638,190.111.126.68] Command found: cat /proc/mounts
+2017-06-14T06:56:47+0000 [CowrieTelnetTransport,52638,190.111.126.68] Command found: /bin/busybox SKSZZ
+2017-06-14T06:56:48+0000 [CowrieTelnetTransport,52638,190.111.126.68] CMD: cd /dev/shm; cat .s || cp /bin/echo .s; /bin/busybox SKSZZ
+2017-06-14T06:56:48+0000 [CowrieTelnetTransport,52638,190.111.126.68] Command found: cd /dev/shm
+2017-06-14T06:56:48+0000 [CowrieTelnetTransport,52638,190.111.126.68] Command found: cat .s
+2017-06-14T06:56:48+0000 [CowrieTelnetTransport,52638,190.111.126.68] Command found: cp /bin/echo .s
+2017-06-14T06:56:48+0000 [CowrieTelnetTransport,52638,190.111.126.68] Command found: /bin/busybox SKSZZ
+2017-06-14T06:56:48+0000 [CowrieTelnetTransport,52638,190.111.126.68] CMD: nc; wget; /bin/busybox SKSZZ
+2017-06-14T06:56:48+0000 [CowrieTelnetTransport,52638,190.111.126.68] Command not found: nc
+2017-06-14T06:56:48+0000 [CowrieTelnetTransport,52638,190.111.126.68] Command found: wget 
+2017-06-14T06:56:48+0000 [CowrieTelnetTransport,52638,190.111.126.68] Command found: /bin/busybox SKSZZ
+2017-06-14T06:56:48+0000 [CowrieTelnetTransport,52638,190.111.126.68] CMD: dd bs=52 count=1 if=.s || cat .s
+2017-06-14T06:56:48+0000 [CowrieTelnetTransport,52638,190.111.126.68] Command not found: dd bs=52 count=1 if=.s
+2017-06-14T06:56:48+0000 [CowrieTelnetTransport,52638,190.111.126.68] Command found: cat /dev/shm/.s
+2017-06-14T06:56:49+0000 [CowrieTelnetTransport,52638,190.111.126.68] CMD: /bin/busybox SKSZZ
+2017-06-14T06:56:49+0000 [CowrieTelnetTransport,52638,190.111.126.68] Command found: /bin/busybox SKSZZ
+2017-06-14T06:56:55+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 113.195.145.52:57580 (10.8.41.81:2222) [session: 7d706bc3]
+2017-06-14T06:56:55+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 113.105.105.52:3101 (10.8.41.81:2223) [session: TT52639]
+2017-06-14T06:57:00+0000 [CowrieTelnetTransport,52639,113.105.105.52] first time for 113.105.105.52, need: 1
+2017-06-14T06:57:00+0000 [CowrieTelnetTransport,52639,113.105.105.52] login attempt: 1
