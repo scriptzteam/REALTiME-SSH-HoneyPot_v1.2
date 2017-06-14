@@ -490,3 +490,74 @@
 2017-06-14T07:29:00+0000 [CowrieTelnetTransport,52696,109.236.83.229] Warning: state changed and new state returned
 2017-06-14T07:29:00+0000 [CowrieTelnetTransport,52696,109.236.83.229] login attempt: 10462
 2017-06-14T07:29:00+0000 [CowrieTelnetTransport,52696,109.236.83.229] login return, expect: [root/12345]
+2017-06-14T07:29:02+0000 [CowrieTelnetTransport,52696,109.236.83.229] login attempt [shell/sh] failed
+2017-06-14T07:29:03+0000 [CowrieTelnetTransport,52696,109.236.83.229] Warning: state changed and new state returned
+2017-06-14T07:29:03+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,29237,176.38.87.129] 'admin' trying auth 'password'
+2017-06-14T07:29:04+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,29237,176.38.87.129] login attempt: 15
+2017-06-14T07:29:04+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,29237,176.38.87.129] login return, expect: [root/dreambox]
+2017-06-14T07:29:06+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,29237,176.38.87.129] login attempt [admin/1234] failed
+2017-06-14T07:29:06+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 129.146.31.194:53800 (10.8.41.81:2222) [session: 94c30fad]
+2017-06-14T07:29:06+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 113.195.145.52:20825 (10.8.41.81:2222) [session: 37344e56]
+2017-06-14T07:29:06+0000 [HoneyPotSSHTransport,29240,129.146.31.194] connection lost
+2017-06-14T07:29:06+0000 [HoneyPotSSHTransport,29240,129.146.31.194] Connection lost after 0 seconds
+2017-06-14T07:29:07+0000 [-] 'admin' failed auth 'password'
+2017-06-14T07:29:07+0000 [-] unauthorized login: 
+2017-06-14T07:29:07+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,29237,176.38.87.129] 'admin' trying auth 'password'
+2017-06-14T07:29:08+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,29237,176.38.87.129] login attempt: 16
+2017-06-14T07:29:08+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,29237,176.38.87.129] login return, expect: [root/dreambox]
+2017-06-14T07:29:10+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,29237,176.38.87.129] login attempt [admin/12345] failed
+2017-06-14T07:29:10+0000 [CowrieTelnetTransport,52689,109.236.83.184] Connection lost after 148 seconds
+2017-06-14T07:29:11+0000 [-] 'admin' failed auth 'password'
+2017-06-14T07:29:11+0000 [-] unauthorized login: 
+2017-06-14T07:29:11+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,29237,176.38.87.129] 'admin' trying auth 'password'
+2017-06-14T07:29:12+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,29237,176.38.87.129] login attempt: 17
+2017-06-14T07:29:12+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,29237,176.38.87.129] login return, expect: [root/dreambox]
+2017-06-14T07:29:14+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,29237,176.38.87.129] login attempt [admin/admin1] failed
+2017-06-14T07:29:14+0000 [-] Authentication Timeout reached
+2017-06-14T07:29:14+0000 [HoneyPotSSHTransport,29237,176.38.87.129] connection lost
+2017-06-14T07:29:14+0000 [HoneyPotSSHTransport,29237,176.38.87.129] Connection lost after 120 seconds
+2017-06-14T07:29:15+0000 [-] 'admin' failed auth 'password'
+2017-06-14T07:29:15+0000 [-] unauthorized login: 
+2017-06-14T07:29:15+0000 [twisted.internet.defer#critical] Unhandled error in Deferred:
+2017-06-14T07:29:15+0000 [twisted.internet.defer#critical] 
+	Traceback (most recent call last):
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/base.py", line 1252, in mainLoop
+	    self.runUntilCurrent()
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/base.py", line 878, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 459, in callback
+	    self._startRunCallbacks(result)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 567, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/userauth.py", line 251, in _ebBadAuth
+	    NS(b','.join(self.supportedAuthentications)) + b'\x00')
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/transport.py", line 637, in sendPacket
+	    self.transport.write(encPacket)
+	exceptions.AttributeError: 'NoneType' object has no attribute 'write'
+	
+2017-06-14T07:29:16+0000 [CowrieTelnetTransport,52690,109.236.83.184] Connection lost after 142 seconds
+2017-06-14T07:29:21+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 113.195.145.52:62893 (10.8.41.81:2222) [session: e5b83d82]
+2017-06-14T07:29:30+0000 [CowrieTelnetTransport,52692,109.236.83.184] Connection lost after 135 seconds
+2017-06-14T07:29:31+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 121.18.238.119:48376 (10.8.41.81:2222) [session: 8963031f]
+2017-06-14T07:29:31+0000 [HoneyPotSSHTransport,29243,121.18.238.119] Remote SSH version: SSH-2.0-PUTTY
+2017-06-14T07:29:31+0000 [HoneyPotSSHTransport,29243,121.18.238.119] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-06-14T07:29:31+0000 [HoneyPotSSHTransport,29243,121.18.238.119] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-14T07:29:31+0000 [HoneyPotSSHTransport,29243,121.18.238.119] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-14T07:29:37+0000 [HoneyPotSSHTransport,29243,121.18.238.119] NEW KEYS
+2017-06-14T07:29:37+0000 [HoneyPotSSHTransport,29243,121.18.238.119] starting service 'ssh-userauth'
+2017-06-14T07:29:40+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 113.195.145.52:36811 (10.8.41.81:2222) [session: cae2a5db]
+2017-06-14T07:29:41+0000 [HoneyPotSSHTransport,29243,121.18.238.119] Got remote error, code 11
+	reason: 
+2017-06-14T07:29:41+0000 [HoneyPotSSHTransport,29243,121.18.238.119] connection lost
+2017-06-14T07:29:41+0000 [HoneyPotSSHTransport,29243,121.18.238.119] Connection lost after 10 seconds
+2017-06-14T07:29:51+0000 [HoneyPotSSHTransport,29244,113.195.145.52] Remote SSH version: SSH-2.0-PUTTY
+2017-06-14T07:29:51+0000 [HoneyPotSSHTransport,29244,113.195.145.52] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-06-14T07:29:51+0000 [HoneyPotSSHTransport,29244,113.195.145.52] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-14T07:29:51+0000 [HoneyPotSSHTransport,29244,113.195.145.52] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-14T07:29:51+0000 [HoneyPotSSHTransport,29244,113.195.145.52] connection lost
+2017-06-14T07:29:51+0000 [HoneyPotSSHTransport,29244,113.195.145.52] Connection lost after 10 seconds
+2017-06-14T07:29:58+0000 [HoneyPotSSHTransport,29239,113.195.145.52] connection lost
+2017-06-14T07:29:58+0000 [HoneyPotSSHTransport,29239,113.195.145.52] Connection lost after 87 seconds
