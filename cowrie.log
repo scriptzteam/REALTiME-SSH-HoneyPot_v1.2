@@ -1833,3 +1833,100 @@
 2017-06-14T11:57:52+0000 [CowrieTelnetTransport,53320,212.109.6.19] Connection lost after 0 seconds
 2017-06-14T11:57:52+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 212.109.6.19:2908 (10.8.41.81:2223) [session: TT53321]
 2017-06-14T11:57:53+0000 [CowrieTelnetTransport,53321,212.109.6.19] Connection lost after 0 seconds
+2017-06-14T11:58:07+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 38.99.254.248:59326 (10.8.41.81:2223) [session: TT53322]
+2017-06-14T11:58:08+0000 [CowrieTelnetTransport,53322,38.99.254.248] login attempt: 548
+2017-06-14T11:58:08+0000 [CowrieTelnetTransport,53322,38.99.254.248] login return, expect: [GET http://check2.zennolab.com/proxy.php HTTP/1.1/Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8]
+2017-06-14T11:58:11+0000 [CowrieTelnetTransport,53322,38.99.254.248] login attempt [GET http://check2.zennolab.com/proxy.php HTTP/1.1/Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8] succeeded
+2017-06-14T11:58:12+0000 [CowrieTelnetTransport,53322,38.99.254.248] Opening TTY Log: log/tty/20170614-115812-None-53322i.log
+2017-06-14T11:58:12+0000 [CowrieTelnetTransport,53322,38.99.254.248] Warning: state changed and new state returned
+2017-06-14T11:58:12+0000 [CowrieTelnetTransport,53322,38.99.254.248] CMD: Connection: Close
+2017-06-14T11:58:12+0000 [CowrieTelnetTransport,53322,38.99.254.248] Command not found: Connection: Close
+2017-06-14T11:58:12+0000 [CowrieTelnetTransport,53322,38.99.254.248] CMD: User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0
+2017-06-14T11:58:12+0000 [CowrieTelnetTransport,53322,38.99.254.248] Command not found: User-Agent: Mozilla/5.0 Windows NT 10.0
+2017-06-14T11:58:12+0000 [CowrieTelnetTransport,53322,38.99.254.248] Command not found: WOW64
+2017-06-14T11:58:12+0000 [CowrieTelnetTransport,53322,38.99.254.248] Command not found: rv:45.0 Gecko/20100101 Firefox/45.0
+2017-06-14T11:58:12+0000 [CowrieTelnetTransport,53322,38.99.254.248] CMD: Accept-Language: en-US,en;q=0.5
+2017-06-14T11:58:12+0000 [CowrieTelnetTransport,53322,38.99.254.248] Command not found: Accept-Language: en-US , en
+2017-06-14T11:58:12+0000 [CowrieTelnetTransport,53322,38.99.254.248] Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/log.py", line 103, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/log.py", line 86, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 122, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 85, in callWithContext
+	    return func(*args,**kw)
+	--- <exception caught here> ---
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/posixbase.py", line 597, in _doReadOrWrite
+	    why = selectable.doRead()
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 208, in doRead
+	    return self._dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 214, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/telnet.py", line 636, in dataReceived
+	    self.applicationDataReceived(b''.join(appDataBuffer))
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/telnet.py", line 988, in applicationDataReceived
+	    self.protocol.dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/protocols/basic.py", line 571, in dataReceived
+	    why = self.lineReceived(line)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/telnet.py", line 1100, in lineReceived
+	    newState = getattr(self, "telnet_" + oldState)(line)
+	  File "/home/cowrie/cowrie/cowrie/telnet/transport.py", line 142, in telnet_Command
+	    self.transport.protocol.dataReceived(command+'\r')
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/telnet.py", line 1035, in dataReceived
+	    self.protocol.dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie/insults/insults.py", line 112, in dataReceived
+	    insults.ServerProtocol.dataReceived(self, data)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/insults/insults.py", line 537, in dataReceived
+	    self.terminalProtocol.keystrokeReceived(ch, None)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/recvline.py", line 225, in keystrokeReceived
+	    m()
+	  File "/home/cowrie/cowrie/cowrie/core/protocol.py", line 353, in handle_RETURN
+	    return recvline.RecvLine.handle_RETURN(self)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/recvline.py", line 292, in handle_RETURN
+	    self.lineReceived(line)
+	  File "/home/cowrie/cowrie/cowrie/core/protocol.py", line 187, in lineReceived
+	    self.cmdstack[-1].lineReceived(line)
+	  File "/home/cowrie/cowrie/cowrie/core/honeypot.py", line 246, in lineReceived
+	    self.runCommand()
+	  File "/home/cowrie/cowrie/cowrie/core/honeypot.py", line 351, in runCommand
+	    runOrPrompt()
+	  File "/home/cowrie/cowrie/cowrie/core/honeypot.py", line 257, in runOrPrompt
+	    self.runCommand()
+	  File "/home/cowrie/cowrie/cowrie/core/honeypot.py", line 307, in runCommand
+	    if not cmd['command']:
+	exceptions.KeyError: 'command'
+	
+2017-06-14T11:58:12+0000 [CowrieTelnetTransport,53322,38.99.254.248] Closing TTY Log: log/tty/20170614-115812-None-53322i.log after 0 seconds
+2017-06-14T11:58:12+0000 [CowrieTelnetTransport,53322,38.99.254.248] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <type 'exceptions.KeyError'>: 'command'
+	]
+2017-06-14T11:58:12+0000 [CowrieTelnetTransport,53322,38.99.254.248] Connection lost after 5 seconds
+2017-06-14T11:58:43+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 94.102.54.91:54872 (10.8.41.81:2223) [session: TT53323]
+2017-06-14T11:58:44+0000 [CowrieTelnetTransport,53323,94.102.54.91] login attempt: 3
+2017-06-14T11:58:44+0000 [CowrieTelnetTransport,53323,94.102.54.91] login return, expect: [GET http://ya.ru/ HTTP/1.1/Host: ya.ru]
+2017-06-14T11:58:46+0000 [CowrieTelnetTransport,53323,94.102.54.91] login attempt [CONNECT auth.api.sonyentertainmentnetwork.com:443 HTTP/1.0/] failed
+2017-06-14T11:58:46+0000 [CowrieTelnetTransport,53323,94.102.54.91] Warning: state changed and new state returned
+2017-06-14T11:58:46+0000 [CowrieTelnetTransport,53318,177.3.191.53] Closing TTY Log: log/tty/20170614-115637-None-53318i.log after 128 seconds
+2017-06-14T11:58:46+0000 [CowrieTelnetTransport,53318,177.3.191.53] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-06-14T11:58:46+0000 [CowrieTelnetTransport,53318,177.3.191.53] Connection lost after 135 seconds
+2017-06-14T11:58:48+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 192.3.244.150:48912 (10.8.41.81:2223) [session: TT53324]
+2017-06-14T11:58:48+0000 [CowrieTelnetTransport,53324,192.3.244.150] login attempt: 806
+2017-06-14T11:58:48+0000 [CowrieTelnetTransport,53324,192.3.244.150] login return, expect: [CONNECT httpbin.org:443 HTTP/1.1/Host: httpbin.org:443]
+2017-06-14T11:58:50+0000 [CowrieTelnetTransport,53324,192.3.244.150] login attempt [GET http://httpbin.org/get?show_env=1 HTTP/1.1/Connection: close] failed
+2017-06-14T11:58:50+0000 [CowrieTelnetTransport,53324,192.3.244.150] Warning: state changed and new state returned
+2017-06-14T11:58:51+0000 [CowrieTelnetTransport,53324,192.3.244.150] login attempt: 807
+2017-06-14T11:58:51+0000 [CowrieTelnetTransport,53324,192.3.244.150] login return, expect: [CONNECT httpbin.org:443 HTTP/1.1/Host: httpbin.org:443]
+2017-06-14T11:58:53+0000 [CowrieTelnetTransport,53324,192.3.244.150] login attempt [Accept-Language: en-US,en;q=0.5/Accept-Encoding: gzip, deflate, br] failed
+2017-06-14T11:58:53+0000 [CowrieTelnetTransport,53324,192.3.244.150] Warning: state changed and new state returned
+2017-06-14T11:58:54+0000 [CowrieTelnetTransport,53324,192.3.244.150] login attempt: 808
+2017-06-14T11:58:54+0000 [CowrieTelnetTransport,53324,192.3.244.150] login return, expect: [CONNECT httpbin.org:443 HTTP/1.1/Host: httpbin.org:443]
+2017-06-14T11:58:57+0000 [CowrieTelnetTransport,53324,192.3.244.150] login attempt [Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8/Upgrade-Insecure-Requests: 1] failed
+2017-06-14T11:58:57+0000 [CowrieTelnetTransport,53324,192.3.244.150] Warning: state changed and new state returned
+2017-06-14T11:58:57+0000 [CowrieTelnetTransport,53324,192.3.244.150] login attempt: 809
+2017-06-14T11:58:57+0000 [CowrieTelnetTransport,53324,192.3.244.150] login return, expect: [CONNECT httpbin.org:443 HTTP/1.1/Host: httpbin.org:443]
+2017-06-14T11:58:59+0000 [CowrieTelnetTransport,53324,192.3.244.150] login attempt [Host: httpbin.org/Cookie: symfony=o2fqh1r85mhj9rjb6j62t97bm0; fe_typo_user=05413e23b3e1cb37dda95ba2a935753f; ccup_shoppingcart=b97d1a8901NjYyMDAwMDA4M2EwYDI4ODZkZT8wNDQ5NzhjNGBrZWR4L2Jvb2Z0JjtbXi0meXBmYHVjfCMyW11%2F; ccup_user_pwd=b97d1a8901NjYyMDAwMDA4MzUzNjdkN2QxNTIzMWE9MTE%2BMDA%2BNTk; VngState=0; session_id_akamon_yushinsya00_front="9410340:e5b51d8b-69e6-4674-9f4e-dd53c5ce1acc"; ASPSESSIONIDQCTAQSQS=EFIENNHAGCMIKEJDHNNMLBJP; ccup_head_ico=b97d1a8901NjYyMDAwMDA4MzUzNjdkN2QxNTIzMWE9MTE%2BMDA%2BNTk; NSC_ofx_3h.e.do=ffffffff75985cf945525d5f4f58455e445a4a423660; BIGipServer~Shipping~changjiangboyun-107=1828782346.20480.0000; session_id_akamon_yushinsya00=192.3.244.150-e75af38c-7999-4746-93e4-29523f875047; ftkeyid=701532008261ead997faf3041755ef370a19b9a0eabbc447; PHPSESSID=tli85r1828n0vva5r9oqn9j715; ADNUSERID=uiknmxphyt; BCSI-CS-d65d63e3f6f2652d=2; ROUTEID=.1; bolt_session=cb2cddd7b4e402426bae7168b33daf16; BIGipServerL4_wx8080=1175209482.36895.0000; B-Check=9cd6e61JnzvDxrXPIM5qEwSsXV1FPaHIwPIWkBD; css_name=style_ns.css; ccup_safecode=b97d1a8901NjYyMDAwMDA4MzUzNjdkN2QxNTIzMWE9MTE%2BMDA%2BNTk; bb2_screener_=1497438326+192.3.244.150; 62c6dbe6d388fe82519d53a65d7a3345=t1e0q2871cfr4v223sksotijg7; JSESSIONID=32CE5AC1C5BD57B17358638C351C48D6; default=be7oc2tkni94kkd0unb5eb2te1; SessionID=; request_method=GET; ASPSESSIONIDQSBDATQS=KCCBEJCABPJKHHHLNKIEIHAM; 2978253f7daa9cd467d0ae36d563a807=q1kio93ja1cuegphl90umaouo7; AWSELB=914B835AEB4229EF388D8CBAFA83D669042BF932D6BDF1AE1C1D04F8628118B88D8DEF23CD10B0F03D0B7C1F179308C7AC595D73785173F0CAEF5F437DBB82501E1EDEB6; ccup_user_id=b97d1a8901NjYyMDAwMDA4MzUzNjdkN2QxNTIzMWE9MTE%2BMDA%2BNTk; eqnetwork.com=C; JSESSIONID-L=a4a1a783-ee7a-40dd-b243-c6b1abb835f6; ASPSESSIONIDCCTBBBRB=KPJAGGFAANABLBPAALOAOPCO; ASPSESSIONIDSSDTTCSS=JEGKHIGCEGBBBKFDPFPEBMKB; IDHTTPSESSIONID=kxSJvGAzw2lcbg3; ASPSESSIONIDASTTRDAB=AJGCHIGAIEKJBBFPNOCFMHAE; PD-H-SESSION-ID=1_4_0_64LI3M+oF7V5HW6RT7KMtUymPa20nbjb04lZOQhW9gHm7exS; AIROS_SESSIONID=9f160f113d2ea4ef32798e800d5d9bc1; connect.sid=s%3AzXNUV_9Ec7sp8-7ke3bVhfWj_x6mXZpA.DYsc0GHXY8F%2FmLL6sGrCKtwejt%2Fy7Fh0JVKkRgNm6Lc; JSESSIONID.5ed66830=n2qcf4kdwqlyzankqpqd26k; flarum_session=bctjpkhhfrtc08i4q910btbd21; ccup_username=b97d1a8901NjYyMDAwMDA4MzUzNjdkN2QxNTIzMWE9MTE%2BMDA%2BNTk; _zk_sc_tc1=1; OutlookSession=0adb1d5346824c35971a7af9bdda135b; webadmin=fqd2fidusts7qbmkhatgt1qoc3; BIGipServer~Shipping~fcos.changjiang.sinotrans.com_7003=940908204.23323.0000; BIGipServerNSSV20054-Pool_sv001=rd171o00000000000000000000ffffc0a864a9o80; cookiesession1=01701CDFMF0CYAMDSXG9WVHQN34HB6C5; wgSession=XCGueYJG2oU47WY_9Tr9TQ; BIGipServerpool_wap=2330084410.20480.0000; _culture=en-US; ASP.NET_SessionId=pwkv05ahhht1i2nqkorrujzw; SERVID=F1; X-Mapping-dbngmded=D8D88790CB38340858D8A34128ABE287; ASPSESSIONIDAASCBBRT=KHNKDMPDEGMADOGNGPFKOHKL; Session=Login; ui_language=en_US; b44988b83898bb7703d652b84612cd2e=b62nhocaion8o433s5v5gseok0; nsunid=tOtCTFlBABdSYQv1F/kQAg==; ccsession=20170614192041160010ac092c6b94; language=en-gb; __ads_session=ohJEW+3o7Aj2i7QAlgA=; SESS012c059df30be6f6c77e1b8447d7a15c=qvoirhah01k0ds0c2559v1ie62; citrix_ns_id=cmio96LOb5/8qkaed8g/P9q1kD4A030; WR_PROXY_AUTH=73D790381B80886D7C1D124E5E3EA76A; ccguid=20170614192041160010ac092c6b94; currency=USD; citrix_ns_id_.httpbin.org_%2F_wat=UEQtSC1TRVNTSU9OLUlE?fFHwy6C8Av/Kgg3R3eoJCiPmZD0A&; _sm_au_d=1; __cfduid=d5d5d15facb71928827f0f28a5a7f89d41497430565; safedog-flow-item=950EAE0AA91A04702693C8FD2F7E4301; _zk_sc_tc2=1] failed
+2017-06-14T11:58:59+0000 [CowrieTelnetTransport,53324,192.3.244.150] Warning: state changed and new state returned
+2017-06-14T11:59:00+0000 [CowrieTelnetTransport,53324,192.3.244.150] login attempt: 810
+2017-06-14T11:59:00+0000 [CowrieTelnetTransport,53324,192.3.244.150] login return, expect: [CONNECT httpbin.org:443 HTTP/1.1/Host: httpbin.org:443]
