@@ -2238,3 +2238,106 @@
 2017-06-14T12:04:28+0000 [CowrieTelnetTransport,53344,114.223.77.161] Command found: /bin/busybox dd if=/bin/busybox bs=22 count=1
 2017-06-14T12:04:28+0000 [CowrieTelnetTransport,53344,114.223.77.161] Command found: /bin/busybox cat /bin/busybox
 2017-06-14T12:04:28+0000 [CowrieTelnetTransport,53344,114.223.77.161] Command found: cat /bin/busybox
+2017-06-14T12:05:28+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 192.187.100.154:56146 (10.8.41.81:2223) [session: TT53350]
+2017-06-14T12:05:30+0000 [CowrieTelnetTransport,53350,192.187.100.154] login attempt: 37
+2017-06-14T12:05:30+0000 [CowrieTelnetTransport,53350,192.187.100.154] login return, expect: [GET http://www.bing.com/ HTTP/1.1/Host: www.bing.com]
+2017-06-14T12:05:32+0000 [CowrieTelnetTransport,53350,192.187.100.154] login attempt [GET http://www.bing.com/ HTTP/1.1/Host: www.bing.com] succeeded
+2017-06-14T12:05:34+0000 [CowrieTelnetTransport,53350,192.187.100.154] Opening TTY Log: log/tty/20170614-120534-None-53350i.log
+2017-06-14T12:05:34+0000 [CowrieTelnetTransport,53350,192.187.100.154] Warning: state changed and new state returned
+2017-06-14T12:05:34+0000 [CowrieTelnetTransport,53350,192.187.100.154] CMD: Proxy-Connection: Keep-Alive
+2017-06-14T12:05:34+0000 [CowrieTelnetTransport,53350,192.187.100.154] Command not found: Proxy-Connection: Keep-Alive
+2017-06-14T12:05:34+0000 [CowrieTelnetTransport,53350,192.187.100.154] CMD: User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.7.5) Gecko/20060127 Netscape/8.1
+2017-06-14T12:05:34+0000 [CowrieTelnetTransport,53350,192.187.100.154] Command not found: User-Agent: Mozilla/5.0 Windows
+2017-06-14T12:05:34+0000 [CowrieTelnetTransport,53350,192.187.100.154] Command not found: U
+2017-06-14T12:05:34+0000 [CowrieTelnetTransport,53350,192.187.100.154] Command not found: Windows NT 5.1
+2017-06-14T12:05:34+0000 [CowrieTelnetTransport,53350,192.187.100.154] Command not found: en-US
+2017-06-14T12:05:34+0000 [CowrieTelnetTransport,53350,192.187.100.154] Command not found: rv:1.7.5 Gecko/20060127 Netscape/8.1
+2017-06-14T12:05:34+0000 [CowrieTelnetTransport,53350,192.187.100.154] CMD: Referer: http://www.google.pl/search?q=www.bing.com%20microsoft%2Ecom
+2017-06-14T12:05:34+0000 [CowrieTelnetTransport,53350,192.187.100.154] Command not found: Referer: http://www.google.pl/search?q=www.bing.com % 20microsoft % 2Ecom
+2017-06-14T12:05:34+0000 [CowrieTelnetTransport,53350,192.187.100.154] CMD: Accept: text/html, application/xml;q=0.9, application/xhtml+xml, image/png, image/webp, image/jpeg, image/gif, image/x-xbitmap, */*;q=0.1
+2017-06-14T12:05:34+0000 [CowrieTelnetTransport,53350,192.187.100.154] Command not found: Accept: text/html , application/xml
+2017-06-14T12:05:34+0000 [CowrieTelnetTransport,53350,192.187.100.154] Command not found: q=0.9 , application/xhtml+xml , image/png , image/webp , image/jpeg , image/gif , image/x-xbitmap , */*
+2017-06-14T12:05:34+0000 [CowrieTelnetTransport,53350,192.187.100.154] Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/log.py", line 103, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/log.py", line 86, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 122, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 85, in callWithContext
+	    return func(*args,**kw)
+	--- <exception caught here> ---
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/posixbase.py", line 597, in _doReadOrWrite
+	    why = selectable.doRead()
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 208, in doRead
+	    return self._dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 214, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/telnet.py", line 636, in dataReceived
+	    self.applicationDataReceived(b''.join(appDataBuffer))
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/telnet.py", line 988, in applicationDataReceived
+	    self.protocol.dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/protocols/basic.py", line 571, in dataReceived
+	    why = self.lineReceived(line)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/telnet.py", line 1100, in lineReceived
+	    newState = getattr(self, "telnet_" + oldState)(line)
+	  File "/home/cowrie/cowrie/cowrie/telnet/transport.py", line 142, in telnet_Command
+	    self.transport.protocol.dataReceived(command+'\r')
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/telnet.py", line 1035, in dataReceived
+	    self.protocol.dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie/insults/insults.py", line 112, in dataReceived
+	    insults.ServerProtocol.dataReceived(self, data)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/insults/insults.py", line 537, in dataReceived
+	    self.terminalProtocol.keystrokeReceived(ch, None)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/recvline.py", line 225, in keystrokeReceived
+	    m()
+	  File "/home/cowrie/cowrie/cowrie/core/protocol.py", line 353, in handle_RETURN
+	    return recvline.RecvLine.handle_RETURN(self)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/recvline.py", line 292, in handle_RETURN
+	    self.lineReceived(line)
+	  File "/home/cowrie/cowrie/cowrie/core/protocol.py", line 187, in lineReceived
+	    self.cmdstack[-1].lineReceived(line)
+	  File "/home/cowrie/cowrie/cowrie/core/honeypot.py", line 246, in lineReceived
+	    self.runCommand()
+	  File "/home/cowrie/cowrie/cowrie/core/honeypot.py", line 351, in runCommand
+	    runOrPrompt()
+	  File "/home/cowrie/cowrie/cowrie/core/honeypot.py", line 257, in runOrPrompt
+	    self.runCommand()
+	  File "/home/cowrie/cowrie/cowrie/core/honeypot.py", line 351, in runCommand
+	    runOrPrompt()
+	  File "/home/cowrie/cowrie/cowrie/core/honeypot.py", line 257, in runOrPrompt
+	    self.runCommand()
+	  File "/home/cowrie/cowrie/cowrie/core/honeypot.py", line 307, in runCommand
+	    if not cmd['command']:
+	exceptions.KeyError: 'command'
+	
+2017-06-14T12:05:34+0000 [CowrieTelnetTransport,53350,192.187.100.154] Closing TTY Log: log/tty/20170614-120534-None-53350i.log after 0 seconds
+2017-06-14T12:05:34+0000 [CowrieTelnetTransport,53350,192.187.100.154] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <type 'exceptions.KeyError'>: 'command'
+	]
+2017-06-14T12:05:34+0000 [CowrieTelnetTransport,53350,192.187.100.154] Connection lost after 5 seconds
+2017-06-14T12:05:34+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 192.187.100.154:56263 (10.8.41.81:2223) [session: TT53351]
+2017-06-14T12:05:34+0000 [CowrieTelnetTransport,53351,192.187.100.154] Connection lost after 0 seconds
+2017-06-14T12:05:34+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 192.187.100.154:56270 (10.8.41.81:2223) [session: TT53352]
+2017-06-14T12:05:34+0000 [CowrieTelnetTransport,53352,192.187.100.154] Connection lost after 0 seconds
+2017-06-14T12:05:34+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 192.187.100.154:56277 (10.8.41.81:2223) [session: TT53353]
+2017-06-14T12:05:35+0000 [CowrieTelnetTransport,53353,192.187.100.154] login attempt: 38
+2017-06-14T12:05:35+0000 [CowrieTelnetTransport,53353,192.187.100.154] login return, expect: [GET http://www.bing.com/ HTTP/1.1/Host: www.bing.com]
+2017-06-14T12:05:37+0000 [CowrieTelnetTransport,53353,192.187.100.154] login attempt [CONNECT 204.79.197.200:80 HTTP/1.0/] failed
+2017-06-14T12:05:37+0000 [CowrieTelnetTransport,53353,192.187.100.154] Warning: state changed and new state returned
+2017-06-14T12:05:42+0000 [CowrieTelnetTransport,53353,192.187.100.154] Connection lost after 7 seconds
+2017-06-14T12:05:48+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 91.197.235.12:46845 (10.8.41.81:2222) [session: a96ff7e9]
+2017-06-14T12:05:48+0000 [HoneyPotSSHTransport,29927,91.197.235.12] Remote SSH version: SSH-2.0-ssh2js0.3.6
+2017-06-14T12:05:48+0000 [HoneyPotSSHTransport,29927,91.197.235.12] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-06-14T12:05:48+0000 [HoneyPotSSHTransport,29927,91.197.235.12] outgoing: '3des-cbc' 'hmac-sha1' 'none'
+2017-06-14T12:05:48+0000 [HoneyPotSSHTransport,29927,91.197.235.12] incoming: '3des-cbc' 'hmac-sha1' 'none'
+2017-06-14T12:05:48+0000 [HoneyPotSSHTransport,29927,91.197.235.12] NEW KEYS
+2017-06-14T12:05:48+0000 [HoneyPotSSHTransport,29927,91.197.235.12] starting service 'ssh-userauth'
+2017-06-14T12:05:48+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,29927,91.197.235.12] '1111' trying auth 'password'
+2017-06-14T12:05:48+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,29927,91.197.235.12] login attempt: 19
+2017-06-14T12:05:48+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,29927,91.197.235.12] login return, expect: [0/]
+2017-06-14T12:05:51+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,29927,91.197.235.12] login attempt [1111/1111] failed
+2017-06-14T12:05:52+0000 [-] '1111' failed auth 'password'
+2017-06-14T12:05:52+0000 [-] unauthorized login: 
+2017-06-14T12:05:52+0000 [HoneyPotSSHTransport,29927,91.197.235.12] connection lost
+2017-06-14T12:05:52+0000 [HoneyPotSSHTransport,29927,91.197.235.12] Connection lost after 3 seconds
