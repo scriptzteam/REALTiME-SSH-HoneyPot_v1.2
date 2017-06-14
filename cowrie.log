@@ -2067,3 +2067,75 @@
 2017-06-14T05:25:58+0000 [CowrieTelnetTransport,52512,125.210.187.99] login return, expect: [root/000]
 2017-06-14T05:26:00+0000 [CowrieTelnetTransport,52512,125.210.187.99] login attempt [guest/12345] failed
 2017-06-14T05:26:00+0000 [CowrieTelnetTransport,52512,125.210.187.99] Warning: state changed and new state returned
+2017-06-14T05:26:05+0000 [CowrieTelnetTransport,52512,125.210.187.99] Connection lost after 13 seconds
+2017-06-14T05:26:12+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 113.195.145.52:59658 (10.8.41.81:2222) [session: 6315bc00]
+2017-06-14T05:26:13+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 113.195.145.52:40341 (10.8.41.81:2222) [session: e7015edc]
+2017-06-14T05:26:13+0000 [HoneyPotSSHTransport,28928,113.195.145.52] Got remote error, code 11
+	reason: 
+2017-06-14T05:26:13+0000 [HoneyPotSSHTransport,28928,113.195.145.52] connection lost
+2017-06-14T05:26:13+0000 [HoneyPotSSHTransport,28928,113.195.145.52] Connection lost after 0 seconds
+2017-06-14T05:26:22+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 113.195.145.52:33321 (10.8.41.81:2222) [session: aeafcf75]
+2017-06-14T05:26:37+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 113.175.105.106:64818 (10.8.41.81:2222) [session: b7dee814]
+2017-06-14T05:26:37+0000 [HoneyPotSSHTransport,28930,113.175.105.106] Remote SSH version: SSH-2.0-5.35 FlowSsh: Bitvise SSH Client (Tunnelier) 6.41 - BvSsh
+2017-06-14T05:26:37+0000 [HoneyPotSSHTransport,28930,113.175.105.106] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-06-14T05:26:37+0000 [HoneyPotSSHTransport,28930,113.175.105.106] outgoing: 'aes256-ctr' 'hmac-sha1' 'none'
+2017-06-14T05:26:37+0000 [HoneyPotSSHTransport,28930,113.175.105.106] incoming: 'aes256-ctr' 'hmac-sha1' 'none'
+2017-06-14T05:26:38+0000 [HoneyPotSSHTransport,28930,113.175.105.106] NEW KEYS
+2017-06-14T05:26:38+0000 [HoneyPotSSHTransport,28930,113.175.105.106] starting service 'ssh-userauth'
+2017-06-14T05:26:38+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,28930,113.175.105.106] 'user' trying auth 'password'
+2017-06-14T05:26:38+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,28930,113.175.105.106] login attempt: 4
+2017-06-14T05:26:38+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,28930,113.175.105.106] login return, expect: [user/1234]
+2017-06-14T05:26:41+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,28930,113.175.105.106] login attempt [user/1234] succeeded
+2017-06-14T05:26:42+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,28930,113.175.105.106] 'user' authenticated with 'password'
+2017-06-14T05:26:42+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,28930,113.175.105.106] starting service 'ssh-connection'
+2017-06-14T05:26:47+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,28930,113.175.105.106] got channel 'direct-tcpip' request
+2017-06-14T05:26:47+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,28930,113.175.105.106] direct-tcp connection request to mesu.apple.com:80 from 192.168.1.105:58377
+2017-06-14T05:26:47+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,28930,113.175.105.106] direct-tcp forward to mesu.apple.com:80 with data 'GET /assets/com_apple_MobileAsset_SafariCloudHistoryConfiguration/com_apple_MobileAsset_SafariCloudHistoryConfiguration.xml HTTP/1.1\r\nHost: mesu.apple.com\r\nAccept: */*\r\nIf-Modified-Since: Fri, 18 Mar 2016 15:53:03 GMT\r\nUser-Agent: MobileAsset/1.1\r\nAccept-Language: en-gb\r\nAccept-Encoding: gzip, deflate\r\nConnection: keep-alive\r\n\r\n'
+2017-06-14T05:26:47+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,28930,113.175.105.106] failed to connect: Connection refused
+2017-06-14T05:26:47+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,28930,113.175.105.106] sending close 0
+2017-06-14T05:26:47+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,28930,113.175.105.106] got channel 'direct-tcpip' request
+2017-06-14T05:26:47+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,28930,113.175.105.106] direct-tcp connection request to bit.ly:80 from 192.168.1.105:58378
+2017-06-14T05:26:48+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,28930,113.175.105.106] remote close
+2017-06-14T05:26:48+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,28930,113.175.105.106] got channel 'direct-tcpip' request
+2017-06-14T05:26:48+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,28930,113.175.105.106] direct-tcp connection request to mesu.apple.com:80 from 192.168.1.105:58379
+2017-06-14T05:26:48+0000 [SSHChannel None (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,28930,113.175.105.106] direct-tcp forward to bit.ly:80 with data 'GET /2qjdqwH HTTP/1.1\r\nHost: bit.ly\r\nConnection: keep-alive\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\r\nUser-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13G35 Safari/601.1\r\nAccept-Language: en-gb\r\nReferer: https://yahoo.com\r\nAccept-Encoding: gzip, deflate\r\n\r\n'
+2017-06-14T05:26:48+0000 [SSHChannel None (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,28930,113.175.105.106] failed to connect: Connection refused
+2017-06-14T05:26:48+0000 [SSHChannel None (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,28930,113.175.105.106] sending close 1
+2017-06-14T05:26:48+0000 [SSHChannel None (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,28930,113.175.105.106] direct-tcp forward to mesu.apple.com:80 with data 'GET /assets/com_apple_MobileAsset_SafariCloudHistoryConfiguration/com_apple_MobileAsset_SafariCloudHistoryConfiguration.xml HTTP/1.1\r\nHost: mesu.apple.com\r\nAccept: */*\r\nIf-Modified-Since: Fri, 18 Mar 2016 15:53:03 GMT\r\nUser-Agent: MobileAsset/1.1\r\nAccept-Language: en-gb\r\nAccept-Encoding: gzip, deflate\r\nConnection: keep-alive\r\n\r\n'
+2017-06-14T05:26:48+0000 [SSHChannel None (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,28930,113.175.105.106] failed to connect: Connection refused
+2017-06-14T05:26:48+0000 [SSHChannel None (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,28930,113.175.105.106] sending close 2
+2017-06-14T05:26:49+0000 [SSHChannel None (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,28930,113.175.105.106] remote close
+2017-06-14T05:26:49+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,28930,113.175.105.106] got channel 'direct-tcpip' request
+2017-06-14T05:26:49+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,28930,113.175.105.106] direct-tcp connection request to bit.ly:80 from 192.168.1.105:58380
+2017-06-14T05:26:49+0000 [SSHChannel None (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,28930,113.175.105.106] remote close
+2017-06-14T05:26:49+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,28930,113.175.105.106] got channel 'direct-tcpip' request
+2017-06-14T05:26:49+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,28930,113.175.105.106] direct-tcp connection request to mesu.apple.com:80 from 192.168.1.105:58381
+2017-06-14T05:26:49+0000 [SSHChannel None (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,28930,113.175.105.106] direct-tcp forward to bit.ly:80 with data 'GET /2qjdqwH HTTP/1.1\r\nHost: bit.ly\r\nConnection: keep-alive\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\r\nUser-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13G35 Safari/601.1\r\nAccept-Language: en-gb\r\nReferer: https://yahoo.com\r\nAccept-Encoding: gzip, deflate\r\n\r\n'
+2017-06-14T05:26:49+0000 [SSHChannel None (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,28930,113.175.105.106] failed to connect: Connection refused
+2017-06-14T05:26:49+0000 [SSHChannel None (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,28930,113.175.105.106] sending close 3
+2017-06-14T05:26:49+0000 [SSHChannel None (4) on SSHService 'ssh-connection' on HoneyPotSSHTransport,28930,113.175.105.106] direct-tcp forward to mesu.apple.com:80 with data 'GET /assets/com_apple_MobileAsset_SafariCloudHistoryConfiguration/com_apple_MobileAsset_SafariCloudHistoryConfiguration.xml HTTP/1.1\r\nHost: mesu.apple.com\r\nAccept: */*\r\nIf-Modified-Since: Fri, 18 Mar 2016 15:53:03 GMT\r\nUser-Agent: MobileAsset/1.1\r\nAccept-Language: en-gb\r\nAccept-Encoding: gzip, deflate\r\nConnection: keep-alive\r\n\r\n'
+2017-06-14T05:26:49+0000 [SSHChannel None (4) on SSHService 'ssh-connection' on HoneyPotSSHTransport,28930,113.175.105.106] failed to connect: Connection refused
+2017-06-14T05:26:49+0000 [SSHChannel None (4) on SSHService 'ssh-connection' on HoneyPotSSHTransport,28930,113.175.105.106] sending close 4
+2017-06-14T05:26:50+0000 [SSHChannel None (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,28930,113.175.105.106] remote close
+2017-06-14T05:26:50+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,28930,113.175.105.106] got channel 'direct-tcpip' request
+2017-06-14T05:26:50+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,28930,113.175.105.106] direct-tcp connection request to bit.ly:80 from 192.168.1.105:58382
+2017-06-14T05:26:50+0000 [SSHChannel None (4) on SSHService 'ssh-connection' on HoneyPotSSHTransport,28930,113.175.105.106] remote close
+2017-06-14T05:26:50+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,28930,113.175.105.106] got channel 'direct-tcpip' request
+2017-06-14T05:26:50+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,28930,113.175.105.106] direct-tcp connection request to mesu.apple.com:80 from 192.168.1.105:58383
+2017-06-14T05:26:50+0000 [SSHChannel None (5) on SSHService 'ssh-connection' on HoneyPotSSHTransport,28930,113.175.105.106] direct-tcp forward to bit.ly:80 with data 'GET /2qjdqwH HTTP/1.1\r\nHost: bit.ly\r\nConnection: keep-alive\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\r\nUser-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13G35 Safari/601.1\r\nAccept-Language: en-gb\r\nReferer: https://yahoo.com\r\nAccept-Encoding: gzip, deflate\r\n\r\n'
+2017-06-14T05:26:50+0000 [SSHChannel None (5) on SSHService 'ssh-connection' on HoneyPotSSHTransport,28930,113.175.105.106] failed to connect: Connection refused
+2017-06-14T05:26:50+0000 [SSHChannel None (5) on SSHService 'ssh-connection' on HoneyPotSSHTransport,28930,113.175.105.106] sending close 5
+2017-06-14T05:26:51+0000 [SSHChannel None (6) on SSHService 'ssh-connection' on HoneyPotSSHTransport,28930,113.175.105.106] direct-tcp forward to mesu.apple.com:80 with data 'GET /assets/com_apple_MobileAsset_SafariCloudHistoryConfiguration/com_apple_MobileAsset_SafariCloudHistoryConfiguration.xml HTTP/1.1\r\nHost: mesu.apple.com\r\nAccept: */*\r\nIf-Modified-Since: Fri, 18 Mar 2016 15:53:03 GMT\r\nUser-Agent: MobileAsset/1.1\r\nAccept-Language: en-gb\r\nAccept-Encoding: gzip, deflate\r\nConnection: keep-alive\r\n\r\n'
+2017-06-14T05:26:51+0000 [SSHChannel None (6) on SSHService 'ssh-connection' on HoneyPotSSHTransport,28930,113.175.105.106] failed to connect: Connection refused
+2017-06-14T05:26:51+0000 [SSHChannel None (6) on SSHService 'ssh-connection' on HoneyPotSSHTransport,28930,113.175.105.106] sending close 6
+2017-06-14T05:26:51+0000 [SSHChannel None (5) on SSHService 'ssh-connection' on HoneyPotSSHTransport,28930,113.175.105.106] remote close
+2017-06-14T05:26:51+0000 [SSHChannel None (6) on SSHService 'ssh-connection' on HoneyPotSSHTransport,28930,113.175.105.106] remote close
+2017-06-14T05:26:53+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 129.146.31.194:36380 (10.8.41.81:2222) [session: 27f6be03]
+2017-06-14T05:26:54+0000 [HoneyPotSSHTransport,28931,129.146.31.194] Remote SSH version: SSH-2.0-libssh2_1.6.0
+2017-06-14T05:26:54+0000 [HoneyPotSSHTransport,28931,129.146.31.194] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-06-14T05:26:54+0000 [HoneyPotSSHTransport,28931,129.146.31.194] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-14T05:26:54+0000 [HoneyPotSSHTransport,28931,129.146.31.194] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-14T05:26:58+0000 [HoneyPotSSHTransport,28931,129.146.31.194] NEW KEYS
+2017-06-14T05:26:58+0000 [HoneyPotSSHTransport,28931,129.146.31.194] starting service 'ssh-userauth'
+2017-06-14T05:26:58+0000 [HoneyPotSSHTransport,28931,129.146.31.194] connection lost
+2017-06-14T05:26:58+0000 [HoneyPotSSHTransport,28931,129.146.31.194] Connection lost after 4 seconds
