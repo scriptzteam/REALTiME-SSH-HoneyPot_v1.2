@@ -5114,3 +5114,42 @@
 2017-06-14T22:46:36+0000 [CowrieTelnetTransport,55091,109.236.83.184] login attempt [shell/sh] failed
 2017-06-14T22:46:36+0000 [CowrieTelnetTransport,55091,109.236.83.184] Warning: state changed and new state returned
 2017-06-14T22:46:59+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 109.236.83.181:47376 (10.8.41.81:2223) [session: TT55092]
+2017-06-14T22:47:03+0000 [CowrieTelnetTransport,55092,109.236.83.181] login attempt: 17590
+2017-06-14T22:47:03+0000 [CowrieTelnetTransport,55092,109.236.83.181] login return, expect: [default/]
+2017-06-14T22:47:05+0000 [CowrieTelnetTransport,55092,109.236.83.181] login attempt [mother/fucker] failed
+2017-06-14T22:47:05+0000 [CowrieTelnetTransport,55092,109.236.83.181] Warning: state changed and new state returned
+2017-06-14T22:47:05+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 103.207.39.12:55416 (10.8.41.81:2222) [session: d074d981]
+2017-06-14T22:47:05+0000 [CowrieTelnetTransport,55092,109.236.83.181] login attempt: 17591
+2017-06-14T22:47:05+0000 [CowrieTelnetTransport,55092,109.236.83.181] login return, expect: [default/]
+2017-06-14T22:47:08+0000 [CowrieTelnetTransport,55092,109.236.83.181] login attempt [enable/system] failed
+2017-06-14T22:47:08+0000 [CowrieTelnetTransport,55092,109.236.83.181] Warning: state changed and new state returned
+2017-06-14T22:47:08+0000 [CowrieTelnetTransport,55092,109.236.83.181] login attempt: 17592
+2017-06-14T22:47:08+0000 [CowrieTelnetTransport,55092,109.236.83.181] login return, expect: [default/]
+2017-06-14T22:47:10+0000 [CowrieTelnetTransport,55092,109.236.83.181] login attempt [shell/sh] failed
+2017-06-14T22:47:11+0000 [CowrieTelnetTransport,55092,109.236.83.181] Warning: state changed and new state returned
+2017-06-14T22:47:11+0000 [HoneyPotSSHTransport,31573,103.207.39.12] Remote SSH version: SSH-2.0-Granados-1.0
+2017-06-14T22:47:11+0000 [HoneyPotSSHTransport,31573,103.207.39.12] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-dss'
+2017-06-14T22:47:11+0000 [HoneyPotSSHTransport,31573,103.207.39.12] outgoing: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-06-14T22:47:11+0000 [HoneyPotSSHTransport,31573,103.207.39.12] incoming: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-06-14T22:47:12+0000 [HoneyPotSSHTransport,31573,103.207.39.12] NEW KEYS
+2017-06-14T22:47:13+0000 [HoneyPotSSHTransport,31573,103.207.39.12] starting service 'ssh-userauth'
+2017-06-14T22:47:13+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,31573,103.207.39.12] 'user' trying auth 'password'
+2017-06-14T22:47:14+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,31573,103.207.39.12] login attempt: 16
+2017-06-14T22:47:14+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,31573,103.207.39.12] login return, expect: [user/1234]
+2017-06-14T22:47:17+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,31573,103.207.39.12] login attempt [user/1234] succeeded
+2017-06-14T22:47:19+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,31573,103.207.39.12] 'user' authenticated with 'password'
+2017-06-14T22:47:19+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,31573,103.207.39.12] starting service 'ssh-connection'
+2017-06-14T22:47:19+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,31573,103.207.39.12] got channel 'direct-tcpip' request
+2017-06-14T22:47:19+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,31573,103.207.39.12] direct-tcp connection request to 64.182.208.184:80 from localhost:3418
+2017-06-14T22:47:19+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,31573,103.207.39.12] direct-tcp forward to 64.182.208.184:80 with data 'GET / HTTP/1.0\r\n\r\n'
+2017-06-14T22:47:19+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,31573,103.207.39.12] failed to connect: Connection refused
+2017-06-14T22:47:19+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,31573,103.207.39.12] sending close 0
+2017-06-14T22:47:20+0000 [HoneyPotSSHTransport,31573,103.207.39.12] Got remote error, code 0
+	reason: 
+2017-06-14T22:47:20+0000 [HoneyPotSSHTransport,31573,103.207.39.12] avatar user logging out
+2017-06-14T22:47:20+0000 [HoneyPotSSHTransport,31573,103.207.39.12] connection lost
+2017-06-14T22:47:20+0000 [HoneyPotSSHTransport,31573,103.207.39.12] Connection lost after 14 seconds
+2017-06-14T22:47:45+0000 [CowrieTelnetTransport,55089,187.54.170.34] Closing TTY Log: log/tty/20170614-224540-None-55089i.log after 124 seconds
+2017-06-14T22:47:45+0000 [CowrieTelnetTransport,55089,187.54.170.34] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-06-14T22:47:45+0000 [CowrieTelnetTransport,55089,187.54.170.34] Connection lost after 130 seconds
