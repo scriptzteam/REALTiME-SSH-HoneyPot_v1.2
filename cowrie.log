@@ -1577,3 +1577,61 @@
 2017-06-15T02:47:31+0000 [HoneyPotSSHTransport,32151,113.195.145.52] avatar root logging out
 2017-06-15T02:47:31+0000 [HoneyPotSSHTransport,32151,113.195.145.52] connection lost
 2017-06-15T02:47:31+0000 [HoneyPotSSHTransport,32151,113.195.145.52] Connection lost after 4 seconds
+2017-06-15T02:48:08+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 113.195.145.52:19793 (10.8.41.81:2222) [session: 8e81849d]
+2017-06-15T02:48:08+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 60.171.135.7:51217 (10.8.41.81:2223) [session: TT55919]
+2017-06-15T02:48:08+0000 [HoneyPotSSHTransport,32152,113.195.145.52] Remote SSH version: SSH-2.0-PUTTY
+2017-06-15T02:48:08+0000 [HoneyPotSSHTransport,32152,113.195.145.52] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-06-15T02:48:08+0000 [HoneyPotSSHTransport,32152,113.195.145.52] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-15T02:48:08+0000 [HoneyPotSSHTransport,32152,113.195.145.52] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-15T02:48:09+0000 [CowrieTelnetTransport,55919,60.171.135.7] login attempt: 3
+2017-06-15T02:48:09+0000 [CowrieTelnetTransport,55919,60.171.135.7] login return, expect: [admin/1234]
+2017-06-15T02:48:11+0000 [CowrieTelnetTransport,55919,60.171.135.7] login attempt [admin/password] failed
+2017-06-15T02:48:11+0000 [CowrieTelnetTransport,55919,60.171.135.7] Warning: state changed and new state returned
+2017-06-15T02:48:11+0000 [HoneyPotSSHTransport,32152,113.195.145.52] NEW KEYS
+2017-06-15T02:48:11+0000 [HoneyPotSSHTransport,32152,113.195.145.52] starting service 'ssh-userauth'
+2017-06-15T02:48:12+0000 [CowrieTelnetTransport,55919,60.171.135.7] Connection lost after 3 seconds
+2017-06-15T02:48:12+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,32152,113.195.145.52] 'root' trying auth 'none'
+2017-06-15T02:48:13+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,32152,113.195.145.52] 'root' authenticated with 'none'
+2017-06-15T02:48:13+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,32152,113.195.145.52] starting service 'ssh-connection'
+2017-06-15T02:48:14+0000 [HoneyPotSSHTransport,32152,113.195.145.52] Got remote error, code 11
+	reason: 
+2017-06-15T02:48:14+0000 [HoneyPotSSHTransport,32152,113.195.145.52] avatar root logging out
+2017-06-15T02:48:14+0000 [HoneyPotSSHTransport,32152,113.195.145.52] connection lost
+2017-06-15T02:48:14+0000 [HoneyPotSSHTransport,32152,113.195.145.52] Connection lost after 6 seconds
+2017-06-15T02:48:19+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 220.132.176.94:59779 (10.8.41.81:2223) [session: TT55920]
+2017-06-15T02:48:20+0000 [CowrieTelnetTransport,55920,220.132.176.94] first time for 220.132.176.94, need: 1
+2017-06-15T02:48:20+0000 [CowrieTelnetTransport,55920,220.132.176.94] login attempt: 1
+2017-06-15T02:48:23+0000 [CowrieTelnetTransport,55920,220.132.176.94] login attempt [root/klv123] succeeded
+2017-06-15T02:48:25+0000 [CowrieTelnetTransport,55920,220.132.176.94] Opening TTY Log: log/tty/20170615-024825-None-55920i.log
+2017-06-15T02:48:25+0000 [CowrieTelnetTransport,55920,220.132.176.94] Warning: state changed and new state returned
+2017-06-15T02:48:25+0000 [CowrieTelnetTransport,55918,200.24.196.36] Closing TTY Log: log/tty/20170615-024639-None-55918i.log after 105 seconds
+2017-06-15T02:48:25+0000 [CowrieTelnetTransport,55918,200.24.196.36] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-06-15T02:48:25+0000 [CowrieTelnetTransport,55918,200.24.196.36] Connection lost after 115 seconds
+2017-06-15T02:48:25+0000 [CowrieTelnetTransport,55920,220.132.176.94] CMD: enable
+2017-06-15T02:48:25+0000 [CowrieTelnetTransport,55920,220.132.176.94] Command found: enable 
+2017-06-15T02:48:25+0000 [CowrieTelnetTransport,55920,220.132.176.94] Reading txtcmd from "txtcmds/bin/enable"
+2017-06-15T02:48:25+0000 [CowrieTelnetTransport,55920,220.132.176.94] CMD: shell
+2017-06-15T02:48:25+0000 [CowrieTelnetTransport,55920,220.132.176.94] Command not found: shell
+2017-06-15T02:48:25+0000 [CowrieTelnetTransport,55920,220.132.176.94] CMD: sh
+2017-06-15T02:48:25+0000 [CowrieTelnetTransport,55920,220.132.176.94] Command found: sh 
+2017-06-15T02:48:25+0000 [CowrieTelnetTransport,55920,220.132.176.94] CMD: cat /proc/mounts; /bin/busybox QUOTM
+2017-06-15T02:48:25+0000 [CowrieTelnetTransport,55920,220.132.176.94] Command found: cat /proc/mounts
+2017-06-15T02:48:25+0000 [CowrieTelnetTransport,55920,220.132.176.94] Command found: /bin/busybox QUOTM
+2017-06-15T02:48:26+0000 [CowrieTelnetTransport,55920,220.132.176.94] CMD: cd /dev/shm; cat .s || cp /bin/echo .s; /bin/busybox QUOTM
+2017-06-15T02:48:26+0000 [CowrieTelnetTransport,55920,220.132.176.94] Command found: cd /dev/shm
+2017-06-15T02:48:26+0000 [CowrieTelnetTransport,55920,220.132.176.94] Command found: cat .s
+2017-06-15T02:48:26+0000 [CowrieTelnetTransport,55920,220.132.176.94] Command found: cp /bin/echo .s
+2017-06-15T02:48:26+0000 [CowrieTelnetTransport,55920,220.132.176.94] Command found: /bin/busybox QUOTM
+2017-06-15T02:48:26+0000 [CowrieTelnetTransport,55920,220.132.176.94] CMD: nc; wget; /bin/busybox QUOTM
+2017-06-15T02:48:26+0000 [CowrieTelnetTransport,55920,220.132.176.94] Command not found: nc
+2017-06-15T02:48:26+0000 [CowrieTelnetTransport,55920,220.132.176.94] Command found: wget 
+2017-06-15T02:48:26+0000 [CowrieTelnetTransport,55920,220.132.176.94] Command found: /bin/busybox QUOTM
+2017-06-15T02:48:26+0000 [CowrieTelnetTransport,55920,220.132.176.94] CMD: dd bs=52 count=1 if=.s || cat .s
+2017-06-15T02:48:26+0000 [CowrieTelnetTransport,55920,220.132.176.94] Command not found: dd bs=52 count=1 if=.s
+2017-06-15T02:48:26+0000 [CowrieTelnetTransport,55920,220.132.176.94] Command found: cat /dev/shm/.s
+2017-06-15T02:48:27+0000 [CowrieTelnetTransport,55920,220.132.176.94] CMD: /bin/busybox QUOTM
+2017-06-15T02:48:27+0000 [CowrieTelnetTransport,55920,220.132.176.94] Command found: /bin/busybox QUOTM
+2017-06-15T02:48:40+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 113.195.145.52:31529 (10.8.41.81:2222) [session: 928cd2dc]
+2017-06-15T02:48:48+0000 [HoneyPotSSHTransport,32153,113.195.145.52] connection lost
+2017-06-15T02:48:48+0000 [HoneyPotSSHTransport,32153,113.195.145.52] Connection lost after 7 seconds
