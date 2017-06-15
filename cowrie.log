@@ -529,3 +529,74 @@
 2017-06-15T02:20:56+0000 [CowrieTelnetTransport,55905,178.47.97.167] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
 	]
 2017-06-15T02:20:56+0000 [CowrieTelnetTransport,55905,178.47.97.167] Connection lost after 126 seconds
+2017-06-15T02:21:03+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 113.195.145.52:60328 (10.8.41.81:2222) [session: f532f761]
+2017-06-15T02:21:04+0000 [HoneyPotSSHTransport,32109,113.195.145.52] Remote SSH version: SSH-2.0-PUTTY
+2017-06-15T02:21:04+0000 [HoneyPotSSHTransport,32109,113.195.145.52] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-06-15T02:21:04+0000 [HoneyPotSSHTransport,32109,113.195.145.52] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-15T02:21:04+0000 [HoneyPotSSHTransport,32109,113.195.145.52] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-15T02:21:09+0000 [HoneyPotSSHTransport,32109,113.195.145.52] connection lost
+2017-06-15T02:21:09+0000 [HoneyPotSSHTransport,32109,113.195.145.52] Connection lost after 6 seconds
+2017-06-15T02:21:12+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 113.195.145.52:28240 (10.8.41.81:2222) [session: ed53513e]
+2017-06-15T02:21:13+0000 [HoneyPotSSHTransport,32110,113.195.145.52] Remote SSH version: SSH-2.0-PUTTY
+2017-06-15T02:21:13+0000 [HoneyPotSSHTransport,32110,113.195.145.52] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-06-15T02:21:13+0000 [HoneyPotSSHTransport,32110,113.195.145.52] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-15T02:21:13+0000 [HoneyPotSSHTransport,32110,113.195.145.52] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-15T02:21:14+0000 [HoneyPotSSHTransport,32110,113.195.145.52] NEW KEYS
+2017-06-15T02:21:15+0000 [HoneyPotSSHTransport,32110,113.195.145.52] starting service 'ssh-userauth'
+2017-06-15T02:21:19+0000 [HoneyPotSSHTransport,32110,113.195.145.52] Got remote error, code 11
+	reason: 
+2017-06-15T02:21:19+0000 [HoneyPotSSHTransport,32110,113.195.145.52] connection lost
+2017-06-15T02:21:19+0000 [HoneyPotSSHTransport,32110,113.195.145.52] Connection lost after 7 seconds
+2017-06-15T02:21:31+0000 [CowrieTelnetTransport,55906,70.45.145.51] Connection lost after 108 seconds
+2017-06-15T02:21:36+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 178.46.40.167:60271 (10.8.41.81:2223) [session: TT55907]
+2017-06-15T02:21:37+0000 [CowrieTelnetTransport,55907,178.46.40.167] first time for 178.46.40.167, need: 1
+2017-06-15T02:21:37+0000 [CowrieTelnetTransport,55907,178.46.40.167] login attempt: 1
+2017-06-15T02:21:39+0000 [CowrieTelnetTransport,55907,178.46.40.167] login attempt [root/000] succeeded
+2017-06-15T02:21:40+0000 [CowrieTelnetTransport,55907,178.46.40.167] Opening TTY Log: log/tty/20170615-022140-None-55907i.log
+2017-06-15T02:21:40+0000 [CowrieTelnetTransport,55907,178.46.40.167] Warning: state changed and new state returned
+2017-06-15T02:21:41+0000 [CowrieTelnetTransport,55907,178.46.40.167] CMD: enable
+2017-06-15T02:21:41+0000 [CowrieTelnetTransport,55907,178.46.40.167] Command found: enable 
+2017-06-15T02:21:41+0000 [CowrieTelnetTransport,55907,178.46.40.167] Reading txtcmd from "txtcmds/bin/enable"
+2017-06-15T02:21:41+0000 [CowrieTelnetTransport,55907,178.46.40.167] CMD: system
+2017-06-15T02:21:41+0000 [CowrieTelnetTransport,55907,178.46.40.167] Command not found: system
+2017-06-15T02:21:41+0000 [CowrieTelnetTransport,55907,178.46.40.167] CMD: shell
+2017-06-15T02:21:41+0000 [CowrieTelnetTransport,55907,178.46.40.167] Command not found: shell
+2017-06-15T02:21:41+0000 [CowrieTelnetTransport,55907,178.46.40.167] CMD: sh
+2017-06-15T02:21:41+0000 [CowrieTelnetTransport,55907,178.46.40.167] Command found: sh 
+2017-06-15T02:21:41+0000 [CowrieTelnetTransport,55907,178.46.40.167] CMD:  /bin/busybox wget; /bin/busybox 81c46036wget; /bin/busybox echo -ne '\x0181c46036\x7f'; /bin/busybox printf '\00281c46036\177'; /bin/echo -ne '\x0381c46036\x7f'; /usr/bin/printf '\00481c46036\177'; /bin/busybox tftp; /bin/busybox 81c46036tftp;
+2017-06-15T02:21:41+0000 [CowrieTelnetTransport,55907,178.46.40.167] Command found: /bin/busybox wget
+2017-06-15T02:21:41+0000 [CowrieTelnetTransport,55907,178.46.40.167] Command found: wget
+2017-06-15T02:21:41+0000 [CowrieTelnetTransport,55907,178.46.40.167] Command found: /bin/busybox 81c46036wget
+2017-06-15T02:21:41+0000 [CowrieTelnetTransport,55907,178.46.40.167] Command found: /bin/busybox echo -ne '\x0181c46036\x7f'
+2017-06-15T02:21:41+0000 [CowrieTelnetTransport,55907,178.46.40.167] Command found: echo -ne '\x0181c46036\x7f'
+2017-06-15T02:21:41+0000 [CowrieTelnetTransport,55907,178.46.40.167] Command found: /bin/busybox printf '\00281c46036\177'
+2017-06-15T02:21:41+0000 [CowrieTelnetTransport,55907,178.46.40.167] Command found: /bin/echo -ne '\x0381c46036\x7f'
+2017-06-15T02:21:41+0000 [CowrieTelnetTransport,55907,178.46.40.167] Command not found: /usr/bin/printf '\00481c46036\177'
+2017-06-15T02:21:41+0000 [CowrieTelnetTransport,55907,178.46.40.167] Command found: /bin/busybox tftp
+2017-06-15T02:21:41+0000 [CowrieTelnetTransport,55907,178.46.40.167] Command found: tftp
+2017-06-15T02:21:41+0000 [CowrieTelnetTransport,55907,178.46.40.167] Command found: /bin/busybox 81c46036tftp
+2017-06-15T02:21:41+0000 [CowrieTelnetTransport,55907,178.46.40.167] CMD:  /bin/busybox dd if=/bin/busybox bs=22 count=1 || /bin/busybox cat /bin/busybox
+2017-06-15T02:21:41+0000 [CowrieTelnetTransport,55907,178.46.40.167] Command found: /bin/busybox dd if=/bin/busybox bs=22 count=1
+2017-06-15T02:21:41+0000 [CowrieTelnetTransport,55907,178.46.40.167] Command found: /bin/busybox cat /bin/busybox
+2017-06-15T02:21:41+0000 [CowrieTelnetTransport,55907,178.46.40.167] Command found: cat /bin/busybox
+2017-06-15T02:21:45+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 113.195.145.52:14813 (10.8.41.81:2222) [session: 77e13def]
+2017-06-15T02:21:45+0000 [HoneyPotSSHTransport,32111,113.195.145.52] connection lost
+2017-06-15T02:21:45+0000 [HoneyPotSSHTransport,32111,113.195.145.52] Connection lost after 0 seconds
+2017-06-15T02:21:47+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 113.195.145.52:46467 (10.8.41.81:2222) [session: 22474955]
+2017-06-15T02:21:48+0000 [HoneyPotSSHTransport,32112,113.195.145.52] Remote SSH version: SSH-2.0-PUTTY
+2017-06-15T02:21:48+0000 [HoneyPotSSHTransport,32112,113.195.145.52] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-06-15T02:21:48+0000 [HoneyPotSSHTransport,32112,113.195.145.52] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-15T02:21:48+0000 [HoneyPotSSHTransport,32112,113.195.145.52] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-15T02:21:49+0000 [HoneyPotSSHTransport,32112,113.195.145.52] NEW KEYS
+2017-06-15T02:21:49+0000 [HoneyPotSSHTransport,32112,113.195.145.52] starting service 'ssh-userauth'
+2017-06-15T02:21:51+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,32112,113.195.145.52] 'root' trying auth 'none'
+2017-06-15T02:21:52+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,32112,113.195.145.52] 'root' authenticated with 'none'
+2017-06-15T02:21:52+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,32112,113.195.145.52] starting service 'ssh-connection'
+2017-06-15T02:21:52+0000 [HoneyPotSSHTransport,32112,113.195.145.52] Got remote error, code 11
+	reason: 
+2017-06-15T02:21:52+0000 [HoneyPotSSHTransport,32112,113.195.145.52] avatar root logging out
+2017-06-15T02:21:53+0000 [HoneyPotSSHTransport,32112,113.195.145.52] connection lost
+2017-06-15T02:21:53+0000 [HoneyPotSSHTransport,32112,113.195.145.52] Connection lost after 5 seconds
+2017-06-15T02:21:59+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 188.235.18.254:49822 (10.8.41.81:2223) [session: TT55908]
+2017-06-15T02:22:01+0000 [CowrieTelnetTransport,55908,188.235.18.254] login attempt: 15
+2017-06-15T02:22:01+0000 [CowrieTelnetTransport,55908,188.235.18.254] login return, expect: [GET http://check2.zennolab.com/proxy.php HTTP/1.1/Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8]
