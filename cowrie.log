@@ -503,3 +503,29 @@
 2017-06-15T02:19:58+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,32106,113.195.145.52] starting service 'ssh-connection'
 2017-06-15T02:19:59+0000 [CowrieTelnetTransport,55906,70.45.145.51] login attempt: 2
 2017-06-15T02:19:59+0000 [CowrieTelnetTransport,55906,70.45.145.51] login return, expect: [admin/1111]
+2017-06-15T02:20:01+0000 [CowrieTelnetTransport,55906,70.45.145.51] login attempt [root/root] failed
+2017-06-15T02:20:01+0000 [CowrieTelnetTransport,55906,70.45.145.51] Warning: state changed and new state returned
+2017-06-15T02:20:01+0000 [HoneyPotSSHTransport,32106,113.195.145.52] Got remote error, code 11
+	reason: 
+2017-06-15T02:20:01+0000 [HoneyPotSSHTransport,32106,113.195.145.52] avatar root logging out
+2017-06-15T02:20:01+0000 [HoneyPotSSHTransport,32106,113.195.145.52] connection lost
+2017-06-15T02:20:01+0000 [HoneyPotSSHTransport,32106,113.195.145.52] Connection lost after 9 seconds
+2017-06-15T02:20:26+0000 [CowrieTelnetTransport,55906,70.45.145.51] login attempt: 3
+2017-06-15T02:20:26+0000 [CowrieTelnetTransport,55906,70.45.145.51] login return, expect: [admin/1111]
+2017-06-15T02:20:28+0000 [CowrieTelnetTransport,55906,70.45.145.51] login attempt [enable\x00/system\x00] failed
+2017-06-15T02:20:29+0000 [CowrieTelnetTransport,55906,70.45.145.51] Warning: state changed and new state returned
+2017-06-15T02:20:36+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 113.195.145.52:44482 (10.8.41.81:2222) [session: a4209780]
+2017-06-15T02:20:37+0000 [HoneyPotSSHTransport,32108,113.195.145.52] Remote SSH version: SSH-2.0-PUTTY
+2017-06-15T02:20:37+0000 [HoneyPotSSHTransport,32108,113.195.145.52] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-06-15T02:20:37+0000 [HoneyPotSSHTransport,32108,113.195.145.52] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-15T02:20:37+0000 [HoneyPotSSHTransport,32108,113.195.145.52] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-15T02:20:42+0000 [HoneyPotSSHTransport,32108,113.195.145.52] connection lost
+2017-06-15T02:20:42+0000 [HoneyPotSSHTransport,32108,113.195.145.52] Connection lost after 6 seconds
+2017-06-15T02:20:47+0000 [CowrieTelnetTransport,55906,70.45.145.51] login attempt: 4
+2017-06-15T02:20:47+0000 [CowrieTelnetTransport,55906,70.45.145.51] login return, expect: [admin/1111]
+2017-06-15T02:20:49+0000 [CowrieTelnetTransport,55906,70.45.145.51] login attempt [shell\x00/sh\x00] failed
+2017-06-15T02:20:49+0000 [CowrieTelnetTransport,55906,70.45.145.51] Warning: state changed and new state returned
+2017-06-15T02:20:56+0000 [CowrieTelnetTransport,55905,178.47.97.167] Closing TTY Log: log/tty/20170615-021855-None-55905i.log after 121 seconds
+2017-06-15T02:20:56+0000 [CowrieTelnetTransport,55905,178.47.97.167] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-06-15T02:20:56+0000 [CowrieTelnetTransport,55905,178.47.97.167] Connection lost after 126 seconds
